@@ -5,7 +5,7 @@
 - Stabile Rätsel-ID: `friends-hedgehog`
 - Host: hedgehog
 - Related competence: **NMG.2.4.a; D.2.B.1.b** — Tiermerkmale erkennen und Fragen lesen
-- Difficulty: 50 kurze Tierfragen; zwei Bildantworten
+- Difficulty: 50 kurze Tierfragen; drei Bildantworten
 - Pool: 50 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
@@ -93,7 +93,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "hedgehog",
       "choices": [
         "hedgehog",
-        "mouse-sit"
+        "mouse-sit",
+        "fish-swim"
       ]
     }
   },
@@ -107,7 +108,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "bird-sit",
       "choices": [
         "bird-sit",
-        "forest-robin"
+        "forest-robin",
+        "hare-sit"
       ]
     }
   },
@@ -121,7 +123,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "fish-swim",
       "choices": [
         "fish-swim",
-        "snail"
+        "snail",
+        "hedgehog"
       ]
     }
   },
@@ -135,7 +138,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "bee",
       "choices": [
         "bee",
-        "spider"
+        "spider",
+        "frog-sit"
       ]
     }
   },
@@ -149,7 +153,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "snail",
       "choices": [
         "snail",
-        "caterpillar"
+        "caterpillar",
+        "forest-owl"
       ]
     }
   },
@@ -163,7 +168,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "spider",
       "choices": [
         "spider",
-        "bird-sit"
+        "bird-sit",
+        "mouse-sit"
       ]
     }
   },
@@ -177,7 +183,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "butterfly",
       "choices": [
         "butterfly",
-        "vocab-worm"
+        "vocab-worm",
+        "badger-walk"
       ]
     }
   },
@@ -191,7 +198,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "caterpillar",
       "choices": [
         "caterpillar",
-        "snail"
+        "snail",
+        "fish-swim"
       ]
     }
   },
@@ -205,7 +213,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "ladybird",
       "choices": [
         "ladybird",
-        "bee"
+        "bee",
+        "snail"
       ]
     }
   },
@@ -219,7 +228,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "hare-sit",
       "choices": [
         "hare-sit",
-        "hedgehog"
+        "hedgehog",
+        "bee"
       ]
     }
   },
@@ -233,7 +243,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "squirrel-nut",
       "choices": [
         "squirrel-nut",
-        "frog-sit"
+        "frog-sit",
+        "fish-swim"
       ]
     }
   },
@@ -247,7 +258,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "badger-walk",
       "choices": [
         "badger-walk",
-        "forest-fox"
+        "forest-fox",
+        "snail"
       ]
     }
   },
@@ -261,7 +273,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "beaver",
       "choices": [
         "beaver",
-        "hare-sit"
+        "hare-sit",
+        "bird-sit"
       ]
     }
   },
@@ -275,7 +288,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "frog-sit",
       "choices": [
         "frog-sit",
-        "mouse-sit"
+        "mouse-sit",
+        "badger-walk"
       ]
     }
   },
@@ -289,7 +303,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "ant",
       "choices": [
         "ant",
-        "spider"
+        "spider",
+        "hare-sit"
       ]
     }
   },
@@ -303,7 +318,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "mouse-sit",
       "choices": [
         "mouse-sit",
-        "squirrel-sit"
+        "squirrel-sit",
+        "forest-owl"
       ]
     }
   },
@@ -317,7 +333,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-fox",
       "choices": [
         "forest-fox",
-        "mouse-sit"
+        "mouse-sit",
+        "snail"
       ]
     }
   },
@@ -331,7 +348,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "roe-stand",
       "choices": [
         "roe-stand",
-        "hare-sit"
+        "hare-sit",
+        "fish-swim"
       ]
     }
   },
@@ -345,7 +363,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-woodpecker",
       "choices": [
         "forest-woodpecker",
-        "frog-sit"
+        "frog-sit",
+        "mouse-sit"
       ]
     }
   },
@@ -359,7 +378,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-bat",
       "choices": [
         "forest-bat",
-        "squirrel-sit"
+        "squirrel-sit",
+        "frog-sit"
       ]
     }
   },
@@ -373,7 +393,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-owl",
       "choices": [
         "forest-owl",
-        "vocab-worm"
+        "vocab-worm",
+        "ant"
       ]
     }
   },
@@ -387,7 +408,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-robin",
       "choices": [
         "forest-robin",
-        "bird-sit"
+        "bird-sit",
+        "snail"
       ]
     }
   },
@@ -401,7 +423,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-lynx",
       "choices": [
         "forest-lynx",
-        "forest-fox"
+        "forest-fox",
+        "bird-sit"
       ]
     }
   },
@@ -415,7 +438,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-marten",
       "choices": [
         "forest-marten",
-        "vocab-worm"
+        "vocab-worm",
+        "fish-swim"
       ]
     }
   },
@@ -429,7 +453,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "vocab-worm",
       "choices": [
         "vocab-worm",
-        "ant"
+        "ant",
+        "hare-sit"
       ]
     }
   },
@@ -443,7 +468,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "hedgehog",
       "choices": [
         "hedgehog",
-        "fish"
+        "fish",
+        "rabbit"
       ]
     }
   },
@@ -457,7 +483,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "fish",
       "choices": [
         "fish",
-        "dog"
+        "dog",
+        "sheep"
       ]
     }
   },
@@ -471,7 +498,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "frog",
       "choices": [
         "frog",
-        "cat"
+        "cat",
+        "dog"
       ]
     }
   },
@@ -485,7 +513,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "bee",
       "choices": [
         "bee",
-        "cow"
+        "cow",
+        "fish"
       ]
     }
   },
@@ -499,7 +528,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "dog",
       "choices": [
         "dog",
-        "frog"
+        "frog",
+        "snail"
       ]
     }
   },
@@ -513,7 +543,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "cat",
       "choices": [
         "cat",
-        "fish"
+        "fish",
+        "pig"
       ]
     }
   },
@@ -527,7 +558,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "cow",
       "choices": [
         "cow",
-        "bee"
+        "bee",
+        "ant"
       ]
     }
   },
@@ -541,7 +573,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "spider",
       "choices": [
         "spider",
-        "bird"
+        "bird",
+        "cow"
       ]
     }
   },
@@ -555,7 +588,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "snail",
       "choices": [
         "snail",
-        "dog"
+        "dog",
+        "sheep"
       ]
     }
   },
@@ -569,7 +603,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "tortoise",
       "choices": [
         "tortoise",
-        "rabbit"
+        "rabbit",
+        "bee"
       ]
     }
   },
@@ -583,7 +618,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "rabbit",
       "choices": [
         "rabbit",
-        "fish"
+        "fish",
+        "dog"
       ]
     }
   },
@@ -597,7 +633,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "butterfly",
       "choices": [
         "butterfly",
-        "pig"
+        "pig",
+        "fish"
       ]
     }
   },
@@ -611,7 +648,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "bird",
       "choices": [
         "bird",
-        "cow"
+        "cow",
+        "pig"
       ]
     }
   },
@@ -625,7 +663,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "ladybird",
       "choices": [
         "ladybird",
-        "sheep"
+        "sheep",
+        "cat"
       ]
     }
   },
@@ -639,7 +678,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "sheep",
       "choices": [
         "sheep",
-        "fish"
+        "fish",
+        "bee"
       ]
     }
   },
@@ -653,7 +693,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "squirrel",
       "choices": [
         "squirrel",
-        "spider"
+        "spider",
+        "cow"
       ]
     }
   },
@@ -667,7 +708,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "elephant",
       "choices": [
         "elephant",
-        "cat"
+        "cat",
+        "bee"
       ]
     }
   },
@@ -681,7 +723,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "giraffe",
       "choices": [
         "giraffe",
-        "pig"
+        "pig",
+        "dog"
       ]
     }
   },
@@ -695,7 +738,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "lion",
       "choices": [
         "lion",
-        "sheep"
+        "sheep",
+        "bird"
       ]
     }
   },
@@ -709,7 +753,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "zebra",
       "choices": [
         "zebra",
-        "dog"
+        "dog",
+        "cow"
       ]
     }
   },
@@ -723,7 +768,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "camel",
       "choices": [
         "camel",
-        "cat"
+        "cat",
+        "bee"
       ]
     }
   },
@@ -737,7 +783,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "tiger",
       "choices": [
         "tiger",
-        "cow"
+        "cow",
+        "frog"
       ]
     }
   },
@@ -751,7 +798,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "penguin",
       "choices": [
         "penguin",
-        "bird"
+        "bird",
+        "cow"
       ]
     }
   },
@@ -765,7 +813,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "badger",
       "choices": [
         "badger",
-        "pig"
+        "pig",
+        "rabbit"
       ]
     }
   },
@@ -779,7 +828,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "beaver",
       "choices": [
         "beaver",
-        "cat"
+        "cat",
+        "bee"
       ]
     }
   }

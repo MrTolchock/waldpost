@@ -1,6 +1,6 @@
 # Waldpost · Rätselvergleich
 
-Alle 24 aktiven Rätsel in Katalogreihenfolge. Jede Aufnahme zeigt die zweite Katalogaufgabe als erste Aufgabe einer Galerierunde bei 1080 × 810 Pixeln. Die Verkleinerung ist für alle Seiten gleich. Über die Tabelle lässt sich jedes Original öffnen.
+Alle 23 aktiven Rätsel in Katalogreihenfolge. Jede Aufnahme zeigt die zweite Katalogaufgabe als erste Aufgabe einer Galerierunde bei 1080 × 810 Pixeln. Die Verkleinerung ist für alle Seiten gleich. Über die Tabelle lässt sich jedes Original öffnen.
 
 [![Alle Rätsel auf einem Vergleichsbogen](uebersicht.jpg)](uebersicht.jpg)
 
@@ -29,7 +29,6 @@ Alle 24 aktiven Rätsel in Katalogreihenfolge. Jede Aufnahme zeigt die zweite Ka
 | [Einen Vokal ergänzen](vowels.jpg) | Maus | `vowels/word-0-3` |
 | [Silben zu Wörtern verbinden](read-puzzle.jpg) | Waldkauz | `read-puzzle/word-1` |
 | [Farbwörter verstehen](colour-words.jpg) | Eisvogel | `colour-words/rot-blau-rosa` |
-| [Formen wiedererkennen](shape-match.jpg) | Steinbock | `shape-match/square-0` |
 
 ## Antwortverhalten
 

@@ -29,7 +29,7 @@ test('every active puzzle has at least 25 unique finite definitions, competence 
    if(q.kind==='survey'&&q.task==='most'){const max=Math.max(...q.counts);assert.equal(q.counts.filter(n=>n===max).length,1);assert.equal(q.answer,q.fruit[q.counts.indexOf(max)]);}
   }
  }
- assert.equal(total,849);
+ assert.equal(total,794);
 });
 test('rhyme pairs are distinct even when their word order is ignored',()=>{
  const pool=setup().FK.puzzleCatalogue.iterations('friends-bird'),pairs=pool.map(it=>[it.question.text,it.question.answer].map(w=>w.toLocaleLowerCase('de-CH')).sort().join('/'));
@@ -71,7 +71,7 @@ test('hedgehog riddles and every distractor use Swiss forest wildlife',()=>{
  const pool=setup().FK.puzzleCatalogue.iterations('friends-hedgehog').filter(it=>it.id.includes('/riddle-'));
  const allowed=new Set(['hedgehog','bird-sit','fish-swim','bee','snail','spider','butterfly','caterpillar','ladybird','hare-sit','squirrel-sit','squirrel-nut','badger-walk','beaver','frog-sit','ant','mouse-sit','fox-run','roe-stand','forest-woodpecker','forest-bat','forest-owl','forest-robin','forest-lynx','forest-marten','forest-fox','vocab-worm']);
  assert.equal(pool.length,25);assert.equal(new Set(pool.map(it=>it.question.answer)).size,25);
- for(const it of pool){assert.equal(it.question.choices.length,2);assert.ok(it.question.text.split(/\s+/).length<=6,it.id+' has a short clue');assert.ok(it.question.choices.every(id=>allowed.has(id)),it.id+' contains only local wildlife');assert.doesNotMatch(it.question.text,/Honig|wird ein|Ameisenhaufen|Pinsel|klopft|schläft/i,it.id+' asks about the visible picture rather than hidden facts');}
+ for(const it of pool){assert.equal(it.question.choices.length,3);assert.ok(it.question.text.split(/\s+/).length<=6,it.id+' has a short clue');assert.ok(it.question.choices.every(id=>allowed.has(id)),it.id+' contains only local wildlife');assert.doesNotMatch(it.question.text,/Honig|wird ein|Ameisenhaufen|Pinsel|klopft|schläft/i,it.id+' asks about the visible picture rather than hidden facts');}
 });
 test('latest review fixes apply throughout the relevant pools and retire the requested puzzles',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
@@ -80,7 +80,7 @@ test('latest review fixes apply throughout the relevant pools and retire the req
  const mouse=C.iterations('friends-mouse');assert.equal(new Set(mouse.map(it=>it.question.text)).size,mouse.length);assert.ok(mouse.some(it=>it.id.includes('friends-frog-animal-'))&&mouse.some(it=>it.id.includes('read-word-word-')));
  for(const it of mouse.filter(it=>it.id.includes('friends-frog-animal-')))assert.ok(it.question.choices.every(id=>animalPictures.has(id)),it.id+' has only animals');
  const added=C.iterations('friends-hedgehog').filter(it=>it.id.includes('/nature-question-'));assert.equal(added.length,25);
- for(const it of added){assert.match(it.question.text,/^[^.!?]+\?$/,it.id+' is a question');assert.equal(it.question.choices.length,2);}
+ for(const it of added){assert.match(it.question.text,/^[^.!?]+\?$/,it.id+' is a question');assert.equal(it.question.choices.length,3);}
  assert.equal(C.iterations('friends-badger')[16].question.text,'Was braucht eine Pflanze zum Wachsen?');
  assert.equal(C.iterations('friends-badger')[24].question.text,'Was ernten wir vom Birnbaum?');
  assert.equal(C.iterations('friends-badger')[22].question.answer,'watering-can');

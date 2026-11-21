@@ -26,31 +26,31 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `sequence/story-0` | Bohne in die Erde → Die Bohne keimt → Eine Pflanze wächst — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-1` | Ein Ei liegt im Nest → Ein Küken schlüpft → Der Vogel ist gross — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-2` | Eine Raupe frisst → Die Raupe verpuppt sich → Ein Schmetterling schlüpft — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-3` | Der Apfelbaum blüht → Ein Apfel wird reif → Wir ernten den Apfel — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-4` | Wir schreiben einen Brief → Wir werfen ihn ein → Der Brief kommt an — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-5` | Wolken sammeln sich → Regen fällt → Die Pflanze bekommt Wasser — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-6` | Eine Nuss liegt im Wald → Das Eichhörnchen kommt → Es hält die Nuss — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-7` | Der Tag ist hell → Die Sonne geht unter → Die Nacht kommt — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-8` | Ein Apfel hängt am Baum → Wir pflücken ihn → Nach dem Essen bleiben Kerne — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-9` | Eine junge Pflanze wächst → Eine Blüte öffnet sich → Eine Biene besucht sie — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-10` | Ein Blatt hängt am Ast → Der Igel findet das Blatt → Der Igel schläft — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-11` | Wir nehmen einen Samen → Wir graben ein Loch → Wir giessen den Samen — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-12` | Beeren werden reif → Wir sammeln sie → Wir teilen sie auf — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-13` | Ein Ast liegt am Boden → Ein Vogel holt ihn → Er baut ein Nest — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-14` | Es regnet → Eine Pfütze entsteht → Die Sonne trocknet sie — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-15` | Wir lockern die Erde → Eine Karotte wächst → Wir ernten sie — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-16` | Die Birnenblüte öffnet sich → Eine Birne wächst → Wir legen sie in die Schale — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-17` | Die Kuh gibt Milch → Wir sammeln die Milch → Daraus wird Käse — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-18` | Die Sonnenblume blüht → Ihre Kerne sind reif → Ein Vogel frisst die Kerne — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-19` | Wir nehmen ein Tuch → Wir machen es nass → Wir wischen den Tisch — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-20` | Wir suchen ein Buch aus → Wir lesen es → Danach gehen wir schlafen — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-21` | Wir pflücken einen Apfel → Wir waschen ihn → Wir legen ihn in die Schale — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-22` | Wir nehmen einen Korb mit → Wir finden Pilze → Wir prüfen sie mit Erwachsenen — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-23` | Ein Brief kommt an → Wir öffnen ihn → Wir lesen ihn — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
-| `sequence/story-24` | Wir pflücken eine Blume → Wir stellen sie ins Wasser → Wir stellen sie auf den Tisch — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-0` | Bohnensamen → Die Wurzel wächst → Die ersten Blätter wachsen — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-1` | Ein leeres Nest → Ein Ei liegt im Nest → Das Küken schlüpft — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-2` | Die Raupe wächst → Die Raupe verpuppt sich → Der Falter schlüpft — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-3` | Der Apfelbaum blüht → Ein grüner Apfel wächst → Der Apfel ist reif — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-4` | Wir schreiben den Brief → Wir verschliessen den Umschlag → Wir werfen den Brief ein — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-5` | Wir nehmen Mehl → Wir kneten Teig → Der Zopf ist gebacken — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-6` | Eine ganze Nuss → Das Eichhörnchen knackt sie → Die leere Schale bleibt — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-7` | Die Sonne scheint → Die Sonne geht unter → Es ist Nacht — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-8` | Eine Eichel → Die Eichel keimt → Die ersten Blätter wachsen — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-9` | Die Bohne trägt Blätter → Die Bohne blüht → Schoten wachsen — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-10` | Eine Kaulquappe schlüpft → Hinterbeine wachsen → Der junge Frosch hat vier Beine — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-11` | Ein glattes Blatt → Das Papier wird gefaltet → Das Schiff ist fertig — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-12` | Die Beeren sind gewaschen → Wir zerdrücken sie → Wir kochen Konfitüre — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-13` | Wir zeichnen die Schnittlinie → Wir sägen das Holz → Wir bauen das Vogelhaus — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-14` | Ein Knäuel Wolle → Das Strickstück wächst → Das Strickstück ist fertig — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-15` | Ein Apfelkern → Der Baum blüht → Ein kleiner Apfel wächst — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-16` | Der Eimer ist leer → Wir füllen Wasser ein → Der Eimer ist voll — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-17` | Der Stiefel ist schmutzig → Wir bürsten den Schmutz ab → Der Stiefel ist sauber — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-18` | Eier am Blatt → Die Raupe frisst → Eine Puppe entsteht — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-19` | Ein kleiner Sämling → Ein junges Bäumchen → Eine grosse Eiche — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-20` | Die Beeren sind reif → Wir zerdrücken die Beeren → Die Konfitüre ist abgefüllt — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-21` | Ein unreifer Apfel → Der Apfel ist reif → Der Apfel ist geerntet — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-22` | Ein Brett mit Schnittlinie → Ein halbes Vogelhaus → Das Vogelhaus ist fertig — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-23` | Ein ganzes Ei → Das Küken schlüpft → Die leere Schale bleibt — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
+| `sequence/story-24` | Das Blatt ist ganz → Die Raupe frisst daran → Am Blatt fehlt ein Stück — Ziehe die Bilder in die richtige Reihenfolge. | [0,1,2] |
 
 ## Exact definitions
 
@@ -60,22 +60,22 @@ These definitions are the same finite data used by the game and review previews.
 [
   {
     "id": "sequence/story-0",
-    "label": "Bohne in die Erde → Die Bohne keimt → Eine Pflanze wächst",
+    "label": "Bohnensamen → Die Wurzel wächst → Die ersten Blätter wachsen",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "bean",
-          "Bohne in die Erde"
+          "bean-dry-seed",
+          "Bohnensamen"
         ],
         [
-          "seedling",
-          "Die Bohne keimt"
+          "bean-rooting-seed",
+          "Die Wurzel wächst"
         ],
         [
-          "plant",
-          "Eine Pflanze wächst"
+          "bean-first-leaves",
+          "Die ersten Blätter wachsen"
         ]
       ],
       "order": [
@@ -92,22 +92,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-1",
-    "label": "Ein Ei liegt im Nest → Ein Küken schlüpft → Der Vogel ist gross",
+    "label": "Ein leeres Nest → Ein Ei liegt im Nest → Das Küken schlüpft",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "egg",
+          "bird-nest-empty",
+          "Ein leeres Nest"
+        ],
+        [
+          "scene:nest+egg",
           "Ein Ei liegt im Nest"
         ],
         [
           "chick",
-          "Ein Küken schlüpft"
-        ],
-        [
-          "bird-sit",
-          "Der Vogel ist gross"
+          "Das Küken schlüpft"
         ]
       ],
       "order": [
@@ -124,22 +124,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-2",
-    "label": "Eine Raupe frisst → Die Raupe verpuppt sich → Ein Schmetterling schlüpft",
+    "label": "Die Raupe wächst → Die Raupe verpuppt sich → Der Falter schlüpft",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
           "caterpillar",
-          "Eine Raupe frisst"
+          "Die Raupe wächst"
         ],
         [
-          "cocoon",
+          "butterfly-chrysalis",
           "Die Raupe verpuppt sich"
         ],
         [
           "butterfly",
-          "Ein Schmetterling schlüpft"
+          "Der Falter schlüpft"
         ]
       ],
       "order": [
@@ -156,22 +156,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-3",
-    "label": "Der Apfelbaum blüht → Ein Apfel wird reif → Wir ernten den Apfel",
+    "label": "Der Apfelbaum blüht → Ein grüner Apfel wächst → Der Apfel ist reif",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-flower",
+          "apple-blossom",
           "Der Apfelbaum blüht"
         ],
         [
-          "forest-apple",
-          "Ein Apfel wird reif"
+          "apple-unripe",
+          "Ein grüner Apfel wächst"
         ],
         [
-          "scene:forest-basket+forest-apple",
-          "Wir ernten den Apfel"
+          "forest-apple",
+          "Der Apfel ist reif"
         ]
       ],
       "order": [
@@ -188,22 +188,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-4",
-    "label": "Wir schreiben einen Brief → Wir werfen ihn ein → Der Brief kommt an",
+    "label": "Wir schreiben den Brief → Wir verschliessen den Umschlag → Wir werfen den Brief ein",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "pencil",
-          "Wir schreiben einen Brief"
+          "scene:making-paper-sheet+pencil",
+          "Wir schreiben den Brief"
         ],
         [
-          "postbox",
-          "Wir werfen ihn ein"
+          "letter",
+          "Wir verschliessen den Umschlag"
         ],
         [
-          "mailbox",
-          "Der Brief kommt an"
+          "swiss-postbox",
+          "Wir werfen den Brief ein"
         ]
       ],
       "order": [
@@ -220,22 +220,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-5",
-    "label": "Wolken sammeln sich → Regen fällt → Die Pflanze bekommt Wasser",
+    "label": "Wir nehmen Mehl → Wir kneten Teig → Der Zopf ist gebacken",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "cloud",
-          "Wolken sammeln sich"
+          "making-bread-flour",
+          "Wir nehmen Mehl"
         ],
         [
-          "rain",
-          "Regen fällt"
+          "making-bread-dough",
+          "Wir kneten Teig"
         ],
         [
-          "plant",
-          "Die Pflanze bekommt Wasser"
+          "making-braided-loaf",
+          "Der Zopf ist gebacken"
         ]
       ],
       "order": [
@@ -252,22 +252,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-6",
-    "label": "Eine Nuss liegt im Wald → Das Eichhörnchen kommt → Es hält die Nuss",
+    "label": "Eine ganze Nuss → Das Eichhörnchen knackt sie → Die leere Schale bleibt",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
           "forest-nut",
-          "Eine Nuss liegt im Wald"
+          "Eine ganze Nuss"
         ],
         [
-          "squirrel-run",
-          "Das Eichhörnchen kommt"
+          "squirrel-crack-nut",
+          "Das Eichhörnchen knackt sie"
         ],
         [
-          "squirrel-nut",
-          "Es hält die Nuss"
+          "sign-nut-shell",
+          "Die leere Schale bleibt"
         ]
       ],
       "order": [
@@ -284,14 +284,14 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-7",
-    "label": "Der Tag ist hell → Die Sonne geht unter → Die Nacht kommt",
+    "label": "Die Sonne scheint → Die Sonne geht unter → Es ist Nacht",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
           "sun",
-          "Der Tag ist hell"
+          "Die Sonne scheint"
         ],
         [
           "sunset",
@@ -299,7 +299,7 @@ These definitions are the same finite data used by the game and review previews.
         ],
         [
           "moon",
-          "Die Nacht kommt"
+          "Es ist Nacht"
         ]
       ],
       "order": [
@@ -316,22 +316,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-8",
-    "label": "Ein Apfel hängt am Baum → Wir pflücken ihn → Nach dem Essen bleiben Kerne",
+    "label": "Eine Eichel → Die Eichel keimt → Die ersten Blätter wachsen",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-apple",
-          "Ein Apfel hängt am Baum"
+          "acorn",
+          "Eine Eichel"
         ],
         [
-          "scene:forest-basket+forest-apple",
-          "Wir pflücken ihn"
+          "oak-sprouting-acorn",
+          "Die Eichel keimt"
         ],
         [
-          "vocab-seed",
-          "Nach dem Essen bleiben Kerne"
+          "oak-seedling",
+          "Die ersten Blätter wachsen"
         ]
       ],
       "order": [
@@ -348,22 +348,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-9",
-    "label": "Eine junge Pflanze wächst → Eine Blüte öffnet sich → Eine Biene besucht sie",
+    "label": "Die Bohne trägt Blätter → Die Bohne blüht → Schoten wachsen",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "seedling",
-          "Eine junge Pflanze wächst"
+          "bean-first-leaves",
+          "Die Bohne trägt Blätter"
         ],
         [
-          "flower",
-          "Eine Blüte öffnet sich"
+          "bean-flowering",
+          "Die Bohne blüht"
         ],
         [
-          "scene:bee+flower",
-          "Eine Biene besucht sie"
+          "bean-with-pods",
+          "Schoten wachsen"
         ]
       ],
       "order": [
@@ -380,22 +380,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-10",
-    "label": "Ein Blatt hängt am Ast → Der Igel findet das Blatt → Der Igel schläft",
+    "label": "Eine Kaulquappe schlüpft → Hinterbeine wachsen → Der junge Frosch hat vier Beine",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-leaf",
-          "Ein Blatt hängt am Ast"
+          "tadpole",
+          "Eine Kaulquappe schlüpft"
         ],
         [
-          "scene:hedgehog+forest-leaf",
-          "Der Igel findet das Blatt"
+          "tadpole-hindlegs",
+          "Hinterbeine wachsen"
         ],
         [
-          "hedgehog-sleep",
-          "Der Igel schläft"
+          "froglet",
+          "Der junge Frosch hat vier Beine"
         ]
       ],
       "order": [
@@ -412,22 +412,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-11",
-    "label": "Wir nehmen einen Samen → Wir graben ein Loch → Wir giessen den Samen",
+    "label": "Ein glattes Blatt → Das Papier wird gefaltet → Das Schiff ist fertig",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "vocab-seed",
-          "Wir nehmen einen Samen"
+          "making-paper-sheet",
+          "Ein glattes Blatt"
         ],
         [
-          "spade",
-          "Wir graben ein Loch"
+          "making-paper-fold",
+          "Das Papier wird gefaltet"
         ],
         [
-          "bucket",
-          "Wir giessen den Samen"
+          "making-paper-boat",
+          "Das Schiff ist fertig"
         ]
       ],
       "order": [
@@ -444,22 +444,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-12",
-    "label": "Beeren werden reif → Wir sammeln sie → Wir teilen sie auf",
+    "label": "Die Beeren sind gewaschen → Wir zerdrücken sie → Wir kochen Konfitüre",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-berry",
-          "Beeren werden reif"
+          "making-berries-washed",
+          "Die Beeren sind gewaschen"
         ],
         [
-          "scene:forest-basket+forest-berry",
-          "Wir sammeln sie"
+          "making-berries-crushed",
+          "Wir zerdrücken sie"
         ],
         [
-          "scene:bowl+forest-berry",
-          "Wir teilen sie auf"
+          "making-jam-pot",
+          "Wir kochen Konfitüre"
         ]
       ],
       "order": [
@@ -476,22 +476,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-13",
-    "label": "Ein Ast liegt am Boden → Ein Vogel holt ihn → Er baut ein Nest",
+    "label": "Wir zeichnen die Schnittlinie → Wir sägen das Holz → Wir bauen das Vogelhaus",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-branch",
-          "Ein Ast liegt am Boden"
+          "making-wood-marked",
+          "Wir zeichnen die Schnittlinie"
         ],
         [
-          "scene:bird-sit+forest-branch",
-          "Ein Vogel holt ihn"
+          "making-wood-cut",
+          "Wir sägen das Holz"
         ],
         [
-          "nest",
-          "Er baut ein Nest"
+          "making-birdhouse-half",
+          "Wir bauen das Vogelhaus"
         ]
       ],
       "order": [
@@ -508,22 +508,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-14",
-    "label": "Es regnet → Eine Pfütze entsteht → Die Sonne trocknet sie",
+    "label": "Ein Knäuel Wolle → Das Strickstück wächst → Das Strickstück ist fertig",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "rain",
-          "Es regnet"
+          "yarn-ball",
+          "Ein Knäuel Wolle"
         ],
         [
-          "water",
-          "Eine Pfütze entsteht"
+          "making-knitting-half",
+          "Das Strickstück wächst"
         ],
         [
-          "sun",
-          "Die Sonne trocknet sie"
+          "making-knitting-finished",
+          "Das Strickstück ist fertig"
         ]
       ],
       "order": [
@@ -540,22 +540,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-15",
-    "label": "Wir lockern die Erde → Eine Karotte wächst → Wir ernten sie",
+    "label": "Ein Apfelkern → Der Baum blüht → Ein kleiner Apfel wächst",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "spade",
-          "Wir lockern die Erde"
+          "part-apple-seed",
+          "Ein Apfelkern"
         ],
         [
-          "carrot",
-          "Eine Karotte wächst"
+          "apple-blossom",
+          "Der Baum blüht"
         ],
         [
-          "scene:forest-basket+carrot",
-          "Wir ernten sie"
+          "apple-unripe",
+          "Ein kleiner Apfel wächst"
         ]
       ],
       "order": [
@@ -572,22 +572,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-16",
-    "label": "Die Birnenblüte öffnet sich → Eine Birne wächst → Wir legen sie in die Schale",
+    "label": "Der Eimer ist leer → Wir füllen Wasser ein → Der Eimer ist voll",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "flower",
-          "Die Birnenblüte öffnet sich"
+          "state-bucket-empty",
+          "Der Eimer ist leer"
         ],
         [
-          "pear",
-          "Eine Birne wächst"
+          "scene:state-bucket-empty+water",
+          "Wir füllen Wasser ein"
         ],
         [
-          "scene:bowl+pear",
-          "Wir legen sie in die Schale"
+          "state-bucket-full",
+          "Der Eimer ist voll"
         ]
       ],
       "order": [
@@ -604,22 +604,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-17",
-    "label": "Die Kuh gibt Milch → Wir sammeln die Milch → Daraus wird Käse",
+    "label": "Der Stiefel ist schmutzig → Wir bürsten den Schmutz ab → Der Stiefel ist sauber",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "cow",
-          "Die Kuh gibt Milch"
+          "state-boot-muddy",
+          "Der Stiefel ist schmutzig"
         ],
         [
-          "bucket",
-          "Wir sammeln die Milch"
+          "scene:boot-brush+state-boot-muddy",
+          "Wir bürsten den Schmutz ab"
         ],
         [
-          "cheese",
-          "Daraus wird Käse"
+          "state-boot-clean",
+          "Der Stiefel ist sauber"
         ]
       ],
       "order": [
@@ -636,22 +636,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-18",
-    "label": "Die Sonnenblume blüht → Ihre Kerne sind reif → Ein Vogel frisst die Kerne",
+    "label": "Eier am Blatt → Die Raupe frisst → Eine Puppe entsteht",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "sunflower",
-          "Die Sonnenblume blüht"
+          "butterfly-eggs",
+          "Eier am Blatt"
         ],
         [
-          "vocab-seed",
-          "Ihre Kerne sind reif"
+          "caterpillar-eat-leaf",
+          "Die Raupe frisst"
         ],
         [
-          "scene:bird-sit+vocab-seed",
-          "Ein Vogel frisst die Kerne"
+          "butterfly-chrysalis",
+          "Eine Puppe entsteht"
         ]
       ],
       "order": [
@@ -668,22 +668,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-19",
-    "label": "Wir nehmen ein Tuch → Wir machen es nass → Wir wischen den Tisch",
+    "label": "Ein kleiner Sämling → Ein junges Bäumchen → Eine grosse Eiche",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "vocab-cloth",
-          "Wir nehmen ein Tuch"
+          "oak-seedling",
+          "Ein kleiner Sämling"
         ],
         [
-          "water",
-          "Wir machen es nass"
+          "oak-sapling",
+          "Ein junges Bäumchen"
         ],
         [
-          "vocab-table",
-          "Wir wischen den Tisch"
+          "oak-tree",
+          "Eine grosse Eiche"
         ]
       ],
       "order": [
@@ -700,22 +700,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-20",
-    "label": "Wir suchen ein Buch aus → Wir lesen es → Danach gehen wir schlafen",
+    "label": "Die Beeren sind reif → Wir zerdrücken die Beeren → Die Konfitüre ist abgefüllt",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "book",
-          "Wir suchen ein Buch aus"
+          "forest-berry",
+          "Die Beeren sind reif"
         ],
         [
-          "reader",
-          "Wir lesen es"
+          "making-berries-crushed",
+          "Wir zerdrücken die Beeren"
         ],
         [
-          "bed",
-          "Danach gehen wir schlafen"
+          "jam-jar",
+          "Die Konfitüre ist abgefüllt"
         ]
       ],
       "order": [
@@ -732,22 +732,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-21",
-    "label": "Wir pflücken einen Apfel → Wir waschen ihn → Wir legen ihn in die Schale",
+    "label": "Ein unreifer Apfel → Der Apfel ist reif → Der Apfel ist geerntet",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
+          "apple-unripe",
+          "Ein unreifer Apfel"
+        ],
+        [
           "forest-apple",
-          "Wir pflücken einen Apfel"
+          "Der Apfel ist reif"
         ],
         [
-          "water",
-          "Wir waschen ihn"
-        ],
-        [
-          "scene:bowl+forest-apple",
-          "Wir legen ihn in die Schale"
+          "relation-apple-in-basket",
+          "Der Apfel ist geerntet"
         ]
       ],
       "order": [
@@ -764,22 +764,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-22",
-    "label": "Wir nehmen einen Korb mit → Wir finden Pilze → Wir prüfen sie mit Erwachsenen",
+    "label": "Ein Brett mit Schnittlinie → Ein halbes Vogelhaus → Das Vogelhaus ist fertig",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-basket",
-          "Wir nehmen einen Korb mit"
+          "making-wood-marked",
+          "Ein Brett mit Schnittlinie"
         ],
         [
-          "forest-mushroom",
-          "Wir finden Pilze"
+          "making-birdhouse-half",
+          "Ein halbes Vogelhaus"
         ],
         [
-          "vocab-table",
-          "Wir prüfen sie mit Erwachsenen"
+          "birdhouse",
+          "Das Vogelhaus ist fertig"
         ]
       ],
       "order": [
@@ -796,22 +796,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-23",
-    "label": "Ein Brief kommt an → Wir öffnen ihn → Wir lesen ihn",
+    "label": "Ein ganzes Ei → Das Küken schlüpft → Die leere Schale bleibt",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "letter",
-          "Ein Brief kommt an"
+          "egg",
+          "Ein ganzes Ei"
         ],
         [
-          "vocab-hand",
-          "Wir öffnen ihn"
+          "chick",
+          "Das Küken schlüpft"
         ],
         [
-          "reader",
-          "Wir lesen ihn"
+          "sign-eggshell",
+          "Die leere Schale bleibt"
         ]
       ],
       "order": [
@@ -828,22 +828,22 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "sequence/story-24",
-    "label": "Wir pflücken eine Blume → Wir stellen sie ins Wasser → Wir stellen sie auf den Tisch",
+    "label": "Das Blatt ist ganz → Die Raupe frisst daran → Am Blatt fehlt ein Stück",
     "question": {
       "kind": "order",
       "prompt": "Ziehe die Bilder in die richtige Reihenfolge.",
       "items": [
         [
-          "forest-flower",
-          "Wir pflücken eine Blume"
+          "forest-leaf",
+          "Das Blatt ist ganz"
         ],
         [
-          "water",
-          "Wir stellen sie ins Wasser"
+          "caterpillar-eat-leaf",
+          "Die Raupe frisst daran"
         ],
         [
-          "vocab-table",
-          "Wir stellen sie auf den Tisch"
+          "sign-nibbled-leaf",
+          "Am Blatt fehlt ein Stück"
         ]
       ],
       "order": [

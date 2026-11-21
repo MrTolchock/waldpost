@@ -5,7 +5,7 @@
 - Stabile Rätsel-ID: `treasure`
 - Host: squirrel
 - Related competence: **Optionale Gedächtnisübung** — Gegenstände wiedererkennen
-- Difficulty: Vier Dinge, eines fehlt; kein Zeitlimit; erneut anschauen möglich
+- Difficulty: Vier Dinge, eines fehlt; kein Zeitlimit
 - Pool: 32 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 

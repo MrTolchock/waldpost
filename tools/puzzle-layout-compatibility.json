@@ -24088,6 +24088,389 @@
           "after": "aff249fdd527204e45dbf96522ceb88ff8ccaa7ae18ded31ae2144812c3f0b71"
         }
       }
+    },
+    {
+      "baselineCommit": "44f6cf1301d042d4e569c7a7abf5b2c73d25932b",
+      "reason": "Compact the mouse word panel. Only its unchanged word tasks retain layout compatibility.",
+      "puzzles": {
+        "friends-mouse": {
+          "definition": "6c98c311932b89238cda1f43cde0aefe8a57e14242862bb442a49eb25a7e96b4",
+          "before": "91f1d26db02f49cc6f56ba47be806501f6b3f3a2a8907963d622266e94c95c05",
+          "after": "fe0a5a9919ceca4f1c95717418d8bf3bafc1beb28c9d81b11db223118efc4eab"
+        }
+      },
+      "iterations": {
+        "friends-mouse/word-0": {
+          "definition": "de2b9c6ad29f4c8f94af53c6eb96ef4f62bd087b35dee50432e38bdeac04d775",
+          "before": "9a69c90830b20f1fb4d90db5fd21a9c9d4b1c0ac578b16e3efa025be253f9251",
+          "after": "0ffea3b91cbf818d611b9aef318be3a3279b7cfa76ce63b40a91aee2ff5f3835"
+        },
+        "friends-mouse/word-1": {
+          "definition": "f55d3f2b5ca2ea5293f7870d183b1fde92eea485919d57511a62e2133282b339",
+          "before": "d9d73fdbac286481ace441f0bab9c28e82a7d6cfd886d8d2a78b16b8b0269d47",
+          "after": "7c609475ccb20e8ad53b130f1e82581de2c2f9c1c4bf2cdb446ead98ff3e5301"
+        },
+        "friends-mouse/word-2": {
+          "definition": "dab4465ce6ecc90e46cee47fdaa88c888743006d1fb0cd45b233e2064e8cc670",
+          "before": "0817328480222400c159c5c75979ed01934f6f242474180c67c89549e9a9a8ff",
+          "after": "b40e97eb1afa3f4097d0d0fb747f419da5354772a217ff9a5e896ade7e243fdc"
+        },
+        "friends-mouse/word-3": {
+          "definition": "dbd406df989388c6b1261cd730cc6117b47cb1f2b2fe92adee3516b52bb5eac3",
+          "before": "485688c6ab0234eda27af86074cd6630d541e0f63b5fa0a4b5dd9302aed50410",
+          "after": "42f64dea08cc1c77084ccbf54f1d75a5768d2c3c0bccdcd5d3e64875ffabd9a0"
+        },
+        "friends-mouse/word-4": {
+          "definition": "a21e12af87742ab20600cff9cdb332e276410dad9a7a9653b0a4e25e0b05f985",
+          "before": "16912f3dbaf45b33254f0354f1e282c6b62f0ad1f5869cb01cf8b3bd07a3b7d3",
+          "after": "b7e017db2534f1cc73b1b5c6bf781881a545bd7e3f5e152437168b704cb6984f"
+        },
+        "friends-mouse/word-5": {
+          "definition": "73ee1a5224a6def34d8f518ecc798cc18e89c702577ddf49b86c1fad1fefcbe1",
+          "before": "c5a5d496be0f001309e1fca8099ee95fd6be970b6eb3d5941066c759d83630e5",
+          "after": "1dabdc63b1a62b8d25f0b917bf667bc4ce2b9b8902ccae2c471ebe97f96ded97"
+        },
+        "friends-mouse/word-6": {
+          "definition": "30fd8dc953c96b9ecfb62a86685602c7759745f15c38410c0f65c66dc6078da4",
+          "before": "66223a1254fc34c3b9bb4d2608e8def9289d874d3f0de31c8f8caae664314fa3",
+          "after": "f460598760d0ae2e1d186dad71ce21b499fdf036cb8e59416df7dd113b9c9da6"
+        },
+        "friends-mouse/word-7": {
+          "definition": "c4adfa78810186e0dd4df97717a8c51d89e8679473420bc88fc15e930f950682",
+          "before": "20646f1039e31c09b34c5283c26be196958316b7071fb4e44a79ff8e2eb655c6",
+          "after": "2fc0a9726a70d3be13debb3f4281d6c3c9243e6b7562d19cfa38f312d69be91c"
+        },
+        "friends-mouse/word-8": {
+          "definition": "41ce6ec3388efb5bf6e0e196594b7455142f65b5d8327b0eb7138617f44a0805",
+          "before": "2bf8282f4b1276482163559ad1fe5e9e379eeb8d176500d1996416fd1984a921",
+          "after": "357e22dc6b1f5b3f53e360cd00b1ec5d203aa7dac4470b53df3b9bcfa5880096"
+        },
+        "friends-mouse/word-9": {
+          "definition": "37163d8c93722f9fdb5c77f6ab00b6eb4493808570a7468456b627b8e5ccfcc0",
+          "before": "1bcc40f03d1e33cafab13e9b3f78df4f1881dcf7b4230392535d819826f648bc",
+          "after": "2169c27650c39b4809221dace9bb52cf129280cd283085f18b98d756c4a2f15b"
+        },
+        "friends-mouse/word-10": {
+          "definition": "9dd5474a0972d1abbf8c953ae56d426ebba7fbcb69070d03452bbe7cbc6b6fc5",
+          "before": "9f85d5516bd1f091caaa682025ecf6c3ea43d1ca78803c271a73b4917359003f",
+          "after": "aa85b747eb53c6bc34e62cbe2a21e7548d34cc6f653c8a29ff3e3228e9b5ea3f"
+        },
+        "friends-mouse/word-11": {
+          "definition": "a5addf4eaee73abb5a7520153bc46e58ca14156a4b1bee560701f1b06e956956",
+          "before": "471e439009381ab61fcac1f5251988307e8626f07a8f7e21c04b731f7c36e637",
+          "after": "e2faec1e531ec1b470ea7c24a752027814617eeaa5a040419f48b65204ecbee2"
+        },
+        "friends-mouse/word-12": {
+          "definition": "0c7b77cb30fa4ed07512f5c9ae54438835b42c584fdbf3a18418e279f6fef6bc",
+          "before": "7e7fa0c40e93afb7afd02ef99094d6f2fa8f2fc44bbbbb164743279a4556f428",
+          "after": "c63d952302146ce3e385d913f0f20bc94ec93eb725a2a97ae801a3ad2e79ea7e"
+        },
+        "friends-mouse/word-13": {
+          "definition": "c48319747f89b5870a1fea33de3489f9272c8c7d5de92b672b4ca9be3e1ea367",
+          "before": "a8e9fb9f31ae3d2a1fb71ab88af4b5879da7112d8aff2a659ba5bb7cc9a81319",
+          "after": "5528778da255c3b2072c45e038586a52a4599ee7234a7bb1ef81b6d011bf88b4"
+        },
+        "friends-mouse/word-14": {
+          "definition": "e509220e948d053f6ec86357bf707c9dc82627a046f80928074f6fef77c0ed61",
+          "before": "405570439b56ca333192e8fc77e2db1248ac8795c3bbfda46be8635702bb6c25",
+          "after": "3b9fa226223d37993d5f26b9c13c7fc093eb17e96f196c789f651de3d9db73eb"
+        },
+        "friends-mouse/word-15": {
+          "definition": "14fb12af7a17535cca2e4255cdc6bae1cead2d7dc2fd97f5c7ef1d584d4eced9",
+          "before": "ca8b0f8e5145dcd4facb7bc95c59024c20f166a7d86ebe31ed2434a11867d3ce",
+          "after": "06ababde3ec8863f15837240eab0f1c9ff045bcc3fa1d59ba09b06f24862de67"
+        },
+        "friends-mouse/word-16": {
+          "definition": "ccbfdfcf26e977f8ff6f344530223ed81697612257702efcd3c96f5d2d6d2649",
+          "before": "ffe6f25edcdcb18e8325297b70fd30df450f3ec030b93e5562875fb3c9507edc",
+          "after": "c9086b5506267c3dccf3f2a91adc4ea7fc7b0b34c7c0480df1fb13debf0342e5"
+        },
+        "friends-mouse/word-17": {
+          "definition": "7deffe78c472132e0103a9616f2915f44cbf6e0ffb9e4cb463743e308a5469ec",
+          "before": "4abeba557db793c19cf4c3241bf8636674389b21924ed858976783e81bc32ee1",
+          "after": "f2ba7c3c55f9e0958e42d529b5f9fdfb3e96399fe5e75ada8e7687f7faeaf11e"
+        },
+        "friends-mouse/word-18": {
+          "definition": "4ecc8ea38ca5501dc7d3b4f4d9ce5841cd3448d1040c8fd01a23e2b7e891f81a",
+          "before": "816fd9b8f21979b88d8ceb493b3b0abf9abb9d4c095948617e449c61b5016899",
+          "after": "d4717d1c54e6f3b6301e89abeddc7e0396969033cbf1a3e4506099c8684f51b0"
+        },
+        "friends-mouse/word-19": {
+          "definition": "af6ba9b0a9cc1d99aa2c5ffea73f01be60d99b3eea72a937b91c6c399df1e798",
+          "before": "4f293697db03e9f4bd099d295ff69ea87e880272190d0f0f4551923f04e9b997",
+          "after": "09bb3ce63ed531ef850c860870bf47abd286e5b6f45078b465f978ac593ad6c9"
+        },
+        "friends-mouse/word-20": {
+          "definition": "c2c257d505a7bf9cc166d8e9da9745ac4aae0ae32ae3d6d12a38dd3a66bb785b",
+          "before": "49ef9b52b5b2206e0f01d60a2e2ff101d6ccc7011ad25fe9501dfc94bee47410",
+          "after": "eb11d0ad7dfb725682abed80a54b4145dad5a784e74320ea00363f0564e87ccc"
+        },
+        "friends-mouse/word-21": {
+          "definition": "3d5d3eab6d4870891e8ff3c2de84fa1e148545c740c223da6ae0758260df09c4",
+          "before": "7ca8f8b0930997f5fd155ba4e1d36e34b4e7c2b546bac9dcfc03cdccc1b52bf2",
+          "after": "ff051f0a4732bd338094fca00bca7624163a19d92ad51993a8902940e235493d"
+        },
+        "friends-mouse/word-22": {
+          "definition": "2e08db467e682adaa359fa0b4a33f46184a9f433c3773d38b83cf42fa1e81ed5",
+          "before": "7082452aa998a19c377572847b92da1f9202f1fb416755cab2ff6b8b623bb473",
+          "after": "eb1557e0e42f15b92d825371dcc829adeb147f9fa05fd2f4d7c8f5976e5a8d32"
+        },
+        "friends-mouse/word-23": {
+          "definition": "85cced6314dddb5e7d6632e80d0c173e3540e8787e091fd82c355ced5b06ec3e",
+          "before": "0a09f2930b256b92e592f52a2ea9a50237b6a77df8b7274b792ff2603113564e",
+          "after": "a20f3a25a3be3f092405fb2661e7a43b45ad7da1a0c26897f557e87a4b34f5d7"
+        },
+        "friends-mouse/word-24": {
+          "definition": "93b915eee8e2782e2838123abd98f8d44e47ce7d5ac5c5d81d02c49728fb0219",
+          "before": "ac5f399257f4413902e9453c2e7137d81b2db8664813913a9c1012637b50ef6b",
+          "after": "49aea3318fb73c1932f5bff654099cc020507ac58f82ca2c299e73c2f89eaa9d"
+        },
+        "friends-mouse/friends-frog-animal-0": {
+          "definition": "a15125ae6d93c79b705f0f00f0f97c33504425cd9b23a155e05f85e5a85f4007",
+          "before": "5c6126e287574ad52876c0af449944b15be4e91a9ecc0ea67178cc07c07b9d9d",
+          "after": "6ba19914ceb5ffc4048cb16054234406d5f838598b6bddc3a3480f5dc24858c0"
+        },
+        "friends-mouse/friends-frog-animal-1": {
+          "definition": "b78432b73485c6e8b84040f033f4045a09a5cdf45be3d1c51accbcf83417fe12",
+          "before": "92efc3cdcbc662c08270d6790514f2089b6eae8f3a41f963215b7095f9335d46",
+          "after": "a901ded0e6070a3244cc694202d125f53616497dff0515ba9063a94b12684efe"
+        },
+        "friends-mouse/friends-frog-animal-2": {
+          "definition": "4f2ca1968b3657f1c5b10c1bb2d30d5cf7ddd8c5161fa0ebc57536ce267e467c",
+          "before": "947bac36ca33ebaca1eefdec05dce22a944a6363de365faf6ad5cc050219f1c5",
+          "after": "0bf6073e7e3464e4e919e0580969771ec298b077211200f55b3e1f2f960494b4"
+        },
+        "friends-mouse/friends-frog-animal-3": {
+          "definition": "e71105c91064ee7f65bf10e5278a20a4b04f13a795d18f3879cfd6ba5c818bd7",
+          "before": "d8fc58797e56645613877a9db9f5e6f15786d12744c0957708dfe1d2bfa9fdc6",
+          "after": "accb8920aa4fd5e999e93a1e2d6dd066ba7336b82b4c24978f2a25424d040347"
+        },
+        "friends-mouse/friends-frog-animal-4": {
+          "definition": "e596d7896c136c165ebde271d5e2f347b15ec5e6f10936fc643a0f60b4888fa4",
+          "before": "96efcf1d42d89cae5f12736efeb03afe6051576a46643405fc168659f3334021",
+          "after": "a4a0d9ba04314616c442cc4487e01df7c5700ad754d3c71921c5b442ed7f9a9d"
+        },
+        "friends-mouse/friends-frog-animal-5": {
+          "definition": "96155b042747d0eadb16abebf27b5fbe4a251d906a1ff26b7f84fc72b3224430",
+          "before": "596ef96fddaa595b4b3070acc453c7c8c7f36e46f2378aa2d56b155221d642d9",
+          "after": "efb36312114db19e0f5c9248b9a0632ebad15e97343f5fa4dea38295a136cbf4"
+        },
+        "friends-mouse/friends-frog-animal-6": {
+          "definition": "fd24a7a629c38aa81bb3114cbaaf2a78833f4ca426d562f329c4a792be9453bc",
+          "before": "1a2da76f2be8b97ccb4914ecf200aded44b0b2f7d395d7fa6112c1fc34b74ab8",
+          "after": "92344e4c01e62229d69634f3c2be80608c288053362c7d20bafb993fdb64fac9"
+        },
+        "friends-mouse/friends-frog-animal-7": {
+          "definition": "1137285f643cde8013675408e864597d6ebcb02a9d49973b9db5063d6bdaac16",
+          "before": "158dfb85a32ff0a5f0cdbfeac76713d23baf170a23147d93f2f4dde8d3c249e4",
+          "after": "0e6b3e8be21953af154bf1726bd6dff22173abf149880c685fac31afa79a98cf"
+        },
+        "friends-mouse/friends-frog-animal-8": {
+          "definition": "11e496703d4efa9425ab5f3b8c2d389a4fb07c85d61be9f0388495b487307175",
+          "before": "78d133da131793f46df7334161023fa4d6e0f3975f636caf419b93ebd54f4e08",
+          "after": "8b1d7adb036cc7644f5e1556a702d1c9e6274d543dc829f352be18106b29485b"
+        },
+        "friends-mouse/friends-frog-animal-9": {
+          "definition": "da5db625a4e391a492a3df974dd99529913486fec87ad1ee2d1358ca7d2b9142",
+          "before": "fab945d10f3994f9ab8c7f8cf585e3a15468c4a31294d097f738bca968f014c6",
+          "after": "8ff757cc37f07919b788c4c5cd7c00bc43ada22b87d01c5c824285ba8af923e5"
+        },
+        "friends-mouse/friends-frog-animal-10": {
+          "definition": "1f7e915fa92e56de61ab4b440e2551aa45022e9fe6ae467847d52e21e3183398",
+          "before": "01457a4aad4b916f269adf2d513ef8dbdde18ef0a81d658b1099c217bae62126",
+          "after": "ed21319d30d86a1721a3a76e70147f28d2268e1bce7a87447a6b46a7ef3aea7f"
+        },
+        "friends-mouse/friends-frog-animal-11": {
+          "definition": "98051a63fd57f68fba8436f003b2285739a6f1d857a476ac139dae0a89018d33",
+          "before": "e25859657eb7f698a3ab27d843b6cc503d311d84959acd73ee5fe8b5800d3b2b",
+          "after": "4ac0fe3d18a25c2d0e9b7f5204274a24d535df2e1a5846ce8dbb353186692a88"
+        },
+        "friends-mouse/friends-frog-animal-12": {
+          "definition": "816887a993fdabc2d41e56b0b254b4914cc92a5b8f7930e1d827e330ddc5702e",
+          "before": "29b11b31047a3d7d3e1262722da1a854b82877aaa7b3a3646ec1aec40f4c6a20",
+          "after": "3cafcca2f0719e8a6cff01557fbe55e812f520ae5e851b6f573ad412126ee1d0"
+        },
+        "friends-mouse/friends-frog-animal-13": {
+          "definition": "0fce45a1f63ea885ad6481565cc5649f44d35be825fa0d75718ccff28e7c02de",
+          "before": "7359f8ce856a7323095ee8990cbe017bc8fa6844b3470f4997cb1092d131f64f",
+          "after": "e92400cd48e934de14e2cb3cef5e3f31827348973c2a3a2e34a0319bb4a735e4"
+        },
+        "friends-mouse/friends-frog-animal-14": {
+          "definition": "8740419a06aed7323e68195816590c9f4cd0c640f00846ad5e16c3989a1ee3bf",
+          "before": "ed143fb13944e3ee003d79760fe332b8fe7c9a7ea337a2c4971ad6dacd17aeb2",
+          "after": "b5db4dbc0d89794b68c5ce3ab99f550322e5ce264cb142d737c0e22bd4b73b89"
+        },
+        "friends-mouse/friends-frog-animal-15": {
+          "definition": "825fac67fcb4928c88b608a659e233921ca624242b5bae798998f0c595da2d16",
+          "before": "a1db6e4d9cd62686b2fabd76f6e096978befabc545d008549bfb177d415eb1b7",
+          "after": "9fb89317273f5a6f07b688d4892dd92ff5286c75d7315d17c675f6ba7e22c5d4"
+        },
+        "friends-mouse/friends-frog-animal-16": {
+          "definition": "75fc00c898ca40eeb7d4a656fd69730619beb0d738f26fccb78b2f5d57d962a0",
+          "before": "64bf3a8d6bb170e97b7ab6a9e21ec8de8e74888e7914b32245778229772c3223",
+          "after": "6d11714b47a833f1c2d29eceb09e028610b59e0914ba268857e4f47eb7981b2f"
+        },
+        "friends-mouse/friends-frog-animal-17": {
+          "definition": "4fdc966b94a1e5e7871d2a8ebaa2ae7d60f53c5d4e0762a02ace4fa5078cbcb0",
+          "before": "6c518930a504ba80b19947155e3c762b73c9959596442bc0758692437a6809a1",
+          "after": "dbc8ade217d065ea8d7fb0a7320e97c7d8d33a3ad6e8ce40f3b0cadd830b55b3"
+        },
+        "friends-mouse/friends-frog-animal-18": {
+          "definition": "07669f03b428bdb6881d44ba274bd8fba9575f8eaed30b22305126c9538f1de4",
+          "before": "69421137afbd8efbe667ec04e2588456a61357feb9243efe7b39f9bba27e05e7",
+          "after": "fdfb9a807f0bc49c49045b0d239f6483186d8599d354d98e69cd34b603a0542e"
+        },
+        "friends-mouse/friends-frog-animal-19": {
+          "definition": "7c594523006611babd727c052c5e6e93983553b4aeee459364de3becb8931bb0",
+          "before": "c3e257c821cde9cb7b6a6d05095e49b8429d8f212420529f0d138e63c00430ca",
+          "after": "1c485162c6a6c9cef24fb5131f7d469a232c13e5571aaaa3e1f59a22fcd6e401"
+        },
+        "friends-mouse/friends-frog-animal-20": {
+          "definition": "0233cf64d9c8b167135f511401e687ce365724b24d58462be28b50d801a290c6",
+          "before": "82c45c994efdb138ff5c1b9f3dcbe968aa0bd580f8c3219f7168bef1575d234d",
+          "after": "3b9673e51d5c8d5ecdcdeba2cb1f116181acb93607ded9701829ad9cb1141610"
+        },
+        "friends-mouse/friends-frog-animal-21": {
+          "definition": "1f6a2022603802b1534f810ae68df6620423a58dfc3b7bbdd40f8eb8f3b7ce71",
+          "before": "ae249f92fc9ae1410cfe2cfe594808564903669fda68e273f2b97169a52dbfb9",
+          "after": "c81451860bc1f2d630bea1ad8c8010e3e1ea6b18b97864a3cda1396a8ca34ca9"
+        },
+        "friends-mouse/friends-frog-animal-22": {
+          "definition": "69c0a4c6ae2b979695cd42c6bbe9c7401a9f909e6b6e287c70bcebd85b6c6332",
+          "before": "9ff6c2a8600f017f6b32d26d4bb1b375e91c9a7e933cbf689c8cb0a7c25a00af",
+          "after": "48337ba6b9605d7818cecbd1d94e143667458bf4d0ea6ad3b5c5fd052adf585e"
+        },
+        "friends-mouse/friends-frog-animal-23": {
+          "definition": "408f85382dd1e96541e25243311543d01bf63ef7eacc224fdd60d80432e266b3",
+          "before": "2eda415ae37fb6ea3202ec67ad329b6d45969b18759af1c2a720a1392654d2b2",
+          "after": "b074525443617770616f1d8085e8933b63e31e8b1588cfcb1fa2b9823ed030e1"
+        },
+        "friends-mouse/friends-frog-animal-24": {
+          "definition": "c4a4c9c92b830c5e71aa85aa8b77b6d4bd0759d8282990c5029ce00b3e33f0dd",
+          "before": "1731aafaecb6c04f4db5f5f166302c3656e9348edc3cb5597bde8fac617bc044",
+          "after": "edb72ccc7b03c01cb3fb4565fdc3b5109f0d25ce45cc7eb22b8f03902b53a9a1"
+        },
+        "friends-mouse/read-word-word-1": {
+          "definition": "53cfb5345f5f8e12238d232720c37e143031153da4208eaa3c16f41969d102d0",
+          "before": "0779564323932bdab18cb3e8fe7d0c1d5f6b749ab60f6893b85d62c8638a05fa",
+          "after": "0eb688d6499761c0486ab5d8819d324eb171baebc0b21bab0b30700b37f6bf3a"
+        },
+        "friends-mouse/read-word-word-3": {
+          "definition": "4fcea23ed8dd6b86900224e1933ddab23cfb39e9c85526f6d2a627dd223e843a",
+          "before": "ad344711aeeb1dcd633f11fe17db6ede87648e78364f5b4fcf6a8a3d0dab9ed1",
+          "after": "b4d082cda44cc0964eebea07d47ef814f7367b80c3cc60fb4fcc927647552bd5"
+        },
+        "friends-mouse/read-word-word-5": {
+          "definition": "ce842cf9a1d2830ab9f61e970b6396dac9416633002ad038afb684920674ff10",
+          "before": "93c3760eeeb5add8860a2d45d23e5f7186de06460ca5b4590348a3b1d3309d88",
+          "after": "ce6deccf11277aec9a934bb8ee72ae714da97cb59ed3c4cc8d9b8dc46e27dc0b"
+        },
+        "friends-mouse/read-word-word-6": {
+          "definition": "e063878bbaaffe0ad1823902990133c48c67d180665bfd9b0f6279a5bca895d3",
+          "before": "f9be0b12d005e8e48786cd24c02357c810ffe7662bf9b1d942b32a4a034433f7",
+          "after": "f321c71ae576933d0c4ef81558b9dd0a28995f16edb81b97e2c42cfd9791a3ec"
+        },
+        "friends-mouse/read-word-word-7": {
+          "definition": "6da8aa976dee146ada42f094a2c2cbeb98b5b2c8c7a8b74ea4729d4462bbf5cf",
+          "before": "50726d44ea10ad0a99bee3b09ded3abf44cf6410c67a6ed915e36ca8950405cd",
+          "after": "6f4a41c958d3427674308ef4e37ee900ed2b7086c53d6c884055db04fe96fe9d"
+        },
+        "friends-mouse/read-word-word-8": {
+          "definition": "0aea302d9732d9323f3fb0ce2369275f7e52b9c51641b6b1e7311dd7af648719",
+          "before": "2b61bae0b0c758989760cd43b1cf63acf5490de1e1b6764fac2db622b8e635f5",
+          "after": "a052a14c1544e6cdb4fab90f7c67877689b02a9fb3efd443ab13f0bd70ee4463"
+        },
+        "friends-mouse/read-word-word-10": {
+          "definition": "b2eaaa6696db6b50a7be65364ed84dd6e27f334e360c440e6040560cb4444003",
+          "before": "1c8e2ed1a6095da37ddd9334e31fdf574a9a002968e78642bd7b1bb1d946a4ae",
+          "after": "29585d04758391a6f4be1ed08cb8ef19aa89e54d98c8cbcd50fab8684d545a4b"
+        },
+        "friends-mouse/read-word-word-14": {
+          "definition": "b44a9bc502915407d1bb09ba98899fbd1b0451f6003cddb1ea4419a3225a3f48",
+          "before": "85a389fa02a72de7690d2df8da694aaf22c9e5aedd9efa496acd996fc2a5580f",
+          "after": "2633141029fd8859275b171036634253f5134f402060ff07d19453475a072f8d"
+        },
+        "friends-mouse/read-word-word-17": {
+          "definition": "4981c5e5c60a8e95fe552f10b845e581a000dc44fecb02441c45e6a8b72770fb",
+          "before": "6ec3c774156bcc9f467f23539d73a0b94f7583791be33d22f39e0caa2b35918d",
+          "after": "578ed783bd969cf7cc3f8b42e27b1c16fed0dc6eb095775b401496702157ea09"
+        },
+        "friends-mouse/read-word-word-18": {
+          "definition": "f2a6f2553f38706685bbb6493fc6040f2fe742fb65862c4f28552b74b0caa022",
+          "before": "084833797a4ac644e826eda7c5eeb86358b3919dcae6da30e72d0b240a08f39b",
+          "after": "97ac52cbc3217ebdb5a1a30179ea06c1e1fed09d9ffdef31432071aa3dc07504"
+        },
+        "friends-mouse/read-word-word-19": {
+          "definition": "8ab410a68d19fa0a9210d36d47d25ea0fcdcaf238eec659ee4ec9e8e6075da54",
+          "before": "295f941b9e12bd4d45a08ac58fab9e79ac9f69a1b84042598cc6be449157649c",
+          "after": "5ba24d2a455f6ddecc15c964b633fd4e7efd1c7208033d79f5054f1a6c379f81"
+        },
+        "friends-mouse/read-word-word-20": {
+          "definition": "3153fb533d0f2a8fc84ea806eb19be2e037b5a0ad407c67d424231e3f9e00dc2",
+          "before": "1eb4bcb0052f291c8bbb8be07d89ca25836dd7be221588bf95fe05ada7cdedf0",
+          "after": "5e3f4bcff5b3a4bf8134fbed2138da2be05b28c7ef9273993248e9bdd84e5c2e"
+        },
+        "friends-mouse/read-word-word-22": {
+          "definition": "dbc2c7395829ce9dd3592e29d586aa0b04ade1d55668ca217ad0065ae9e5c5c4",
+          "before": "10f3e210f44e433d89fd6646e93d70ec996013581355241bb22ad6d09ec0a49a",
+          "after": "f3b5d7309d3b2379baf15d82e3b834d3704db212a6ad1cc8ccfb0efe5cf84571"
+        },
+        "friends-mouse/read-word-word-23": {
+          "definition": "bbce4119c92f7159c383799f5807d26d648214aac9688cbc612f12f5f96e4c04",
+          "before": "74e3c7294a40336b00323e63f305bfdb349502c1c721611d584aa0f6ef21aea1",
+          "after": "d75719de9e6c441b0eef4026903d8bf5b4378b7cf6704dc5afe9fc4187330f94"
+        },
+        "friends-mouse/read-word-word-24": {
+          "definition": "1a48f4ff5aebaad1f1b66ee87d42875064d347ab6b06d1efdcd897712bf295d5",
+          "before": "43ec851101b5ed7146f5f24d06cddbdcbc5032c7c26856c11bc59363165353d3",
+          "after": "35ceb204483bb1f1b4983f5f2caf5bb13b920135e52f40666c0096f942c0ba3b"
+        },
+        "friends-mouse/read-word-word-25": {
+          "definition": "b51a6d1b80c1e0a89f3cec99b0e7f4e1be4d6e5138eff4c57c7f10a3ed37d001",
+          "before": "0862d5beae92652082ff39cbe37ba174a8312ad22ab67e411dfd7e2e075084c5",
+          "after": "0339987b67295afa55ca9ee0e79ddaa7ee6a0f9e742423643308b0408167f2b1"
+        },
+        "friends-mouse/read-word-word-26": {
+          "definition": "d99a5dc897b96a7bef8bde74ea32933c7657cdd8fd0dff4e195e51fa055c74ca",
+          "before": "44bf0a313ed40f884d36233834441d9d85af22a2d68b6da371493a29903d152d",
+          "after": "e8a4a5dbaaaf7bf2e3a1abfed00efe5a1d1f7763157db4ad126465532a7729e7"
+        },
+        "friends-mouse/read-word-word-27": {
+          "definition": "51856c365dcb2f47c32f065265279ecb14bb7532e8e6113fd758dc6fbbbfc800",
+          "before": "c653bed5e16103b396de954296e401f9ec2bd2677a2e85ba5a79bce41260fc77",
+          "after": "68dd9613dc30e2584c2035fe7e0255a1bda1ba6306e4cc3dd616ba5ce034929c"
+        },
+        "friends-mouse/read-word-word-28": {
+          "definition": "ee8ceb396f51347db1ca05fac1389e3ccc05a61b1771bf0d64d43ae7a9d12bcb",
+          "before": "509ba359ae86a52042322c6f630c0342c6930aa9690eefebf6c498cac2259db2",
+          "after": "bce3d4b1732d738749c53e43fb53859fa0e5ba2436734c19d9f5c0ba2cac5875"
+        },
+        "friends-mouse/read-word-word-29": {
+          "definition": "48069bad2806008b5e6c0797596f47a8106cdd441d192e5891f2ab94b16e67de",
+          "before": "71ddad31c17c27ed771c2b468c7f0ceb79f36e45571e4fde6f4665da11ef28b6",
+          "after": "2ee3a1fc98625a45453d389c75d24371f55119fe712ddfeeb373d49ca415f19c"
+        },
+        "friends-mouse/read-word-word-30": {
+          "definition": "8c33042034cdfe80d78ab13a7e76152ee830b67190e849041f8db99b76a75f7d",
+          "before": "b3c5d7e7847892eb39c4de3c720554f7780818c436250b6aa1b00b924829cee4",
+          "after": "1c3e503b8526d38957fbe1f005372fc6eaf76e78442488d20ca65c529060c531"
+        },
+        "friends-mouse/read-word-word-31": {
+          "definition": "16c4d3b539f3efc49e252719c5a34abff05ce374bec2a95cfefc6e0fb349850b",
+          "before": "630d78ec318e4532259ef5b1eba3d60a4b613b9a74257d0d586d4bdef071566a",
+          "after": "f8c8b107d569a861a9005a0baae3a797a714f1efb47c1f72cbea2fda4a90b1ea"
+        },
+        "friends-mouse/read-word-word-32": {
+          "definition": "66832540fbdbe019e7890049b6006660e5e6f383ab0456ee7ec5085f87ab0ae4",
+          "before": "65084d5d7072467e2f5197cfd19c6c151c002bba638b8cd7942d5d6fee8ae96f",
+          "after": "b04819134058b02b646416f195b7a21a4162802cb0e639497235668a75615239"
+        },
+        "friends-mouse/read-word-word-33": {
+          "definition": "46a4c2539f28f3da953022e35a00349e512e5abfbe041b432ad9fc5aa02a39ad",
+          "before": "6628be43c749c34e01494dad2c57795246c6eb1c58f195f83f43b8a1573caaca",
+          "after": "71b2b40e2e2ba1397fda54f5d1262e4cc4105fc56eab119dd9016ce5027abf06"
+        }
+      }
     }
   ]
 }

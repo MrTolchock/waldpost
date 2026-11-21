@@ -27,7 +27,7 @@ On tablets, the task panel grows into the available page height and centres its 
 
 ## Vergleichsmuster für eine Rätselseite
 
-Der [Vergleichsbogen mit allen 24 Rätseln](evidence/raetselvergleich/README.md) zeigt die vollständigen Spielseiten im gleichen Massstab. Für einen neuen Vergleich die zweite Katalogaufgabe als erste Aufgabe einer isolierten Galerierunde bei 1080 × 810 CSS-Pixeln aufnehmen. Kopfzeile, Fortschritt und Seitenränder im Bild lassen.
+Der [Vergleichsbogen mit allen 23 Rätseln](evidence/raetselvergleich/README.md) zeigt die vollständigen Spielseiten im gleichen Massstab. Für einen neuen Vergleich die zweite Katalogaufgabe als erste Aufgabe einer isolierten Galerierunde bei 1080 × 810 CSS-Pixeln aufnehmen. Kopfzeile, Fortschritt und Seitenränder im Bild lassen.
 
 | Bereich | Gestaltungsregel |
 | --- | --- |
@@ -41,12 +41,12 @@ Der [Vergleichsbogen mit allen 24 Rätseln](evidence/raetselvergleich/README.md)
 
 | Rule | Every active puzzle |
 | --- | --- |
-| Identity | One stable puzzle ID, competence title (no separate decorative title/subtitle), host, explicit difficulty and bounded competence. Every letter friend has at least two thematically suitable Rätsel. See the [current assignments](../docs/RIDDLE-FRIENDS.md). A puzzle is not a difficulty ladder. |
+| Identity | One stable puzzle ID, competence title (no separate decorative title/subtitle), host, explicit difficulty and bounded competence. Every letter friend has a thematically suitable Rätsel. See the [current assignments](../docs/RIDDLE-FRIENDS.md). A puzzle is not a difficulty ladder. |
 | Pictures | Drawn woodland illustrations for scored subjects; the common painted cast for character identity. Exact SVG geometry, arrows and handwriting strokes where those are the subject. See the visual-style asset table. No emoji, stock-photo or text substitute for a missing picture. |
 | Page | Cream stitched Waldbuch paper, woodland clearing, matching wooden answer cards, Andika for scored text, one host portrait and five progress leaves. |
 | Round | A random sample of five distinct iterations from the finite, inspectable pool. Prefer items not in the last completed round. Keep the selected questions and partial work stable on return/reload. |
 | Pool | At least 25 explicit, stable iterations per puzzle. Full upper/lower alphabet including ÄÖÜ; numeral practice includes the complete 0–9 set in three illustrated quantity contexts. Iterations differ in content, configuration or required action, never only answer order or a random seed. |
-| Guidance | In child play, one optional “Spiel erklären” control explains the rule without reading a scored answer. No hint, demonstration, question-mark help, timed question or next-task button. Necessary reset and reinspection controls remain available. |
+| Guidance | In child play, one optional “Spiel erklären” control explains the rule without reading a scored answer. No hint, demonstration, question-mark help, timed question or next-task button. Children choose when to hide the four memory objects. They then identify the missing object from memory. |
 | Input | Finger, stylus and mouse as appropriate; keyboard-operable buttons, visible focus, readable labels and responsive phone/tablet layout. Wrong answers remain editable; no penalty or countdown. |
 | Sound | A quiet click for task/answer buttons, then distinct correct/retry feedback. Menus, navigation and adult review controls are silent. Respect Spielklänge mute. Speech only when requested. |
 | Progress | Correct answers use the shared soft green highlight without a check mark. They stay visible for 900 ms, then advance automatically. After five: the existing 2.2-second friend/leaf/flower celebration. Reduced motion uses a static wreath. |
@@ -56,7 +56,7 @@ Der [Vergleichsbogen mit allen 24 Rätseln](evidence/raetselvergleich/README.md)
 
 ## Content and competence
 
-Each iteration has an ID, readable label, complete question, correct answer/solution and an exact revision. All 24 current riddles are mapped individually in the [catalogue](../docs/PUZZLE-CATALOGUE.md); each has a GitHub-readable page listing every iteration and its competence. These are practice mappings, not certification of curriculum attainment. Memory enrichment has no invented curriculum code.
+Each iteration has an ID, readable label, complete question, correct answer/solution and an exact revision. All 23 current riddles are mapped individually in the [catalogue](../docs/PUZZLE-CATALOGUE.md); each has a GitHub-readable page listing every iteration and its competence. These are practice mappings, not certification of curriculum attainment. Memory enrichment has no invented curriculum code.
 
 Numeric bounds and reading prerequisites are explicit. Expanding variety must not silently expand difficulty: use different operand combinations, missing positions, routes, reflections and pictured word targets within the stated boundary. Any intentional difficulty change is a new review revision.
 

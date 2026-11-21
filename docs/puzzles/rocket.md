@@ -26,45 +26,45 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `rocket/5-1` | 5 insgesamt, 1 leuchten — Wie viele Glühwürmchen fehlen noch? | 4 |
-| `rocket/5-2` | 5 insgesamt, 2 leuchten — Wie viele Glühwürmchen fehlen noch? | 3 |
-| `rocket/5-3` | 5 insgesamt, 3 leuchten — Wie viele Glühwürmchen fehlen noch? | 2 |
-| `rocket/5-4` | 5 insgesamt, 4 leuchten — Wie viele Glühwürmchen fehlen noch? | 1 |
-| `rocket/6-1` | 6 insgesamt, 1 leuchten — Wie viele Glühwürmchen fehlen noch? | 5 |
-| `rocket/6-2` | 6 insgesamt, 2 leuchten — Wie viele Glühwürmchen fehlen noch? | 4 |
-| `rocket/6-3` | 6 insgesamt, 3 leuchten — Wie viele Glühwürmchen fehlen noch? | 3 |
-| `rocket/6-4` | 6 insgesamt, 4 leuchten — Wie viele Glühwürmchen fehlen noch? | 2 |
-| `rocket/6-5` | 6 insgesamt, 5 leuchten — Wie viele Glühwürmchen fehlen noch? | 1 |
-| `rocket/7-1` | 7 insgesamt, 1 leuchten — Wie viele Glühwürmchen fehlen noch? | 6 |
-| `rocket/7-2` | 7 insgesamt, 2 leuchten — Wie viele Glühwürmchen fehlen noch? | 5 |
-| `rocket/7-3` | 7 insgesamt, 3 leuchten — Wie viele Glühwürmchen fehlen noch? | 4 |
-| `rocket/7-4` | 7 insgesamt, 4 leuchten — Wie viele Glühwürmchen fehlen noch? | 3 |
-| `rocket/7-5` | 7 insgesamt, 5 leuchten — Wie viele Glühwürmchen fehlen noch? | 2 |
-| `rocket/7-6` | 7 insgesamt, 6 leuchten — Wie viele Glühwürmchen fehlen noch? | 1 |
-| `rocket/8-1` | 8 insgesamt, 1 leuchten — Wie viele Glühwürmchen fehlen noch? | 7 |
-| `rocket/8-2` | 8 insgesamt, 2 leuchten — Wie viele Glühwürmchen fehlen noch? | 6 |
-| `rocket/8-3` | 8 insgesamt, 3 leuchten — Wie viele Glühwürmchen fehlen noch? | 5 |
-| `rocket/8-4` | 8 insgesamt, 4 leuchten — Wie viele Glühwürmchen fehlen noch? | 4 |
-| `rocket/8-5` | 8 insgesamt, 5 leuchten — Wie viele Glühwürmchen fehlen noch? | 3 |
-| `rocket/8-6` | 8 insgesamt, 6 leuchten — Wie viele Glühwürmchen fehlen noch? | 2 |
-| `rocket/8-7` | 8 insgesamt, 7 leuchten — Wie viele Glühwürmchen fehlen noch? | 1 |
-| `rocket/9-1` | 9 insgesamt, 1 leuchten — Wie viele Glühwürmchen fehlen noch? | 8 |
-| `rocket/9-2` | 9 insgesamt, 2 leuchten — Wie viele Glühwürmchen fehlen noch? | 7 |
-| `rocket/9-3` | 9 insgesamt, 3 leuchten — Wie viele Glühwürmchen fehlen noch? | 6 |
-| `rocket/9-4` | 9 insgesamt, 4 leuchten — Wie viele Glühwürmchen fehlen noch? | 5 |
-| `rocket/9-5` | 9 insgesamt, 5 leuchten — Wie viele Glühwürmchen fehlen noch? | 4 |
-| `rocket/9-6` | 9 insgesamt, 6 leuchten — Wie viele Glühwürmchen fehlen noch? | 3 |
-| `rocket/9-7` | 9 insgesamt, 7 leuchten — Wie viele Glühwürmchen fehlen noch? | 2 |
-| `rocket/9-8` | 9 insgesamt, 8 leuchten — Wie viele Glühwürmchen fehlen noch? | 1 |
-| `rocket/10-1` | 10 insgesamt, 1 leuchten — Wie viele Glühwürmchen fehlen noch? | 9 |
-| `rocket/10-2` | 10 insgesamt, 2 leuchten — Wie viele Glühwürmchen fehlen noch? | 8 |
-| `rocket/10-3` | 10 insgesamt, 3 leuchten — Wie viele Glühwürmchen fehlen noch? | 7 |
-| `rocket/10-4` | 10 insgesamt, 4 leuchten — Wie viele Glühwürmchen fehlen noch? | 6 |
-| `rocket/10-5` | 10 insgesamt, 5 leuchten — Wie viele Glühwürmchen fehlen noch? | 5 |
-| `rocket/10-6` | 10 insgesamt, 6 leuchten — Wie viele Glühwürmchen fehlen noch? | 4 |
-| `rocket/10-7` | 10 insgesamt, 7 leuchten — Wie viele Glühwürmchen fehlen noch? | 3 |
-| `rocket/10-8` | 10 insgesamt, 8 leuchten — Wie viele Glühwürmchen fehlen noch? | 2 |
-| `rocket/10-9` | 10 insgesamt, 9 leuchten — Wie viele Glühwürmchen fehlen noch? | 1 |
+| `rocket/5-1` | 5 insgesamt, 1 besetzt — Wie viele Fliegen fehlen noch? | 4 |
+| `rocket/5-2` | 5 insgesamt, 2 besetzt — Wie viele Fliegen fehlen noch? | 3 |
+| `rocket/5-3` | 5 insgesamt, 3 besetzt — Wie viele Fliegen fehlen noch? | 2 |
+| `rocket/5-4` | 5 insgesamt, 4 besetzt — Wie viele Fliegen fehlen noch? | 1 |
+| `rocket/6-1` | 6 insgesamt, 1 besetzt — Wie viele Fliegen fehlen noch? | 5 |
+| `rocket/6-2` | 6 insgesamt, 2 besetzt — Wie viele Fliegen fehlen noch? | 4 |
+| `rocket/6-3` | 6 insgesamt, 3 besetzt — Wie viele Fliegen fehlen noch? | 3 |
+| `rocket/6-4` | 6 insgesamt, 4 besetzt — Wie viele Fliegen fehlen noch? | 2 |
+| `rocket/6-5` | 6 insgesamt, 5 besetzt — Wie viele Fliegen fehlen noch? | 1 |
+| `rocket/7-1` | 7 insgesamt, 1 besetzt — Wie viele Fliegen fehlen noch? | 6 |
+| `rocket/7-2` | 7 insgesamt, 2 besetzt — Wie viele Fliegen fehlen noch? | 5 |
+| `rocket/7-3` | 7 insgesamt, 3 besetzt — Wie viele Fliegen fehlen noch? | 4 |
+| `rocket/7-4` | 7 insgesamt, 4 besetzt — Wie viele Fliegen fehlen noch? | 3 |
+| `rocket/7-5` | 7 insgesamt, 5 besetzt — Wie viele Fliegen fehlen noch? | 2 |
+| `rocket/7-6` | 7 insgesamt, 6 besetzt — Wie viele Fliegen fehlen noch? | 1 |
+| `rocket/8-1` | 8 insgesamt, 1 besetzt — Wie viele Fliegen fehlen noch? | 7 |
+| `rocket/8-2` | 8 insgesamt, 2 besetzt — Wie viele Fliegen fehlen noch? | 6 |
+| `rocket/8-3` | 8 insgesamt, 3 besetzt — Wie viele Fliegen fehlen noch? | 5 |
+| `rocket/8-4` | 8 insgesamt, 4 besetzt — Wie viele Fliegen fehlen noch? | 4 |
+| `rocket/8-5` | 8 insgesamt, 5 besetzt — Wie viele Fliegen fehlen noch? | 3 |
+| `rocket/8-6` | 8 insgesamt, 6 besetzt — Wie viele Fliegen fehlen noch? | 2 |
+| `rocket/8-7` | 8 insgesamt, 7 besetzt — Wie viele Fliegen fehlen noch? | 1 |
+| `rocket/9-1` | 9 insgesamt, 1 besetzt — Wie viele Fliegen fehlen noch? | 8 |
+| `rocket/9-2` | 9 insgesamt, 2 besetzt — Wie viele Fliegen fehlen noch? | 7 |
+| `rocket/9-3` | 9 insgesamt, 3 besetzt — Wie viele Fliegen fehlen noch? | 6 |
+| `rocket/9-4` | 9 insgesamt, 4 besetzt — Wie viele Fliegen fehlen noch? | 5 |
+| `rocket/9-5` | 9 insgesamt, 5 besetzt — Wie viele Fliegen fehlen noch? | 4 |
+| `rocket/9-6` | 9 insgesamt, 6 besetzt — Wie viele Fliegen fehlen noch? | 3 |
+| `rocket/9-7` | 9 insgesamt, 7 besetzt — Wie viele Fliegen fehlen noch? | 2 |
+| `rocket/9-8` | 9 insgesamt, 8 besetzt — Wie viele Fliegen fehlen noch? | 1 |
+| `rocket/10-1` | 10 insgesamt, 1 besetzt — Wie viele Fliegen fehlen noch? | 9 |
+| `rocket/10-2` | 10 insgesamt, 2 besetzt — Wie viele Fliegen fehlen noch? | 8 |
+| `rocket/10-3` | 10 insgesamt, 3 besetzt — Wie viele Fliegen fehlen noch? | 7 |
+| `rocket/10-4` | 10 insgesamt, 4 besetzt — Wie viele Fliegen fehlen noch? | 6 |
+| `rocket/10-5` | 10 insgesamt, 5 besetzt — Wie viele Fliegen fehlen noch? | 5 |
+| `rocket/10-6` | 10 insgesamt, 6 besetzt — Wie viele Fliegen fehlen noch? | 4 |
+| `rocket/10-7` | 10 insgesamt, 7 besetzt — Wie viele Fliegen fehlen noch? | 3 |
+| `rocket/10-8` | 10 insgesamt, 8 besetzt — Wie viele Fliegen fehlen noch? | 2 |
+| `rocket/10-9` | 10 insgesamt, 9 besetzt — Wie viele Fliegen fehlen noch? | 1 |
 
 ## Exact definitions
 
@@ -74,10 +74,10 @@ These definitions are the same finite data used by the game and review previews.
 [
   {
     "id": "rocket/5-1",
-    "label": "5 insgesamt, 1 leuchten",
+    "label": "5 insgesamt, 1 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 5,
       "filled": 1,
       "answer": 4,
@@ -90,10 +90,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/5-2",
-    "label": "5 insgesamt, 2 leuchten",
+    "label": "5 insgesamt, 2 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 5,
       "filled": 2,
       "answer": 3,
@@ -106,10 +106,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/5-3",
-    "label": "5 insgesamt, 3 leuchten",
+    "label": "5 insgesamt, 3 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 5,
       "filled": 3,
       "answer": 2,
@@ -122,10 +122,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/5-4",
-    "label": "5 insgesamt, 4 leuchten",
+    "label": "5 insgesamt, 4 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 5,
       "filled": 4,
       "answer": 1,
@@ -138,10 +138,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/6-1",
-    "label": "6 insgesamt, 1 leuchten",
+    "label": "6 insgesamt, 1 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 6,
       "filled": 1,
       "answer": 5,
@@ -154,10 +154,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/6-2",
-    "label": "6 insgesamt, 2 leuchten",
+    "label": "6 insgesamt, 2 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 6,
       "filled": 2,
       "answer": 4,
@@ -170,10 +170,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/6-3",
-    "label": "6 insgesamt, 3 leuchten",
+    "label": "6 insgesamt, 3 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 6,
       "filled": 3,
       "answer": 3,
@@ -186,10 +186,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/6-4",
-    "label": "6 insgesamt, 4 leuchten",
+    "label": "6 insgesamt, 4 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 6,
       "filled": 4,
       "answer": 2,
@@ -202,10 +202,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/6-5",
-    "label": "6 insgesamt, 5 leuchten",
+    "label": "6 insgesamt, 5 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 6,
       "filled": 5,
       "answer": 1,
@@ -218,10 +218,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/7-1",
-    "label": "7 insgesamt, 1 leuchten",
+    "label": "7 insgesamt, 1 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 7,
       "filled": 1,
       "answer": 6,
@@ -234,10 +234,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/7-2",
-    "label": "7 insgesamt, 2 leuchten",
+    "label": "7 insgesamt, 2 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 7,
       "filled": 2,
       "answer": 5,
@@ -250,10 +250,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/7-3",
-    "label": "7 insgesamt, 3 leuchten",
+    "label": "7 insgesamt, 3 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 7,
       "filled": 3,
       "answer": 4,
@@ -266,10 +266,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/7-4",
-    "label": "7 insgesamt, 4 leuchten",
+    "label": "7 insgesamt, 4 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 7,
       "filled": 4,
       "answer": 3,
@@ -282,10 +282,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/7-5",
-    "label": "7 insgesamt, 5 leuchten",
+    "label": "7 insgesamt, 5 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 7,
       "filled": 5,
       "answer": 2,
@@ -298,10 +298,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/7-6",
-    "label": "7 insgesamt, 6 leuchten",
+    "label": "7 insgesamt, 6 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 7,
       "filled": 6,
       "answer": 1,
@@ -314,10 +314,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-1",
-    "label": "8 insgesamt, 1 leuchten",
+    "label": "8 insgesamt, 1 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 1,
       "answer": 7,
@@ -330,10 +330,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-2",
-    "label": "8 insgesamt, 2 leuchten",
+    "label": "8 insgesamt, 2 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 2,
       "answer": 6,
@@ -346,10 +346,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-3",
-    "label": "8 insgesamt, 3 leuchten",
+    "label": "8 insgesamt, 3 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 3,
       "answer": 5,
@@ -362,10 +362,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-4",
-    "label": "8 insgesamt, 4 leuchten",
+    "label": "8 insgesamt, 4 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 4,
       "answer": 4,
@@ -378,10 +378,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-5",
-    "label": "8 insgesamt, 5 leuchten",
+    "label": "8 insgesamt, 5 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 5,
       "answer": 3,
@@ -394,10 +394,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-6",
-    "label": "8 insgesamt, 6 leuchten",
+    "label": "8 insgesamt, 6 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 6,
       "answer": 2,
@@ -410,10 +410,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/8-7",
-    "label": "8 insgesamt, 7 leuchten",
+    "label": "8 insgesamt, 7 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 8,
       "filled": 7,
       "answer": 1,
@@ -426,10 +426,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-1",
-    "label": "9 insgesamt, 1 leuchten",
+    "label": "9 insgesamt, 1 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 1,
       "answer": 8,
@@ -442,10 +442,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-2",
-    "label": "9 insgesamt, 2 leuchten",
+    "label": "9 insgesamt, 2 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 2,
       "answer": 7,
@@ -458,10 +458,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-3",
-    "label": "9 insgesamt, 3 leuchten",
+    "label": "9 insgesamt, 3 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 3,
       "answer": 6,
@@ -474,10 +474,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-4",
-    "label": "9 insgesamt, 4 leuchten",
+    "label": "9 insgesamt, 4 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 4,
       "answer": 5,
@@ -490,10 +490,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-5",
-    "label": "9 insgesamt, 5 leuchten",
+    "label": "9 insgesamt, 5 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 5,
       "answer": 4,
@@ -506,10 +506,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-6",
-    "label": "9 insgesamt, 6 leuchten",
+    "label": "9 insgesamt, 6 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 6,
       "answer": 3,
@@ -522,10 +522,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-7",
-    "label": "9 insgesamt, 7 leuchten",
+    "label": "9 insgesamt, 7 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 7,
       "answer": 2,
@@ -538,10 +538,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/9-8",
-    "label": "9 insgesamt, 8 leuchten",
+    "label": "9 insgesamt, 8 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 9,
       "filled": 8,
       "answer": 1,
@@ -554,10 +554,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-1",
-    "label": "10 insgesamt, 1 leuchten",
+    "label": "10 insgesamt, 1 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 1,
       "answer": 9,
@@ -570,10 +570,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-2",
-    "label": "10 insgesamt, 2 leuchten",
+    "label": "10 insgesamt, 2 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 2,
       "answer": 8,
@@ -586,10 +586,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-3",
-    "label": "10 insgesamt, 3 leuchten",
+    "label": "10 insgesamt, 3 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 3,
       "answer": 7,
@@ -602,10 +602,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-4",
-    "label": "10 insgesamt, 4 leuchten",
+    "label": "10 insgesamt, 4 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 4,
       "answer": 6,
@@ -618,10 +618,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-5",
-    "label": "10 insgesamt, 5 leuchten",
+    "label": "10 insgesamt, 5 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 5,
       "answer": 5,
@@ -634,10 +634,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-6",
-    "label": "10 insgesamt, 6 leuchten",
+    "label": "10 insgesamt, 6 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 6,
       "answer": 4,
@@ -650,10 +650,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-7",
-    "label": "10 insgesamt, 7 leuchten",
+    "label": "10 insgesamt, 7 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 7,
       "answer": 3,
@@ -666,10 +666,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-8",
-    "label": "10 insgesamt, 8 leuchten",
+    "label": "10 insgesamt, 8 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 8,
       "answer": 2,
@@ -682,10 +682,10 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "rocket/10-9",
-    "label": "10 insgesamt, 9 leuchten",
+    "label": "10 insgesamt, 9 besetzt",
     "question": {
       "kind": "fireflies",
-      "prompt": "Wie viele Glühwürmchen fehlen noch?",
+      "prompt": "Wie viele Fliegen fehlen noch?",
       "total": 10,
       "filled": 9,
       "answer": 1,

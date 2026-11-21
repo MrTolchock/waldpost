@@ -1,6 +1,6 @@
-# Zwei Rätsel bei jedem Waldfreund
+# Rätsel bei den Waldfreunden
 
-Alle zwölf Brief-Freunde haben mindestens zwei Rätsel. Die aktuelle Sammlung umfasst 24 Rätsel mit 849 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
+Beim Steinbock gibt es das Bergmuster, bei den anderen elf Brief-Freunden jeweils zwei Rätsel. Die aktuelle Sammlung umfasst 23 Rätsel mit 794 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
 
 | Freund | Rätsel | Thematischer Bezug |
 | --- | --- | --- |
@@ -13,10 +13,8 @@ Alle zwölf Brief-Freunde haben mindestens zwei Rätsel. Die aktuelle Sammlung u
 | Fisch | [Mengen addieren](puzzles/add.md), [Mengen vergleichen](puzzles/compare.md) | Fischgruppen zusammenzählen und ihre Grössen vergleichen |
 | Reh | [Lebensräume und Nahrung zuordnen](puzzles/friends-deer.md), [Schritte im Raum planen](puzzles/robot.md) | Lebensräume kennen und den Weg zurück zum Wald finden |
 | Eisvogel | [Zahlennachbarn bestimmen](puzzles/neighbours.md), [Farbwörter verstehen](puzzles/colour-words.md) | Reihenfolgen am Bach üben und Farben wie beim bunten Gefieder unterscheiden |
-| Frosch | [Mengen ergänzen](puzzles/rocket.md), [Mengen verteilen](puzzles/picnic.md) | Glühwürmchen am Teich und gemeinsames Picknick mit den Freunden |
+| Frosch | [Mengen ergänzen](puzzles/rocket.md), [Mengen verteilen](puzzles/picnic.md) | Fliegen am Teich und gemeinsames Picknick mit den Freunden |
 | Dachs | [Wachstum und Naturveränderungen erkennen](puzzles/friends-badger.md), [Zeitliche Abfolgen ordnen](puzzles/sequence.md) | Naturveränderungen und Entwicklungsschritte in der richtigen Reihenfolge |
-| Steinbock | [Muster fortsetzen](puzzles/friends-ibex.md), [Formen wiedererkennen](puzzles/shape-match.md) | Bergmuster und geometrische Formen in verschiedenen Lagen |
+| Steinbock | [Muster fortsetzen](puzzles/friends-ibex.md) | Wiederholungen mit Stein, Tanne und Blume |
 
-Das Reh bewegt sich beim Weg-Rätsel mit den vier Pfeilen zum Wald. Felsen sperren einzelne Felder. Beim Fisch zeigen Addition und Mengenvergleich gezeichnete Fischgruppen. Die beiden zusätzlichen Rätsel verwenden die vorhandenen Blumenzeichnungen und die gemeinsamen geometrischen Formen. Die Farbe wird durch Lesen eines kurzen Satzes bestimmt. Formen werden unabhängig von ihrer Drehung wiedererkannt.
-
-Die vorhandenen Rätsel- und Aufgaben-IDs bleiben stabil. Die zwölf unveränderten Rätsel übernehmen ihre bisherigen Freigaben. Die zehn neu zugeordneten Rätsel zeigen einen anderen Gastgeber; drei davon erhalten ausserdem neue Aufgabenbilder oder Regeln. Für diese zehn Rätsel und die beiden neuen ist eine aktuelle Prüfung erforderlich. Frühere Entscheidungen, Kommentare und gespeicherte Aufgaben bleiben erhalten. Fisch erhält wieder neue Briefe, sobald eines seiner zugeordneten Rätsel freigegeben ist.
+Das Reh bewegt sich beim Weg-Rätsel mit den vier Pfeilen zum Wald. Felsen sperren einzelne Felder. Beim Fisch zeigen Addition und Mengenvergleich gezeichnete Fischgruppen.

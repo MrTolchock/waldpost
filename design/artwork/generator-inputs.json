@@ -3058,8 +3058,7 @@
             "🌻"
           ],
           "usedBy": [
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -3124,9 +3123,7 @@
           "tokens": [
             "🥣"
           ],
-          "usedBy": [
-            "sequence"
-          ]
+          "usedBy": []
         },
         {
           "id": "spade",
@@ -3146,7 +3143,6 @@
             "friends-mouse",
             "friends-badger",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]
@@ -3302,7 +3298,6 @@
             "friends-mouse",
             "friends-hedgehog",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]
@@ -3368,7 +3363,6 @@
             "friends-badger",
             "count",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]
@@ -3517,8 +3511,7 @@
             "friends-bird",
             "friends-mouse",
             "friends-hedgehog",
-            "friends-deer",
-            "sequence"
+            "friends-deer"
           ]
         },
         {
@@ -4001,9 +3994,7 @@
           "tokens": [
             "🫘"
           ],
-          "usedBy": [
-            "sequence"
-          ]
+          "usedBy": []
         },
         {
           "id": "seedling",
@@ -4020,8 +4011,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -4041,8 +4031,7 @@
             "🪴"
           ],
           "usedBy": [
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -4087,7 +4076,6 @@
             "friends-mouse",
             "friends-badger",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]
@@ -4113,7 +4101,6 @@
             "friends-deer",
             "friends-badger",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]
@@ -4157,8 +4144,7 @@
             "🪣"
           ],
           "usedBy": [
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -4199,9 +4185,7 @@
           "tokens": [
             "📮"
           ],
-          "usedBy": [
-            "sequence"
-          ]
+          "usedBy": []
         },
         {
           "id": "mailbox",
@@ -4219,9 +4203,7 @@
           "tokens": [
             "📬"
           ],
-          "usedBy": [
-            "sequence"
-          ]
+          "usedBy": []
         },
         {
           "id": "nest",
@@ -4287,8 +4269,7 @@
             "🟤"
           ],
           "usedBy": [
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -4413,7 +4394,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "rabbit-eat-carrot",
@@ -4605,7 +4588,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "beaver-carry-stick",
@@ -4956,7 +4941,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "sign-nibbled-leaf",
@@ -4972,7 +4959,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "sign-eggshell",
@@ -4988,7 +4977,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "sign-shed-antler",
@@ -6082,7 +6073,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "salt-cellar",
@@ -6353,7 +6346,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-bread-dough",
@@ -6369,7 +6364,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-braided-loaf",
@@ -6385,7 +6382,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-paper-sheet",
@@ -6401,7 +6400,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-paper-fold",
@@ -6417,7 +6418,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-paper-boat",
@@ -6433,7 +6436,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-knitting-start",
@@ -6465,7 +6470,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-knitting-finished",
@@ -6481,7 +6488,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-wood-marked",
@@ -6497,7 +6506,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-wood-cut",
@@ -6513,7 +6524,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-birdhouse-half",
@@ -6529,7 +6542,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-berries-washed",
@@ -6545,7 +6560,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-berries-crushed",
@@ -6561,7 +6578,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "making-jam-pot",
@@ -6577,7 +6596,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         }
       ],
       "manifest": "design/illustrations/expansion-making-sequences.json",
@@ -8309,7 +8330,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "oak-seedling",
@@ -8325,7 +8348,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "oak-sapling",
@@ -8341,7 +8366,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "bean-dry-seed",
@@ -8357,7 +8384,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "bean-rooting-seed",
@@ -8373,7 +8402,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "bean-first-leaves",
@@ -8389,7 +8420,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "bean-flowering",
@@ -8405,7 +8438,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "bean-with-pods",
@@ -8421,7 +8456,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "butterfly-eggs",
@@ -8437,7 +8474,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "butterfly-chrysalis",
@@ -8453,7 +8492,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "tadpole",
@@ -8469,7 +8510,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "tadpole-hindlegs",
@@ -8485,7 +8528,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "froglet",
@@ -8501,7 +8546,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "apple-blossom",
@@ -8517,7 +8564,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "apple-unripe",
@@ -8533,7 +8582,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         }
       ],
       "manifest": "design/illustrations/expansion-nature-cycles.json",
@@ -8759,7 +8810,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "part-cherry-stone",
@@ -9142,7 +9195,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "state-bucket-empty",
@@ -9158,7 +9213,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "state-chest-open",
@@ -9206,7 +9263,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "state-boot-muddy",
@@ -9222,7 +9281,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "state-padlock-open",
@@ -11327,7 +11388,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "relation-apple-above-basket",
@@ -12775,7 +12838,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "knitting-needles",
@@ -13177,7 +13242,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "bird-feeder",
@@ -13547,7 +13614,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "pine-cone",
@@ -13885,7 +13954,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "clothes-peg",
@@ -14657,7 +14728,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         },
         {
           "id": "reed-clump",
@@ -14867,7 +14940,10 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "robot",
+            "sequence"
+          ]
         },
         {
           "id": "beech-tree",
@@ -15659,7 +15735,6 @@
             "friends-deer",
             "friends-badger",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]
@@ -16034,8 +16109,7 @@
             "syllable",
             "sequence",
             "treasure",
-            "vowels",
-            "shape-match"
+            "vowels"
           ]
         },
         {
@@ -16135,8 +16209,7 @@
             "mirror",
             "vowels",
             "read-puzzle",
-            "colour-words",
-            "shape-match"
+            "colour-words"
           ]
         },
         {
@@ -16157,7 +16230,6 @@
             "friends-bird",
             "friends-beaver",
             "friends-mouse",
-            "friends-ibex",
             "syllable",
             "treasure",
             "vowels",
@@ -16207,7 +16279,6 @@
             "friends-mouse",
             "friends-deer",
             "syllable",
-            "sequence",
             "treasure",
             "vowels"
           ]
@@ -16249,8 +16320,7 @@
             "mirror",
             "vowels",
             "read-puzzle",
-            "colour-words",
-            "shape-match"
+            "colour-words"
           ]
         },
         {
@@ -16331,7 +16401,6 @@
           "tokens": [],
           "usedBy": [
             "friends-beaver",
-            "sequence",
             "mirror"
           ]
         },
@@ -16403,8 +16472,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "picnic",
-            "sequence"
+            "picnic"
           ]
         }
       ],
@@ -16489,8 +16557,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-owl",
-            "sequence"
+            "friends-owl"
           ]
         },
         {
@@ -16526,8 +16593,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-owl",
-            "sequence"
+            "friends-owl"
           ]
         },
         {
@@ -17545,8 +17611,7 @@
           ],
           "usedBy": [
             "friends-deer",
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -17581,9 +17646,7 @@
             "height": 313.5
           },
           "tokens": [],
-          "usedBy": [
-            "sequence"
-          ]
+          "usedBy": []
         },
         {
           "id": "blueberries",
@@ -17850,9 +17913,7 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": [
-            "rocket"
-          ]
+          "usedBy": []
         },
         {
           "id": "watering-can",
@@ -17972,8 +18033,7 @@
           "tokens": [],
           "usedBy": [
             "friends-bird",
-            "friends-mouse",
-            "sequence"
+            "friends-mouse"
           ]
         },
         {
@@ -18049,8 +18109,7 @@
           "tokens": [],
           "usedBy": [
             "friends-bird",
-            "friends-mouse",
-            "sequence"
+            "friends-mouse"
           ]
         },
         {
@@ -18146,8 +18205,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-bird",
-            "sequence"
+            "friends-bird"
           ]
         },
         {
@@ -18309,8 +18367,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-bird",
-            "sequence"
+            "friends-bird"
           ]
         }
       ],
@@ -18429,8 +18486,7 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-hedgehog",
-            "sequence"
+            "friends-hedgehog"
           ]
         }
       ],
@@ -18677,7 +18733,8 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-bird"
+            "friends-bird",
+            "rocket"
           ]
         }
       ],
@@ -18751,7 +18808,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "sequence"
+          ]
         }
       ],
       "manifest": "design/illustrations/swiss-postbox.json",
@@ -19216,8 +19275,7 @@
             "🍐"
           ],
           "usedBy": [
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -19278,8 +19336,7 @@
           ],
           "usedBy": [
             "friends-bird",
-            "friends-mouse",
-            "sequence"
+            "friends-mouse"
           ]
         },
         {
@@ -19298,9 +19355,7 @@
           "tokens": [
             "🛏️"
           ],
-          "usedBy": [
-            "sequence"
-          ]
+          "usedBy": []
         },
         {
           "id": "clock",
@@ -19697,8 +19752,7 @@
           ],
           "usedBy": [
             "friends-deer",
-            "friends-badger",
-            "sequence"
+            "friends-badger"
           ]
         },
         {
@@ -19744,7 +19798,6 @@
             "friends-deer",
             "friends-badger",
             "syllable",
-            "sequence",
             "vowels",
             "read-puzzle"
           ]

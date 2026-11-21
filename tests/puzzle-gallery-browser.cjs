@@ -39,7 +39,7 @@ const BASE=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
   const after=await page.evaluate(()=>({rounds:localStorage.getItem('farbtupf.puzzles.v1')||localStorage.getItem('farbtupf.puzzles.v1.dev'),mail:JSON.stringify(FK.friends.mail())}));
   assert.deepEqual(after,before,'no saved round and no letter change');
   await act().locator('.btn-back').click();await page.waitForTimeout(300);assert.equal(await current(),'settings');
-  await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');assert.equal(await act().locator('.review-puzzle').count(),24,'the review still lists every puzzle');
+  await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');assert.equal(await act().locator('.review-puzzle').count(),23,'the review still lists every puzzle');
   assert.deepEqual(errors,[]);console.log("PASS: Rätsel-Galerie lists only signed-off puzzles, filters by friend and plays five tasks without saving; Rätsel-Prüfung is separate.");
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});

@@ -3,9 +3,10 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const proof=require('../tools/puzzle-layout-compatibility.json'),baselines=require('../tools/puzzle-review-baselines.json');
 const {sameReviewPresentation}=require('../tools/puzzle-layout-compatibility.cjs'),{setup}=require('../tools/puzzle-catalogue.cjs');
 const reassigned=new Set(['count','add','compare','robot','rocket','picnic','sequence','treasure','neighbours','read-puzzle']);
+const revised=new Set(['rocket','robot','sequence','treasure','neighbours','compare','friends-hedgehog','shape-match']);
 test('terminology retains old decisions only for unchanged tasks',()=>{
  const baseline=baselines.releases.find(r=>r.commit===proof.migrations[0].baselineCommit),C=setup().FK.puzzleCatalogue;
- const affected=(id,it)=>reassigned.has(id)||['robot','treasure','neighbours','read-puzzle','friends-ibex'].includes(id)||id==='picnic'&&it.question.friends===4;
+ const affected=(id,it)=>reassigned.has(id)||revised.has(id)||['robot','treasure','neighbours','read-puzzle','friends-ibex'].includes(id)||id==='picnic'&&it.question.friends===4;
  for(const [id,p]of Object.entries(baseline.puzzles)){
   if(!C.puzzle(id))continue;
   for(const it of C.iterations(id)){
@@ -19,8 +20,8 @@ test('restoring picture proportions preserves reviews for every unchanged task',
  assert.ok(migration,'exact picture-proportion correction is recorded');
  const baseline=baselines.releases.find(r=>r.commit===migration.baselineCommit),C=setup().FK.puzzleCatalogue;
  for(const [id,p]of Object.entries(baseline.puzzles)){
-  assert.equal(C.acceptsRevision(id,null,p.revision),!reassigned.has(id),id);
-  for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!reassigned.has(id),it.id);
+  assert.equal(C.acceptsRevision(id,null,p.revision),!reassigned.has(id)&&!revised.has(id)&&id!=='friends-ibex',id);
+  for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!reassigned.has(id)&&!revised.has(id),it.id);
  }
 });
 test('balanced iPad layout preserves all existing task decisions',()=>{
@@ -28,8 +29,8 @@ test('balanced iPad layout preserves all existing task decisions',()=>{
  assert.ok(migration,'exact iPad balance correction is recorded');
  const baseline=baselines.releases.find(r=>r.commit===migration.baselineCommit),C=setup().FK.puzzleCatalogue;
  for(const [id,p]of Object.entries(baseline.puzzles)){
-  assert.equal(C.acceptsRevision(id,null,p.revision),true,id);
-  for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),true,it.id);
+  assert.equal(C.acceptsRevision(id,null,p.revision),!revised.has(id)&&id!=='friends-ibex',id);
+  for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!revised.has(id),it.id);
  }
 });
 test('every layout bridge rejects subsequent changes and unrelated keys',()=>{
@@ -46,17 +47,17 @@ test('removing success check marks preserves existing task decisions',()=>{
  assert.ok(migration,'exact feedback-only correction is recorded');
  const baseline=baselines.releases.find(r=>r.commit===migration.baselineCommit),C=setup().FK.puzzleCatalogue;
  for(const [id,p]of Object.entries(baseline.puzzles)){
-  assert.equal(C.acceptsRevision(id,null,p.revision),true,id);
-  for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),true,it.id);
+  assert.equal(C.acceptsRevision(id,null,p.revision),!revised.has(id)&&id!=='friends-ibex',id);
+  for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!revised.has(id),it.id);
  }
 });
-test('the comparison blueprint retains reviews for each of its 24 puzzles and 849 tasks',()=>{
+test('the comparison blueprint retains reviews for unchanged tasks after the November 20 revisions',()=>{
  const previous=baselines.releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
  const catalogue=setup().FK.puzzleCatalogue;
  for(const [id,puzzle] of Object.entries(previous.puzzles)){
-  assert.ok(catalogue.acceptsRevision(id,null,puzzle.revision),id);
+  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!revised.has(id)&&id!=='friends-ibex',id);
   for(const task of catalogue.iterations(id)){
-   assert.ok(catalogue.acceptsRevision(id,task.id,previous.iterations[task.id].revision),task.id);
+   assert.equal(catalogue.acceptsRevision(id,task.id,previous.iterations[task.id].revision),!revised.has(id),task.id);
   }
  }
 });

@@ -10,10 +10,10 @@
     'friends-beaver':['MA.2.A.1.a','Mengen von Waldgegenständen vergleichen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; die Mengen der ersten zwei Reihen ergänzen'],
     // Keep the original difficulty contract for existing word cards; the fourth field describes the expanded pool.
     'friends-mouse':['D.2.A.1.b','Wörter mit Bildern verbinden','25 vertraute Nomen; eingeführte Buchstaben','Vertraute Nomen und Tiernamen; eingeführte Buchstaben'],
-    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen und Fragen lesen','25 kurze Fragen zu sichtbaren Tiermerkmalen; zwei Bildantworten','50 kurze Tierfragen; zwei Bildantworten'],
+    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen und Fragen lesen','50 kurze Tierfragen; drei Bildantworten'],
     'friends-deer':['NMG.2.1.a; D.2.B.1.b','Lebensräume und Nahrung zuordnen','25 kurze Naturfragen; drei Bildantworten'],
     'friends-badger':['NMG.2.3.a; D.2.B.1.b','Wachstum und Naturveränderungen erkennen','25 kurze Fragen zu Wetter, Pflanzen und Entwicklung'],
-    'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe','AAB, ABB, ABC, ABAC, AABC mit Berg- und Waldgegenständen; Lücke am Ende oder in der zweiten Gruppe'],
+    'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe'],
     count:['MA.1.A.2.a','Gezielt Mengen zählen','6–15 Marienkäfer zwischen Bienen und Schnecken'],
     add:['MA.1.A.3.a','Sichtbare Gruppen addieren','Zwei positive Summanden; Summe höchstens 10'],
     rocket:['MA.1.A.4.b','Mengen ergänzen','Gesamtmenge 5–10; besetzte und freie Plätze'],
@@ -21,13 +21,12 @@
     syllable:['D.1.A.1.b','Wörter in Silben zerlegen','1–5 Silben; vertraute Bildwörter'],
     robot:['MA.2.A.1.c (Unterstützung)','Benachbarte Schritte im Raum planen','4 × 4; sichtbares Waldziel und gesperrte Felsen'],
     sequence:['NMG.9.1.a (Übung)','Zeitliche Abfolgen ordnen','25 Bildgeschichten mit drei bebilderten Schritten'],
-    treasure:['Optionale Gedächtnisübung','Gegenstände wiedererkennen','Vier Dinge, eines fehlt; kein Zeitlimit; erneut anschauen möglich'],
+    treasure:['Optionale Gedächtnisübung','Gegenstände wiedererkennen','Vier Dinge, eines fehlt; kein Zeitlimit'],
     neighbours:['MA.1.A.2.a/b','Zahlennachbarn bestimmen','Mitte 1–18; Mengenrahmen bis 20; ein Nachbar kann vorgegeben sein'],
     compare:['MA.1.A.1.a (Übung)','Mengen vergleichen','1–10 Fische; mehr oder gleich viele'],
     mirror:['MA.2.A.2.c','Ein Muster spiegeln','3 × 3; drei bis fünf Blätter; senkrechte Spiegelachse'],
     vowels:['D.4.A.1.c (Unterstützung)','Einen Vokal ergänzen','Bildwörter; keine Lücke innerhalb von au/ei/ie/eu/äu'],
     'colour-words':['D.2.A.1.b','Farbwörter verstehen','Sechs Farbwörter; drei verschiedenfarbige Blumen zur Auswahl'],
-    'shape-match':['MA.2.A.1.a','Ebene Formen unabhängig von ihrer Lage erkennen','Kreis, Dreieck, Quadrat und Rechteck; 25 unterschiedliche Ansichten'],
     'read-puzzle':['D.2.A.1.b','Silben zu Wörtern verbinden','28 Bildwörter; zwei bis drei Silben; ein Ablenker'],
   };
   const pools={},clone=v=>JSON.parse(JSON.stringify(v));
@@ -90,33 +89,33 @@
     badger:[['Was braucht eine Pflanze zum Wachsen?','sun','moon','cheese'],['Was wird aus einer Apfelblüte?','apple','egg','snowman'],['Was wächst aus einem Samen in der Erde?','plant','fish','moon'],['Was sammelt das Eichhörnchen im Herbst?','forest-nut','egg','snowman'],['Was sehen wir bei klarem Himmel in der Nacht?','moon','sun','sunflower'],['Was wächst auf der Erdbeerpflanze?','strawberry','carrot','egg'],['Womit giessen wir die Pflanzen?','watering-can','fork','hat'],['Was wächst aus einer Eichel?','tree','cloud','snowman'],['Was ernten wir vom Birnbaum?','pear','fish','egg']]
   };
   const forestRiddles=[
-    ['Wer hat Stacheln?','hedgehog','mouse-sit'],
-    ['Wer hat einen blauen Kopf?','bird-sit','forest-robin'],
-    ['Wer hat Flossen?','fish-swim','snail'],
-    ['Wer ist gelb und schwarz?','bee','spider'],
-    ['Wer trägt ein Haus?','snail','caterpillar'],
-    ['Wer hat acht Beine?','spider','bird-sit'],
-    ['Wer hat bunte Flügel?','butterfly','vocab-worm'],
-    ['Wer hat viele Beine?','caterpillar','snail'],
-    ['Wer hat schwarze Punkte?','ladybird','bee'],
-    ['Wer hat lange Ohren?','hare-sit','hedgehog'],
-    ['Wer hält eine Nuss?','squirrel-nut','frog-sit'],
-    ['Wer hat Streifen im Gesicht?','badger-walk','forest-fox'],
-    ['Wer hat einen breiten Schwanz?','beaver','hare-sit'],
-    ['Wer ist grün?','frog-sit','mouse-sit'],
-    ['Wer hat Fühler?','ant','spider'],
-    ['Wer hat einen dünnen Schwanz?','mouse-sit','squirrel-sit'],
-    ['Wer hat eine weisse Schwanzspitze?','forest-fox','mouse-sit'],
-    ['Wer hat ein Geweih?','roe-stand','hare-sit'],
-    ['Wessen Kopf ist oben rot?','forest-woodpecker','frog-sit'],
-    ['Wer hängt am Ast?','forest-bat','squirrel-sit'],
-    ['Wer hat grosse Augen?','forest-owl','vocab-worm'],
-    ['Wer hat eine rote Brust?','forest-robin','bird-sit'],
-    ['Wer hat Flecken im Fell?','forest-lynx','forest-fox'],
-    ['Wer hat einen hellen Hals?','forest-marten','vocab-worm'],
-    ['Wer hat keine Beine?','vocab-worm','ant']
+    ["Wer hat Stacheln?","hedgehog","mouse-sit","fish-swim"],
+    ["Wer hat einen blauen Kopf?","bird-sit","forest-robin","hare-sit"],
+    ["Wer hat Flossen?","fish-swim","snail","hedgehog"],
+    ["Wer ist gelb und schwarz?","bee","spider","frog-sit"],
+    ["Wer trägt ein Haus?","snail","caterpillar","forest-owl"],
+    ["Wer hat acht Beine?","spider","bird-sit","mouse-sit"],
+    ["Wer hat bunte Flügel?","butterfly","vocab-worm","badger-walk"],
+    ["Wer hat viele Beine?","caterpillar","snail","fish-swim"],
+    ["Wer hat schwarze Punkte?","ladybird","bee","snail"],
+    ["Wer hat lange Ohren?","hare-sit","hedgehog","bee"],
+    ["Wer hält eine Nuss?","squirrel-nut","frog-sit","fish-swim"],
+    ["Wer hat Streifen im Gesicht?","badger-walk","forest-fox","snail"],
+    ["Wer hat einen breiten Schwanz?","beaver","hare-sit","bird-sit"],
+    ["Wer ist grün?","frog-sit","mouse-sit","badger-walk"],
+    ["Wer hat Fühler?","ant","spider","hare-sit"],
+    ["Wer hat einen dünnen Schwanz?","mouse-sit","squirrel-sit","forest-owl"],
+    ["Wer hat eine weisse Schwanzspitze?","forest-fox","mouse-sit","snail"],
+    ["Wer hat ein Geweih?","roe-stand","hare-sit","fish-swim"],
+    ["Wessen Kopf ist oben rot?","forest-woodpecker","frog-sit","mouse-sit"],
+    ["Wer hängt am Ast?","forest-bat","squirrel-sit","frog-sit"],
+    ["Wer hat grosse Augen?","forest-owl","vocab-worm","ant"],
+    ["Wer hat eine rote Brust?","forest-robin","bird-sit","snail"],
+    ["Wer hat Flecken im Fell?","forest-lynx","forest-fox","bird-sit"],
+    ["Wer hat einen hellen Hals?","forest-marten","vocab-worm","fish-swim"],
+    ["Wer hat keine Beine?","vocab-worm","ant","hare-sit"]
   ];
-  forestRiddles.forEach(([text,answer,wrong],i)=>add('friends-hedgehog','riddle-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong]}));
+  forestRiddles.forEach(([text,answer,wrong,other],i)=>add('friends-hedgehog','riddle-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong,other]}));
   for(const host of ['deer','badger']){
     const list=C.pools[host].map(t=>[t.target,t.answer,...t.choices.filter(c=>c!==t.answer)]).concat(extra[host]);
     list.forEach(([text,answer,...wrong],i)=>add('friends-'+host,'riddle-'+i,text,{kind:'reading',prompt:'Welches Bild passt zur Frage?',text,answer,choices:[answer,...wrong]}));
@@ -133,137 +132,35 @@
   animals.forEach(([text,answer],i)=>addMouseWord('friends-frog-animal-'+i,text,answer,[answer,animals[(i+4)%animals.length][1],animals[(i+9)%animals.length][1]]));
   for(let n=6;n<=15;n++)for(let b=2;b<=4;b++)add('count',n+'-'+b,n+' Käfer, '+b+' Bienen',{kind:'count',prompt:'Wie viele rote Marienkäfer sind hier?',count:n,answer:n,choices:numeric(n),bugs:[...Array(n).fill('ladybird'),...Array(b).fill('bee'),...Array(2).fill('snail')]});
   for(let a=1;a<=8;a++)for(let b=1;b<=9-a;b++)add('add',a+'-'+b,a+' + '+b,{kind:'add',item:'fish-swim',prompt:'Wie viele Fische sind es zusammen?',a,b,answer:a+b,choices:numeric(a+b)});
-  const tokens=['forest-leaf','forest-nut','forest-feather'],permutations=[[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]],units=[[0,0,1],[0,1,1],[0,1,2],[0,1,0,2],[0,0,1,2]];
-  units.forEach((u,i)=>permutations.forEach((p,j)=>{const unit=u.map(x=>tokens[p[x]]),sequence=Array.from({length:unit.length*2+1},(_,k)=>unit[k%unit.length]),gap=sequence.length-1;add('friends-ibex','woodland-'+i+'-'+j,'Muster '+['AAB','ABB','ABC','ABAC','AABC'][i]+' / '+(j+1),{kind:'pattern',prompt:'Welches Bild fehlt im Waldmuster?',sequence,gap,answer:sequence[gap],choices:tokens});}));
   const animalQuestions=[
-  [
-    "Wer trägt Stacheln auf dem Rücken?",
-    "hedgehog",
-    "fish"
-  ],
-  [
-    "Wer schwimmt mit Flossen?",
-    "fish",
-    "dog"
-  ],
-  [
-    "Wer quakt am Teich?",
-    "frog",
-    "cat"
-  ],
-  [
-    "Wer macht Honig aus Nektar?",
-    "bee",
-    "cow"
-  ],
-  [
-    "Wer bellt?",
-    "dog",
-    "frog"
-  ],
-  [
-    "Wer miaut?",
-    "cat",
-    "fish"
-  ],
-  [
-    "Wer gibt uns Milch?",
-    "cow",
-    "bee"
-  ],
-  [
-    "Wer baut ein Netz?",
-    "spider",
-    "bird"
-  ],
-  [
-    "Wer trägt sein Haus mit?",
-    "snail",
-    "dog"
-  ],
-  [
-    "Wen schützt ein Panzer?",
-    "tortoise",
-    "rabbit"
-  ],
-  [
-    "Wer hüpft mit langen Ohren?",
-    "rabbit",
-    "fish"
-  ],
-  [
-    "Wer wird aus einer Raupe?",
-    "butterfly",
-    "pig"
-  ],
-  [
-    "Wer baut ein Nest im Baum?",
-    "bird",
-    "cow"
-  ],
-  [
-    "Wessen roter Rücken hat schwarze Punkte?",
-    "ladybird",
-    "sheep"
-  ],
-  [
-    "Wer hat weiche Wolle?",
-    "sheep",
-    "fish"
-  ],
-  [
-    "Wer balanciert mit buschigem Schwanz?",
-    "squirrel",
-    "spider"
-  ],
-  [
-    "Wer trinkt mit einem Rüssel?",
-    "elephant",
-    "cat"
-  ],
-  [
-    "Wer hat einen sehr langen Hals?",
-    "giraffe",
-    "pig"
-  ],
-  [
-    "Wer trägt eine Mähne?",
-    "lion",
-    "sheep"
-  ],
-  [
-    "Wessen Fell ist schwarz-weiss gestreift?",
-    "zebra",
-    "dog"
-  ],
-  [
-    "Wer hat Höcker auf dem Rücken?",
-    "camel",
-    "cat"
-  ],
-  [
-    "Wessen orangefarbenes Fell hat schwarze Streifen?",
-    "tiger",
-    "cow"
-  ],
-  [
-    "Welcher Vogel schwimmt und taucht?",
-    "penguin",
-    "bird"
-  ],
-  [
-    "Wessen Gesicht ist schwarz-weiss gestreift?",
-    "badger",
-    "pig"
-  ],
-  [
-    "Wer baut einen Damm aus Ästen?",
-    "beaver",
-    "cat"
-  ]
-];
-  animalQuestions.forEach(([text,answer,wrong],i)=>add('friends-hedgehog','nature-question-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong]}));
-  for(let total=5;total<=10;total++)for(let filled=1;filled<total;filled++)add('rocket',total+'-'+filled,total+' insgesamt, '+filled+' leuchten',{kind:'fireflies',prompt:'Wie viele Glühwürmchen fehlen noch?',total,filled,answer:total-filled,choices:numeric(total-filled,10)});
+    ["Wer trägt Stacheln auf dem Rücken?","hedgehog","fish","rabbit"],
+    ["Wer schwimmt mit Flossen?","fish","dog","sheep"],
+    ["Wer quakt am Teich?","frog","cat","dog"],
+    ["Wer macht Honig aus Nektar?","bee","cow","fish"],
+    ["Wer bellt?","dog","frog","snail"],
+    ["Wer miaut?","cat","fish","pig"],
+    ["Wer gibt uns Milch?","cow","bee","ant"],
+    ["Wer baut ein Netz?","spider","bird","cow"],
+    ["Wer trägt sein Haus mit?","snail","dog","sheep"],
+    ["Wen schützt ein Panzer?","tortoise","rabbit","bee"],
+    ["Wer hüpft mit langen Ohren?","rabbit","fish","dog"],
+    ["Wer wird aus einer Raupe?","butterfly","pig","fish"],
+    ["Wer baut ein Nest im Baum?","bird","cow","pig"],
+    ["Wessen roter Rücken hat schwarze Punkte?","ladybird","sheep","cat"],
+    ["Wer hat weiche Wolle?","sheep","fish","bee"],
+    ["Wer balanciert mit buschigem Schwanz?","squirrel","spider","cow"],
+    ["Wer trinkt mit einem Rüssel?","elephant","cat","bee"],
+    ["Wer hat einen sehr langen Hals?","giraffe","pig","dog"],
+    ["Wer trägt eine Mähne?","lion","sheep","bird"],
+    ["Wessen Fell ist schwarz-weiss gestreift?","zebra","dog","cow"],
+    ["Wer hat Höcker auf dem Rücken?","camel","cat","bee"],
+    ["Wessen orangefarbenes Fell hat schwarze Streifen?","tiger","cow","frog"],
+    ["Welcher Vogel schwimmt und taucht?","penguin","bird","cow"],
+    ["Wessen Gesicht ist schwarz-weiss gestreift?","badger","pig","rabbit"],
+    ["Wer baut einen Damm aus Ästen?","beaver","cat","bee"]
+  ];
+  animalQuestions.forEach(([text,answer,wrong,other],i)=>add('friends-hedgehog','nature-question-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong,other]}));
+  for(let total=5;total<=10;total++)for(let filled=1;filled<total;filled++)add('rocket',total+'-'+filled,total+' insgesamt, '+filled+' besetzt',{kind:'fireflies',prompt:'Wie viele Fliegen fehlen noch?',total,filled,answer:total-filled,choices:numeric(total-filled,10)});
   for(let friends=2;friends<=4;friends++)for(let each=1;each<=Math.floor(20/friends);each++){
     add('picnic',friends+'-'+each,friends+' Freunde, '+(friends*each)+' Beeren',{kind:'picnic',prompt:'Teile alle Beeren gerecht auf.',friends,each,total:friends*each,answer:each});
   }
@@ -286,31 +183,31 @@
   const blocked=[[5,6],[5,9],[6,10],[9,10],[2,5,9]],ends=[[0,15],[12,3],[3,12],[15,0],[0,3],[12,15]];
   blocked.forEach((obstacles,i)=>ends.forEach(([start,goal],j)=>add('robot',i+'-'+j,'Weg '+(i+1)+' / '+(j+1),{kind:'robot',mode:'route',prompt:'Führe das Reh zum Wald.',size:4,start,goal,obstacles})));
   const stories=[
-    [['bean','Bohne in die Erde'],['seedling','Die Bohne keimt'],['plant','Eine Pflanze wächst']],
-    [['egg','Ein Ei liegt im Nest'],['chick','Ein Küken schlüpft'],['bird-sit','Der Vogel ist gross']],
-    [['caterpillar','Eine Raupe frisst'],['cocoon','Die Raupe verpuppt sich'],['butterfly','Ein Schmetterling schlüpft']],
-    [['forest-flower','Der Apfelbaum blüht'],['forest-apple','Ein Apfel wird reif'],['scene:forest-basket+forest-apple','Wir ernten den Apfel']],
-    [['pencil','Wir schreiben einen Brief'],['postbox','Wir werfen ihn ein'],['mailbox','Der Brief kommt an']],
-    [['cloud','Wolken sammeln sich'],['rain','Regen fällt'],['plant','Die Pflanze bekommt Wasser']],
-    [['forest-nut','Eine Nuss liegt im Wald'],['squirrel-run','Das Eichhörnchen kommt'],['squirrel-nut','Es hält die Nuss']],
-    [['sun','Der Tag ist hell'],['sunset','Die Sonne geht unter'],['moon','Die Nacht kommt']],
-    [['forest-apple','Ein Apfel hängt am Baum'],['scene:forest-basket+forest-apple','Wir pflücken ihn'],['vocab-seed','Nach dem Essen bleiben Kerne']],
-    [['seedling','Eine junge Pflanze wächst'],['flower','Eine Blüte öffnet sich'],['scene:bee+flower','Eine Biene besucht sie']],
-    [['forest-leaf','Ein Blatt hängt am Ast'],['scene:hedgehog+forest-leaf','Der Igel findet das Blatt'],['hedgehog-sleep','Der Igel schläft']],
-    [['vocab-seed','Wir nehmen einen Samen'],['spade','Wir graben ein Loch'],['bucket','Wir giessen den Samen']],
-    [['forest-berry','Beeren werden reif'],['scene:forest-basket+forest-berry','Wir sammeln sie'],['scene:bowl+forest-berry','Wir teilen sie auf']],
-    [['forest-branch','Ein Ast liegt am Boden'],['scene:bird-sit+forest-branch','Ein Vogel holt ihn'],['nest','Er baut ein Nest']],
-    [['rain','Es regnet'],['water','Eine Pfütze entsteht'],['sun','Die Sonne trocknet sie']],
-    [['spade','Wir lockern die Erde'],['carrot','Eine Karotte wächst'],['scene:forest-basket+carrot','Wir ernten sie']],
-    [['flower','Die Birnenblüte öffnet sich'],['pear','Eine Birne wächst'],['scene:bowl+pear','Wir legen sie in die Schale']],
-    [['cow','Die Kuh gibt Milch'],['bucket','Wir sammeln die Milch'],['cheese','Daraus wird Käse']],
-    [['sunflower','Die Sonnenblume blüht'],['vocab-seed','Ihre Kerne sind reif'],['scene:bird-sit+vocab-seed','Ein Vogel frisst die Kerne']],
-    [['vocab-cloth','Wir nehmen ein Tuch'],['water','Wir machen es nass'],['vocab-table','Wir wischen den Tisch']],
-    [['book','Wir suchen ein Buch aus'],['reader','Wir lesen es'],['bed','Danach gehen wir schlafen']],
-    [['forest-apple','Wir pflücken einen Apfel'],['water','Wir waschen ihn'],['scene:bowl+forest-apple','Wir legen ihn in die Schale']],
-    [['forest-basket','Wir nehmen einen Korb mit'],['forest-mushroom','Wir finden Pilze'],['vocab-table','Wir prüfen sie mit Erwachsenen']],
-    [['letter','Ein Brief kommt an'],['vocab-hand','Wir öffnen ihn'],['reader','Wir lesen ihn']],
-    [['forest-flower','Wir pflücken eine Blume'],['water','Wir stellen sie ins Wasser'],['vocab-table','Wir stellen sie auf den Tisch']]
+    [["bean-dry-seed","Bohnensamen"],["bean-rooting-seed","Die Wurzel wächst"],["bean-first-leaves","Die ersten Blätter wachsen"]],
+    [["bird-nest-empty","Ein leeres Nest"],["scene:nest+egg","Ein Ei liegt im Nest"],["chick","Das Küken schlüpft"]],
+    [["caterpillar","Die Raupe wächst"],["butterfly-chrysalis","Die Raupe verpuppt sich"],["butterfly","Der Falter schlüpft"]],
+    [["apple-blossom","Der Apfelbaum blüht"],["apple-unripe","Ein grüner Apfel wächst"],["forest-apple","Der Apfel ist reif"]],
+    [["scene:making-paper-sheet+pencil","Wir schreiben den Brief"],["letter","Wir verschliessen den Umschlag"],["swiss-postbox","Wir werfen den Brief ein"]],
+    [["making-bread-flour","Wir nehmen Mehl"],["making-bread-dough","Wir kneten Teig"],["making-braided-loaf","Der Zopf ist gebacken"]],
+    [["forest-nut","Eine ganze Nuss"],["squirrel-crack-nut","Das Eichhörnchen knackt sie"],["sign-nut-shell","Die leere Schale bleibt"]],
+    [["sun","Die Sonne scheint"],["sunset","Die Sonne geht unter"],["moon","Es ist Nacht"]],
+    [["acorn","Eine Eichel"],["oak-sprouting-acorn","Die Eichel keimt"],["oak-seedling","Die ersten Blätter wachsen"]],
+    [["bean-first-leaves","Die Bohne trägt Blätter"],["bean-flowering","Die Bohne blüht"],["bean-with-pods","Schoten wachsen"]],
+    [["tadpole","Eine Kaulquappe schlüpft"],["tadpole-hindlegs","Hinterbeine wachsen"],["froglet","Der junge Frosch hat vier Beine"]],
+    [["making-paper-sheet","Ein glattes Blatt"],["making-paper-fold","Das Papier wird gefaltet"],["making-paper-boat","Das Schiff ist fertig"]],
+    [["making-berries-washed","Die Beeren sind gewaschen"],["making-berries-crushed","Wir zerdrücken sie"],["making-jam-pot","Wir kochen Konfitüre"]],
+    [["making-wood-marked","Wir zeichnen die Schnittlinie"],["making-wood-cut","Wir sägen das Holz"],["making-birdhouse-half","Wir bauen das Vogelhaus"]],
+    [["yarn-ball","Ein Knäuel Wolle"],["making-knitting-half","Das Strickstück wächst"],["making-knitting-finished","Das Strickstück ist fertig"]],
+    [["part-apple-seed","Ein Apfelkern"],["apple-blossom","Der Baum blüht"],["apple-unripe","Ein kleiner Apfel wächst"]],
+    [["state-bucket-empty","Der Eimer ist leer"],["scene:state-bucket-empty+water","Wir füllen Wasser ein"],["state-bucket-full","Der Eimer ist voll"]],
+    [["state-boot-muddy","Der Stiefel ist schmutzig"],["scene:boot-brush+state-boot-muddy","Wir bürsten den Schmutz ab"],["state-boot-clean","Der Stiefel ist sauber"]],
+    [["butterfly-eggs","Eier am Blatt"],["caterpillar-eat-leaf","Die Raupe frisst"],["butterfly-chrysalis","Eine Puppe entsteht"]],
+    [["oak-seedling","Ein kleiner Sämling"],["oak-sapling","Ein junges Bäumchen"],["oak-tree","Eine grosse Eiche"]],
+    [["forest-berry","Die Beeren sind reif"],["making-berries-crushed","Wir zerdrücken die Beeren"],["jam-jar","Die Konfitüre ist abgefüllt"]],
+    [["apple-unripe","Ein unreifer Apfel"],["forest-apple","Der Apfel ist reif"],["relation-apple-in-basket","Der Apfel ist geerntet"]],
+    [["making-wood-marked","Ein Brett mit Schnittlinie"],["making-birdhouse-half","Ein halbes Vogelhaus"],["birdhouse","Das Vogelhaus ist fertig"]],
+    [["egg","Ein ganzes Ei"],["chick","Das Küken schlüpft"],["sign-eggshell","Die leere Schale bleibt"]],
+    [["forest-leaf","Das Blatt ist ganz"],["caterpillar-eat-leaf","Die Raupe frisst daran"],["sign-nibbled-leaf","Am Blatt fehlt ein Stück"]]
   ];
   stories.forEach((items,i)=>add('sequence','story-'+i,items.map(v=>v[1]).join(' → '),{kind:'order',prompt:'Ziehe die Bilder in die richtige Reihenfolge.',items,order:[2,0,1],answer:[0,1,2]}));
   const treasures=['forest-leaf','forest-feather','forest-mushroom','forest-stone','forest-berry','forest-nut','forest-apple','forest-flower'];
@@ -335,11 +232,6 @@
       const choices=[colour,others[i],others[(i+1)%others.length]];
       add('colour-words',choices.map(choice=>choice[0]).join('-'),'Farbe '+colour[0]+' zwischen '+choices.slice(1).map(choice=>choice[0]).join(' und '),{kind:'colours',prompt:'Welche Blume passt zum Satz?',text:'Die Blume ist '+colour[0]+'.',answer:colour[0],choices});
     }
-  }
-  // Only visually distinct orientations count as tasks. A circle has one orientation.
-  const formAngles={circle:[0],square:[0,15,30,45,60,75],rectangle:[0,30,60,90,120,150],triangle:[0,30,60,90,120,150,180,210,240,270,300,330]};
-  for(const [form,angles]of Object.entries(formAngles))for(const rotation of angles){
-    add('shape-match',form+'-'+rotation,R.shapeNames[form]+' / '+rotation+' Grad',{kind:'shape-match',prompt:'Welche Form ist das?',form,rotation,answer:form,choices:R.shapes});
   }
   const canonical=v=>Array.isArray(v)?'['+v.map(canonical).join(',')+']':v&&typeof v==='object'?'{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}':JSON.stringify(v);
   function hash(v){const s=canonical(v);let a=2166136261,b=5381;for(let i=0;i<s.length;i++){a=Math.imul(a^s.charCodeAt(i),16777619);b=Math.imul(b,33)^s.charCodeAt(i);}return (a>>>0).toString(16).padStart(8,'0')+(b>>>0).toString(16).padStart(8,'0');}

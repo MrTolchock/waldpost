@@ -1,4 +1,6 @@
-# Formen wiedererkennen
+# Formen wiedererkennen (archiviert)
+
+Auf Wunsch der Rätselprüfung vom 20. November aus dem aktiven Katalog entfernt.
 
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 

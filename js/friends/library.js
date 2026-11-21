@@ -84,7 +84,7 @@ const games=[
     "id": "rocket",
     "host": "frog",
     "title": "Mengen ergänzen",
-    "picture": "forest-lantern",
+    "picture": "rhyme-fly",
     "screen": "puzzle"
   },
   {
@@ -162,13 +162,6 @@ const games=[
     "host": "kingfisher",
     "title": "Farbwörter verstehen",
     "picture": "puzzle-flower-blau",
-    "screen": "puzzle"
-  },
-  {
-    "id": "shape-match",
-    "host": "ibex",
-    "title": "Formen wiedererkennen",
-    "picture": "forest-shapes",
     "screen": "puzzle"
   }
 ];

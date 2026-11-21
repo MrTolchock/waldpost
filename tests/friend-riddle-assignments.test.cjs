@@ -16,12 +16,12 @@ const assignments={
  kingfisher:['neighbours','colour-words'],
  frog:['rocket','picnic'],
  badger:['friends-badger','sequence'],
- ibex:['friends-ibex','shape-match']
+ ibex:['friends-ibex']
 };
 
-test('all twelve letter friends have two thematically assigned riddles',()=>{
+test('all twelve letter friends have their reviewed riddle assignments',()=>{
  const games=setup().FK.friendsLibrary.catalogue();
- assert.equal(games.length,24);
+ assert.equal(games.length,23);
  assert.deepEqual(Object.keys(assignments).sort(),Object.keys(content.hosts).sort());
  for(const [host,ids]of Object.entries(assignments)){
   const actual=Array.from(games.filter(game=>game.host===host),game=>game.id);
@@ -48,7 +48,7 @@ test('two complete invitation bags visit every friend and rotate both assigned r
   assert.ok(state.completeMail(host));
  }
  assert.equal(seen.size,12);
- for(const [host,ids]of seen)assert.deepEqual(ids.slice().sort(),assignments[host].slice().sort());
+ for(const [host,ids]of seen)assert.deepEqual([...new Set(ids)].sort(),assignments[host].slice().sort());
  assert.equal(state.mail().phase,'return-home');
  assert.deepEqual(create(options).mail(),state.mail(),'the completed journey survives reload');
 });
@@ -80,23 +80,14 @@ test('old friend queues cannot launch reassigned riddles at their previous host'
  assert.equal(memory.get('farbtupf.puzzles.v1'),saved,'selecting a new assignment keeps the earlier round data');
 });
 
-test('the new colour and form pools have distinct discrimination tasks and valid answers',()=>{
+test('colour discrimination tasks remain distinct and shape matching is retired',()=>{
  const {FK}=setup(),catalogue=FK.puzzleCatalogue;
  const colours=catalogue.iterations('colour-words');
  assert.equal(colours.length,30);
  assert.equal(new Set(colours.map(({question:q})=>q.answer+':'+q.choices.map(choice=>choice[0]).sort().join('/'))).size,30);
  assert.equal(new Set(colours.map(it=>it.question.answer)).size,6);
- const forms=catalogue.iterations('shape-match');
- assert.equal(forms.length,25);
- for(const {question:q}of forms){
-  assert.ok(q.choices.includes(q.answer));
-  assert.equal(q.answer,q.form);
- }
- assert.equal(forms.filter(it=>it.question.form==='circle').length,1,'rotating a circle adds no task');
- for(const [form,period]of [['square',90],['rectangle',180]]){
-  const angles=forms.filter(it=>it.question.form===form).map(it=>it.question.rotation%period);
-  assert.equal(new Set(angles).size,angles.length,form+' orientations differ');
- }
+ assert.equal(catalogue.puzzle('shape-match'),null);
+ assert.equal(catalogue.iterations('shape-match').length,0);
 });
 
 test('Fisch tasks count fish and the wayfinding prompt guides Reh to the forest',()=>{
@@ -112,13 +103,13 @@ test('Fisch tasks count fish and the wayfinding prompt guides Reh to the forest'
 test('unchanged riddles retain approvals while reassigned and new riddles require current review',()=>{
  const catalogue=setup().FK.puzzleCatalogue;
  const baseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9bd41c8acd07db2eb7901ce0895f9a422cccd8e2');
- const reassigned=new Set(['count','add','compare','robot','rocket','picnic','sequence','treasure','neighbours','read-puzzle']);
+ const reassigned=new Set(['count','add','compare','robot','rocket','picnic','sequence','treasure','neighbours','read-puzzle','friends-hedgehog']);
  for(const [id,puzzle]of Object.entries(baseline.puzzles)){
-  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id),id);
+  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex',id);
   for(const item of catalogue.iterations(id))assert.equal(catalogue.acceptsRevision(id,item.id,baseline.iterations[item.id].revision),!reassigned.has(id),item.id);
  }
  const introduction=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='301e506b5061af35eeba8825992795827d5802ed');
  const feedbackBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='1e48d04bdc65836e95ce9d9b7c3cc28b9b177a3a');
  const cardBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
- for(const id of ['colour-words','shape-match'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
+ for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,catalogue.puzzleRevision(id)],id+' inherits only its own reviews before the presentation corrections');
 });

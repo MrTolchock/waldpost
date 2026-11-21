@@ -16,18 +16,17 @@
     'friends-mouse':'Lies das Wort. Wähle das passende Bild.',
     count:'Zähle nur die roten Marienkäfer zwischen den anderen Waldbewohnern. Wähle dann die Zahl.',
     add:'Zähle die Fische in beiden Gruppen zusammen und wähle das Ergebnis.',
-    rocket:'Jedes Glühwürmchen hat einen Platz. Zähle die freien Plätze.',
+    rocket:'Jede Fliege hat einen Platz. Zähle die freien Plätze.',
     picnic:'Ziehe die Beeren zu den Freunden, bis alle gleich viele haben. Du kannst Beeren zurück oder zu einem anderen Freund ziehen.',
     syllable:'Sprich das Bildwort langsam. Zähle seine Silben und wähle die passende Zahl.',
     robot:'Führe das Reh zum Wald. Tippe auf die Pfeile. Um die Felsen musst du herumgehen.',
     sequence:'Was passiert zuerst? Ziehe die drei Bilder der Reihe nach von links nach rechts.',
-    treasure:'Merke dir die vier Dinge. Tippe dann auf das Häkchen. Welches Ding fehlt? Mit dem Auge kannst du nochmals nachschauen.',
+    treasure:'Merke dir die vier Dinge. Tippe dann auf das Häkchen. Welches Ding fehlt?',
     neighbours:'Ziehe die Zahl davor nach links und die Zahl danach nach rechts.',
-    compare:'Vergleiche die beiden Fischgruppen. Tippe auf die mit mehr Fischen. Sind es gleich viele, wähle «Gleich viele».',
+    compare:'Vergleiche die beiden Fischgruppen. Tippe auf die mit mehr Fischen. Sind es gleich viele, wähle das Gleichheitszeichen.',
     mirror:'Ergänze rechts das Spiegelbild. Felder in derselben Reihe liegen gleich weit von der Spiegellinie entfernt. Ein zweites Tippen leert ein Feld wieder.',
     vowels:'Lies das Bildwort. Welcher Buchstabe fehlt in der Lücke?',
     'colour-words':'Lies den Satz. Wähle die Blume in der beschriebenen Farbe.',
-    'shape-match':'Schau dir die Form an. Wähle unten dieselbe Form. Sie kann anders gedreht sein.',
     'read-puzzle':'Das Bild zeigt ein Wort. Tippe seine Silben in der richtigen Reihenfolge an.',
   };
   const title=id=>FK.friendsLibrary?.catalogue().find(g=>g.id===id)?.title||(id.startsWith('friends-')?base[id.slice(8)]:id==='trace-numbers'?'Zahlenspuren':FK.puzzles.names[id]);
@@ -42,7 +41,7 @@
   const int=(r,a,b)=>a+Math.floor(r()*(b-a+1));
   const numbers=(n,max,r)=>mix([n,...mix(Array.from({length:max+1},(_,i)=>i).filter(i=>i!==n&&Math.abs(i-n)<=2),r).slice(0,2)],r);
   function question(id,round,seed){
-    if(id==='colour-words'||id==='shape-match')return {...FK.puzzleCatalogue.select(id,seed)[round].question};
+    if(id==='colour-words')return {...FK.puzzleCatalogue.select(id,seed)[round].question};
     const r=rng(seed),order=mix(Array.from({length:words.length},(_,i)=>i),r),entry=words[order[round]],word=entry[0].replaceAll('-','');
     // Round-local random stream; choosing another task never changes earlier questions.
     const random=rng((seed+Math.imul(round+1,2654435761))>>>0),q={id,round};
@@ -71,7 +70,7 @@
     }
     if(id==='rocket'){
       const [total,filled]=mix([[5,2],[6,4],[8,3],[9,5],[10,6]],r)[round];
-      return {...q,kind:'fireflies',prompt:'Wie viele Glühwürmchen fehlen noch?',total,filled,answer:total-filled,choices:numbers(total-filled,10,random)};
+      return {...q,kind:'fireflies',prompt:'Wie viele Fliegen fehlen noch?',total,filled,answer:total-filled,choices:numbers(total-filled,10,random)};
     }
     if(id==='picnic'){
       const [friends,each]=mix([[2,3],[3,2],[2,4],[3,3],[4,2]],r)[round];

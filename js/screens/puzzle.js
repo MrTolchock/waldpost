@@ -87,7 +87,7 @@
     scene.append(line);q.choices.forEach(v=>option(v,picture(v),'Dieses Bild einsetzen: '+pictureName(v)));
   }
   function renderFireflies(q) {
-    const slots=h('div',{class:'puzzle-firefly-slots'});for(let i=0;i<q.total;i++)slots.append(h('span',{class:'puzzle-firefly-slot'+(i<q.filled?' filled':' is-empty'),'aria-label':i<q.filled?'Ein Glühwürmchen':'Ein freier Platz'},i<q.filled?picture('firefly','Glühwürmchen'):'?'));
+    const slots=h('div',{class:'puzzle-firefly-slots'});for(let i=0;i<q.total;i++)slots.append(h('span',{class:'puzzle-firefly-slot'+(i<q.filled?' filled':' is-empty'),'aria-label':i<q.filled?'Eine Fliege':'Ein freier Platz'},i<q.filled?picture('rhyme-fly','Fliege'):'?'));
     scene.append(slots);numeric();
   }
   // Pointer dragging works with touch, pen and mouse. Ordinary taps/keyboard activation keep their button behavior.
@@ -181,24 +181,35 @@
     function redraw(){board.replaceChildren();for(let i=0;i<q.size*q.size;i++){
       const blocked=q.obstacles.includes(i),current=route.position===i,goal=q.goal===i;
       const label=blocked?'Felsen':current?'Hier ist das Reh':goal?'Wald':'Freies Feld';
-      const cell=h('span',{class:'puzzle-route-cell'+(current?' post':'')+(goal?' goal':'')+(blocked?' hedge':''),role:'img','aria-label':label},blocked?picture('forest-stone'):current?FK.friendsLibrary.portrait('deer'):goal?picture('forest-fir'):route.history.includes(i)?'·':'');
+      const cell=h('span',{class:'puzzle-route-cell'+(current?' post':'')+(goal?' goal':'')+(blocked?' hedge':''),role:'img','aria-label':label},blocked?picture('forest-stone'):current?FK.friendsLibrary.portrait('deer'):goal?h('span',{class:'puzzle-woods'},picture('forest-fir'),picture('oak-tree'),picture('forest-fir')):route.history.includes(i)?'·':'');
       cell.dataset.cell=i;board.append(cell);
     }}
     for(const [dx,dy,turn,label]of [[0,-1,-90,'Nach oben'],[-1,0,180,'Nach links'],[1,0,0,'Nach rechts'],[0,1,90,'Nach unten']])arrows.append(button(label,()=>move(dx,dy,board),'puzzle-arrow',h('span',{'aria-hidden':'true',style:{transform:'rotate('+turn+'deg)'},html:'<svg viewBox="0 0 48 48"><path d="M8 24h30M25 11l13 13-13 13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'})));
     scene.append(board);answerArea.append(arrows);redraw();
   }
+  function returnTile(tile,target,value) {
+    fail(tile,'Das passt hier noch nicht.',value);
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const start=target.getBoundingClientRect(),end=tile.getBoundingClientRect();
+    const x=start.left+start.width/2-end.left-end.width/2,y=start.top+start.height/2-end.top-end.height/2;
+    tile.animate([0,-6,6,-3,0].map((shake,i)=>({
+      transform:'translate('+ (x+shake)+'px,'+y+'px)',offset:i*.12
+    })).concat({transform:'translate(0,0)',offset:1}),{duration:420,easing:'ease-out'});
+  }
   function renderOrder(q) {
     const saved=Array.isArray(work().order)?work().order:[];
-    let order=Array.from({length:3},(_,i)=>Number.isInteger(saved[i])&&saved[i]>=0&&saved[i]<3&&saved.indexOf(saved[i])===i?saved[i]:null),selected=null;
+    let order=Array.from({length:3},(_,i)=>saved[i]===i?saved[i]:null),selected=null;
     const slots=h('div',{class:'puzzle-story-slots'}),cards=h('div',{class:'puzzle-story-cards'});
-    const tile=value=>picture(q.items[value][0]);
+    const tile=value=>h('span',{},picture(q.items[value][0]),h('small',{text:q.items[value][1]}));
     const select=value=>{selected=selected===value?null:value;scene.querySelectorAll('[data-story-value]').forEach(node=>{const active=Number(node.dataset.storyValue)===selected;node.classList.toggle('active',active);node.setAttribute('aria-pressed',String(active));});};
     function place(value,index){
-      if(locked)return;const from=order.indexOf(value),displaced=order[index];if(from!==-1)order[from]=displaced;order[index]=value;FK.playLog?.place?.('story',{item:value,from,to:index,order:order.slice()});selected=null;update();
+      if(locked)return;
+      if(value!==index){select(null);returnTile(scene.querySelector('[data-story-value="'+value+'"]'),slots.children[index],value);return;}
+      const from=order.indexOf(value),displaced=order[index];if(from!==-1)order[from]=displaced;order[index]=value;FK.playLog?.place?.('story',{item:value,from,to:index,order:order.slice()});selected=null;update();
     }
     function update(){
       slots.classList.remove('is-retry');work().order=order;persist();redraw();
-      if(order.every(value=>value!==null)){if(order.every((v,i)=>v===i))solved(slots);else fail(slots,'Du kannst die Bilder noch umlegen.');}
+      if(order.every((value,i)=>value===i))solved(slots);
     }
     function redraw(){
       slots.replaceChildren(...order.map((value,i)=>{
@@ -218,11 +229,11 @@
     const reveal=!!work().hidden,items=h('div',{class:'puzzle-treasures'},q.objects.map((id,i)=>h('span',{class:reveal&&i===q.missing?'gap':''},reveal&&i===q.missing?'?':picture(id))));
     scene.append(items);
     if(!reveal)answerArea.append(button('Ich habe sie mir gemerkt',()=>{if(locked)return;work().hidden=true;persist();draw();},'puzzle-memory-ready puzzle-memory-button',FK.icons.element('check')));
-    else {body.querySelector('.puzzle-prompt').textContent='Welcher Waldschatz fehlt?';q.choices.forEach(v=>option(v,picture(v),'Diesen Waldschatz wählen: '+pictureName(v)));answerArea.append(button('Nochmals anschauen',()=>{if(locked)return;work().hidden=false;persist();draw();},'puzzle-look-again puzzle-memory-button',FK.icons.element('view')));}
+    else {body.querySelector('.puzzle-prompt').textContent='Welcher Waldschatz fehlt?';q.choices.forEach(v=>option(v,picture(v),'Diesen Waldschatz wählen: '+pictureName(v)));}
   }
   function renderNeighbours(q) {
     const saved=work().neighbours;
-    const values=[0,1].map(i=>q.choices.includes(saved?.[i])?saved[i]:null);
+    const values=[0,1].map(i=>saved?.[i]===q.answer[i]?saved[i]:null);
     if(q.given==='left')values[0]=q.n-1;
     const row=h('div',{class:'puzzle-neighbours'}),slots=[];
     for(let i=0;i<3;i++){
@@ -233,12 +244,12 @@
       row.append(slot);slots[pos]=slot;
     }
     function place(value,pos){
+      if(value!==q.answer[pos]){
+        returnTile(answerArea.querySelector('[data-answer="'+value+'"]'),slots[pos],value);return;
+      }
       values[pos]=value;work().neighbours=values;persist();slots[pos].firstChild.textContent=value;slots[pos].classList.add('filled');
       FK.playLog?.place?.('neighbour',{value,pos});
-      if(values.every(v=>v!==null)){
-        if(values.every((v,i)=>v===q.answer[i]))solved(row);
-        else fail(row,'Zähle einen Schritt zurück und einen Schritt weiter.');
-      }
+      if(values.every((v,i)=>v===q.answer[i]))solved(row);
     }
     scene.append(row,groupResult());
     for(const value of q.choices){
@@ -249,7 +260,7 @@
   function renderCompare(q) {
     const pair=h('div',{class:'puzzle-compare'});
     for(const [id,n]of [['left',q.a],['right',q.b]]){let node;node=button(id==='left'?'Links sind mehr Fische':'Rechts sind mehr Fische',()=>choose(id,node),'puzzle-berry-plate',h('span',{},objects(q.item||'forest-berry',n)));node.dataset.answer=id;pair.append(node);}
-    scene.append(pair);option('equal','Gleich viele','Gleich viele');
+    scene.append(pair);option('equal','=','Gleich viele');
   }
   function renderMirror(q) {
     const selected=new Set(Array.isArray(work().mirror)?work().mirror:[]),pair=h('div',{class:'puzzle-mirror'}),left=h('div',{class:'puzzle-mirror-grid'}),right=h('div',{class:'puzzle-mirror-grid'});

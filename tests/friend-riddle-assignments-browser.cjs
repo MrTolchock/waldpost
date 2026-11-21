@@ -27,7 +27,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
   await page.evaluate(()=>document.fonts.ready);
   const games=await page.evaluate(()=>FK.friendsLibrary.catalogue());
   const hosts=await page.evaluate(()=>Object.fromEntries(Object.entries(FriendsContent.hosts).map(([id,host])=>[id,host.name])));
-  assert.equal(games.length,24);
+  assert.equal(games.length,23);
   await seedFromPage(page,remote,games.map(game=>game.id));
   const snapshot=()=>page.evaluate(()=>Object.fromEntries(Object.entries(localStorage).filter(([key])=>!key.startsWith('farbtupf.puzzle-review.'))));
   const before=await snapshot();
@@ -37,7 +37,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
     const {width,height}=node.getBoundingClientRect();
     return {width:Math.round(width*100)/100,height:Math.round(height*100)/100,overflow:node.scrollWidth>node.clientWidth+1||node.scrollHeight>node.clientHeight+1};
    }));
-   assert.equal(sizes.length,24,'all puzzle tiles are measured');
+   assert.equal(sizes.length,23,'all puzzle tiles are measured');
    assert.ok(sizes.every(size=>Math.abs(size.width-sizes[0].width)<1&&Math.abs(size.height-sizes[0].height)<1&&!size.overflow),'all tiles have the same size with no clipped content: '+JSON.stringify(sizes));
    return sizes[0];
   };
@@ -45,7 +45,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
   for(const [width,height]of [[1024,700],[390,844]]){
    await page.setViewportSize({width,height});
    await page.evaluate(()=>FK.go('puzzle-gallery'));
-   await active().getByRole('button',{name:'Alle (24)',exact:true}).click();
+   await active().getByRole('button',{name:'Alle (23)',exact:true}).click();
    await page.evaluate(()=>document.fonts.ready);
    const gallerySize=await cardSize();
    await active().locator('.review-grid').evaluate(grid=>grid.scrollIntoView({block:'start'}));
@@ -57,11 +57,11 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
    await page.evaluate(()=>FK.go('puzzle-gallery'));
    for(const [host,name]of Object.entries(hosts)){
     const expected=games.filter(game=>game.host===host).map(game=>game.id).sort();
-    assert.equal(expected.length,2,host);
-    await active().getByRole('button',{name:name+' (2)',exact:true}).click();
+    assert.equal(expected.length,host==='ibex'?1:2,host);
+    await active().getByRole('button',{name:name+' ('+expected.length+')',exact:true}).click();
     const cards=active().locator('.gallery-puzzle');
     assert.deepEqual((await cards.evaluateAll(nodes=>nodes.map(node=>node.dataset.puzzle))).sort(),expected);
-    assert.deepEqual(await cards.locator('[data-character]').evaluateAll(nodes=>nodes.map(node=>node.dataset.character)),[host,host]);
+    assert.deepEqual(await cards.locator('[data-character]').evaluateAll(nodes=>nodes.map(node=>node.dataset.character)),expected.map(()=>host));
     await cards.first().click();
     await page.waitForFunction(()=>FK.current()==='puzzle');
     assert.equal(await active().getAttribute('data-host'),host);
@@ -73,7 +73,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
    await page.evaluate(()=>FK.go('puzzle-review'));
    await page.evaluate(()=>FK.puzzleReview.preview('robot','robot/0-3'));
    assert.equal(await active().locator('.post [data-character="deer"]').count(),1);
-   assert.equal(await active().locator('.goal [data-subject="forest-fir"]').count(),1);
+   assert.equal(await active().locator('.goal .puzzle-woods .wa-illustration').count(),3);
    assert.equal(await active().locator('.hedge [data-subject="forest-stone"]').count(),2);
    assert.equal(await active().locator('[data-character="mailman"],[data-subject="swiss-postbox"]').count(),0);
    await page.screenshot({path:output+'/deer-route-'+width+'.png'});
@@ -83,20 +83,14 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
     assert.equal(await active().locator(selector+' [data-subject="forest-apple"],'+selector+' [data-subject="forest-berry"]').count(),0);
     if(id==='add')await page.screenshot({path:output+'/fish-addition-'+width+'.png'});
    }
-   for(const [id,key]of [['colour-words','rot-gelb-blau'],['shape-match','square-45']]){
+   for(const [id,key]of [['colour-words','rot-gelb-blau']]){
     const question=await page.evaluate(({id,key})=>{
      const item=FK.puzzleCatalogue.iterations(id).find(item=>item.id===id+'/'+key);
      FK.puzzleReview.decide(id,item.id,'pending');
      FK.puzzleReview.preview(id,item.id);
      return item.question;
     },{id,key});
-    if(id==='shape-match'){
-     const fits=await active().locator('.puzzle-form-sample').evaluate(sample=>{
-      const bounds=sample.getBoundingClientRect(),drawing=sample.querySelector('g').getBoundingClientRect();
-      return drawing.left>=bounds.left&&drawing.right<=bounds.right&&drawing.top>=bounds.top&&drawing.bottom<=bounds.bottom;
-     });
-     assert.equal(fits,true,'rotated form stays inside its sample');
-    }else assert.equal(await active().locator('.puzzle-answer [data-subject]').count(),3);
+    assert.equal(await active().locator('.puzzle-answer [data-subject]').count(),3);
     await page.screenshot({path:output+'/'+id+'-'+width+'.png'});
     const wrong=question.choices.map(choice=>Array.isArray(choice)?choice[0]:choice).find(choice=>choice!==question.answer);
     await active().locator('[data-answer="'+wrong+'"]').tap();
