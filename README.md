@@ -2,13 +2,13 @@
 
 [Play](https://mrtolchock.github.io/Drawing-App/) · [Current design](design/README.md) · [Alle Rätsel und Kompetenzen](docs/PUZZLE-CATALOGUE.md) · [Development](docs/DEVELOPMENT.md)
 
-[Drawn image library](https://mrtolchock.github.io/Drawing-App/assets/waldatelier/) · [All image-generator prompts and inputs](design/artwork/GENERATOR-INPUTS.md) · [Artwork workflow](design/artwork/README.md)
+[Claude takeover guide](docs/CLAUDE-HANDOFF.md) · [Drawn image library](https://mrtolchock.github.io/Drawing-App/assets/waldatelier/) · [All image-generator prompts and inputs](design/artwork/GENERATOR-INPUTS.md) · [Artwork workflow](design/artwork/README.md)
 
 All new image generation follows the [canonical watercolour/pencil style](design/illustrations/STYLE.md), its fixed reference images and shared complete prompts. Superseded styles and requests are archived.
 
 A woodland learning game for first-grade practice in Zürich, in Swiss Standard German. Parents choose how many letters their child can complete. Fuchs starts at the den, receives a pictured letter, walks to that friend and solves a puzzle of five different iterations. Hase delivers the next letter. After the last puzzle, Fuchs returns home to sleep and the journey ends.
 
-Only the friend on the current letter offers a puzzle. The 22 Rätsel have 794 Aufgaben, with a common page, sounds, feedback and celebration. Settings contains the adult-only gallery and review workbench: review every unconfirmed iteration in the normal game viewport. Correct completion approves and advances; × opens an optional rejection comment. The full queue ends with the usual celebration and approves the puzzle when every iteration passed. Exact-revision approvals are required before child play. New content, difficulty and shared implementation changes require review again. Deployment never approves content.
+Only the friend on the current letter offers a puzzle. The 24 Rätsel have 849 Aufgaben, with a common page, sounds, feedback and celebration. Settings contains the adult-only gallery and review workbench: review every unconfirmed iteration in the normal game viewport. Correct completion approves and advances; × opens an optional rejection comment. The full queue ends with the usual celebration and approves the puzzle when every iteration passed. Exact-revision approvals are required before child play. New content, difficulty and shared implementation changes require review again. Deployment never approves content.
 
 The table and picture pile remain part of the den painting; drawing and saved-picture screens are retired. There is no timer, shop or currency loop. Drawings and gameplay saves stay on the device. Editorial decisions are shared through [GitHub review storage](docs/REVIEW-STORAGE.md), with an offline cache and automatic recovery in other browsers. The game works offline after a complete initial download.
 

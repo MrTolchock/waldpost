@@ -1,5 +1,7 @@
 # Working agreement
 
+Start with the [takeover guide](docs/CLAUDE-HANDOFF.md) for the game, image generation, backgrounds, audio and release workflow.
+
 - In every user-facing label, call the games **Rätsel** and their individual tasks **Aufgaben**. Keep internal IDs, routes, save keys and historical review records stable.
 
 - Read [current design](design/README.md), [visual style](design/VISUAL-STYLE.md) and [puzzle blueprint](design/PUZZLE-BLUEPRINT.md) before changing the game.
