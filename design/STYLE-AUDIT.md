@@ -1,6 +1,10 @@
 # Current visual consistency audit
 
-Current game art is **Waldpost 9.4.19**. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **87** complete forward image-generation prompts.
+Current game art is **Waldpost 9.4.20**. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **87** complete forward image-generation prompts.
+
+## Rätselseiten im direkten Vergleich · 9.4.20
+
+Der Vergleichsbogen stellt alle 24 Rätsel bei identischer Tabletgrösse nebeneinander. Gleichartige Auswahlkarten teilen die verfügbare Breite, Bildunterschriften beim Mengenvergleich verwenden die gemeinsame Kontextgrösse. Die gestrichelte Fehlermarkierung liegt innerhalb der Karte oder Gruppe. Sie verschiebt weder das Motiv noch die benachbarten Antworten. Die Additionsaufgabe dokumentiert beide Antwortzustände. [Vergleichsbogen und Einzelaufnahmen](evidence/raetselvergleich/README.md)
 
 ## Quiet answer feedback and uniform puzzle tiles — 9.4.19
 

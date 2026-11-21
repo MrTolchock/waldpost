@@ -119,5 +119,6 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  }
  const introduction=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='301e506b5061af35eeba8825992795827d5802ed');
  const feedbackBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='1e48d04bdc65836e95ce9d9b7c3cc28b9b177a3a');
- for(const id of ['colour-words','shape-match'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
+ const cardBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
+ for(const id of ['colour-words','shape-match'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
 });

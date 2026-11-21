@@ -25,6 +25,18 @@ Give longer words and captions room to wrap. Keep the same touch area for equiva
 
 On tablets, the task panel grows into the available page height and centres its content. Answers occupy the lower part of that same page, with a 14–20 px gap from the task and at least 16 px bottom padding. Keep every task/state visible without scrolling on a 9th-generation iPad, including Safari's shorter viewport; phones retain vertical scrolling when needed. The back and rule-speaker controls share a quiet 48 px circular frame and 28 px icon. Child/gallery rounds use only the five leaves for progress.
 
+## Vergleichsmuster für eine Rätselseite
+
+Der [Vergleichsbogen mit allen 24 Rätseln](evidence/raetselvergleich/README.md) zeigt die vollständigen Spielseiten im gleichen Massstab. Für einen neuen Vergleich die zweite Katalogaufgabe als erste Aufgabe einer isolierten Galerierunde bei 1080 × 810 CSS-Pixeln aufnehmen. Kopfzeile, Fortschritt und Seitenränder im Bild lassen.
+
+| Bereich | Gestaltungsregel |
+| --- | --- |
+| Rahmen | Papier maximal 1000 px breit, Aufgabenfeld und Antwortreihe maximal 800 px. Zurück, Gastgeber und Lautsprecher bilden die Kopfzeile. Darunter stehen fünf Blätter und die zentrierte Frage. |
+| Antwortkarten | Auf dem Tablet teilen sich gleichartige Auswahlkarten den Platz. Kurze Zahlen bekommen kompakte Karten. Längere Wörter erhalten Platz für ihre natürliche Breite. Auf dem Telefon dürfen die Karten umbrechen. |
+| Spielfeld | Bildzellen bleiben quadratisch. Anzahlen, Raster, Spiegelachsen und Wege behalten ihre fachlich notwendige Anordnung. Bei Zuordnungsaufgaben liegen die bedienbaren Teile direkt am Ziel. |
+| Falsche Eingabe | Die betroffene Karte oder Gruppe erhält eine warme, innen gestrichelte Kontur. Ihre Grösse bleibt stabil, der Tastaturfokus aussen sichtbar. Das Kind kann sofort einen weiteren Versuch machen. |
+| Richtige Eingabe | Karte, Ziel oder gelöste Gruppe wird sanft grün. Die Statusmeldung lautet «Das passt!». Die Lösung bleibt 900 ms sichtbar. Nach der fünften Aufgabe folgt die gemeinsame Feier für 2,2 Sekunden. |
+
 ## The shared contract
 
 | Rule | Every active puzzle |
@@ -44,7 +56,7 @@ On tablets, the task panel grows into the available page height and centres its 
 
 ## Content and competence
 
-Each iteration has an ID, readable label, complete question, correct answer/solution and an exact revision. All 22 current riddles are mapped individually in the [catalogue](../docs/PUZZLE-CATALOGUE.md); each has a GitHub-readable page listing every iteration and its competence. These are practice mappings, not certification of curriculum attainment. Memory enrichment has no invented curriculum code.
+Each iteration has an ID, readable label, complete question, correct answer/solution and an exact revision. All 24 current riddles are mapped individually in the [catalogue](../docs/PUZZLE-CATALOGUE.md); each has a GitHub-readable page listing every iteration and its competence. These are practice mappings, not certification of curriculum attainment. Memory enrichment has no invented curriculum code.
 
 Numeric bounds and reading prerequisites are explicit. Expanding variety must not silently expand difficulty: use different operand combinations, missing positions, routes, reflections and pictured word targets within the stated boundary. Any intentional difficulty change is a new review revision.
 

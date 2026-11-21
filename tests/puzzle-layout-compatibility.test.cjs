@@ -50,3 +50,13 @@ test('removing success check marks preserves existing task decisions',()=>{
   for(const it of C.iterations(id))assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),true,it.id);
  }
 });
+test('the comparison blueprint retains reviews for each of its 24 puzzles and 849 tasks',()=>{
+ const previous=baselines.releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
+ const catalogue=setup().FK.puzzleCatalogue;
+ for(const [id,puzzle] of Object.entries(previous.puzzles)){
+  assert.ok(catalogue.acceptsRevision(id,null,puzzle.revision),id);
+  for(const task of catalogue.iterations(id)){
+   assert.ok(catalogue.acceptsRevision(id,task.id,previous.iterations[task.id].revision),task.id);
+  }
+ }
+});
