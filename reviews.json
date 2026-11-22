@@ -23250,6 +23250,15 @@
       "at": "2026-11-22T20:06:09.937Z",
       "seen": true,
       "operation": "506a5626-22a5-4bc8-963c-31b988ea588f"
+    },
+    "sequence/story-2@ae9002afa579a529": {
+      "key": "sequence/story-2",
+      "revision": "ae9002afa579a529",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:06:19.902Z",
+      "seen": true,
+      "operation": "4703a64f-4bb8-4482-9f11-71babc64f796"
     }
   },
   "history": [
