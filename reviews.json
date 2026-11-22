@@ -24222,6 +24222,15 @@
       "at": "2026-11-22T21:09:59.755Z",
       "seen": true,
       "operation": "583f96cc-ca09-41bc-9222-481e7b45b118"
+    },
+    "puzzle:neighbours@988635d380bf7b6b": {
+      "key": "puzzle:neighbours",
+      "revision": "988635d380bf7b6b",
+      "status": "improve",
+      "note": "Wenn karte korrekt platziert wurde, entferne sie von auswahl unten",
+      "at": "2026-11-22T21:10:54.228Z",
+      "seen": true,
+      "operation": "1e4d6a5c-d5ac-4325-b555-4d7c48f3d7df"
     }
   },
   "history": [
