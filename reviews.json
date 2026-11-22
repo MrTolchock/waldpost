@@ -24060,6 +24060,24 @@
       "at": "2026-11-22T21:06:27.306Z",
       "seen": true,
       "operation": "f33576d3-f9fd-45b8-9203-ea66d26b4858"
+    },
+    "friends-hedgehog/nature-question-11@6a9994225406df42": {
+      "key": "friends-hedgehog/nature-question-11",
+      "revision": "6a9994225406df42",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:06:30.941Z",
+      "seen": true,
+      "operation": "036508b9-d509-4bc7-a98d-266f68793124"
+    },
+    "friends-hedgehog/nature-question-15@076ae2201004bb9a": {
+      "key": "friends-hedgehog/nature-question-15",
+      "revision": "076ae2201004bb9a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:06:34.122Z",
+      "seen": true,
+      "operation": "80576f01-1e20-49a2-8510-3fe08cdc586d"
     }
   },
   "history": [
