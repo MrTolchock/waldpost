@@ -23792,6 +23792,11 @@
       "at": "2026-11-20T20:20:15.075Z"
     },
     {
+      "key": "puzzle:neighbours",
+      "note": "Wenn zahl falsch ist, mache diese wackel ist falsch animation und werfe karte zurück",
+      "at": "2026-11-22T20:03:53.512Z"
+    },
+    {
       "key": "puzzle:picnic",
       "note": "Ist cooles rätsel. Passe aber green check mark an bei erfolg, passt dort wo es ist irgendwie nicht richtig hin, weil es auf das rechte bild referenziert",
       "at": "2026-11-18T20:12:49.624Z"
