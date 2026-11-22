@@ -23610,6 +23610,15 @@
       "at": "2026-11-22T20:12:11.432Z",
       "seen": true,
       "operation": "321d8f43-165d-4a9d-9e1f-87326a044da3"
+    },
+    "friends-hedgehog/nature-question-11@9cd3da554845014b": {
+      "key": "friends-hedgehog/nature-question-11",
+      "revision": "9cd3da554845014b",
+      "status": "improve",
+      "note": "Wer entsteht anstatt wer wird",
+      "at": "2026-11-22T20:12:47.897Z",
+      "seen": true,
+      "operation": "285eff1f-dd20-44c6-ba9b-bd652266fb91"
     }
   },
   "history": [
