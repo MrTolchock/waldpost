@@ -22644,6 +22644,11 @@
     },
     {
       "key": "puzzle:rocket",
+      "note": "Ersetze glühwürmchen durch fliegen weil frösche fressen fliegen",
+      "at": "2026-11-22T19:59:35.522Z"
+    },
+    {
+      "key": "puzzle:rocket",
       "note": "Satz: Hier sollen x leuchten auf jeder Iteration entfernen. Glühwürmchen sind nicht richtig illustriert, anpassen.",
       "at": "2026-11-18T20:07:49.202Z"
     },
