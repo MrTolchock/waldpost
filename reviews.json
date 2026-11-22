@@ -24267,6 +24267,24 @@
       "at": "2026-11-22T21:28:36.134Z",
       "seen": true,
       "operation": "a901327a-d00b-4066-8c91-448702289bdf"
+    },
+    "neighbours/3-both@c10b2abbc89d7d7f": {
+      "key": "neighbours/3-both",
+      "revision": "c10b2abbc89d7d7f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:28:45.016Z",
+      "seen": true,
+      "operation": "ee829102-0b83-4077-85a3-08edd5a5021d"
+    },
+    "neighbours/3-left@6034aed37e7a3555": {
+      "key": "neighbours/3-left",
+      "revision": "6034aed37e7a3555",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:28:47.483Z",
+      "seen": true,
+      "operation": "7f1a93a5-fb89-46a9-aeea-bf9a9733c447"
     }
   },
   "history": [
@@ -24942,6 +24960,11 @@
       "key": "puzzle:neighbours",
       "note": "Wenn falsch platziertes bild zurückfällt mache es nicht gestrichelt, sondern genau wie es vorher war. Bei korrekter antwort verschiebt sich reihe mit zahlen. Schaue dass es sich nicht verschiebt",
       "at": "2026-11-22T21:09:20.939Z"
+    },
+    {
+      "key": "puzzle:neighbours",
+      "note": "Wenn karte korrekt platziert wurde, entferne sie von auswahl unten",
+      "at": "2026-11-22T21:28:40.069Z"
     },
     {
       "key": "puzzle:neighbours",
