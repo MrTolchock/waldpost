@@ -23664,6 +23664,15 @@
       "at": "2026-11-22T20:15:47.881Z",
       "seen": true,
       "operation": "be2a727c-be53-42a4-8f65-6e18f72cb485"
+    },
+    "friends-hedgehog/nature-question-15@85e3f370b06099d4": {
+      "key": "friends-hedgehog/nature-question-15",
+      "revision": "85e3f370b06099d4",
+      "status": "improve",
+      "note": "Besser: wer hat einen buschigen schwanz?",
+      "at": "2026-11-22T20:16:47.739Z",
+      "seen": true,
+      "operation": "3951e3b7-96c6-46c2-ab4a-6ab9b0a1bc0e"
     }
   },
   "history": [
