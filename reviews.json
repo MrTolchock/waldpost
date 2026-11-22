@@ -21954,6 +21954,33 @@
       "at": "2026-11-22T19:57:05.470Z",
       "seen": true,
       "operation": "e0a94ae3-1f50-4b61-9a35-67ce5565372b"
+    },
+    "treasure/6-1@83e5a553bed68567": {
+      "key": "treasure/6-1",
+      "revision": "83e5a553bed68567",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:57:08.634Z",
+      "seen": true,
+      "operation": "bacd9308-b02e-4d15-8d65-96b09f2246e1"
+    },
+    "treasure/6-2@c4d86c7c3f272272": {
+      "key": "treasure/6-2",
+      "revision": "c4d86c7c3f272272",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:57:10.902Z",
+      "seen": true,
+      "operation": "6cc46b8c-d4ba-4d38-af68-71b018d8d210"
+    },
+    "treasure/6-3@1b46d95c142001de": {
+      "key": "treasure/6-3",
+      "revision": "1b46d95c142001de",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:57:14.301Z",
+      "seen": true,
+      "operation": "d171ed52-ca15-4ee0-9b13-a35d028f308d"
     }
   },
   "history": [
