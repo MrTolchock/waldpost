@@ -23628,6 +23628,15 @@
       "at": "2026-11-22T20:13:10.295Z",
       "seen": true,
       "operation": "d03455e1-6d89-4f77-88a5-2222491defba"
+    },
+    "puzzle:friends-hedgehog@68d9f8978ad8ea09": {
+      "key": "puzzle:friends-hedgehog",
+      "revision": "68d9f8978ad8ea09",
+      "status": "improve",
+      "note": "Sehr ähnliche aufgaben zusammenführen",
+      "at": "2026-11-22T20:14:05.672Z",
+      "seen": true,
+      "operation": "14f6cf1f-5a55-4d83-9927-c37f196eb1dc"
     }
   },
   "history": [
