@@ -1,12 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const {setup,check}=require('../tools/puzzle-catalogue.cjs');
 const plain=v=>JSON.parse(JSON.stringify(v));
-// The last shared-clearing release has verified historical compatibility.
-// Host habitat paintings now require a fresh review of current production art.
-function compatibleSetup(saved){
- const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
- const env=environment({saved,read:snapshotReader('61ef04562d6ac863a6816f494e3844539cb60758').read});env.execute('js/friends/puzzle-implementation.js');return env;
-}
 function approve(FK,id){const V=FK.puzzleReview,C=FK.puzzleCatalogue;for(const it of C.iterations(id)){assert.ok(V.seen(id,it.id));assert.ok(V.decide(id,it.id,'approved'));}assert.ok(V.decide(id,null,'approved'));}
 test('every active puzzle has at least 25 unique finite definitions, competence and real artwork',()=>{
  const {FK,ctx}=setup();FK.STICKERS=[];ctx.MutationObserver=class{observe(){}};ctx.document={body:{}};vm.runInContext(fs.readFileSync('js/ui/waldatelier.js','utf8'),ctx);
@@ -194,25 +188,25 @@ test('rejection, a failed save, an unvisited queue or changed revision never gra
 test('generated GitHub pages and revision reflect the exact runtime',()=>assert.deepEqual(check(),[]));
 test('verified unchanged historical reviews remain valid without rewriting decisions or inspection evidence',()=>{
  const id='mirror',{environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs'),old=environment({read:snapshotReader('073657f32f87daa47739910df090e4250289cc55').read});old.execute('js/friends/puzzle-implementation.js');approve(old.FK,id);
- const memory=old.memory,before=JSON.stringify([...memory]),{FK}=compatibleSetup(memory),C=FK.puzzleCatalogue,items=C.iterations(id);
+ const memory=old.memory,before=JSON.stringify([...memory]),{FK}=setup(memory),C=FK.puzzleCatalogue,items=C.iterations(id);
  assert.equal(FK.puzzleReview.status(id,items[0].id).status,'approved');assert.equal(FK.puzzleReview.status(id,items[0].id).seen,true);assert.ok(FK.puzzleReview.ready(id));
  assert.equal(JSON.stringify([...memory]),before,'read-only recovery preserves timestamps, notes and history');
  const V=owner(FK);assert.ok(V.decide(id,items[0].id,'approved'));
  assert.equal(V.exportData().seen[items[0].id],C.iterationRevision(id,items[0]),'an explicit review records exact inspection evidence');
  const key=memory.keys().next().value,raw=JSON.parse(memory.get(key));raw.decisions[items[1].id].revision='0000000000000000';memory.set(key,JSON.stringify(raw));
- const restored=compatibleSetup(memory).FK.puzzleReview;assert.equal(restored.status(id,items[0].id).status,'approved');assert.equal(restored.status(id,items[1].id).status,'pending');assert.equal(restored.ready(id),false);
+ const restored=setup(memory).FK.puzzleReview;assert.equal(restored.status(id,items[0].id).status,'approved');assert.equal(restored.status(id,items[1].id).status,'pending');assert.equal(restored.ready(id),false);
 });
 test('the expanded mouse reading pool keeps approval for all 25 original word cards',()=>{
  const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
  const old=environment({read:snapshotReader('12511e417e384f8e912be4a62496fce2c234c1e8').read});old.execute('js/friends/puzzle-implementation.js');
- const id='friends-mouse',former=old.FK.puzzleCatalogue,current=compatibleSetup().FK.puzzleCatalogue,items=former.iterations(id);
+ const id='friends-mouse',former=old.FK.puzzleCatalogue,current=setup().FK.puzzleCatalogue,items=former.iterations(id);
  assert.equal(items.length,25);assert.ok(current.iterations(id).length>items.length);
  for(const item of items)assert.ok(current.acceptsRevision(id,item.id,former.iterationRevision(id,item)),item.id);
 });
 test('verified unchanged partial rounds resume verbatim; changed questions remain archived',()=>{
- const {FK,memory}=compatibleSetup(),id='friends-squirrel',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);
- assert.deepEqual(plain(compatibleSetup(memory).FK.puzzleRounds.start(id)),plain(s));
- s.questions[0].count=99;FK.puzzleRounds.save(s);const restored=compatibleSetup(memory),next=restored.FK.puzzleRounds.start(id);assert.equal(next.round,0);assert.equal(JSON.parse(restored.memory.get('farbtupf.puzzles.v1')).legacy[id].questions[0].count,99,'the earlier snapshot is archived');
+ const {FK,memory}=setup(),id='friends-squirrel',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);
+ assert.deepEqual(plain(setup(memory).FK.puzzleRounds.start(id)),plain(s));
+ s.questions[0].count=99;FK.puzzleRounds.save(s);const restored=setup(memory),next=restored.FK.puzzleRounds.start(id);assert.equal(next.round,0);assert.equal(JSON.parse(restored.memory.get('farbtupf.puzzles.v1')).legacy[id].questions[0].count,99,'the earlier snapshot is archived');
 });
 
 test('general puzzle comments reopen the puzzle and retain individual decisions',()=>{

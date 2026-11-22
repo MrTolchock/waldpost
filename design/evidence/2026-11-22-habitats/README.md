@@ -12,4 +12,4 @@ Zwölf neue Aquarell-/Buntstiftlandschaften passen zum Wohnort des jeweiligen Ti
 
 Die Bilder wurden am 22. November 2026 mit `ChatGPT image_gen.imagegen` aus den vollständigen registrierten Anfragen und den beiden kanonischen Referenzbildern erzeugt. [Zuordnung, Quellen, Originalanfragen und Exportmanifeste](../../artwork/BACKGROUNDS.md)
 
-Neue Szenen benötigen die normale erneute Freigabe. Die bisherigen Entscheidungen bleiben erhalten; es wurden keine Freigaben erzeugt und keine Produktionsreviews geschrieben. Ein späterer Bildwechsel öffnet nur die Rätsel des betroffenen Tiers erneut.
+Auf Wunsch des Eigentümers übernimmt 9.4.26 die bisherigen Freigaben über den reinen Hintergrundwechsel hinweg. Die Kompatibilität ist exakt an die Darstellungen vor und nach diesem Wechsel gebunden. Offene Aufgaben, spätere Ablehnungen und Kommentare bleiben wirksam; es wurden keine Freigaben erzeugt und keine Produktionsreviews geschrieben. Ein späterer Bildwechsel öffnet nur die Rätsel des betroffenen Tiers erneut.

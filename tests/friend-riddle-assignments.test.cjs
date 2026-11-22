@@ -101,10 +101,7 @@ test('Fisch tasks count fish and the wayfinding prompt guides Reh to the forest'
 });
 
 test('unchanged riddles retain approvals while reassigned and new riddles require current review',()=>{
- // Verify that assignment migration before the later host-scene artwork change.
- const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
- const release=environment({read:snapshotReader('61ef04562d6ac863a6816f494e3844539cb60758').read,review:false});release.execute('js/friends/puzzle-implementation.js');
- const catalogue=release.FK.puzzleCatalogue;
+ const catalogue=setup().FK.puzzleCatalogue;
  const baseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9bd41c8acd07db2eb7901ce0895f9a422cccd8e2');
  const reassigned=new Set(['count','add','compare','robot','rocket','picnic','sequence','treasure','neighbours','read-puzzle','friends-hedgehog']);
  // 9.4.24 gives capitalised first-letter gaps capital distractors; only these vowel tasks reopen.
@@ -116,5 +113,6 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const introduction=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='301e506b5061af35eeba8825992795827d5802ed');
  const feedbackBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='1e48d04bdc65836e95ce9d9b7c3cc28b9b177a3a');
  const cardBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
- for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,catalogue.puzzleRevision(id)],id+' inherits only its own reviews before the presentation corrections');
+ const clearingBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='61ef04562d6ac863a6816f494e3844539cb60758');
+ for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,clearingBaseline.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
 });

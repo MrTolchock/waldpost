@@ -40,7 +40,7 @@ Every Rätsel uses its host's home as an opaque 1536 × 1024 watercolour/pencil 
 
 All twelve scenes were generated from their complete registered requests and the two canonical reference images on 22 November 2026. Editable PNGs, exact requests/reference hashes and explicit WebP conversion manifests are retained. The centre stays pale behind the real cream task panel; habitat details sit at the perimeter. The scene continues behind the panel without a painted interface, text or animals. Use centre/cover without stretching, and check phone/tablet crops with `node tests/habitat-backgrounds-browser.cjs`.
 
-The review builder hashes the selected host scene, so changing a painting reopens only that host's puzzles. This release changes rendered scenery and therefore requires normal adult review of the new presentation; it supplies no approvals or compatibility exemption.
+The review builder hashes the selected host scene, so changing a painting reopens only that host's puzzles. The owner-requested 9.4.26 compatibility bridge preserves approvals from the last shared-clearing release (`61ef045`) across these exact background-only presentation pairs. Questions, answers, task pictures, rules, difficulty and interactions are identical. It creates no decisions, preserves later restrictions and does not exempt future artwork changes from review.
 
 ## Shared menu clearing
 

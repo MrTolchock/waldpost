@@ -8,7 +8,7 @@ const {FK}=setup(),C=FK.puzzleCatalogue,games=FK.friendsLibrary.catalogue();
 const syntheticReady=[];
 const snapshot=process.env.WALDPOST_REVIEW_SNAPSHOT,ledger=snapshot?JSON.parse(fs.readFileSync(snapshot)):R.empty();
 if(!snapshot){
- const old=environment({read:snapshotReader('d030f8d0919c980ecf7fc49b80f9785ded68e09b').read,review:false});old.execute('js/friends/puzzle-implementation.js');
+ const old=environment({read:snapshotReader(process.env.WALDPOST_REVIEW_REF||'d030f8d0919c980ecf7fc49b80f9785ded68e09b').read,review:false});old.execute('js/friends/puzzle-implementation.js');
  for(const game of games){
   const previous=old.FK.puzzleCatalogue;
   if(C.acceptsRevision(game.id,null,previous.puzzleRevision(game.id))&&C.iterations(game.id).every(it=>previous.iterations(game.id).some(p=>p.id===it.id&&C.acceptsRevision(game.id,it.id,previous.iterationRevision(game.id,p)))))syntheticReady.push(game.id);
@@ -17,6 +17,7 @@ if(!snapshot){
    ledger.entries[key+'@'+revision]={key,revision,status:'approved',note:item?'':'Ursprünglicher Kommentar.',at:'2026-11-17T20:00:00Z',seen:true};
   }
  }
+ if(process.env.WALDPOST_REVIEW_REF)assert.equal(syntheticReady.length,games.length,'every pre-background release remains compatible');
  const key='puzzle:friends-bird',revision=C.puzzleRevision('friends-bird');ledger.entries[key+'@'+revision]={key,revision,status:'approved',note:'Späterer Kommentar.',at:'2026-11-17T21:00:00Z',seen:true};
  ledger.deletedNotes=[{key:'puzzle:friends-beaver',note:'Ursprünglicher Kommentar.',at:'2026-11-17T21:00:00Z'}];
 }
@@ -49,9 +50,23 @@ const initialReady=expected?expected.filter(r=>r.ready).map(r=>r.id):syntheticRe
   await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='saved');assert.deepEqual(await state(page),restored);
   // A later restriction still wins, even when written by another app revision.
   const item=C.iterations('friends-beaver')[0],entry={key:item.id,revision:'later-unknown-renderer',status:'improve',note:'Späterer Hinweis hat Vorrang.',at:'2099-01-01T00:00:00Z',seen:true},next=server.ledger;next.entries[R.address(entry)]=entry;server.ledger=next;
+  if(process.env.WALDPOST_REVIEW_REF){
+   // A withdrawal and a general hold must survive the same background bridge.
+   const key=C.iterations('friends-deer')[0].id;
+   next.entries[key+'@later-withdrawal']={key,revision:'later-withdrawal',status:'pending',note:'Freigabe zurückgezogen.',at:'2099-01-01T00:00:00Z',seen:true};
+   const hold={key:'puzzle:friends-mouse',revision:'later-general-hold',status:'improve',note:'Allgemeiner Hinweis bleibt offen.',at:'2099-01-01T00:00:00Z',seen:true};
+   next.entries[R.address(hold)]=hold;server.ledger=next;
+  }
   await page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false);
   assert.equal(await page.evaluate(key=>FK.puzzleReview.status('friends-beaver',key).decision.note,item.id),entry.note);
   const fresh=await reader();assert.equal(await fresh.page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false,'a fresh device also respects the later flag');
+  if(process.env.WALDPOST_REVIEW_REF){
+   for(const readerPage of [page,fresh.page]){
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('friends-deer')),false,'a withdrawn approval stays open');
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('friends-mouse')),false,'a general comment stays open');
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.progress('friends-mouse').approved),C.iterations('friends-mouse').length,'the general hold retains task approvals');
+   }
+  }
   server.offline=true;await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='error');assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false,'the flag survives offline restart');
   assert.equal(await page.evaluate(()=>FK.reviewRepository.state.pending),0);assert.equal(server.writes.length,0);assert.deepEqual(server.ledger,next);assert.deepEqual(errors,[]);
   await fresh.context.close();await context.close();console.log('PASS '+initialReady.length+' historical puzzle releases: gallery, unchanged timestamps, comments, deletions, fresh devices, later rejection, offline and zero GitHub writes.');
