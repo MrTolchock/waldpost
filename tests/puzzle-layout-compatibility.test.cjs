@@ -69,13 +69,21 @@ test('the comparison blueprint retains reviews for unchanged tasks after the Nov
   }
  }
 });
+// The 22 November review (9.4.27) changed these puzzles and tasks on purpose.
+const reviewed22=new Set(['friends-hedgehog','treasure','neighbours']);
+const changedTasks22=new Set(['riddle-3','riddle-12','nature-question-11','nature-question-15','nature-question-16','nature-question-17','nature-question-19','nature-question-21','nature-question-22'].map(k=>'friends-hedgehog/'+k));
 test('background-only habitat changes preserve every existing puzzle and task review',()=>{
  const catalogue=setup().FK.puzzleCatalogue;
  for(const game of setup().FK.friendsLibrary.catalogue()){
-  assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),true,game.id);
-  assert.deepEqual(new Set(catalogue.formerPuzzleRevisions(game.id)),new Set(historicalCatalogue.puzzleRevisions(game.id)),game.id+' retains exactly the previously compatible releases');
+  if(!reviewed22.has(game.id)){
+   assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),true,game.id);
+   assert.deepEqual(new Set(catalogue.formerPuzzleRevisions(game.id)),new Set(historicalCatalogue.puzzleRevisions(game.id)),game.id+' retains exactly the previously compatible releases');
+  }
   for(const it of catalogue.iterations(game.id)){
    const before=historicalCatalogue.iterations(game.id).find(old=>old.id===it.id);
+   if(changedTasks22.has(it.id)||game.id==='treasure'||game.id==='neighbours'){
+    assert.equal(catalogue.acceptsRevision(game.id,it.id,historicalCatalogue.iterationRevision(game.id,before)),false,it.id+' reopens after the 22 November change');continue;
+   }
    assert.deepEqual(JSON.parse(JSON.stringify(it.question)),JSON.parse(JSON.stringify(before.question)),'backgrounds preserve the task '+it.id);
    assert.equal(catalogue.acceptsRevision(game.id,it.id,historicalCatalogue.iterationRevision(game.id,before)),true,it.id);
    assert.deepEqual(new Set(catalogue.formerIterationRevisions(game.id,it)),new Set(historicalCatalogue.iterationRevisions(game.id,before)),it.id+' does not revive incompatible task decisions');

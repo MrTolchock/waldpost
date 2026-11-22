@@ -20,7 +20,6 @@
     picnic:'Ziehe die Beeren zu den Freunden, bis alle gleich viele haben. Du kannst Beeren zurück oder zu einem anderen Freund ziehen.',
     syllable:'Sprich das Bildwort langsam. Zähle seine Silben und wähle die passende Zahl.',
     robot:'Führe das Reh zum Wald. Tippe auf die Pfeile. Um die Felsen musst du herumgehen.',
-    sequence:'Was passiert zuerst? Ziehe die drei Bilder der Reihe nach von links nach rechts.',
     treasure:'Merke dir die vier Dinge. Tippe dann auf das Häkchen. Welches Ding fehlt?',
     neighbours:'Ziehe die Zahl davor nach links und die Zahl danach nach rechts.',
     compare:'Vergleiche die beiden Fischgruppen. Tippe auf die mit mehr Fischen. Sind es gleich viele, wähle das Gleichheitszeichen.',
@@ -95,16 +94,6 @@
     if(id==='robot'){
       const size=4,start=[0,12,3,15,0][round],goal=[15,3,12,0,15][round],obstacles=[[5,6],[5,9],[6,10],[9,10],[2,5,9]][round];
       return {...q,kind:'robot',mode:'route',prompt:'Führe das Reh zum Wald.',size,start,goal,obstacles};
-    }
-    if(id==='sequence'){
-      const stories=[
-        [['bean','Bohne in die Erde'],['seedling','Die Bohne keimt'],['plant','Eine Pflanze wächst']],
-        [['egg','Ein Ei liegt im Nest'],['chick','Ein Küken schlüpft'],['bird-sit','Der Vogel ist gross']],
-        [['caterpillar','Eine Raupe frisst'],['cocoon','Die Raupe verpuppt sich'],['butterfly','Ein Schmetterling schlüpft']],
-        [['forest-flower','Der Apfelbaum blüht'],['forest-apple','Ein Apfel wird reif'],['forest-basket','Wir ernten den Apfel']],
-        [['pencil','Wir schreiben einen Brief'],['postbox','Wir werfen ihn ein'],['mailbox','Der Brief kommt an']]
-      ];
-      return {...q,kind:'order',prompt:'Was passiert zuerst? Tippe die Bilder der Reihe nach an.',items:stories[round],order:mix([0,1,2],random),answer:[0,1,2]};
     }
     if(id==='treasure'){
       const objects=mix(['forest-leaf','forest-feather','forest-mushroom','forest-stone','forest-berry','forest-nut','forest-apple','forest-flower'],random).slice(0,4),missing=int(random,0,3);

@@ -15,13 +15,13 @@ const assignments={
  deer:['friends-deer','robot'],
  kingfisher:['neighbours','colour-words'],
  frog:['rocket','picnic'],
- badger:['friends-badger','sequence'],
+ badger:['friends-badger'],
  ibex:['friends-ibex']
 };
 
 test('all twelve letter friends have their reviewed riddle assignments',()=>{
  const games=setup().FK.friendsLibrary.catalogue();
- assert.equal(games.length,23);
+ assert.equal(games.length,22);
  assert.deepEqual(Object.keys(assignments).sort(),Object.keys(content.hosts).sort());
  for(const [host,ids]of Object.entries(assignments)){
   const actual=Array.from(games.filter(game=>game.host===host),game=>game.id);

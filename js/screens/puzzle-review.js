@@ -27,7 +27,6 @@
     picnic:'Das Kind verteilt Beeren einzeln auf zwei bis vier Freunde, bis alle gleich viele erhalten haben.',
     syllable:'Das Kind erkennt die Sprechsilben eines vertrauten Bildworts und bestimmt, ob das Wort eine, zwei oder drei Silben hat.',
     robot:'Das Kind plant eine Folge benachbarter Schritte auf einem Raster, um ein sichtbares Ziel zu erreichen und Hindernisse zu umgehen.',
-    sequence:'Das Kind erkennt den zeitlichen Zusammenhang dreier Bilder und ordnet sie zu einer sinnvollen Geschichte.',
     treasure:'Das Kind merkt sich vier abgebildete Gegenstände und erkennt nach dem Vergleich, welcher Gegenstand fehlt. Dies ist eine ergänzende Gedächtnisübung ohne Lehrplancode.',
     neighbours:'Das Kind orientiert sich in der Zahlenfolge und bestimmt die Zahl unmittelbar vor oder nach einer gegebenen Zahl.',
     compare:'Das Kind vergleicht zwei sichtbare Mengen bis 10 und entscheidet, wo mehr oder ob gleich viele Fische schwimmen.',

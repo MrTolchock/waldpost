@@ -162,6 +162,10 @@
 .screen-puzzle[data-game=treasure] .puzzle-treasures>span{width:var(--treasure-size);height:var(--treasure-size)}
 .screen-puzzle[data-game=treasure] .puzzle-answer{padding:8px;min-width:0;min-height:0}
 .screen-puzzle[data-game=treasure] .puzzle-answer>.puzzle-picture{width:var(--treasure-size);height:var(--treasure-size)}
+/* The memory check and the later answer row share one height, so the
+   remembered row stays where it was after the check mark (22 Nov review). */
+.screen-puzzle[data-game=treasure] .puzzle-answers{min-height:calc(var(--treasure-size) + 18px);align-content:center;align-items:center}
+.screen-puzzle[data-game=treasure] .puzzle-memory-button{margin:0 auto}
 .puzzle-number-card{display:grid;place-items:center;width:clamp(70px,15vw,112px);min-width:0;min-height:88px;padding:8px;border:1px solid #b6a17d;border-radius:12px;background:#fff9e9}
 .puzzle-number-card.middle{background:#e7eccc}.puzzle-number-card.active{outline:3px solid #bb9a54;outline-offset:3px}
 .puzzle-mirror-cell{position:relative}
@@ -184,6 +188,10 @@
 .puzzle-neighbour-tile{display:grid;place-items:center;min-width:56px;min-height:56px;background:#fffaf0;border:2px solid #bda482;border-radius:14px;font:700 var(--puzzle-score-size)/1.35 var(--read)}
 .puzzle-number-card[data-neighbour-slot]{border:2px dashed #aa926c}
 .puzzle-number-card.is-drop-target{background:#e0eccf}
+/* The neighbour row keeps its place when «Das passt!» appears, and a
+   rejected number card returns unchanged (22 Nov review). */
+.puzzle-neighbours+.puzzle-group-result{display:flex;visibility:hidden}
+.puzzle-neighbours.is-correct+.puzzle-group-result{visibility:visible}
 .puzzle-story-slot{position:relative}
 .puzzle-story-slot:not(:last-child)::after{content:"›";position:absolute;left:100%;width:10px;color:#766649;font-size:18px}
 

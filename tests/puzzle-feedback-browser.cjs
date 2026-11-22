@@ -43,17 +43,15 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',out=process.en
   await drag(bank(),place(0),mode);assert.deepEqual(await counts(),[1,0]);await drag(berry(0),place(1),mode);assert.deepEqual(await counts(),[0,1]);await drag(berry(1),active().locator('.puzzle-picnic-bank'),mode);assert.deepEqual(await counts(),[0,0]);
   await drag(bank(),place(0),'touch',true);assert.deepEqual(await counts(),[0,0],'cancel never moves a berry');await drag(bank(),active().locator('.puzzle-prompt'),mode);assert.deepEqual(await counts(),[0,0],'dropping outside a destination changes nothing');
   for(const i of [0,0,1,1])await drag(bank(),place(i),mode);assert.deepEqual(await counts(),[2,2],'one berry per gesture');assert.equal(await page.evaluate(()=>FK.puzzleReview.status('picnic','picnic/2-2').status),'approved');assert.equal(await active().locator('.puzzle-group-result').isVisible(),true);await page.screenshot({path:out+'/picnic-'+width+'.png'});
-  await page.evaluate(()=>FK.puzzleReview.decide('sequence','sequence/story-2','pending'));await preview('sequence','sequence/story-2');const card=n=>active().locator('.puzzle-story-card[data-order="'+n+'"]'),slot=n=>active().locator('[data-story-slot="'+n+'"]');
-  assert.equal(await active().getByRole('button',{name:'Reihenfolge zurücksetzen',exact:true}).count(),0);
-  await drag(card(1),slot(0),mode);
-  assert.equal(await slot(0).getAttribute('data-story-value'),null);
-  assert.ok(await card(1).evaluate(el=>el.classList.contains('is-retry')));
-  for(const i of [0,1,2])await drag(card(i),slot(i),mode);
-  assert.equal(await page.evaluate(()=>FK.puzzleReview.status('sequence','sequence/story-2').status),'approved');
-  await page.screenshot({path:out+'/sequence-'+width+'.png'});
+  // 22 Nov: a rejected number returns unchanged and the row never moves.
+  await preview('neighbours','neighbours/5-both');const nRow=()=>active().locator('.puzzle-neighbours').boundingBox(),nTile=v=>active().locator('.puzzle-neighbour-tile[data-answer="'+v+'"]'),nSlot=i=>active().locator('[data-neighbour-slot="'+i+'"]');
+  const row0=await nRow();await drag(nTile(3),nSlot(0),mode);assert.equal(await nTile(3).evaluate(el=>el.classList.contains('is-retry')),false,'a rejected number looks as before');assert.equal(await nSlot(0).textContent(),'?');
+  await drag(nTile(4),nSlot(0),mode);await drag(nTile(6),nSlot(1),mode);assert.equal(await page.evaluate(()=>FK.puzzleReview.status('neighbours','neighbours/5-both').status),'approved');assert.deepEqual(await nRow(),row0,'the number row stays in place');
+  await page.screenshot({path:out+'/neighbours-'+width+'.png'});
+  await preview('treasure','treasure/0-0');const tBoxes=async()=>[await active().locator('.puzzle-treasures').boundingBox(),await active().locator('.puzzle-answers').boundingBox()];
+  const memo=await tBoxes();await active().locator('.puzzle-memory-ready').click();assert.equal(await active().locator('.puzzle-answer').count(),3);assert.deepEqual(await tBoxes(),memo,'the remembered row and the answer row keep their size and place');
  }
  // Keyboard alternatives use the same placement operations.
- await preview('sequence','sequence/story-3');for(const n of [0,1,2]){await active().locator('[data-order="'+n+'"]').focus();await page.keyboard.press('Enter');await active().locator('[data-story-slot="'+n+'"]').focus();await page.keyboard.press('Enter');}assert.equal(await page.evaluate(()=>FK.puzzleReview.status('sequence','sequence/story-3').status),'approved');
  await preview('picnic','picnic/2-1');for(const i of [0,1]){await active().locator('.puzzle-picnic-bank .puzzle-picnic-berry').first().focus();await page.keyboard.press('Enter');await active().locator('.puzzle-picnic-friend').nth(i).focus();await page.keyboard.press('Enter');}assert.equal(await page.evaluate(()=>FK.puzzleReview.status('picnic','picnic/2-1').status),'approved');
  // A child's partial placements use the existing save fields and survive a fresh page.
  await page.evaluate(()=>{

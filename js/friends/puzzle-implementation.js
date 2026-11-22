@@ -6,7 +6,7 @@ window.FK.puzzleImplementations = {
   "friends-owl": "28e12097372bbdd6ba8caf9071fe6eae72ba3b53c9f6a1f639a26605c7816028",
   "friends-beaver": "748b27b6e42d1d68688003a8d52021c5b2eb555633b3105b8b00ac131324e158",
   "friends-mouse": "22e4273f9f5f953703bcc34e26f596b75055015111a845208274a562ebf9fe98",
-  "friends-hedgehog": "84518dc347f478cc208ed3144e24c4a1681a92fbe5961bbc0c0c7a4e30f97b57",
+  "friends-hedgehog": "34c69251cc97a304eaa40a617026d007a871188bcb07d60cf268c7e2d53cfc4e",
   "friends-deer": "31140308a46e11ab77ddbed2dc969531acc76ab381244d94bb030718028617c5",
   "friends-badger": "cdf79d3cf48fd3dfdfd3b45ec58d3645f0895e6749191379051231111f75c882",
   "friends-ibex": "dca629e05bb4d43c97f6259940e20b91fed45a826d67a73005e3f03d78b7ccf4",
@@ -16,9 +16,8 @@ window.FK.puzzleImplementations = {
   "picnic": "e23781b2e1ee4362a39b59bd3fdd9be8defa6ecc8d69190edf5cd324f13a1705",
   "syllable": "0baa75a4fa0f7047abac561fbc72590ea433f18e24da330f49e2d860fda7c175",
   "robot": "f314bc9eca60c07a5167f930658244ff07e5b88126057f283aac36e3eedda7b3",
-  "sequence": "8b6f8fa4efc14bb43132b00579d5b5a5562bf8c7b49f0f136974f93a4a2bc3c1",
-  "treasure": "84094b71960bb7efbe8506cb91260e153d45f71245ce097872b52df848c2505a",
-  "neighbours": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
+  "treasure": "0f69cc8933c171ea4a45f2b639005f6bc1457d77e1b5aad12ae1a69ca11e1320",
+  "neighbours": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
   "compare": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
   "mirror": "95493483f4a95b046fdeee04cd49a970f82f91f2339d59ec16e4b67da433d3d8",
   "vowels": "0313d8d7a420c0e68bc82564f09af8ecf995fa52e87df4175637ccc8dc78bbe8",
@@ -221,7 +220,7 @@ window.FK.puzzleIterationImplementations = {
   "friends-hedgehog/riddle-0": "03f932f9f2cb66d8a90e763414614af5ade5486d37be947a2c6fbbde30100321",
   "friends-hedgehog/riddle-1": "4c129a7eb44048435a3efabe8e53a48612b61fb783fa461dcb4a6dd773ee5b27",
   "friends-hedgehog/riddle-2": "ce6f530a45fcc97338c342c3b0c799967e38f5f5ce0b407ed8c2bfc8a943d639",
-  "friends-hedgehog/riddle-3": "52eb7505fa7cd4136045a0089e8c9f2538380d36957dc3f307801fffe43d4277",
+  "friends-hedgehog/riddle-3": "9507fdb24df8bee98fab6998970e963ca3c4df0880f293616a55d528e7f5664d",
   "friends-hedgehog/riddle-4": "ed7f4843df00c8d82140b1ee23efe11fdd547eb0fba4879e08c1061cdd54e170",
   "friends-hedgehog/riddle-5": "3c44e3f9dd5a8561ccb16dbfc837f64541f779545d757db69dd77c6865f293bd",
   "friends-hedgehog/riddle-6": "82e2f6983be2f7222e6663be57c3cbef22ccb738312437627d37bd840cc602f0",
@@ -230,7 +229,7 @@ window.FK.puzzleIterationImplementations = {
   "friends-hedgehog/riddle-9": "d3f23f239f1202aff9c8a7643e3d2c7c0e8a25a9f40b63e316d287a3e0e6c8ce",
   "friends-hedgehog/riddle-10": "2ed913665dc232ad011badcf0bb6d2d95f49bb61277eb84a44327a05ece92650",
   "friends-hedgehog/riddle-11": "9749d2836f9e8c592f47a0bcc3e782dff0cb7c513cb658fa77a8e4107dadf7aa",
-  "friends-hedgehog/riddle-12": "369212ed1c384e66a93ed8bf764b3c8253337300ec9e9ac115bae75002ce788a",
+  "friends-hedgehog/riddle-12": "10ff2bb08fe8503d070c1ef0ffab2cc1eeaffc435a97e88a8a0cfeb2cf4a5b92",
   "friends-hedgehog/riddle-13": "561bfe4efd23793294af973645c6a6ad3247b770969823a9de867baf68287ac9",
   "friends-hedgehog/riddle-14": "496e3608e70e7258c8c9b0ad1ec1fb6c69694f89dde892df2f47474c09bf18b0",
   "friends-hedgehog/riddle-15": "3aa7c60f7955d25269858a4a5c380374ef2ed52bc4924851413d819d66fc60ca",
@@ -243,30 +242,24 @@ window.FK.puzzleIterationImplementations = {
   "friends-hedgehog/riddle-22": "f42e5dc3427ee204b81b5efc2619a4144b187053879c4e4520825e381e85185a",
   "friends-hedgehog/riddle-23": "8dfffafb26dfb3641e66877ba79f34dcbbe071aa991f8841312b58dd7a5373c4",
   "friends-hedgehog/riddle-24": "fbdd8a40ceb1df32e0654525d7d2be4f870364a4bd3be4b881ac352ca4680381",
-  "friends-hedgehog/nature-question-0": "f027ba37921b1f706f683019c369f0e8fc707a54ab3270b14071ecab6a869571",
-  "friends-hedgehog/nature-question-1": "9fc59c682d87bfd9093eef54c19ee029b5d1e6061e759c4de5d615e3d449fdfc",
   "friends-hedgehog/nature-question-2": "2f20883045cd88c040c3d615e4fc1b5cbdb96642ed1d834b7580dc30d096d1af",
   "friends-hedgehog/nature-question-3": "dfe19debc710a572778b457d6ea16606c8fc7f58e6df91f7977f132004c0a109",
   "friends-hedgehog/nature-question-4": "652e89d8907c2901ab46c59cee657d4e4d4a7de068ef248ce32a505fb2f53dc8",
   "friends-hedgehog/nature-question-5": "9d62441623224ebd941c5acb1c40971f417bfc2514653b37f5950a3b444ef364",
   "friends-hedgehog/nature-question-6": "0ebd04f6c421a7f98dcd0fa5668efadd22bfcb7ae3405da24a620443406d33e7",
   "friends-hedgehog/nature-question-7": "a4f0e6b716c86b27e40c7d69d5a81628991c47ff5ce1c19a9ab35f848542490f",
-  "friends-hedgehog/nature-question-8": "cdf6ad70dbc3923ec57e2c34b389315044e2d7925cde847ae2c878effa66a088",
   "friends-hedgehog/nature-question-9": "c9ef5dbaf3fb16ec53bcd243b69496b3ea92c6fcfb58a3f434bf512a322d4785",
-  "friends-hedgehog/nature-question-10": "cbafcd5526035f97b3b2eca9376bf0640d3b7fc5b2ce4c1605e98811b2cdc27a",
   "friends-hedgehog/nature-question-11": "6caaee964c8113d489afc7a51ee67dac5b6c28c350b8a92130b249d2913b0516",
   "friends-hedgehog/nature-question-12": "f275dec4133adbfd9712d6c300487a0bfef366412ce531960c707275cf0eaa2e",
-  "friends-hedgehog/nature-question-13": "57e3ef553237c8baeaab401b14d92a40134ca645108628461b063fa3e3f4224f",
   "friends-hedgehog/nature-question-14": "fc590bb557419b3782c10588b8c8ecdbe63647fa6b6f128aff22f957060b345e",
   "friends-hedgehog/nature-question-15": "c2f2717e8d02efb0fc0a6e84378a664dc3e809423a865ebb6ab33723e977d620",
-  "friends-hedgehog/nature-question-16": "42327900797624ae5ca3a82ad99ede40bb3200cc3ee52683eb2a2dedd5d6d31c",
+  "friends-hedgehog/nature-question-16": "243d43fcfa9d79c6ce823129a1d27ebc8a81dc8cf60ddc0c803590a382dbeb14",
   "friends-hedgehog/nature-question-17": "e7ca3dd3c3847d575f465eddfd01da9284f0489dcb485f52db37f95a8c154ac6",
   "friends-hedgehog/nature-question-18": "035f685dc7d81d5c6ea2c7d8a5de130c8b91af06b5a1103e0fa0f7f68ab0440e",
   "friends-hedgehog/nature-question-19": "69f60f8f90cd6dc63719033131fe1c63739464ad5f2fdd674792f0e51ea83400",
   "friends-hedgehog/nature-question-20": "22e2048df854ad02f0c2c33b8ed142781ba7d4ee22907e1e2517e12620baa082",
-  "friends-hedgehog/nature-question-21": "a588ec969cec5a33accc4d751fcdb4da18f541668029087495081970479ed29a",
-  "friends-hedgehog/nature-question-22": "e07e81644e21f3f78e787630fa2133f4ceb61cfe39f80f3a8d15fe4c24a2d99a",
-  "friends-hedgehog/nature-question-23": "6f7f898a8bfa3e95e2ad5fd0000bdcdcaf8f6eda588594e3532094eb7b112c23",
+  "friends-hedgehog/nature-question-21": "2918cb4a65587fc5c40bc5417d92c85f3b4cd8d021d243163bb3e880344840aa",
+  "friends-hedgehog/nature-question-22": "b7f0c824abf8342dc279535add8c5a0209d7dd68ddec840a9cae54ce0de63dec",
   "friends-hedgehog/nature-question-24": "116db5381bd8da7655c490a62fe40a1f10050c292a9dc3df6e70237cd8b6d021",
   "friends-deer/riddle-0": "30152db39dfd55a9cbdcb0e2d6e385d1bd36e665cf543be68613b75ba7993e0a",
   "friends-deer/riddle-1": "1cd137af5e29270d3597d1dee5344c0316820f00a58294829e6e7dd5e28a0a3f",
@@ -547,99 +540,74 @@ window.FK.puzzleIterationImplementations = {
   "robot/4-3": "f314bc9eca60c07a5167f930658244ff07e5b88126057f283aac36e3eedda7b3",
   "robot/4-4": "f314bc9eca60c07a5167f930658244ff07e5b88126057f283aac36e3eedda7b3",
   "robot/4-5": "f314bc9eca60c07a5167f930658244ff07e5b88126057f283aac36e3eedda7b3",
-  "sequence/story-0": "db519d2c1ca76542d3dbcdede724d53b9ad353fa49a83f794bef76f43acd1301",
-  "sequence/story-1": "cfb5055536c5a474539202371d2bd11ec0717a56d4938dbcdff85eb221a45f5b",
-  "sequence/story-2": "c7c94f8d0bb9fd4cb141add56c610dd61e6230b9f8ad4013c36a5804c387803b",
-  "sequence/story-3": "9131b4cda24fb0d2b39a3e027c871b50c607bcd9e8e531e2b0ab0d2acde49cd9",
-  "sequence/story-4": "735c57b14e77dd07f2b3faf1332af2d3df539b62eb51a42905f0798f85505b74",
-  "sequence/story-5": "204623a4daaeae98c771ca7cb8a352291c0843769e01c43d6c24cced9f83d22d",
-  "sequence/story-6": "453bd24fdc03eb8c1bb91a83d8201d1d9016a205f58d4fbdb804659a9ec2ca0d",
-  "sequence/story-7": "aff8d423aee2bc99aa0b2b769678e8c365210d4c94c6b5b534ed0211e65d2ed4",
-  "sequence/story-8": "04cfcdb0fca29e88fc27400801b9cc7d72b656435135d77e8948265459ae452e",
-  "sequence/story-9": "4c9ad0529d0cf062e442d0b64e030dedb16beb1ab81279fdfaf7e6b282f23d82",
-  "sequence/story-10": "48b0336e86fa29d57492021303d87477e5d7c874abf708c0b0c4de59d85d0950",
-  "sequence/story-11": "adb2f1cb63c951d12f6c180a5ab81d6c6ed6b96310878146bfe6bd263353f945",
-  "sequence/story-12": "42b4f1097377cb3e99a39081838522da66165488d26a330a3a9ed74ad6a56915",
-  "sequence/story-13": "1474d0221bc313d76bde46ce7adc699eb48124c8640537fe751905fe3b8bfe5e",
-  "sequence/story-14": "d42f8b28f0ec9fd6f7ea6be280e72391f4f6af1c00b1b7cab1dcf95d8f7020f7",
-  "sequence/story-15": "025d602195da91cf58f972e93ae0bbbe9c1740b6fac08963e617b2456eef7e4b",
-  "sequence/story-16": "1ea7bf3ea61329020a391556f987055172bcb5422540b4ffe764db5c536c5830",
-  "sequence/story-17": "8a07ac38923173846deb1e0274569189a3b3424b1422a75ce62617eeded01b7d",
-  "sequence/story-18": "f747976c0ba2201f395b5ac6016e79a508b490cbd9a78963433024c18653a65a",
-  "sequence/story-19": "014120588c44d21ec9e02358d9d144df55b5710733a3d7598479ac47533cd426",
-  "sequence/story-20": "e445f23ce7b7b76144c913857a2a3244576638d8350264e6d9ab21903578b873",
-  "sequence/story-21": "3558c0bf8bde70929879fa1eb4e72b4f33c338ba71d2a614c9a22e65b1662f48",
-  "sequence/story-22": "f91313ec9a055bce477452f9fcbc0b56265b580f275499930297be42ccc03d2d",
-  "sequence/story-23": "a2a118ba1aa58632b7bc282e013fe60d95375f48310a70b87cc8518ad9ef1062",
-  "sequence/story-24": "2c96588483535dda0ec66e21f2febf0a1c3bf50dde6e3d3eaef98729c98bff1d",
-  "treasure/0-0": "69d2e7771b340ba92442f95d38d76e382a526c88a774546da3872fbfc659db5a",
-  "treasure/0-1": "e4a2a9a443eedbb1f46edec589442649e4e6101a36f434e0b3b57abfee52d36b",
-  "treasure/0-2": "7c4285984f7b7bd5406320a875856fcdbcc8a74f9d4e4a8d52b0993a2bf90c84",
-  "treasure/0-3": "0ecfbbdfeee1319b73b6230c6f953bcd3365292d099675bbb02e03f4164eea4e",
-  "treasure/1-0": "69d2e7771b340ba92442f95d38d76e382a526c88a774546da3872fbfc659db5a",
-  "treasure/1-1": "84094b71960bb7efbe8506cb91260e153d45f71245ce097872b52df848c2505a",
-  "treasure/1-2": "81110da5770fc4d039a15bcd4641817528220ebbb7184c09a6f121e1fce7d085",
-  "treasure/1-3": "0ecfbbdfeee1319b73b6230c6f953bcd3365292d099675bbb02e03f4164eea4e",
-  "treasure/2-0": "69d2e7771b340ba92442f95d38d76e382a526c88a774546da3872fbfc659db5a",
-  "treasure/2-1": "84094b71960bb7efbe8506cb91260e153d45f71245ce097872b52df848c2505a",
-  "treasure/2-2": "884bb49c9d2bd0e4af04c40d8a70dcb4b48149ce1bebf3d8bac9303bea075206",
-  "treasure/2-3": "c540047aef2fac14a9b58534b31f6c922610215f5defdd4f5372ebb13f8c428c",
-  "treasure/3-0": "8f5defff5a12892ce6c8881fdfa27b671354a6fcefb41bcf3cb1f2b3bc5e10a6",
-  "treasure/3-1": "84094b71960bb7efbe8506cb91260e153d45f71245ce097872b52df848c2505a",
-  "treasure/3-2": "884bb49c9d2bd0e4af04c40d8a70dcb4b48149ce1bebf3d8bac9303bea075206",
-  "treasure/3-3": "db0778465d55e3a653b25f73e5abb30dcd3ae89ade6b01a64ce035046621a52a",
-  "treasure/4-0": "aa1c4dd3f97075e1c28612878d437c5a7821dd3a0e5ca8886f9dade9f5801115",
-  "treasure/4-1": "ce7c85fe3cf0b43e020a6cb767cc8af00568eb8cefc411ddb1137ef5e1d122ce",
-  "treasure/4-2": "884bb49c9d2bd0e4af04c40d8a70dcb4b48149ce1bebf3d8bac9303bea075206",
-  "treasure/4-3": "db0778465d55e3a653b25f73e5abb30dcd3ae89ade6b01a64ce035046621a52a",
-  "treasure/5-0": "6d5c6ffba2cf4f1046ef5be4c87d1ef497b20461f82add18d3a37255500c1312",
-  "treasure/5-1": "0772ec03daa923612f33213cd2f528038b96f657a7262b06daa9eedc4a710d6a",
-  "treasure/5-2": "db0778465d55e3a653b25f73e5abb30dcd3ae89ade6b01a64ce035046621a52a",
-  "treasure/5-3": "aa1c4dd3f97075e1c28612878d437c5a7821dd3a0e5ca8886f9dade9f5801115",
-  "treasure/6-0": "7c4285984f7b7bd5406320a875856fcdbcc8a74f9d4e4a8d52b0993a2bf90c84",
-  "treasure/6-1": "cf5b5fbae750be282eb1e215019a1b0ee3760103d272731cc3d0c11373602c31",
-  "treasure/6-2": "aa1c4dd3f97075e1c28612878d437c5a7821dd3a0e5ca8886f9dade9f5801115",
-  "treasure/6-3": "6d5c6ffba2cf4f1046ef5be4c87d1ef497b20461f82add18d3a37255500c1312",
-  "treasure/7-0": "0ecfbbdfeee1319b73b6230c6f953bcd3365292d099675bbb02e03f4164eea4e",
-  "treasure/7-1": "04cd9792801b9cc3fe90ec6435251c6d0bb42651441cfc0070e52c564d405286",
-  "treasure/7-2": "6d5c6ffba2cf4f1046ef5be4c87d1ef497b20461f82add18d3a37255500c1312",
-  "treasure/7-3": "7c4285984f7b7bd5406320a875856fcdbcc8a74f9d4e4a8d52b0993a2bf90c84",
-  "neighbours/1-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/1-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/2-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/2-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/3-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/3-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/4-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/4-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/5-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/5-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/6-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/6-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/7-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/7-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/8-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/8-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/9-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/9-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/10-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/10-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/11-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/11-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/12-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/12-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/13-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/13-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/14-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/14-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/15-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/15-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/16-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/16-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/17-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/17-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/18-both": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
-  "neighbours/18-left": "7a08cce896b78d2ac2790f0ee6a5ed09a29841bd1723e11cd86765524d7a5710",
+  "treasure/0-0": "b58a40e06552f37c95deb701ea9a019f5f17dba3b3decdaf0eef378053a5f317",
+  "treasure/0-1": "6d06245d07c42d3ce4f52bdca0bc42a7a74834d6862e7cd9bb9c267d92fcb387",
+  "treasure/0-2": "dc3b5a0d30dc7e77214009cc3ef1e6779975438d3e4ae2c0ad337bf7f463d087",
+  "treasure/0-3": "ede148612ec058cd851181d0e8dcaa88b18348fa621e84e400cad277372ec640",
+  "treasure/1-0": "b58a40e06552f37c95deb701ea9a019f5f17dba3b3decdaf0eef378053a5f317",
+  "treasure/1-1": "0f69cc8933c171ea4a45f2b639005f6bc1457d77e1b5aad12ae1a69ca11e1320",
+  "treasure/1-2": "44a3b7c3963d86dff5a79a626afe08a0b22090b0816c1d801b6649ed3f183fb4",
+  "treasure/1-3": "ede148612ec058cd851181d0e8dcaa88b18348fa621e84e400cad277372ec640",
+  "treasure/2-0": "b58a40e06552f37c95deb701ea9a019f5f17dba3b3decdaf0eef378053a5f317",
+  "treasure/2-1": "0f69cc8933c171ea4a45f2b639005f6bc1457d77e1b5aad12ae1a69ca11e1320",
+  "treasure/2-2": "8bff1d12c0e71e6e0619246ab2faf7bd9e8335b4744b302ae2f1cd60214e7989",
+  "treasure/2-3": "d5a3ff9d8c0fc9c88b3b077521f58a0b8a372827d26b6964e2fb35b759b4aed3",
+  "treasure/3-0": "12e20240edbb0ace84992455add0fc936b7fc69658b1d9c6242dd616e4d3c3cf",
+  "treasure/3-1": "0f69cc8933c171ea4a45f2b639005f6bc1457d77e1b5aad12ae1a69ca11e1320",
+  "treasure/3-2": "8bff1d12c0e71e6e0619246ab2faf7bd9e8335b4744b302ae2f1cd60214e7989",
+  "treasure/3-3": "a119bc35ce3d92f5250f48372e2ac79e1b563d7bf87337c28e9b0d219a3d098c",
+  "treasure/4-0": "daba8e8d79783106d63de3b494eb1dde842f6994f0cf6e556b68397d240368dd",
+  "treasure/4-1": "82fdaa357676147f486990bcbd1454d2c196ad2f2030b5769017dec2dc99de1c",
+  "treasure/4-2": "8bff1d12c0e71e6e0619246ab2faf7bd9e8335b4744b302ae2f1cd60214e7989",
+  "treasure/4-3": "a119bc35ce3d92f5250f48372e2ac79e1b563d7bf87337c28e9b0d219a3d098c",
+  "treasure/5-0": "0021a99398ec19f1b8c42202b09a371b0cb290229fe2093c1bd84b099284d169",
+  "treasure/5-1": "81219a59552a575aee2ac064805177355ad9d114f49876939716c929c8c3ceb5",
+  "treasure/5-2": "a119bc35ce3d92f5250f48372e2ac79e1b563d7bf87337c28e9b0d219a3d098c",
+  "treasure/5-3": "daba8e8d79783106d63de3b494eb1dde842f6994f0cf6e556b68397d240368dd",
+  "treasure/6-0": "dc3b5a0d30dc7e77214009cc3ef1e6779975438d3e4ae2c0ad337bf7f463d087",
+  "treasure/6-1": "1ad0e5fbd70b0a4f4aba4b786468da8820c25607d274aa91f7c99d8ca1f7dbef",
+  "treasure/6-2": "daba8e8d79783106d63de3b494eb1dde842f6994f0cf6e556b68397d240368dd",
+  "treasure/6-3": "0021a99398ec19f1b8c42202b09a371b0cb290229fe2093c1bd84b099284d169",
+  "treasure/7-0": "ede148612ec058cd851181d0e8dcaa88b18348fa621e84e400cad277372ec640",
+  "treasure/7-1": "a0baad8f9aae4782c2094e24039bb7fb1827ec6d48e9391448b7038fc30c747f",
+  "treasure/7-2": "0021a99398ec19f1b8c42202b09a371b0cb290229fe2093c1bd84b099284d169",
+  "treasure/7-3": "dc3b5a0d30dc7e77214009cc3ef1e6779975438d3e4ae2c0ad337bf7f463d087",
+  "neighbours/1-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/1-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/2-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/2-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/3-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/3-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/4-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/4-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/5-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/5-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/6-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/6-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/7-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/7-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/8-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/8-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/9-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/9-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/10-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/10-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/11-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/11-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/12-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/12-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/13-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/13-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/14-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/14-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/15-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/15-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/16-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/16-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/17-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/17-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/18-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/18-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
   "compare/1-1": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
   "compare/1-3": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
   "compare/2-2": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
@@ -884,10 +852,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog": {
-      "current": "68d9f8978ad8ea09",
-      "former": [
-        "531f88540e983422"
-      ]
+      "current": "448b58bb3247248f",
+      "former": []
     },
     "friends-deer": {
       "current": "a9f87d7afc633ea0",
@@ -971,23 +937,13 @@ window.FK.puzzleReviewCompatibility = {
         "70b7e13241145538"
       ]
     },
-    "sequence": {
-      "current": "34d57610343caf76",
-      "former": [
-        "88ee2969b57048cb"
-      ]
-    },
     "treasure": {
-      "current": "317ded0ffba82bf5",
-      "former": [
-        "a8959bccae052c52"
-      ]
+      "current": "c7f8d382702e085c",
+      "former": []
     },
     "neighbours": {
-      "current": "78525de30e731cb7",
-      "former": [
-        "5124eb116a89053d"
-      ]
+      "current": "988635d380bf7b6b",
+      "former": []
     },
     "compare": {
       "current": "7dcae422e65a3a46",
@@ -3503,10 +3459,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog/riddle-3": {
-      "current": "1b7af8714a6eee13",
-      "former": [
-        "8de0c829e97c9625"
-      ]
+      "current": "bc94d2248e669be4",
+      "former": []
     },
     "friends-hedgehog/riddle-4": {
       "current": "6aa638d4e9f22e7e",
@@ -3557,10 +3511,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog/riddle-12": {
-      "current": "6fc11e7f21ed2a4b",
-      "former": [
-        "3d3aed5a94df1b08"
-      ]
+      "current": "197ed45936df5469",
+      "former": []
     },
     "friends-hedgehog/riddle-13": {
       "current": "40bae76af4fa4ed0",
@@ -3634,18 +3586,6 @@ window.FK.puzzleReviewCompatibility = {
         "782d79321136b42c"
       ]
     },
-    "friends-hedgehog/nature-question-0": {
-      "current": "e6d263d728654c49",
-      "former": [
-        "f09aea9473f87826"
-      ]
-    },
-    "friends-hedgehog/nature-question-1": {
-      "current": "2b43a6d879d416ea",
-      "former": [
-        "c50933a9a4ffb465"
-      ]
-    },
     "friends-hedgehog/nature-question-2": {
       "current": "641d552035bd18aa",
       "former": [
@@ -3682,40 +3622,20 @@ window.FK.puzzleReviewCompatibility = {
         "f39e34abdba1c1ff"
       ]
     },
-    "friends-hedgehog/nature-question-8": {
-      "current": "2cf4cb648ba8de4e",
-      "former": [
-        "2fc6ca393d4b5015"
-      ]
-    },
     "friends-hedgehog/nature-question-9": {
       "current": "aab35e3765518c97",
       "former": [
         "c86ff5f0a924742c"
       ]
     },
-    "friends-hedgehog/nature-question-10": {
-      "current": "f2ce4c1a2212d1c2",
-      "former": [
-        "4b9ba99c66a4fd94"
-      ]
-    },
     "friends-hedgehog/nature-question-11": {
-      "current": "9cd3da554845014b",
-      "former": [
-        "7e1a4b330fcadf23"
-      ]
+      "current": "6a9994225406df42",
+      "former": []
     },
     "friends-hedgehog/nature-question-12": {
       "current": "2dad15568b00d48c",
       "former": [
         "f0b5d9e266fcdce6"
-      ]
-    },
-    "friends-hedgehog/nature-question-13": {
-      "current": "61394bcac1a727ee",
-      "former": [
-        "6e0e2e032d8433e1"
       ]
     },
     "friends-hedgehog/nature-question-14": {
@@ -3725,22 +3645,16 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog/nature-question-15": {
-      "current": "85e3f370b06099d4",
-      "former": [
-        "ea1ea456fb2d1a8e"
-      ]
+      "current": "076ae2201004bb9a",
+      "former": []
     },
     "friends-hedgehog/nature-question-16": {
-      "current": "b116fa467a00c9d2",
-      "former": [
-        "a89f237961013ea9"
-      ]
+      "current": "71a61de14a2c5ecd",
+      "former": []
     },
     "friends-hedgehog/nature-question-17": {
-      "current": "e5e0a59daa3ce681",
-      "former": [
-        "91b9626fbd8e528f"
-      ]
+      "current": "d458855312b6164d",
+      "former": []
     },
     "friends-hedgehog/nature-question-18": {
       "current": "b242485b28802191",
@@ -3749,10 +3663,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog/nature-question-19": {
-      "current": "b8947346d9e9729a",
-      "former": [
-        "6a24ebf901245ffd"
-      ]
+      "current": "bf0981bc0a82ff2a",
+      "former": []
     },
     "friends-hedgehog/nature-question-20": {
       "current": "dce25ea500573b19",
@@ -3761,22 +3673,12 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog/nature-question-21": {
-      "current": "a677fedca07895e4",
-      "former": [
-        "470c6e2c59d1e96c"
-      ]
+      "current": "03ee4e732db91855",
+      "former": []
     },
     "friends-hedgehog/nature-question-22": {
-      "current": "9212e5079873cf13",
-      "former": [
-        "771feab630ea7332"
-      ]
-    },
-    "friends-hedgehog/nature-question-23": {
-      "current": "6a3508aba748d0ff",
-      "former": [
-        "f9f89815f1818225"
-      ]
+      "current": "256435748236bdd8",
+      "former": []
     },
     "friends-hedgehog/nature-question-24": {
       "current": "4bc48aef6baaa683",
@@ -6552,563 +6454,277 @@ window.FK.puzzleReviewCompatibility = {
         "8ba3a918476e94a2"
       ]
     },
-    "sequence/story-0": {
-      "current": "b23e61ea510b2a74",
-      "former": [
-        "11d1b2cd615e5d4b"
-      ]
-    },
-    "sequence/story-1": {
-      "current": "edea0cd418bc26d4",
-      "former": [
-        "9207d334f897315c"
-      ]
-    },
-    "sequence/story-2": {
-      "current": "ae9002afa579a529",
-      "former": [
-        "c8e7eaa752f71f5f"
-      ]
-    },
-    "sequence/story-3": {
-      "current": "bbed0bdd661570f7",
-      "former": [
-        "093e935e9ce7de36"
-      ]
-    },
-    "sequence/story-4": {
-      "current": "4cfe0b1cc125f6f8",
-      "former": [
-        "fc5829f111c8d95d"
-      ]
-    },
-    "sequence/story-5": {
-      "current": "a9ee09c17a3e25db",
-      "former": [
-        "25b2c94223050a0e"
-      ]
-    },
-    "sequence/story-6": {
-      "current": "82f15e6c59f27e1a",
-      "former": [
-        "c84d7bb151010b99"
-      ]
-    },
-    "sequence/story-7": {
-      "current": "bb026cfbbdae4d99",
-      "former": [
-        "b7846ea5bfb01b43"
-      ]
-    },
-    "sequence/story-8": {
-      "current": "25fbb53579b67d51",
-      "former": [
-        "8704813c346530a8"
-      ]
-    },
-    "sequence/story-9": {
-      "current": "e30bfdc00bb6964c",
-      "former": [
-        "c488bff151d85687"
-      ]
-    },
-    "sequence/story-10": {
-      "current": "d3d8599a0d104eea",
-      "former": [
-        "de00e1043c02523c"
-      ]
-    },
-    "sequence/story-11": {
-      "current": "2e95f9f3dac2b735",
-      "former": [
-        "c5bf398a88dce4fe"
-      ]
-    },
-    "sequence/story-12": {
-      "current": "a18672aaaa8b91e4",
-      "former": [
-        "f01b333ae5f3d4c2"
-      ]
-    },
-    "sequence/story-13": {
-      "current": "88070cee16a139a6",
-      "former": [
-        "31f361d731122e8f"
-      ]
-    },
-    "sequence/story-14": {
-      "current": "232c2b1e247534c8",
-      "former": [
-        "13a272a2ca835d7e"
-      ]
-    },
-    "sequence/story-15": {
-      "current": "cc7cce09d3d50797",
-      "former": [
-        "3e70353e8c908342"
-      ]
-    },
-    "sequence/story-16": {
-      "current": "370e31539b4c5593",
-      "former": [
-        "8bd9284a7d228218"
-      ]
-    },
-    "sequence/story-17": {
-      "current": "d2d15f553fb8153b",
-      "former": [
-        "e9704cd5f8f4f627"
-      ]
-    },
-    "sequence/story-18": {
-      "current": "013049aa274e33e8",
-      "former": [
-        "c43ccfaf09de3c2f"
-      ]
-    },
-    "sequence/story-19": {
-      "current": "8930ddf724e3fdd3",
-      "former": [
-        "658bd6d154a2669d"
-      ]
-    },
-    "sequence/story-20": {
-      "current": "60acc46663cf3ada",
-      "former": [
-        "429638a34ef0ea73"
-      ]
-    },
-    "sequence/story-21": {
-      "current": "b3db05e9a2351033",
-      "former": [
-        "ae6a95cd8275459d"
-      ]
-    },
-    "sequence/story-22": {
-      "current": "abb215232449edbb",
-      "former": [
-        "995ec339b0f1fe2d"
-      ]
-    },
-    "sequence/story-23": {
-      "current": "148d1b5a1259cc34",
-      "former": [
-        "391fbd9eb22d2252"
-      ]
-    },
-    "sequence/story-24": {
-      "current": "5951c948a6d64b18",
-      "former": [
-        "c7876b8c0da9a66e"
-      ]
-    },
     "treasure/0-0": {
-      "current": "6852a0441f359f80",
-      "former": [
-        "129e95f7f18cf3b3"
-      ]
+      "current": "4bb3ecbd25982db1",
+      "former": []
     },
     "treasure/0-1": {
-      "current": "6ab0c78913254869",
-      "former": [
-        "dab81fceebf87920"
-      ]
+      "current": "07f068d41559a82e",
+      "former": []
     },
     "treasure/0-2": {
-      "current": "6561de67b51c5c35",
-      "former": [
-        "a5f7b5d902eac1fb"
-      ]
+      "current": "d164050f2695f7e9",
+      "former": []
     },
     "treasure/0-3": {
-      "current": "376479fe0600f2aa",
-      "former": [
-        "6e5146397395f5b3"
-      ]
+      "current": "9597d1b60e458de2",
+      "former": []
     },
     "treasure/1-0": {
-      "current": "5d14d5a5654f2221",
-      "former": [
-        "fdd3396e01142fd2"
-      ]
+      "current": "0008bef420849b50",
+      "former": []
     },
     "treasure/1-1": {
-      "current": "7deb0c649c79c960",
-      "former": [
-        "1ed88ab9bc8d89d5"
-      ]
+      "current": "44ea7ed4ca945e34",
+      "former": []
     },
     "treasure/1-2": {
-      "current": "1150f2235ff40909",
-      "former": [
-        "5d2823167368ebe0"
-      ]
+      "current": "67672a265b4195a8",
+      "former": []
     },
     "treasure/1-3": {
-      "current": "abfe8307cc981bcb",
-      "former": [
-        "9b348e3cc42ba912"
-      ]
+      "current": "07e07b5f5873a703",
+      "former": []
     },
     "treasure/2-0": {
-      "current": "039088b028b795e2",
-      "former": [
-        "b286715bcd69d9d1"
-      ]
+      "current": "c2d08195fd4d4253",
+      "former": []
     },
     "treasure/2-1": {
-      "current": "dcd852cbfc54b7c3",
-      "former": [
-        "a5fd3c9ebaff70b6"
-      ]
+      "current": "c79e2e7bc9aa2997",
+      "former": []
     },
     "treasure/2-2": {
-      "current": "a6a6b3772ee7c4ef",
-      "former": [
-        "d365d68d2e5cf98f"
-      ]
+      "current": "7f497c03f8ec0019",
+      "former": []
     },
     "treasure/2-3": {
-      "current": "457c05da8f547688",
-      "former": [
-        "ba59173350117b4f"
-      ]
+      "current": "c0c18a39a19d5ce7",
+      "former": []
     },
     "treasure/3-0": {
-      "current": "9be5de570732a34f",
-      "former": [
-        "b65a4896bf71a87e"
-      ]
+      "current": "7c0a2f4282e6d262",
+      "former": []
     },
     "treasure/3-1": {
-      "current": "fef2c932f8e895a2",
-      "former": [
-        "51556afba5d511d7"
-      ]
+      "current": "0b5469a26b554476",
+      "former": []
     },
     "treasure/3-2": {
-      "current": "2bbba3689839d3ae",
-      "former": [
-        "49722c567ad47fce"
-      ]
+      "current": "bd102c341b777158",
+      "former": []
     },
     "treasure/3-3": {
-      "current": "5870c8b1cd2e253d",
-      "former": [
-        "324877747fe5ee4c"
-      ]
+      "current": "a48de7e194903a93",
+      "former": []
     },
     "treasure/4-0": {
-      "current": "bbd98ff040b046d0",
-      "former": [
-        "e8ef3535acfc4c79"
-      ]
+      "current": "1541709fe62c3067",
+      "former": []
     },
     "treasure/4-1": {
-      "current": "707d731f6e15e58d",
-      "former": [
-        "c6f2a885af03bb29"
-      ]
+      "current": "fcb9323100ea9e4b",
+      "former": []
     },
     "treasure/4-2": {
-      "current": "8023c143a5b166c9",
-      "former": [
-        "a73c24e5f7b434e9"
-      ]
+      "current": "dfac1ae7628d15ff",
+      "former": []
     },
     "treasure/4-3": {
-      "current": "36d5608cfaeb227a",
-      "former": [
-        "3c6c0e794d87304b"
-      ]
+      "current": "5afc01bc7971afd4",
+      "former": []
     },
     "treasure/5-0": {
-      "current": "ddfdb09db714a65d",
-      "former": [
-        "3dd6e802f0419a72"
-      ]
+      "current": "6c205f28518da082",
+      "former": []
     },
     "treasure/5-1": {
-      "current": "2cae391b9512201b",
-      "former": [
-        "75baefafa3b90d47"
-      ]
+      "current": "22ad31218352ff55",
+      "former": []
     },
     "treasure/5-2": {
-      "current": "145192832774967b",
-      "former": [
-        "536bc3dab943a24a"
-      ]
+      "current": "1f0cb57301585855",
+      "former": []
     },
     "treasure/5-3": {
-      "current": "52763f9d458bf3b1",
-      "former": [
-        "f313ad588b3cc3d8"
-      ]
+      "current": "b96b6eda16ae0446",
+      "former": []
     },
     "treasure/6-0": {
-      "current": "5fd0e12bcc9909d3",
-      "former": [
-        "7ab6a16990cab69d"
-      ]
+      "current": "c05664f35c4f4d8f",
+      "former": []
     },
     "treasure/6-1": {
-      "current": "83e5a553bed68567",
-      "former": [
-        "27a1a3e937f68353"
-      ]
+      "current": "b49dcc3b0e2b8715",
+      "former": []
     },
     "treasure/6-2": {
-      "current": "c4d86c7c3f272272",
-      "former": [
-        "21d187b13c1f6f1b"
-      ]
+      "current": "e2902e1f0b56de85",
+      "former": []
     },
     "treasure/6-3": {
-      "current": "1b46d95c142001de",
-      "former": [
-        "93163eef9a1880f1"
-      ]
+      "current": "bd36952995144c81",
+      "former": []
     },
     "treasure/7-0": {
-      "current": "c55a60439444aa2d",
-      "former": [
-        "be408d787d927a74"
-      ]
+      "current": "43f047bbc7202c65",
+      "former": []
     },
     "treasure/7-1": {
-      "current": "33634fa0e31d5e28",
-      "former": [
-        "3598fdb6ef124a26"
-      ]
+      "current": "ed2afb47f644d753",
+      "former": []
     },
     "treasure/7-2": {
-      "current": "6a036aa5a73903bf",
-      "former": [
-        "e294409a614ccc10"
-      ]
+      "current": "f48c7a3c3eeb12a0",
+      "former": []
     },
     "treasure/7-3": {
-      "current": "711306489d828b12",
-      "former": [
-        "ddc9fbce9ca9a8dc"
-      ]
+      "current": "817311907ea9ffce",
+      "former": []
     },
     "neighbours/1-both": {
-      "current": "fff7134a3fc090a0",
-      "former": [
-        "73e3033bd6a68367"
-      ]
+      "current": "06d154e34785b8cd",
+      "former": []
     },
     "neighbours/1-left": {
-      "current": "1aefdff6040f83ca",
-      "former": [
-        "d89869733e05f04d"
-      ]
+      "current": "cffdf42bdb259c27",
+      "former": []
     },
     "neighbours/2-both": {
-      "current": "e399f2132772b73b",
-      "former": [
-        "b61503ba2b2765fc"
-      ]
+      "current": "8fa6a592bfa1a0d6",
+      "former": []
     },
     "neighbours/2-left": {
-      "current": "05bc3e8321679c51",
-      "former": [
-        "32570cc6c32533d6"
-      ]
+      "current": "02dafb6e142ede3c",
+      "former": []
     },
     "neighbours/3-both": {
-      "current": "a953a5fbb270febb",
-      "former": [
-        "fafc6432a0291e7c"
-      ]
+      "current": "536bd7aa313bb956",
+      "former": []
     },
     "neighbours/3-left": {
-      "current": "ec059c13155eba91",
-      "former": [
-        "d9d168661af4b296"
-      ]
+      "current": "ae344f6edb3f167c",
+      "former": []
     },
     "neighbours/4-both": {
-      "current": "73aca2ab012e833b",
-      "former": [
-        "40446522516b99fc"
-      ]
+      "current": "b46cb23aa198a9d6",
+      "former": []
     },
     "neighbours/4-left": {
-      "current": "6edcca0f0c8ba251",
-      "former": [
-        "ebb048e2d8012dd6"
-      ]
+      "current": "a7e62eaa5728de3c",
+      "former": []
     },
     "neighbours/5-both": {
-      "current": "7d0c7413ad0099bb",
-      "former": [
-        "8862b4aaa599837c"
-      ]
+      "current": "eb768e22f8616e56",
+      "former": []
     },
     "neighbours/5-left": {
-      "current": "0938629f82877191",
-      "former": [
-        "4e50d962adcbfb96"
-      ]
+      "current": "de2fc46a8405e27c",
+      "former": []
     },
     "neighbours/6-both": {
-      "current": "8d78c28bd5a14333",
-      "former": [
-        "5c4389f2927089f4"
-      ]
+      "current": "704e26fa117314de",
+      "former": []
     },
     "neighbours/6-left": {
-      "current": "154ac36ba538ea59",
-      "former": [
-        "241806164cbe39de"
-      ]
+      "current": "d6217ece905d9034",
+      "former": []
     },
     "neighbours/7-both": {
-      "current": "2fe5d7830106e6b3",
-      "former": [
-        "d611643a55946a74"
-      ]
+      "current": "994d13e292ce115e",
+      "former": []
     },
     "neighbours/7-left": {
-      "current": "1820178b2e836099",
-      "former": [
-        "d42e0e56034fdc9e"
-      ]
+      "current": "dae25cce11f23074",
+      "former": []
     },
     "neighbours/8-both": {
-      "current": "b9ba007a9dcab248",
-      "former": [
-        "98965321f4e03baf"
-      ]
+      "current": "b8d3cc89a5cf1a85",
+      "former": []
     },
     "neighbours/8-left": {
-      "current": "08da12ba76946b62",
-      "former": [
-        "dee90c0dc1b36105"
-      ]
+      "current": "10e548056176bf6f",
+      "former": []
     },
     "neighbours/9-both": {
-      "current": "f1e6d08697021788",
-      "former": [
-        "d0c4ea4921d7a06f"
-      ]
+      "current": "a5b49b51fd4794c5",
+      "former": []
     },
     "neighbours/9-left": {
-      "current": "624d99167ec0a6e2",
-      "former": [
-        "5a416475df931a05"
-      ]
+      "current": "6cd01f6d2125136f",
+      "former": []
     },
     "neighbours/10-both": {
-      "current": "1ad83224325f85e4",
-      "former": [
-        "9ba43f8fcd419703"
-      ]
+      "current": "24d0f667b78949e9",
+      "former": []
     },
     "neighbours/10-left": {
-      "current": "87cbf2dcd027204e",
-      "former": [
-        "56f44f6f619e8529"
-      ]
+      "current": "dae714b72f540f03",
+      "former": []
     },
     "neighbours/11-both": {
-      "current": "db6f775476099ee4",
-      "former": [
-        "6a639f4f06fdb183"
-      ]
+      "current": "c8a224a7ca3c3769",
+      "former": []
     },
     "neighbours/11-left": {
-      "current": "18cb4d1cf00c840e",
-      "former": [
-        "cbd0ac6f21924d69"
-      ]
+      "current": "3282f677fa58e9c3",
+      "former": []
     },
     "neighbours/12-both": {
-      "current": "b0ff5dad6516689b",
-      "former": [
-        "293e88d8a250aa9c"
-      ]
+      "current": "b330e2d0668d9ff6",
+      "former": []
     },
     "neighbours/12-left": {
-      "current": "65588c8de7b40471",
-      "former": [
-        "35fa3ab895a96bb6"
-      ]
+      "current": "0d53d800014fcc1c",
+      "former": []
     },
     "neighbours/13-both": {
-      "current": "c724d06d885f5e5b",
-      "former": [
-        "653057f0f66bd4dc"
-      ]
+      "current": "f3287468210eb3b6",
+      "former": []
     },
     "neighbours/13-left": {
-      "current": "f9735e350e273ef1",
-      "former": [
-        "37c30ce07a7bb536"
-      ]
+      "current": "6068ede8bde73f9c",
+      "former": []
     },
     "neighbours/14-both": {
-      "current": "1cf3cebdb629209b",
-      "former": [
-        "76501ec0aca0b49c"
-      ]
+      "current": "cfb9cd98aafcd8f6",
+      "former": []
     },
     "neighbours/14-left": {
-      "current": "d9f002c9f2bf4471",
-      "former": [
-        "b6378b4ce0686fb6"
-      ]
+      "current": "903078f47554eb1c",
+      "former": []
     },
     "neighbours/15-both": {
-      "current": "45af6f0583c6d2db",
-      "former": [
-        "f32f3d381839215c"
-      ]
+      "current": "f71cfcd0b83e0936",
+      "former": []
     },
     "neighbours/15-left": {
-      "current": "b632454983e0fc71",
-      "former": [
-        "3f9477c49d6338b6"
-      ]
+      "current": "683864ecfc057e1c",
+      "former": []
     },
     "neighbours/16-both": {
-      "current": "d5ad368d9dacd493",
-      "former": [
-        "a18cab68b8f3ec94"
-      ]
+      "current": "386f7c302df733fe",
+      "former": []
     },
     "neighbours/16-left": {
-      "current": "e4043dadf31f1479",
-      "former": [
-        "aac52ba01f7fb1be"
-      ]
+      "current": "2ff99658f5e4bc14",
+      "former": []
     },
     "neighbours/17-both": {
-      "current": "608cc385a350c553",
-      "former": [
-        "a06c65c023f1a1d4"
-      ]
+      "current": "18e96e08061d4cbe",
+      "former": []
     },
     "neighbours/17-left": {
-      "current": "005559bd14d103f9",
-      "former": [
-        "f16c3d8813ebc03e"
-      ]
+      "current": "610d7f40178dfa94",
+      "former": []
     },
     "neighbours/18-both": {
-      "current": "75432d5aeec42e9a",
-      "former": [
-        "25b8f4a753cd4f9d"
-      ]
+      "current": "14eb5d1f9a0d0bf7",
+      "former": []
     },
     "neighbours/18-left": {
-      "current": "566611ca15badcb0",
-      "former": [
-        "9cbe02ff67d03277"
-      ]
+      "current": "41f6f9078f38d75d",
+      "former": []
     },
     "compare/1-1": {
       "current": "1b3151a5036f7fe7",

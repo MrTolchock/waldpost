@@ -1,6 +1,6 @@
 # Rätselkatalog und Kompetenzübersicht
 
-Die aktive Sammlung enthält **23 Rätsel und 794 einzeln prüfbare Aufgaben**. Each play is five randomly selected, distinct iterations. Children start puzzles only at the friend on their current letter; the full gallery is in adult Settings. [Parent letter limits](LETTER-SESSIONS.md) end the journey at the den after sleeping.
+Die aktive Sammlung enthält **22 Rätsel und 763 einzeln prüfbare Aufgaben**. Each play is five randomly selected, distinct iterations. Children start puzzles only at the friend on their current letter; the full gallery is in adult Settings. [Parent letter limits](LETTER-SESSIONS.md) end the journey at the den after sleeping.
 
 Generated from the runtime catalogue with `node tools/puzzle-catalogue.cjs`. Every linked puzzle page lists all iteration IDs, content and expected solutions. No generated item is automatically approved.
 
@@ -15,7 +15,7 @@ Competences below are bounded practice references to [Zürich Zyklus 1](CURRICUL
 | [Kurze Sätze verstehen](puzzles/friends-owl.md) | Waldkauz | D.2.A.1.b; D.2.B.1.b — Kurze Sätze verstehen | Ein kurzer Satz über ein Tier; immer zwei Bildantworten | 25 |
 | [Mengen vergleichen](puzzles/friends-beaver.md) | Biber | MA.2.A.1.a — Mengen von Waldgegenständen vergleichen | Zwei oder drei verschiedene Waldgegenstände je Reihe; die Mengen der ersten zwei Reihen ergänzen | 43 |
 | [Wörter mit Bildern verbinden](puzzles/friends-mouse.md) | Maus | D.2.A.1.b — Wörter mit Bildern verbinden | Vertraute Nomen und Tiernamen; eingeführte Buchstaben | 74 |
-| [Tiermerkmale erkennen und Fragen lesen](puzzles/friends-hedgehog.md) | Igel | NMG.2.4.a; D.2.B.1.b — Tiermerkmale erkennen und Fragen lesen | 50 kurze Tierfragen; drei Bildantworten | 50 |
+| [Tiermerkmale erkennen und Fragen lesen](puzzles/friends-hedgehog.md) | Igel | NMG.2.4.a; D.2.B.1.b — Tiermerkmale erkennen und Fragen lesen | 44 kurze Tierfragen; drei Bildantworten | 44 |
 | [Lebensräume und Nahrung zuordnen](puzzles/friends-deer.md) | Reh | NMG.2.1.a; D.2.B.1.b — Lebensräume und Nahrung zuordnen | 25 kurze Naturfragen; drei Bildantworten | 25 |
 | [Wachstum und Naturveränderungen erkennen](puzzles/friends-badger.md) | Dachs | NMG.2.3.a; D.2.B.1.b — Wachstum und Naturveränderungen erkennen | 25 kurze Fragen zu Wetter, Pflanzen und Entwicklung | 25 |
 | [Muster fortsetzen](puzzles/friends-ibex.md) | Steinbock | MA.2.A.2.a — Wiederholungsmuster fortsetzen und ergänzen | AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe | 30 |
@@ -25,7 +25,6 @@ Competences below are bounded practice references to [Zürich Zyklus 1](CURRICUL
 | [Mengen verteilen](puzzles/picnic.md) | Frosch | MA.1.A.4.a (Übung) — Eins zu eins gerecht verteilen | 2–4 Freunde; 1–10 Beeren je Freund; insgesamt höchstens 20 | 25 |
 | [Wörter in Silben zerlegen](puzzles/syllable.md) | Blaumeise | D.1.A.1.b — Wörter in Silben zerlegen | 1–5 Silben; vertraute Bildwörter | 39 |
 | [Schritte im Raum planen](puzzles/robot.md) | Reh | MA.2.A.1.c (Unterstützung) — Benachbarte Schritte im Raum planen | 4 × 4; sichtbares Waldziel und gesperrte Felsen | 30 |
-| [Zeitliche Abfolgen ordnen](puzzles/sequence.md) | Dachs | NMG.9.1.a (Übung) — Zeitliche Abfolgen ordnen | 25 Bildgeschichten mit drei bebilderten Schritten | 25 |
 | [Gegenstände merken](puzzles/treasure.md) | Eichhörnchen | Optionale Gedächtnisübung — Gegenstände wiedererkennen | Vier Dinge, eines fehlt; kein Zeitlimit | 32 |
 | [Zahlennachbarn bestimmen](puzzles/neighbours.md) | Eisvogel | MA.1.A.2.a/b — Zahlennachbarn bestimmen | Mitte 1–18; Mengenrahmen bis 20; ein Nachbar kann vorgegeben sein | 36 |
 | [Mengen vergleichen](puzzles/compare.md) | Fisch | MA.1.A.1.a (Übung) — Mengen vergleichen | 1–10 Fische; mehr oder gleich viele | 28 |

@@ -1,4 +1,6 @@
-# Zeitliche Abfolgen ordnen
+# Zeitliche Abfolgen ordnen (archiviert)
+
+Auf Wunsch der Rätselprüfung vom 22. November aus dem aktiven Katalog entfernt.
 
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 

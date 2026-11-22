@@ -10,7 +10,8 @@
     'friends-beaver':['MA.2.A.1.a','Mengen von Waldgegenständen vergleichen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; die Mengen der ersten zwei Reihen ergänzen'],
     // Keep the original difficulty contract for existing word cards; the fourth field describes the expanded pool.
     'friends-mouse':['D.2.A.1.b','Wörter mit Bildern verbinden','25 vertraute Nomen; eingeführte Buchstaben','Vertraute Nomen und Tiernamen; eingeführte Buchstaben'],
-    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen und Fragen lesen','50 kurze Tierfragen; drei Bildantworten'],
+    // Keep the reviewed difficulty contract; the fourth field shows the 44 remaining questions.
+    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen und Fragen lesen','50 kurze Tierfragen; drei Bildantworten','44 kurze Tierfragen; drei Bildantworten'],
     'friends-deer':['NMG.2.1.a; D.2.B.1.b','Lebensräume und Nahrung zuordnen','25 kurze Naturfragen; drei Bildantworten'],
     'friends-badger':['NMG.2.3.a; D.2.B.1.b','Wachstum und Naturveränderungen erkennen','25 kurze Fragen zu Wetter, Pflanzen und Entwicklung'],
     'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe'],
@@ -20,7 +21,6 @@
     picnic:['MA.1.A.4.a (Übung)','Eins zu eins gerecht verteilen','2–4 Freunde; 1–10 Beeren je Freund; insgesamt höchstens 20'],
     syllable:['D.1.A.1.b','Wörter in Silben zerlegen','1–5 Silben; vertraute Bildwörter'],
     robot:['MA.2.A.1.c (Unterstützung)','Benachbarte Schritte im Raum planen','4 × 4; sichtbares Waldziel und gesperrte Felsen'],
-    sequence:['NMG.9.1.a (Übung)','Zeitliche Abfolgen ordnen','25 Bildgeschichten mit drei bebilderten Schritten'],
     treasure:['Optionale Gedächtnisübung','Gegenstände wiedererkennen','Vier Dinge, eines fehlt; kein Zeitlimit'],
     neighbours:['MA.1.A.2.a/b','Zahlennachbarn bestimmen','Mitte 1–18; Mengenrahmen bis 20; ein Nachbar kann vorgegeben sein'],
     compare:['MA.1.A.1.a (Übung)','Mengen vergleichen','1–10 Fische; mehr oder gleich viele'],
@@ -92,7 +92,7 @@
     ["Wer hat Stacheln?","hedgehog","mouse-sit","fish-swim"],
     ["Wer hat einen blauen Kopf?","bird-sit","forest-robin","hare-sit"],
     ["Wer hat Flossen?","fish-swim","snail","hedgehog"],
-    ["Wer ist gelb und schwarz?","bee","spider","frog-sit"],
+    ["Wer ist gelb und schwarz?","bee","mouse-sit","frog-sit"],
     ["Wer trägt ein Haus?","snail","caterpillar","forest-owl"],
     ["Wer hat acht Beine?","spider","bird-sit","mouse-sit"],
     ["Wer hat bunte Flügel?","butterfly","vocab-worm","badger-walk"],
@@ -101,7 +101,7 @@
     ["Wer hat lange Ohren?","hare-sit","hedgehog","bee"],
     ["Wer hält eine Nuss?","squirrel-nut","frog-sit","fish-swim"],
     ["Wer hat Streifen im Gesicht?","badger-walk","forest-fox","snail"],
-    ["Wer hat einen breiten Schwanz?","beaver","hare-sit","bird-sit"],
+    ["Wer hat einen breiten Schwanz?","beaver","hare-sit","snail"],
     ["Wer ist grün?","frog-sit","mouse-sit","badger-walk"],
     ["Wer hat Fühler?","ant","spider","hare-sit"],
     ["Wer hat einen dünnen Schwanz?","mouse-sit","squirrel-sit","forest-owl"],
@@ -133,33 +133,34 @@
   for(let n=6;n<=15;n++)for(let b=2;b<=4;b++)add('count',n+'-'+b,n+' Käfer, '+b+' Bienen',{kind:'count',prompt:'Wie viele rote Marienkäfer sind hier?',count:n,answer:n,choices:numeric(n),bugs:[...Array(n).fill('ladybird'),...Array(b).fill('bee'),...Array(2).fill('snail')]});
   for(let a=1;a<=8;a++)for(let b=1;b<=9-a;b++)add('add',a+'-'+b,a+' + '+b,{kind:'add',item:'fish-swim',prompt:'Wie viele Fische sind es zusammen?',a,b,answer:a+b,choices:numeric(a+b)});
   const animalQuestions=[
-    ["Wer trägt Stacheln auf dem Rücken?","hedgehog","fish","rabbit"],
-    ["Wer schwimmt mit Flossen?","fish","dog","sheep"],
+    // Retired after the 22 November review; null keeps later stable IDs.
+    null,
+    null,
     ["Wer quakt am Teich?","frog","cat","dog"],
     ["Wer macht Honig aus Nektar?","bee","cow","fish"],
     ["Wer bellt?","dog","frog","snail"],
     ["Wer miaut?","cat","fish","pig"],
     ["Wer gibt uns Milch?","cow","bee","ant"],
     ["Wer baut ein Netz?","spider","bird","cow"],
-    ["Wer trägt sein Haus mit?","snail","dog","sheep"],
+    null,
     ["Wen schützt ein Panzer?","tortoise","rabbit","bee"],
-    ["Wer hüpft mit langen Ohren?","rabbit","fish","dog"],
-    ["Wer wird aus einer Raupe?","butterfly","pig","fish"],
+    null,
+    ["Wer entsteht aus einer Raupe?","butterfly","pig","fish"],
     ["Wer baut ein Nest im Baum?","bird","cow","pig"],
-    ["Wessen roter Rücken hat schwarze Punkte?","ladybird","sheep","cat"],
+    null,
     ["Wer hat weiche Wolle?","sheep","fish","bee"],
-    ["Wer balanciert mit buschigem Schwanz?","squirrel","spider","cow"],
-    ["Wer trinkt mit einem Rüssel?","elephant","cat","bee"],
-    ["Wer hat einen sehr langen Hals?","giraffe","pig","dog"],
+    ["Wer hat einen buschigen Schwanz?","squirrel","spider","cow"],
+    ["Wer hat einen Rüssel?","elephant","cat","sheep"],
+    ["Wer hat einen langen Hals?","giraffe","pig","dog"],
     ["Wer trägt eine Mähne?","lion","sheep","bird"],
-    ["Wessen Fell ist schwarz-weiss gestreift?","zebra","dog","cow"],
+    ["Wessen Fell ist gestreift?","zebra","dog","cow"],
     ["Wer hat Höcker auf dem Rücken?","camel","cat","bee"],
-    ["Wessen orangefarbenes Fell hat schwarze Streifen?","tiger","cow","frog"],
-    ["Welcher Vogel schwimmt und taucht?","penguin","bird","cow"],
-    ["Wessen Gesicht ist schwarz-weiss gestreift?","badger","pig","rabbit"],
+    ["Wessen Fell hat schwarze Streifen?","tiger","cow","lion"],
+    ["Welcher Vogel schwimmt und taucht?","penguin","forest-robin","forest-owl"],
+    null,
     ["Wer baut einen Damm aus Ästen?","beaver","cat","bee"]
   ];
-  animalQuestions.forEach(([text,answer,wrong,other],i)=>add('friends-hedgehog','nature-question-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong,other]}));
+  animalQuestions.forEach((q,i)=>{if(!q)return;const [text,answer,wrong,other]=q;add('friends-hedgehog','nature-question-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong,other]});});
   for(let total=5;total<=10;total++)for(let filled=1;filled<total;filled++)add('rocket',total+'-'+filled,total+' insgesamt, '+filled+' besetzt',{kind:'fireflies',prompt:'Wie viele Fliegen fehlen noch?',total,filled,answer:total-filled,choices:numeric(total-filled,10)});
   for(let friends=2;friends<=4;friends++)for(let each=1;each<=Math.floor(20/friends);each++){
     add('picnic',friends+'-'+each,friends+' Freunde, '+(friends*each)+' Beeren',{kind:'picnic',prompt:'Teile alle Beeren gerecht auf.',friends,each,total:friends*each,answer:each});
@@ -182,34 +183,7 @@
   // Fully authored routes: five obstacle sets, six distinct start/goal pairs, BFS checked in tests.
   const blocked=[[5,6],[5,9],[6,10],[9,10],[2,5,9]],ends=[[0,15],[12,3],[3,12],[15,0],[0,3],[12,15]];
   blocked.forEach((obstacles,i)=>ends.forEach(([start,goal],j)=>add('robot',i+'-'+j,'Weg '+(i+1)+' / '+(j+1),{kind:'robot',mode:'route',prompt:'Führe das Reh zum Wald.',size:4,start,goal,obstacles})));
-  const stories=[
-    [["bean-dry-seed","Bohnensamen"],["bean-rooting-seed","Die Wurzel wächst"],["bean-first-leaves","Die ersten Blätter wachsen"]],
-    [["bird-nest-empty","Ein leeres Nest"],["scene:nest+egg","Ein Ei liegt im Nest"],["chick","Das Küken schlüpft"]],
-    [["caterpillar","Die Raupe wächst"],["butterfly-chrysalis","Die Raupe verpuppt sich"],["butterfly","Der Falter schlüpft"]],
-    [["apple-blossom","Der Apfelbaum blüht"],["apple-unripe","Ein grüner Apfel wächst"],["forest-apple","Der Apfel ist reif"]],
-    [["scene:making-paper-sheet+pencil","Wir schreiben den Brief"],["letter","Wir verschliessen den Umschlag"],["swiss-postbox","Wir werfen den Brief ein"]],
-    [["making-bread-flour","Wir nehmen Mehl"],["making-bread-dough","Wir kneten Teig"],["making-braided-loaf","Der Zopf ist gebacken"]],
-    [["forest-nut","Eine ganze Nuss"],["squirrel-crack-nut","Das Eichhörnchen knackt sie"],["sign-nut-shell","Die leere Schale bleibt"]],
-    [["sun","Die Sonne scheint"],["sunset","Die Sonne geht unter"],["moon","Es ist Nacht"]],
-    [["acorn","Eine Eichel"],["oak-sprouting-acorn","Die Eichel keimt"],["oak-seedling","Die ersten Blätter wachsen"]],
-    [["bean-first-leaves","Die Bohne trägt Blätter"],["bean-flowering","Die Bohne blüht"],["bean-with-pods","Schoten wachsen"]],
-    [["tadpole","Eine Kaulquappe schlüpft"],["tadpole-hindlegs","Hinterbeine wachsen"],["froglet","Der junge Frosch hat vier Beine"]],
-    [["making-paper-sheet","Ein glattes Blatt"],["making-paper-fold","Das Papier wird gefaltet"],["making-paper-boat","Das Schiff ist fertig"]],
-    [["making-berries-washed","Die Beeren sind gewaschen"],["making-berries-crushed","Wir zerdrücken sie"],["making-jam-pot","Wir kochen Konfitüre"]],
-    [["making-wood-marked","Wir zeichnen die Schnittlinie"],["making-wood-cut","Wir sägen das Holz"],["making-birdhouse-half","Wir bauen das Vogelhaus"]],
-    [["yarn-ball","Ein Knäuel Wolle"],["making-knitting-half","Das Strickstück wächst"],["making-knitting-finished","Das Strickstück ist fertig"]],
-    [["part-apple-seed","Ein Apfelkern"],["apple-blossom","Der Baum blüht"],["apple-unripe","Ein kleiner Apfel wächst"]],
-    [["state-bucket-empty","Der Eimer ist leer"],["scene:state-bucket-empty+water","Wir füllen Wasser ein"],["state-bucket-full","Der Eimer ist voll"]],
-    [["state-boot-muddy","Der Stiefel ist schmutzig"],["scene:boot-brush+state-boot-muddy","Wir bürsten den Schmutz ab"],["state-boot-clean","Der Stiefel ist sauber"]],
-    [["butterfly-eggs","Eier am Blatt"],["caterpillar-eat-leaf","Die Raupe frisst"],["butterfly-chrysalis","Eine Puppe entsteht"]],
-    [["oak-seedling","Ein kleiner Sämling"],["oak-sapling","Ein junges Bäumchen"],["oak-tree","Eine grosse Eiche"]],
-    [["forest-berry","Die Beeren sind reif"],["making-berries-crushed","Wir zerdrücken die Beeren"],["jam-jar","Die Konfitüre ist abgefüllt"]],
-    [["apple-unripe","Ein unreifer Apfel"],["forest-apple","Der Apfel ist reif"],["relation-apple-in-basket","Der Apfel ist geerntet"]],
-    [["making-wood-marked","Ein Brett mit Schnittlinie"],["making-birdhouse-half","Ein halbes Vogelhaus"],["birdhouse","Das Vogelhaus ist fertig"]],
-    [["egg","Ein ganzes Ei"],["chick","Das Küken schlüpft"],["sign-eggshell","Die leere Schale bleibt"]],
-    [["forest-leaf","Das Blatt ist ganz"],["caterpillar-eat-leaf","Die Raupe frisst daran"],["sign-nibbled-leaf","Am Blatt fehlt ein Stück"]]
-  ];
-  stories.forEach((items,i)=>add('sequence','story-'+i,items.map(v=>v[1]).join(' → '),{kind:'order',prompt:'Ziehe die Bilder in die richtige Reihenfolge.',items,order:[2,0,1],answer:[0,1,2]}));
+  // «Zeitliche Abfolgen ordnen» (sequence) was retired after the 22 November review.
   const treasures=['forest-leaf','forest-feather','forest-mushroom','forest-stone','forest-berry','forest-nut','forest-apple','forest-flower'];
   for(let i=0;i<treasures.length;i++){
     const objects=Array.from({length:4},(_,n)=>treasures[(i+n)%treasures.length]),decoys=treasures.filter(id=>!objects.includes(id));

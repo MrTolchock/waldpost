@@ -109,13 +109,6 @@ const games=[
     "screen": "puzzle"
   },
   {
-    "id": "sequence",
-    "host": "badger",
-    "title": "Zeitliche Abfolgen ordnen",
-    "picture": "sprout",
-    "screen": "puzzle"
-  },
-  {
     "id": "treasure",
     "host": "squirrel",
     "title": "Gegenstände merken",

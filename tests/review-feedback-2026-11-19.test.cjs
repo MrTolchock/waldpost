@@ -2,10 +2,10 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const {setup}=require('../tools/puzzle-catalogue.cjs');
 test('November 19 reviews merge the requested pools and add three-object rows',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
- assert.equal(FK.friendsLibrary.catalogue().length,23);
+ assert.equal(FK.friendsLibrary.catalogue().length,22);
  for(const id of ['pattern','nature']){assert.equal(C.puzzle(id),null);assert.deepEqual(Array.from(C.iterations(id)),[]);assert.equal(FK.puzzleRounds.instructions[id],undefined);}
  const mountain=C.iterations('friends-ibex');assert.equal(mountain.length,30);assert.equal(mountain.filter(it=>it.id.includes('/woodland-')).length,0);
- const animals=C.iterations('friends-hedgehog');assert.equal(animals.length,50);assert.equal(animals.filter(it=>it.id.includes('/nature-question-')).length,25);
+ const animals=C.iterations('friends-hedgehog');assert.equal(animals.length,44);assert.equal(animals.filter(it=>it.id.includes('/nature-question-')).length,19);
  for(const it of animals){assert.match(it.question.text,/\?$/);assert.equal(it.question.choices.length,3);}
  const rows=C.iterations('friends-beaver');assert.equal(rows.length,43);let three=0;
  for(const it of rows){const q=it.question;if(new Set(q.matrix.slice(0,3)).size===3)three++;for(let n=1;n<3;n++)assert.deepEqual([...q.matrix.slice(n*3,n*3+3)].sort(),[...q.matrix.slice(0,3)].sort());assert.equal(q.matrix[q.gap],q.answer);}

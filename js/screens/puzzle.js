@@ -188,7 +188,8 @@
     scene.append(board);answerArea.append(arrows);redraw();
   }
   function returnTile(tile,target,value) {
-    fail(tile,'Das passt hier noch nicht.',value);
+    // A rejected card flies back looking exactly as before: no retry ring.
+    fail(tile,'Das passt hier noch nicht.',value);tile?.classList.remove('is-retry');
     if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
     const start=target.getBoundingClientRect(),end=tile.getBoundingClientRect();
     const x=start.left+start.width/2-end.left-end.width/2,y=start.top+start.height/2-end.top-end.height/2;
