@@ -14,12 +14,22 @@
 .btn-parents>.ff-hud-art{width:42px;height:42px}
 @media(prefers-reduced-motion:reduce){.friends-interface .screen :is(.topbar,.ff-card-top,.puzzle-context,.puzzle-paper) button.ff-navigation-back:is(.btn-back,.ff-button){transition:none}}
 
-/* Window dismissal uses the same illustrated family as the return arrow. */
-.friends-interface .modal button.ff-navigation-close{
- --btn:48px;--btn-w:48px;display:grid;place-items:center;width:48px;height:48px;min-width:48px;min-height:48px;padding:0;border-radius:50%;
- background:var(--wb-paper,#fffaf0);border:2px solid #8a623d;box-shadow:0 2px 5px #3a2a1420;transform:none;translate:none;
+/* Use the menu return button finish for the other painted navigation controls. */
+.friends-interface .modal button.ff-navigation-close,
+.friends-interface .screen button.btn-parents,
+.friends-interface .ff-game .ff-session-end button.ff-button,
+.friends-interface .ff-game .ff-nav :is(.ff-button,.ff-letter-status){
+  --btn:48px;--btn-w:48px;--ic:28px;flex:none;display:grid;place-items:center;
+  width:var(--ff-menu-size,48px);height:var(--ff-menu-size,48px);min-width:48px;min-height:48px;padding:0;border-radius:50%;
+  background:var(--wb-paper,#fffaf0);border:1px solid #cbbba2;color:var(--wb-ink,#4b3b2d);
+  box-shadow:none;transform:none;translate:none;
+  transition:transform .08s;
 }
 .friends-interface .modal button.ff-navigation-close>.ic{display:none}
 .friends-interface .modal button.ff-navigation-close>.ff-hud-art{width:32px;height:32px;filter:none}
+.friends-interface .ff-game .ff-session-end button.ff-button .ff-picture{width:32px;height:32px}
+.friends-interface .ff-game .ff-nav button:focus-visible,
+.friends-interface .ff-game .ff-session-end button:focus-visible,
 .friends-interface .modal button.ff-navigation-close:focus-visible{outline:4px solid var(--wb-focus,#456b81);outline-offset:4px}
-.friends-interface .modal button.ff-navigation-close:not(:disabled):active{transform:translateY(1px);box-shadow:0 1px 2px #3a2a1420}
+.friends-interface .ff-game .ff-nav .ff-button:not(:disabled):active,
+.friends-interface .modal button.ff-navigation-close:not(:disabled):active{transform:translateY(1px);box-shadow:none}

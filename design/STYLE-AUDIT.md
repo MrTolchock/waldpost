@@ -1,6 +1,10 @@
 # Current visual consistency audit
 
-Current game art is **Waldpost 9.4.21**. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **87** complete forward image-generation prompts.
+Current game art is **Waldpost 9.4.22**. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **87** complete forward image-generation prompts.
+
+## Navigation · 9.4.22
+
+Game and menu navigation share a cream circular frame and parchment border. The den toolbar shows an envelope for the first invitation and switches to the map after opening it.
 
 ## Rätselprüfung vom 20. November · 9.4.21
 

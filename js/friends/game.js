@@ -34,7 +34,7 @@ function showLetter(fromMailman){
   if(before.phase==='den-letter'&&area!=='den')return;
   if(before.phase==='to-mailman'&&!fromMailman){say('Der Briefträger hat deinen nächsten Brief. Folge dem Pfeil zu ihm.');return;}
   if(before.phase!=='to-friend'&&!state.openLetter()){saveStatus();return;}
-  open('letter');syncMail();
+  open('letter');renderNav();syncMail();
   const id=state.mail().host;
   overlay.classList.add('ff-postcard-overlay');
   const letter=h('button',{type:'button',class:'ff-letter-paper','data-host':id,'aria-label':'Zum Freund gehen','aria-description':'Ein Brief von '+C.hosts[id].name,onclick:()=>go('forest')},letterPortrait(id));
@@ -83,7 +83,11 @@ function go(next,restore=false){
 function renderNav(){nav.replaceChildren();if(state.development||FK.playLog.development())nav.append(h('strong',{class:'ff-dev',text:'ENTWICKLUNG'}));
   if(!['sleeping','finished'].includes(state.mail().phase)){
     const {completed,limit}=state.mail().session;
-    letterStatus=h('span',{class:'ff-letter-status',role:'status','aria-live':'polite',text:completed+'/'+limit,'data-compact':String((completed+'/'+limit).length>4),'aria-label':completed+' von '+limit+' Briefen geschafft'});nav.append(letterStatus,button('Bildkarte','map',map));
+    letterStatus=h('span',{class:'ff-letter-status',role:'status','aria-live':'polite',text:completed+'/'+limit,'data-compact':String((completed+'/'+limit).length>4),'aria-label':completed+' von '+limit+' Briefen geschafft'});
+    const destination=state.mail().phase==='den-letter'
+      ? button('Einladungsbrief öffnen','letter',()=>showLetter(false))
+      : button('Bildkarte','map',map);
+    nav.append(letterStatus,destination);
   }
   nav.append(button('Einstellungen für Erwachsene','gear',()=>FK.ui.parentGate(settings)));
 }
@@ -101,7 +105,6 @@ function act(id){if(panel||['sleeping','finished'].includes(state.mail().phase))
 }else if(id==='outside'){if(state.mail().phase==='den-letter')showLetter(false);else go('forest');}}
 // Picture-only touch targets sit on the calibrated painting; routes still use the actual world destinations.
 function map(){
-  if(state.mail().phase==='den-letter'){showLetter(false);return;}
   state.record('map_opened',{area});open('map');const card=h('section',{class:'ff-card ff-map-card'});overlay.append(card);
   const board=h('div',{class:'ff-map ff-map-storybook','aria-label':'Bildkarte des Waldes'}),mail=state.mail();
   const links=document.createElementNS('http://www.w3.org/2000/svg','svg');links.setAttribute('viewBox','0 0 1536 1024');links.setAttribute('aria-hidden','true');links.classList.add('ff-map-links');board.append(links);
