@@ -23880,6 +23880,11 @@
     },
     {
       "key": "puzzle:sequence",
+      "note": "Mache puzzle viel intuitiver, reihenfolgen geben häufig keinen sinn",
+      "at": "2026-11-22T20:05:43.557Z"
+    },
+    {
+      "key": "puzzle:sequence",
       "note": "Revert button braucht es nicht. Wenn kachel hochgezogen wird soll sie gleich aussehen wie kachel unten, nicht mit gestricheltem rand und seiterhin hell, nicht abgedunkelt",
       "at": "2026-11-18T20:15:35.891Z"
     },
@@ -23932,6 +23937,16 @@
       "key": "sequence/story-2",
       "note": "Mache drag and drop",
       "at": "2026-11-18T08:14:23.672Z"
+    },
+    {
+      "key": "sequence/story-4",
+      "note": "Mache brief schreiben nicht nur stift",
+      "at": "2026-11-22T20:05:42.539Z"
+    },
+    {
+      "key": "sequence/story-6",
+      "note": "Macht keinen sinn",
+      "at": "2026-11-22T20:05:44.652Z"
     },
     {
       "key": "syllable/word-6",
