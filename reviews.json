@@ -21756,6 +21756,33 @@
       "at": "2026-11-22T19:54:41.298Z",
       "seen": true,
       "operation": "b37c3533-066a-4499-8862-5868e069a2f4"
+    },
+    "treasure/0-3@376479fe0600f2aa": {
+      "key": "treasure/0-3",
+      "revision": "376479fe0600f2aa",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:54:44.362Z",
+      "seen": true,
+      "operation": "1d6e9d3b-fdc1-4a84-ac54-c1a6a1d56a48"
+    },
+    "treasure/1-0@5d14d5a5654f2221": {
+      "key": "treasure/1-0",
+      "revision": "5d14d5a5654f2221",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:54:49.067Z",
+      "seen": true,
+      "operation": "6b7d8b6a-8d83-461f-9d0b-28722630cd18"
+    },
+    "treasure/1-1@7deb0c649c79c960": {
+      "key": "treasure/1-1",
+      "revision": "7deb0c649c79c960",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:54:52.133Z",
+      "seen": true,
+      "operation": "1ff0112a-a55f-4c92-b5f4-66255538fb50"
     }
   },
   "history": [
