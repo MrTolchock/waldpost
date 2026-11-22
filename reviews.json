@@ -23709,6 +23709,15 @@
       "at": "2026-11-22T20:19:41.647Z",
       "seen": true,
       "operation": "135828c1-f4c3-46fc-aa03-fa93cb8cc926"
+    },
+    "friends-hedgehog/nature-question-21@a677fedca07895e4": {
+      "key": "friends-hedgehog/nature-question-21",
+      "revision": "a677fedca07895e4",
+      "status": "improve",
+      "note": "Wessen fell hat schwarze streifen? Orange löschen und frosch mit tier ersetzen das fell hat",
+      "at": "2026-11-22T20:20:32.908Z",
+      "seen": true,
+      "operation": "cb630c52-c708-4f61-be8b-cff724ab33a9"
     }
   },
   "history": [
