@@ -21909,6 +21909,24 @@
       "at": "2026-11-22T19:56:49.238Z",
       "seen": true,
       "operation": "11229acc-8845-44af-9c34-0f0886137984"
+    },
+    "treasure/5-0@ddfdb09db714a65d": {
+      "key": "treasure/5-0",
+      "revision": "ddfdb09db714a65d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:56:53.606Z",
+      "seen": true,
+      "operation": "46de6b87-4ece-4379-b94f-c50b7bce7446"
+    },
+    "treasure/5-1@2cae391b9512201b": {
+      "key": "treasure/5-1",
+      "revision": "2cae391b9512201b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:56:56.101Z",
+      "seen": true,
+      "operation": "2729ffa0-b4f5-402b-b259-247be0b7917f"
     }
   },
   "history": [
