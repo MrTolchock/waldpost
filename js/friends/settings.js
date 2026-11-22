@@ -36,8 +36,10 @@
       const count=h('input',{type:'range',min:1,max:10,step:1,value:Math.min(10,s.get().settings.letterLimit),'aria-label':'Anzahl Briefe',class:'ff-letter-slider'}),countValue=h('output',{class:'ff-letter-count','aria-hidden':'true',text:String(count.value)});
       const sessionStatus=h('p',{class:'ff-letter-session-status',role:'status','aria-live':'polite'});
       const showSession=()=>{const m=s.mail();sessionStatus.textContent=s.error||('Diese Reise: '+m.session.completed+' von '+m.session.limit+' Briefen'+(m.phase==='finished'?' · beendet.':'.'));};
-      count.addEventListener('input',()=>{countValue.textContent=count.value;count.setAttribute('aria-valuetext',count.value+(count.value==='1'?' Brief':' Briefe'));});
-      count.addEventListener('change',()=>{const value=Number(count.value);countValue.textContent=count.value;if(!s.setLetterLimit(value))sessionStatus.textContent=s.error||'Bitte 1 bis 10 Briefe wählen.';else showSession();});
+      // The painted fill follows the knob centre, whatever the browser draws natively.
+      const fill=()=>count.style.setProperty('--fill',String((Number(count.value)-1)/9));fill();
+      count.addEventListener('input',()=>{fill();countValue.textContent=count.value;count.setAttribute('aria-valuetext',count.value+(count.value==='1'?' Brief':' Briefe'));});
+      count.addEventListener('change',()=>{fill();const value=Number(count.value);countValue.textContent=count.value;if(!s.setLetterLimit(value))sessionStatus.textContent=s.error||'Bitte 1 bis 10 Briefe wählen.';else showSession();});
       const begin=FK.ui.btn({label:'Neue Briefreise starten',onClick:async()=>{const value=Number(count.value);if(!Number.isInteger(value)||value<1||value>10)return;if(!FK.friendsStartSession)await import('./game.js');if(!FK.friendsStartSession(value))showSession();}});
       const letters=h('section',{class:'setting-card ff-letter-settings'},heading('Briefe pro Spielrunde',"Ein Brief ist ein Rätsel mit fünf Aufgaben. Danach geht der Fuchs in seinen Bau schlafen."),h('label',{class:'ff-letter-range'},h('span',{text:'Anzahl Briefe (1–10)'}),h('span',{class:'ff-letter-slider-row'},h('small',{text:'1'}),count,h('small',{text:'10'}),countValue)),h('p',{text:'Die Auswahl gilt für die nächste Briefreise. Eine begonnene Reise behält ihr Limit. Eine neue Reise beginnt immer im Bau; nach dem Schlafen können nur Erwachsene neu starten.'}),sessionStatus,begin);showSession();
       const logStatus=h('p',{class:'ff-log-status',role:'status','aria-live':'polite'});

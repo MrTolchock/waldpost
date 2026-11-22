@@ -1,6 +1,6 @@
 # Current visual consistency audit
 
-Current release is **Waldpost 9.4.27** (22 November Rätsel review: sequence retired, clearer animal questions, stable neighbour and memory layouts; no artwork changes), with the habitat art from 9.4.25. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
+Current release is **Waldpost 9.4.28** (dialog buttons fit their labels, letter slider fill follows the knob, no stray «null» in Rätsel-Prüfung; 9.4.27: 22 November Rätsel review: sequence retired, clearer animal questions, stable neighbour and memory layouts; no artwork changes), with the habitat art from 9.4.25. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
 
 ## Lebensräume hinter den Rätseln · 9.4.25
 

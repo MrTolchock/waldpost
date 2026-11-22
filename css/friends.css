@@ -457,7 +457,13 @@
 .ff-session-end>.ff-character-portrait{width:180px;height:180px}
 /* Letters per journey: a slider from 1 to 10 with the chosen number beside it. */
 .ff-letter-range{display:block}.ff-letter-slider-row{display:flex;align-items:center;gap:10px;margin-top:8px}
-.ff-letter-slider{flex:1;min-width:0;height:48px;accent-color:#6f8a43;cursor:pointer}
+.ff-letter-slider{--fill:0;--knob:32px;flex:1;min-width:0;height:48px;margin:0;padding:0;background:transparent;cursor:pointer;-webkit-appearance:none;appearance:none}
+.ff-letter-slider::-webkit-slider-runnable-track{height:8px;border-radius:4px;background:linear-gradient(to right,#6f8a43 0 calc(var(--knob)/2 + (100% - var(--knob))*var(--fill)),#e4dfd2 0)}
+.ff-letter-slider::-moz-range-track{height:8px;border-radius:4px;background:linear-gradient(to right,#6f8a43 0 calc(var(--knob)/2 + (100% - var(--knob))*var(--fill)),#e4dfd2 0)}
+.ff-letter-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:var(--knob);height:var(--knob);margin-top:calc(4px - var(--knob)/2);border:1px solid #c9bfa9;border-radius:50%;background:#fffdf7;box-shadow:0 2px 4px #4a3a2240}
+.ff-letter-slider::-moz-range-thumb{width:var(--knob);height:var(--knob);box-sizing:border-box;border:1px solid #c9bfa9;border-radius:50%;background:#fffdf7;box-shadow:0 2px 4px #4a3a2240}
+.friends-interface .ff-letter-slider,.ff-letter-slider{border:0;border-radius:0;box-shadow:none;background:transparent}
+.ff-letter-slider:focus-visible{outline:3px solid #bb9a54;outline-offset:4px;border-radius:8px}
 .ff-letter-count{min-width:2.4em;padding:4px 8px;border:2px solid #c9b48a;border-radius:12px;background:#fffaf0;text-align:center;font-weight:700;font-size:20px;color:#4b3b2d}
 /* The world's own painted button pictures (js/friends/hud-art.js) and their responsive toolbar. */
 .ff-hud-art{display:block;flex:none;width:100%;height:100%;background-repeat:no-repeat;pointer-events:none}

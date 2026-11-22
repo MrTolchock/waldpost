@@ -325,6 +325,8 @@ button.star-count:focus-visible { outline: 4px solid var(--sun); outline-offset:
 /* Dialog buttons with only a label grow with it (the fixed size is for picture buttons), so labels never overlap. */
 .modal-actions .btn.btn-text { width: auto; min-width: var(--btn-w); height: auto; min-height: 64px; padding: 12px 22px; }
 .modal-actions .btn.btn-text .lbl { white-space: normal; text-align: center; line-height: 1.25; font-size: max(var(--lbl), 17px); }
+.modal-actions .btn:not(.btn-text) { width: auto; min-width: var(--btn-w); padding: 0 16px; }
+.modal-actions .btn:not(.btn-text) .lbl { white-space: nowrap; }
 .modal-x { position: absolute; top: 12px; right: 12px; --btn: 48px; --btn-w: 48px; --ic: 26px; }
 
 /* ---------- praise bubble & toast ---------- */
