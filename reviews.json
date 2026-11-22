@@ -23241,6 +23241,15 @@
       "at": "2026-11-22T20:05:57.992Z",
       "seen": true,
       "operation": "da229317-5669-4047-b523-2681c60ddaa0"
+    },
+    "sequence/story-1@edea0cd418bc26d4": {
+      "key": "sequence/story-1",
+      "revision": "edea0cd418bc26d4",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:06:09.937Z",
+      "seen": true,
+      "operation": "506a5626-22a5-4bc8-963c-31b988ea588f"
     }
   },
   "history": [
