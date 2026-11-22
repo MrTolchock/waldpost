@@ -23268,6 +23268,15 @@
       "at": "2026-11-22T20:06:28.586Z",
       "seen": true,
       "operation": "36a4f375-b46d-4943-a194-22d6116d7229"
+    },
+    "sequence/story-4@4cfe0b1cc125f6f8": {
+      "key": "sequence/story-4",
+      "revision": "4cfe0b1cc125f6f8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:06:36.334Z",
+      "seen": true,
+      "operation": "b2b0f9a0-cffa-48bc-b54e-82905f02e285"
     }
   },
   "history": [
