@@ -23223,6 +23223,15 @@
       "at": "2026-11-22T20:04:07.114Z",
       "seen": true,
       "operation": "74f117d9-2671-4629-9b50-60a65edafa7c"
+    },
+    "puzzle:neighbours@78525de30e731cb7": {
+      "key": "puzzle:neighbours",
+      "revision": "78525de30e731cb7",
+      "status": "improve",
+      "note": "Wenn falsch platziertes bild zurückfällt mache es nicht gestrichelt, sondern genau wie es vorher war. Bei korrekter antwort verschiebt sich reihe mit zahlen. Schaue dass es sich nicht verschiebt",
+      "at": "2026-11-22T20:05:21.907Z",
+      "seen": true,
+      "operation": "3ac16ab5-631f-4ed4-9b5d-6a669703cd4d"
     }
   },
   "history": [
