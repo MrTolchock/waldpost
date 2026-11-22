@@ -23286,6 +23286,15 @@
       "at": "2026-11-22T20:06:51.361Z",
       "seen": true,
       "operation": "9af55466-1a34-4e55-845d-0a079f9ce717"
+    },
+    "friends-hedgehog/riddle-0@2599a960a56e48e0": {
+      "key": "friends-hedgehog/riddle-0",
+      "revision": "2599a960a56e48e0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:07:20.297Z",
+      "seen": true,
+      "operation": "1c0e533f-eb88-4ac7-951e-7e97ab9aa1cd"
     }
   },
   "history": [
