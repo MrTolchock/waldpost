@@ -23754,6 +23754,15 @@
       "at": "2026-11-22T21:04:44.071Z",
       "seen": true,
       "operation": "ab5ded6b-d72a-41d9-bb3e-c54821f0560e"
+    },
+    "treasure/0-1@07f068d41559a82e": {
+      "key": "treasure/0-1",
+      "revision": "07f068d41559a82e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:04:50.600Z",
+      "seen": true,
+      "operation": "d008b618-1857-40be-bbea-f237f0e2542f"
     }
   },
   "history": [
