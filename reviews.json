@@ -22912,6 +22912,11 @@
       "at": "2026-11-18T08:09:24.583Z"
     },
     {
+      "key": "puzzle:compare",
+      "note": "Ersetze gleich viele mit zeichen = auf button",
+      "at": "2026-11-22T20:00:40.166Z"
+    },
+    {
       "key": "puzzle:count",
       "note": "Auch hier markierungen für käfer entfernen, wenn man draufklickt",
       "at": "2026-11-19T20:21:45.552Z"
