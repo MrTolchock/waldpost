@@ -993,16 +993,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "vowels": {
-      "current": "291c7670c914c514",
-      "former": [
-        "3701f8b954e9ecad",
-        "4537d465f0ec5669",
-        "5c20245f448c4a7f",
-        "6c0594175935303b",
-        "1c92c5f2696054a8",
-        "2f0c3c4d5911ac25",
-        "291c7670c914c514"
-      ]
+      "current": "a70ce1b4a34e9e5c",
+      "former": []
     },
     "read-puzzle": {
       "current": "61305e43bf745add",
@@ -7198,20 +7190,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "vowels/word-2-0": {
-      "current": "b688ae1d55e6100d",
-      "former": [
-        "9083463e04117324",
-        "a4df3ecd9142e503",
-        "6b74428a65f051b4",
-        "4b9799f038e53ca0",
-        "b73d1b20cb71b196",
-        "bbac836473510aa0",
-        "89c54f2a00885a18",
-        "7bfb8ae9bbbdace3",
-        "3484e4418c461c85",
-        "3b146060dd788ff4",
-        "b688ae1d55e6100d"
-      ]
+      "current": "24812adde9a7100d",
+      "former": []
     },
     "vowels/word-2-2": {
       "current": "47c369a99af6fec1",
@@ -7382,20 +7362,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "vowels/word-8-0": {
-      "current": "5d66d54a242be5a0",
-      "former": [
-        "70f1b61db529e2b1",
-        "2a0b021221a4c196",
-        "a0d87cb1599cf521",
-        "ba90a2740dbd0254",
-        "22d7b2309ce501be",
-        "d7b5add972ed1635",
-        "649c23a0cf128f3e",
-        "9703fe3f768f54c1",
-        "c4953e93b3f1c8fb",
-        "306c576640c64fb0",
-        "5d66d54a242be5a0"
-      ]
+      "current": "f0b2774a3a2d66a0",
+      "former": []
     },
     "vowels/word-8-3": {
       "current": "44fda00e03f0c424",
@@ -7654,20 +7622,8 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "vowels/word-21-0": {
-      "current": "5001b333ab8739b9",
-      "former": [
-        "7a4ac56dd9afed2d",
-        "63d512b69ed0200a",
-        "e1bb25b9e7e16fbd",
-        "3b85ff5906dd6511",
-        "dc46ad34e5aeffce",
-        "72c523eb0637aa03",
-        "de6387d60e18cb54",
-        "70670ffa608a22a2",
-        "9917841322a4bf8f",
-        "26625089a0383fd1",
-        "5001b333ab8739b9"
-      ]
+      "current": "82781c33fc97bab9",
+      "former": []
     },
     "vowels/word-21-5": {
       "current": "c6bec38fc93a8dbd",

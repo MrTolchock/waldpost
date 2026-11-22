@@ -177,8 +177,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "I",
       "choices": [
         "I",
-        "a",
-        "e"
+        "A",
+        "E"
       ]
     }
   },
@@ -381,8 +381,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "A",
       "choices": [
         "A",
-        "e",
-        "i"
+        "E",
+        "I"
       ]
     }
   },
@@ -670,8 +670,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "A",
       "choices": [
         "A",
-        "e",
-        "i"
+        "E",
+        "I"
       ]
     }
   },

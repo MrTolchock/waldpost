@@ -104,9 +104,11 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const catalogue=setup().FK.puzzleCatalogue;
  const baseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9bd41c8acd07db2eb7901ce0895f9a422cccd8e2');
  const reassigned=new Set(['count','add','compare','robot','rocket','picnic','sequence','treasure','neighbours','read-puzzle','friends-hedgehog']);
+ // 9.4.24 gives capitalised first-letter gaps capital distractors; only these vowel tasks reopen.
+ const capitalVowels=new Set(['vowels/word-2-0','vowels/word-8-0','vowels/word-21-0']);
  for(const [id,puzzle]of Object.entries(baseline.puzzles)){
-  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex',id);
-  for(const item of catalogue.iterations(id))assert.equal(catalogue.acceptsRevision(id,item.id,baseline.iterations[item.id].revision),!reassigned.has(id),item.id);
+  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex'&&id!=='vowels',id);
+  for(const item of catalogue.iterations(id))assert.equal(catalogue.acceptsRevision(id,item.id,baseline.iterations[item.id].revision),!reassigned.has(id)&&!capitalVowels.has(item.id),item.id);
  }
  const introduction=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='301e506b5061af35eeba8825992795827d5802ed');
  const feedbackBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='1e48d04bdc65836e95ce9d9b7c3cc28b9b177a3a');

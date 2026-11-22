@@ -38,3 +38,9 @@ test('reading words and sequence stories use real woodland subjects',()=>{
     assert.equal(q.ordered.length,2);assert.equal(new Set(q.ordered).size,2);
   }
 });
+
+test('vowel choices share the answer case, so a lone capital never reveals the gap',()=>{
+ const C=require('../tools/puzzle-catalogue.cjs').setup().FK.puzzleCatalogue,items=C.iterations('vowels');
+ assert.ok(items.some(it=>it.question.index===0),'first-letter gaps remain in the pool');
+ for(const it of items){const q=it.question,upper=q.answer!==q.answer.toLowerCase();assert.ok(q.choices.every(c=>(c!==c.toLowerCase())===upper),it.id);assert.equal(new Set(q.choices.map(c=>c.toLowerCase())).size,3,it.id);}
+});

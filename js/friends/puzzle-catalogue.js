@@ -176,8 +176,8 @@
     const word=w.replaceAll('-',''),parts=w.split('-'),choices=[picture,words[(i+4)%words.length][1],words[(i+9)%words.length][1]];
     addMouseWord('read-word-word-'+i,word,picture,choices);
     if(parts.length>1){const distractor=['ma','lo','su','ta','fe'].find(s=>!parts.some(p=>p.toLowerCase()===s)),chips=parts.concat(distractor);add('read-puzzle','word-'+i,word,{kind:'syllables',prompt:'Setze das Wort aus Silben zusammen.',word,picture,parts,chips,order:chips.map((_,n)=>n),answer:word});}
-    // Every eligible vowel position is a different spelling task.
-    Array.from(word).forEach((answer,index)=>{if(!/[aeiou]/i.test(answer)||/(au|ei|ie|eu|äu)/i.test(word.slice(Math.max(0,index-1),index+2)))return;add('vowels','word-'+i+'-'+index,word+' / Lücke '+(index+1),{kind:'vowels',prompt:'Welcher Buchstabe fehlt?',word,picture,index,answer,choices:[answer,...['a','e','i','o','u'].filter(v=>v.toLowerCase()!==answer.toLowerCase()).slice(0,2)]});});
+    // Every eligible vowel position is a different spelling task. Distractors share the answer's case, so a capital never gives it away.
+    Array.from(word).forEach((answer,index)=>{if(!/[aeiou]/i.test(answer)||/(au|ei|ie|eu|äu)/i.test(word.slice(Math.max(0,index-1),index+2)))return;add('vowels','word-'+i+'-'+index,word+' / Lücke '+(index+1),{kind:'vowels',prompt:'Welcher Buchstabe fehlt?',word,picture,index,answer,choices:[answer,...['a','e','i','o','u'].filter(v=>v.toLowerCase()!==answer.toLowerCase()).slice(0,2).map(v=>answer===answer.toLowerCase()?v:v.toUpperCase())]});});
   });
   // Fully authored routes: five obstacle sets, six distinct start/goal pairs, BFS checked in tests.
   const blocked=[[5,6],[5,9],[6,10],[9,10],[2,5,9]],ends=[[0,15],[12,3],[3,12],[15,0],[0,3],[12,15]];
