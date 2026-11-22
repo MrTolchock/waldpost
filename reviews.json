@@ -21783,6 +21783,15 @@
       "at": "2026-11-22T19:54:52.133Z",
       "seen": true,
       "operation": "1ff0112a-a55f-4c92-b5f4-66255538fb50"
+    },
+    "treasure/1-2@1150f2235ff40909": {
+      "key": "treasure/1-2",
+      "revision": "1150f2235ff40909",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:55:36.711Z",
+      "seen": true,
+      "operation": "70f3a541-68b3-4e37-bbfe-5700b1720b6b"
     }
   },
   "history": [
