@@ -115,7 +115,9 @@ function map(){
     b.removeAttribute('title'); // Picture-only pins; keep the accessible destination name.
     b.replaceChildren(id==='home'?FK.hudArt.element('den'):FK.friendsArt.portrait(id));b.dataset.place=id;if(id==='home')b.classList.add('ff-map-home');
     const line=document.createElementNS(links.namespaceURI,'line');for(const [key,value]of Object.entries({x1:ax*1536,y1:ay*1024,x2:pin.x*1536,y2:pin.y*1024}))line.setAttribute(key,String(value));links.append(line);
-    const invited=mail.phase==='to-friend'&&mail.host===id||mail.phase==='return-home'&&id==='home';b.classList.toggle('ff-map-invited',invited);if(invited)b.append(h('span',{class:'ff-map-invitation'},FK.hudArt.element('letter')));
+    const invited=mail.phase==='to-friend'&&mail.host===id||mail.phase==='return-home'&&id==='home';b.classList.toggle('ff-map-invited',invited);
+    // Only a friend with a letter gets the envelope; the way home to sleep is highlighted without one.
+    if(invited&&id!=='home')b.append(h('span',{class:'ff-map-invitation'},FK.hudArt.element('letter')));
     b.style.left=(pin.x*100)+'%';b.style.top=(pin.y*100)+'%';board.append(b);
   }
   // The pulse alone marks the exact current position (in the den: at home).
