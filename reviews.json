@@ -24132,6 +24132,24 @@
       "at": "2026-11-22T21:06:53.420Z",
       "seen": true,
       "operation": "4fa77485-2aea-48dc-a51e-37c10dcc33f8"
+    },
+    "neighbours/1-both@06d154e34785b8cd": {
+      "key": "neighbours/1-both",
+      "revision": "06d154e34785b8cd",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:09:26.858Z",
+      "seen": true,
+      "operation": "b0b76561-33d0-4723-919b-02f4f4a1efeb"
+    },
+    "neighbours/1-left@cffdf42bdb259c27": {
+      "key": "neighbours/1-left",
+      "revision": "cffdf42bdb259c27",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:09:30.375Z",
+      "seen": true,
+      "operation": "1316f487-246d-4186-8ff5-0c4704ff6099"
     }
   },
   "history": [
