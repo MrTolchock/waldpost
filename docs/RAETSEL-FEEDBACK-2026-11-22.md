@@ -27,3 +27,9 @@ Prüfung: Katalog-, Design-, Bild- und Einheitstests; Browserprüfungen für Rü
 | Rätsel | Hinweis | Umsetzung |
 | --- | --- | --- |
 | Zahlennachbarn | Korrekt platzierte Karte aus der Auswahl unten entfernen | Eine richtig eingesetzte Zahlenkarte verschwindet aus der Auswahl, auch nach dem Wiederöffnen begonnener Arbeit. Ihr Platz bleibt leer, damit die übrigen Karten nicht verrutschen. Nur die Zahlennachbarn-Aufgaben sind wieder offen. |
+
+## Nachtrag 22. November, 22:30 Uhr (9.4.32)
+
+| Aufgabe | Hinweis | Umsetzung |
+| --- | --- | --- |
+| `neighbours/11-left` und alle weiteren `…-left` | Die vorgegebene Zahl erscheint zusätzlich in der Auswahl | In allen 18 Aufgaben mit vorgegebenem Vorgänger fehlt diese Zahl nun in der Auswahl; es bleiben drei Karten (bei Mitte 1 ergänzt um die 4). Nur diese 18 Aufgaben sind wieder offen; die 18 übrigen Freigaben bleiben. |

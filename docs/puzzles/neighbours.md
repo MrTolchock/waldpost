@@ -101,9 +101,9 @@ These definitions are the same finite data used by the game and review previews.
         2
       ],
       "choices": [
-        0,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -141,7 +141,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         0,
-        1,
         3,
         4
       ]
@@ -181,7 +180,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         1,
-        2,
         4,
         5
       ]
@@ -221,7 +219,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         2,
-        3,
         5,
         6
       ]
@@ -261,7 +258,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         3,
-        4,
         6,
         7
       ]
@@ -301,7 +297,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         4,
-        5,
         7,
         8
       ]
@@ -341,7 +336,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         5,
-        6,
         8,
         9
       ]
@@ -381,7 +375,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         6,
-        7,
         9,
         10
       ]
@@ -421,7 +414,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         7,
-        8,
         10,
         11
       ]
@@ -461,7 +453,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         8,
-        9,
         11,
         12
       ]
@@ -501,7 +492,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         9,
-        10,
         12,
         13
       ]
@@ -541,7 +531,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         10,
-        11,
         13,
         14
       ]
@@ -581,7 +570,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         11,
-        12,
         14,
         15
       ]
@@ -621,7 +609,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         12,
-        13,
         15,
         16
       ]
@@ -661,7 +648,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         13,
-        14,
         16,
         17
       ]
@@ -701,7 +687,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         14,
-        15,
         17,
         18
       ]
@@ -741,7 +726,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         15,
-        16,
         18,
         19
       ]
@@ -781,7 +765,6 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "choices": [
         16,
-        17,
         19,
         20
       ]

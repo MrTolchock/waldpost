@@ -84,6 +84,7 @@ test('latest review fixes apply throughout the relevant pools and retire the req
  for(const it of C.iterations('syllable')){assert.equal(it.question.prompt,'Wie viele Silben hat das Wort?');assert.equal(it.question.answer,it.question.parts.length);assert.equal(it.question.choices.length,3);}
  assert.ok(C.iterations('syllable').some(it=>it.question.answer===4));assert.ok(C.iterations('syllable').some(it=>it.question.answer===5));
  for(const {question} of C.iterations('treasure'))assert.ok(question.choices.every(choice=>choice===question.answer||!question.objects.includes(choice)));
+ for(const {id,question:q} of C.iterations('neighbours')){assert.equal(q.choices.length>=3,true,id);assert.ok(q.choices.includes(q.answer[1]),id);if(q.given==='left')assert.equal(q.choices.includes(q.n-1),false,id+' never offers the given number again');else assert.ok(q.choices.includes(q.answer[0]),id);}
 });
 test('feedback remains readable across changed revisions without changing the review decision',()=>{
  const {FK}=setup(),V=FK.puzzleReview,C=FK.puzzleCatalogue,id='syllable',key='syllable/word-6',old={key,revision:'before-new-pictures',status:'improve',note:'Einfach nur Silben zählen.',at:'2026-11-15T20:58:24.776Z'};
