@@ -346,11 +346,11 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
   function placeCamera(k) { const base = narrow ? [0, 10, 14.4] : [0, 9, 14], e = shotK(), z = zoomUser * zoomAuto * lerp(1, .58, e), ck = caveEase(), off = [0, lerp(base[1] * z * lerp(1, .82, e), 2.7 * zoomUser, ck), lerp(base[2] * z, (narrow ? 7.4 : 6.6) * zoomUser, ck)]; camera.position.lerp(new THREE.Vector3(focus.x + off[0], focus.y + off[1], focus.z + off[2]), k); if (ck < .98) camera.position.y = Math.max(camera.position.y, WORLD.ground(camera.position.x, camera.position.z) + lerp(3.5, 1.4, ck)); camera.lookAt(focus.x, focus.y + lerp(1.4, 1.25, ck), focus.z - lerp(3.2, 2.4, ck)); camera.updateMatrixWorld(); foxView.value.set(pos.x, groundY(pos.x, pos.z) + .9, pos.z).applyMatrix4(camera.matrixWorldInverse); fill.position.copy(camera.position).add(new THREE.Vector3(0, 4, 0)); fill.target.position.copy(focus); fill.target.updateMatrixWorld(); horizon.position.set(camera.position.x, camera.position.y - 4, camera.position.z - 20); }
   function publishMailPosition() { const p = forestPlaces.mailman; p.x = mailPos.x; p.z = mailPos.z; p.pu = THREE.MathUtils.clamp(.5 + mailPos.x * .023, .07, .93); p.pv = THREE.MathUtils.clamp(.49 + mailPos.z * .025, .1, .9); }
   function summonMailman() {
-    // He stands a real walk away (18–22 m), preferably ahead of Fuchs where the camera sees him (north), on a straight
-    // clear way; a bend or a narrow crossing may need a routed approach (16–25 m) instead.
+    // He stands a long walk away (28–34 m), preferably ahead of Fuchs where the camera sees him (north), on a straight
+    // clear way; a bend or a narrow crossing may need a routed approach (26–38 m) instead.
     const ANGLES = Array.from({length: 32}, (_, i) => -Math.PI / 2 + (i % 2 ? 1 : -1) * Math.ceil(i / 2) * TAU / 32);
-    let chosen = null; for (const radius of [20, 19, 21, 18, 22]) { for (const a of ANGLES) { const candidate = new THREE.Vector3(pos.x + Math.cos(a) * radius, 0, pos.z + Math.sin(a) * radius); if (walkable(candidate.x, candidate.z) && clear(pos, candidate, true)) { chosen = candidate; break; } } if (chosen) break; }
-    if (!chosen) for (const radius of [20, 22, 18]) { for (const a of ANGLES.filter((_, i) => i % 2 === 0)) { const candidate = nearestWalkable(new THREE.Vector3(pos.x + Math.cos(a) * radius, 0, pos.z + Math.sin(a) * radius)), distance = candidate.distanceTo(pos); if (distance >= 16 && distance <= 25 && plan(candidate)) { chosen = candidate; break; } } if (chosen) break; }
+    let chosen = null; for (const radius of [32, 31, 33, 30, 34, 29, 28]) { for (const a of ANGLES) { const candidate = new THREE.Vector3(pos.x + Math.cos(a) * radius, 0, pos.z + Math.sin(a) * radius); if (walkable(candidate.x, candidate.z) && clear(pos, candidate, true)) { chosen = candidate; break; } } if (chosen) break; }
+    if (!chosen) for (const radius of [32, 35, 29, 37, 27]) { for (const a of ANGLES.filter((_, i) => i % 2 === 0)) { const candidate = nearestWalkable(new THREE.Vector3(pos.x + Math.cos(a) * radius, 0, pos.z + Math.sin(a) * radius)), distance = candidate.distanceTo(pos); if (distance >= 26 && distance <= 38 && plan(candidate)) { chosen = candidate; break; } } if (chosen) break; }
     if (chosen) mailPos.copy(chosen);
     courierGoal = null; courierPath = []; courierWait = 20; publishMailPosition(); courier.position.set(mailPos.x, groundY(mailPos.x, mailPos.z), mailPos.z); guidePoints = []; guideNext = 0;
   }
@@ -514,7 +514,8 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
       else { o.f.rig.group.visible = show; if (o.f.shadow) o.f.shadow.visible = show; o.f.rig.lod(o.d < 8 ? 0 : 1); if (anim && o.f.roam && !reduced) stroll(o.f, o.id, dt); if (anim && o.f.swim && !reduced) swim(o.f, o.id, dt, time); if (anim) { const st = o.f.show ? perform(o.f, o.id, dt, time) : {action: greeting(o.f, o.id, o.d, time)}; o.f.rig.update(dt, {moving: o.f.moving && !o.f.show, speed: o.id === 'squirrel' ? 1.6 : o.id === 'deer' ? .75 : .9, reduced, ...(typeof st === 'string' ? {action: st} : st)}); } } }
     animatedCount = animated;
     if (cast) { const who = [{group: fox, x: pos.x, y: fox.position.y, z: pos.z, h: FOX_H}]; for (const o of others) { if (who.length > 3 || o.d > 15) break; if (o.id === 'mailman') who.push({group: courier, x: mailPos.x, y: courier.position.y, z: mailPos.z, h: 1.72}); else if (!o.f.onWater && o.f.y < 1.2) who.push({group: o.f.rig.group, x: o.f.x, y: o.f.rig.group.position.y, z: o.f.z, h: o.f.h}); }
-      cast.update(who, (1 - .85 * weather.state.rain) * (1 - caveK)); }
+      // at dusk on the way home the low sun no longer throws long, sharp shadows: they fade out with the light
+      cast.update(who, (1 - .85 * weather.state.rain) * (1 - caveK) * (1 - dusk())); }
     // Those without a letter box (the Steinbock): when Fuchs stops beside one, he shows his trick and points the way the letter leads
     for (const id in WORLD.extras) { const f = friends[id]; if (!f) continue; const d = Math.hypot(f.x - pos.x, f.z - pos.z); if (d > 9) f.shown = false;
       if (!f.show && !f.shown && d < 4.4 && !moving) { f.shown = true; const p = forestPlaces[guideTarget]; f.show = {t: 0, toward: p ? [p.x, p.z] : null, puffed: false}; onMove({event: 'wonder_reaction', kind: id, area: 'forest'}); } }
@@ -575,7 +576,7 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
     mailTarget(id) { const was = guideTarget; guideTarget = forestPlaces[id] ? id : null; guidePoints = []; guideNext = 0;
       // a new letter is ready: the mailman whistles once from where he is, then comes over
       if (id === 'mailman' && was !== 'mailman') { sound.cues.push({type: 'whistle', pan: THREE.MathUtils.clamp((mailPos.x - pos.x) / 10, -.9, .9)}); if (sound.cues.length > 4) sound.cues.shift(); }
-      if (id === 'mailman' && mailPos.distanceTo(pos) > 25) summonMailman(); }, summonMailman,
+      if (id === 'mailman' && mailPos.distanceTo(pos) > 38) summonMailman(); }, summonMailman,
     pick(x, y) {
       raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
       if (raycaster.intersectObject(courier, true).length) { courierGoal = null; courierPath = []; courierWait = 20; if (mailPos.distanceTo(pos) < 3.2) onAction('mailman'); else walkTo(mailPos.clone(), 'mailman'); return; }

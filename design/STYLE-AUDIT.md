@@ -1,6 +1,6 @@
 # Current visual consistency audit
 
-Current release is **Waldpost 9.4.28** (dialog buttons fit their labels, letter slider fill follows the knob, no stray «null» in Rätsel-Prüfung; 9.4.27: 22 November Rätsel review: sequence retired, clearer animal questions, stable neighbour and memory layouts; no artwork changes), with the habitat art from 9.4.25. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
+Current release is **Waldpost 9.4.29** (postman waits 28–34 m away, no long fox shadow at dusk; 9.4.28: dialog buttons fit their labels, letter slider fill follows the knob, no stray «null» in Rätsel-Prüfung; 9.4.27: 22 November Rätsel review: sequence retired, clearer animal questions, stable neighbour and memory layouts; no artwork changes), with the habitat art from 9.4.25. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
 
 ## Lebensräume hinter den Rätseln · 9.4.25
 
@@ -98,7 +98,7 @@ Feedback from the iPad (19 Nov): the land in the background looked unfinished, s
 
 - **Background.** The full-detail ring was a 40 m circle round Fuchs, so a quarter of its tiles lay behind the camera, unseen, while ahead the ground near the top of the picture (zoomed out, 35–45 m away) was the plain far version, and new detail dissolved in right there. The near ring now follows the picture: everything within 22 m, and ahead of Fuchs the ground in the camera's view out to 50 m (tile centres), built in the order the camera sees it. It holds about as many tiles as before. The far ring's ground takes on the colour of what grows in the near ring (sunny grass, the meadow's warm tall grass and its drifts of poppies, cornflowers, bellflowers and daisies), so the land beyond no longer reads as bare green.
 - **Time of day.** It used to ease over half a minute after a puzzle, redrawing the shadow map every half second, so shadows crept across the ground in jerks. Time now passes while the puzzle is open: when the forest shows again it is already the new hour, with one shadow redraw.
-- **Mailman.** He waits 18–22 m away (a routed approach 16–25 m where the way bends), usually ahead in view.
+- **Mailman.** He waits 28–34 m away (a routed approach 26–38 m where the way bends), usually ahead in view.
 - **Steinbock.** A new ledge path with one hairpin climbs the Rock's face from the cave's path, a few steps before the cave mouth, to the rim in front of his crag (`ibex-cave` trail, graded by `RAMPS`). The drawn map does not show this short path yet; its painting is unchanged.
 - **Slide marks.** Sliding down the snowy peak leaves one smooth furrow (pressed rims, soft middle, fine fur drag lines) instead of paw prints.
 - **Asleep in bed.** Fuchs lies along the bed on the blanket, head toward the pillow and tail toward the foot, sized to the mattress instead of lying across it with his paws over the edge.
