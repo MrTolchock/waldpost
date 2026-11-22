@@ -21981,6 +21981,15 @@
       "at": "2026-11-22T19:57:14.301Z",
       "seen": true,
       "operation": "d171ed52-ca15-4ee0-9b13-a35d028f308d"
+    },
+    "treasure/7-0@c55a60439444aa2d": {
+      "key": "treasure/7-0",
+      "revision": "c55a60439444aa2d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:57:56.647Z",
+      "seen": true,
+      "operation": "ac312653-7362-4b8a-a6b1-dd58c3c59538"
     }
   },
   "history": [
