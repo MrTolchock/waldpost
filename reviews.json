@@ -23295,6 +23295,24 @@
       "at": "2026-11-22T20:07:20.297Z",
       "seen": true,
       "operation": "1c0e533f-eb88-4ac7-951e-7e97ab9aa1cd"
+    },
+    "friends-hedgehog/riddle-1@c32afaac62d68876": {
+      "key": "friends-hedgehog/riddle-1",
+      "revision": "c32afaac62d68876",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:07:22.609Z",
+      "seen": true,
+      "operation": "df5fd321-dc41-4ed8-aa8b-4958b96724e2"
+    },
+    "friends-hedgehog/riddle-2@b5bcca9f0f3fa24b": {
+      "key": "friends-hedgehog/riddle-2",
+      "revision": "b5bcca9f0f3fa24b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:07:25.112Z",
+      "seen": true,
+      "operation": "704c50aa-fdd6-42c4-bbbd-4adf3c8d19ca"
     }
   },
   "history": [
