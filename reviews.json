@@ -21990,6 +21990,42 @@
       "at": "2026-11-22T19:57:56.647Z",
       "seen": true,
       "operation": "ac312653-7362-4b8a-a6b1-dd58c3c59538"
+    },
+    "treasure/7-1@33634fa0e31d5e28": {
+      "key": "treasure/7-1",
+      "revision": "33634fa0e31d5e28",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:58:00.899Z",
+      "seen": true,
+      "operation": "3d19e793-27be-42ee-ba87-f1d4a30cb8b0"
+    },
+    "treasure/7-2@6a036aa5a73903bf": {
+      "key": "treasure/7-2",
+      "revision": "6a036aa5a73903bf",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:58:03.248Z",
+      "seen": true,
+      "operation": "95efd37a-4041-4265-8a87-3d5b79ba041c"
+    },
+    "treasure/7-3@711306489d828b12": {
+      "key": "treasure/7-3",
+      "revision": "711306489d828b12",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:58:05.311Z",
+      "seen": true,
+      "operation": "5894e1c1-2cdd-4ca9-9846-ae4f968415f1"
+    },
+    "puzzle:treasure@317ded0ffba82bf5": {
+      "key": "puzzle:treasure",
+      "revision": "317ded0ffba82bf5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:58:08.466Z",
+      "seen": true,
+      "operation": "1781f915-0656-412d-9600-6c3b6aeb3099"
     }
   },
   "history": [
