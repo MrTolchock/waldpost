@@ -23718,6 +23718,15 @@
       "at": "2026-11-22T20:20:32.908Z",
       "seen": true,
       "operation": "cb630c52-c708-4f61-be8b-cff724ab33a9"
+    },
+    "friends-hedgehog/nature-question-22@9212e5079873cf13": {
+      "key": "friends-hedgehog/nature-question-22",
+      "revision": "9212e5079873cf13",
+      "status": "improve",
+      "note": "Kuh mit vogel ersetzen weil steht welcher vogel",
+      "at": "2026-11-22T20:21:11.056Z",
+      "seen": true,
+      "operation": "ea3778e2-1ae7-4afa-b553-de4043d6eb08"
     }
   },
   "history": [
