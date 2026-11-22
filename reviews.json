@@ -22021,11 +22021,11 @@
     "puzzle:treasure@317ded0ffba82bf5": {
       "key": "puzzle:treasure",
       "revision": "317ded0ffba82bf5",
-      "status": "approved",
-      "note": "",
-      "at": "2026-11-22T19:58:08.466Z",
+      "status": "improve",
+      "note": "Nachdem checkmark geklickt wird, tauchen auswahlfelder auf. Dabei wird box mit der sequenz kleiner. Schaue, dass box mit sequenz mit checkmark und antworten gleich gross bleibt und sich nicht verschiebt",
+      "at": "2026-11-22T19:59:18.777Z",
       "seen": true,
-      "operation": "1781f915-0656-412d-9600-6c3b6aeb3099"
+      "operation": "821d9b79-1111-4508-aced-a6f3046519ef"
     }
   },
   "history": [
@@ -22325,6 +22325,15 @@
       "at": "2026-11-20T20:23:24.654Z",
       "seen": true,
       "operation": "6ef50fb1-a2fa-4616-ba7e-2a89d3ede8d6"
+    },
+    {
+      "key": "puzzle:treasure",
+      "revision": "317ded0ffba82bf5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:58:08.466Z",
+      "seen": true,
+      "operation": "1781f915-0656-412d-9600-6c3b6aeb3099"
     }
   ],
   "deletedNotes": [
