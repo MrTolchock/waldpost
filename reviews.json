@@ -23205,6 +23205,24 @@
       "at": "2026-11-22T20:02:58.250Z",
       "seen": true,
       "operation": "a3d341e2-43e8-42c9-932a-d90a236aa388"
+    },
+    "neighbours/1-both@fff7134a3fc090a0": {
+      "key": "neighbours/1-both",
+      "revision": "fff7134a3fc090a0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:04:04.485Z",
+      "seen": true,
+      "operation": "51490af3-078e-427a-91fe-35954e3a4d20"
+    },
+    "neighbours/1-left@1aefdff6040f83ca": {
+      "key": "neighbours/1-left",
+      "revision": "1aefdff6040f83ca",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:04:07.114Z",
+      "seen": true,
+      "operation": "74f117d9-2671-4629-9b50-60a65edafa7c"
     }
   },
   "history": [
