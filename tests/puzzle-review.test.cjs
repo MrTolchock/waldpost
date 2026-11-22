@@ -1,9 +1,12 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const {setup,check}=require('../tools/puzzle-catalogue.cjs');
 const plain=v=>JSON.parse(JSON.stringify(v));
-// Component fixture for a release whose picture cells were verified unchanged.
-// Current production art may legitimately have no compatible historical release.
-function compatibleSetup(saved){return setup(saved);}
+// The last shared-clearing release has verified historical compatibility.
+// Host habitat paintings now require a fresh review of current production art.
+function compatibleSetup(saved){
+ const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
+ const env=environment({saved,read:snapshotReader('61ef04562d6ac863a6816f494e3844539cb60758').read});env.execute('js/friends/puzzle-implementation.js');return env;
+}
 function approve(FK,id){const V=FK.puzzleReview,C=FK.puzzleCatalogue;for(const it of C.iterations(id)){assert.ok(V.seen(id,it.id));assert.ok(V.decide(id,it.id,'approved'));}assert.ok(V.decide(id,null,'approved'));}
 test('every active puzzle has at least 25 unique finite definitions, competence and real artwork',()=>{
  const {FK,ctx}=setup();FK.STICKERS=[];ctx.MutationObserver=class{observe(){}};ctx.document={body:{}};vm.runInContext(fs.readFileSync('js/ui/waldatelier.js','utf8'),ctx);

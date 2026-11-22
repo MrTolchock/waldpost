@@ -162,6 +162,10 @@ function build(reader=currentReader(),{includeResources=false}={}){
    review:css.map(([file,source])=>[file,cssFor(source,classes,game,{typography:false})]).filter(([,rules])=>rules.length)
   });
   const selectedCSS=cssCache.get(cssKey).presentation;
+  // Host-scoped scene declarations replace the clearing; fingerprint only the
+  // backdrop actually shown. Older snapshots keep their original shared hash.
+  const backdrop=[...strings(selectedCSS)].map(value=>value.match(/^url\(['"]?\.\.\/(assets\/forest-friends\/puzzle-[a-z-]+\.webp)['"]?\)$/)?.[1]).filter(Boolean).at(-1);
+  const sharedResources=backdrop?shared.map((digest,i)=>i===3?hash(read(backdrop)):digest):shared;
   let progress='0% 0%';const progressCell=node=>{if(!Array.isArray(node))return;if(node[0]==='--wb-item')progress=node[1];else node.forEach(progressCell);};progressCell(selectedCSS);
   const [px,py]=progress.split(' ').map(parseFloat),index=Math.round(py*3/100)*4+Math.round(px*3/100),key='assets/waldatelier/forest-objects.webp';atlas(key,4,4);pictures.push({key,index,role:'progress'});
   const extra={dom};if(code.readsText)extra.text=textHelper;if(kinds.includes('robot'))extra.routes=hash(read('js/learn/routes.js'));if(kinds.includes('trace'))extra.glyphs=items.filter(q=>q.kind==='trace').map(q=>[q.glyph,FK.glyphs.data[q.glyph],FK.__reviewTraceFrame(q.glyph)]);
@@ -170,7 +174,7 @@ function build(reader=currentReader(),{includeResources=false}={}){
    if(legacyFirefly)extra.firefly=hash(normal(legacyFirefly));
   }
   const portraitCode={art:hash(closure(portraitModule,[portraitModule.bindings.get('portrait')],{special:{ids:portraitIndices}})),wrapper:hash(closure(libraryModule,[libraryModule.bindings.get('portrait')]))};
-  const structure={code:code.digest,tables:{aliases:selectData(FK.__pictureData.aliases),labels:selectData(FK.__pictureData.labels),...Object.fromEntries(Object.entries(FK.__visualData).map(([name,table])=>[name,selectData(table)]))},controls,selection,rendering,portraitCode,css:hash(selectedCSS),extra,wordArt:items.filter(q=>q.kind==='rhyme').map(q=>[q.text,...q.choices].map(w=>[w,FK.puzzleRounds.wordArt[w]])),shared};
+  const structure={code:code.digest,tables:{aliases:selectData(FK.__pictureData.aliases),labels:selectData(FK.__pictureData.labels),...Object.fromEntries(Object.entries(FK.__visualData).map(([name,table])=>[name,selectData(table)]))},controls,selection,rendering,portraitCode,css:hash(selectedCSS),extra,wordArt:items.filter(q=>q.kind==='rhyme').map(q=>[q.text,...q.choices].map(w=>[w,FK.puzzleRounds.wordArt[w]])),shared:sharedResources};
   return {
    definition:hash({puzzle:contract(C.puzzle(game.id)),items:pool.map(task)}),
    structure:hash(structure),

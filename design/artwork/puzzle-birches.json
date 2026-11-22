@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-birches.png",
+  "output": "../../assets/forest-friends/puzzle-birches.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "e61024c111f54fa0574719852354035d603da4c622b5bd45128470e4318863ea",
+    "generationRecord": "generation-records/puzzle-birches.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-birches.txt"
+  }
+}

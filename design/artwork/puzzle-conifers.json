@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-conifers.png",
+  "output": "../../assets/forest-friends/puzzle-conifers.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "7f4158d215ec0938d342c66a6f5c9836ba26400d0a3e668ff0fd9bb063b421c9",
+    "generationRecord": "generation-records/puzzle-conifers.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-conifers.txt"
+  }
+}

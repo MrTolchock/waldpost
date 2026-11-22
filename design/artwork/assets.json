@@ -511,6 +511,114 @@
       "manifest": "design/artwork/navigation-close.json",
       "forwardPrompt": "design/artwork/prompts/navigation-close.txt",
       "requestId": "navigation-close"
+    },
+    {
+      "id": "puzzle-meadow",
+      "file": "assets/forest-friends/puzzle-meadow.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-meadow.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-meadow.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-meadow"
+    },
+    {
+      "id": "puzzle-mountain",
+      "file": "assets/forest-friends/puzzle-mountain.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-mountain.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-mountain.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-mountain"
+    },
+    {
+      "id": "puzzle-swamp",
+      "file": "assets/forest-friends/puzzle-swamp.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-swamp.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-swamp.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-swamp"
+    },
+    {
+      "id": "puzzle-conifers",
+      "file": "assets/forest-friends/puzzle-conifers.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-conifers.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-conifers.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-conifers"
+    },
+    {
+      "id": "puzzle-birches",
+      "file": "assets/forest-friends/puzzle-birches.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-birches.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-birches.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-birches"
+    },
+    {
+      "id": "puzzle-old-forest",
+      "file": "assets/forest-friends/puzzle-old-forest.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-old-forest.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-old-forest.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-old-forest"
+    },
+    {
+      "id": "puzzle-beaver-pond",
+      "file": "assets/forest-friends/puzzle-beaver-pond.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-beaver-pond.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-beaver-pond.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-beaver-pond"
+    },
+    {
+      "id": "puzzle-stump",
+      "file": "assets/forest-friends/puzzle-stump.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-stump.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-stump.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-stump"
+    },
+    {
+      "id": "puzzle-undergrowth",
+      "file": "assets/forest-friends/puzzle-undergrowth.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-undergrowth.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-undergrowth.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-undergrowth"
+    },
+    {
+      "id": "puzzle-waterfall-pool",
+      "file": "assets/forest-friends/puzzle-waterfall-pool.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-waterfall-pool.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-waterfall-pool.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-waterfall-pool"
+    },
+    {
+      "id": "puzzle-brook",
+      "file": "assets/forest-friends/puzzle-brook.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-brook.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-brook.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-brook"
+    },
+    {
+      "id": "puzzle-badger-sett",
+      "file": "assets/forest-friends/puzzle-badger-sett.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-badger-sett.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-badger-sett.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-badger-sett"
     }
   ],
   "codePipelines": [

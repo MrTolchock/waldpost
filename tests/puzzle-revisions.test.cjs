@@ -22,6 +22,15 @@ test('puzzle-specific CSS stays scoped; shared progress CSS invalidates affected
  const matrix=changed('css/puzzle-rounds.css',s=>s+'\n.puzzle-matrix{row-gap:27px}\n');same(base,matrix,'friends-squirrel');different(base,matrix,'friends-beaver');
  const common=changed('css/puzzle-rounds.css',s=>s+'\n.puzzle-progress{gap:27px}\n');different(base,common,'friends-squirrel');different(base,common,'friends-bird');different(base,common,'rocket');
 });
+test('habitat paintings reopen only their hosts, including both mouse word puzzles',()=>{
+ const games=require('../tools/puzzle-catalogue.cjs').setup().FK.friendsLibrary.catalogue();
+ for(const [file,host]of [['assets/forest-friends/puzzle-meadow.webp','deer'],['assets/forest-friends/puzzle-stump.webp','mouse']]){
+  const imageChange=build({...reader,read:name=>name===file?Buffer.concat([reader.read(name),Buffer.from('changed scene')]):reader.read(name)});
+  for(const game of games)(game.host===host?different:same)(base,imageChange,game.id);
+ }
+ const meadow=changed('css/puzzle-rounds.css',s=>s.replace('[data-host="deer"]{','[data-host="deer"]{background-position:25% 50%;'));
+ for(const game of games)(game.host==='deer'?different:same)(base,meadow,game.id);
+});
 test('typography corrections retain review compatibility while exact rendered revisions still change',()=>{
  const typography=changed('css/puzzle-rounds.css',s=>s+'\n.puzzle-read-text{font-size:32px;font-weight:700;line-height:1.4;letter-spacing:0;overflow-wrap:anywhere}\n');
  for(const id of ['friends-owl','friends-mouse','friends-hedgehog','friends-deer']){

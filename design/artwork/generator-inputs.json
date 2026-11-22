@@ -2814,6 +2814,342 @@
           "usage": "composition-only"
         }
       ]
+    },
+    "puzzle-meadow": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-meadow.txt",
+      "brief": "design/artwork/briefs/puzzle-meadow.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA sunlit wildflower meadow at the woodland edge, home of Reh. Rolling pale sage grass, soft distant hills, a small cluster of daisies and buttercups in the bottom corners, tall meadow grasses at both side edges, a few distant deciduous trees. The open grassy meadow must be immediately distinct from woodland, mountain and water scenes.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-mountain": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-mountain.txt",
+      "brief": "design/artwork/briefs/puzzle-mountain.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA friendly Swiss alpine mountainside, home of Steinbock. Soft blue-grey mountain peaks and a little distant snow in the upper band, a rocky ledge and rounded limestone boulders along the lower corners, sparse alpine grass, tiny gentian flowers and a small mountain pine at a side edge. Airy pale sky and misty pale rock in the middle. Clearly high mountains, never an enclosed forest.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-swamp": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-swamp.txt",
+      "brief": "design/artwork/briefs/puzzle-swamp.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA peaceful woodland swamp, home of Frosch. Shallow still green-blue pools, rushes, reeds and cattails at the sides, willow branches hanging into the top corners, a few lily pads in the bottom corners. A modest rustic wooden boardwalk follows the outer bottom edge and turns along the right margin, recalling the real swamp Steg. Broad pale water reflections through the centre. Friendly and fresh, never spooky.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-conifers": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-conifers.txt",
+      "brief": "design/artwork/briefs/puzzle-conifers.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA warm spruce and pine grove, home of Eichhörnchen. Tall narrow evergreen trunks at the side edges, green needle branches framing the upper corners, a mossy forest floor with a few pine cones and fern fronds in the bottom corners. Pale sunlit opening through the middle and softly suggested conifers in the far distance.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-birches": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-birches.txt",
+      "brief": "design/artwork/briefs/puzzle-birches.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nAn airy spring birch grove, home of Blaumeise. Slender white trunks with a few dark pencil markings at the sides, delicate pale green birch foliage overhead, an empty tiny twig nest on a side branch in the upper left, soft grasses and forget-me-nots at the bottom corners. Bright diffuse daylight and a pale woodland clearing through the middle.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-old-forest": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-old-forest.txt",
+      "brief": "design/artwork/briefs/puzzle-old-forest.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nAn ancient beech woodland, home of Waldkauz. Broad old beech trunks at the outer edges, a recognisable natural oval tree hollow in the upper right trunk, an empty branch beside it, broad rounded leaves framing the top, fern and moss at the bottom. Gentle warm daylight filtering into pale cream mist through the middle. Calm and welcoming, no night-time darkness.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-beaver-pond": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-beaver-pond.txt",
+      "brief": "design/artwork/briefs/puzzle-beaver-pond.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA small calm woodland pond, home of Biber. Blue-green water and soft reflections, willow and alder trees at the sides, a small natural beaver lodge and low dam of interwoven sticks beside the far right bank, a few neatly gnawed logs at the lower left edge. Pale open reflective water in the centre. View from the bank, with the dam readable on the perimeter.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-stump": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-stump.txt",
+      "brief": "design/artwork/briefs/puzzle-stump.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA cosy hazel woodland floor, home of Maus. A low old tree stump with exposed roots at the lower left edge, hazel shrubs and ferns at the sides, a little moss and a few fallen leaves. Eye-level view across a small sunlit clearing, pale cream and sage light in the middle. Small-scale forest-floor feeling, never an interior room.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-undergrowth": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-undergrowth.txt",
+      "brief": "design/artwork/briefs/puzzle-undergrowth.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA leafy birch woodland edge, home of Igel. Low bramble hedges and a loose pile of dry beech leaves at the bottom corners, thin birch trunks at the outer margins, moss, a fallen twig and a few small ferns. Gentle honey-coloured morning light; a pale quiet clearing through the middle. Emphasise cosy low undergrowth rather than tall dense conifers.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-waterfall-pool": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-waterfall-pool.txt",
+      "brief": "design/artwork/briefs/puzzle-waterfall-pool.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA clear blue-green plunge pool below a small woodland waterfall, home of Fisch. The waterfall drops over rounded pale rocks in the upper right perimeter; ripples spread into a calm pool. Smooth pebbles and delicate water plants along the lower corners, soft woodland along the sides. View from the bank above the water, with open pale water reflections through the middle. No underwater view.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-brook": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-brook.txt",
+      "brief": "design/artwork/briefs/puzzle-brook.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA gentle winding woodland brook, home of Eisvogel. Clear pale blue water bends away into the distance, grassy banks and alder foliage at the sides, a bare low overhanging perch branch in the upper left, smooth river pebbles and a few reeds at the lower edges. Open pale stream reflections and misty light through the centre. A flowing narrow stream, distinct from a pond or swamp.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
+    },
+    "puzzle-badger-sett": {
+      "role": "scene",
+      "promptFile": "design/artwork/prompts/puzzle-badger-sett.txt",
+      "brief": "design/artwork/briefs/puzzle-badger-sett.txt",
+      "requiresBriefCustomization": false,
+      "request": {
+        "prompt": "WALDPOST CANONICAL ILLUSTRATION STYLE — waldpost-watercolour-pencil-v1\n\nUse the supplied canonical animals.png and objects.png reference images as the authority for drawing technique. They show the predominant style of the current Waldpost gallery. Match their actual pixels, not an imagined style suggested by a filename.\n\nDraw warm children's picture-book watercolour finished with visible coloured-pencil strokes. Use light, gently uneven washes, organic sepia contours, delicate hatching, softly irregular edges and modest drawn shading. Surfaces look painted and pencilled, with paper grain within the illustration. Keep the warmth of cream, honey brown, restrained sage and blue, while preserving every exact colour required by a task. Subjects remain friendly, recognizable and anatomically believable.\n\nDo not turn the drawing into a 3D render, plush toy, clay or felt craft, photograph, glossy object, embossed surface or studio-lit miniature. Avoid deep ambient-occlusion shadows, inflated forms and realistic material microtexture. Do not mix in another illustration technique or use historical artwork as a style reference.\n\nThe role instructions below set the necessary detail and composition within this one style. Learning pictures retain fine drawn contours; small navigation symbols use the approved simpler, broader shapes and flat fills in the same palette. Keep the existing rendered game-character identities separate from image-generated learning subjects. Exact geometry and handwriting remain authored paths.\n\nPreserve subject identity, counted quantities, exact answer colours and action differences. Use real alpha for isolated pictures and stationery, and an opaque canvas only when the selected role requires a scene or branding image. No accidental background, halo, visible grid, labels or extra objects.\n\nROLE: scene\nApply the canonical watercolour/pencil medium at landscape scale: broad quiet washes, restrained drawn detail at the edges, matte natural colours and soft organic contours. The scene is opaque. Keep the centre pale and calm for real panels and preserve required camera/layout anchors. Existing scene references define composition only; the canonical pair defines technique. Do not paint UI panels, text or characters into backgrounds.\n\nFRAMING AND EDGE QUALITY:\nCompare related pictures side by side at the size used in the game. For square cells, draw the complete silhouette with enough transparent space to pack it centred on both axes, with its longest visible side about 80% of the cell. Keep its proportions and use comparable visual weight for neighbouring answers. Reuse the same painting when a subject and pose recur. Leave genuine alpha around every isolated subject and retain the soft pencil edges. Inspect on light and dark backgrounds for pale matte, clipped outlines, stray pixels and neighbouring subjects. In a cell repair, preserve the pixels and positions of the other cells. Scenes and irregular layouts follow their role and brief.\n\nATTACH THESE ACTUAL IMAGE FILES IN THIS ORDER:\n1. design/illustrations/references/watercolour-pencil-v1/animals.png — canonical-style: canonical drawing technique for animals; fixed majority-style pixels\n2. design/illustrations/references/watercolour-pencil-v1/objects.png — canonical-style: canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels\n\nSUBJECT AND LAYOUT BRIEF:\nPaint ONE continuous landscape illustration, landscape 3:2 canvas, intended for a 1536 × 1024 opaque game background. Use a consistent gently elevated storybook eye-level camera, with foreground detail only near the perimeter. A real large cream puzzle panel will cover most of the central 80% width and 90% height. Keep this central area a very pale, low-contrast natural wash, with NO large focal object there. Put the characteristic habitat silhouettes and landmarks in the outermost side strips and top/bottom corners so the setting remains recognisable around the panel in both landscape and portrait centre-cover crops. Do not paint a white rectangle, a panel or an empty cutout: the landscape continues softly behind it. Match the light watercolour and coloured-pencil technique of the two canonical reference sheets, translated to a landscape. Restrained sage, honey, cream and soft blue, light sepia pencil contours. No text, animals, characters, icons, buttons, borders, picture frame, collage, multiple panels, 3D modelling, photorealism, dramatic contrast or blur effects.\n\nA woodland bank beneath an old oak, home of Dachs. A low rounded mound of warm earth with a single dark softly oval badger-sett entrance tucked into the lower right side, exposed oak roots, a few dry leaves and ferns at the outer lower edges. Oak trunks and foliage frame the sides and upper corners. Sunlit pale clearing through the middle; the burrow stays friendly and naturally small, never a scary cave.\n\nSTYLE PRIORITY: The brief changes subjects and layout only. Keep waldpost-watercolour-pencil-v1 and the supplied canonical reference technique throughout; do not import the style of a composition-only reference.\n",
+        "referenced_image_paths": [
+          "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "design/illustrations/references/watercolour-pencil-v1/objects.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/animals.png",
+          "sha256": "65867082294d157ab4ffbe33926857272625ef3c25cdb7cab81c2a4ea73d9316",
+          "purpose": "canonical drawing technique for animals; fixed majority-style pixels",
+          "usage": "canonical-style"
+        },
+        {
+          "path": "design/illustrations/references/watercolour-pencil-v1/objects.png",
+          "sha256": "0bb37d6fc82c75034eddf30da2cc57c546dd8bc70d246aeeda85b637bd87dd80",
+          "purpose": "canonical drawing technique for objects, leaves and flowers; fixed majority-style pixels",
+          "usage": "canonical-style"
+        }
+      ]
     }
   },
   "assets": [
@@ -20585,6 +20921,570 @@
       }
     },
     {
+      "id": "puzzle-meadow",
+      "file": "assets/forest-friends/puzzle-meadow.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-meadow.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-meadow.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-meadow",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-meadow.webp",
+          "sha256": "8518c3dec72f6479feedf6d8ad20daf6c84a2ac297c745b4af9ef42a01830f87",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-meadow.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-meadow.png",
+          "output": "../../assets/forest-friends/puzzle-meadow.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "3a5160fdc969e5b337c39ca715ebb0ba9c8f93e254491902704cb6bc05c90a8e",
+            "generationRecord": "generation-records/puzzle-meadow.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-meadow.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-meadow.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-meadow.png",
+        "sha256": "3a5160fdc969e5b337c39ca715ebb0ba9c8f93e254491902704cb6bc05c90a8e"
+      }
+    },
+    {
+      "id": "puzzle-mountain",
+      "file": "assets/forest-friends/puzzle-mountain.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-mountain.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-mountain.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-mountain",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-mountain.webp",
+          "sha256": "e5a878bb94da66719c337c1f83fb931f0159382ac80b8dfa0153c1dd5a3124d2",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-mountain.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-mountain.png",
+          "output": "../../assets/forest-friends/puzzle-mountain.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "8db78099ebe3c9bcb4fc945bbf92b159ad307c8a82b554c9deb5296ab52277d5",
+            "generationRecord": "generation-records/puzzle-mountain.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-mountain.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-mountain.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-mountain.png",
+        "sha256": "8db78099ebe3c9bcb4fc945bbf92b159ad307c8a82b554c9deb5296ab52277d5"
+      }
+    },
+    {
+      "id": "puzzle-swamp",
+      "file": "assets/forest-friends/puzzle-swamp.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-swamp.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-swamp.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-swamp",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-swamp.webp",
+          "sha256": "ed861c85debc2ecceaa7bac742da56c5f92c82d4bed319d3ba3f8708171e22b9",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-swamp.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-swamp.png",
+          "output": "../../assets/forest-friends/puzzle-swamp.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "479e15f1d24601f3a7f93f1402f640ad33e2be971756ef8691f81a1aca6b286b",
+            "generationRecord": "generation-records/puzzle-swamp.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-swamp.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-swamp.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-swamp.png",
+        "sha256": "479e15f1d24601f3a7f93f1402f640ad33e2be971756ef8691f81a1aca6b286b"
+      }
+    },
+    {
+      "id": "puzzle-conifers",
+      "file": "assets/forest-friends/puzzle-conifers.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-conifers.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-conifers.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-conifers",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-conifers.webp",
+          "sha256": "dcdaf90c225dc5e3e2ca2a7b9e94c57f53c28637d31823f25274a13154559272",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-conifers.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-conifers.png",
+          "output": "../../assets/forest-friends/puzzle-conifers.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "7f4158d215ec0938d342c66a6f5c9836ba26400d0a3e668ff0fd9bb063b421c9",
+            "generationRecord": "generation-records/puzzle-conifers.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-conifers.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-conifers.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-conifers.png",
+        "sha256": "7f4158d215ec0938d342c66a6f5c9836ba26400d0a3e668ff0fd9bb063b421c9"
+      }
+    },
+    {
+      "id": "puzzle-birches",
+      "file": "assets/forest-friends/puzzle-birches.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-birches.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-birches.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-birches",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-birches.webp",
+          "sha256": "d1be4174f93675b356280a14f619457bc5a1f3b01974f9e4b451226cb48b987f",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-birches.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-birches.png",
+          "output": "../../assets/forest-friends/puzzle-birches.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "e61024c111f54fa0574719852354035d603da4c622b5bd45128470e4318863ea",
+            "generationRecord": "generation-records/puzzle-birches.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-birches.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-birches.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-birches.png",
+        "sha256": "e61024c111f54fa0574719852354035d603da4c622b5bd45128470e4318863ea"
+      }
+    },
+    {
+      "id": "puzzle-old-forest",
+      "file": "assets/forest-friends/puzzle-old-forest.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-old-forest.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-old-forest.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-old-forest",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-old-forest.webp",
+          "sha256": "498dd7ac28b2a613f1e8220ac4652bd76589e39e6da2b0b0b967ccbe4c8b29a0",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-old-forest.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-old-forest.png",
+          "output": "../../assets/forest-friends/puzzle-old-forest.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "53a28fb99e2afe8a728882640fee46c73c7c7d1166ca73e1361a4ed6f3801acc",
+            "generationRecord": "generation-records/puzzle-old-forest.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-old-forest.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-old-forest.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-old-forest.png",
+        "sha256": "53a28fb99e2afe8a728882640fee46c73c7c7d1166ca73e1361a4ed6f3801acc"
+      }
+    },
+    {
+      "id": "puzzle-beaver-pond",
+      "file": "assets/forest-friends/puzzle-beaver-pond.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-beaver-pond.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-beaver-pond.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-beaver-pond",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-beaver-pond.webp",
+          "sha256": "deb443325ee98780a5c19ba3e6b7db5dc36c62b81afba234b5716f56c8c7ad7a",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-beaver-pond.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-beaver-pond.png",
+          "output": "../../assets/forest-friends/puzzle-beaver-pond.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "d5c146a2789317bcde358076d81292b7acc750ac7a72d5bd2422bfa762fb65aa",
+            "generationRecord": "generation-records/puzzle-beaver-pond.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-beaver-pond.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-beaver-pond.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-beaver-pond.png",
+        "sha256": "d5c146a2789317bcde358076d81292b7acc750ac7a72d5bd2422bfa762fb65aa"
+      }
+    },
+    {
+      "id": "puzzle-stump",
+      "file": "assets/forest-friends/puzzle-stump.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-stump.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-stump.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-stump",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-stump.webp",
+          "sha256": "37bc88d48e593b01b69478a6af05ad838646735fb240eb9dc11662a6a57ecbe0",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-stump.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-stump.png",
+          "output": "../../assets/forest-friends/puzzle-stump.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "c74bddd1dc8a3ac7b0042be789e98dfd59a975f90295f76142cc2e1b9c7a445b",
+            "generationRecord": "generation-records/puzzle-stump.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-stump.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-stump.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-stump.png",
+        "sha256": "c74bddd1dc8a3ac7b0042be789e98dfd59a975f90295f76142cc2e1b9c7a445b"
+      }
+    },
+    {
+      "id": "puzzle-undergrowth",
+      "file": "assets/forest-friends/puzzle-undergrowth.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-undergrowth.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-undergrowth.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-undergrowth",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-undergrowth.webp",
+          "sha256": "58e5e94207776364c45b684d2e4fd4b486ddf425d29f487a6cdde760422b7e64",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-undergrowth.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-undergrowth.png",
+          "output": "../../assets/forest-friends/puzzle-undergrowth.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "2e5958447065da4b04ddd6725636bc3fdaf939bfaedd4cccbe3b35b8e867b01c",
+            "generationRecord": "generation-records/puzzle-undergrowth.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-undergrowth.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-undergrowth.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-undergrowth.png",
+        "sha256": "2e5958447065da4b04ddd6725636bc3fdaf939bfaedd4cccbe3b35b8e867b01c"
+      }
+    },
+    {
+      "id": "puzzle-waterfall-pool",
+      "file": "assets/forest-friends/puzzle-waterfall-pool.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-waterfall-pool.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-waterfall-pool.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-waterfall-pool",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-waterfall-pool.webp",
+          "sha256": "ea2c96f650a553eb22dd1f2fe14f0d352ce3b2b115b559e7c9e4a20c259baf53",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-waterfall-pool.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-waterfall-pool.png",
+          "output": "../../assets/forest-friends/puzzle-waterfall-pool.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "6c8c611a1a48321b298244042109b6d273bd1bd533de865b0921ab068ef73f6c",
+            "generationRecord": "generation-records/puzzle-waterfall-pool.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-waterfall-pool.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-waterfall-pool.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-waterfall-pool.png",
+        "sha256": "6c8c611a1a48321b298244042109b6d273bd1bd533de865b0921ab068ef73f6c"
+      }
+    },
+    {
+      "id": "puzzle-brook",
+      "file": "assets/forest-friends/puzzle-brook.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-brook.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-brook.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-brook",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-brook.webp",
+          "sha256": "a082a6ece8284bbcb5b84c89af660a272ff5a104a812c72fb68981239efe7e34",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-brook.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-brook.png",
+          "output": "../../assets/forest-friends/puzzle-brook.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "5ca8a4e6d50c0a1d27706eedf5d9d7591a7b057413909d397be67d90c2ef6050",
+            "generationRecord": "generation-records/puzzle-brook.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-brook.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-brook.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-brook.png",
+        "sha256": "5ca8a4e6d50c0a1d27706eedf5d9d7591a7b057413909d397be67d90c2ef6050"
+      }
+    },
+    {
+      "id": "puzzle-badger-sett",
+      "file": "assets/forest-friends/puzzle-badger-sett.webp",
+      "role": "scene",
+      "manifest": "design/artwork/puzzle-badger-sett.json",
+      "forwardPrompt": "design/artwork/prompts/puzzle-badger-sett.txt",
+      "guide": "design/artwork/BACKGROUNDS.md",
+      "requestId": "puzzle-badger-sett",
+      "kind": "current-artwork",
+      "files": [
+        {
+          "path": "assets/forest-friends/puzzle-badger-sett.webp",
+          "sha256": "dfc8fab4a7e1bb1653fb9541284105051349f7e4a48150ee81f249d14608c8d4",
+          "width": 1536,
+          "height": 1024,
+          "hasAlpha": false
+        }
+      ],
+      "preparation": {
+        "manifest": "design/artwork/puzzle-badger-sett.json",
+        "pathsRelativeTo": "design/artwork",
+        "settings": {
+          "format": "waldpost-illustration-image",
+          "version": 1,
+          "source": "sources/puzzle-badger-sett.png",
+          "output": "../../assets/forest-friends/puzzle-badger-sett.webp",
+          "width": 1536,
+          "height": 1024,
+          "fit": "contain",
+          "transparent": false,
+          "quality": 82,
+          "provenance": {
+            "date": "2026-11-22",
+            "tool": "ChatGPT image_gen.imagegen",
+            "sourceSha256": "b8acc26c6d61b3b09442e5f9fe01d10ad49df1945b814fb6ce1c4b5e6ab0b716",
+            "generationRecord": "generation-records/puzzle-badger-sett.json",
+            "styleContract": "../illustrations/style.json",
+            "forwardPrompt": "prompts/puzzle-badger-sett.txt"
+          }
+        },
+        "command": "node tools/illustrations/prepare-image.cjs design/artwork/puzzle-badger-sett.json"
+      },
+      "source": {
+        "path": "design/artwork/sources/puzzle-badger-sett.png",
+        "sha256": "b8acc26c6d61b3b09442e5f9fe01d10ad49df1945b814fb6ce1c4b5e6ab0b716"
+      }
+    },
+    {
       "id": "lake-hero",
       "file": "legacy/retired-runtime/assets/waldatelier/hero.webp",
       "status": "retained-legacy",
@@ -20896,7 +21796,19 @@
   "offlineImages": [
     "assets/forest-friends/character-portraits.webp",
     "assets/forest-friends/den-v2.webp",
+    "assets/forest-friends/puzzle-badger-sett.webp",
+    "assets/forest-friends/puzzle-beaver-pond.webp",
+    "assets/forest-friends/puzzle-birches.webp",
+    "assets/forest-friends/puzzle-brook.webp",
     "assets/forest-friends/puzzle-clearing.webp",
+    "assets/forest-friends/puzzle-conifers.webp",
+    "assets/forest-friends/puzzle-meadow.webp",
+    "assets/forest-friends/puzzle-mountain.webp",
+    "assets/forest-friends/puzzle-old-forest.webp",
+    "assets/forest-friends/puzzle-stump.webp",
+    "assets/forest-friends/puzzle-swamp.webp",
+    "assets/forest-friends/puzzle-undergrowth.webp",
+    "assets/forest-friends/puzzle-waterfall-pool.webp",
     "assets/forest-friends/world-map.webp",
     "assets/interface/den-marker.webp",
     "assets/interface/exit-symbol.webp",

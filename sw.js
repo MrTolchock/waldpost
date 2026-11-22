@@ -1,5 +1,5 @@
 /* Farbtupf – Service Worker: keeps the whole app on the device so it runs without internet. */
-const CACHE = 'farbtupf-v9.4.24-waldpost';
+const CACHE = 'farbtupf-v9.4.25-waldpost';
 const SCOPE=self.registration.scope;
 const INDEX=new URL('index.html',SCOPE).href;
 const ACTIVE_MARKER=new URL('.farbtupf-active-cache',SCOPE).href;
@@ -84,6 +84,18 @@ const ASSETS = [
   './css/waldbuch.css',
   './js/ui/waldbuch.js',
   './assets/forest-friends/puzzle-clearing.webp',
+  './assets/forest-friends/puzzle-meadow.webp',
+  './assets/forest-friends/puzzle-mountain.webp',
+  './assets/forest-friends/puzzle-swamp.webp',
+  './assets/forest-friends/puzzle-conifers.webp',
+  './assets/forest-friends/puzzle-birches.webp',
+  './assets/forest-friends/puzzle-old-forest.webp',
+  './assets/forest-friends/puzzle-beaver-pond.webp',
+  './assets/forest-friends/puzzle-stump.webp',
+  './assets/forest-friends/puzzle-undergrowth.webp',
+  './assets/forest-friends/puzzle-waterfall-pool.webp',
+  './assets/forest-friends/puzzle-brook.webp',
+  './assets/forest-friends/puzzle-badger-sett.webp',
   './assets/waldatelier/forest-objects.webp',
   './assets/waldatelier/review-nature.webp',
   './assets/waldatelier/puzzle-garden.webp',

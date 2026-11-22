@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-stump.png",
+  "output": "../../assets/forest-friends/puzzle-stump.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "c74bddd1dc8a3ac7b0042be789e98dfd59a975f90295f76142cc2e1b9c7a445b",
+    "generationRecord": "generation-records/puzzle-stump.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-stump.txt"
+  }
+}

@@ -18,7 +18,8 @@ Start with [all image-generator inputs and prompts](GENERATOR-INPUTS.md). Its [p
 | Sleeping Fuchs pose | `fox-sleep-portrait` | Matching scarf, markings and watercolour/pencil medium |
 | Adopted drawn map | `world-map` | Flat 2D, strict top-down view; preserve geography and [calibration](world-map-layout.json). Named pins and current-position marker remain real interactive layers |
 | Den painting | `den` | [Camera/layout anchors](BACKGROUNDS.md) |
-| Shared puzzle/menu/settings woodland | `puzzle-clearing` | [Shared scene and quiet crop area](BACKGROUNDS.md) |
+| Rätsel habitats for all twelve hosts | `puzzle-meadow`, `puzzle-mountain`, `puzzle-swamp` and the nine woodland/waterside requests | [Host mapping, sources and quiet crop area](BACKGROUNDS.md) |
+| Shared menu/settings woodland | `puzzle-clearing` | [Shared menu scene](BACKGROUNDS.md) |
 | New companion scene | `background` | Same canonical medium; explicit framing and panel-safe space |
 | App branding | `app-icon` | Simple readable emblem; preserve install identity |
 | Spacing/transparency edit | `layout-repair`, `transparency-repair` | Preserve content and the same style |

@@ -1050,6 +1050,90 @@
           "usage": "composition-only"
         }
       ]
+    },
+    {
+      "id": "puzzle-meadow",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-meadow.txt",
+      "brief": "design/artwork/briefs/puzzle-meadow.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-mountain",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-mountain.txt",
+      "brief": "design/artwork/briefs/puzzle-mountain.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-swamp",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-swamp.txt",
+      "brief": "design/artwork/briefs/puzzle-swamp.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-conifers",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-conifers.txt",
+      "brief": "design/artwork/briefs/puzzle-conifers.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-birches",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-birches.txt",
+      "brief": "design/artwork/briefs/puzzle-birches.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-old-forest",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-old-forest.txt",
+      "brief": "design/artwork/briefs/puzzle-old-forest.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-beaver-pond",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-beaver-pond.txt",
+      "brief": "design/artwork/briefs/puzzle-beaver-pond.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-stump",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-stump.txt",
+      "brief": "design/artwork/briefs/puzzle-stump.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-undergrowth",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-undergrowth.txt",
+      "brief": "design/artwork/briefs/puzzle-undergrowth.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-waterfall-pool",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-waterfall-pool.txt",
+      "brief": "design/artwork/briefs/puzzle-waterfall-pool.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-brook",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-brook.txt",
+      "brief": "design/artwork/briefs/puzzle-brook.txt",
+      "transparent": false
+    },
+    {
+      "id": "puzzle-badger-sett",
+      "role": "scene",
+      "path": "design/artwork/prompts/puzzle-badger-sett.txt",
+      "brief": "design/artwork/briefs/puzzle-badger-sett.txt",
+      "transparent": false
     }
   ],
   "preparationManifests": [
@@ -1101,7 +1185,19 @@
     "design/illustrations/expansion-nature-parts.json",
     "design/illustrations/expansion-counting-groups.json",
     "design/illustrations/expansion-patterns-seasons.json",
-    "design/artwork/navigation-close.json"
+    "design/artwork/navigation-close.json",
+    "design/artwork/puzzle-meadow.json",
+    "design/artwork/puzzle-mountain.json",
+    "design/artwork/puzzle-swamp.json",
+    "design/artwork/puzzle-conifers.json",
+    "design/artwork/puzzle-birches.json",
+    "design/artwork/puzzle-old-forest.json",
+    "design/artwork/puzzle-beaver-pond.json",
+    "design/artwork/puzzle-stump.json",
+    "design/artwork/puzzle-undergrowth.json",
+    "design/artwork/puzzle-waterfall-pool.json",
+    "design/artwork/puzzle-brook.json",
+    "design/artwork/puzzle-badger-sett.json"
   ],
   "history": "legacy/design-history/2026-11-16-before-style-contract",
   "preview": {

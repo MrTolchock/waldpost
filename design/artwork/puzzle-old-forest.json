@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-old-forest.png",
+  "output": "../../assets/forest-friends/puzzle-old-forest.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "53a28fb99e2afe8a728882640fee46c73c7c7d1166ca73e1361a4ed6f3801acc",
+    "generationRecord": "generation-records/puzzle-old-forest.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-old-forest.txt"
+  }
+}

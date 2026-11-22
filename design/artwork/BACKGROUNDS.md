@@ -19,9 +19,32 @@ Current painting: [den-v2.webp](../../assets/forest-friends/den-v2.webp), 1448 �
 
 Preserve bed, floor perspective, door/slot, shelf, basket and drawing table. Reuse the current painting when the task does not request a change. If an edit moves composition, update its matching coordinates and test standing, delivery, walking and sleep at phone/tablet sizes.
 
-## Shared clearing
+## Host habitats · 9.4.25
 
-[puzzle-clearing.webp](../../assets/forest-friends/puzzle-clearing.webp) is one opaque 1536 × 1024 painting behind puzzle pages, adult gallery/review, menus and Settings. CSS supplies different crops and washes. Keep the central area pale and quiet; detailed trees/canopy, ferns, leaves and mushrooms stay mostly at the perimeter. Panels, buttons, labels and portraits remain separate layers.
+Every Rätsel uses its host's home as an opaque 1536 × 1024 watercolour/pencil backdrop. The same scene surrounds child play, gallery rounds, individual reviews and celebrations. Both word puzzles with the mouse use its stump scene. `data-host` on the screen selects the image through `css/puzzle-rounds.css`; set it on entry so even a blocked or immediately completed round has the correct scenery.
+
+| Host | Place | Request / preparation |
+| --- | --- | --- |
+| Reh | Blumenwiese | [`puzzle-meadow`](puzzle-meadow.json) |
+| Steinbock | Berg und Felsvorsprung | [`puzzle-mountain`](puzzle-mountain.json) |
+| Frosch | Sumpf mit Steg | [`puzzle-swamp`](puzzle-swamp.json) |
+| Eichhörnchen | Nadelwald | [`puzzle-conifers`](puzzle-conifers.json) |
+| Blaumeise | Birkenhain | [`puzzle-birches`](puzzle-birches.json) |
+| Waldkauz | Alter Buchenwald mit Baumhöhle | [`puzzle-old-forest`](puzzle-old-forest.json) |
+| Biber | Teich mit Damm und Biberburg | [`puzzle-beaver-pond`](puzzle-beaver-pond.json) |
+| Maus | Baumstrunk im Haselgebüsch | [`puzzle-stump`](puzzle-stump.json) |
+| Igel | Laub und Unterholz | [`puzzle-undergrowth`](puzzle-undergrowth.json) |
+| Fisch | Wasserfallbecken | [`puzzle-waterfall-pool`](puzzle-waterfall-pool.json) |
+| Eisvogel | Bach mit Sitzast | [`puzzle-brook`](puzzle-brook.json) |
+| Dachs | Erdbau unter der Eiche | [`puzzle-badger-sett`](puzzle-badger-sett.json) |
+
+All twelve scenes were generated from their complete registered requests and the two canonical reference images on 22 November 2026. Editable PNGs, exact requests/reference hashes and explicit WebP conversion manifests are retained. The centre stays pale behind the real cream task panel; habitat details sit at the perimeter. The scene continues behind the panel without a painted interface, text or animals. Use centre/cover without stretching, and check phone/tablet crops with `node tests/habitat-backgrounds-browser.cjs`.
+
+The review builder hashes the selected host scene, so changing a painting reopens only that host's puzzles. This release changes rendered scenery and therefore requires normal adult review of the new presentation; it supplies no approvals or compatibility exemption.
+
+## Shared menu clearing
+
+[puzzle-clearing.webp](../../assets/forest-friends/puzzle-clearing.webp) remains the opaque 1536 × 1024 painting behind the adult gallery/review overviews, menus and Settings, and the fallback for a screen without a host. CSS supplies different crops and washes. Keep the central area pale and quiet; detailed trees/canopy, ferns, leaves and mushrooms stay mostly at the perimeter. Panels, buttons, labels and portraits remain separate layers.
 
 For a new edit, the current painting defines this framing and the canonical references define the drawing technique. Do not paint interface controls or characters into the background. Check portrait/landscape `cover` crops; changing this shared scene changes puzzle presentation and requires normal review again.
 

@@ -354,7 +354,7 @@
     enter(params){
       alive=true;root.scrollTop=0;game=params.game;const entry=FK.friendsLibrary.catalogue().find(g=>g.id===game);
       if(!entry||entry.screen!=='puzzle'){FK.go('forest-book');return;}
-      origin=['forest-book','puzzle-review','puzzle-gallery'].includes(params.returnTo)?params.returnTo:'friends';host=entry.host;root.setAttribute('aria-label',entry.title);
+      origin=['forest-book','puzzle-review','puzzle-gallery'].includes(params.returnTo)?params.returnTo:'friends';host=entry.host;root.dataset.host=host;root.setAttribute('aria-label',entry.title);
       session=null;root.querySelector('.review-reject')?.remove();delete root.dataset.reviewIteration;
       if(params.reviewIteration||params.reviewQueue||params.reviewRound)session=FK.puzzleReview.previewSession(game,params.reviewIteration);
       else if(params.gallery){session=FK.puzzleReview.gallerySession(game);if(!session){FK.go('puzzle-gallery');return;}}

@@ -1,6 +1,12 @@
 # Current visual consistency audit
 
-Current game art is **Waldpost 9.4.22**. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **87** complete forward image-generation prompts.
+Current game art is **Waldpost 9.4.25**. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
+
+## Lebensräume hinter den Rätseln · 9.4.25
+
+Jeder der zwölf Gastgeber hat eine eigene gemalte Landschaft: Blumenwiese, Berg, Sumpf mit Steg, Nadelwald, Birkenhain, alter Buchenwald, Biberteich, Baumstrunk, Unterholz, Wasserfallbecken, Bach oder Dachsbau. Alle 23 Rätsel verwenden beim Spielen, in Galerie- und Prüfrunden sowie bei der Feier denselben Gastgeberort. Die Aufgaben, Antwortbilder und Papiermasse bleiben gleich; die Menüs behalten die vorhandene Waldlichtung.
+
+Die zwölf neuen Bilder folgen der kanonischen Aquarell-/Buntstifttechnik. Die Original-PNGs, vollständigen Anfragen, Referenzhashes und WebP-Exportmanifeste sind aufbewahrt. App und Offline-Cache steigen auf 9.4.25; alle Landschaften gehören zum vollständigen Download. Der Revisionsgenerator berücksichtigt jeweils die tatsächlich verwendete Szene. Die neuen Bilder erfordern erneute Prüfung, ohne alte Entscheidungen zu löschen oder Freigaben zu erzeugen. Historische Kompatibilität wird weiterhin anhand der unveränderten früheren Releases geprüft. [Bildvergleich und echte Handy-/Tabletseiten](evidence/2026-11-22-habitats/README.md)
 
 ## Navigation · 9.4.22
 

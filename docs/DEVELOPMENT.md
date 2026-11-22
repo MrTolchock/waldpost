@@ -31,6 +31,7 @@ node tests/review-recovery-browser.cjs   # verified historical approvals, galler
 node tests/adult-menus-browser.cjs   # Settings frame/type, concise gallery, Fisch, review wording/references and empty saved-comment field
 node tests/puzzle-feedback-browser.cjs
 node tests/artwork-browser.cjs
+node tests/habitat-backgrounds-browser.cjs   # all twelve host scenes in play/gallery/review/celebration; phone/tablet/landscape crops
 node tests/drawn-map-browser.cjs   # compact map, no header icons, outside tap/Escape/focus, pan safety; all 13 named pins and real routes at phone/tablet/landscape
 node tests/swamp-navigation-browser.cjs   # real Steg journeys in both directions, Frosch arrival, steering collision and no off-deck frames at phone/tablet sizes
 node tests/gallery-images-browser.cjs   # actual PNG exports, atlas match, transparency and framing for repaired pictures, plus phone layout
