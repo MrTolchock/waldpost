@@ -24150,6 +24150,24 @@
       "at": "2026-11-22T21:09:30.375Z",
       "seen": true,
       "operation": "1316f487-246d-4186-8ff5-0c4704ff6099"
+    },
+    "neighbours/2-both@8fa6a592bfa1a0d6": {
+      "key": "neighbours/2-both",
+      "revision": "8fa6a592bfa1a0d6",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:09:34.709Z",
+      "seen": true,
+      "operation": "f8837574-f0d3-45e2-ba8b-30170e0098c9"
+    },
+    "neighbours/2-left@02dafb6e142ede3c": {
+      "key": "neighbours/2-left",
+      "revision": "02dafb6e142ede3c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:09:37.008Z",
+      "seen": true,
+      "operation": "f1266573-4f7b-4f88-bf88-6a676c6b5449"
     }
   },
   "history": [
