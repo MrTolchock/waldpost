@@ -15,7 +15,7 @@
     const connect=FK.ui.btn({label:'Mit GitHub verbinden',onClick:async()=>{const value=input.value;input.value='';connect.disabled=true;try{await repo.connect(value);}finally{connect.disabled=false;}}});
     const disconnect=FK.ui.btn({label:'GitHub trennen',onClick:()=>repo.disconnect()});
     const sync=FK.ui.btn({label:'Jetzt synchronisieren',onClick:()=>repo.refresh()});
-    const setup=h('details',{},h('summary',{text:'GitHub zum Speichern verbinden'}),h('p',{text:'Nur zum Bearbeiten nötig. Zugriffstoken für MrTolchock/Drawing-App mit «Contents: Read and write» erstellen. Der Token bleibt in dieser Browsersitzung und wird nie mit Prüfungen exportiert.'}),
+    const setup=h('details',{},h('summary',{text:'GitHub zum Speichern verbinden'}),h('p',{text:'Nur zum Bearbeiten nötig. Zugriffstoken für MrTolchock/waldpost mit «Contents: Read and write» erstellen. Der Token bleibt in dieser Browsersitzung und wird nie mit Prüfungen exportiert.'}),
       h('a',{href:'https://github.com/settings/personal-access-tokens/new',target:'_blank',rel:'noopener noreferrer',text:'GitHub-Zugriffstoken erstellen'}),h('label',{},'GitHub-Zugriffstoken',input),connect);
     const conflicts=h('div',{class:'review-conflicts'});
     root.append(h('h3',{text:'Prüfung auf GitHub'}),h('p',{text:'Freigaben und Verbesserungen stehen in deinem öffentlichen GitHub-Repository. Andere Browser und neue Installationen laden sie automatisch. Offline bleibt die letzte Sicherung verfügbar. Spielstände und Zeichnungen bleiben auf dem Gerät.'}),status,

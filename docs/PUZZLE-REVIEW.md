@@ -25,7 +25,7 @@ Only puzzles whose current iterations are **all approved and confirmed on GitHub
 
 There is no file export/import any more: GitHub is the backup. Each puzzle offers **Alle bestätigen** to approve all its current iterations and the puzzle together (after a confirmation), as an alternative to playing each one. Earlier decisions stay in the history. New decisions contain no reviewer/checklist fields.
 
-The shared file is [reviews.json on puzzle-review-data](https://github.com/MrTolchock/Drawing-App/blob/puzzle-review-data/reviews.json). The offline cache and outbox use `farbtupf.puzzle-review.v1`. The GitHub token is held separately in session storage and is never exported or committed. Development reviews with `?dev=1` stay local and do not publish.
+The shared file is [reviews.json on puzzle-review-data](https://github.com/MrTolchock/waldpost/blob/puzzle-review-data/reviews.json). The offline cache and outbox use `farbtupf.puzzle-review.v1`. The GitHub token is held separately in session storage and is never exported or committed. Development reviews with `?dev=1` stay local and do not publish.
 
 New iterations start open. Changed questions, applicable difficulty or instructions, interaction and actual image cells reopen the affected iterations. Typography corrections preserve the original approvals when these aspects match. The exact display revision continues to identify saved work and log entries. Adult menus, competence summaries, curriculum references and list labels also preserve approvals. Every current iteration must be approved for puzzle release, and later restrictions remain effective.
 

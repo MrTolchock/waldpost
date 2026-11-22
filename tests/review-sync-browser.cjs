@@ -35,7 +35,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  const second=await active(a.page).getAttribute('data-review-iteration');await active(a.page).getByRole('button',{name:"Aufgabe ablehnen",exact:true}).tap();await a.page.getByRole('button',{name:'Ablehnen und weiter',exact:true}).tap();await a.page.evaluate(()=>FK.reviewRepository.refresh());await a.page.waitForFunction(()=>FK.reviewRepository.state.pending===0);
  assert.equal(Object.values(server.ledger.entries).find(e=>e.key===second).status,'improve');
  const b=await device(390);assert.equal(await b.page.evaluate(()=>FK.reviewRepository.state.connected),false);assert.equal(await b.page.evaluate(()=>FK.puzzleReview.status('add','add/1-1').status),'approved');assert.equal(await b.page.evaluate(id=>FK.puzzleReview.status('add',id).status,second),'improve');
- await b.page.locator('[data-puzzle="add"]').click();assert.equal(await b.page.getByLabel("Allgemeiner Kommentar zum Rätsel",{exact:true}).inputValue(),'');assert.match(await b.page.locator('.review-feedback').innerText(),/Die Bilder im ganzen Puzzle prüfen\./);
+ await b.page.locator('[data-puzzle="add"]').click();assert.equal(await b.page.getByLabel("Allgemeiner Kommentar zum Rätsel",{exact:true}).inputValue(),'');assert.match(await b.page.locator('.review-feedback').innerText(),/Die Bilder im ganzen Rätsel prüfen\./);
  assert.equal(await active(b.page).locator('.review-connection').count(),0);
  await b.page.screenshot({path:shots+'/puzzle-comment-phone.png'});
  await active(b.page).locator('.btn-back').click();await b.page.screenshot({path:shots+'/fresh-browser-phone.png'});
@@ -53,7 +53,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  await a.page.getByRole('button',{name:'Alle bestätigen',exact:true}).click();
  await a.page.locator('.modal').getByRole('button',{name:'Alle bestätigen',exact:true}).click();
  await a.page.evaluate(()=>FK.reviewRepository.refresh());await a.page.waitForFunction(()=>FK.reviewRepository.state.pending===0&&FK.puzzleReview.ready('add'));
- await b.page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await b.page.evaluate(()=>FK.puzzleReview.ready('add')),true);await b.page.waitForFunction(()=>document.querySelector('.review-intro')?.textContent.startsWith('1 / 22'));
+ await b.page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await b.page.evaluate(()=>FK.puzzleReview.ready('add')),true);await b.page.waitForFunction(()=>document.querySelector('.review-intro')?.textContent.startsWith('1 / '+FK.friendsLibrary.catalogue().length+' Rätsel'));
  // A flagged offline decision blocks this device immediately, persists and later conflicts safely.
  await a.context.setOffline(true);await a.page.evaluate(()=>FK.puzzleReview.decide('add','add/1-1','improve'));assert.equal(await a.page.evaluate(()=>FK.puzzleReview.ready('add')),false);await a.page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await a.page.evaluate(()=>FK.reviewRepository.state.pending),1);
  await connect(b.page);await b.page.evaluate(()=>FK.puzzleReview.decide('add','add/1-1','pending'));await b.page.evaluate(()=>FK.reviewRepository.refresh());

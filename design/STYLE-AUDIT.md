@@ -8,7 +8,7 @@ Game and menu navigation share a cream circular frame and parchment border. The 
 
 ## Rätselprüfung vom 20. November · 9.4.21
 
-Die beurteilten Seiten verwenden die vorhandenen gemalten Motive für Fliegen, Baumgruppen und nachvollziehbare Arbeitsschritte. Die 25 Bildfolgen tragen kurze Bildlegenden. Falsche Bild- und Zahlenkarten wackeln am Ziel und kehren an den Ausgangspunkt zurück. Bei reduzierter Bewegung bleibt die gestrichelte Rückmeldung sichtbar. Der aktuelle Vergleich umfasst 23 Rätsel mit 794 Aufgaben. [Aufnahmen](evidence/raetselvergleich/README.md) · [Originalprüfung](https://github.com/MrTolchock/Drawing-App/blob/00a96aea8d4ad7044d2cb1ad26bf439418df6d74/reviews.json)
+Die beurteilten Seiten verwenden die vorhandenen gemalten Motive für Fliegen, Baumgruppen und nachvollziehbare Arbeitsschritte. Die 25 Bildfolgen tragen kurze Bildlegenden. Falsche Bild- und Zahlenkarten wackeln am Ziel und kehren an den Ausgangspunkt zurück. Bei reduzierter Bewegung bleibt die gestrichelte Rückmeldung sichtbar. Der aktuelle Vergleich umfasst 23 Rätsel mit 794 Aufgaben. [Aufnahmen](evidence/raetselvergleich/README.md) · [Originalprüfung](https://github.com/MrTolchock/waldpost/blob/00a96aea8d4ad7044d2cb1ad26bf439418df6d74/reviews.json)
 
 ## Rätselseiten im direkten Vergleich · 9.4.20
 

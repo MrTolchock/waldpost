@@ -1,13 +1,13 @@
 # Shared review storage on GitHub
 
-The authoritative review file is [reviews.json](https://github.com/MrTolchock/Drawing-App/blob/puzzle-review-data/reviews.json), on the repository's **puzzle-review-data** branch. This branch contains data and its README, separate from the game code. If the branch or file does not exist yet, the first sync with a connected token creates it automatically as its own history holding only an empty `reviews.json`; until then, reading without a token simply shows no shared approvals. Every saved edit is a Git commit. Refreshing the app, using a different browser or reinstalling it does not delete published reviews.
+The authoritative review file is [reviews.json](https://github.com/MrTolchock/waldpost/blob/puzzle-review-data/reviews.json), on the repository's **puzzle-review-data** branch. This branch contains data and its README, separate from the game code. If the branch or file does not exist yet, the first sync with a connected token creates it automatically as its own history holding only an empty `reviews.json`; until then, reading without a token simply shows no shared approvals. Every saved edit is a Git commit. Refreshing the app, using a different browser or reinstalling it does not delete published reviews.
 
 The repository is public, so review statuses and optional notes are public. Only editorial data is shared: puzzle/iteration IDs, exact revisions, approved/improve/pending status, optional notes, inspection evidence and timestamps. Drawings, child progress, anonymous gameplay logs and credentials are not uploaded.
 
 ## Connect once to edit
 
 1. Unlock **Einstellungen** with the existing adult calculation. Open **Rätsel-Prüfung → Prüfung auf GitHub → GitHub zum Speichern verbinden** on the all-puzzle overview. There is no additional gallery calculation.
-2. Use the link to create a **fine-grained GitHub personal access token**. Select only **MrTolchock/Drawing-App** and grant repository **Contents: Read and write**. Choose an expiry that suits your reviewing session.
+2. Use the link to create a **fine-grained GitHub personal access token**. Select only **MrTolchock/waldpost** and grant repository **Contents: Read and write**. Choose an expiry that suits your reviewing session.
 3. Paste the token into **GitHub-Zugriffstoken** in the app and press **Mit GitHub verbinden**. Do not put the token in chat, repository files, notes or exports. The app checks the owner's GitHub account.
 4. Solve review tasks to approve them. Use × to flag an iteration with an optional comment, or save a general comment to reopen the whole puzzle. The queue ends automatically. All current approvals must be confirmed on GitHub for release. Changes save locally first and sync to GitHub in batches. **Auf GitHub gespeichert** confirms shared storage. **Nur lokal gesichert** or a pending count indicates an upload is due.
 

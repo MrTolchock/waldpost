@@ -1,6 +1,6 @@
 # Anpassungen nach den Reviews vom 19. November 2026
 
-Ausgewertet wurde der gemeinsame [Review-Speicher](https://github.com/MrTolchock/Drawing-App/blob/puzzle-review-data/reviews.json), Dateirevision `09fc28158ae8402619d2b18e3ac539222408fd96`, mit neun neuen Hinweisen vom 19. November. Kommentare, Entscheidungen, Zeitpunkte und Löschmarkierungen bleiben unverändert.
+Ausgewertet wurde der gemeinsame [Review-Speicher](https://github.com/MrTolchock/waldpost/blob/puzzle-review-data/reviews.json), Dateirevision `09fc28158ae8402619d2b18e3ac539222408fd96`, mit neun neuen Hinweisen vom 19. November. Kommentare, Entscheidungen, Zeitpunkte und Löschmarkierungen bleiben unverändert.
 
 | Rätsel / Hinweis | Umsetzung |
 | --- | --- |

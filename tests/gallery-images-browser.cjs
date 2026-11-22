@@ -86,8 +86,18 @@ function expectedCell({ data, info }, rect, width, height) {
     const originalSheets = new Set(['forest-actions', 'forest-objects', 'puzzle-flowers', 'review-nature']);
     const downloaded = new Set(['cat', 'cat-sit', 'dog', 'forest-lynx', 'rhyme-fly', 'forest-rose', 'firefly', 'watering-can']);
     page.on('pageerror', error => errors.push(error.message));
+    const sheetRequests = '**/assets/waldatelier/*.webp*';
+    await page.route(sheetRequests, route => route.abort());
     await page.goto(base + '/assets/waldatelier/');
     await page.waitForFunction(total => document.querySelector('#count').textContent.includes(String(total)), library.images.length);
+    const firstCard = page.locator('.image-card').first();
+    const retryButton = firstCard.getByRole('button', { name: /als PNG herunterladen/ });
+    await retryButton.click();
+    await page.getByText('Der Bildbogen fehlt.', { exact: true }).waitFor();
+    await page.unroute(sheetRequests);
+    await retryButton.click();
+    await page.waitForFunction(() => Boolean(window.galleryExport));
+    assert.equal((await page.evaluate(() => window.galleryExport)).filename, await firstCard.getAttribute('data-image') + '.png');
     await page.getByLabel('Transparenzraster zeigen', { exact: true }).check();
     const search = page.getByLabel('Bildname oder ID', { exact: true });
     for (const sheet of library.sheets) {

@@ -1,8 +1,8 @@
 # Waldpost
 
-[Play](https://mrtolchock.github.io/Drawing-App/) · [Current design](design/README.md) · [Alle Rätsel und Kompetenzen](docs/PUZZLE-CATALOGUE.md) · [Development](docs/DEVELOPMENT.md)
+[Play](https://mrtolchock.github.io/waldpost/) · [Current design](design/README.md) · [Alle Rätsel und Kompetenzen](docs/PUZZLE-CATALOGUE.md) · [Development](docs/DEVELOPMENT.md)
 
-[Claude takeover guide](docs/CLAUDE-HANDOFF.md) · [Drawn image library](https://mrtolchock.github.io/Drawing-App/assets/waldatelier/) · [All image-generator prompts and inputs](design/artwork/GENERATOR-INPUTS.md) · [Artwork workflow](design/artwork/README.md)
+[Claude takeover guide](docs/CLAUDE-HANDOFF.md) · [Drawn image library](https://mrtolchock.github.io/waldpost/assets/waldatelier/) · [All image-generator prompts and inputs](design/artwork/GENERATOR-INPUTS.md) · [Artwork workflow](design/artwork/README.md)
 
 All new image generation follows the [canonical watercolour/pencil style](design/illustrations/STYLE.md), its fixed reference images and shared complete prompts. Superseded styles and requests are archived.
 

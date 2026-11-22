@@ -63,7 +63,7 @@ See [REVIEW-STORAGE.md](REVIEW-STORAGE.md). Code changes stay on a feature branc
 
 ## Publish and installed-app updates
 
-GitHub Pages serves `main`: <https://mrtolchock.github.io/Drawing-App/>. Bump `FK.VERSION` in `js/core/util.js` and the cache identifier in `sw.js` whenever cached runtime content changes. Include every active dependency in the offline list. Check CI and the Pages deployment, then compare live critical assets with the pushed commit before reporting deployment.
+GitHub Pages serves `main`: <https://mrtolchock.github.io/waldpost/>. Bump `FK.VERSION` in `js/core/util.js` and the cache identifier in `sw.js` whenever cached runtime content changes. Include every active dependency in the offline list. Check CI and the Pages deployment, then compare live critical assets with the pushed commit before reporting deployment.
 
 The game is named **Waldpost** (`FK.APP_NAME`). Browser/install labels and download filenames use this name. Keep historical `farbtupf`/`farbklecks` storage keys, JSON format IDs, updater messages, cache prefixes and the manifest's app identity/URLs stable so existing journeys, logs, reviews and installations remain compatible. Archived names stay historical.
 

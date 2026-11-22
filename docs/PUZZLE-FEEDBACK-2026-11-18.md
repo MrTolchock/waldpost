@@ -1,6 +1,6 @@
 # Puzzle review follow-up, 18 November 2026
 
-The GitHub snapshot contains 16 current feedback notes dated 18 November. The implementation addresses them below and preserves the source decisions, comments, dates and deletion markers. [GitHub review file](https://github.com/MrTolchock/Drawing-App/blob/puzzle-review-data/reviews.json)
+The GitHub snapshot contains 16 current feedback notes dated 18 November. The implementation addresses them below and preserves the source decisions, comments, dates and deletion markers. [GitHub review file](https://github.com/MrTolchock/waldpost/blob/puzzle-review-data/reviews.json)
 
 | Review | Change |
 | --- | --- |

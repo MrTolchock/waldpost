@@ -5,7 +5,7 @@
   else root.FK.ReviewRepository=api;
 })(typeof window==='object'?window:globalThis,function(){
   'use strict';
-  const CONFIG={owner:'MrTolchock',repo:'Drawing-App',branch:'puzzle-review-data',path:'reviews.json'};
+  const CONFIG={owner:'MrTolchock',repo:'waldpost',branch:'puzzle-review-data',path:'reviews.json'};
   const clone=value=>JSON.parse(JSON.stringify(value));
   const canonical=value=>Array.isArray(value)?'['+value.map(canonical).join(',')+']':value&&typeof value==='object'?'{'+Object.keys(value).sort().map(k=>JSON.stringify(k)+':'+canonical(value[k])).join(',')+'}':JSON.stringify(value);
   const same=(a,b)=>canonical(a??null)===canonical(b??null);

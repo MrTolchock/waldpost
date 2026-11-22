@@ -1,6 +1,6 @@
 # Puzzle feedback from 15 November 2026
 
-Recovered from [the GitHub review ledger](https://github.com/MrTolchock/Drawing-App/blob/puzzle-review-data/reviews.json), content blob `88a09337c3d112c2774a9352733982172d352e5b`. The date is **15 November 2026 in Europe/Zurich**; the source timestamps are stored in UTC. All 26 notes are included, even when their graphics revision is no longer current.
+Recovered from [the GitHub review ledger](https://github.com/MrTolchock/waldpost/blob/puzzle-review-data/reviews.json), content blob `88a09337c3d112c2774a9352733982172d352e5b`. The date is **15 November 2026 in Europe/Zurich**; the source timestamps are stored in UTC. All 26 notes are included, even when their graphics revision is no longer current.
 
 Most requested fixes already existed before this follow-up. They were checked against the current artwork and real phone/tablet task renderer; the two remaining content gaps and restoration of older notes are addressed in 9.3.86. This table records feedback and implementation evidence, not editorial sign-off.
 
