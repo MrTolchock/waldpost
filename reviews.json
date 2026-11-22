@@ -23700,6 +23700,15 @@
       "at": "2026-11-22T20:18:49.230Z",
       "seen": true,
       "operation": "2856d9a3-daee-423e-b051-7068457a2cb0"
+    },
+    "friends-hedgehog/nature-question-19@b8947346d9e9729a": {
+      "key": "friends-hedgehog/nature-question-19",
+      "revision": "b8947346d9e9729a",
+      "status": "improve",
+      "note": "Wessen fell ist gestreift, schwarz-weiss streichen",
+      "at": "2026-11-22T20:19:41.647Z",
+      "seen": true,
+      "operation": "135828c1-f4c3-46fc-aa03-fa93cb8cc926"
     }
   },
   "history": [
