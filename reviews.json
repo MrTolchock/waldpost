@@ -23511,6 +23511,15 @@
       "at": "2026-11-22T20:09:15.898Z",
       "seen": true,
       "operation": "429ac697-a74f-417b-b764-b0fc7550a11f"
+    },
+    "friends-hedgehog/nature-question-0@e6d263d728654c49": {
+      "key": "friends-hedgehog/nature-question-0",
+      "revision": "e6d263d728654c49",
+      "status": "improve",
+      "note": "Aufgabe löschen",
+      "at": "2026-11-22T20:09:38.046Z",
+      "seen": true,
+      "operation": "5d15b5cc-42f6-42e7-b21a-e3cd62d1e4ba"
     }
   },
   "history": [
