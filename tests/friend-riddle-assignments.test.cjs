@@ -101,7 +101,10 @@ test('Fisch tasks count fish and the wayfinding prompt guides Reh to the forest'
 });
 
 test('unchanged riddles retain approvals while reassigned and new riddles require current review',()=>{
- const catalogue=setup().FK.puzzleCatalogue;
+ // Verify that assignment migration before the later host-scene artwork change.
+ const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
+ const release=environment({read:snapshotReader('61ef04562d6ac863a6816f494e3844539cb60758').read,review:false});release.execute('js/friends/puzzle-implementation.js');
+ const catalogue=release.FK.puzzleCatalogue;
  const baseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9bd41c8acd07db2eb7901ce0895f9a422cccd8e2');
  const reassigned=new Set(['count','add','compare','robot','rocket','picnic','sequence','treasure','neighbours','read-puzzle','friends-hedgehog']);
  // 9.4.24 gives capitalised first-letter gaps capital distractors; only these vowel tasks reopen.
