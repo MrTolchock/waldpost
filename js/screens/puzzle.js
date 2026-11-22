@@ -249,13 +249,17 @@
         returnTile(answerArea.querySelector('[data-answer="'+value+'"]'),slots[pos],value);return;
       }
       values[pos]=value;work().neighbours=values;persist();slots[pos].firstChild.textContent=value;slots[pos].classList.add('filled');
+      used(answerArea.querySelector('[data-answer="'+value+'"]'));
       FK.playLog?.place?.('neighbour',{value,pos});
       if(values.every((v,i)=>v===q.answer[i]))solved(row);
     }
+    // A correctly placed card leaves the choices; its empty place keeps the others where they were.
+    function used(tile){if(!tile)return;tile.classList.add('is-used');tile.setAttribute('aria-hidden','true');}
     scene.append(row,groupResult());
     for(const value of q.choices){
       const tile=h('span',{class:'puzzle-answer puzzle-neighbour-tile','data-answer':value},String(value));
       answerArea.append(draggable(tile,'[data-neighbour-slot]',target=>place(value,Number(target.dataset.neighbourSlot))));
+      if(values.some((v,i)=>v===value&&!(i===0&&q.given==='left')))used(tile);
     }
   }
   function renderCompare(q) {

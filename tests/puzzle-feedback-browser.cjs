@@ -46,7 +46,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',out=process.en
   // 22 Nov: a rejected number returns unchanged and the row never moves.
   await preview('neighbours','neighbours/5-both');const nRow=()=>active().locator('.puzzle-neighbours').boundingBox(),nTile=v=>active().locator('.puzzle-neighbour-tile[data-answer="'+v+'"]'),nSlot=i=>active().locator('[data-neighbour-slot="'+i+'"]');
   const row0=await nRow();await drag(nTile(3),nSlot(0),mode);assert.equal(await nTile(3).evaluate(el=>el.classList.contains('is-retry')),false,'a rejected number looks as before');assert.equal(await nSlot(0).textContent(),'?');
-  await drag(nTile(4),nSlot(0),mode);await drag(nTile(6),nSlot(1),mode);assert.equal(await page.evaluate(()=>FK.puzzleReview.status('neighbours','neighbours/5-both').status),'approved');assert.deepEqual(await nRow(),row0,'the number row stays in place');
+  await drag(nTile(4),nSlot(0),mode);assert.equal(await nTile(4).isVisible(),false,'a placed number leaves the choices');assert.equal(await nTile(3).isVisible(),true);await drag(nTile(6),nSlot(1),mode);assert.equal(await page.evaluate(()=>FK.puzzleReview.status('neighbours','neighbours/5-both').status),'approved');assert.deepEqual(await nRow(),row0,'the number row stays in place');
   await page.screenshot({path:out+'/neighbours-'+width+'.png'});
   await preview('treasure','treasure/0-0');const tBoxes=async()=>[await active().locator('.puzzle-treasures').boundingBox(),await active().locator('.puzzle-answers').boundingBox()];
   const memo=await tBoxes();await active().locator('.puzzle-memory-ready').click();assert.equal(await active().locator('.puzzle-answer').count(),3);assert.deepEqual(await tBoxes(),memo,'the remembered row and the answer row keep their size and place');

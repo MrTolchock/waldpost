@@ -21,3 +21,9 @@ Ausgewertet wurde der gemeinsame [Review-Speicher](https://github.com/MrTolchock
 Freigaben: Alle 35 unveränderten, bereits freigegebenen Tierrätsel-Aufgaben behalten ihre Freigabe; die angezeigte Aufgabenzahl ist eine reine Anzeigeangabe. Die neun geänderten Tierrätsel-Aufgaben sowie alle Aufgaben von «Gegenstände merken» und «Zahlennachbarn» (geänderte Darstellung) sind wieder offen. Alle anderen Rätsel sind unverändert. Es werden keine Freigaben erzeugt und keine Änderungen am Review-Datenbranch vorgenommen.
 
 Prüfung: Katalog-, Design-, Bild- und Einheitstests; Browserprüfungen für Rücksprung und feste Zahlenreihe, gleich grosse Gedächtnisfelder auf Tablet und Telefon, Zuteilungen, Rätsel-Prüfung, Spielprotokoll und Briefreise mit abgefangenen Review-APIs.
+
+## Nachtrag 22. November, 22 Uhr (9.4.30)
+
+| Rätsel | Hinweis | Umsetzung |
+| --- | --- | --- |
+| Zahlennachbarn | Korrekt platzierte Karte aus der Auswahl unten entfernen | Eine richtig eingesetzte Zahlenkarte verschwindet aus der Auswahl, auch nach dem Wiederöffnen begonnener Arbeit. Ihr Platz bleibt leer, damit die übrigen Karten nicht verrutschen. Nur die Zahlennachbarn-Aufgaben sind wieder offen. |

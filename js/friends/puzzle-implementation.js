@@ -17,7 +17,7 @@ window.FK.puzzleImplementations = {
   "syllable": "0baa75a4fa0f7047abac561fbc72590ea433f18e24da330f49e2d860fda7c175",
   "robot": "f314bc9eca60c07a5167f930658244ff07e5b88126057f283aac36e3eedda7b3",
   "treasure": "0f69cc8933c171ea4a45f2b639005f6bc1457d77e1b5aad12ae1a69ca11e1320",
-  "neighbours": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
   "compare": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
   "mirror": "95493483f4a95b046fdeee04cd49a970f82f91f2339d59ec16e4b67da433d3d8",
   "vowels": "0313d8d7a420c0e68bc82564f09af8ecf995fa52e87df4175637ccc8dc78bbe8",
@@ -572,42 +572,42 @@ window.FK.puzzleIterationImplementations = {
   "treasure/7-1": "a0baad8f9aae4782c2094e24039bb7fb1827ec6d48e9391448b7038fc30c747f",
   "treasure/7-2": "0021a99398ec19f1b8c42202b09a371b0cb290229fe2093c1bd84b099284d169",
   "treasure/7-3": "dc3b5a0d30dc7e77214009cc3ef1e6779975438d3e4ae2c0ad337bf7f463d087",
-  "neighbours/1-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/1-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/2-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/2-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/3-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/3-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/4-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/4-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/5-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/5-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/6-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/6-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/7-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/7-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/8-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/8-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/9-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/9-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/10-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/10-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/11-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/11-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/12-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/12-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/13-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/13-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/14-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/14-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/15-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/15-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/16-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/16-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/17-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/17-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/18-both": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
-  "neighbours/18-left": "a6ebeaecd72676f58e928eecb25b69ac7cefb061162ca04a3be9672ad4d92e45",
+  "neighbours/1-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/1-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/2-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/2-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/3-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/3-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/4-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/4-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/5-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/5-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/6-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/6-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/7-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/7-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/8-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/8-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/9-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/9-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/10-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/10-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/11-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/11-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/12-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/12-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/13-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/13-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/14-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/14-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/15-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/15-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/16-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/16-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/17-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/17-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/18-both": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
+  "neighbours/18-left": "9b6f9688f53355899d3ed62aacc0c8b290d158663c9b6a23c230ecf7ac034ba4",
   "compare/1-1": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
   "compare/1-3": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
   "compare/2-2": "85fc820770fdfe23fa42454c7a0f91bdefe162c2f683fad13ac4099986eda613",
@@ -942,7 +942,7 @@ window.FK.puzzleReviewCompatibility = {
       "former": []
     },
     "neighbours": {
-      "current": "988635d380bf7b6b",
+      "current": "2c34c324b6a6d46e",
       "former": []
     },
     "compare": {
@@ -6583,147 +6583,147 @@ window.FK.puzzleReviewCompatibility = {
       "former": []
     },
     "neighbours/1-both": {
-      "current": "06d154e34785b8cd",
+      "current": "c1e9da0ac7aec964",
       "former": []
     },
     "neighbours/1-left": {
-      "current": "cffdf42bdb259c27",
+      "current": "b886e2b62ce1f48e",
       "former": []
     },
     "neighbours/2-both": {
-      "current": "8fa6a592bfa1a0d6",
+      "current": "066690d3c2ed9bff",
       "former": []
     },
     "neighbours/2-left": {
-      "current": "02dafb6e142ede3c",
+      "current": "134df3430f34ff15",
       "former": []
     },
     "neighbours/3-both": {
-      "current": "536bd7aa313bb956",
+      "current": "c10b2abbc89d7d7f",
       "former": []
     },
     "neighbours/3-left": {
-      "current": "ae344f6edb3f167c",
+      "current": "6034aed37e7a3555",
       "former": []
     },
     "neighbours/4-both": {
-      "current": "b46cb23aa198a9d6",
+      "current": "2fe54d6b96b660ff",
       "former": []
     },
     "neighbours/4-left": {
-      "current": "a7e62eaa5728de3c",
+      "current": "877385cfb00a5615",
       "former": []
     },
     "neighbours/5-both": {
-      "current": "eb768e22f8616e56",
+      "current": "28d8aed3cc7a117f",
       "former": []
     },
     "neighbours/5-left": {
-      "current": "de2fc46a8405e27c",
+      "current": "e1b1ff5fd5843d55",
       "former": []
     },
     "neighbours/6-both": {
-      "current": "704e26fa117314de",
+      "current": "92fb8a4b7a0e7ff7",
       "former": []
     },
     "neighbours/6-left": {
-      "current": "d6217ece905d9034",
+      "current": "29a6b32b98ce051d",
       "former": []
     },
     "neighbours/7-both": {
-      "current": "994d13e292ce115e",
+      "current": "0f286743de594977",
       "former": []
     },
     "neighbours/7-left": {
-      "current": "dae25cce11f23074",
+      "current": "d239ab4bb6ad1f5d",
       "former": []
     },
     "neighbours/8-both": {
-      "current": "b8d3cc89a5cf1a85",
+      "current": "32fff7baaa13898c",
       "former": []
     },
     "neighbours/8-left": {
-      "current": "10e548056176bf6f",
+      "current": "10bfa5fa19d86aa6",
       "former": []
     },
     "neighbours/9-both": {
-      "current": "a5b49b51fd4794c5",
+      "current": "ddb50bc68c07c8cc",
       "former": []
     },
     "neighbours/9-left": {
-      "current": "6cd01f6d2125136f",
+      "current": "d0e33b56a3045f26",
       "former": []
     },
     "neighbours/10-both": {
-      "current": "24d0f667b78949e9",
+      "current": "9a95aa641beab920",
       "former": []
     },
     "neighbours/10-left": {
-      "current": "dae714b72f540f03",
+      "current": "1b2c021c2f95518a",
       "former": []
     },
     "neighbours/11-both": {
-      "current": "c8a224a7ca3c3769",
+      "current": "2fc928941ca46220",
       "former": []
     },
     "neighbours/11-left": {
-      "current": "3282f677fa58e9c3",
+      "current": "3a9ac65c5939514a",
       "former": []
     },
     "neighbours/12-both": {
-      "current": "b330e2d0668d9ff6",
+      "current": "4521b26d46f37e5f",
       "former": []
     },
     "neighbours/12-left": {
-      "current": "0d53d800014fcc1c",
+      "current": "0c671d4dcbed5635",
       "former": []
     },
     "neighbours/13-both": {
-      "current": "f3287468210eb3b6",
+      "current": "3de0d02dfbc5d41f",
       "former": []
     },
     "neighbours/13-left": {
-      "current": "6068ede8bde73f9c",
+      "current": "05b313f5671629b5",
       "former": []
     },
     "neighbours/14-both": {
-      "current": "cfb9cd98aafcd8f6",
+      "current": "f343897d7516d75f",
       "former": []
     },
     "neighbours/14-left": {
-      "current": "903078f47554eb1c",
+      "current": "2e948a8957ef1335",
       "former": []
     },
     "neighbours/15-both": {
-      "current": "f71cfcd0b83e0936",
+      "current": "7c12dac544f18d9f",
       "former": []
     },
     "neighbours/15-left": {
-      "current": "683864ecfc057e1c",
+      "current": "7a1fc009fc694c35",
       "former": []
     },
     "neighbours/16-both": {
-      "current": "386f7c302df733fe",
+      "current": "116c114dad6e8057",
       "former": []
     },
     "neighbours/16-left": {
-      "current": "2ff99658f5e4bc14",
+      "current": "6951dd6d55c39c3d",
       "former": []
     },
     "neighbours/17-both": {
-      "current": "18e96e08061d4cbe",
+      "current": "9f958045294ba117",
       "former": []
     },
     "neighbours/17-left": {
-      "current": "610d7f40178dfa94",
+      "current": "f3cc297d60d6b4bd",
       "former": []
     },
     "neighbours/18-both": {
-      "current": "14eb5d1f9a0d0bf7",
+      "current": "5c03c01ab91aa95e",
       "former": []
     },
     "neighbours/18-left": {
-      "current": "41f6f9078f38d75d",
+      "current": "b5e4d48a212a9274",
       "former": []
     },
     "compare/1-1": {
