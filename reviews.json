@@ -22971,6 +22971,240 @@
       "at": "2026-11-22T20:02:48.470Z",
       "seen": true,
       "operation": "a82a7243-8534-4c51-b33d-c76dd04a6020"
+    },
+    "puzzle:robot@6f0aec16f277c7f0": {
+      "key": "puzzle:robot",
+      "revision": "6f0aec16f277c7f0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "d963138d-37d2-4e4b-bdbf-ea8db9eba359"
+    },
+    "robot/0-5@3b0e34da4cc0d896": {
+      "key": "robot/0-5",
+      "revision": "3b0e34da4cc0d896",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "283d3ad9-0682-4590-9b85-173a2c04ac04"
+    },
+    "robot/1-0@4b2033a6a133b52e": {
+      "key": "robot/1-0",
+      "revision": "4b2033a6a133b52e",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "5f3d855b-8095-427f-9e40-a3b5576ed9b9"
+    },
+    "robot/1-1@51eab0b91f3c82eb": {
+      "key": "robot/1-1",
+      "revision": "51eab0b91f3c82eb",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "6798e25d-e527-4c8e-acd7-bd1da6ce1f0b"
+    },
+    "robot/1-2@ab3da83cd7b173a8": {
+      "key": "robot/1-2",
+      "revision": "ab3da83cd7b173a8",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "394e8c12-5dc8-431e-8df6-41b37a5af1a6"
+    },
+    "robot/1-3@8bace1c16109164d": {
+      "key": "robot/1-3",
+      "revision": "8bace1c16109164d",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "924d4890-1b40-4f10-aab5-c9b078c42cd2"
+    },
+    "robot/1-4@d176a73f1abba1dd": {
+      "key": "robot/1-4",
+      "revision": "d176a73f1abba1dd",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "5bfb6503-8f44-48c6-b580-1b3369449e1a"
+    },
+    "robot/1-5@401d889c4b4ac398": {
+      "key": "robot/1-5",
+      "revision": "401d889c4b4ac398",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "323583fb-e94c-41c4-81b3-1295aff38409"
+    },
+    "robot/2-0@ead2aea8f9ae9376": {
+      "key": "robot/2-0",
+      "revision": "ead2aea8f9ae9376",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "f6517efb-8318-45c9-b9d2-ef205538ccdc"
+    },
+    "robot/2-1@233dac89f3bb0493": {
+      "key": "robot/2-1",
+      "revision": "233dac89f3bb0493",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "1bff731a-140e-49c9-aa02-358c0b925dc1"
+    },
+    "robot/2-2@0f76cf8cc20e4390": {
+      "key": "robot/2-2",
+      "revision": "0f76cf8cc20e4390",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "7c2f6aea-690f-4bc1-859f-dceaf2278f54"
+    },
+    "robot/2-3@e4100b97ff73b555": {
+      "key": "robot/2-3",
+      "revision": "e4100b97ff73b555",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "65807eab-aa0b-4841-86ca-bfddc21d62ad"
+    },
+    "robot/2-4@91c1a4a938609145": {
+      "key": "robot/2-4",
+      "revision": "91c1a4a938609145",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "77e2e8c2-2adb-4053-9ef1-fc853a23a25d"
+    },
+    "robot/2-5@32f56b4ca36e7ea0": {
+      "key": "robot/2-5",
+      "revision": "32f56b4ca36e7ea0",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "bd15a06f-4c56-450c-9701-3cad8412c5cc"
+    },
+    "robot/3-0@c5d23d7a84aa7bf8": {
+      "key": "robot/3-0",
+      "revision": "c5d23d7a84aa7bf8",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "a7f5e507-7a3e-4bdc-801e-a319dc1fe9a3"
+    },
+    "robot/3-1@5fe09bdd141a877d": {
+      "key": "robot/3-1",
+      "revision": "5fe09bdd141a877d",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "c0a81ba9-6d1d-4627-92a7-390450a877a3"
+    },
+    "robot/3-2@6e4ef0debfe16c5e": {
+      "key": "robot/3-2",
+      "revision": "6e4ef0debfe16c5e",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "b7968a1b-996d-4148-bd6e-23ce75e33b2d"
+    },
+    "robot/3-3@6a3bd9531b6e3afb": {
+      "key": "robot/3-3",
+      "revision": "6a3bd9531b6e3afb",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "74af642a-9ba6-4ed9-b15e-19cb1a82604f"
+    },
+    "robot/3-4@cee3b0f5ec27aceb": {
+      "key": "robot/3-4",
+      "revision": "cee3b0f5ec27aceb",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "211e5739-b3fe-4cec-b4f1-3efd985ef10d"
+    },
+    "robot/3-5@a1f5b6260a8794ee": {
+      "key": "robot/3-5",
+      "revision": "a1f5b6260a8794ee",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "083627a0-9721-457a-8334-8e8b982b59ff"
+    },
+    "robot/4-0@f129f0334edb20f5": {
+      "key": "robot/4-0",
+      "revision": "f129f0334edb20f5",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "ecad2e67-d783-4daa-a276-62ff9e1ae778"
+    },
+    "robot/4-1@d951b3c03ab8fb30": {
+      "key": "robot/4-1",
+      "revision": "d951b3c03ab8fb30",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "61cdf57a-ef20-4ed7-a7ef-a0bbaeaf97c3"
+    },
+    "robot/4-2@6ae7169929f5ba73": {
+      "key": "robot/4-2",
+      "revision": "6ae7169929f5ba73",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "c32e1202-d850-45da-9212-48befa1cb6db"
+    },
+    "robot/4-3@6e9117a8c54458d6": {
+      "key": "robot/4-3",
+      "revision": "6e9117a8c54458d6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "c4e25607-b94b-47f8-b5d1-d941c8e26cfb"
+    },
+    "robot/4-4@a7be436056bc40a6": {
+      "key": "robot/4-4",
+      "revision": "a7be436056bc40a6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "e196bf33-c458-437e-95de-fae96d591488"
+    },
+    "robot/4-5@68f06853584b0463": {
+      "key": "robot/4-5",
+      "revision": "68f06853584b0463",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:02:58.250Z",
+      "seen": true,
+      "operation": "a3d341e2-43e8-42c9-932a-d90a236aa388"
     }
   },
   "history": [
