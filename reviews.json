@@ -23547,6 +23547,33 @@
       "at": "2026-11-22T20:10:47.370Z",
       "seen": true,
       "operation": "af6795a0-6194-4eb7-9cb3-27267fdb9dbb"
+    },
+    "friends-hedgehog/nature-question-4@d10e59e84e922b1e": {
+      "key": "friends-hedgehog/nature-question-4",
+      "revision": "d10e59e84e922b1e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:10:50.101Z",
+      "seen": true,
+      "operation": "6060db30-1a2c-47ec-a1b1-4b28be13c89c"
+    },
+    "friends-hedgehog/nature-question-5@cff4b7d7e8b1258f": {
+      "key": "friends-hedgehog/nature-question-5",
+      "revision": "cff4b7d7e8b1258f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:10:52.299Z",
+      "seen": true,
+      "operation": "83ff6251-614c-403c-bb8f-3b7d72fb27fb"
+    },
+    "friends-hedgehog/nature-question-6@94adc4735a4e4ed1": {
+      "key": "friends-hedgehog/nature-question-6",
+      "revision": "94adc4735a4e4ed1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:10:55.439Z",
+      "seen": true,
+      "operation": "4be35f3a-1d85-475c-a2ba-fa948369631c"
     }
   },
   "history": [
