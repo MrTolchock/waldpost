@@ -24805,6 +24805,11 @@
     },
     {
       "key": "puzzle:neighbours",
+      "note": "Wenn falsch platziertes bild zurückfällt mache es nicht gestrichelt, sondern genau wie es vorher war. Bei korrekter antwort verschiebt sich reihe mit zahlen. Schaue dass es sich nicht verschiebt",
+      "at": "2026-11-22T21:09:20.939Z"
+    },
+    {
+      "key": "puzzle:neighbours",
       "note": "Wenn zahl draufgezogen wird, zeige nicht mehr gestrichelten rand an um zahl herum",
       "at": "2026-11-20T20:20:15.075Z"
     },
