@@ -21801,6 +21801,15 @@
       "at": "2026-11-22T19:55:52.644Z",
       "seen": true,
       "operation": "14eca763-deb8-4993-80ef-8b03274176b1"
+    },
+    "treasure/2-0@039088b028b795e2": {
+      "key": "treasure/2-0",
+      "revision": "039088b028b795e2",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:55:57.938Z",
+      "seen": true,
+      "operation": "610a0cf2-5e54-4017-8c43-07041005612e"
     }
   },
   "history": [
