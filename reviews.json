@@ -23534,6 +23534,11 @@
     },
     {
       "key": "puzzle:robot",
+      "note": "Das bild zeigt einen baum. Ersetze bild durch waldbild, mit mehreren bäumen",
+      "at": "2026-11-22T20:01:48.791Z"
+    },
+    {
+      "key": "puzzle:robot",
       "note": "Erlaube nur bewegung über pfeiltasten, nicht in feld klicken",
       "at": "2026-11-19T20:34:38.387Z"
     },
