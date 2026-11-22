@@ -24774,6 +24774,11 @@
       "at": "2026-11-20T20:15:18.563Z"
     },
     {
+      "key": "puzzle:friends-mouse",
+      "note": "Rätsel wirkt optisch unbalanciert, box für text ist zu gross",
+      "at": "2026-11-22T21:09:11.455Z"
+    },
+    {
       "key": "puzzle:friends-squirrel",
       "note": "Im ganzen rätsel, entferne die markierung beim nüsse zählen. Dies ist das einzige spiel wo das geht, darum aus harmonisierung feature entfernen",
       "at": "2026-11-18T19:45:22.993Z"
