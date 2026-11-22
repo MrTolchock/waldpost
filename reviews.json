@@ -24258,6 +24258,15 @@
       "at": "2026-11-22T21:28:16.324Z",
       "seen": true,
       "operation": "bf754639-5138-40e6-8968-262bd6ae83f6"
+    },
+    "neighbours/2-left@134df3430f34ff15": {
+      "key": "neighbours/2-left",
+      "revision": "134df3430f34ff15",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:28:36.134Z",
+      "seen": true,
+      "operation": "a901327a-d00b-4066-8c91-448702289bdf"
     }
   },
   "history": [
