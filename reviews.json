@@ -21738,6 +21738,24 @@
       "at": "2026-11-22T19:54:30.654Z",
       "seen": true,
       "operation": "4921eacf-5eae-4386-a63b-9b7fab442bd5"
+    },
+    "treasure/0-1@6ab0c78913254869": {
+      "key": "treasure/0-1",
+      "revision": "6ab0c78913254869",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:54:35.916Z",
+      "seen": true,
+      "operation": "3c445a9b-f077-44ee-bf63-949f35440e49"
+    },
+    "treasure/0-2@6561de67b51c5c35": {
+      "key": "treasure/0-2",
+      "revision": "6561de67b51c5c35",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:54:41.298Z",
+      "seen": true,
+      "operation": "b37c3533-066a-4499-8862-5868e069a2f4"
     }
   },
   "history": [
