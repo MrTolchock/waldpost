@@ -22647,6 +22647,285 @@
       "at": "2026-11-22T20:00:43.762Z",
       "seen": true,
       "operation": "99e3da48-5356-4c17-97de-eef6fc723baf"
+    },
+    "friends-ibex/pattern-AAB-1@098e327b264e45b1": {
+      "key": "friends-ibex/pattern-AAB-1",
+      "revision": "098e327b264e45b1",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "65e5c8f6-e190-4c14-899f-78fda29c1d80"
+    },
+    "friends-ibex/pattern-AAB-2@f1dca7427e1ae550": {
+      "key": "friends-ibex/pattern-AAB-2",
+      "revision": "f1dca7427e1ae550",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "9fac054c-ea58-4e09-a49c-95b2fccf3c23"
+    },
+    "friends-ibex/pattern-AAB-3@f2bbaba16b056473": {
+      "key": "friends-ibex/pattern-AAB-3",
+      "revision": "f2bbaba16b056473",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "96294f7c-c99c-4c40-bc67-e8cd84a3cffa"
+    },
+    "friends-ibex/pattern-AAB-4@4b1fccfb2bd09771": {
+      "key": "friends-ibex/pattern-AAB-4",
+      "revision": "4b1fccfb2bd09771",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "016793a6-b483-4fb7-8579-d98aa1cdceb6"
+    },
+    "friends-ibex/pattern-AAB-5@c48b35f3c7a36ef5": {
+      "key": "friends-ibex/pattern-AAB-5",
+      "revision": "c48b35f3c7a36ef5",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "c8a418e1-0282-4102-b81b-c6e6167ffbb9"
+    },
+    "friends-ibex/pattern-AAB-6@a263ae2f0b95558d": {
+      "key": "friends-ibex/pattern-AAB-6",
+      "revision": "a263ae2f0b95558d",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "bae27c57-90df-4233-8766-22520383dc21"
+    },
+    "friends-ibex/pattern-ABB-1@54a5c6e033c2c892": {
+      "key": "friends-ibex/pattern-ABB-1",
+      "revision": "54a5c6e033c2c892",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "87ebbfab-f224-442a-abfb-282894d26544"
+    },
+    "friends-ibex/pattern-ABB-2@9d9c0370e2fe1654": {
+      "key": "friends-ibex/pattern-ABB-2",
+      "revision": "9d9c0370e2fe1654",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "94b378e0-0cfa-4168-92e0-a944d76f7fd8"
+    },
+    "friends-ibex/pattern-ABB-3@1229df0657af35d0": {
+      "key": "friends-ibex/pattern-ABB-3",
+      "revision": "1229df0657af35d0",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "d18987f8-dadc-42fe-be12-e75c9c569d34"
+    },
+    "friends-ibex/pattern-ABB-4@410ab79f5ccd820d": {
+      "key": "friends-ibex/pattern-ABB-4",
+      "revision": "410ab79f5ccd820d",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "952a25f5-b2b5-401f-b66a-96ef28e0a742"
+    },
+    "friends-ibex/pattern-ABB-5@16881ee671343c76": {
+      "key": "friends-ibex/pattern-ABB-5",
+      "revision": "16881ee671343c76",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "e9d55e3c-6980-4b36-9d10-eae229e686f0"
+    },
+    "friends-ibex/pattern-ABB-6@f70a6138a54c5370": {
+      "key": "friends-ibex/pattern-ABB-6",
+      "revision": "f70a6138a54c5370",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "396eaaaa-36db-48e1-9fad-31da5b93b7d2"
+    },
+    "friends-ibex/pattern-ABC-1@2b749875af7dc073": {
+      "key": "friends-ibex/pattern-ABC-1",
+      "revision": "2b749875af7dc073",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "84c12910-3e27-4fc2-a100-cfb822844f4d"
+    },
+    "friends-ibex/pattern-ABC-2@49e1cf7d1e9f6555": {
+      "key": "friends-ibex/pattern-ABC-2",
+      "revision": "49e1cf7d1e9f6555",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "377ef961-aa26-4eda-8f14-8c56b99528c0"
+    },
+    "friends-ibex/pattern-ABC-3@2c01f0232e1ce731": {
+      "key": "friends-ibex/pattern-ABC-3",
+      "revision": "2c01f0232e1ce731",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "d308cc70-f882-4610-ae8b-258682623e26"
+    },
+    "friends-ibex/pattern-ABC-4@6c8c35954a1ad46b": {
+      "key": "friends-ibex/pattern-ABC-4",
+      "revision": "6c8c35954a1ad46b",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "96abd564-b8c8-4cb2-9b22-89f53b243acc"
+    },
+    "friends-ibex/pattern-ABC-5@2e60fead48adeeb7": {
+      "key": "friends-ibex/pattern-ABC-5",
+      "revision": "2e60fead48adeeb7",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "b0787e41-e511-4afe-aab7-aec2722fb19b"
+    },
+    "friends-ibex/pattern-ABC-6@10dcb2f226ba27ce": {
+      "key": "friends-ibex/pattern-ABC-6",
+      "revision": "10dcb2f226ba27ce",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "fcf79a23-10b0-4593-a120-f3235b727700"
+    },
+    "friends-ibex/pattern-ABAC-1@cf655b9a84be285c": {
+      "key": "friends-ibex/pattern-ABAC-1",
+      "revision": "cf655b9a84be285c",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "bc8a2ed1-d55e-4cbb-8f9e-88b58d129e85"
+    },
+    "friends-ibex/pattern-ABAC-2@643d976b81ab0853": {
+      "key": "friends-ibex/pattern-ABAC-2",
+      "revision": "643d976b81ab0853",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "eaa42320-5136-41fa-813f-42b4852658ac"
+    },
+    "friends-ibex/pattern-ABAC-3@f46de0b08bdcf95e": {
+      "key": "friends-ibex/pattern-ABAC-3",
+      "revision": "f46de0b08bdcf95e",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "18d8ebd4-3d5e-46b4-861d-8ef6113192bc"
+    },
+    "friends-ibex/pattern-ABAC-4@725b91af379d0417": {
+      "key": "friends-ibex/pattern-ABAC-4",
+      "revision": "725b91af379d0417",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "4b4e5318-6b80-4c3a-b76c-8f6615f63d8c"
+    },
+    "friends-ibex/pattern-ABAC-5@e89ba3aef4c2e898": {
+      "key": "friends-ibex/pattern-ABAC-5",
+      "revision": "e89ba3aef4c2e898",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "b87fc74e-240d-4c39-97f7-9bd8644faee3"
+    },
+    "friends-ibex/pattern-ABAC-6@b443ed3766b0e297": {
+      "key": "friends-ibex/pattern-ABAC-6",
+      "revision": "b443ed3766b0e297",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "03cf5807-f395-4ddd-ae3b-8a02c2ab6043"
+    },
+    "friends-ibex/pattern-AABC-1@7e427ce8c14e16fc": {
+      "key": "friends-ibex/pattern-AABC-1",
+      "revision": "7e427ce8c14e16fc",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "c48827a5-e009-4c5e-8291-794e72bd9b66"
+    },
+    "friends-ibex/pattern-AABC-2@ba125bb0b2380092": {
+      "key": "friends-ibex/pattern-AABC-2",
+      "revision": "ba125bb0b2380092",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "7e83eeda-9c3e-4300-9558-9e3297b63c36"
+    },
+    "friends-ibex/pattern-AABC-3@754de44a508ad97e": {
+      "key": "friends-ibex/pattern-AABC-3",
+      "revision": "754de44a508ad97e",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "0007a2ff-0a5c-4278-b8be-dc5c336a3e5f"
+    },
+    "friends-ibex/pattern-AABC-4@61d95fdc69408da8": {
+      "key": "friends-ibex/pattern-AABC-4",
+      "revision": "61d95fdc69408da8",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "4f9a2f00-4c8b-4471-8b97-9023a831d40a"
+    },
+    "friends-ibex/pattern-AABC-5@83f5bdbc1ce103f8": {
+      "key": "friends-ibex/pattern-AABC-5",
+      "revision": "83f5bdbc1ce103f8",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "ac0cc1d7-8723-4ea5-93f0-002f30c49691"
+    },
+    "friends-ibex/pattern-AABC-6@6a78f05656b87376": {
+      "key": "friends-ibex/pattern-AABC-6",
+      "revision": "6a78f05656b87376",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "e627cb0c-28b2-43c0-bc44-cdcb46bd7540"
+    },
+    "puzzle:friends-ibex@ba54f4a43a412d58": {
+      "key": "puzzle:friends-ibex",
+      "revision": "ba54f4a43a412d58",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T20:01:22.605Z",
+      "seen": true,
+      "operation": "ce94295a-dce8-4a18-ab25-c546a35c4030"
     }
   },
   "history": [
