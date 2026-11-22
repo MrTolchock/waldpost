@@ -21810,6 +21810,15 @@
       "at": "2026-11-22T19:55:57.938Z",
       "seen": true,
       "operation": "610a0cf2-5e54-4017-8c43-07041005612e"
+    },
+    "treasure/2-1@dcd852cbfc54b7c3": {
+      "key": "treasure/2-1",
+      "revision": "dcd852cbfc54b7c3",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:56:13.190Z",
+      "seen": true,
+      "operation": "8af361bd-4640-4e5f-9984-e4d3574736f2"
     }
   },
   "history": [
