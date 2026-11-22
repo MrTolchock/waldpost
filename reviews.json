@@ -23894,6 +23894,11 @@
       "at": "2026-11-20T20:21:39.243Z"
     },
     {
+      "key": "puzzle:sequence",
+      "note": "Wenn kachel falsch mache wackel animation und werfe kachel zurück",
+      "at": "2026-11-22T20:05:46.335Z"
+    },
+    {
       "key": "puzzle:syllable",
       "note": "Add iterations with four and five syllables",
       "at": "2026-11-18T20:13:22.221Z"
@@ -23939,9 +23944,19 @@
       "at": "2026-11-18T08:14:23.672Z"
     },
     {
+      "key": "sequence/story-3",
+      "note": "Intuitiver machen",
+      "at": "2026-11-22T20:05:47.216Z"
+    },
+    {
       "key": "sequence/story-4",
       "note": "Mache brief schreiben nicht nur stift",
       "at": "2026-11-22T20:05:42.539Z"
+    },
+    {
+      "key": "sequence/story-5",
+      "note": "Mache intutiver",
+      "at": "2026-11-22T20:05:45.582Z"
     },
     {
       "key": "sequence/story-6",
