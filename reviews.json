@@ -24231,6 +24231,15 @@
       "at": "2026-11-22T21:10:54.228Z",
       "seen": true,
       "operation": "1e4d6a5c-d5ac-4325-b555-4d7c48f3d7df"
+    },
+    "neighbours/1-both@c1e9da0ac7aec964": {
+      "key": "neighbours/1-both",
+      "revision": "c1e9da0ac7aec964",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:28:10.271Z",
+      "seen": true,
+      "operation": "15ec4984-b4c0-488e-9ff3-83f1a6e0cbb5"
     }
   },
   "history": [
