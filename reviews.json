@@ -22044,6 +22044,348 @@
       "at": "2026-11-22T19:59:45.640Z",
       "seen": true,
       "operation": "f0002a03-83ce-4810-bc9b-56f56abdec33"
+    },
+    "rocket/5-3@afb0a46e4cfa33d6": {
+      "key": "rocket/5-3",
+      "revision": "afb0a46e4cfa33d6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "ae0ac086-4ea1-4584-8e42-cb9e0349b7f3"
+    },
+    "puzzle:rocket@f2d0f6a5c1549091": {
+      "key": "puzzle:rocket",
+      "revision": "f2d0f6a5c1549091",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "2ae5da2b-52a8-44cf-bc9c-678309d01d9b"
+    },
+    "rocket/5-4@700456f6d0d81b16": {
+      "key": "rocket/5-4",
+      "revision": "700456f6d0d81b16",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "5ef67338-7742-4e75-878e-86f3747d01e4"
+    },
+    "rocket/6-1@804b77b0c3f3c3b6": {
+      "key": "rocket/6-1",
+      "revision": "804b77b0c3f3c3b6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "57fec8e6-6696-4251-994f-17140ba7fd7a"
+    },
+    "rocket/6-2@0d35b1685626aa32": {
+      "key": "rocket/6-2",
+      "revision": "0d35b1685626aa32",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "52a036ce-4a6b-484a-9ed6-dfc087192d5d"
+    },
+    "rocket/6-3@6675576449981332": {
+      "key": "rocket/6-3",
+      "revision": "6675576449981332",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "da2ba811-f5ba-496c-a98a-c1c23c65e4be"
+    },
+    "rocket/6-4@f51d1b0c5bb74636": {
+      "key": "rocket/6-4",
+      "revision": "f51d1b0c5bb74636",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "33f7d3f5-7b71-48ea-8950-a8312984665f"
+    },
+    "rocket/6-5@d4695270025d92b6": {
+      "key": "rocket/6-5",
+      "revision": "d4695270025d92b6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "51d022f0-05df-4a51-b6cb-635da8b19a5e"
+    },
+    "rocket/7-1@71d02a1a69df3816": {
+      "key": "rocket/7-1",
+      "revision": "71d02a1a69df3816",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "d4dc07d7-87be-485a-a252-885514b061a6"
+    },
+    "rocket/7-2@a286c64a6bc828d6": {
+      "key": "rocket/7-2",
+      "revision": "a286c64a6bc828d6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "e61611a6-61c6-4cbd-ab58-d8593bee32e0"
+    },
+    "rocket/7-3@1ad798ce44132c12": {
+      "key": "rocket/7-3",
+      "revision": "1ad798ce44132c12",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "2cc1a802-ca8b-4473-8590-f051eb2c255d"
+    },
+    "rocket/7-4@55c3b92efc53cdd2": {
+      "key": "rocket/7-4",
+      "revision": "55c3b92efc53cdd2",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "7b70323e-1bfb-4220-b0bd-a53019c04e87"
+    },
+    "rocket/7-5@a629473aa5a8c716": {
+      "key": "rocket/7-5",
+      "revision": "a629473aa5a8c716",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "1c89824f-2135-43ae-bec1-bb3f712ffb68"
+    },
+    "rocket/7-6@772dc3caa791b7d6": {
+      "key": "rocket/7-6",
+      "revision": "772dc3caa791b7d6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "981c0cae-e937-47f1-8cba-fcd2e814efbd"
+    },
+    "rocket/8-1@3ed8b26450b16ffa": {
+      "key": "rocket/8-1",
+      "revision": "3ed8b26450b16ffa",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "ecc3dd9f-28b0-4fd9-95ba-3abeea2a5dcb"
+    },
+    "rocket/8-2@4bc28294607f5576": {
+      "key": "rocket/8-2",
+      "revision": "4bc28294607f5576",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "d461b4d0-df27-4de3-ae43-3ca4b428b9c1"
+    },
+    "rocket/8-3@e36651c05dc561f6": {
+      "key": "rocket/8-3",
+      "revision": "e36651c05dc561f6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "07d6fe0a-242c-428b-abd9-20d3e6f01fea"
+    },
+    "rocket/8-4@80e11a00e80a05f2": {
+      "key": "rocket/8-4",
+      "revision": "80e11a00e80a05f2",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "6cdb41fb-6cf4-45d5-911e-8682cc3afc60"
+    },
+    "rocket/8-5@3ee5fcdcdb7b6ef2": {
+      "key": "rocket/8-5",
+      "revision": "3ee5fcdcdb7b6ef2",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "aa363659-0751-406d-9699-f655195a3121"
+    },
+    "rocket/8-6@5146717422158676": {
+      "key": "rocket/8-6",
+      "revision": "5146717422158676",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "dd345710-4f82-4794-85d7-01a9119fc9a2"
+    },
+    "rocket/8-7@e7330aa01f5b92f6": {
+      "key": "rocket/8-7",
+      "revision": "e7330aa01f5b92f6",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "24c0f021-deec-48d7-8577-8320fd0fe5a4"
+    },
+    "rocket/9-1@55a950aac0c971da": {
+      "key": "rocket/9-1",
+      "revision": "55a950aac0c971da",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "62b2aa83-70ea-4735-8c0b-1bb840b724a7"
+    },
+    "rocket/9-2@e03b27527bd2061a": {
+      "key": "rocket/9-2",
+      "revision": "e03b27527bd2061a",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "ad5d805c-cfc9-4082-a3e6-147852cf4040"
+    },
+    "rocket/9-3@5b3597eeff0dfc56": {
+      "key": "rocket/9-3",
+      "revision": "5b3597eeff0dfc56",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "193b6a9c-e2f5-443c-bc4b-f9da8ab11a1b"
+    },
+    "rocket/9-4@efee73a6a5f44596": {
+      "key": "rocket/9-4",
+      "revision": "efee73a6a5f44596",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "c375b0fc-86cd-49fa-9378-07ab712e8b8d"
+    },
+    "rocket/9-5@e022c1222a93add2": {
+      "key": "rocket/9-5",
+      "revision": "e022c1222a93add2",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "7420afa6-a735-4006-9a3a-006eea6a8720"
+    },
+    "rocket/9-6@30d670fa069c0512": {
+      "key": "rocket/9-6",
+      "revision": "30d670fa069c0512",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "555bd5e0-dd52-43ad-ad02-c4372305f248"
+    },
+    "rocket/9-7@63f8a80ec0a42d56": {
+      "key": "rocket/9-7",
+      "revision": "63f8a80ec0a42d56",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "3fbe2f44-1af6-4bb2-ad4b-65fcfae2a591"
+    },
+    "rocket/9-8@b7a226f64ceed196": {
+      "key": "rocket/9-8",
+      "revision": "b7a226f64ceed196",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "63073b88-2a1b-4a71-b5d1-a84b250125dc"
+    },
+    "rocket/10-1@505d35c7e323b2ad": {
+      "key": "rocket/10-1",
+      "revision": "505d35c7e323b2ad",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "4ac8f2e3-b6a5-4699-8255-e8a89afe2b53"
+    },
+    "rocket/10-2@52cda08e3fcddb9a": {
+      "key": "rocket/10-2",
+      "revision": "52cda08e3fcddb9a",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "818a5637-5160-43af-9575-9e092181e628"
+    },
+    "rocket/10-3@b8ed53069946201a": {
+      "key": "rocket/10-3",
+      "revision": "b8ed53069946201a",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "e59c18ba-0fa5-4a6d-ae6d-01f08708bbce"
+    },
+    "rocket/10-4@bf7c24aad7af5116": {
+      "key": "rocket/10-4",
+      "revision": "bf7c24aad7af5116",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "0a91779e-cfe3-4e01-8249-b6988aa73ebf"
+    },
+    "rocket/10-5@5cf8ad02270b8716": {
+      "key": "rocket/10-5",
+      "revision": "5cf8ad02270b8716",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "92617610-e6af-4812-acd9-9913c60eace1"
+    },
+    "rocket/10-6@d9c234e65d0f5292": {
+      "key": "rocket/10-6",
+      "revision": "d9c234e65d0f5292",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "13a1e0f0-757c-4960-975a-e83a3e290995"
+    },
+    "rocket/10-7@8c01750e782fb412": {
+      "key": "rocket/10-7",
+      "revision": "8c01750e782fb412",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "da6b04ed-824f-4bdd-b452-d17d94ab8d02"
+    },
+    "rocket/10-8@906856ba6b4ae316": {
+      "key": "rocket/10-8",
+      "revision": "906856ba6b4ae316",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "51e0347e-e9b6-41d3-b00c-c605ca467186"
+    },
+    "rocket/10-9@2e198572b806d916": {
+      "key": "rocket/10-9",
+      "revision": "2e198572b806d916",
+      "status": "approved",
+      "note": "Alle Aufgaben zusammen bestätigt",
+      "at": "2026-11-22T19:59:58.018Z",
+      "seen": true,
+      "operation": "713d7b02-03d1-4e64-9b6e-2b3dfcc5dee4"
     }
   },
   "history": [
