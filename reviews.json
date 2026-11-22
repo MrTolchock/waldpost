@@ -24424,11 +24424,11 @@
     "neighbours/11-left@3a9ac65c5939514a": {
       "key": "neighbours/11-left",
       "revision": "3a9ac65c5939514a",
-      "status": "approved",
-      "note": "",
-      "at": "2026-11-22T21:29:40.097Z",
+      "status": "improve",
+      "note": "10 in auwahl obwohl es oben schon in zahlenfolge drin ist. Korrigiere diesen fall und weitere falls es diese gibt",
+      "at": "2026-11-22T21:30:35.187Z",
       "seen": true,
-      "operation": "a34cea4a-3f02-4edd-bd93-3e5c17fe29c0"
+      "operation": "9caee3f9-bb67-4681-9a31-63b41a37ff71"
     }
   },
   "history": [
@@ -24737,6 +24737,15 @@
       "at": "2026-11-22T19:58:08.466Z",
       "seen": true,
       "operation": "1781f915-0656-412d-9600-6c3b6aeb3099"
+    },
+    {
+      "key": "neighbours/11-left",
+      "revision": "3a9ac65c5939514a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-22T21:29:40.097Z",
+      "seen": true,
+      "operation": "a34cea4a-3f02-4edd-bd93-3e5c17fe29c0"
     }
   ],
   "deletedNotes": [
