@@ -25824,6 +25824,15 @@
       "at": "2026-11-23T16:00:13.795Z",
       "seen": true,
       "operation": "de22dd6f-b197-41af-8653-4587a0a2528e"
+    },
+    "puzzle:syllable@c281dbb4cb281476": {
+      "key": "puzzle:syllable",
+      "revision": "c281dbb4cb281476",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T16:00:16.971Z",
+      "seen": true,
+      "operation": "4f2b3934-ac64-478e-a00e-0adda6720f50"
     }
   },
   "history": [
