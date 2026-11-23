@@ -28854,6 +28854,11 @@
       "at": "2026-11-18T08:20:36.259Z"
     },
     {
+      "key": "neighbours/11-left",
+      "note": "10 in auwahl obwohl es oben schon in zahlenfolge drin ist. Korrigiere diesen fall und weitere falls es diese gibt",
+      "at": "2026-11-23T20:07:39.671Z"
+    },
+    {
       "key": "pattern/4-5",
       "note": "Teilweise lässt sich nicht gut klicken, prüfen",
       "at": "2026-11-18T07:59:07.308Z"
