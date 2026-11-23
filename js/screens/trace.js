@@ -273,7 +273,7 @@
       });return;
     }
     woodlandEnd.hidden=true;woodlandContext.hidden=false;
-    woodlandContext.replaceChildren(FK.puzzleUI.context('mouse',woodlandSession.round,FK.puzzleRounds.instructions[woodlandGame],{explain:!woodlandSession.review,total:woodlandSession.questions.length,showTaskNumber:!!woodlandSession.review}),FK.puzzleUI.progress(woodlandSession.round,woodlandSession.questions.length));
+    woodlandContext.replaceChildren(FK.puzzleUI.context('mouse',woodlandSession.round,{total:woodlandSession.questions.length,showTaskNumber:!!woodlandSession.review}),FK.puzzleUI.progress(woodlandSession.round,woodlandSession.questions.length));
     const question=FK.puzzleRounds.current(woodlandSession),glyph=question.glyph;
     if(!woodlandSession.review)FK.playLog?.show(question);
     if(question.quantity){
@@ -1084,7 +1084,6 @@
         title: 'Schreiben',
         onBack: () => { if(woodlandSession)FK.go(woodlandOrigin,woodlandSession.review?{reviewPuzzle:woodlandGame}:{},{isBack:true});else if (view === 'play') showOver(); else FK.back(); },
       });
-      bar.append(FK.play.listen('Fahre die Schreibspur mit dem Finger oder Stift nach. Beginne beim Punkt und folge dem Pfeil.','Spiel erklären'));
       backUse = bar.querySelector('.btn-back use');
       tabsEl = h('nav', { class: 'tr-tabs', 'aria-label': 'ABC abc 123' });
       gridEl = h('div', { class: 'tr-grid' });
@@ -1115,7 +1114,6 @@
       }
       if(woodlandSession)root.dataset.game=woodlandGame;else delete root.dataset.game;
       root.querySelector('.title').textContent=woodlandSession?FK.puzzleRounds.title(woodlandGame):'Schreiben';
-      root.querySelector('.topbar .play-listen').hidden=!!woodlandSession;
       root.querySelector('.star-count').hidden=!!woodlandSession;
       root.querySelector('.btn-back').setAttribute('aria-label',woodlandSession?.review?"Zur Rätsel-Prüfung":woodlandSession?.gallery?"Zur Rätsel-Galerie":woodlandSession?(woodlandOrigin==='forest-book'?'Zurück zu Waldspiele':'Zurück zum Wald'):'Zurück');
       woodlandContext.hidden=true;woodlandEnd.hidden=true;
@@ -1137,7 +1135,6 @@
     },
     leave() {
       FK.playLog?.stop();cancelWoodland();
-      FK.forestVoice.cancel();
       active = false;
       token++;
       stopActivity();

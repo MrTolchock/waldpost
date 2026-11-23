@@ -12,7 +12,7 @@ p{margin:4px 0 10px;max-width:60ch}output{display:block;margin-top:14px;font-var
 <h2>Schritte und Kleines</h2><div id="steps"></div>
 <output id="out"></output>
 <script type="module">
-window.FK = {on: () => () => {}, forestVoice: {cancel() {}}};
+window.FK = {on: () => () => {}};
 const {createAudio, createBirdPlayer, footstep, details, makeNoise} = await import('../js/friends/audio.js');
 const SCENES = {Wald: {trees: .9, spruce: .1}, Fichtenwald: {trees: 1, spruce: 1}, Wiese: {trees: .05, meadow: 1}, Sumpf: {trees: .3, swamp: 1}, 'Am Bach': {trees: .7, brook: .9}, Wasserfall: {trees: .4, falls: .9, brook: .5, fallsPan: .3}, 'Im Bau': null};
 const NAMES = {blackbird: 'Amsel', chaffinch: 'Buchfink', robin: 'Rotkehlchen', wren: 'Zaunkönig', blackcap: 'Mönchsgrasmücke', thrush: 'Singdrossel', nuthatch: 'Kleiber', coalTit: 'Tannenmeise', goldcrest: 'Wintergoldhähnchen', jay: 'Eichelhäher', greatTit: 'Kohlmeise', blueTit: 'Blaumeise', dove: 'Ringeltaube', cuckoo: 'Kuckuck', woodpecker: 'Specht', frog: 'Frosch', cricket: 'Grille', bee: 'Biene'};

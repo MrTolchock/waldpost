@@ -20,7 +20,7 @@
 | Sound | Enabled button clicks, success/retry, mute respected |
 | Round | Five distinct sampled iterations; saved questions/partial work |
 | Ending | 900 ms correct feedback, then 2.2 s celebration; reduced motion |
-| Review | Production-sized open-item queue; solve to approve, × to reject, final celebration; puzzle-level speech and revision gate |
+| Review | Production-sized open-item queue; solve to approve, × to reject, final celebration; written rule and revision gate |
 
 ## Alle Aufgaben
 

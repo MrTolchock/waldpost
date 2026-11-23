@@ -25,7 +25,7 @@
     return h('span',{class:'puzzle-shape',role:'img','aria-label':R.shapeNames[id]+(rotation?' gedreht':''),html:'<svg viewBox="0 0 100 100"'+(fitted?' preserveAspectRatio="none"':'')+'><g transform="rotate('+rotation+' 50 50)" fill="'+(outline?'none':'#d8b987')+'" stroke="#8d6b45" stroke-width="3" '+(outline?'stroke-dasharray="5 4"':'')+'>'+(fitted?pieces[id]:paths[id])+'</g></svg>'});
   }
   function progress(round,total=5) {const leaves=total?Math.floor(5*round/total):5;return h('div',{class:'puzzle-progress','aria-label':round+' von '+total+' Aufgaben geschafft'},Array.from({length:5},(_,i)=>h('span',{class:i<leaves?'done':i===leaves?'current':'','aria-hidden':'true'},FK.visual.art('forest-leaf'))));}
-  function context(owner,round,instruction,{explain=true,total=5,back=null,showTaskNumber=false,taskNumber=round+1,taskTotal=total}={}) {return h('div',{class:'puzzle-context'},back,FK.friendsLibrary.portrait(owner),h('span',{text:window.FriendsContent.hosts[owner].name+' spielt mit dir'}),showTaskNumber?h('b',{class:'puzzle-round',text:taskNumber+' / '+taskTotal,'aria-label':'Aufgabe '+taskNumber+' von '+taskTotal}):null,explain?button('Spiel erklären',()=>FK.forestVoice.explain(instruction),'puzzle-listen',FK.icons.element('speaker')):null);}
+  function context(owner,round,{total=5,back=null,showTaskNumber=false,taskNumber=round+1,taskTotal=total}={}) {return h('div',{class:'puzzle-context'},back,FK.friendsLibrary.portrait(owner),h('span',{text:window.FriendsContent.hosts[owner].name+' spielt mit dir'}),showTaskNumber?h('b',{class:'puzzle-round',text:taskNumber+' / '+taskTotal,'aria-label':'Aufgabe '+taskNumber+' von '+taskTotal}):null);}
   function later(fn,delay=900) {
     clearTimeout(timer);
     timer=setTimeout(()=>{if(!alive)return;if(document.hidden||document.querySelector('.modal')){later(fn,250);return;}fn();},delay);
@@ -62,7 +62,8 @@
   function numeric(q=question) {q.choices.forEach(n=>option(n,null,String(n)));}
   function objects(id,n,cls='') {return h('div',{class:'puzzle-objects '+cls,'aria-label':n+' Objekte'},Array.from({length:n},()=>picture(id)));}
   function renderCount(q) {
-    const field=h('div',{class:q.kind==='nuts'?'puzzle-nuts':'puzzle-meadow',style:q.columns?{gridTemplateColumns:'repeat('+q.columns+', minmax(0,1fr))'}:{}});
+    // Acorns keep one cell size whatever the number of columns (rows of four or five, 23 Nov review).
+    const field=h('div',{class:q.kind==='nuts'?'puzzle-nuts':'puzzle-meadow',style:q.kind==='nuts'?{'--nut-columns':String(q.columns||5)}:q.columns?{gridTemplateColumns:'repeat('+q.columns+', minmax(0,1fr))'}:{}});
     const items=q.kind==='nuts'?Array(q.count).fill(q.item||'forest-nut'):q.bugs;
     for(const id of items)field.append(h('span',{class:'puzzle-counter'},picture(id,id==='ladybird'?'Marienkäfer':id==='bee'?'Biene':id==='snail'?'Schnecke':pictureName(id))));
     if(!items.length){field.classList.add('puzzle-empty');field.append(h('span',{class:'puzzle-empty-basket'},picture('empty-basket','Leerer Korb')));}
@@ -253,11 +254,12 @@
       values[pos]=value;work().neighbours=values;persist();slots[pos].firstChild.textContent=value;slots[pos].classList.add('filled');
       used(answerArea.querySelector('[data-answer="'+value+'"]'));
       FK.playLog?.place?.('neighbour',{value,pos});
-      if(values.every((v,i)=>v===q.answer[i]))solved(row);
+      // Like every other Rätsel, only the cards the child chose turn green (23 Nov review).
+      if(values.every((v,i)=>v===q.answer[i])){slots.forEach(slot=>{if(slot?.dataset.neighbourSlot!==undefined)slot.classList.add('is-correct');});solved(slots[pos]);}
     }
     // A correctly placed card leaves the choices; its empty place keeps the others where they were.
     function used(tile){if(!tile)return;tile.classList.add('is-used');tile.setAttribute('aria-hidden','true');}
-    scene.append(row,groupResult());
+    scene.append(row);
     for(const value of q.choices){
       const tile=h('span',{class:'puzzle-answer puzzle-neighbour-tile','data-answer':value},String(value));
       answerArea.append(draggable(tile,'[data-neighbour-slot]',target=>place(value,Number(target.dataset.neighbourSlot))));
@@ -310,7 +312,7 @@
     if(session.round===session.questions.length){finish();return;}question=R.current(session);
     root.dataset.game=game;root.dataset.host=host;
     if(!session.review)FK.playLog?.show(question);
-    body.replaceChildren(context(host,session.round,R.instructions[game],{explain:!session.review,total:session.questions.length,back:backButton,showTaskNumber:!!session.review,...(session.review?{taskNumber:FK.puzzleCatalogue.iterations(game).findIndex(it=>it.id===session.iterationIds[session.round])+1,taskTotal:FK.puzzleCatalogue.iterations(game).length}:{})}),progress(session.round,session.questions.length),h('h2',{class:'puzzle-prompt',text:question.prompt}));
+    body.replaceChildren(context(host,session.round,{total:session.questions.length,back:backButton,showTaskNumber:!!session.review,...(session.review?{taskNumber:FK.puzzleCatalogue.iterations(game).findIndex(it=>it.id===session.iterationIds[session.round])+1,taskTotal:FK.puzzleCatalogue.iterations(game).length}:{})}),progress(session.round,session.questions.length),h('h2',{class:'puzzle-prompt',text:question.prompt}));
     scene=h('div',{class:'puzzle-scene'});answerArea=h('div',{class:'puzzle-answers'});status=h('p',{class:'puzzle-status sr-only',role:'status','aria-live':'polite'});body.append(scene,answerArea,status);
     const renderers={nuts:renderCount,count:renderCount,reading:renderReading,rhyme:renderReading,add:renderAdd,pattern:renderPattern,fireflies:renderFireflies,picnic:renderPicnic,matrix:renderMatrix,syllable:renderSyllable,robot:renderRobot,order:renderOrder,treasure:renderTreasure,neighbours:renderNeighbours,compare:renderCompare,mirror:renderMirror,vowels:renderVowels,syllables:renderSyllables,colours:renderColours,'shape-match':renderShapeMatch,leaves:renderLeaves};
     renderers[question.kind](question);body.scrollTop=0;
@@ -370,6 +372,6 @@
       FK.playLog?.begin(session);draw();
       root.querySelector('.btn-back').setAttribute('aria-label',session.review?"Zur Rätsel-Prüfung":session.gallery?"Zur Rätsel-Galerie":origin==='forest-book'?'Zurück zu Waldspiele':'Zurück zum Wald');
     },
-    leave(){FK.playLog?.stop();alive=false;clearTimeout(timer);cancelCompletion();FK.forestVoice.cancel();locked=true;}
+    leave(){FK.playLog?.stop();alive=false;clearTimeout(timer);cancelCompletion();locked=true;}
   });
 })();

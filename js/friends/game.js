@@ -61,7 +61,6 @@ setInterval(tick,100);
 function close({restoreFocus=true}={}){
   const returnLabel=restoreFocus&&['map','letter'].includes(panel)?'Bildkarte':null;backdropTap=null;
   overlay.classList.remove('ff-postcard-overlay','ff-session-end-overlay');
-  FK.forestVoice.cancel();
   tick();if(panel==='puzzle'&&host){state.record('task_leave',{host,activeMilliseconds:activeMs});if(activeMs)state.duration(host,activeMs);activeMs=0;}
   clearTimeout(feedbackTimer);feedbackTimer=null;panel=null;example=false;overlay.hidden=true;overlay.replaceChildren();world.pause(false);nav.hidden=false;renderHotspots();caption.hidden=true;syncMail();
   // Let the touch-generated click finish before restoring focus to the launcher.

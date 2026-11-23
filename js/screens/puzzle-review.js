@@ -52,7 +52,6 @@
   function message(){return h('p',{class:'review-notice',role:'status','aria-live':'polite',text:V.error||notice,hidden:!(V.error||notice)});}
   const releasedPuzzles=()=>FK.friendsLibrary.catalogue().filter(g=>V.ready(g.id)).map(g=>g.id);
   function draw(){
-    FK.forestVoice.cancel();
     const games=FK.friendsLibrary.catalogue().sort((a,b)=>a.title.localeCompare(b.title,'de-CH'));
     const total=games.reduce((a,g)=>a+C.iterations(g.id).length,0),ready=new Set(releasedPuzzles());
     displayedRelease=[...ready].join();
@@ -70,14 +69,7 @@
       }body.append(grid);return;
     }
     const p=C.puzzle(selected),progress=V.progress(selected);
-    const speechStatus=h('p',{class:'review-speech-status',role:'status','aria-live':'polite'});
-    const messages={loading:'',playing:'Spielerklärung wird vorgelesen.',stopped:'Vorlesen gestoppt.',ended:'',error:'Die Sprachausgabe ist auf diesem Gerät nicht verfügbar.'};
-    const speech=FK.ui.btn({icon:'sound',label:'Spielerklärung anhören',onClick:()=>FK.forestVoice.explain(p.instruction,state=>{
-      speechStatus.textContent=messages[state];
-      speech.setAttribute('aria-pressed',String(state==='loading'||state==='playing'));
-    })});
-    speech.setAttribute('aria-pressed','false');
-    body.append(message(),h('h2',{text:p.title}),h('section',{class:'review-competence'},h('h3',{text:'Geübte Kompetenz'}),h('p',{text:competences[selected]}),h('p',{text:'Lehrplanbezug: '+p.reference})),h('p',{text:'Schwierigkeit: '+p.displayDifficulty}),h('p',{text:progress.approved+' / '+progress.total+' freigegeben · '+progress.improve+' verbessern · '+progress.pending+' offen'}),...(V.status(selected).status==='improve'?[h('p',{class:'review-status pending',text:"Rätsel offen · allgemeiner Hinweis"})]:[]),h('section',{class:'review-speech'},h('h3',{text:'Spielerklärung'}),h('p',{text:p.instruction}),speech,speechStatus));
+    body.append(message(),h('h2',{text:p.title}),h('section',{class:'review-competence'},h('h3',{text:'Geübte Kompetenz'}),h('p',{text:competences[selected]}),h('p',{text:'Lehrplanbezug: '+p.reference})),h('p',{text:'Schwierigkeit: '+p.displayDifficulty}),h('p',{text:progress.approved+' / '+progress.total+' freigegeben · '+progress.improve+' verbessern · '+progress.pending+' offen'}),...(V.status(selected).status==='improve'?[h('p',{class:'review-status pending',text:"Rätsel offen · allgemeiner Hinweis"})]:[]),h('section',{class:'review-instruction'},h('h3',{text:'Spielerklärung'}),h('p',{text:p.instruction})));
     const id=selected,note=h('textarea',{'aria-label':"Allgemeiner Kommentar zum Rätsel",maxlength:4000,rows:4,placeholder:"Was möchtest du zum gesamten Rätsel festhalten?",text:drafts.get(id)??''});
     const saved=h('p',{class:'review-notice',role:'status','aria-live':'polite'});
     note.addEventListener('input',()=>{drafts.set(id,note.value);saved.textContent='Noch nicht gespeichert.';});
@@ -164,6 +156,6 @@
       }});backButton=bar.querySelector('.btn-back');root.append(bar,h('div',{class:'scroll'},body));
     },
     enter(params){if(!V.authorized){V.open();return;}selected=C.puzzle(params.reviewPuzzle)?params.reviewPuzzle:null;filter='all';draw();toTop();},
-    leave(){notice='';FK.forestVoice.cancel();}
+    leave(){notice='';}
   });
 })();

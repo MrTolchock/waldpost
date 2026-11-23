@@ -61,7 +61,8 @@
 }
 .puzzle-button.is-correct,.puzzle-scene.is-correct,.puzzle-scene .is-correct{background-color:#e8efd6;border-color:#7f9a48;box-shadow:0 0 0 2px #8fa76055}
 .puzzle-scene .is-correct{position:relative}
-.puzzle-nuts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;max-width:360px;margin:auto}
+/* One acorn size for every count and column number; the cell shrinks only with the screen. */
+.puzzle-nuts{--nut-cell:clamp(40px,calc((100dvh - 440px) / 4),96px);display:grid;grid-template-columns:repeat(var(--nut-columns,5),var(--nut-cell));gap:6px;justify-content:center;max-width:100%;margin:auto}
 .puzzle-empty{display:flex;justify-content:center}.puzzle-empty-basket{display:block;width:160px;height:160px}.puzzle-empty-basket>.puzzle-picture{width:100%;height:100%}
 .puzzle-counter{display:grid;place-items:center;padding:2px;aspect-ratio:1;min-width:0;min-height:0;width:100%}
 .puzzle-counter .puzzle-picture{width:100%;height:100%;aspect-ratio:1}
@@ -116,7 +117,7 @@
  .puzzle-context{gap:8px;padding-bottom:8px}.puzzle-context>.forest-portrait{width:40px;height:40px}.puzzle-context>.puzzle-round{font-size:14px}
  .puzzle-progress{margin-top:12px;gap:8px}.puzzle-progress>span{width:24px;height:24px}.puzzle-progress .wa-illustration{width:20px;height:20px}.puzzle-prompt{margin:12px auto 14px}.puzzle-scene{padding:12px;margin-bottom:16px;border-radius:20px}
  .puzzle-answers{gap:9px}.puzzle-answer{min-width:74px;min-height:70px;padding:8px 12px}.puzzle-answer>.puzzle-picture,.puzzle-word-answer>.puzzle-picture{width:76px;height:76px}
- .puzzle-counter{border-radius:12px}.puzzle-nuts{gap:2px}.puzzle-meadow{gap:2px}.puzzle-meadow .puzzle-counter{min-height:48px}.puzzle-addition{gap:6px;grid-template-columns:1fr 20px 1fr}.puzzle-addition>section{padding:6px}.puzzle-addition .puzzle-objects{min-height:80px;grid-template-columns:repeat(3,minmax(0,1fr))}.puzzle-addition .forest-portrait{width:40px;height:40px}
+ .puzzle-counter{border-radius:12px}.puzzle-nuts{gap:2px;--nut-cell:min(64px,calc((100vw - 96px) / 5),calc((100dvh - 440px) / 4))}.puzzle-meadow{gap:2px}.puzzle-meadow .puzzle-counter{min-height:48px}.puzzle-addition{gap:6px;grid-template-columns:1fr 20px 1fr}.puzzle-addition>section{padding:6px}.puzzle-addition .puzzle-objects{min-height:80px;grid-template-columns:repeat(3,minmax(0,1fr))}.puzzle-addition .forest-portrait{width:40px;height:40px}
  .puzzle-pattern{gap:5px}.puzzle-pattern-cell{width:49px;height:49px}.puzzle-firefly-slots{gap:5px}.puzzle-plates{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.puzzle-plates>section{padding:4px}.puzzle-plate{height:72px}.puzzle-plate .forest-portrait{width:48px;height:48px}.puzzle-plate-berries{min-height:44px}.puzzle-picnic-basket{gap:4px;padding:5px}.puzzle-picnic-basket>.puzzle-picture{width:55px;height:55px}
  .puzzle-nut-pairs{gap:8px 12px}.puzzle-nut-pair>.puzzle-picture,.puzzle-partner{width:48px;height:48px}.puzzle-matrix{max-width:250px;gap:14px}.puzzle-matrix-row{padding:4px 7px;gap:6px}.puzzle-matrix-row>span{height:48px}.puzzle-answer>.puzzle-shape{width:54px;height:54px}.puzzle-construction{width:220px;height:220px}
  .puzzle-matrix-row .puzzle-shape{width:40px;height:40px}
@@ -127,7 +128,7 @@
  .puzzle-survey-row{padding:5px;gap:8px;min-height:62px}.puzzle-survey-row>.puzzle-picture{width:43px;height:43px}.puzzle-voters{gap:3px}.puzzle-syllable-slots{gap:7px}.puzzle-syllable-slot{min-width:65px;min-height:56px;padding:5px 9px}.puzzle-syllable-chip{min-width:65px}.puzzle-syllable-leaf{width:95px;height:95px}
  .puzzle-completion{min-height:360px;padding:15px 0}.puzzle-completion p{font-size:15px}.friends-interface .screen-trace>.puzzle-trace-context{padding:8px 10px}
 }
-@media(max-height:650px) and (min-width:601px){.puzzle-context>.forest-portrait{width:40px;height:40px}.puzzle-progress{margin:9px auto 6px}.puzzle-prompt{margin:8px auto}.puzzle-scene{padding:9px}.puzzle-meadow{max-width:350px}.puzzle-nuts{max-width:320px}.puzzle-route{max-width:230px}.puzzle-construction{width:180px;height:180px}.puzzle-matrix{gap:12px}.puzzle-matrix-row>span{height:42px}.puzzle-answer>.puzzle-picture{width:90px;height:90px}}
+@media(max-height:650px) and (min-width:601px){.puzzle-context>.forest-portrait{width:40px;height:40px}.puzzle-progress{margin:9px auto 6px}.puzzle-prompt{margin:8px auto}.puzzle-scene{padding:9px}.puzzle-meadow{max-width:350px}.puzzle-route{max-width:230px}.puzzle-construction{width:180px;height:180px}.puzzle-matrix{gap:12px}.puzzle-matrix-row>span{height:42px}.puzzle-answer>.puzzle-picture{width:90px;height:90px}}
 @media(max-height:650px) and (min-width:601px){.puzzle-matrix-row .puzzle-shape{width:34px;height:34px}}
 @media(prefers-reduced-motion:reduce){.screen-trace *,.screen-puzzle *,.puzzle-completion *{animation:none!important;transition:none!important}}
 
@@ -180,7 +181,7 @@
 }
 .puzzle-route-cell>.forest-portrait{width:100%;height:100%;pointer-events:none}
 .puzzle-group-result{display:none;align-items:center;justify-content:center;gap:6px;width:max-content;margin:10px auto 0;padding:5px 12px;border:1px solid #9aa96e;border-radius:16px;background:#e8efd6;color:#42532d;font:700 16px/1.35 var(--read)}
-:is(.puzzle-picnic-friends,.puzzle-neighbours).is-correct+.puzzle-group-result{display:flex}
+.puzzle-picnic-friends.is-correct+.puzzle-group-result{display:flex}
 
 /* Atlas cells stay square when compact rows reduce the available height. */
 .puzzle-matrix-row .puzzle-picture{width:auto;height:100%;aspect-ratio:1;max-width:56px;max-height:56px}
@@ -188,10 +189,7 @@
 .puzzle-neighbour-tile{display:grid;place-items:center;min-width:56px;min-height:56px;background:#fffaf0;border:2px solid #bda482;border-radius:14px;font:700 var(--puzzle-score-size)/1.35 var(--read)}
 .puzzle-number-card[data-neighbour-slot]{border:2px dashed #aa926c}
 .puzzle-number-card.is-drop-target{background:#e0eccf}
-/* The neighbour row keeps its place when «Das passt!» appears, and a
-   rejected number card returns unchanged (22 Nov review). */
-.puzzle-neighbours+.puzzle-group-result{display:flex;visibility:hidden}
-.puzzle-neighbours.is-correct+.puzzle-group-result{visibility:visible}
+/* A rejected number card returns unchanged (22 Nov review). */
 .puzzle-neighbour-tile.is-used{visibility:hidden;pointer-events:none}
 .puzzle-story-slot{position:relative}
 .puzzle-story-slot:not(:last-child)::after{content:"›";position:absolute;left:100%;width:10px;color:#766649;font-size:18px}
@@ -204,7 +202,6 @@
  .puzzle-progress{margin:10px auto 6px}
  .puzzle-prompt{margin:8px auto 12px}
  .puzzle-scene{padding:12px;margin-bottom:12px}
- .puzzle-nuts{max-width:320px}
  .puzzle-meadow{max-width:340px}
  .puzzle-matrix{gap:12px}
  .puzzle-route{max-width:300px}
@@ -220,7 +217,6 @@
  .puzzle-matrix-row>span{height:56px}
 }
 @media(min-width:601px) and (max-height:700px){
- .puzzle-nuts{max-width:300px}
  .puzzle-picnic-bank{margin-bottom:8px;padding:4px}
  .puzzle-picnic-friends{gap:8px}
  .puzzle-picnic-place{padding:4px}
@@ -231,6 +227,7 @@
 
 /* Filled number spaces are ordinary cards; only empty spaces invite a drop. */
 .puzzle-number-card[data-neighbour-slot].filled{border-style:solid;background:#fffaf0}
+.puzzle-number-card[data-neighbour-slot].is-correct{border:1px solid #7f9a48;background-color:#e8efd6;box-shadow:0 0 0 2px #8fa76055}
 .puzzle-memory-button{flex-basis:auto;width:64px;max-width:64px;height:64px;min-height:64px;padding:12px}
 .puzzle-memory-button>.utility-icon{width:36px;height:36px}
 

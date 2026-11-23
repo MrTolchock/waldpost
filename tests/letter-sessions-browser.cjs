@@ -16,7 +16,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
   const mail=()=>page.evaluate(()=>FK.friends.mail());
   const visit=async id=>{await page.evaluate(async id=>{const {places}=await import('./js/friends/world.js'),p=places[id];FK.friendsForest.teleport(p.x,p.z);document.querySelector('.ff-hotspots [data-place="'+id+'"]').click();},id);};
   const solve=async id=>{
-   assert.equal(await active().getByRole('button',{name:'Spiel erklären',exact:true}).count(),1,'child puzzle keeps its explanation');assert.equal(await active().locator('.review-reject').count(),0,'review controls are absent from child play');
+   assert.equal(await active().getByRole('button',{name:'Spiel erklären',exact:true}).count(),0,'child puzzle has no read-aloud');assert.equal(await active().locator('.review-reject').count(),0,'review controls are absent from child play');
    for(let n=0;n<5;n++){
      const q=await page.evaluate(id=>FK.puzzleRounds.current(FK.puzzleRounds.start(id)),id);
      await active().locator('[data-answer]').evaluateAll((nodes,answer)=>{const b=nodes.find(n=>n.dataset.answer===String(answer));if(!b)throw Error('Answer missing');b.click();},q.answer);

@@ -237,11 +237,11 @@ export const details = {
    this after the screen locks, a call, Siri, another app's sound or speech), it is woken again when the page comes
    back, and a context that is closed or stopped running is replaced on the next tap. */
 export function createAudio(settings, environment = () => null) {
-  let ctx, ambience, room, near, analyser, timer, area = 'den', speaking = false, speechFrom = 0, speechQuiet = 0, birdCalls = 0, steps = 0, cues = 0, noise, beds = null, director, birds, foliage;
+  let ctx, ambience, room, near, analyser, timer, area = 'den', birdCalls = 0, steps = 0, cues = 0, noise, beds = null, director, birds, foliage;
   let lastClock = -1, clockMoved = 0, stalled = 0, recoveries = 0, sources = [];
   function gain(node, value) { node.gain.cancelScheduledValues(ctx.currentTime); if (document.hidden) node.gain.setValueAtTime(0, ctx.currentTime); else node.gain.setTargetAtTime(value, ctx.currentTime, .3); }
   function update() { if (!ctx || ctx.state === 'closed') return; const s = settings(), audible = !document.hidden;
-    gain(ambience, s.ambience && audible ? (area === 'forest' ? 1.4 : 1) * (speaking ? .3 : 1) : 0);
+    gain(ambience, s.ambience && audible ? (area === 'forest' ? 1.4 : 1) : 0);
     room.frequency.setTargetAtTime(area === 'forest' ? 16000 : 2000, ctx.currentTime, .35); }               // in the den the wood is heard through the window and the walls
   const loop = (buffer, rate) => { const s = ctx.createBufferSource(); s.buffer = buffer; s.loop = true; s.playbackRate.value = rate; s.start(0, Math.random() * buffer.duration); sources.push(s); return s; };
   const filter = (type, frequency, q = .5) => { const f = ctx.createBiquadFilter(); f.type = type; f.frequency.value = frequency; f.Q.value = q; return f; };
@@ -302,15 +302,10 @@ export function createAudio(settings, environment = () => null) {
   // A single sound right now (the letter flap, the door, what Fuchs does): clear in the den, placed outside in the forest.
   function cue(c) { if (!ctx || ctx.state !== 'running' || document.hidden || !settings().ambience || !details[c.type]) return false;
     details[c.type](ctx, place(c.pan || 0, c.far ?? 0, c.lasts || 3.5, inside() ? near : room), noise, ctx.currentTime + .02, c.level ?? 1); cues++; return true; }
-  // Speech ducks the wood. Some browsers (iOS) never report the end of an utterance, or keep one pending for ever;
-  // then the wood comes back by itself once the voice is quiet, and after a minute at most.
-  function checkSpeech(now) { if (!speaking || window.FK.forestVoice?.playingClip) return; const synth = window.speechSynthesis, quiet = !synth || !(synth.speaking || synth.pending);
-    if (!quiet) speechQuiet = now;
-    if (now - speechQuiet > 1500 || now - speechFrom > 60000) { speaking = false; update(); } }
   // A context that says "running" but whose clock stands still makes no sound (WebKit after an interruption): replace it on the next tap.
   function watchClock(now) { if (ctx.currentTime !== lastClock) { lastClock = ctx.currentTime; clockMoved = now; } stalled = (now - clockMoved) / 1000; }
   function tick() {
-    if (!ctx || document.hidden) return; const now = performance.now(); checkSpeech(now);
+    if (!ctx || document.hidden) return; const now = performance.now();
     if (ctx.state !== 'running') { clockMoved = now; if (ctx.state !== 'closed') ctx.resume().catch(() => {}); return; }
     watchClock(now); const s = settings();
     const here = environment() || {}, {beds: b, events} = director.step(ctx.currentTime, {...here, indoors: inside()});
@@ -340,13 +335,13 @@ export function createAudio(settings, environment = () => null) {
   }
   const key = e => { if (e.key === 'Enter' || e.key === ' ') unlock(); };
   const gestures = ['pointerdown', 'pointerup', 'touchend', 'click'];
-  const visibility = () => { if (!document.hidden && ctx && ctx.state !== 'running' && ctx.state !== 'closed') ctx.resume().catch(() => {}); stalled = 0; lastClock = -1; clockMoved = performance.now(); update(); if (document.hidden) window.FK.forestVoice.cancel(); };
+  const visibility = () => { if (!document.hidden && ctx && ctx.state !== 'running' && ctx.state !== 'closed') ctx.resume().catch(() => {}); stalled = 0; lastClock = -1; clockMoved = performance.now(); update(); };
   for (const type of gestures) document.addEventListener(type, unlock, {passive: true, capture: true});
   document.addEventListener('keydown', key); document.addEventListener('visibilitychange', visibility); window.addEventListener('pageshow', visibility);
-  const offSettings = window.FK.on('friends-audio', () => { unlock(); update(); }), offSpeech = window.FK.on('speech', event => { speaking = event.active; speechFrom = speechQuiet = performance.now(); update(); if (!event.active && ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); });
+  const offSettings = window.FK.on('friends-audio', () => { unlock(); update(); });
   return {unlock, update, cue, setArea(value) { area = value; update(); }, get context() { return ctx; },
     get diagnostics() { const data = new Float32Array(analyser?.fftSize || 0); if (ctx) analyser?.getFloatTimeDomainData(data);
-      return {recordedBirds: birds?.count || 0, state: ctx?.state || 'locked', area, layers: beds ? Object.keys(beds).length : 0, birdCalls, steps, cues, recoveries, speaking, audible: !!ctx && !!ambience && ambience.gain.value > .01, ambience: settings().ambience, rms: data.length ? Math.sqrt(data.reduce((n, v) => n + v * v, 0) / data.length) : 0}; },
-    dispose() { teardown(); offSettings(); offSpeech(); for (const type of gestures) document.removeEventListener(type, unlock, {capture: true}); document.removeEventListener('keydown', key); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pageshow', visibility); }
+      return {recordedBirds: birds?.count || 0, state: ctx?.state || 'locked', area, layers: beds ? Object.keys(beds).length : 0, birdCalls, steps, cues, recoveries, audible: !!ctx && !!ambience && ambience.gain.value > .01, ambience: settings().ambience, rms: data.length ? Math.sqrt(data.reduce((n, v) => n + v * v, 0) / data.length) : 0}; },
+    dispose() { teardown(); offSettings(); for (const type of gestures) document.removeEventListener(type, unlock, {capture: true}); document.removeEventListener('keydown', key); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pageshow', visibility); }
   };
 }

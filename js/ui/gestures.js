@@ -1,10 +1,7 @@
-/* Shared touch gestures and optional rule speech. */
+/* Shared touch gestures. */
 (function(){
 'use strict';
-const FK=window.FK,h=FK.h;
-  function listen(text, label = 'Aufgabe nochmals hören') {
-    return h('button', { type:'button', class:'play-listen', 'aria-label':label, onclick:() => FK.forestVoice.explain(typeof text === 'function' ? text() : text) }, FK.icons.element('speaker'));
-  }
+const FK=window.FK;
   // One shared button gesture for the whole app, including the world, books,
   // settings and popovers. Suppress only the compatibility click of that gesture.
   const presses=new Map(), consumed=new Set();
@@ -53,5 +50,5 @@ const FK=window.FK,h=FK.h;
   function bindTouch(root){return root;}
   document.addEventListener('keydown',()=>{inputMethod='keyboard';},true);
 
-FK.play={listen,consumeGesture,bindTouch,inputMethod:()=>inputMethod};
+FK.play={consumeGesture,bindTouch,inputMethod:()=>inputMethod};
 })();

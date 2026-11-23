@@ -1,6 +1,5 @@
 /* Woodland sound in the real game: it starts on the first tap, the den has its own sounds (letter flap, door,
-   apple, sleep), and the sound comes back after the browser suspends, closes or stalls it, or after speech that
-   never reports its end (iOS). */
+   apple, sleep), and the sound comes back after the browser suspends, closes or stalls it. */
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict');
 const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000';
 (async()=>{
@@ -32,9 +31,6 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000';
   await page.evaluate(()=>FK.friendsAudio.context.close());await wait(()=>FK.friendsAudio.diagnostics.state==='closed');
   await tap();await wait(()=>FK.friendsAudio.diagnostics.state==='running'&&FK.friendsAudio.diagnostics.recoveries===1);
   assert.equal(await page.evaluate(()=>FK.friendsAudio.cue({type:'creak'})),true);console.log('PASS a closed context is replaced on the next tap');
-  // speech that never reports its end does not keep the wood ducked
-  await page.evaluate(()=>FK.emit('speech',{active:true}));assert.equal((await d()).speaking,true);
-  await wait(()=>!FK.friendsAudio.diagnostics.speaking);console.log('PASS ducking ends when speech has stopped');
   assert.equal(errors.length,0,errors.join('\n'));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});
