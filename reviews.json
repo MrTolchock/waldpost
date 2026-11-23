@@ -27678,6 +27678,24 @@
       "at": "2026-11-23T20:01:06.659Z",
       "seen": true,
       "operation": "2b29e366-45fe-4399-af46-2cdff4ff6824"
+    },
+    "robot/2-2@2b9b8caf663a6f81": {
+      "key": "robot/2-2",
+      "revision": "2b9b8caf663a6f81",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T20:01:11.613Z",
+      "seen": true,
+      "operation": "30d0b66c-c74c-41b4-9da2-94f8a412d37a"
+    },
+    "robot/2-3@858cc4ae9bed891e": {
+      "key": "robot/2-3",
+      "revision": "858cc4ae9bed891e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T20:01:17.692Z",
+      "seen": true,
+      "operation": "c5ae38ce-7369-4106-8053-7b257614dc9d"
     }
   },
   "history": [
