@@ -72,3 +72,17 @@ Damit sind 12 Rätsel bis zur Prüfung in der Rätsel-Prüfung für Kinder gespe
 - Die Karte zeigt das Briefziel auf dem Telefon.
 - Neu prüft eine Browser-Stufe in der CI die Rätsel-Galerie, das iPad-Layout, die Lebensräume und die Briefreise.
 - Dabei ist ein weiterer veralteter Test aufgefallen und korrigiert: Die dokumentierte historische Wiederherstellungsprüfung (`WALDPOST_REVIEW_REF=61ef045…`) schlug schon seit 9.4.27 fehl. Sie nennt jetzt genau die Rätsel, die seither absichtlich geändert wurden.
+
+## Nachtrag: zweite Runde (9.4.34)
+
+Die Prüfung am Nachmittag ergab zu «Mengen zählen» und «Wörter in Silben zerlegen» je den Hinweis «fast immer mittlere Antwort». Die Ursache lag in 9.4.33: Die aufsteigend sortierten Karten waren immer `n-1, n, n+1`, die Lösung stand also immer in der Mitte. Dasselbe galt bei Gezielt Mengen zählen, Mengen addieren und Mengen ergänzen. Auch bei den Zahlennachbarn standen die Lösungen immer in der Mitte der Reihe.
+
+| Rätsel | Umsetzung |
+| --- | --- |
+| Mengen zählen, Gezielt Mengen zählen, Mengen addieren, Mengen ergänzen, Wörter in Silben zerlegen | Die Karten bleiben aufsteigend. Jede Aufgabe bietet aber ein eigenes Fenster aus drei Zahlen an, darum steht die Lösung links, in der Mitte oder rechts, je etwa ein Drittel. Die Lösung ist damit auch nicht mehr immer der mittlere Zahlenwert. Ausnahme bei den Silben: Einsilbige Wörter stehen zwangsläufig links, fünfsilbige rechts. |
+| Zahlennachbarn | Die beiden Nachbarn stehen am Anfang, in der Mitte oder am Ende der Kartenreihe. Ist der Vorgänger vorgegeben, steht der Nachfolger links, in der Mitte oder rechts. Die gezeigten Zahlen erscheinen weiterhin nie als Auswahl. |
+| Tiermerkmale | Das gezeichnete Eichhörnchen hält eine Eichel. Die Frage lautet darum «Wer hält eine Eichel?», auch die Bildnamen in der Bildbibliothek sagen jetzt «Eichel». |
+
+Welche Stelle eine Aufgabe erhält, hängt nur von ihrer festen Kennung ab. Neue Aufgaben verschieben deshalb nie die Karten bestehender Aufgaben und öffnen deren Prüfung nicht erneut. Die neue Prüfung `tests/answer-positions.test.cjs` verlangt, dass in tausenden echten Runden jedes Rätsels keine Antwortposition über 45 % liegt, bei zwei Karten über 60 %. Ausserdem darf bei Zahlenkarten der mittlere Wert nicht überwiegen. Alle anderen Rätsel mischen ihre Bild-, Wort- und Buchstabenkarten bereits gleichmässig.
+
+Freigaben: 180 Aufgaben haben neue Zahlenkarten oder eine neue Frage und sind wieder offen. Betroffen sind 24 bei Mengen zählen, 30 bei Gezielt Mengen zählen, 45 bei Mengen addieren, 39 bei Mengen ergänzen, 18 bei den Silben, 23 bei den Zahlennachbarn und 1 Tierfrage. Alle übrigen Freigaben bleiben unverändert. Offen aus allen Prüfungen sind jetzt nur Aufgaben, die neu geprüft werden müssen. Es gibt keinen ungelösten Kommentar mehr.

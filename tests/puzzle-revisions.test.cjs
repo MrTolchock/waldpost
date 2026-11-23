@@ -100,7 +100,7 @@ test('the iteration recovery release retained verified historical decisions with
  }
 });
 test('one edited question reopens only its iteration while menu text and summaries retain all approvals',()=>{
- const question=changed('js/friends/puzzle-catalogue.js',s=>s.replace('Wer hält eine Nuss?','Wer trägt eine Nuss?'));
+ const question=changed('js/friends/puzzle-catalogue.js',s=>s.replace('Wer hält eine Eichel?','Wer trägt eine Eichel?'));
  const affected=built=>Object.keys(base.iterations).filter(key=>JSON.stringify(base.iterations[key])!==JSON.stringify(built.iterations[key]));
  assert.deepEqual(affected(question),['friends-hedgehog/riddle-10']);
  const summary=changed('js/friends/puzzle-catalogue.js',s=>s.replace("'Mengen zählen'","'Anzahlen bestimmen'"));assert.deepEqual(affected(summary),[]);

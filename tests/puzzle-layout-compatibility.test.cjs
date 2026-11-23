@@ -104,7 +104,8 @@ test('the 23 November habitat paintings and layout corrections keep exactly the 
   if(!before){assert.ok(R23.added(it.id),it.id+' is new');assert.equal(catalogue.formerIterationRevisions(game.id,it).length,0,it.id+' starts open');continue;}
   const accepted=catalogue.acceptsRevision(game.id,it.id,before.revision);
   assert.equal(accepted,!R23.changed(it.id),it.id);accepted?kept++:reopened++;
-  if(R23.changed(it.id))assert.equal(Boolean(migration.iterations[it.id]),false,it.id+' has no bridge edge');
+  if(R23.changedFirst(it.id))assert.equal(Boolean(migration.iterations[it.id]),false,it.id+' has no bridge edge');
  }
- assert.equal(kept,568);assert.equal(reopened,195);
+ // 568 kept after the first round; the second round (balanced number windows) reopened 132 of them.
+ assert.equal(kept,436);assert.equal(reopened,327);
 });

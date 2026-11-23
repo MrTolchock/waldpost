@@ -82,9 +82,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 1,
       "answer": 4,
       "choices": [
-        4,
+        2,
         3,
-        5
+        4
       ]
     }
   },
@@ -98,8 +98,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 2,
       "answer": 3,
       "choices": [
-        3,
         2,
+        3,
         4
       ]
     }
@@ -115,8 +115,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 2,
       "choices": [
         2,
-        1,
-        3
+        3,
+        4
       ]
     }
   },
@@ -131,8 +131,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 1,
       "choices": [
         1,
-        0,
-        2
+        2,
+        3
       ]
     }
   },
@@ -146,8 +146,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 1,
       "answer": 5,
       "choices": [
-        5,
         4,
+        5,
         6
       ]
     }
@@ -162,9 +162,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 2,
       "answer": 4,
       "choices": [
-        4,
+        2,
         3,
-        5
+        4
       ]
     }
   },
@@ -179,8 +179,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 3,
       "choices": [
         3,
-        2,
-        4
+        4,
+        5
       ]
     }
   },
@@ -194,9 +194,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 4,
       "answer": 2,
       "choices": [
-        2,
+        0,
         1,
-        3
+        2
       ]
     }
   },
@@ -211,8 +211,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 1,
       "choices": [
         1,
-        0,
-        2
+        2,
+        3
       ]
     }
   },
@@ -226,9 +226,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 1,
       "answer": 6,
       "choices": [
-        6,
+        4,
         5,
-        7
+        6
       ]
     }
   },
@@ -242,9 +242,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 2,
       "answer": 5,
       "choices": [
-        5,
+        3,
         4,
-        6
+        5
       ]
     }
   },
@@ -258,8 +258,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 3,
       "answer": 4,
       "choices": [
-        4,
         3,
+        4,
         5
       ]
     }
@@ -274,8 +274,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 4,
       "answer": 3,
       "choices": [
-        3,
         2,
+        3,
         4
       ]
     }
@@ -291,8 +291,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 2,
       "choices": [
         2,
-        1,
-        3
+        3,
+        4
       ]
     }
   },
@@ -307,8 +307,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 1,
       "choices": [
         1,
-        0,
-        2
+        2,
+        3
       ]
     }
   },
@@ -323,8 +323,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 7,
       "choices": [
         7,
-        6,
-        8
+        8,
+        9
       ]
     }
   },
@@ -339,8 +339,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 6,
       "choices": [
         6,
-        5,
-        7
+        7,
+        8
       ]
     }
   },
@@ -354,8 +354,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 3,
       "answer": 5,
       "choices": [
-        5,
         4,
+        5,
         6
       ]
     }
@@ -370,8 +370,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 4,
       "answer": 4,
       "choices": [
-        4,
         3,
+        4,
         5
       ]
     }
@@ -386,9 +386,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 5,
       "answer": 3,
       "choices": [
-        3,
+        1,
         2,
-        4
+        3
       ]
     }
   },
@@ -402,9 +402,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 6,
       "answer": 2,
       "choices": [
-        2,
+        0,
         1,
-        3
+        2
       ]
     }
   },
@@ -419,8 +419,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 1,
       "choices": [
         1,
-        0,
-        2
+        2,
+        3
       ]
     }
   },
@@ -435,8 +435,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 8,
       "choices": [
         8,
-        7,
-        9
+        9,
+        10
       ]
     }
   },
@@ -450,9 +450,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 2,
       "answer": 7,
       "choices": [
-        7,
+        5,
         6,
-        8
+        7
       ]
     }
   },
@@ -466,8 +466,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 3,
       "answer": 6,
       "choices": [
-        6,
         5,
+        6,
         7
       ]
     }
@@ -482,9 +482,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 4,
       "answer": 5,
       "choices": [
-        5,
+        3,
         4,
-        6
+        5
       ]
     }
   },
@@ -498,8 +498,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 5,
       "answer": 4,
       "choices": [
-        4,
         3,
+        4,
         5
       ]
     }
@@ -515,8 +515,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 3,
       "choices": [
         3,
-        2,
-        4
+        4,
+        5
       ]
     }
   },
@@ -530,9 +530,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 7,
       "answer": 2,
       "choices": [
-        2,
+        0,
         1,
-        3
+        2
       ]
     }
   },
@@ -547,8 +547,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 1,
       "choices": [
         1,
-        0,
-        2
+        2,
+        3
       ]
     }
   },
@@ -562,9 +562,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 1,
       "answer": 9,
       "choices": [
-        9,
+        7,
         8,
-        10
+        9
       ]
     }
   },
@@ -578,9 +578,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 2,
       "answer": 8,
       "choices": [
-        8,
+        6,
         7,
-        9
+        8
       ]
     }
   },
@@ -594,8 +594,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 3,
       "answer": 7,
       "choices": [
-        7,
         6,
+        7,
         8
       ]
     }
@@ -610,9 +610,9 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 4,
       "answer": 6,
       "choices": [
-        6,
+        4,
         5,
-        7
+        6
       ]
     }
   },
@@ -626,8 +626,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 5,
       "answer": 5,
       "choices": [
-        5,
         4,
+        5,
         6
       ]
     }
@@ -642,8 +642,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 6,
       "answer": 4,
       "choices": [
-        4,
         3,
+        4,
         5
       ]
     }
@@ -659,8 +659,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 3,
       "choices": [
         3,
-        2,
-        4
+        4,
+        5
       ]
     }
   },
@@ -674,8 +674,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 8,
       "answer": 2,
       "choices": [
-        2,
         1,
+        2,
         3
       ]
     }
@@ -690,8 +690,8 @@ These definitions are the same finite data used by the game and review previews.
       "filled": 9,
       "answer": 1,
       "choices": [
-        1,
         0,
+        1,
         2
       ]
     }

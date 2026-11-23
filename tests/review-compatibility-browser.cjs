@@ -2,8 +2,8 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'/opt/codex/cua_node/lib/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const {remoteServer,installRemote}=require('./review-repository-support.cjs'),{setup}=require('../tools/puzzle-catalogue.cjs');
-// «Gezielt Mengen zählen» is unchanged since the 22 November habitats; the squirrel counting Rätsel changed on 23 November.
-const {empty}=require('../js/friends/review-repository.js'),{FK}=setup(),C=FK.puzzleCatalogue,id=process.env.WALDPOST_REVIEW_PUZZLE||'count',size=C.iterations(id).length;
+// «Mengen vergleichen» (Fisch) is unchanged since the 22 November habitats; the counting Rätsel changed on 23 November.
+const {empty}=require('../js/friends/review-repository.js'),{FK}=setup(),C=FK.puzzleCatalogue,id=process.env.WALDPOST_REVIEW_PUZZLE||'compare',size=C.iterations(id).length;
 const ledger=process.env.WALDPOST_REVIEW_SNAPSHOT?JSON.parse(fs.readFileSync(process.env.WALDPOST_REVIEW_SNAPSHOT)):empty();
 const compatible=C.formerPuzzleRevisions(id).length>0;
 let former=C;

@@ -72,8 +72,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 6,
       "answer": 6,
       "choices": [
-        6,
         5,
+        6,
         7
       ],
       "bugs": [
@@ -100,8 +100,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 6,
       "choices": [
         6,
-        5,
-        7
+        7,
+        8
       ],
       "bugs": [
         "ladybird",
@@ -127,8 +127,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 6,
       "answer": 6,
       "choices": [
-        6,
         5,
+        6,
         7
       ],
       "bugs": [
@@ -156,9 +156,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 7,
       "answer": 7,
       "choices": [
-        7,
+        5,
         6,
-        8
+        7
       ],
       "bugs": [
         "ladybird",
@@ -185,8 +185,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 7,
       "choices": [
         7,
-        6,
-        8
+        8,
+        9
       ],
       "bugs": [
         "ladybird",
@@ -214,8 +214,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 7,
       "choices": [
         7,
-        6,
-        8
+        8,
+        9
       ],
       "bugs": [
         "ladybird",
@@ -244,8 +244,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 8,
       "choices": [
         8,
-        7,
-        9
+        9,
+        10
       ],
       "bugs": [
         "ladybird",
@@ -272,9 +272,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 8,
       "answer": 8,
       "choices": [
-        8,
+        6,
         7,
-        9
+        8
       ],
       "bugs": [
         "ladybird",
@@ -302,9 +302,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 8,
       "answer": 8,
       "choices": [
-        8,
+        6,
         7,
-        9
+        8
       ],
       "bugs": [
         "ladybird",
@@ -334,8 +334,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 9,
       "choices": [
         9,
-        8,
-        10
+        10,
+        11
       ],
       "bugs": [
         "ladybird",
@@ -363,8 +363,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 9,
       "answer": 9,
       "choices": [
-        9,
         8,
+        9,
         10
       ],
       "bugs": [
@@ -395,8 +395,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 9,
       "choices": [
         9,
-        8,
-        10
+        10,
+        11
       ],
       "bugs": [
         "ladybird",
@@ -426,9 +426,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 10,
       "answer": 10,
       "choices": [
-        10,
+        8,
         9,
-        11
+        10
       ],
       "bugs": [
         "ladybird",
@@ -458,8 +458,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 10,
       "choices": [
         10,
-        9,
-        11
+        11,
+        12
       ],
       "bugs": [
         "ladybird",
@@ -489,9 +489,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 10,
       "answer": 10,
       "choices": [
-        10,
+        8,
         9,
-        11
+        10
       ],
       "bugs": [
         "ladybird",
@@ -522,9 +522,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 11,
       "answer": 11,
       "choices": [
-        11,
+        9,
         10,
-        12
+        11
       ],
       "bugs": [
         "ladybird",
@@ -554,8 +554,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 11,
       "answer": 11,
       "choices": [
-        11,
         10,
+        11,
         12
       ],
       "bugs": [
@@ -587,8 +587,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 11,
       "answer": 11,
       "choices": [
-        11,
         10,
+        11,
         12
       ],
       "bugs": [
@@ -621,9 +621,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 12,
       "answer": 12,
       "choices": [
-        12,
+        10,
         11,
-        13
+        12
       ],
       "bugs": [
         "ladybird",
@@ -655,8 +655,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 12,
       "choices": [
         12,
-        11,
-        13
+        13,
+        14
       ],
       "bugs": [
         "ladybird",
@@ -688,9 +688,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 12,
       "answer": 12,
       "choices": [
-        12,
+        10,
         11,
-        13
+        12
       ],
       "bugs": [
         "ladybird",
@@ -723,8 +723,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 13,
       "answer": 13,
       "choices": [
-        13,
         12,
+        13,
         14
       ],
       "bugs": [
@@ -758,8 +758,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 13,
       "choices": [
         13,
-        12,
-        14
+        14,
+        15
       ],
       "bugs": [
         "ladybird",
@@ -792,9 +792,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 13,
       "answer": 13,
       "choices": [
-        13,
+        11,
         12,
-        14
+        13
       ],
       "bugs": [
         "ladybird",
@@ -828,8 +828,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 14,
       "answer": 14,
       "choices": [
-        14,
         13,
+        14,
         15
       ],
       "bugs": [
@@ -863,9 +863,9 @@ These definitions are the same finite data used by the game and review previews.
       "count": 14,
       "answer": 14,
       "choices": [
-        14,
+        12,
         13,
-        15
+        14
       ],
       "bugs": [
         "ladybird",
@@ -899,8 +899,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 14,
       "answer": 14,
       "choices": [
-        14,
         13,
+        14,
         15
       ],
       "bugs": [
@@ -936,8 +936,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 15,
       "answer": 15,
       "choices": [
-        15,
         14,
+        15,
         16
       ],
       "bugs": [
@@ -973,8 +973,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": 15,
       "choices": [
         15,
-        14,
-        16
+        16,
+        17
       ],
       "bugs": [
         "ladybird",
@@ -1009,8 +1009,8 @@ These definitions are the same finite data used by the game and review previews.
       "count": 15,
       "answer": 15,
       "choices": [
-        15,
         14,
+        15,
         16
       ],
       "bugs": [

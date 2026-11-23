@@ -207,9 +207,9 @@ test('the expanded mouse reading pool keeps approval for all 25 original word ca
  for(const item of items)assert.equal(current.acceptsRevision(id,item.id,former.iterationRevision(id,item)),!R23.changed(item.id),item.id);
 });
 test('verified unchanged partial rounds resume verbatim; changed questions remain archived',()=>{
- const {FK,memory}=setup(),id='count',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);
+ const {FK,memory}=setup(),id='compare',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);
  assert.deepEqual(plain(setup(memory).FK.puzzleRounds.start(id)),plain(s));
- s.questions[0].count=99;FK.puzzleRounds.save(s);const restored=setup(memory),next=restored.FK.puzzleRounds.start(id);assert.equal(next.round,0);assert.equal(JSON.parse(restored.memory.get('farbtupf.puzzles.v1')).legacy[id].questions[0].count,99,'the earlier snapshot is archived');
+ s.questions[0].a=99;FK.puzzleRounds.save(s);const restored=setup(memory),next=restored.FK.puzzleRounds.start(id);assert.equal(next.round,0);assert.equal(JSON.parse(restored.memory.get('farbtupf.puzzles.v1')).legacy[id].questions[0].a,99,'the earlier snapshot is archived');
 });
 
 test('general puzzle comments reopen the puzzle and retain individual decisions',()=>{
@@ -228,7 +228,7 @@ test('general puzzle comments reopen the puzzle and retain individual decisions'
 });
 test('one changed iteration leaves all other approvals intact and the puzzle opens until that item passes',()=>{
  const {FK,execute}=setup(),id='friends-hedgehog';approve(FK,id);const before=plain(FK.puzzleReview.exportData().decisions);
- execute('js/friends/puzzle-catalogue.js',source=>source.replace('Wer hält eine Nuss?','Wer trägt eine Nuss?'));execute('js/friends/puzzle-review.js');
+ execute('js/friends/puzzle-catalogue.js',source=>source.replace('Wer hält eine Eichel?','Wer trägt eine Eichel?'));execute('js/friends/puzzle-review.js');
  const C=FK.puzzleCatalogue,V=owner(FK),key=id+'/riddle-10';assert.equal(V.progress(id).approved,C.iterations(id).length-1);assert.equal(V.status(id).status,'pending');assert.equal(V.ready(id),false);
  assert.deepEqual(plain(V.previewSession(id).iterationIds),[key]);
  for(const it of C.iterations(id))if(it.id!==key){assert.equal(V.status(id,it.id).status,'approved');assert.deepEqual(plain(V.status(id,it.id).decision),before[it.id]);}
@@ -260,7 +260,7 @@ test('comment deletion requires the adult review and a successful local write; a
 
 test('November 17 follow-up uses a pictured nut, real swimming habitat and a short replacement growth question',()=>{
  const C=setup().FK.puzzleCatalogue,q=(id,key)=>C.iterations(id).find(it=>it.id===id+'/'+key).question;
- const squirrel=q('friends-hedgehog','riddle-10');assert.equal(squirrel.text,'Wer hält eine Nuss?');assert.equal(squirrel.answer,'squirrel-nut');assert.ok(squirrel.choices.includes('squirrel-nut'));
+ const squirrel=q('friends-hedgehog','riddle-10');assert.equal(squirrel.text,'Wer hält eine Eichel?'); // the pictured squirrel holds an acorn (23 Nov)assert.equal(squirrel.answer,'squirrel-nut');assert.ok(squirrel.choices.includes('squirrel-nut'));
  for(const key of ['riddle-0','riddle-22']){const item=q('friends-deer',key);assert.equal(item.answer,'habitat-pond');assert.ok(!item.choices.includes('water'));}
  const growth=q('friends-badger','riddle-23');assert.equal(growth.text,'Was wächst aus einer Eichel?');assert.equal(growth.answer,'tree');assert.equal(q('friends-badger','riddle-6').answer,'water','watering questions still use water rather than a habitat');
  assert.equal(C.puzzle('friends-fish'),null);assert.equal(C.iterations('friends-fish').length,0);

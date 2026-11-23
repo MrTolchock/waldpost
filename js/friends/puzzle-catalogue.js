@@ -124,7 +124,7 @@
     ["Wer hat viele Beine?","caterpillar","snail","fish-swim"],
     ["Wer hat schwarze Punkte?","ladybird","bee","snail"],
     ["Wer hat lange Ohren?","hare-sit","hedgehog","bee"],
-    ["Wer hält eine Nuss?","squirrel-nut","frog-sit","fish-swim"],
+    ["Wer hält eine Eichel?","squirrel-nut","frog-sit","fish-swim"],
     ["Wer hat Streifen im Gesicht?","badger-walk","forest-fox","snail"],
     ["Wer hat einen breiten Schwanz?","beaver","hare-sit","snail"],
     ["Wer ist grün?","frog-sit","mouse-sit","badger-walk"],
@@ -247,6 +247,22 @@
   for(let a=1;a<=10;a++)for(const b of [a,Math.max(1,a-1),Math.min(10,a+2)])if(!pools.compare?.some(t=>t.question.a===a&&t.question.b===b))add('compare',a+'-'+b,a+' und '+b,{kind:'compare',item:'fish-swim',prompt:'Wo sind mehr Fische?',a,b,answer:a===b?'equal':a>b?'left':'right',choices:['left','equal','right']});
   const mirrorMasks=[7,56,448,73,146,292,273,84,15,30,60,120,240,480,31,62,124,248,496,91,182,364,341,170,85,340,325,387,457,199];
   mirrorMasks.forEach((mask,n)=>{const left=Array.from({length:9},(_,i)=>i).filter(i=>mask&(1<<i));add('mirror','grid-'+mask,'Blattmuster '+(n+1),{kind:'mirror',prompt:'Ergänze rechts das Spiegelbild.',width:3,rows:3,left,answer:left.map(i=>Math.floor(i/3)*3+2-i%3).sort((a,b)=>a-b)});});
+  // 23 November review: number cards stand in ascending order, so each Aufgabe gets its own window of numbers.
+  // Across every pool the answer stands left, in the middle and right about equally often; its position never gives it away.
+  const spread=key=>{let a=2166136261;for(let i=0;i<key.length;i++)a=Math.imul(a^key.charCodeAt(i),16777619);return a>>>0;};
+  // Each Aufgabe's slot depends only on its own stable ID and a fixed per-pool salt, so adding or editing another Aufgabe never moves it
+  // (and never reopens its review). The salts were chosen once so that every pool spreads its answers evenly (syllable words with one
+  // or five syllables can only stand left or right).
+  const slotSalts={'friends-squirrel':'5:',count:'39:',add:'24:',rocket:'39:',syllable:'2207:','neighbours-both':'25:','neighbours-left':'13:'};
+  function balanceSlots(pool,items,slots,apply){for(const it of items){const allowed=slots(it);apply(it,allowed[spread(slotSalts[pool]+it.id)%allowed.length]);}}
+  const numberWindows={'friends-squirrel':[0,20],count:[0,20],add:[0,20],rocket:[0,10],syllable:[1,5]};
+  for(const [id,[min,max]]of Object.entries(numberWindows))balanceSlots(id,pools[id],it=>[0,1,2].filter(slot=>it.question.answer-slot>=min&&it.question.answer-slot+2<=max),(it,slot)=>{const start=it.question.answer-slot;it.question.choices=[start,start+1,start+2];});
+  // Zahlennachbarn: the right neighbours appear at the start, in the middle or at the end of the card row; the shown numbers never repeat.
+  const neighbourRows={null:[n=>[n-1,n+1,n+2,n+3],n=>[n-2,n-1,n+1,n+2],n=>[n-3,n-2,n-1,n+1]],left:[n=>[n+1,n+2,n+3],n=>[n-2,n+1,n+2],n=>[n-3,n-2,n+1]]};
+  for(const given of [null,'left']){
+   const rows=neighbourRows[given],items=pools.neighbours.filter(it=>it.question.given===given);
+   balanceSlots('neighbours-'+(given||'both'),items,it=>[0,1,2].filter(slot=>rows[slot](it.question.n).every(v=>v>=0&&v<=20)),(it,slot)=>{it.question.choices=rows[slot](it.question.n);});
+  }
   // Strip legacy generator bookkeeping: question identity belongs to the editorial item.
   for(const pool of Object.values(pools))for(const item of pool){delete item.question.id;delete item.question.round;}
   // The colour of the target stays the same within each set; the competing colours change.

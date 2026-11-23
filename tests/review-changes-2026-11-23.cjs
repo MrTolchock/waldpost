@@ -22,12 +22,27 @@ function added(key){
  if(id==='syllable')return Number(rest.slice(5))>=39;
  return id==='vowels'&&rest.startsWith('bild-');
 }
-function changed(key){
+function changedFirst(key){
  const id=key.split('/')[0];
  if(wholePuzzles.has(id)||tasks.has(key)||added(key))return true;
  if(id==='neighbours')return key.endsWith('-left'); // «Welche Zahl kommt danach?»
  return id==='vowels'&&!unchangedVowels.has(key);
 }
+/* Second round on 23 November (9.4.34), after the owner's notes «fast immer mittlere Antwort»: number cards stay
+   ascending, but each Aufgabe offers its own window of numbers, so the answer stands left, in the middle or right.
+   Zahlennachbarn rows move the right neighbours likewise. The squirrel now holds an «Eichel». */
+const secondWhole=new Set(['count','add','rocket']);
+const secondKept=new Set([
+ 'friends-squirrel/count-0',
+ ...['1','3','5','7','9','10','12','13','14','15','16','17','18','20','23','25','27','29','30','32','34','35','36','37','38','39','40','43','46'].map(n=>'syllable/word-'+n),
+ ...['1-left','2-both','4-left','6-left','7-both','8-left','9-both','10-both','12-left','13-both','13-left','15-left','18-both'].map(k=>'neighbours/'+k)
+]);
+function changedSecond(key){
+ const id=key.split('/')[0];
+ if(secondWhole.has(id)||key==='friends-hedgehog/riddle-10')return true;
+ return ['friends-squirrel','syllable','neighbours'].includes(id)&&!secondKept.has(key);
+}
+const changed=key=>changedFirst(key)||changedSecond(key);
 // A puzzle-level sign-off covers its whole pool, so any changed or added task reopens it.
-const puzzles=new Set([...wholePuzzles,'friends-bird','friends-mouse','friends-hedgehog','friends-deer','friends-badger','syllable','neighbours','vowels','add']);
-module.exports={changed,added,puzzles};
+const puzzles=new Set([...wholePuzzles,...secondWhole,'friends-bird','friends-mouse','friends-hedgehog','friends-deer','friends-badger','syllable','neighbours','vowels','add']);
+module.exports={changed,changedFirst,changedSecond,added,puzzles};

@@ -94,9 +94,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -134,9 +134,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -174,9 +174,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -214,9 +214,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -254,9 +254,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -314,9 +314,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -467,9 +467,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -509,9 +509,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
-        2,
         3,
-        4
+        4,
+        5
       ]
     }
   },
@@ -530,9 +530,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
+        1,
         2,
-        3,
-        4
+        3
       ]
     }
   },
@@ -572,9 +572,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
+        1,
         2,
-        3,
-        4
+        3
       ]
     }
   },
@@ -612,9 +612,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -653,9 +653,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
+        1,
         2,
-        3,
-        4
+        3
       ]
     }
   },
@@ -713,9 +713,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -753,9 +753,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 2,
       "choices": [
-        1,
         2,
-        3
+        3,
+        4
       ]
     }
   },
@@ -930,9 +930,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
+        1,
         2,
-        3,
-        4
+        3
       ]
     }
   },
@@ -951,9 +951,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
+        1,
         2,
-        3,
-        4
+        3
       ]
     }
   },
@@ -993,9 +993,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 3,
       "choices": [
+        1,
         2,
-        3,
-        4
+        3
       ]
     }
   },
@@ -1015,9 +1015,9 @@ These definitions are the same finite data used by the game and review previews.
       ],
       "answer": 4,
       "choices": [
+        2,
         3,
-        4,
-        5
+        4
       ]
     }
   },

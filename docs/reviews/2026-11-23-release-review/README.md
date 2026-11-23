@@ -162,7 +162,7 @@ The owner asked for all findings to be fixed and the habitat backgrounds to be r
 | C-6 Sums to 10 | Fixed: nine ten-partner Aufgaben. |
 | C-7 Savannah animals | Kept: the owner curated these questions on 22 November. |
 | C-8 Syllables | Fixed: «Lokomotive», plus eight more three- to five-syllable words. |
-| C-9, C-10 | Fixed: neighbours prompt; number cards ascending. |
+| C-9, C-10 | Fixed: neighbours prompt; number cards ascending. In 9.4.34 each Aufgabe also got its own number window, because the sorted cards had put the answer in the middle every time (owner notes on Mengen zählen and Silben). |
 | D-1, D-2 | Fixed: one compact reading layout with larger picture answers; larger fish. |
 | D-3 | Fixed: the map opens showing the letter's destination. |
 | D-4 | Resolved: the habitat paintings now share the den/world style. |
