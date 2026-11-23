@@ -62,13 +62,13 @@
 | `friends-hedgehog/nature-question-12` | Wer baut ein Nest im Baum? — Wer baut ein Nest im Baum? | "bird" |
 | `friends-hedgehog/nature-question-14` | Wer hat weiche Wolle? — Wer hat weiche Wolle? | "sheep" |
 | `friends-hedgehog/nature-question-15` | Wer hat einen buschigen Schwanz? — Wer hat einen buschigen Schwanz? | "squirrel" |
-| `friends-hedgehog/nature-question-16` | Wer hat einen Rüssel? — Wer hat einen Rüssel? | "elephant" |
-| `friends-hedgehog/nature-question-17` | Wer hat einen langen Hals? — Wer hat einen langen Hals? | "giraffe" |
-| `friends-hedgehog/nature-question-18` | Wer trägt eine Mähne? — Wer trägt eine Mähne? | "lion" |
-| `friends-hedgehog/nature-question-19` | Wessen Fell ist gestreift? — Wessen Fell ist gestreift? | "zebra" |
-| `friends-hedgehog/nature-question-20` | Wer hat Höcker auf dem Rücken? — Wer hat Höcker auf dem Rücken? | "camel" |
-| `friends-hedgehog/nature-question-21` | Wessen Fell hat schwarze Streifen? — Wessen Fell hat schwarze Streifen? | "tiger" |
-| `friends-hedgehog/nature-question-22` | Welcher Vogel schwimmt und taucht? — Welcher Vogel schwimmt und taucht? | "penguin" |
+| `friends-hedgehog/nature-question-16` | Wer klettert auf steile Felsen? — Wer klettert auf steile Felsen? | "alpine-ibex" |
+| `friends-hedgehog/nature-question-17` | Wer pfeift in den Bergen? — Wer pfeift in den Bergen? | "alpine-marmot" |
+| `friends-hedgehog/nature-question-18` | Wer wühlt mit der Schnauze im Waldboden? — Wer wühlt mit der Schnauze im Waldboden? | "wild-boar" |
+| `friends-hedgehog/nature-question-19` | Welcher Vogel steht lange still im Wasser? — Welcher Vogel steht lange still im Wasser? | "heron" |
+| `friends-hedgehog/nature-question-20` | Wer schwimmt im Bach und fängt Fische? — Wer schwimmt im Bach und fängt Fische? | "otter" |
+| `friends-hedgehog/nature-question-21` | Wer hat durchsichtige Flügel? — Wer hat durchsichtige Flügel? | "dragonfly" |
+| `friends-hedgehog/nature-question-22` | Welcher Vogel hat lange rote Beine? — Welcher Vogel hat lange rote Beine? | "stork" |
 | `friends-hedgehog/nature-question-24` | Wer baut einen Damm aus Ästen? — Wer baut einen Damm aus Ästen? | "beaver" |
 
 ## Exact definitions
@@ -619,104 +619,104 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-hedgehog/nature-question-16",
-    "label": "Wer hat einen Rüssel?",
+    "label": "Wer klettert auf steile Felsen?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Wer hat einen Rüssel?",
-      "answer": "elephant",
+      "text": "Wer klettert auf steile Felsen?",
+      "answer": "alpine-ibex",
       "choices": [
-        "elephant",
-        "cat",
-        "sheep"
+        "alpine-ibex",
+        "snail",
+        "fish"
       ]
     }
   },
   {
     "id": "friends-hedgehog/nature-question-17",
-    "label": "Wer hat einen langen Hals?",
+    "label": "Wer pfeift in den Bergen?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Wer hat einen langen Hals?",
-      "answer": "giraffe",
+      "text": "Wer pfeift in den Bergen?",
+      "answer": "alpine-marmot",
       "choices": [
-        "giraffe",
-        "pig",
-        "dog"
+        "alpine-marmot",
+        "sheep",
+        "fish"
       ]
     }
   },
   {
     "id": "friends-hedgehog/nature-question-18",
-    "label": "Wer trägt eine Mähne?",
+    "label": "Wer wühlt mit der Schnauze im Waldboden?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Wer trägt eine Mähne?",
-      "answer": "lion",
+      "text": "Wer wühlt mit der Schnauze im Waldboden?",
+      "answer": "wild-boar",
       "choices": [
-        "lion",
-        "sheep",
-        "bird"
+        "wild-boar",
+        "bird",
+        "fish"
       ]
     }
   },
   {
     "id": "friends-hedgehog/nature-question-19",
-    "label": "Wessen Fell ist gestreift?",
+    "label": "Welcher Vogel steht lange still im Wasser?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Wessen Fell ist gestreift?",
-      "answer": "zebra",
+      "text": "Welcher Vogel steht lange still im Wasser?",
+      "answer": "heron",
       "choices": [
-        "zebra",
-        "dog",
-        "cow"
+        "heron",
+        "forest-robin",
+        "forest-owl"
       ]
     }
   },
   {
     "id": "friends-hedgehog/nature-question-20",
-    "label": "Wer hat Höcker auf dem Rücken?",
+    "label": "Wer schwimmt im Bach und fängt Fische?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Wer hat Höcker auf dem Rücken?",
-      "answer": "camel",
+      "text": "Wer schwimmt im Bach und fängt Fische?",
+      "answer": "otter",
       "choices": [
-        "camel",
-        "cat",
-        "bee"
+        "otter",
+        "cow",
+        "sheep"
       ]
     }
   },
   {
     "id": "friends-hedgehog/nature-question-21",
-    "label": "Wessen Fell hat schwarze Streifen?",
+    "label": "Wer hat durchsichtige Flügel?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Wessen Fell hat schwarze Streifen?",
-      "answer": "tiger",
+      "text": "Wer hat durchsichtige Flügel?",
+      "answer": "dragonfly",
       "choices": [
-        "tiger",
-        "cow",
-        "lion"
+        "dragonfly",
+        "snail",
+        "frog-sit"
       ]
     }
   },
   {
     "id": "friends-hedgehog/nature-question-22",
-    "label": "Welcher Vogel schwimmt und taucht?",
+    "label": "Welcher Vogel hat lange rote Beine?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Tier passt?",
-      "text": "Welcher Vogel schwimmt und taucht?",
-      "answer": "penguin",
+      "text": "Welcher Vogel hat lange rote Beine?",
+      "answer": "stork",
       "choices": [
-        "penguin",
+        "stork",
         "forest-robin",
         "forest-owl"
       ]

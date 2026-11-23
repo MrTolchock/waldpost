@@ -67,8 +67,8 @@
 | `syllable/word-38` | Feuerwehrauto — Feuerwehrauto | 5 |
 | `syllable/word-39` | Sonnenblume — Sonnenblume | 4 |
 | `syllable/word-40` | Marienkäfer — Marienkäfer | 5 |
-| `syllable/word-41` | Elefant — Elefant | 3 |
-| `syllable/word-42` | Giraffe — Giraffe | 3 |
+| `syllable/word-41` | Eichhörnchen — Eichhörnchen | 3 |
+| `syllable/word-42` | Murmeltier — Murmeltier | 3 |
 | `syllable/word-43` | Schildkröte — Schildkröte | 3 |
 | `syllable/word-44` | Erdbeere — Erdbeere | 3 |
 | `syllable/word-45` | Regenbogen — Regenbogen | 4 |
@@ -917,16 +917,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "syllable/word-41",
-    "label": "Elefant",
+    "label": "Eichhörnchen",
     "question": {
       "kind": "syllable",
       "prompt": "Wie viele Silben hat das Wort?",
-      "word": "Elefant",
-      "picture": "elephant",
+      "word": "Eichhörnchen",
+      "picture": "squirrel-sit",
       "parts": [
-        "E",
-        "le",
-        "fant"
+        "Eich",
+        "hörn",
+        "chen"
       ],
       "answer": 3,
       "choices": [
@@ -938,16 +938,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "syllable/word-42",
-    "label": "Giraffe",
+    "label": "Murmeltier",
     "question": {
       "kind": "syllable",
       "prompt": "Wie viele Silben hat das Wort?",
-      "word": "Giraffe",
-      "picture": "giraffe",
+      "word": "Murmeltier",
+      "picture": "alpine-marmot",
       "parts": [
-        "Gi",
-        "raf",
-        "fe"
+        "Mur",
+        "mel",
+        "tier"
       ],
       "answer": 3,
       "choices": [

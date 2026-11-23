@@ -73,7 +73,7 @@ test('hedgehog riddles and every distractor use Swiss forest wildlife',()=>{
 test('latest review fixes apply throughout the relevant pools and retire the requested puzzles',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
  for(const id of ['double','shapes','survey','friends-fish','trace','trace-numbers','friends-frog','friends-kingfisher','read-colours','read-leaves','read-word','pattern','nature','sequence']){assert.equal(C.puzzle(id),null);assert.equal(C.iterations(id).length,0);assert.equal(FK.puzzleRounds.instructions[id],undefined);}
- const animalPictures=new Set(['frog','hedgehog','bee','snail','dog','cat','spider','caterpillar','bear','sheep','pig','forest-fox','duck-swim','ant','ladybird','tortoise','squirrel-sit','zebra','lion','penguin','camel','tiger','elephant','giraffe','badger']);
+ const animalPictures=new Set(['frog','hedgehog','bee','snail','dog','cat','spider','caterpillar','bear','sheep','pig','forest-fox','duck-swim','ant','ladybird','tortoise','squirrel-sit','alpine-ibex','alpine-marmot','stork','heron','wild-boar','mole','dragonfly','badger']); // local animals since 23 Nov
  const mouse=C.iterations('friends-mouse');assert.equal(new Set(mouse.map(it=>it.question.text)).size,mouse.length);assert.ok(mouse.some(it=>it.id.includes('friends-frog-animal-'))&&mouse.some(it=>it.id.includes('read-word-word-')));
  for(const it of mouse.filter(it=>it.id.includes('friends-frog-animal-')))assert.ok(it.question.choices.every(id=>animalPictures.has(id)),it.id+' has only animals');
  const added=C.iterations('friends-hedgehog').filter(it=>it.id.includes('/nature-question-'));assert.equal(added.length,19);

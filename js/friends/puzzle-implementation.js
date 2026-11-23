@@ -5,8 +5,8 @@ window.FK.puzzleImplementations = {
   "friends-bird": "6aad4e23bedab609bb7151805b7de991545000afedf6935c24b02b302358406c",
   "friends-owl": "e7908d4eff32cab62aef693e120f1baef8728f80d5c5a0057a14c3d957184652",
   "friends-beaver": "bf934a63a7ba937f5a4a3295a0f76c3ab13db258ece775ad0d4da0c5114dc0fd",
-  "friends-mouse": "1e443046f28a54891309bb4f953d2b7394aba7ac9071a3556e1cd8c553b24c01",
-  "friends-hedgehog": "bdab0da99a212c3f8b5bb6e2f0fe54438baa5d69936c61463b002e6d0a0fa17d",
+  "friends-mouse": "1e23b7d466f95f13abcbdbdb5f95e617b5fd86ad6fb04058a0affeee571cda0d",
+  "friends-hedgehog": "c66cd3960caa307daaeeb40dbcd469d3aa70ef9eb5087b2913463c04e863d931",
   "friends-deer": "0cbc122a7d01377e5310900e45cceca096b39e93c9d2b8c05eaf34c3f32c4455",
   "friends-badger": "4ba6fad2eb035e794826e718ea7075b60916e5169b1b747b7ee9cc7e6290f290",
   "friends-ibex": "f85cfda83d5b3b499c721ce3a201cc0df8af565d18b2ee72aa44e5640ce330cd",
@@ -14,7 +14,7 @@ window.FK.puzzleImplementations = {
   "add": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
   "rocket": "14809511ccd95df787ef3933412efdb020391bbe1f6464643e28bce232f1cfd6",
   "picnic": "ba573d51b4a16141120e0437d3a611d654005e9022de6af8a156dd5143520886",
-  "syllable": "3c5966d4005869dd2b304daa05b43869713eca943587b96554071882e3e56df4",
+  "syllable": "b867786174248a3509589cb14e0acd48cacf2def952a5e59b4551aeeafeeab99",
   "robot": "cb052a004202ef447cf8dbb34049009300009653a1bd0bdfa5b8ae49c8f444aa",
   "treasure": "225f266890d70f3c562c02412699f9202ade5933ed460c95a7333f2067b43ef0",
   "neighbours": "dfbd43dffd867eee03a2037cc62776a50f9b52079d688f4584207074537ace3f",
@@ -176,22 +176,22 @@ window.FK.puzzleIterationImplementations = {
   "friends-mouse/friends-frog-animal-5": "47df47cc7ea114b0e8d1e973af3bb2dbd5ec60fa46db57f0e4b7cab9fd3c1b27",
   "friends-mouse/friends-frog-animal-6": "5623d1261f28d2021718011795821e717c4bb7c14d9eb55cdedae7bd1035bf65",
   "friends-mouse/friends-frog-animal-7": "1820f99e7bba5589044cc44106ce85befc6e30c3f4520d077dc6cb5176ae72bb",
-  "friends-mouse/friends-frog-animal-8": "64f253a6959774ac19ad4c1a1222bb1ddc12cc1ba0ccf8ff2f14e350981bc04a",
-  "friends-mouse/friends-frog-animal-9": "fef1b0e343d9d9917b11e3c02b643e223ca19f282310612b797b5a6793b6f6e6",
-  "friends-mouse/friends-frog-animal-10": "fd1a293c2d7d0d996e9852c5b3aaf4a23b8ff991f205054e495858df11b8fe18",
-  "friends-mouse/friends-frog-animal-11": "adb88e5c22195b80345c9f12f0e448fbd5d25e71677a7bd208eacafb070fc7af",
-  "friends-mouse/friends-frog-animal-12": "f170e5303f1322a6714a221283e6de077fe9623242bc42b9e5e0d2d68bf21499",
-  "friends-mouse/friends-frog-animal-13": "91307851b55a4f336c5900731841e1f24b97fdef4b71a665f16dd63c75dd047c",
-  "friends-mouse/friends-frog-animal-14": "35f1dae126527988ddcf9cffa410fe79ffa17a667a3f5292b29a347686158c1c",
-  "friends-mouse/friends-frog-animal-15": "6754e767333d5bb08825822e02ecb50aab0adc79a05fffc9283f57ec0683c6af",
-  "friends-mouse/friends-frog-animal-16": "612c35ba55735e5b47f9a2ea7ed4c80d1317d955a5e166e8a0be35e420a51fd7",
-  "friends-mouse/friends-frog-animal-17": "c1dc3d8f6198cbe031d18514b6825de21878ddacbd4d66352d1246f0ef68b50e",
-  "friends-mouse/friends-frog-animal-18": "2dc55f969f8dc12a7025f2a8bf16e96518157d9a8707b4cb59f7299a29d2038a",
-  "friends-mouse/friends-frog-animal-19": "faa3957df0c2cde4e77b9f6d751f89bb7e927cd57013735aff0e37718956a650",
-  "friends-mouse/friends-frog-animal-20": "5df5c6c1e3b4049918862f0524d385267e7943badb60b0d0f8eb670c00b85d3c",
-  "friends-mouse/friends-frog-animal-21": "0177b4a8181030c98a498f658692a958c5a9c704856abd89743b83bda8856755",
-  "friends-mouse/friends-frog-animal-22": "ebe89230d75d4eea630617c8e8d7f65e0dd7c4e70472d75417c3b066152d7bd3",
-  "friends-mouse/friends-frog-animal-23": "b665fc046979689cebcd85ba4de08c5f922d14b844e051b17cdf30ca28a9d063",
+  "friends-mouse/friends-frog-animal-8": "c953fcf3813cdaa6785013a561314c8653394a0cdb28d42f0ba97e94bb305e00",
+  "friends-mouse/friends-frog-animal-9": "d6733d3ff5ee52634c472034a49f49c9dae0555e4c3bedeac1d73699ed42d8b5",
+  "friends-mouse/friends-frog-animal-10": "fc7370fdacbc5d478b357bc4322b1a4a8e06028a405c617dbb08cf1f886765ca",
+  "friends-mouse/friends-frog-animal-11": "c1ada53d97ace5ffd91cd9401d3b3e9e7ac52015caa1c2c15c1f7a2f0b53d175",
+  "friends-mouse/friends-frog-animal-12": "913c2c8e341b6bf503b2bb7ec21985d38601cb406b36447904da431d2c2e4dff",
+  "friends-mouse/friends-frog-animal-13": "13635f729eb1dbae3b36ff0e012150462e29146085b115d32128bb515e85027d",
+  "friends-mouse/friends-frog-animal-14": "accc08ffcb946bc0369ba5fa3b99da6bd443ba3e4e77d87fd2e3fe7caec2d0bd",
+  "friends-mouse/friends-frog-animal-15": "fae12b16740defb8556b470e761398f4feb32cb0710ae626e9e690aa202f8f2f",
+  "friends-mouse/friends-frog-animal-16": "d99221f22218a59c595dfde3ca7bd353bf586478f64eadee9695031ba4066d01",
+  "friends-mouse/friends-frog-animal-17": "1b8f32fd027f4f23da5e03fbbd3217c8b003395f980eb41b59fa45cfa36ab0a7",
+  "friends-mouse/friends-frog-animal-18": "97a4e5afaf3c49060b7372fce4d6b8e0f4bbefde292fffb425984661b2f9a306",
+  "friends-mouse/friends-frog-animal-19": "0911767a5a41ae3b84de27dd0dc7b1fdd88c82ba3e6895252e42344189e93692",
+  "friends-mouse/friends-frog-animal-20": "b334c8ff0f990f8ea71086d77e430d56156cb8b8c6f2bb83c15740e7cddc95d5",
+  "friends-mouse/friends-frog-animal-21": "6a8b39f165ea7e4a14bdbe634cda6cc80adfe59c9b883c05fe7a6c4055d659ee",
+  "friends-mouse/friends-frog-animal-22": "1fab87ec4b80fc2a10d3084e51831bfa8700fd7a075a9ebc32426994fbe9cf46",
+  "friends-mouse/friends-frog-animal-23": "a21cfd12c184c0de0ccba157dbbcb70fecc8edd1c4c35a06dcd7f012bbf78dd9",
   "friends-mouse/friends-frog-animal-24": "912e1e0e13cd605ba9f266690cb1398913ec60bf8fc1a2b2f3c4b3c1578f57d8",
   "friends-mouse/read-word-word-1": "accdf0989468af0446508cc301270e1805199c9575340bed6c1150bbc53bec0c",
   "friends-mouse/read-word-word-3": "71832233b3bfde20dc8d7a410af574de2cd3c9594583b3441f3c8dc6658e1a11",
@@ -253,13 +253,13 @@ window.FK.puzzleIterationImplementations = {
   "friends-hedgehog/nature-question-12": "3319f18ef40e95a9c484503014fd43680bb3c50611ac518f90f3481b042eedb1",
   "friends-hedgehog/nature-question-14": "8aab82cccc258234b8f19c2f02ce24652e8665235a3aaf1755cf0480c9c9ae3e",
   "friends-hedgehog/nature-question-15": "15ef1cf4ae263e21e30d0fc192869d0488b05593b676089ab4e09d7473fcf9c9",
-  "friends-hedgehog/nature-question-16": "8947225c5e1b72a5a370479c48920e2a9974ef37cafe2db20e4ca0d69bcc9390",
-  "friends-hedgehog/nature-question-17": "eb13cb7ec1dedd78c624a988e7d037625cdb136ea83609d8b84b0f4ea366ece8",
-  "friends-hedgehog/nature-question-18": "04d9f1e0afd066704c26fc9841fa909d8a2f1a1b927a4c364229cba7059af325",
-  "friends-hedgehog/nature-question-19": "ee2a590e5add8710f1beec8e326675276f44a782734c81b25bfb34f32c98b0bd",
-  "friends-hedgehog/nature-question-20": "9173e69934ffe2217a7a6bbe02b32c9f61c92d43775780ba4c6d3090aed10de5",
-  "friends-hedgehog/nature-question-21": "0264d8425adb2293999d1f7f761c56054bfff5a821828d271e4e842415f4943c",
-  "friends-hedgehog/nature-question-22": "239e203aedaee2b83644b1bd91df4c8ac3340281a27c33c23b1ceca07b1c406d",
+  "friends-hedgehog/nature-question-16": "e088cdb0f3e0b4e2b7be6f93f49d8d95a87cfe7ce3bae07bdeb7bae4bba26bd6",
+  "friends-hedgehog/nature-question-17": "f85d213bea500a7b72306316cb43865c475dc2abb364ec189121ccc91dada57f",
+  "friends-hedgehog/nature-question-18": "b21412a666767ca9313a9730f85e7e7421e70cd8acb78978aa073d73384f99ca",
+  "friends-hedgehog/nature-question-19": "79addf26ac37eb1f3fa7607e0ca7f872f7a3f17b342ed9ecbd349ed3dacddac1",
+  "friends-hedgehog/nature-question-20": "81d0659933d9dae18f1f8ef236f489ec414899fa27c33ac8820c70fec8dcd69c",
+  "friends-hedgehog/nature-question-21": "19e62959b0ab59da1b5c2495afaa91d6e067fbbc44d4ac95e5468b39b40b3665",
+  "friends-hedgehog/nature-question-22": "92e30bc0745b00cb9577ccbde81c13a3b281e47dcc137ace9bcf4eea770b7347",
   "friends-hedgehog/nature-question-24": "62e0b14aef973d0a6b075e2f5e9360e998d2e54e5f32e35ef037aeab54d480cf",
   "friends-deer/riddle-0": "af4313a6e4002ebf524400c86cfe300079eb95f46ad1b151adb140ac68a65f2b",
   "friends-deer/riddle-1": "c5a70c05aa42992d5db997b9eaf92df7eb0bd5ba58b0df5d388c805e53faf966",
@@ -521,8 +521,8 @@ window.FK.puzzleIterationImplementations = {
   "syllable/word-38": "97294d99aa7551b7268a95267ba8ad18c7636aad97df8ad5ca3f1ec236e1c9b7",
   "syllable/word-39": "aeb3fed909208af6a3fd95c2c5a21e72a6ba155e1dea4c065c894e352c09149e",
   "syllable/word-40": "ef447eb4c7f2cd4300403be06840ad6158f6718b07becfd5b8682f47e69ad760",
-  "syllable/word-41": "66aff083400bfb82feec6386693f2a4e5145e1c3cacc76271d3315de6a83b0f0",
-  "syllable/word-42": "c97673d48366b20c650b162a874591c9b923b137bafff140ea971798d7e9c98b",
+  "syllable/word-41": "0ccd0b4706c5c29a9606062b64a98096a203a2d6a38debd9cd0106e89b01639d",
+  "syllable/word-42": "274e7bbb40310c9a821d74327ca0521ceac77cc56911015699f4ec137b833ba5",
   "syllable/word-43": "8bb02a5a61d375c1d981e713d8a5726566e4db1fe5e3ce98cede9e94243c92d2",
   "syllable/word-44": "2ba3f038d1ab242c18449d0cde377790079eaa9c38ca84bddb30cf257e36a5dd",
   "syllable/word-45": "5afd61087a478ea3c2fcba259c781216782be40264f8ab1a01e2dc88f262f4b0",
@@ -852,11 +852,11 @@ window.FK.puzzleReviewCompatibility = {
       "former": []
     },
     "friends-mouse": {
-      "current": "c2c17dd324278aaf",
+      "current": "a07669d3a561c509",
       "former": []
     },
     "friends-hedgehog": {
-      "current": "94bdc0a9a9c57123",
+      "current": "94fad1a2f1578384",
       "former": []
     },
     "friends-deer": {
@@ -897,7 +897,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "syllable": {
-      "current": "55317ada27916082",
+      "current": "e510360474e2dec0",
       "former": []
     },
     "robot": {
@@ -2411,228 +2411,68 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-mouse/friends-frog-animal-8": {
-      "current": "9c51c18eaec8c202",
-      "former": [
-        "cd1292c81b501caa",
-        "a7927b7327b76ce3",
-        "66b9435b675c6f51",
-        "9bb99825bb4b6613",
-        "7855604332737eef",
-        "3ea01633db727a99",
-        "1e1b777f2342e223",
-        "a0d6c2aabdc40592",
-        "5157d11eb4837e3c"
-      ]
+      "current": "a3b8544707a2e21d",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-9": {
-      "current": "37dd330b69881a21",
-      "former": [
-        "d9ca6587995904b9",
-        "6645b34c8d6a48fc",
-        "fd0c188475a81e24",
-        "b6be2aeff94eac4f",
-        "2e8bc7b11898fd4d",
-        "bab865fe54c061ee",
-        "6cdd4c4271eb7718",
-        "8ae12c26a78f5b22",
-        "9fec4e45e4e52e7f"
-      ]
+      "current": "55d7a4b3a15a2d67",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-10": {
-      "current": "48c3f806a64e3564",
-      "former": [
-        "fbb8267161b0acb9",
-        "06d18377e8357945",
-        "7f48bfbf7d00ae91",
-        "144b7e5d3039213d",
-        "09466da49073be22",
-        "4a14bd8ce18bb10c",
-        "0f4f7ff09d481bf2",
-        "2ff40e71dcd8e69b",
-        "9ad84b328170c98a"
-      ]
+      "current": "9fb6e005f7205ef1",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-11": {
-      "current": "854756882d218d2e",
-      "former": [
-        "7fca12eacab8cc82",
-        "f9ee7e97a09e6ddd",
-        "af90e68313122609",
-        "99f8c9e1f162d87d",
-        "fb91b0eb2e4b8f4d",
-        "94efae036756d8fb",
-        "352d7b7f36a78201",
-        "a4d35b59b7e03043",
-        "aacb23887b1e2744"
-      ]
+      "current": "5dd7321d59bcc27d",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-12": {
-      "current": "13fedfbf59cb5dd7",
-      "former": [
-        "7e663872f584baee",
-        "221643baef342154",
-        "2c885849bf19da3f",
-        "8361606004efe1f4",
-        "ce4192408219b086",
-        "f6540c4a29c59818",
-        "82f4f23c69b2e8f4",
-        "e2b09a382e315638",
-        "6ddbb889eeaf77c5"
-      ]
+      "current": "40c5fce93105eb7f",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-13": {
-      "current": "6e8605234e2f149f",
-      "former": [
-        "1d7d24fcbc24c546",
-        "100d2bc964ef1fb7",
-        "6fe2317f619f0aad",
-        "1612449149ccc8bf",
-        "fa6124470c6e0803",
-        "941a4bb83e81deb0",
-        "8c27bb51fa3282a7",
-        "5c4e0347785783b5",
-        "1788760dfc060985"
-      ]
+      "current": "e17aeee8ff375892",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-14": {
-      "current": "8ae2820283a3df4a",
-      "former": [
-        "44c47cb2e01685b4",
-        "fb2a229bf4053659",
-        "090277a40a66c6a2",
-        "62a22d0baade0f2f",
-        "32486f4a116763ce",
-        "47f445be17f3d8e0",
-        "3c5dcaf51bee537d",
-        "c2f190bb60f3d649",
-        "17746b94f1ea7454"
-      ]
+      "current": "251aa819d7267763",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-15": {
-      "current": "c04baa984113ade6",
-      "former": [
-        "d367d211054c4d71",
-        "876cea97dc2af02f",
-        "40c88e0c278b5398",
-        "ada6ed8ad09cd1b4",
-        "0373ed7f08f8d96f",
-        "601f577d7cf716ed",
-        "9507dc00602c7904",
-        "2a1216d5d8aaa4d3",
-        "9e98335cd2bb752e"
-      ]
+      "current": "cd8367dcb66ce814",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-16": {
-      "current": "2309662b001cfbdb",
-      "former": [
-        "b647b8bdb98850d5",
-        "d1bc15aa8ac34bae",
-        "35ef3231e56efb6f",
-        "cbd544cdc3724e9d",
-        "6ed4458764d3cd71",
-        "8d91bf31d73fd33b",
-        "a1bb893b2eb026f9",
-        "7ebd9b5e5211053e",
-        "1adad046063d2876"
-      ]
+      "current": "1565b8dec52c3ad8",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-17": {
-      "current": "9e2e432bca6c833f",
-      "former": [
-        "862d64cec4dfbefc",
-        "9fcb22d9ecd5f8a1",
-        "2ad6a2ead7506ce8",
-        "222fcb9d6347e539",
-        "97842bf7ea1b3f45",
-        "dc93c82d7ca39be5",
-        "689611997082e661",
-        "9e02bdbfc283aa11",
-        "444aafc9a586c6f9"
-      ]
+      "current": "4deb35cddca5929b",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-18": {
-      "current": "a89a595bf2746871",
-      "former": [
-        "f91bdcbdaa729851",
-        "b43bfba8602244ec",
-        "f38b8fa8d792efe0",
-        "b5bb11554c7c822f",
-        "190cd4a9ff832885",
-        "fd41e602b811c67a",
-        "26aa21ca327c98b6",
-        "8472197cd9c13912",
-        "e83058b548cc036f"
-      ]
+      "current": "10e89c05e3593f4d",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-19": {
-      "current": "c2bcd9a413e49ac2",
-      "former": [
-        "5d3731f847ef7c74",
-        "9861f0b7c7338957",
-        "bff2f99fb7b6f86d",
-        "e6f9d3b213b06ccc",
-        "255dd8e474235834",
-        "9315045b745f1f1b",
-        "fdd5e64e107b1e5c",
-        "d956d3523d796690",
-        "68282ad19c75892b"
-      ]
+      "current": "e4a5b7c28643661e",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-20": {
-      "current": "95c617dc954130d4",
-      "former": [
-        "ecc1f3c18e05bdf9",
-        "885af77f03ad6cb7",
-        "14e97f3b376f7a27",
-        "eb20cd1067d177b2",
-        "71fbfc1713724fe7",
-        "19988362a38a29f4",
-        "46519a93be39e5f7",
-        "f020a5b94ccd7be5",
-        "502c1a1c4f33463a"
-      ]
+      "current": "6d0a3d4401d433c2",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-21": {
-      "current": "38da5a13267222c9",
-      "former": [
-        "8716f06447943214",
-        "54eae5e868ffd28c",
-        "8a74632388d77ce3",
-        "8686134f6d2407c5",
-        "a4d9f92ee84b629e",
-        "f233122c95ce44d4",
-        "a877328a31c2f7ac",
-        "b5cd74112078343d",
-        "1ee3cd2b54ae44d9"
-      ]
+      "current": "eaef88c40058f090",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-22": {
-      "current": "e828d45d995e69d1",
-      "former": [
-        "1cbb4bd087ddb8b8",
-        "3c2515b4c0f83020",
-        "e78718d4a294bece",
-        "a2a75db81d87d9e8",
-        "575c65f292951594",
-        "ef5b88283c7bcd52",
-        "f833c65bb03190f9",
-        "81de9f25d7196145",
-        "68c5431a726e0cc4"
-      ]
+      "current": "a2138f53e4b0e0dd",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-23": {
-      "current": "57e629b481711806",
-      "former": [
-        "c0a17205a1c70b77",
-        "dec312985114c170",
-        "aaa214b2db35a02a",
-        "48383dd1f390b089",
-        "d4fa17b9348e0655",
-        "dfd02a9d6c7e7ebb",
-        "06b821ca6a2fdfe2",
-        "1a750f71e9a56491",
-        "4c5dd98a933240be"
-      ]
+      "current": "f330142644e07b48",
+      "former": []
     },
     "friends-mouse/friends-frog-animal-24": {
       "current": "62073a3e911578bc",
@@ -3217,48 +3057,32 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-hedgehog/nature-question-16": {
-      "current": "6f27e391c42de759",
-      "former": [
-        "71a61de14a2c5ecd"
-      ]
+      "current": "b5812a27e21859e7",
+      "former": []
     },
     "friends-hedgehog/nature-question-17": {
-      "current": "57db98eb4355c455",
-      "former": [
-        "d458855312b6164d"
-      ]
+      "current": "26f21899293136db",
+      "former": []
     },
     "friends-hedgehog/nature-question-18": {
-      "current": "b32b1ec86c390598",
-      "former": [
-        "0e930028b9ebcf6e",
-        "b242485b28802191"
-      ]
+      "current": "cc5c3f98aa0ef91a",
+      "former": []
     },
     "friends-hedgehog/nature-question-19": {
-      "current": "fb22fd1d6e83d53d",
-      "former": [
-        "bf0981bc0a82ff2a"
-      ]
+      "current": "9ab263b5cc6dfb23",
+      "former": []
     },
     "friends-hedgehog/nature-question-20": {
-      "current": "c1d6fb494989f845",
-      "former": [
-        "d814a91e1a9257ee",
-        "dce25ea500573b19"
-      ]
+      "current": "89f8b79c320b5046",
+      "former": []
     },
     "friends-hedgehog/nature-question-21": {
-      "current": "eec2d081ec4a2a69",
-      "former": [
-        "03ee4e732db91855"
-      ]
+      "current": "636c9122d686b71e",
+      "former": []
     },
     "friends-hedgehog/nature-question-22": {
-      "current": "b55e7a0e18151c34",
-      "former": [
-        "256435748236bdd8"
-      ]
+      "current": "5721006a952db386",
+      "former": []
     },
     "friends-hedgehog/nature-question-24": {
       "current": "a7023a56801f12b2",
@@ -5296,11 +5120,11 @@ window.FK.puzzleReviewCompatibility = {
       "former": []
     },
     "syllable/word-41": {
-      "current": "a6dbd81f6f9d0ce5",
+      "current": "ce8585db93e844a1",
       "former": []
     },
     "syllable/word-42": {
-      "current": "1f3d556d796714cb",
+      "current": "4c0a71a53dd1095b",
       "former": []
     },
     "syllable/word-43": {

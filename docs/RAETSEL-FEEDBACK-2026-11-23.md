@@ -86,3 +86,15 @@ Die Prüfung am Nachmittag ergab zu «Mengen zählen» und «Wörter in Silben z
 Welche Stelle eine Aufgabe erhält, hängt nur von ihrer festen Kennung ab. Neue Aufgaben verschieben deshalb nie die Karten bestehender Aufgaben und öffnen deren Prüfung nicht erneut. Die neue Prüfung `tests/answer-positions.test.cjs` verlangt, dass in tausenden echten Runden jedes Rätsels keine Antwortposition über 45 % liegt, bei zwei Karten über 60 %. Ausserdem darf bei Zahlenkarten der mittlere Wert nicht überwiegen. Alle anderen Rätsel mischen ihre Bild-, Wort- und Buchstabenkarten bereits gleichmässig.
 
 Freigaben: 180 Aufgaben haben neue Zahlenkarten oder eine neue Frage und sind wieder offen. Betroffen sind 24 bei Mengen zählen, 30 bei Gezielt Mengen zählen, 45 bei Mengen addieren, 39 bei Mengen ergänzen, 18 bei den Silben, 23 bei den Zahlennachbarn und 1 Tierfrage. Alle übrigen Freigaben bleiben unverändert. Offen aus allen Prüfungen sind jetzt nur Aufgaben, die neu geprüft werden müssen. Es gibt keinen ungelösten Kommentar mehr.
+
+## Nachtrag: Tiere aus der Umgebung (9.4.35)
+
+Auf Wunsch des Eigentümers ersetzen Tiere aus Alpen, Wald und Gewässern die Savannen-, Zoo- und Polartiere (Befund C-7).
+
+| Rätsel | Vorher | Jetzt |
+| --- | --- | --- |
+| Tiermerkmale (Igel) | Rüssel, langer Hals, Mähne, gestreiftes Fell, Höcker, schwarze Streifen, schwimmender Vogel | «Wer klettert auf steile Felsen?» Steinbock · «Wer pfeift in den Bergen?» Murmeltier · «Wer wühlt mit der Schnauze im Waldboden?» Wildschwein · «Welcher Vogel steht lange still im Wasser?» Reiher · «Wer schwimmt im Bach und fängt Fische?» Fischotter · «Wer hat durchsichtige Flügel?» Libelle · «Welcher Vogel hat lange rote Beine?» Storch |
+| Wörter mit Bildern verbinden (Maus) | Zebra, Löwe, Pinguin, Kamel, Tiger, Elefant, Giraffe | Steinbock, Murmeltier, Storch, Reiher, Wildschwein, Maulwurf, Libelle |
+| Wörter in Silben zerlegen | Elefant, Giraffe | Eichhörnchen, Murmeltier |
+
+Alle Bilder stammen aus der vorhandenen Bildbibliothek im kanonischen Stil und tragen deutsche Bildnamen. Kein aktives Rätsel verwendet noch ein Zoo-Tier. Wieder offen sind 25 Aufgaben: die 7 Tierfragen, die 7 neuen Lesewörter, 9 Lesekarten, deren falsche Bildantworten Zoo-Tiere waren, und die 2 Silbenwörter.

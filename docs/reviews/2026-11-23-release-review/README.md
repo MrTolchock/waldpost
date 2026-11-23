@@ -160,7 +160,7 @@ The owner asked for all findings to be fixed and the habitat backgrounds to be r
 | C-4 Duplicate/weak questions | Fixed: 8 Reh and 7 Dachs questions replaced with habitat, growth and season questions; the barking dog runs. |
 | C-5 Wege | Fixed: 30 authored routes; the rocks always force a detour of at least two steps. |
 | C-6 Sums to 10 | Fixed: nine ten-partner Aufgaben. |
-| C-7 Savannah animals | Kept: the owner curated these questions on 22 November. |
+| C-7 Savannah animals | Fixed in 9.4.35 at the owner's request: local Alpine, woodland and water animals replace them in Tiermerkmale, the reading words and Silben. |
 | C-8 Syllables | Fixed: «Lokomotive», plus eight more three- to five-syllable words. |
 | C-9, C-10 | Fixed: neighbours prompt; number cards ascending. In 9.4.34 each Aufgabe also got its own number window, because the sorted cards had put the answer in the middle every time (owner notes on Mengen zählen and Silben). |
 | D-1, D-2 | Fixed: one compact reading layout with larger picture answers; larger fish. |

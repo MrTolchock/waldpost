@@ -1115,7 +1115,10 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse",
+        "friends-hedgehog"
+      ]
     },
     {
       "id": "alpine-marmot",
@@ -1131,7 +1134,11 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse",
+        "friends-hedgehog",
+        "syllable"
+      ]
     },
     {
       "id": "ant",
@@ -2554,10 +2561,7 @@
         "🐫",
         "🐪"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog"
-      ]
+      "usedBy": []
     },
     {
       "id": "camera",
@@ -3826,7 +3830,10 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse",
+        "friends-hedgehog"
+      ]
     },
     {
       "id": "drinking-bottle",
@@ -4066,11 +4073,7 @@
       "tokens": [
         "🐘"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog",
-        "syllable"
-      ]
+      "usedBy": []
     },
     {
       "id": "empty-basket",
@@ -5169,11 +5172,7 @@
       "tokens": [
         "🦒"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog",
-        "syllable"
-      ]
+      "usedBy": []
     },
     {
       "id": "glue-pot",
@@ -5726,7 +5725,10 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse",
+        "friends-hedgehog"
+      ]
     },
     {
       "id": "hollow-tree",
@@ -6439,10 +6441,7 @@
       "tokens": [
         "🦁"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog"
-      ]
+      "usedBy": []
     },
     {
       "id": "llama",
@@ -7158,7 +7157,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse"
+      ]
     },
     {
       "id": "mole-dig",
@@ -7737,7 +7738,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-hedgehog"
+      ]
     },
     {
       "id": "otter-swim",
@@ -8363,10 +8366,7 @@
       "tokens": [
         "🐧"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog"
-      ]
+      "usedBy": []
     },
     {
       "id": "picnic",
@@ -10717,7 +10717,8 @@
       "usedBy": [
         "friends-owl",
         "friends-mouse",
-        "friends-hedgehog"
+        "friends-hedgehog",
+        "syllable"
       ]
     },
     {
@@ -11063,7 +11064,10 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse",
+        "friends-hedgehog"
+      ]
     },
     {
       "id": "strawberry",
@@ -11413,10 +11417,7 @@
       "tokens": [
         "🐯"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog"
-      ]
+      "usedBy": []
     },
     {
       "id": "tin",
@@ -12334,7 +12335,10 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-mouse",
+        "friends-hedgehog"
+      ]
     },
     {
       "id": "wild-garlic",
@@ -13090,10 +13094,7 @@
       "tokens": [
         "🦓"
       ],
-      "usedBy": [
-        "friends-mouse",
-        "friends-hedgehog"
-      ]
+      "usedBy": []
     }
   ]
 }

@@ -68,13 +68,13 @@
 | `friends-mouse/friends-frog-animal-14` | Käfer — Käfer | "ladybird" |
 | `friends-mouse/friends-frog-animal-15` | Schildkröte — Schildkröte | "tortoise" |
 | `friends-mouse/friends-frog-animal-16` | Eichhörnchen — Eichhörnchen | "squirrel-sit" |
-| `friends-mouse/friends-frog-animal-17` | Zebra — Zebra | "zebra" |
-| `friends-mouse/friends-frog-animal-18` | Löwe — Löwe | "lion" |
-| `friends-mouse/friends-frog-animal-19` | Pinguin — Pinguin | "penguin" |
-| `friends-mouse/friends-frog-animal-20` | Kamel — Kamel | "camel" |
-| `friends-mouse/friends-frog-animal-21` | Tiger — Tiger | "tiger" |
-| `friends-mouse/friends-frog-animal-22` | Elefant — Elefant | "elephant" |
-| `friends-mouse/friends-frog-animal-23` | Giraffe — Giraffe | "giraffe" |
+| `friends-mouse/friends-frog-animal-17` | Steinbock — Steinbock | "alpine-ibex" |
+| `friends-mouse/friends-frog-animal-18` | Murmeltier — Murmeltier | "alpine-marmot" |
+| `friends-mouse/friends-frog-animal-19` | Storch — Storch | "stork" |
+| `friends-mouse/friends-frog-animal-20` | Reiher — Reiher | "heron" |
+| `friends-mouse/friends-frog-animal-21` | Wildschwein — Wildschwein | "wild-boar" |
+| `friends-mouse/friends-frog-animal-22` | Maulwurf — Maulwurf | "mole" |
+| `friends-mouse/friends-frog-animal-23` | Libelle — Libelle | "dragonfly" |
 | `friends-mouse/friends-frog-animal-24` | Dachs — Dachs | "badger" |
 | `friends-mouse/read-word-word-1` | Biber — Biber | "beaver" |
 | `friends-mouse/read-word-word-3` | Feder — Feder | "forest-feather" |
@@ -613,7 +613,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "bear",
         "duck-swim",
-        "zebra"
+        "alpine-ibex"
       ]
     }
   },
@@ -628,7 +628,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "sheep",
         "ant",
-        "lion"
+        "alpine-marmot"
       ]
     }
   },
@@ -643,7 +643,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "pig",
         "ladybird",
-        "penguin"
+        "stork"
       ]
     }
   },
@@ -658,7 +658,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "forest-fox",
         "tortoise",
-        "camel"
+        "heron"
       ]
     }
   },
@@ -673,7 +673,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "duck-swim",
         "squirrel-sit",
-        "tiger"
+        "wild-boar"
       ]
     }
   },
@@ -687,8 +687,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "ant",
       "choices": [
         "ant",
-        "zebra",
-        "elephant"
+        "alpine-ibex",
+        "mole"
       ]
     }
   },
@@ -702,8 +702,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "ladybird",
       "choices": [
         "ladybird",
-        "lion",
-        "giraffe"
+        "alpine-marmot",
+        "dragonfly"
       ]
     }
   },
@@ -717,7 +717,7 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "tortoise",
       "choices": [
         "tortoise",
-        "penguin",
+        "stork",
         "badger"
       ]
     }
@@ -732,66 +732,66 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "squirrel-sit",
       "choices": [
         "squirrel-sit",
-        "camel",
+        "heron",
         "frog"
       ]
     }
   },
   {
     "id": "friends-mouse/friends-frog-animal-17",
-    "label": "Zebra",
+    "label": "Steinbock",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Zebra",
-      "answer": "zebra",
+      "text": "Steinbock",
+      "answer": "alpine-ibex",
       "choices": [
-        "zebra",
-        "tiger",
+        "alpine-ibex",
+        "wild-boar",
         "hedgehog"
       ]
     }
   },
   {
     "id": "friends-mouse/friends-frog-animal-18",
-    "label": "Löwe",
+    "label": "Murmeltier",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Löwe",
-      "answer": "lion",
+      "text": "Murmeltier",
+      "answer": "alpine-marmot",
       "choices": [
-        "lion",
-        "elephant",
+        "alpine-marmot",
+        "mole",
         "bee"
       ]
     }
   },
   {
     "id": "friends-mouse/friends-frog-animal-19",
-    "label": "Pinguin",
+    "label": "Storch",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Pinguin",
-      "answer": "penguin",
+      "text": "Storch",
+      "answer": "stork",
       "choices": [
-        "penguin",
-        "giraffe",
+        "stork",
+        "dragonfly",
         "snail"
       ]
     }
   },
   {
     "id": "friends-mouse/friends-frog-animal-20",
-    "label": "Kamel",
+    "label": "Reiher",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Kamel",
-      "answer": "camel",
+      "text": "Reiher",
+      "answer": "heron",
       "choices": [
-        "camel",
+        "heron",
         "badger",
         "dog"
       ]
@@ -799,14 +799,14 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-mouse/friends-frog-animal-21",
-    "label": "Tiger",
+    "label": "Wildschwein",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Tiger",
-      "answer": "tiger",
+      "text": "Wildschwein",
+      "answer": "wild-boar",
       "choices": [
-        "tiger",
+        "wild-boar",
         "frog",
         "cat"
       ]
@@ -814,14 +814,14 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-mouse/friends-frog-animal-22",
-    "label": "Elefant",
+    "label": "Maulwurf",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Elefant",
-      "answer": "elephant",
+      "text": "Maulwurf",
+      "answer": "mole",
       "choices": [
-        "elephant",
+        "mole",
         "hedgehog",
         "spider"
       ]
@@ -829,14 +829,14 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-mouse/friends-frog-animal-23",
-    "label": "Giraffe",
+    "label": "Libelle",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
-      "text": "Giraffe",
-      "answer": "giraffe",
+      "text": "Libelle",
+      "answer": "dragonfly",
       "choices": [
-        "giraffe",
+        "dragonfly",
         "bee",
         "caterpillar"
       ]

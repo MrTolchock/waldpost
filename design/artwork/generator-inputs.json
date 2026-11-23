@@ -3239,11 +3239,7 @@
           "tokens": [
             "🐘"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog",
-            "syllable"
-          ]
+          "usedBy": []
         },
         {
           "id": "giraffe",
@@ -3261,11 +3257,7 @@
           "tokens": [
             "🦒"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog",
-            "syllable"
-          ]
+          "usedBy": []
         },
         {
           "id": "ear",
@@ -3956,10 +3948,7 @@
           "tokens": [
             "🦓"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog"
-          ]
+          "usedBy": []
         },
         {
           "id": "lion",
@@ -3977,10 +3966,7 @@
           "tokens": [
             "🦁"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog"
-          ]
+          "usedBy": []
         },
         {
           "id": "penguin",
@@ -3998,10 +3984,7 @@
           "tokens": [
             "🐧"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog"
-          ]
+          "usedBy": []
         },
         {
           "id": "camel",
@@ -4020,10 +4003,7 @@
             "🐫",
             "🐪"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog"
-          ]
+          "usedBy": []
         },
         {
           "id": "tiger",
@@ -4041,10 +4021,7 @@
           "tokens": [
             "🐯"
           ],
-          "usedBy": [
-            "friends-mouse",
-            "friends-hedgehog"
-          ]
+          "usedBy": []
         },
         {
           "id": "beaver",
@@ -7919,7 +7896,10 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse",
+            "friends-hedgehog"
+          ]
         },
         {
           "id": "grasshopper",
@@ -8095,7 +8075,10 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse",
+            "friends-hedgehog"
+          ]
         },
         {
           "id": "stork",
@@ -8111,7 +8094,10 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse",
+            "friends-hedgehog"
+          ]
         },
         {
           "id": "dipper",
@@ -8143,7 +8129,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-hedgehog"
+          ]
         }
       ],
       "manifest": "design/illustrations/expansion-meadow-pond.json",
@@ -14487,7 +14475,10 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse",
+            "friends-hedgehog"
+          ]
         },
         {
           "id": "boar-piglet",
@@ -14583,7 +14574,9 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse"
+          ]
         },
         {
           "id": "shrew",
@@ -14679,7 +14672,10 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse",
+            "friends-hedgehog"
+          ]
         },
         {
           "id": "alpine-marmot",
@@ -14695,7 +14691,11 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": []
+          "usedBy": [
+            "friends-mouse",
+            "friends-hedgehog",
+            "syllable"
+          ]
         },
         {
           "id": "field-vole",
@@ -16800,7 +16800,8 @@
           "usedBy": [
             "friends-owl",
             "friends-mouse",
-            "friends-hedgehog"
+            "friends-hedgehog",
+            "syllable"
           ]
         },
         {

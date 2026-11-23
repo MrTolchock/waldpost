@@ -154,7 +154,7 @@
     mouseWords.add(text);
     add('friends-mouse',key,text,{kind:'reading',prompt:'Welches Bild passt zum Wort?',text,answer,choices});
   }
-  const animals=C.pools.frog.map(t=>t.answer==='nest'?['Ente','duck-swim']:t.answer==='egg'?['Fuchs','forest-fox']:['mushroom','forest-mushroom'].includes(t.answer)?['Eichhörnchen','squirrel-sit']:[t.target,t.answer]).concat([['Zebra','zebra'],['Löwe','lion'],['Pinguin','penguin'],['Kamel','camel'],['Tiger','tiger'],['Elefant','elephant'],['Giraffe','giraffe'],['Dachs','badger']]);
+  const animals=C.pools.frog.map(t=>t.answer==='nest'?['Ente','duck-swim']:t.answer==='egg'?['Fuchs','forest-fox']:['mushroom','forest-mushroom'].includes(t.answer)?['Eichhörnchen','squirrel-sit']:[t.target,t.answer]).concat([['Steinbock','alpine-ibex'],['Murmeltier','alpine-marmot'],['Storch','stork'],['Reiher','heron'],['Wildschwein','wild-boar'],['Maulwurf','mole'],['Libelle','dragonfly'],['Dachs','badger']]); // local animals instead of zoo animals (23 Nov)
   animals.forEach(([text,answer],i)=>addMouseWord('friends-frog-animal-'+i,text,answer,[answer,animals[(i+4)%animals.length][1],animals[(i+9)%animals.length][1]]));
   for(let n=6;n<=15;n++)for(let b=2;b<=4;b++)add('count',n+'-'+b,n+' Käfer, '+b+' Bienen',{kind:'count',prompt:'Wie viele rote Marienkäfer sind hier?',count:n,answer:n,choices:numeric(n),bugs:[...Array(n).fill('ladybird'),...Array(b).fill('bee'),...Array(2).fill('snail')]});
   // Sums 2–10; the ten-partners (sum 10) were added on 23 Nov.
@@ -177,13 +177,14 @@
     null,
     ["Wer hat weiche Wolle?","sheep","fish","bee"],
     ["Wer hat einen buschigen Schwanz?","squirrel","spider","cow"],
-    ["Wer hat einen Rüssel?","elephant","cat","sheep"],
-    ["Wer hat einen langen Hals?","giraffe","pig","dog"],
-    ["Wer trägt eine Mähne?","lion","sheep","bird"],
-    ["Wessen Fell ist gestreift?","zebra","dog","cow"],
-    ["Wer hat Höcker auf dem Rücken?","camel","cat","bee"],
-    ["Wessen Fell hat schwarze Streifen?","tiger","cow","lion"],
-    ["Welcher Vogel schwimmt und taucht?","penguin","forest-robin","forest-owl"],
+    // 23 November: local animals of the Alps, woods and waters replace the savannah, zoo and polar animals.
+    ["Wer klettert auf steile Felsen?","alpine-ibex","snail","fish"],
+    ["Wer pfeift in den Bergen?","alpine-marmot","sheep","fish"],
+    ["Wer wühlt mit der Schnauze im Waldboden?","wild-boar","bird","fish"],
+    ["Welcher Vogel steht lange still im Wasser?","heron","forest-robin","forest-owl"],
+    ["Wer schwimmt im Bach und fängt Fische?","otter","cow","sheep"],
+    ["Wer hat durchsichtige Flügel?","dragonfly","snail","frog-sit"],
+    ["Welcher Vogel hat lange rote Beine?","stork","forest-robin","forest-owl"],
     null,
     ["Wer baut einen Damm aus Ästen?","beaver","cat","bee"]
   ];
@@ -197,7 +198,7 @@
   const words=R.words.concat([['Ba-na-ne','banana'],['To-ma-te','tomato'],['Ka-me-ra','camera'],['Na-del','needle'],['Ga-bel','fork'],['Glo-cke','bell'],['Ka-rot-te','carrot'],['Wol-ke','cloud'],['Schau-fel','spade'],['Ku-chen','cake'],['Re-gen','rain'],['Vo-gel','bird-sit'],['Schne-cke','snail']]);
   // «Lokomotive» names the drawn engine (23 Nov review); later words widen the three- to five-syllable range.
   const syllableWords=words.concat([['Scho-ko-la-de','chocolate'],['Lo-ko-mo-ti-ve','steam-train'],['Was-ser-me-lo-ne','watermelon'],['Feu-er-wehr-au-to','fire-engine'],
-    ['Son-nen-blu-me','sunflower'],['Ma-ri-en-kä-fer','ladybird'],['E-le-fant','elephant'],['Gi-raf-fe','giraffe'],['Schild-krö-te','tortoise'],['Erd-bee-re','strawberry'],['Re-gen-bo-gen','rainbow-arch'],['Gän-se-blüm-chen','daisy']]);
+    ['Son-nen-blu-me','sunflower'],['Ma-ri-en-kä-fer','ladybird'],['Eich-hörn-chen','squirrel-sit'],['Mur-mel-tier','alpine-marmot'],['Schild-krö-te','tortoise'],['Erd-bee-re','strawberry'],['Re-gen-bo-gen','rainbow-arch'],['Gän-se-blüm-chen','daisy']]);
   syllableWords.forEach(([w,picture],i)=>{
     const word=w.replaceAll('-',''),parts=w.split('-');
     add('syllable','word-'+i,word,{kind:'syllable',prompt:'Wie viele Silben hat das Wort?',word,picture,parts,answer:parts.length,choices:[0,1,2].map(i=>Math.max(1,Math.min(3,parts.length-1))+i)});

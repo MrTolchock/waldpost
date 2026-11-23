@@ -42,7 +42,10 @@ function changedSecond(key){
  if(secondWhole.has(id)||key==='friends-hedgehog/riddle-10')return true;
  return ['friends-squirrel','syllable','neighbours'].includes(id)&&!secondKept.has(key);
 }
-const changed=key=>changedFirst(key)||changedSecond(key);
+/* Third round on 23 November (9.4.35): local animals of the Alps, woods and waters replace zebra, lion, tiger, camel, giraffe,
+   elephant and penguin in Tiermerkmale, in the animal reading words (whose neighbouring wrong pictures change too) and in Silben. */
+const changedThird=key=>/^friends-hedgehog\/nature-question-(1[6-9]|2[0-2])$/.test(key)||/^friends-mouse\/friends-frog-animal-([89]|1[0-9]|2[0-3])$/.test(key)||['syllable/word-41','syllable/word-42'].includes(key);
+const changed=key=>changedFirst(key)||changedSecond(key)||changedThird(key);
 // A puzzle-level sign-off covers its whole pool, so any changed or added task reopens it.
 const puzzles=new Set([...wholePuzzles,...secondWhole,'friends-bird','friends-mouse','friends-hedgehog','friends-deer','friends-badger','syllable','neighbours','vowels','add']);
-module.exports={changed,changedFirst,changedSecond,added,puzzles};
+module.exports={changed,changedFirst,changedSecond,changedThird,added,puzzles};
