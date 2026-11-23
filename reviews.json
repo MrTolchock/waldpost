@@ -28299,6 +28299,15 @@
       "at": "2026-11-23T20:08:11.888Z",
       "seen": true,
       "operation": "8ce31ca0-1dee-49b6-823f-a961ab5b064b"
+    },
+    "puzzle:neighbours@db7c6e87efa82b05": {
+      "key": "puzzle:neighbours",
+      "revision": "db7c6e87efa82b05",
+      "status": "improve",
+      "note": "Success screen passt nicht zu den restlichen rätseln, ich meine grüner rahmen um richtige reihenfolge. Anpassen",
+      "at": "2026-11-23T20:08:51.965Z",
+      "seen": true,
+      "operation": "77861db5-3b10-4b8e-a3fa-7c4d57adca5e"
     }
   },
   "history": [
