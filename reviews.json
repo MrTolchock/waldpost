@@ -25401,6 +25401,186 @@
       "at": "2026-11-23T15:56:27.715Z",
       "seen": true,
       "operation": "27f5bd81-ba99-4f39-b970-494a6c795bc2"
+    },
+    "friends-squirrel/count-1@a4af0fb983a984d5": {
+      "key": "friends-squirrel/count-1",
+      "revision": "a4af0fb983a984d5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:30.580Z",
+      "seen": true,
+      "operation": "cf959d46-0ec9-4a9d-b707-47fd423c4729"
+    },
+    "friends-squirrel/count-2@8c2db60bfb488635": {
+      "key": "friends-squirrel/count-2",
+      "revision": "8c2db60bfb488635",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:32.082Z",
+      "seen": true,
+      "operation": "9bc80b3e-81f9-4d33-9783-f86d5afd671c"
+    },
+    "friends-squirrel/count-3@86040ca1e3438f11": {
+      "key": "friends-squirrel/count-3",
+      "revision": "86040ca1e3438f11",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:34.031Z",
+      "seen": true,
+      "operation": "cfa77f41-68ee-441b-b956-5d39c41ecf6f"
+    },
+    "friends-squirrel/count-4@d9a53adf44e46b71": {
+      "key": "friends-squirrel/count-4",
+      "revision": "d9a53adf44e46b71",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:35.667Z",
+      "seen": true,
+      "operation": "f0757cc3-b982-4ac9-9069-eedd4100411c"
+    },
+    "friends-squirrel/count-5@979076f9c3020055": {
+      "key": "friends-squirrel/count-5",
+      "revision": "979076f9c3020055",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:37.329Z",
+      "seen": true,
+      "operation": "45b62ced-2d85-45e5-ba0d-4463643b5ebb"
+    },
+    "friends-squirrel/count-6@24ca111b1e9143b5": {
+      "key": "friends-squirrel/count-6",
+      "revision": "24ca111b1e9143b5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:38.866Z",
+      "seen": true,
+      "operation": "0c589e6b-2ad0-4ffa-bf18-ecad6892d41c"
+    },
+    "friends-squirrel/count-7@ab4c5b8194d1a499": {
+      "key": "friends-squirrel/count-7",
+      "revision": "ab4c5b8194d1a499",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:40.402Z",
+      "seen": true,
+      "operation": "ef1f9880-f0e6-4110-8ea3-007e70f17740"
+    },
+    "friends-squirrel/count-8@e0e900c7477868f9": {
+      "key": "friends-squirrel/count-8",
+      "revision": "e0e900c7477868f9",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:42.285Z",
+      "seen": true,
+      "operation": "442f3dfa-a004-4a1d-96a7-a22112f48f13"
+    },
+    "friends-squirrel/count-9@7a0573d23c64efce": {
+      "key": "friends-squirrel/count-9",
+      "revision": "7a0573d23c64efce",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:44.017Z",
+      "seen": true,
+      "operation": "a0770dde-9bb8-410b-ba73-3f37005dad31"
+    },
+    "friends-squirrel/count-10@2a6644dc1299a56e": {
+      "key": "friends-squirrel/count-10",
+      "revision": "2a6644dc1299a56e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:45.532Z",
+      "seen": true,
+      "operation": "198a4337-3ba8-479d-8188-f0281f794fb5"
+    },
+    "friends-squirrel/count-11@73ec0a1fe13fcbf5": {
+      "key": "friends-squirrel/count-11",
+      "revision": "73ec0a1fe13fcbf5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:47.131Z",
+      "seen": true,
+      "operation": "a0670c27-48a0-482b-ba02-dbab57e424f6"
+    },
+    "friends-squirrel/count-12@caf24b4be9b53775": {
+      "key": "friends-squirrel/count-12",
+      "revision": "caf24b4be9b53775",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:48.815Z",
+      "seen": true,
+      "operation": "a1eb2ee8-5f0d-4f7a-966b-387a66c66538"
+    },
+    "friends-squirrel/count-13@e9e0719fe8d0a671": {
+      "key": "friends-squirrel/count-13",
+      "revision": "e9e0719fe8d0a671",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:50.344Z",
+      "seen": true,
+      "operation": "aab837ed-514d-4a54-9b29-2385da04eda5"
+    },
+    "friends-squirrel/count-14@7c0f43db70f82871": {
+      "key": "friends-squirrel/count-14",
+      "revision": "7c0f43db70f82871",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:51.895Z",
+      "seen": true,
+      "operation": "a7d65411-3d28-455b-b9ba-72f7736d51d8"
+    },
+    "friends-squirrel/count-15@52c158df0d94a7f5": {
+      "key": "friends-squirrel/count-15",
+      "revision": "52c158df0d94a7f5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:53.514Z",
+      "seen": true,
+      "operation": "bb99c80d-da3f-41a9-b174-19a9886db28b"
+    },
+    "friends-squirrel/count-16@a03a56e3545a9375": {
+      "key": "friends-squirrel/count-16",
+      "revision": "a03a56e3545a9375",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:55.317Z",
+      "seen": true,
+      "operation": "811735c9-e178-4b64-82fa-8d96a0bd2865"
+    },
+    "friends-squirrel/count-17@41e010ffc13b1a79": {
+      "key": "friends-squirrel/count-17",
+      "revision": "41e010ffc13b1a79",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:57.215Z",
+      "seen": true,
+      "operation": "3865532a-29c4-4979-92dc-d404b3c133f8"
+    },
+    "friends-squirrel/count-18@072e1c53189e8379": {
+      "key": "friends-squirrel/count-18",
+      "revision": "072e1c53189e8379",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:56:58.931Z",
+      "seen": true,
+      "operation": "9fc19187-2ae9-432f-b67f-fc525b2064c0"
+    },
+    "friends-squirrel/count-19@815e7bb2a45728dc": {
+      "key": "friends-squirrel/count-19",
+      "revision": "815e7bb2a45728dc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:57:00.444Z",
+      "seen": true,
+      "operation": "62ce534e-339b-425d-bed9-d45c101c0abb"
+    },
+    "friends-squirrel/count-20@5723558ccbd8e2d6": {
+      "key": "friends-squirrel/count-20",
+      "revision": "5723558ccbd8e2d6",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:57:03.094Z",
+      "seen": true,
+      "operation": "9251bbfc-abe7-4952-b893-e0927682b1a3"
     }
   },
   "history": [
