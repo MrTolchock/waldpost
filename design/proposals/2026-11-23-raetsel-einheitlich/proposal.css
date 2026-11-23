@@ -1,0 +1,82 @@
+/* Vorschlag 2026-11-23 – einheitliche Rätsel. Nur zur Aufnahme eingespielt, nicht im Spiel. */
+body .screen-puzzle{
+ --pv-prompt:26px;        /* Schriftgrösse 1: Frage/Einleitung und Bedienknöpfe */
+ --pv-text:34px;          /* Schriftgrösse 2: alles, was gelesen, gezählt oder gewählt wird */
+ --pv-pic:76px;           /* eine Bildgrösse im Rahmen und bei den Antworten */
+ --pv-frame-h:208px;      /* gleiche Rahmenhöhe in allen Rätseln */
+ --pv-paper:760px;
+ --pv-card:#fffaf0;--pv-card-line:#d6c5a4;--pv-frame:#f4f0e1;
+}
+@media(max-width:600px){body .screen-puzzle{--pv-prompt:22px;--pv-text:29px;--pv-pic:52px;--pv-frame-h:160px;--pv-paper:100%}}
+
+/* Kleineres Papier: mehr vom Hintergrund bleibt sichtbar */
+body .screen-puzzle{display:flex;flex-direction:column;justify-content:center}
+body .friends-interface .screen-puzzle .puzzle-paper,body .screen-puzzle .puzzle-paper,body .screen-puzzle .puzzle-paper:has(>.puzzle-context){
+ width:min(var(--pv-paper),100%) !important;flex:none !important;height:auto !important;margin:auto !important;padding:14px 22px 20px !important;background:#fffaf0ee}
+@media(max-width:600px){body .screen-puzzle{padding:24px 18px !important}body .screen-puzzle .puzzle-paper{padding:10px 10px 16px !important}}
+
+/* Eine Schriftart, eine Stärke, zwei Grössen */
+body .screen-puzzle .puzzle-paper :is(*):not(.puzzle-context,.puzzle-context *){font-family:var(--read) !important;font-weight:700 !important}
+body .screen-puzzle .puzzle-paper>.puzzle-prompt{font-size:var(--pv-prompt) !important;line-height:1.3 !important;min-height:calc(var(--pv-prompt) * 1.3);margin:14px auto 14px !important}
+body .screen-puzzle .puzzle-scene :is(*),body .screen-puzzle .puzzle-answers :is(*){font-size:var(--pv-text) !important;line-height:1.3}
+body .screen-puzzle :is(.puzzle-group-result,.puzzle-small,.puzzle-memory-button,.puzzle-reset,.puzzle-picnic-bank+*,.puzzle-answers>.puzzle-button:not(.puzzle-answer)) ,
+body .screen-puzzle .puzzle-paper :is(.puzzle-group-result,.puzzle-group-result *,small){font-size:var(--pv-prompt) !important}
+
+/* Ein Rahmen: gleiche Breite, Höhe, Farbe, Linie und Rundung */
+body .screen-puzzle .puzzle-paper>.puzzle-scene,
+body .screen-puzzle .puzzle-paper>.puzzle-scene:has(>.puzzle-read-text:only-child){
+ display:flex !important;flex-direction:column;justify-content:center;align-items:center;gap:12px;
+ flex:none !important;width:100% !important;max-width:none !important;min-height:var(--pv-frame-h);margin:0 auto !important;padding:16px !important;
+ background:var(--pv-frame) !important;border:1px solid var(--pv-card-line) !important;border-radius:22px !important;box-shadow:none !important}
+body .screen-puzzle .puzzle-paper>.puzzle-scene>*{margin-top:0 !important;margin-bottom:0 !important}
+body .screen-puzzle .puzzle-paper>.puzzle-answers{margin:16px auto 0 !important}
+
+/* Innenkästchen alle gleich: helles Papier, eine Linie, eine Rundung */
+body .screen-puzzle :is(.puzzle-addition>section,.puzzle-matrix-row,.puzzle-picnic-bank,.puzzle-picnic-place,.puzzle-treasures>span,.puzzle-berry-plate,.puzzle-pattern-cell,.puzzle-number-card,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell,.puzzle-syllable-slot,.puzzle-neighbour-tile){
+ background:var(--pv-card) !important;border:1px solid var(--pv-card-line) !important;border-radius:14px !important;box-shadow:none !important}
+body .screen-puzzle :is(.puzzle-pattern-cell.gap,.puzzle-firefly-slot.is-empty,.puzzle-syllable-slot:not(.filled),.puzzle-number-card[data-neighbour-slot]:not(.filled)){border:2px dashed #b39a70 !important}
+body .screen-puzzle .puzzle-route-cell.hedge{background:#dfe6c4 !important}
+
+/* Eine Bildgrösse: im Rahmen und bei den Antworten */
+body .screen-puzzle :is(.puzzle-scene,.puzzle-answers) .puzzle-picture,
+body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-picture,
+body .screen-puzzle .puzzle-paper:has(>.puzzle-scene>.puzzle-read-text:only-child)>.puzzle-answers>.puzzle-answer>.puzzle-picture,
+body .screen-puzzle .puzzle-addition .puzzle-objects>.puzzle-picture{width:var(--pv-pic) !important;height:var(--pv-pic) !important;max-width:none !important;max-height:none !important;flex:none}
+/* Bilder, die eine Zelle füllen, bekommen die Zelle in Bildgrösse */
+body .screen-puzzle{--pv-cell:calc(var(--pv-pic) + 10px)}
+body .screen-puzzle :is(.puzzle-pattern-cell,.puzzle-treasures>span,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell){box-sizing:border-box;width:var(--pv-cell) !important;height:var(--pv-cell) !important;min-width:0 !important;min-height:0 !important;padding:4px !important;aspect-ratio:1}
+body .screen-puzzle .puzzle-counter{width:var(--pv-pic) !important;height:var(--pv-pic) !important;min-width:0 !important;min-height:0 !important;padding:0 !important}
+body .screen-puzzle :is(.puzzle-pattern-cell,.puzzle-treasures>span,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell,.puzzle-counter) .puzzle-picture{width:100% !important;height:100% !important;position:static !important;inset:auto}
+body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow){grid-template-columns:repeat(5,var(--pv-pic)) !important;max-width:none !important;justify-content:center;gap:8px !important}
+body .screen-puzzle .puzzle-firefly-slots{grid-template-columns:repeat(5,var(--pv-cell)) !important;max-width:none !important;justify-content:center}
+body .screen-puzzle .puzzle-route{grid-template-columns:repeat(var(--size),var(--pv-cell)) !important;max-width:none !important;justify-content:center}
+body .screen-puzzle .puzzle-treasures{grid-template-columns:repeat(4,var(--pv-cell)) !important;max-width:none !important;justify-content:center}
+body .screen-puzzle .puzzle-mirror{display:flex !important;justify-content:center;max-width:none !important}
+body .screen-puzzle .puzzle-mirror-grid{grid-template-columns:repeat(3,var(--pv-cell)) !important}
+body .screen-puzzle .puzzle-matrix{max-width:none !important}
+body .screen-puzzle .puzzle-matrix-row{grid-template-columns:repeat(3,var(--pv-pic)) !important;justify-content:center}
+body .screen-puzzle .puzzle-matrix-row>span{height:var(--pv-pic) !important}
+body .screen-puzzle .puzzle-matrix-row .puzzle-picture{max-width:none !important;max-height:none !important}
+body .screen-puzzle :is(.puzzle-objects){display:flex !important;flex-wrap:wrap;justify-content:center;gap:6px !important;max-width:none !important}
+body .screen-puzzle .puzzle-picnic-berry{width:var(--pv-pic) !important;height:var(--pv-pic) !important}
+body .screen-puzzle .puzzle-picnic-friend,body .screen-puzzle .puzzle-picnic-friend>.forest-portrait{width:var(--pv-pic) !important;height:var(--pv-pic) !important}
+body .screen-puzzle .puzzle-number-card{width:var(--pv-pic) !important;min-height:var(--pv-pic) !important}
+
+/* Bild-Antworten sind so gross wie ihr Bild (plus gleiches Innenmass) */
+body .screen-puzzle .puzzle-answers>.puzzle-answer:has(>.puzzle-picture){flex:none !important;min-width:0 !important;max-width:none !important;padding:12px !important}
+body .screen-puzzle .puzzle-answers>.puzzle-answer.puzzle-word-answer:has(>.puzzle-picture){padding:10px 18px !important}
+/* Addieren: Gruppen nebeneinander, Bilder in Reihen zu dritt */
+body .screen-puzzle .puzzle-addition{grid-template-columns:1fr 32px 1fr !important;gap:12px !important;width:100%}
+body .screen-puzzle .puzzle-addition .puzzle-objects{min-height:0 !important}
+body .screen-puzzle .puzzle-addition>section{padding:10px !important;gap:4px !important}
+/* Handy: weniger Rand, Gruppen beim Addieren untereinander, Spiegelbild mit kleineren Kästchen */
+@media(max-width:600px){
+ body .screen-puzzle{padding:20px 12px !important}
+ body .screen-puzzle .puzzle-paper>.puzzle-scene{padding:8px !important}
+ body .screen-puzzle :is(.puzzle-firefly-slots,.puzzle-nuts,.puzzle-meadow,.puzzle-route,.puzzle-treasures){gap:4px !important}
+ body .screen-puzzle .puzzle-addition{grid-template-columns:1fr !important;gap:4px !important}
+ body .screen-puzzle .puzzle-addition>.puzzle-sign{justify-self:center}
+ body .screen-puzzle .puzzle-mirror{--pv-cell:46px;gap:6px !important}
+ body .screen-puzzle .puzzle-mirror .puzzle-picture{width:100% !important;height:100% !important}
+ body .screen-puzzle .puzzle-mirror-grid{gap:3px !important}
+}
