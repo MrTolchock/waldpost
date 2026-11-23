@@ -25833,6 +25833,24 @@
       "at": "2026-11-23T16:00:33.656Z",
       "seen": true,
       "operation": "9fd71e1a-e43f-425f-8870-49571bc4b69e"
+    },
+    "friends-mouse/word-10@cb7030c41111fbac": {
+      "key": "friends-mouse/word-10",
+      "revision": "cb7030c41111fbac",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T16:01:23.499Z",
+      "seen": true,
+      "operation": "0008c0d6-94f0-4a3e-9324-26cd9e6a5e95"
+    },
+    "friends-mouse/word-14@f700bfb1a2bda129": {
+      "key": "friends-mouse/word-14",
+      "revision": "f700bfb1a2bda129",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T16:01:25.815Z",
+      "seen": true,
+      "operation": "a5dde219-62e8-4e50-a4f9-7068623c4396"
     }
   },
   "history": [
