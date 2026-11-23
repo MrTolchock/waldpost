@@ -27894,6 +27894,24 @@
       "at": "2026-11-23T20:03:09.629Z",
       "seen": true,
       "operation": "e1969c25-e380-4975-bc29-13fb4195ea58"
+    },
+    "friends-hedgehog/nature-question-22@5721006a952db386": {
+      "key": "friends-hedgehog/nature-question-22",
+      "revision": "5721006a952db386",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T20:03:13.677Z",
+      "seen": true,
+      "operation": "0287bef7-0052-4fce-95d3-ed51abf867c4"
+    },
+    "puzzle:friends-hedgehog@a1b8f0927a7ba500": {
+      "key": "puzzle:friends-hedgehog",
+      "revision": "a1b8f0927a7ba500",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T20:03:16.834Z",
+      "seen": true,
+      "operation": "dc0166bf-6172-4459-84df-2e9becd099b6"
     }
   },
   "history": [
