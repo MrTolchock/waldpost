@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "b8acc26c6d61b3b09442e5f9fe01d10ad49df1945b814fb6ce1c4b5e6ab0b716",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "9f0e173d86d3d010287ca662e0c0c667096e9189c82cca20d20b26c16750c9cf",
     "generationRecord": "generation-records/puzzle-badger-sett.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-badger-sett.txt"

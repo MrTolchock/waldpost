@@ -305,7 +305,7 @@ These definitions are the same finite data used by the game and review previews.
       "kind": "rhyme",
       "prompt": "Welches Wort reimt sich?",
       "text": "Nuss",
-      "picture": "nut",
+      "picture": "walnut",
       "answer": "Bus",
       "choices": [
         "Bus",

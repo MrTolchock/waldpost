@@ -20,3 +20,29 @@ jobs:
       - run: node tools/illustrations/library.cjs --check
       - run: node tools/illustrations/handoff.cjs --check
       - run: node --test tests/*.test.cjs
+  browser:
+    # Real-browser checks of the gallery, review queue and child journey (added after the 23 November release review:
+    # a stale browser expectation had gone unnoticed because CI ran no browser suite).
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --prefix tools
+      - name: Install Playwright Chromium
+        run: |
+          mkdir -p "$RUNNER_TEMP/pw" && cd "$RUNNER_TEMP/pw" && npm init -y >/dev/null && npm install --no-save playwright@1.63.0
+          npx playwright install --with-deps chromium
+          echo "PLAYWRIGHT_MODULE=$RUNNER_TEMP/pw/node_modules/playwright" >> "$GITHUB_ENV"
+          echo "CHROMIUM_PATH=$(node -e "console.log(require('$RUNNER_TEMP/pw/node_modules/playwright').chromium.executablePath())")" >> "$GITHUB_ENV"
+      - name: Serve the game
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 >/dev/null 2>&1 &
+          sleep 2
+      - run: node tests/puzzle-gallery-browser.cjs
+      - run: node tests/ipad-puzzle-layout-browser.cjs
+      - run: node tests/habitat-backgrounds-browser.cjs
+      - run: node tests/letter-sessions-browser.cjs

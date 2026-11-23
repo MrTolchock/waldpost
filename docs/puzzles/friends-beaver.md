@@ -1,11 +1,11 @@
-# Mengen vergleichen
+# Reihen ergänzen
 
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 
 - Stabile Rätsel-ID: `friends-beaver`
 - Host: beaver
-- Related competence: **MA.2.A.1.a** — Mengen von Waldgegenständen vergleichen
-- Difficulty: Zwei oder drei verschiedene Waldgegenstände je Reihe; die Mengen der ersten zwei Reihen ergänzen
+- Related competence: **MA.2.A.1.a** — Reihen mit Waldgegenständen ergänzen
+- Difficulty: Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste
 - Pool: 43 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 

@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "7f4158d215ec0938d342c66a6f5c9836ba26400d0a3e668ff0fd9bb063b421c9",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "5bee3a27aea0177650993cf8f02ab8a2cc3fd5c5fd3cca9b08d38d1e2137d6c2",
     "generationRecord": "generation-records/puzzle-conifers.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-conifers.txt"

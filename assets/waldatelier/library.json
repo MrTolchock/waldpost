@@ -27,7 +27,7 @@
       "host": "owl"
     },
     "friends-beaver": {
-      "title": "Mengen vergleichen",
+      "title": "Reihen ergänzen",
       "host": "beaver"
     },
     "friends-mouse": {
@@ -1171,7 +1171,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "apple",
@@ -1276,8 +1278,7 @@
         "🦡"
       ],
       "usedBy": [
-        "friends-mouse",
-        "friends-badger"
+        "friends-mouse"
       ]
     },
     {
@@ -1310,7 +1311,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "badger-sleep",
@@ -1383,7 +1386,8 @@
       ],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -1422,6 +1426,7 @@
       ],
       "usedBy": [
         "friends-mouse",
+        "friends-badger",
         "syllable",
         "vowels",
         "read-puzzle"
@@ -1647,7 +1652,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "bed",
@@ -2193,7 +2200,8 @@
       ],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -2502,7 +2510,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-badger"
+      ]
     },
     {
       "id": "cake",
@@ -2897,7 +2907,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "vowels"
+      ]
     },
     {
       "id": "chick",
@@ -3613,7 +3625,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "syllable"
+      ]
     },
     {
       "id": "dandelion-flower",
@@ -3629,7 +3643,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "dandelion-seedhead",
@@ -3720,7 +3736,9 @@
       },
       "tokens": [],
       "usedBy": [
-        "friends-owl"
+        "friends-owl",
+        "friends-hedgehog",
+        "vowels"
       ]
     },
     {
@@ -4050,7 +4068,8 @@
       ],
       "usedBy": [
         "friends-mouse",
-        "friends-hedgehog"
+        "friends-hedgehog",
+        "syllable"
       ]
     },
     {
@@ -4575,7 +4594,6 @@
       },
       "tokens": [],
       "usedBy": [
-        "friends-deer",
         "friends-badger"
       ]
     },
@@ -4697,7 +4715,7 @@
     },
     {
       "id": "forest-nut",
-      "label": "Nuss",
+      "label": "Eichel",
       "sheet": "forest-objects",
       "index": 0,
       "column": 0,
@@ -4715,13 +4733,10 @@
         "friends-squirrel",
         "friends-bird",
         "friends-beaver",
-        "friends-mouse",
         "friends-deer",
         "friends-badger",
         "friends-ibex",
-        "syllable",
-        "treasure",
-        "vowels"
+        "treasure"
       ]
     },
     {
@@ -4927,7 +4942,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "fox-drink",
@@ -5068,7 +5085,8 @@
       "tokens": [],
       "usedBy": [
         "friends-owl",
-        "friends-hedgehog"
+        "friends-hedgehog",
+        "friends-badger"
       ]
     },
     {
@@ -5153,7 +5171,8 @@
       ],
       "usedBy": [
         "friends-mouse",
-        "friends-hedgehog"
+        "friends-hedgehog",
+        "syllable"
       ]
     },
     {
@@ -5256,9 +5275,7 @@
       "tokens": [
         "🍇"
       ],
-      "usedBy": [
-        "friends-deer"
-      ]
+      "usedBy": []
     },
     {
       "id": "grasshopper",
@@ -5564,7 +5581,8 @@
       "usedBy": [
         "friends-bird",
         "friends-mouse",
-        "friends-badger"
+        "friends-badger",
+        "vowels"
       ]
     },
     {
@@ -5724,7 +5742,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "honey",
@@ -5743,7 +5763,6 @@
         "🍯"
       ],
       "usedBy": [
-        "friends-deer",
         "friends-badger"
       ]
     },
@@ -5811,7 +5830,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-badger"
+      ]
     },
     {
       "id": "insect-hotel",
@@ -6254,7 +6275,8 @@
       "usedBy": [
         "friends-mouse",
         "friends-hedgehog",
-        "count"
+        "count",
+        "syllable"
       ]
     },
     {
@@ -6327,7 +6349,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "vowels"
+      ]
     },
     {
       "id": "lemonade",
@@ -7547,7 +7571,8 @@
       ],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -8282,7 +8307,8 @@
         "🍐"
       ],
       "usedBy": [
-        "friends-badger"
+        "friends-badger",
+        "vowels"
       ]
     },
     {
@@ -8399,8 +8425,7 @@
       "usedBy": [
         "friends-mouse",
         "friends-hedgehog",
-        "friends-deer",
-        "friends-badger"
+        "friends-deer"
       ]
     },
     {
@@ -8469,9 +8494,7 @@
       "tokens": [
         "🪴"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "plant-pot",
@@ -8946,7 +8969,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "syllable"
+      ]
     },
     {
       "id": "raincoat",
@@ -9026,7 +9051,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "red-deer-doe",
@@ -9506,7 +9533,8 @@
       },
       "tokens": [],
       "usedBy": [
-        "friends-bird"
+        "friends-bird",
+        "vowels"
       ]
     },
     {
@@ -9783,7 +9811,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-deer"
+      ]
     },
     {
       "id": "saffron-milkcap",
@@ -10017,8 +10047,7 @@
       ],
       "usedBy": [
         "friends-mouse",
-        "friends-hedgehog",
-        "friends-badger"
+        "friends-hedgehog"
       ]
     },
     {
@@ -10398,7 +10427,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-badger"
+      ]
     },
     {
       "id": "snowflake",
@@ -10414,7 +10445,9 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-badger"
+      ]
     },
     {
       "id": "snowman",
@@ -10486,7 +10519,6 @@
       "tokens": [],
       "usedBy": [
         "friends-mouse",
-        "friends-badger",
         "syllable",
         "vowels",
         "read-puzzle"
@@ -10546,9 +10578,7 @@
       "tokens": [
         "🥄"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "sprout",
@@ -11052,7 +11082,8 @@
         "🍓"
       ],
       "usedBy": [
-        "friends-badger"
+        "friends-badger",
+        "syllable"
       ]
     },
     {
@@ -11090,7 +11121,6 @@
       "usedBy": [
         "friends-bird",
         "friends-mouse",
-        "friends-deer",
         "friends-badger",
         "syllable",
         "vowels",
@@ -11130,7 +11160,8 @@
         "🌻"
       ],
       "usedBy": [
-        "friends-badger"
+        "friends-badger",
+        "syllable"
       ]
     },
     {
@@ -11405,7 +11436,8 @@
       ],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -11481,7 +11513,8 @@
       ],
       "usedBy": [
         "friends-mouse",
-        "friends-hedgehog"
+        "friends-hedgehog",
+        "syllable"
       ]
     },
     {
@@ -11594,7 +11627,8 @@
       ],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -11787,7 +11821,8 @@
       },
       "tokens": [],
       "usedBy": [
-        "friends-bird"
+        "friends-bird",
+        "vowels"
       ]
     },
     {
@@ -11844,7 +11879,8 @@
       "tokens": [],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -11973,7 +12009,8 @@
       "tokens": [],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -12010,7 +12047,8 @@
       "tokens": [],
       "usedBy": [
         "friends-bird",
-        "friends-mouse"
+        "friends-mouse",
+        "vowels"
       ]
     },
     {
@@ -12050,7 +12088,8 @@
         "friends-mouse",
         "friends-hedgehog",
         "friends-deer",
-        "friends-badger"
+        "friends-badger",
+        "vowels"
       ]
     },
     {
@@ -12071,7 +12110,7 @@
     },
     {
       "id": "walnut",
-      "label": "Baumnuss",
+      "label": "Nuss",
       "sheet": "expansion-garden-harvest",
       "index": 14,
       "column": 2,
@@ -12083,7 +12122,12 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": []
+      "usedBy": [
+        "friends-bird",
+        "friends-mouse",
+        "syllable",
+        "vowels"
+      ]
     },
     {
       "id": "wash-tub",

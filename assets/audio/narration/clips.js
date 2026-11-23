@@ -1,12 +1,12 @@
 /* Exact transcripts of the bundled German narration. */
 window.FK.narrationClips = new Map([
-  ["Zähle die Nüsse. Tippe auf die passende Zahl.","friends-squirrel"],
+  ["Zähle die Eicheln. Tippe auf die passende Zahl.","friends-squirrel"],
   ["Lies die Frage. Tippe auf das passende Bild.","friends-badger"],
   ["Stein, Tanne und Blume wiederholen sich in Gruppen. Suche die Gruppe. Welches Bild gehört in die Lücke?","friends-ibex"],
   ["Lies die Frage. Tippe auf das Tier, das gemeint ist.","friends-hedgehog"],
   ["Lies das Wort und die Wörter bei den Bildern. Wähle das Wort, das sich reimt.","friends-bird"],
   ["Lies den Satz. Wähle das passende Bild.","friends-owl"],
-  ["In jeder Reihe liegen gleich viele Blätter, Nüsse und Federn wie in der ersten Reihe. Welches Bild fehlt?","friends-beaver"],
+  ["In jeder Reihe liegen die gleichen Dinge wie in der ersten Reihe. Welches Bild fehlt?","friends-beaver"],
   ["Lies das Wort. Wähle das passende Bild.","friends-mouse"],
   ["Zähle nur die roten Marienkäfer zwischen den anderen Waldbewohnern. Wähle dann die Zahl.","count"],
   ["Suche die Bildgruppe, die sich wiederholt. Welches Bild gehört in die Lücke?","pattern"],

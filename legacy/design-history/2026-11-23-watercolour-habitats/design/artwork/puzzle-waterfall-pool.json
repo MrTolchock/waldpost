@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-waterfall-pool.png",
+  "output": "../../assets/forest-friends/puzzle-waterfall-pool.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "6c8c611a1a48321b298244042109b6d273bd1bd533de865b0921ab068ef73f6c",
+    "generationRecord": "generation-records/puzzle-waterfall-pool.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-waterfall-pool.txt"
+  }
+}

@@ -5,7 +5,7 @@
 - Stabile Rätsel-ID: `friends-squirrel`
 - Host: squirrel
 - Related competence: **MA.1.A.2.a** — Mengen zählen
-- Difficulty: 0–20 Nüsse; Vierer- und Fünferstruktur
+- Difficulty: 0–20 Eicheln; Vierer- und Fünferstruktur
 - Pool: 25 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
@@ -26,31 +26,31 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `friends-squirrel/count-0` | Menge 0 — Wie viele Nüsse sind hier? | 0 |
-| `friends-squirrel/count-1` | Menge 1 — Wie viele Nüsse sind hier? | 1 |
-| `friends-squirrel/count-2` | Menge 2 — Wie viele Nüsse sind hier? | 2 |
-| `friends-squirrel/count-3` | Menge 3 — Wie viele Nüsse sind hier? | 3 |
-| `friends-squirrel/count-4` | Menge 4 — Wie viele Nüsse sind hier? | 4 |
-| `friends-squirrel/count-5` | Menge 5 — Wie viele Nüsse sind hier? | 5 |
-| `friends-squirrel/count-6` | Menge 6 — Wie viele Nüsse sind hier? | 6 |
-| `friends-squirrel/count-7` | Menge 7 — Wie viele Nüsse sind hier? | 7 |
-| `friends-squirrel/count-8` | Menge 8 — Wie viele Nüsse sind hier? | 8 |
-| `friends-squirrel/count-9` | Menge 9 — Wie viele Nüsse sind hier? | 9 |
-| `friends-squirrel/count-10` | Menge 10 — Wie viele Nüsse sind hier? | 10 |
-| `friends-squirrel/count-11` | Menge 11 — Wie viele Nüsse sind hier? | 11 |
-| `friends-squirrel/count-12` | Menge 12 — Wie viele Nüsse sind hier? | 12 |
-| `friends-squirrel/count-13` | Menge 13 — Wie viele Nüsse sind hier? | 13 |
-| `friends-squirrel/count-14` | Menge 14 — Wie viele Nüsse sind hier? | 14 |
-| `friends-squirrel/count-15` | Menge 15 — Wie viele Nüsse sind hier? | 15 |
-| `friends-squirrel/count-16` | Menge 16 — Wie viele Nüsse sind hier? | 16 |
-| `friends-squirrel/count-17` | Menge 17 — Wie viele Nüsse sind hier? | 17 |
-| `friends-squirrel/count-18` | Menge 18 — Wie viele Nüsse sind hier? | 18 |
-| `friends-squirrel/count-19` | Menge 19 — Wie viele Nüsse sind hier? | 19 |
-| `friends-squirrel/count-20` | Menge 20 — Wie viele Nüsse sind hier? | 20 |
-| `friends-squirrel/four-4` | Menge 4 in Viererreihen — Wie viele Nüsse sind hier? | 4 |
-| `friends-squirrel/four-8` | Menge 8 in Viererreihen — Wie viele Nüsse sind hier? | 8 |
-| `friends-squirrel/four-12` | Menge 12 in Viererreihen — Wie viele Nüsse sind hier? | 12 |
-| `friends-squirrel/four-16` | Menge 16 in Viererreihen — Wie viele Nüsse sind hier? | 16 |
+| `friends-squirrel/count-0` | Menge 0 — Wie viele Eicheln sind hier? | 0 |
+| `friends-squirrel/count-1` | Menge 1 — Wie viele Eicheln sind hier? | 1 |
+| `friends-squirrel/count-2` | Menge 2 — Wie viele Eicheln sind hier? | 2 |
+| `friends-squirrel/count-3` | Menge 3 — Wie viele Eicheln sind hier? | 3 |
+| `friends-squirrel/count-4` | Menge 4 — Wie viele Eicheln sind hier? | 4 |
+| `friends-squirrel/count-5` | Menge 5 — Wie viele Eicheln sind hier? | 5 |
+| `friends-squirrel/count-6` | Menge 6 — Wie viele Eicheln sind hier? | 6 |
+| `friends-squirrel/count-7` | Menge 7 — Wie viele Eicheln sind hier? | 7 |
+| `friends-squirrel/count-8` | Menge 8 — Wie viele Eicheln sind hier? | 8 |
+| `friends-squirrel/count-9` | Menge 9 — Wie viele Eicheln sind hier? | 9 |
+| `friends-squirrel/count-10` | Menge 10 — Wie viele Eicheln sind hier? | 10 |
+| `friends-squirrel/count-11` | Menge 11 — Wie viele Eicheln sind hier? | 11 |
+| `friends-squirrel/count-12` | Menge 12 — Wie viele Eicheln sind hier? | 12 |
+| `friends-squirrel/count-13` | Menge 13 — Wie viele Eicheln sind hier? | 13 |
+| `friends-squirrel/count-14` | Menge 14 — Wie viele Eicheln sind hier? | 14 |
+| `friends-squirrel/count-15` | Menge 15 — Wie viele Eicheln sind hier? | 15 |
+| `friends-squirrel/count-16` | Menge 16 — Wie viele Eicheln sind hier? | 16 |
+| `friends-squirrel/count-17` | Menge 17 — Wie viele Eicheln sind hier? | 17 |
+| `friends-squirrel/count-18` | Menge 18 — Wie viele Eicheln sind hier? | 18 |
+| `friends-squirrel/count-19` | Menge 19 — Wie viele Eicheln sind hier? | 19 |
+| `friends-squirrel/count-20` | Menge 20 — Wie viele Eicheln sind hier? | 20 |
+| `friends-squirrel/four-4` | Menge 4 in Viererreihen — Wie viele Eicheln sind hier? | 4 |
+| `friends-squirrel/four-8` | Menge 8 in Viererreihen — Wie viele Eicheln sind hier? | 8 |
+| `friends-squirrel/four-12` | Menge 12 in Viererreihen — Wie viele Eicheln sind hier? | 12 |
+| `friends-squirrel/four-16` | Menge 16 in Viererreihen — Wie viele Eicheln sind hier? | 16 |
 
 ## Exact definitions
 
@@ -63,7 +63,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 0",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 0,
       "item": "forest-nut",
       "columns": 5,
@@ -80,7 +80,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 1",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 1,
       "item": "forest-nut",
       "columns": 5,
@@ -97,7 +97,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 2",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 2,
       "item": "forest-nut",
       "columns": 5,
@@ -114,7 +114,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 3",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 3,
       "item": "forest-nut",
       "columns": 5,
@@ -131,7 +131,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 4",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 4,
       "item": "forest-nut",
       "columns": 5,
@@ -148,7 +148,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 5",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 5,
       "item": "forest-nut",
       "columns": 5,
@@ -165,7 +165,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 6",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 6,
       "item": "forest-nut",
       "columns": 5,
@@ -182,7 +182,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 7",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 7,
       "item": "forest-nut",
       "columns": 5,
@@ -199,7 +199,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 8",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 8,
       "item": "forest-nut",
       "columns": 5,
@@ -216,7 +216,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 9",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 9,
       "item": "forest-nut",
       "columns": 5,
@@ -233,7 +233,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 10",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 10,
       "item": "forest-nut",
       "columns": 5,
@@ -250,7 +250,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 11",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 11,
       "item": "forest-nut",
       "columns": 5,
@@ -267,7 +267,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 12",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 12,
       "item": "forest-nut",
       "columns": 5,
@@ -284,7 +284,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 13",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 13,
       "item": "forest-nut",
       "columns": 5,
@@ -301,7 +301,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 14",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 14,
       "item": "forest-nut",
       "columns": 5,
@@ -318,7 +318,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 15",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 15,
       "item": "forest-nut",
       "columns": 5,
@@ -335,7 +335,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 16",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 16,
       "item": "forest-nut",
       "columns": 5,
@@ -352,7 +352,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 17",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 17,
       "item": "forest-nut",
       "columns": 5,
@@ -369,7 +369,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 18",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 18,
       "item": "forest-nut",
       "columns": 5,
@@ -386,7 +386,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 19",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 19,
       "item": "forest-nut",
       "columns": 5,
@@ -403,7 +403,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 20",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 20,
       "item": "forest-nut",
       "columns": 5,
@@ -420,7 +420,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 4 in Viererreihen",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 4,
       "item": "forest-nut",
       "columns": 4,
@@ -437,7 +437,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 8 in Viererreihen",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 8,
       "item": "forest-nut",
       "columns": 4,
@@ -454,7 +454,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 12 in Viererreihen",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 12,
       "item": "forest-nut",
       "columns": 4,
@@ -471,7 +471,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Menge 16 in Viererreihen",
     "question": {
       "kind": "nuts",
-      "prompt": "Wie viele Nüsse sind hier?",
+      "prompt": "Wie viele Eicheln sind hier?",
       "count": 16,
       "item": "forest-nut",
       "columns": 4,

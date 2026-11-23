@@ -264,12 +264,22 @@
  .puzzle-paper>.puzzle-answers{margin-top:14px}
 }
 
-/* Word cards need only a reading line; keep the picture choices alongside it. */
-.screen-puzzle[data-game=friends-mouse] .puzzle-paper>.puzzle-scene {
-  flex:0 0 auto;width:min(100%,32rem);padding:clamp(16px,4vh,36px);margin-block:auto 0
+/* A task that is only a word or sentence needs just a reading line; keep the
+   picture choices beside it and give them the room (23 Nov review). Every
+   reading Rätsel – word, sentence, question or colour – shares this layout. */
+.puzzle-paper>.puzzle-scene:has(>.puzzle-read-text:only-child) {
+  flex:0 0 auto;width:min(100%,40rem);padding:clamp(16px,4vh,36px);margin-block:auto 0
 }
-.screen-puzzle[data-game=friends-mouse] .puzzle-read-text { margin:0 }
-.screen-puzzle[data-game=friends-mouse] .puzzle-paper>.puzzle-answers { margin-block:16px auto }
+.puzzle-scene>.puzzle-read-text:only-child { margin:0 }
+.puzzle-paper:has(>.puzzle-scene>.puzzle-read-text:only-child)>.puzzle-answers { margin-block:16px auto }
+@media(min-width:601px){
+ .puzzle-paper:has(>.puzzle-scene>.puzzle-read-text:only-child)>.puzzle-answers>.puzzle-answer{max-width:248px}
+ .puzzle-paper:has(>.puzzle-scene>.puzzle-read-text:only-child)>.puzzle-answers>.puzzle-answer>.puzzle-picture{width:clamp(120px,24dvh,184px);height:clamp(120px,24dvh,184px)}
+ /* Counted fish fill their groups instead of floating small in an empty panel. */
+ .puzzle-addition .puzzle-objects{max-width:320px}
+ .puzzle-addition .puzzle-objects>.puzzle-picture{width:clamp(40px,6.5vw,64px)}
+ .puzzle-compare .puzzle-berry-plate .puzzle-objects{max-width:360px}
+}
 .puzzle-woods { position:relative;display:block;width:100%;aspect-ratio:1 }
 .puzzle-woods>.puzzle-picture { position:absolute;width:64%;height:64%;left:0;top:4% }
 .puzzle-woods>.puzzle-picture:nth-child(2) { left:36%;top:8% }

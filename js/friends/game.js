@@ -124,8 +124,12 @@ function map(){
   const here=area==='forest'?world.position:places.home,[hx,hy]=mapPoint(here.x,here.z);
   const me=h('div',{class:'ff-map-here',role:'img','aria-label':'Hier ist Fuchs'},h('span',{class:'ff-map-here-pulse'}));
   me.style.left=(hx*100)+'%';me.style.top=(hy*100)+'%';board.append(me);
-  // Keep picture-only 64 px pins separated on phones; the map pans sideways, centred on Fuchs.
-  const scroller=h('div',{class:'ff-map-scroll'},board);card.append(scroller);scroller.scrollLeft=Math.max(0,Math.min(scroller.scrollWidth-scroller.clientWidth,hx*scroller.scrollWidth-scroller.clientWidth/2));board.querySelector('button')?.focus({preventScroll:true});
+  // Keep picture-only 64 px pins separated on phones; the map pans sideways. It opens so that Fuchs and the
+  // current destination are both in view; when they are too far apart for a narrow screen, the destination wins.
+  const goal=board.querySelector('.ff-map-invited'),gx=goal?parseFloat(goal.style.left)/100:hx;
+  const scroller=h('div',{class:'ff-map-scroll'},board);card.append(scroller);
+  const width=scroller.scrollWidth,view=scroller.clientWidth,both=Math.abs(gx-hx)*width<=view-96,centre=both?(hx+gx)/2:gx;
+  scroller.scrollLeft=Math.max(0,Math.min(width-view,centre*width-view/2));board.querySelector('button')?.focus({preventScroll:true});
   if(mail.phase==='to-mailman'){
     const b=button('Zum Briefträger','mailman',()=>{if(area!=='forest')go('forest');else close();world.route('mailman');},'ff-map-courier');
     b.removeAttribute('title');b.replaceChildren(FK.friendsArt.portrait('mailman'));b.dataset.place='mailman';card.append(b);

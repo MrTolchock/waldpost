@@ -6,7 +6,7 @@
 - Host: bird
 - Related competence: **D.1.A.1.b** — Wörter in Silben zerlegen
 - Difficulty: 1–5 Silben; vertraute Bildwörter
-- Pool: 39 Aufgaben; eine Runde enthält fünf.
+- Pool: 47 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
 ## Mapping to the blueprint
@@ -62,9 +62,17 @@
 | `syllable/word-33` | Vogel — Vogel | 2 |
 | `syllable/word-34` | Schnecke — Schnecke | 2 |
 | `syllable/word-35` | Schokolade — Schokolade | 4 |
-| `syllable/word-36` | Eisenbahnzug — Eisenbahnzug | 4 |
+| `syllable/word-36` | Lokomotive — Lokomotive | 5 |
 | `syllable/word-37` | Wassermelone — Wassermelone | 5 |
 | `syllable/word-38` | Feuerwehrauto — Feuerwehrauto | 5 |
+| `syllable/word-39` | Sonnenblume — Sonnenblume | 4 |
+| `syllable/word-40` | Marienkäfer — Marienkäfer | 5 |
+| `syllable/word-41` | Elefant — Elefant | 3 |
+| `syllable/word-42` | Giraffe — Giraffe | 3 |
+| `syllable/word-43` | Schildkröte — Schildkröte | 3 |
+| `syllable/word-44` | Erdbeere — Erdbeere | 3 |
+| `syllable/word-45` | Regenbogen — Regenbogen | 4 |
+| `syllable/word-46` | Gänseblümchen — Gänseblümchen | 4 |
 
 ## Exact definitions
 
@@ -376,7 +384,7 @@ These definitions are the same finite data used by the game and review previews.
       "kind": "syllable",
       "prompt": "Wie viele Silben hat das Wort?",
       "word": "Nuss",
-      "picture": "forest-nut",
+      "picture": "walnut",
       "parts": [
         "Nuss"
       ],
@@ -795,19 +803,20 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "syllable/word-36",
-    "label": "Eisenbahnzug",
+    "label": "Lokomotive",
     "question": {
       "kind": "syllable",
       "prompt": "Wie viele Silben hat das Wort?",
-      "word": "Eisenbahnzug",
+      "word": "Lokomotive",
       "picture": "steam-train",
       "parts": [
-        "Ei",
-        "sen",
-        "bahn",
-        "zug"
+        "Lo",
+        "ko",
+        "mo",
+        "ti",
+        "ve"
       ],
-      "answer": 4,
+      "answer": 5,
       "choices": [
         3,
         4,
@@ -854,6 +863,179 @@ These definitions are the same finite data used by the game and review previews.
         "to"
       ],
       "answer": 5,
+      "choices": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-39",
+    "label": "Sonnenblume",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Sonnenblume",
+      "picture": "sunflower",
+      "parts": [
+        "Son",
+        "nen",
+        "blu",
+        "me"
+      ],
+      "answer": 4,
+      "choices": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-40",
+    "label": "Marienkäfer",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Marienkäfer",
+      "picture": "ladybird",
+      "parts": [
+        "Ma",
+        "ri",
+        "en",
+        "kä",
+        "fer"
+      ],
+      "answer": 5,
+      "choices": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-41",
+    "label": "Elefant",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Elefant",
+      "picture": "elephant",
+      "parts": [
+        "E",
+        "le",
+        "fant"
+      ],
+      "answer": 3,
+      "choices": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-42",
+    "label": "Giraffe",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Giraffe",
+      "picture": "giraffe",
+      "parts": [
+        "Gi",
+        "raf",
+        "fe"
+      ],
+      "answer": 3,
+      "choices": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-43",
+    "label": "Schildkröte",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Schildkröte",
+      "picture": "tortoise",
+      "parts": [
+        "Schild",
+        "krö",
+        "te"
+      ],
+      "answer": 3,
+      "choices": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-44",
+    "label": "Erdbeere",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Erdbeere",
+      "picture": "strawberry",
+      "parts": [
+        "Erd",
+        "bee",
+        "re"
+      ],
+      "answer": 3,
+      "choices": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-45",
+    "label": "Regenbogen",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Regenbogen",
+      "picture": "rainbow-arch",
+      "parts": [
+        "Re",
+        "gen",
+        "bo",
+        "gen"
+      ],
+      "answer": 4,
+      "choices": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "syllable/word-46",
+    "label": "Gänseblümchen",
+    "question": {
+      "kind": "syllable",
+      "prompt": "Wie viele Silben hat das Wort?",
+      "word": "Gänseblümchen",
+      "picture": "daisy",
+      "parts": [
+        "Gän",
+        "se",
+        "blüm",
+        "chen"
+      ],
+      "answer": 4,
       "choices": [
         3,
         4,

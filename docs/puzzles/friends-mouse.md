@@ -43,7 +43,7 @@
 | `friends-mouse/word-14` | Buch — Buch | "book" |
 | `friends-mouse/word-15` | Hase — Hase | "hare" |
 | `friends-mouse/word-16` | Dose — Dose | "tin" |
-| `friends-mouse/word-17` | Nuss — Nuss | "nut" |
+| `friends-mouse/word-17` | Nuss — Nuss | "walnut" |
 | `friends-mouse/word-18` | Hose — Hose | "trousers" |
 | `friends-mouse/word-19` | Bus — Bus | "bus" |
 | `friends-mouse/word-20` | Stern — Stern | "star" |
@@ -268,7 +268,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "cow",
         "vocab-stone",
-        "nut"
+        "walnut"
       ]
     }
   },
@@ -327,7 +327,7 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "book",
       "choices": [
         "book",
-        "nut",
+        "walnut",
         "vocab-tower"
       ]
     }
@@ -369,9 +369,9 @@ These definitions are the same finite data used by the game and review previews.
       "kind": "reading",
       "prompt": "Welches Bild passt zum Wort?",
       "text": "Nuss",
-      "answer": "nut",
+      "answer": "walnut",
       "choices": [
-        "nut",
+        "walnut",
         "star",
         "vocab-pot"
       ]
@@ -913,7 +913,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "forest-flower",
         "forest-berry",
-        "forest-nut"
+        "walnut"
       ]
     }
   },

@@ -4,10 +4,10 @@
   'use strict';
   const FK=window.FK,R=FK.puzzleRounds,C=window.FriendsContent;
   const meta={
-    'friends-squirrel':['MA.1.A.2.a','Mengen zählen','0–20 Nüsse; Vierer- und Fünferstruktur'],
+    'friends-squirrel':['MA.1.A.2.a','Mengen zählen','0–20 Eicheln; Vierer- und Fünferstruktur'],
     'friends-bird':['D.2.A.1.b; D.1.A.1.b','Reime erkennen','25 verschiedene Reimpaare ohne vertauschte Doppelungen; eingeführte Buchstaben'],
     'friends-owl':['D.2.A.1.b; D.2.B.1.b','Kurze Sätze verstehen','Ein kurzer Satz über ein Tier; immer zwei Bildantworten'],
-    'friends-beaver':['MA.2.A.1.a','Mengen von Waldgegenständen vergleichen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; die Mengen der ersten zwei Reihen ergänzen'],
+    'friends-beaver':['MA.2.A.1.a','Reihen mit Waldgegenständen ergänzen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste'],
     // Keep the original difficulty contract for existing word cards; the fourth field describes the expanded pool.
     'friends-mouse':['D.2.A.1.b','Wörter mit Bildern verbinden','25 vertraute Nomen; eingeführte Buchstaben','Vertraute Nomen und Tiernamen; eingeführte Buchstaben'],
     // Keep the reviewed difficulty contract; the fourth field shows the 44 remaining questions.
@@ -20,7 +20,7 @@
     rocket:['MA.1.A.4.b','Mengen ergänzen','Gesamtmenge 5–10; besetzte und freie Plätze'],
     picnic:['MA.1.A.4.a (Übung)','Eins zu eins gerecht verteilen','2–4 Freunde; 1–10 Beeren je Freund; insgesamt höchstens 20'],
     syllable:['D.1.A.1.b','Wörter in Silben zerlegen','1–5 Silben; vertraute Bildwörter'],
-    robot:['MA.2.A.1.c (Unterstützung)','Benachbarte Schritte im Raum planen','4 × 4; sichtbares Waldziel und gesperrte Felsen'],
+    robot:['MA.2.A.1.c (Unterstützung)','Benachbarte Schritte im Raum planen','4 × 4; sichtbares Waldziel und gesperrte Felsen','4 × 4; sichtbares Waldziel; Felsen erzwingen immer einen Umweg'],
     treasure:['Optionale Gedächtnisübung','Gegenstände wiedererkennen','Vier Dinge, eines fehlt; kein Zeitlimit'],
     neighbours:['MA.1.A.2.a/b','Zahlennachbarn bestimmen','Mitte 1–18; Mengenrahmen bis 20; ein Nachbar kann vorgegeben sein'],
     compare:['MA.1.A.1.a (Übung)','Mengen vergleichen','1–10 Fische; mehr oder gleich viele'],
@@ -32,14 +32,16 @@
   const pools={},clone=v=>JSON.parse(JSON.stringify(v));
   function add(id,key,label,q){(pools[id]||=[]).push({id:id+'/'+key,label,question:clone(q)});}
   const numeric=(n,max=20)=>[n,Math.max(0,n-1),Math.min(max,n+1)].filter((v,i,a)=>a.indexOf(v)===i).concat(n===0?[2]:n===max?[max-2]:[]);
-  const numberQ=(count,item,columns=5)=>({kind:'nuts',prompt:'Wie viele '+(item==='fish'?'Fische':item==='forest-nut'?'Nüsse':'Dinge')+' sind hier?',count,item,columns,answer:count,choices:numeric(count)});
+  // The counted picture is an acorn: name it «Eicheln» (23 Nov review).
+  const numberQ=(count,item,columns=5)=>({kind:'nuts',prompt:'Wie viele '+(item==='fish'?'Fische':item==='forest-nut'?'Eicheln':'Dinge')+' sind hier?',count,item,columns,answer:count,choices:numeric(count)});
   for(const [id,item]of [['friends-squirrel','forest-nut']]){
     for(let n=0;n<=20;n++)add(id,'count-'+n,'Menge '+n,numberQ(n,item));
     for(const n of [4,8,12,16])add(id,'four-'+n,'Menge '+n+' in Viererreihen',numberQ(n,item,4));
   }
   // Steinbock: mountain patterns of stone, fir and flower (content.js mountainPatterns), 30 tasks.
   for(const p of C.mountainPatterns())add('friends-ibex','pattern-'+p.key,p.label,{kind:'pattern',prompt:'Welches Bild fehlt im Bergmuster?',sequence:p.sequence,gap:p.gap,answer:p.answer,choices:p.choices});
-  const wordArt={...R.wordArt,Bus:'bus',Hose:'trousers',Stern:'star',Topf:'vocab-pot'};
+  // «Nuss» shows the drawn Baumnuss; the acorn is called «Eichel» (23 Nov review).
+  const wordArt={...R.wordArt,Bus:'bus',Hose:'trousers',Stern:'star',Topf:'vocab-pot',Nuss:'walnut'};
   const reading=['Maus','Haus','Hut','Rose','Nase','Fisch','Tisch','Ball','Baum','Boot','Kuh','Schuh','Bein','Stein','Buch','Hase','Dose','Nuss','Hose','Bus','Stern','Turm','Wurm','Tuch','Topf'];
   reading.forEach((text,i)=>add('friends-mouse','word-'+i,text,{kind:'reading',prompt:'Welches Bild passt zum Wort?',text,answer:wordArt[text],choices:[wordArt[text],wordArt[reading[(i+3)%reading.length]],wordArt[reading[(i+7)%reading.length]]]}));
   // A rhyme pair is unordered: Tisch/Fisch and Fisch/Tisch are the same task.
@@ -88,6 +90,29 @@
     deer:[['Wo sammelt der Schmetterling Nektar?','flower','water','egg'],['Was knabbert der Biber ab?','tree','fish','egg'],['Was pickt der Vogel aus der Erde?','vocab-worm','boat','moon'],['Was frisst die Schnecke?','leaf','fish','egg'],['Wo sucht der Igel kleine Tiere?','leaf','cloud','moon'],['Was stellt die Biene aus Nektar her?','honey','cheese','egg'],['Wo kann der Frosch schwimmen?','water','cloud','tree'],['Was knabbert der Hase auf der Wiese?','leaf','moon','nest'],['Was hängt an einer Weinrebe?','grapes','egg','fish']],
     badger:[['Was braucht eine Pflanze zum Wachsen?','sun','moon','cheese'],['Was wird aus einer Apfelblüte?','apple','egg','snowman'],['Was wächst aus einem Samen in der Erde?','plant','fish','moon'],['Was sammelt das Eichhörnchen im Herbst?','forest-nut','egg','snowman'],['Was sehen wir bei klarem Himmel in der Nacht?','moon','sun','sunflower'],['Was wächst auf der Erdbeerpflanze?','strawberry','carrot','egg'],['Womit giessen wir die Pflanzen?','watering-can','fork','hat'],['Was wächst aus einer Eichel?','tree','cloud','snowman'],['Was ernten wir vom Birnbaum?','pear','fish','egg']]
   };
+  // 23 November review: replace questions repeated in another Rätsel, off-topic questions and weak answer pictures.
+  // Stable IDs keep their positions; only these Aufgaben change.
+  const revised={
+    deer:{
+      11:['Wo wohnt der Biber?','beaver-lodge','ant-hill','nest'],
+      13:['Wo wohnt der Dachs?','badger-sett','habitat-pond','nest'],
+      14:['Wo wohnen viele Ameisen?','ant-hill','nest','habitat-pond'],
+      16:['Wo wohnt der Fuchs?','fox-den-entrance','nest','habitat-pond'],
+      20:['Wo wohnt der Waldkauz?','hollow-tree','habitat-pond','ant-hill'],
+      21:['Was frisst das Reh gern?','red-clover','fish','cheese'],
+      23:['Was knabbert der Hase auf der Wiese?','dandelion-flower','moon','nest'],
+      24:['Was fressen die Vögel im Herbst?','rowan-sprig','cheese','fish']
+    },
+    badger:{
+      1:['Was wird aus einer Kaulquappe?','frog-sit','fish-swim','bird'],
+      7:['Was hängt im Winter vom Dach?','icicle','apple','flower'],
+      9:['Was legt der Schmetterling auf ein Blatt?','butterfly-eggs','snowman','fish'],
+      10:['Was siehst du, wenn am Abend die Sonne untergeht?','sunset','chick','bucket'],
+      11:['Was fällt im Winter vom Himmel?','snowflake','sunflower','butterfly'],
+      15:['Was wächst an der Eiche?','forest-nut','banana','fish'],
+      18:['Welche Blume blüht im Frühling zuerst?','snowdrop','sunflower','forest-rose']
+    }
+  };
   const forestRiddles=[
     ["Wer hat Stacheln?","hedgehog","mouse-sit","fish-swim"],
     ["Wer hat einen blauen Kopf?","bird-sit","forest-robin","hare-sit"],
@@ -118,6 +143,7 @@
   forestRiddles.forEach(([text,answer,wrong,other],i)=>add('friends-hedgehog','riddle-'+i,text,{kind:'reading',prompt:'Welches Tier passt?',text,answer,choices:[answer,wrong,other]}));
   for(const host of ['deer','badger']){
     const list=C.pools[host].map(t=>[t.target,t.answer,...t.choices.filter(c=>c!==t.answer)]).concat(extra[host]);
+    for(const [index,question]of Object.entries(revised[host]))list[index]=question;
     list.forEach(([text,answer,...wrong],i)=>add('friends-'+host,'riddle-'+i,text,{kind:'reading',prompt:'Welches Bild passt zur Frage?',text,answer,choices:[answer,...wrong]}));
   }
   // Habitat questions need a visible place to swim, rather than a water droplet.
@@ -131,14 +157,15 @@
   const animals=C.pools.frog.map(t=>t.answer==='nest'?['Ente','duck-swim']:t.answer==='egg'?['Fuchs','forest-fox']:['mushroom','forest-mushroom'].includes(t.answer)?['Eichhörnchen','squirrel-sit']:[t.target,t.answer]).concat([['Zebra','zebra'],['Löwe','lion'],['Pinguin','penguin'],['Kamel','camel'],['Tiger','tiger'],['Elefant','elephant'],['Giraffe','giraffe'],['Dachs','badger']]);
   animals.forEach(([text,answer],i)=>addMouseWord('friends-frog-animal-'+i,text,answer,[answer,animals[(i+4)%animals.length][1],animals[(i+9)%animals.length][1]]));
   for(let n=6;n<=15;n++)for(let b=2;b<=4;b++)add('count',n+'-'+b,n+' Käfer, '+b+' Bienen',{kind:'count',prompt:'Wie viele rote Marienkäfer sind hier?',count:n,answer:n,choices:numeric(n),bugs:[...Array(n).fill('ladybird'),...Array(b).fill('bee'),...Array(2).fill('snail')]});
-  for(let a=1;a<=8;a++)for(let b=1;b<=9-a;b++)add('add',a+'-'+b,a+' + '+b,{kind:'add',item:'fish-swim',prompt:'Wie viele Fische sind es zusammen?',a,b,answer:a+b,choices:numeric(a+b)});
+  // Sums 2–10; the ten-partners (sum 10) were added on 23 Nov.
+  for(let a=1;a<=9;a++)for(let b=1;b<=10-a;b++)add('add',a+'-'+b,a+' + '+b,{kind:'add',item:'fish-swim',prompt:'Wie viele Fische sind es zusammen?',a,b,answer:a+b,choices:numeric(a+b)});
   const animalQuestions=[
     // Retired after the 22 November review; null keeps later stable IDs.
     null,
     null,
     ["Wer quakt am Teich?","frog","cat","dog"],
     ["Wer macht Honig aus Nektar?","bee","cow","fish"],
-    ["Wer bellt?","dog","frog","snail"],
+    ["Wer bellt?","dog-run","frog","snail"],
     ["Wer miaut?","cat","fish","pig"],
     ["Wer gibt uns Milch?","cow","bee","ant"],
     ["Wer baut ein Netz?","spider","bird","cow"],
@@ -168,21 +195,43 @@
   // Twenty-one different distributions plus four partially filled, editable plates.
   for(const [friends,each,plates]of [[2,3,[1,0]],[2,4,[0,2]],[3,2,[1,0,0]],[4,2,[0,1,0,1]]])add('picnic','started-'+friends+'-'+each,'Begonnenes Picknick: '+friends+' × '+each,{kind:'picnic',prompt:'Teile alle Beeren gerecht auf.',friends,each,total:friends*each,plates,answer:each});
   const words=R.words.concat([['Ba-na-ne','banana'],['To-ma-te','tomato'],['Ka-me-ra','camera'],['Na-del','needle'],['Ga-bel','fork'],['Glo-cke','bell'],['Ka-rot-te','carrot'],['Wol-ke','cloud'],['Schau-fel','spade'],['Ku-chen','cake'],['Re-gen','rain'],['Vo-gel','bird-sit'],['Schne-cke','snail']]);
-  const syllableWords=words.concat([['Scho-ko-la-de','chocolate'],['Ei-sen-bahn-zug','steam-train'],['Was-ser-me-lo-ne','watermelon'],['Feu-er-wehr-au-to','fire-engine']]);
+  // «Lokomotive» names the drawn engine (23 Nov review); later words widen the three- to five-syllable range.
+  const syllableWords=words.concat([['Scho-ko-la-de','chocolate'],['Lo-ko-mo-ti-ve','steam-train'],['Was-ser-me-lo-ne','watermelon'],['Feu-er-wehr-au-to','fire-engine'],
+    ['Son-nen-blu-me','sunflower'],['Ma-ri-en-kä-fer','ladybird'],['E-le-fant','elephant'],['Gi-raf-fe','giraffe'],['Schild-krö-te','tortoise'],['Erd-bee-re','strawberry'],['Re-gen-bo-gen','rainbow-arch'],['Gän-se-blüm-chen','daisy']]);
   syllableWords.forEach(([w,picture],i)=>{
     const word=w.replaceAll('-',''),parts=w.split('-');
     add('syllable','word-'+i,word,{kind:'syllable',prompt:'Wie viele Silben hat das Wort?',word,picture,parts,answer:parts.length,choices:[0,1,2].map(i=>Math.max(1,Math.min(3,parts.length-1))+i)});
   });
+  // Every eligible vowel position is a different spelling task. Distractors share the answer's case, so a capital never gives it away.
+  // The wrong vowels rotate, so no vowel is offered only when it is the answer (23 Nov review).
+  const vowelSet=['a','e','i','o','u'];let vowelTurn=0;
+  // «e» is the most frequent gap, so it is also offered as a wrong choice for every other vowel.
+  const vowelChoices=answer=>{const lower=answer.toLowerCase(),others=vowelSet.filter(v=>v!==lower&&v!=='e'),k=vowelTurn++%others.length,wrong=lower==='e'?[others[k],others[(k+1)%others.length]]:['e',others[k]];return [answer,...wrong.map(v=>answer===lower?v:v.toUpperCase())];};
+  function vowelTasks(key,word,picture,keep=()=>true){
+    Array.from(word).forEach((answer,index)=>{if(!/[aeiou]/i.test(answer)||/(au|ei|ie|eu|äu)/i.test(word.slice(Math.max(0,index-1),index+2))||!keep(answer))return;add('vowels',key+'-'+index,word+' / Lücke '+(index+1),{kind:'vowels',prompt:'Welcher Buchstabe fehlt?',word,picture,index,answer,choices:vowelChoices(answer)});});
+  }
   words.forEach(([w,picture],i)=>{
     const word=w.replaceAll('-',''),parts=w.split('-'),choices=[picture,words[(i+4)%words.length][1],words[(i+9)%words.length][1]];
     addMouseWord('read-word-word-'+i,word,picture,choices);
     if(parts.length>1){const distractor=['ma','lo','su','ta','fe'].find(s=>!parts.some(p=>p.toLowerCase()===s)),chips=parts.concat(distractor);add('read-puzzle','word-'+i,word,{kind:'syllables',prompt:'Setze das Wort aus Silben zusammen.',word,picture,parts,chips,order:chips.map((_,n)=>n),answer:word});}
-    // Every eligible vowel position is a different spelling task. Distractors share the answer's case, so a capital never gives it away.
-    Array.from(word).forEach((answer,index)=>{if(!/[aeiou]/i.test(answer)||/(au|ei|ie|eu|äu)/i.test(word.slice(Math.max(0,index-1),index+2)))return;add('vowels','word-'+i+'-'+index,word+' / Lücke '+(index+1),{kind:'vowels',prompt:'Welcher Buchstabe fehlt?',word,picture,index,answer,choices:[answer,...['a','e','i','o','u'].filter(v=>v.toLowerCase()!==answer.toLowerCase()).slice(0,2).map(v=>answer===answer.toLowerCase()?v:v.toUpperCase())]});});
+    vowelTasks('word-'+i,word,picture);
   });
-  // Fully authored routes: five obstacle sets, six distinct start/goal pairs, BFS checked in tests.
-  const blocked=[[5,6],[5,9],[6,10],[9,10],[2,5,9]],ends=[[0,15],[12,3],[3,12],[15,0],[0,3],[12,15]];
-  blocked.forEach((obstacles,i)=>ends.forEach(([start,goal],j)=>add('robot',i+'-'+j,'Weg '+(i+1)+' / '+(j+1),{kind:'robot',mode:'route',prompt:'Führe das Reh zum Wald.',size:4,start,goal,obstacles})));
+  // More pictured words whose gap is a, i, o or u, so «e» is no longer the answer of most vowel tasks.
+  for(const [word,picture]of [['Hut','hat'],['Wurm','vocab-worm'],['Turm','vocab-tower'],['Hund','dog-run'],['Mund','rhyme-mouth'],['Buch','book'],['Topf','vocab-pot'],['Hose','trousers'],['Dose','tin'],['Kopf','vocab-head'],['Ball','ball'],['Nase','nose'],['Tisch','vocab-table'],['Birne','pear'],['Kirsche','cherry'],['Zitrone','lemon']])
+    vowelTasks('bild-'+word.toLowerCase(),word,picture,answer=>answer.toLowerCase()!=='e');
+  // Fully authored routes (23 Nov review): in every Aufgabe the rocks block the straight way, so the Reh needs a detour of
+  // at least two steps. Every free field stays reachable. The former opposite-corner routes never needed a detour.
+  const routes=[
+    [0,3,[1,6]],[0,3,[2,5]],[0,3,[1,5]],[0,3,[1,5,10]],[0,3,[2,6,10]],
+    [15,12,[9,14]],[15,12,[10,13]],[15,12,[9,13]],[15,12,[5,9,14]],[15,12,[6,10,14]],
+    [0,12,[4,9]],[0,12,[5,8]],[0,12,[4,5]],[0,12,[4,5,10]],[0,12,[8,9,10]],
+    [15,3,[6,11]],[15,3,[7,10]],[15,3,[6,7]],[15,3,[5,6,11]],[15,3,[9,10,11]],
+    [4,7,[0,5,10]],[4,7,[1,6,10]],[4,7,[0,5,9]],[4,7,[1,6,9]],
+    [14,2,[5,6,11]],[14,2,[9,10,11]],[14,2,[3,5,6]],[14,2,[6,7,9]],
+    [4,11,[5,10]],[13,2,[1,6]]
+  ];
+  // Keep the stable IDs «set-pair»; the five × six grid of IDs now names 30 individually authored routes.
+  routes.forEach(([start,goal,obstacles],n)=>{const i=Math.floor(n/6),j=n%6;add('robot',i+'-'+j,'Weg '+(i+1)+' / '+(j+1),{kind:'robot',mode:'route',prompt:'Führe das Reh zum Wald.',size:4,start,goal,obstacles});});
   // «Zeitliche Abfolgen ordnen» (sequence) was retired after the 22 November review.
   const treasures=['forest-leaf','forest-feather','forest-mushroom','forest-stone','forest-berry','forest-nut','forest-apple','forest-flower'];
   for(let i=0;i<treasures.length;i++){
@@ -194,7 +243,7 @@
   }
   // A given left neighbour is already on the card row, so it is never offered again (22 Nov review); three choices remain.
   const neighbourChoices=(n,given)=>{const c=Array.from(new Set([Math.max(0,n-2),n-1,n+1,n+2])).filter(v=>!(given==='left'&&v===n-1));if(c.length<3)c.push(n+3);return c;};
-  for(let n=1;n<=18;n++)for(const given of [null,'left'])add('neighbours',n+'-'+(given||'both'),'Mitte '+n+(given?' / Vorgänger gegeben':''),{kind:'neighbours',prompt:'Welche Zahlen kommen davor und danach?',n,given,answer:[n-1,n+1],choices:neighbourChoices(n,given)});
+  for(let n=1;n<=18;n++)for(const given of [null,'left'])add('neighbours',n+'-'+(given||'both'),'Mitte '+n+(given?' / Vorgänger gegeben':''),{kind:'neighbours',prompt:given==='left'?'Welche Zahl kommt danach?':'Welche Zahlen kommen davor und danach?',n,given,answer:[n-1,n+1],choices:neighbourChoices(n,given)});
   for(let a=1;a<=10;a++)for(const b of [a,Math.max(1,a-1),Math.min(10,a+2)])if(!pools.compare?.some(t=>t.question.a===a&&t.question.b===b))add('compare',a+'-'+b,a+' und '+b,{kind:'compare',item:'fish-swim',prompt:'Wo sind mehr Fische?',a,b,answer:a===b?'equal':a>b?'left':'right',choices:['left','equal','right']});
   const mirrorMasks=[7,56,448,73,146,292,273,84,15,30,60,120,240,480,31,62,124,248,496,91,182,364,341,170,85,340,325,387,457,199];
   mirrorMasks.forEach((mask,n)=>{const left=Array.from({length:9},(_,i)=>i).filter(i=>mask&(1<<i));add('mirror','grid-'+mask,'Blattmuster '+(n+1),{kind:'mirror',prompt:'Ergänze rechts das Spiegelbild.',width:3,rows:3,left,answer:left.map(i=>Math.floor(i/3)*3+2-i%3).sort((a,b)=>a-b)});});
@@ -228,7 +277,9 @@
     if(id==='trace')pool=pool.filter(i=>seed%2?i.question.glyph===i.question.glyph.toLocaleUpperCase('de-CH'):i.question.glyph===i.question.glyph.toLocaleLowerCase('de-CH'));
     pool.sort((a,b)=>Number(previous.includes(a.id))-Number(previous.includes(b.id)));
     const chosen=[];for(const it of pool){if(it.question.glyph&&chosen.some(c=>c.question.glyph===it.question.glyph))continue;chosen.push(it);if(chosen.length===5)break;}return arrange(chosen,r);}
-  function arrange(items,r){return clone(items).map(item=>{const q=item.question;if(q.choices&&q.kind!=='neighbours')q.choices=R.mix(q.choices,r);if(q.kind==='count')q.bugs=R.mix(q.bugs,r);if(q.kind==='syllables')q.order=R.mix(q.order,r);if(q.kind==='order')q.order=R.mix(q.order,r);return item;});}
+  // Number cards always read in ascending order, like the neighbours row; other choices are shuffled (23 Nov review).
+  const numberKinds=new Set(['nuts','count','add','fireflies','syllable']);
+  function arrange(items,r){return clone(items).map(item=>{const q=item.question;if(q.choices&&q.kind!=='neighbours'){q.choices=R.mix(q.choices,r);if(numberKinds.has(q.kind))q.choices.sort((a,b)=>a-b);}if(q.kind==='count')q.bugs=R.mix(q.bugs,r);if(q.kind==='syllables')q.order=R.mix(q.order,r);if(q.kind==='order')q.order=R.mix(q.order,r);return item;});}
   const prepare=(items,seed)=>arrange(items,R.rng(seed));
   function matchesSession(s){
     if(!Array.isArray(s.questions)||s.questions.length!==5||!Array.isArray(s.iterationIds)||s.iterationIds.length!==5||new Set(s.iterationIds).size!==5)return false;

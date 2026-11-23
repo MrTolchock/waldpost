@@ -4566,6 +4566,246 @@
       "archived": "legacy/retired-runtime/css/waldbuch.css",
       "sha256": "7a84ab33df50ab210963b0277e7b73f697c673e2c0ac3f93d44551511bcaaf4c",
       "status": "before-cleanup"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-meadow.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-meadow.webp",
+      "sha256": "8518c3dec72f6479feedf6d8ad20daf6c84a2ac297c745b4af9ef42a01830f87"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-meadow.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-meadow.png",
+      "sha256": "3a5160fdc969e5b337c39ca715ebb0ba9c8f93e254491902704cb6bc05c90a8e"
+    },
+    {
+      "original": "design/artwork/puzzle-meadow.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-meadow.json",
+      "sha256": "20a06f311179571506e407def4cae47b95dfaf43ce530b9af595327a31c0e6f2"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-meadow.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-meadow.json",
+      "sha256": "c5c7a4e1762264a4bb71170c64f035bbecd6772930f2b330e339e5acd1cd7428"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-mountain.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-mountain.webp",
+      "sha256": "e5a878bb94da66719c337c1f83fb931f0159382ac80b8dfa0153c1dd5a3124d2"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-mountain.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-mountain.png",
+      "sha256": "8db78099ebe3c9bcb4fc945bbf92b159ad307c8a82b554c9deb5296ab52277d5"
+    },
+    {
+      "original": "design/artwork/puzzle-mountain.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-mountain.json",
+      "sha256": "ba95aab1518446537dc32778e0afb752f299747a3800583d4bb27afb10379daa"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-mountain.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-mountain.json",
+      "sha256": "829860e5ad12200c49414c5ea30c2add71225cb33740bb527369ec951c7d1677"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-swamp.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-swamp.webp",
+      "sha256": "ed861c85debc2ecceaa7bac742da56c5f92c82d4bed319d3ba3f8708171e22b9"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-swamp.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-swamp.png",
+      "sha256": "479e15f1d24601f3a7f93f1402f640ad33e2be971756ef8691f81a1aca6b286b"
+    },
+    {
+      "original": "design/artwork/puzzle-swamp.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-swamp.json",
+      "sha256": "67a05673ee77df06cbc83ef9b30e916e94262d234709d7a13630d810bece12cf"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-swamp.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-swamp.json",
+      "sha256": "89dbb3ebe976aace4b569f51f4240320fee9d57005ddf63086cc52df53e762de"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-conifers.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-conifers.webp",
+      "sha256": "dcdaf90c225dc5e3e2ca2a7b9e94c57f53c28637d31823f25274a13154559272"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-conifers.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-conifers.png",
+      "sha256": "7f4158d215ec0938d342c66a6f5c9836ba26400d0a3e668ff0fd9bb063b421c9"
+    },
+    {
+      "original": "design/artwork/puzzle-conifers.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-conifers.json",
+      "sha256": "721e8a41ad52491f192e68d077032aa069196409755b43f774ec4d56e93ce1f6"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-conifers.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-conifers.json",
+      "sha256": "ba21165f14b3fcebfb387e0b984b4eb40d0aaa2b2443f176358dc8c48e6a07b2"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-birches.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-birches.webp",
+      "sha256": "d1be4174f93675b356280a14f619457bc5a1f3b01974f9e4b451226cb48b987f"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-birches.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-birches.png",
+      "sha256": "e61024c111f54fa0574719852354035d603da4c622b5bd45128470e4318863ea"
+    },
+    {
+      "original": "design/artwork/puzzle-birches.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-birches.json",
+      "sha256": "8e0008514a438bde2c8fead62580ae240fdac93cf0624324c993efbd806e3653"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-birches.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-birches.json",
+      "sha256": "c2b24c3ff37617c7b99f22da4f482f0001d02a4da3d46338b12eaab1b7f6e52d"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-old-forest.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-old-forest.webp",
+      "sha256": "498dd7ac28b2a613f1e8220ac4652bd76589e39e6da2b0b0b967ccbe4c8b29a0"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-old-forest.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-old-forest.png",
+      "sha256": "53a28fb99e2afe8a728882640fee46c73c7c7d1166ca73e1361a4ed6f3801acc"
+    },
+    {
+      "original": "design/artwork/puzzle-old-forest.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-old-forest.json",
+      "sha256": "cef2641ce034f94b7ee397f140d64362364af7e3f72dfc26366ab4eb9472ed9e"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-old-forest.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-old-forest.json",
+      "sha256": "0d2d5d28fabcf4db03a961cb82b58e0d753c989d379a1aee95a9dff7a372e788"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-beaver-pond.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-beaver-pond.webp",
+      "sha256": "deb443325ee98780a5c19ba3e6b7db5dc36c62b81afba234b5716f56c8c7ad7a"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-beaver-pond.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-beaver-pond.png",
+      "sha256": "d5c146a2789317bcde358076d81292b7acc750ac7a72d5bd2422bfa762fb65aa"
+    },
+    {
+      "original": "design/artwork/puzzle-beaver-pond.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-beaver-pond.json",
+      "sha256": "fd036fa19dc043fd578ea5ee056f648ce4bf53f2e3141f2bcf8fa1dc8dd1d385"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-beaver-pond.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-beaver-pond.json",
+      "sha256": "1185312380484bee5fd45a1da3c06d68c2999d05c7ca154980e81e2f3ba2881b"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-stump.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-stump.webp",
+      "sha256": "37bc88d48e593b01b69478a6af05ad838646735fb240eb9dc11662a6a57ecbe0"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-stump.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-stump.png",
+      "sha256": "c74bddd1dc8a3ac7b0042be789e98dfd59a975f90295f76142cc2e1b9c7a445b"
+    },
+    {
+      "original": "design/artwork/puzzle-stump.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-stump.json",
+      "sha256": "fd7cee484281b14e22192b66420daa5e10e3e5fe346718df31448540d75e58de"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-stump.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-stump.json",
+      "sha256": "ff69369f68b841ed8a2d069707cf1360ef6299dd560952d5690ae2efc0bf6849"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-undergrowth.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-undergrowth.webp",
+      "sha256": "58e5e94207776364c45b684d2e4fd4b486ddf425d29f487a6cdde760422b7e64"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-undergrowth.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-undergrowth.png",
+      "sha256": "2e5958447065da4b04ddd6725636bc3fdaf939bfaedd4cccbe3b35b8e867b01c"
+    },
+    {
+      "original": "design/artwork/puzzle-undergrowth.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-undergrowth.json",
+      "sha256": "94494c0a9dc402593f7cc3ac4dbf9a4babfb6f72669897deaea3a59741513890"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-undergrowth.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-undergrowth.json",
+      "sha256": "a41582f87cdb40f6251e9655ede1fcf00a7d0c951241bc09763f103a2ad95684"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-waterfall-pool.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-waterfall-pool.webp",
+      "sha256": "ea2c96f650a553eb22dd1f2fe14f0d352ce3b2b115b559e7c9e4a20c259baf53"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-waterfall-pool.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-waterfall-pool.png",
+      "sha256": "6c8c611a1a48321b298244042109b6d273bd1bd533de865b0921ab068ef73f6c"
+    },
+    {
+      "original": "design/artwork/puzzle-waterfall-pool.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-waterfall-pool.json",
+      "sha256": "1bbca8c23ede57932cda3d0b6fbb57c4e222438aadd142ba7b212df17fe46d4a"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-waterfall-pool.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-waterfall-pool.json",
+      "sha256": "8da18ef183f08b7ac6135cb465701d09d0ee04fbd33642b4e191f4c506824de2"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-brook.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-brook.webp",
+      "sha256": "a082a6ece8284bbcb5b84c89af660a272ff5a104a812c72fb68981239efe7e34"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-brook.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-brook.png",
+      "sha256": "5ca8a4e6d50c0a1d27706eedf5d9d7591a7b057413909d397be67d90c2ef6050"
+    },
+    {
+      "original": "design/artwork/puzzle-brook.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-brook.json",
+      "sha256": "e0f1ab88d316f00c895d8516d6b9d3a4d6ca7b6b20c940b16100fbb0d02731bc"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-brook.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-brook.json",
+      "sha256": "a0d1dbd8589bff8b3f4f68dec14b09aecd9442b88c81eb36a57dc6899853263b"
+    },
+    {
+      "original": "assets/forest-friends/puzzle-badger-sett.webp",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/assets/forest-friends/puzzle-badger-sett.webp",
+      "sha256": "dfc8fab4a7e1bb1653fb9541284105051349f7e4a48150ee81f249d14608c8d4"
+    },
+    {
+      "original": "design/artwork/sources/puzzle-badger-sett.png",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/sources/puzzle-badger-sett.png",
+      "sha256": "b8acc26c6d61b3b09442e5f9fe01d10ad49df1945b814fb6ce1c4b5e6ab0b716"
+    },
+    {
+      "original": "design/artwork/puzzle-badger-sett.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/puzzle-badger-sett.json",
+      "sha256": "d4cb761c76df699fc19131c14ed3ec27289cc1573a47514cb74139b00b49af2d"
+    },
+    {
+      "original": "design/artwork/generation-records/puzzle-badger-sett.json",
+      "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-badger-sett.json",
+      "sha256": "a6fb76cda487d7e5779a1e5c1cbb38c807f9a6c6a642d56721cad8ddea9e7e97"
     }
   ],
   "relocations": [

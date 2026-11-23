@@ -1,9 +1,11 @@
 /* Real old-to-new service workers: recovery, foreground checks, safe reload and saved work. */
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'/opt/codex/cua_node/lib/node_modules/playwright');
-const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http'),os=require('node:os'),{execFileSync}=require('node:child_process');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http'),os=require('node:os'),{execFileSync,spawnSync}=require('node:child_process');
 const {installRemote,seedFromPage}=require('./review-repository-support.cjs');
 const root=path.resolve(__dirname,'..');
 const legacyRef=process.env.FARBTUPF_LEGACY_REF||'95b27dc',legacyVersion=process.env.FARBTUPF_LEGACY_VERSION||'9.0.2';
+// The default historical release needs full history; shallow clones (CI, cloud sessions) must name a reachable release.
+if(spawnSync('git',['cat-file','-e',legacyRef+'^{commit}'],{cwd:root}).status!==0){console.error('Legacy release '+legacyRef+' is not in this clone. Run git fetch --unshallow, or set FARBTUPF_LEGACY_REF and FARBTUPF_LEGACY_VERSION to a reachable earlier release (for example the previous commit on main).');process.exit(2);}
 const legacySW=execFileSync('git',['show',legacyRef+':sw.js'],{cwd:root,encoding:'utf8'});
 const legacyHTML=execFileSync('git',['show',legacyRef+':index.html'],{cwd:root,encoding:'utf8'});
 const files=[...new Set(['index.html','sw.js',...Array.from(legacySW.split('const ASSETS = [')[1].split('];')[0].matchAll(/'\.\/([^']*)'/g),m=>m[1]||'index.html'),...Array.from(legacyHTML.matchAll(/(?:src|href)="([^"#]+)"/g),m=>m[1]).filter(p=>!p.includes(':'))])];

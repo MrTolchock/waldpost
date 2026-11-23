@@ -37,20 +37,20 @@
 | `friends-deer/riddle-8` | Wer lebt im Wasser? — Wer lebt im Wasser? | "fish" |
 | `friends-deer/riddle-9` | Wer wohnt im Nest? — Wer wohnt im Nest? | "bird" |
 | `friends-deer/riddle-10` | Wer frisst Blätter? — Wer frisst Blätter? | "caterpillar" |
-| `friends-deer/riddle-11` | Wer baut ein Netz? — Wer baut ein Netz? | "spider" |
+| `friends-deer/riddle-11` | Wo wohnt der Biber? — Wo wohnt der Biber? | "beaver-lodge" |
 | `friends-deer/riddle-12` | Was wächst unter den Bäumen? — Was wächst unter den Bäumen? | "forest-mushroom" |
-| `friends-deer/riddle-13` | Was leuchtet in der Nacht? — Was leuchtet in der Nacht? | "moon" |
-| `friends-deer/riddle-14` | Was scheint am Tag? — Was scheint am Tag? | "sun" |
+| `friends-deer/riddle-13` | Wo wohnt der Dachs? — Wo wohnt der Dachs? | "badger-sett" |
+| `friends-deer/riddle-14` | Wo wohnen viele Ameisen? — Wo wohnen viele Ameisen? | "ant-hill" |
 | `friends-deer/riddle-15` | Wer frisst Gras? — Wer frisst Gras? | "cow" |
-| `friends-deer/riddle-16` | Wo sammelt der Schmetterling Nektar? — Wo sammelt der Schmetterling Nektar? | "flower" |
+| `friends-deer/riddle-16` | Wo wohnt der Fuchs? — Wo wohnt der Fuchs? | "fox-den-entrance" |
 | `friends-deer/riddle-17` | Was knabbert der Biber ab? — Was knabbert der Biber ab? | "tree" |
 | `friends-deer/riddle-18` | Was pickt der Vogel aus der Erde? — Was pickt der Vogel aus der Erde? | "vocab-worm" |
 | `friends-deer/riddle-19` | Was frisst die Schnecke? — Was frisst die Schnecke? | "leaf" |
-| `friends-deer/riddle-20` | Wo sucht der Igel kleine Tiere? — Wo sucht der Igel kleine Tiere? | "leaf" |
-| `friends-deer/riddle-21` | Was stellt die Biene aus Nektar her? — Was stellt die Biene aus Nektar her? | "honey" |
+| `friends-deer/riddle-20` | Wo wohnt der Waldkauz? — Wo wohnt der Waldkauz? | "hollow-tree" |
+| `friends-deer/riddle-21` | Was frisst das Reh gern? — Was frisst das Reh gern? | "red-clover" |
 | `friends-deer/riddle-22` | Wo kann der Frosch schwimmen? — Wo kann der Frosch schwimmen? | "habitat-pond" |
-| `friends-deer/riddle-23` | Was knabbert der Hase auf der Wiese? — Was knabbert der Hase auf der Wiese? | "leaf" |
-| `friends-deer/riddle-24` | Was hängt an einer Weinrebe? — Was hängt an einer Weinrebe? | "grapes" |
+| `friends-deer/riddle-23` | Was knabbert der Hase auf der Wiese? — Was knabbert der Hase auf der Wiese? | "dandelion-flower" |
+| `friends-deer/riddle-24` | Was fressen die Vögel im Herbst? — Was fressen die Vögel im Herbst? | "rowan-sprig" |
 
 ## Exact definitions
 
@@ -225,16 +225,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-deer/riddle-11",
-    "label": "Wer baut ein Netz?",
+    "label": "Wo wohnt der Biber?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer baut ein Netz?",
-      "answer": "spider",
+      "text": "Wo wohnt der Biber?",
+      "answer": "beaver-lodge",
       "choices": [
-        "spider",
-        "cow",
-        "fish"
+        "beaver-lodge",
+        "ant-hill",
+        "nest"
       ]
     }
   },
@@ -255,31 +255,31 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-deer/riddle-13",
-    "label": "Was leuchtet in der Nacht?",
+    "label": "Wo wohnt der Dachs?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was leuchtet in der Nacht?",
-      "answer": "moon",
+      "text": "Wo wohnt der Dachs?",
+      "answer": "badger-sett",
       "choices": [
-        "moon",
-        "sun",
-        "flower"
+        "badger-sett",
+        "habitat-pond",
+        "nest"
       ]
     }
   },
   {
     "id": "friends-deer/riddle-14",
-    "label": "Was scheint am Tag?",
+    "label": "Wo wohnen viele Ameisen?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was scheint am Tag?",
-      "answer": "sun",
+      "text": "Wo wohnen viele Ameisen?",
+      "answer": "ant-hill",
       "choices": [
-        "sun",
-        "moon",
-        "egg"
+        "ant-hill",
+        "nest",
+        "habitat-pond"
       ]
     }
   },
@@ -300,16 +300,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-deer/riddle-16",
-    "label": "Wo sammelt der Schmetterling Nektar?",
+    "label": "Wo wohnt der Fuchs?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wo sammelt der Schmetterling Nektar?",
-      "answer": "flower",
+      "text": "Wo wohnt der Fuchs?",
+      "answer": "fox-den-entrance",
       "choices": [
-        "flower",
-        "habitat-pond",
-        "egg"
+        "fox-den-entrance",
+        "nest",
+        "habitat-pond"
       ]
     }
   },
@@ -360,31 +360,31 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-deer/riddle-20",
-    "label": "Wo sucht der Igel kleine Tiere?",
+    "label": "Wo wohnt der Waldkauz?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wo sucht der Igel kleine Tiere?",
-      "answer": "leaf",
+      "text": "Wo wohnt der Waldkauz?",
+      "answer": "hollow-tree",
       "choices": [
-        "leaf",
-        "cloud",
-        "moon"
+        "hollow-tree",
+        "habitat-pond",
+        "ant-hill"
       ]
     }
   },
   {
     "id": "friends-deer/riddle-21",
-    "label": "Was stellt die Biene aus Nektar her?",
+    "label": "Was frisst das Reh gern?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was stellt die Biene aus Nektar her?",
-      "answer": "honey",
+      "text": "Was frisst das Reh gern?",
+      "answer": "red-clover",
       "choices": [
-        "honey",
-        "cheese",
-        "egg"
+        "red-clover",
+        "fish",
+        "cheese"
       ]
     }
   },
@@ -410,9 +410,9 @@ These definitions are the same finite data used by the game and review previews.
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
       "text": "Was knabbert der Hase auf der Wiese?",
-      "answer": "leaf",
+      "answer": "dandelion-flower",
       "choices": [
-        "leaf",
+        "dandelion-flower",
         "moon",
         "nest"
       ]
@@ -420,15 +420,15 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-deer/riddle-24",
-    "label": "Was hängt an einer Weinrebe?",
+    "label": "Was fressen die Vögel im Herbst?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was hängt an einer Weinrebe?",
-      "answer": "grapes",
+      "text": "Was fressen die Vögel im Herbst?",
+      "answer": "rowan-sprig",
       "choices": [
-        "grapes",
-        "egg",
+        "rowan-sprig",
+        "cheese",
         "fish"
       ]
     }

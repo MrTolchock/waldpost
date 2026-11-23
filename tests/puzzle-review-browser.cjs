@@ -130,7 +130,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
    }),false,it.id+' success has no check mark');checked++;
   }console.log('PASS every iteration:',g.id,pool.length);
  }
- if(!process.env.FARBTUPF_GAMES)assert.equal(checked,763);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
+ if(!process.env.FARBTUPF_GAMES)assert.equal(checked,797);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
  // All puzzle types accept real taps, including SVG/image descendants and redrawing controls.
  for(const width of [1080,390]){
   await page.setViewportSize({width,height:width===390?844:810});nativeInput=width===390?'mouse':true;
@@ -144,7 +144,8 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  await wrongCount.tap();assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),1);assert.ok(await page.evaluate(()=>reviewSoundCounts.oscillators)>0);
  await page.evaluate(()=>{FK.settings.set('sound',false);reviewSoundCounts.clicks=0;reviewSoundCounts.oscillators=0;});
  for(let n=0;n<10;n++)await wrongCount.tap();assert.deepEqual(await page.evaluate(()=>reviewSoundCounts),{clicks:10,oscillators:0});
- await wrongCount.focus();await page.keyboard.press('Space');await page.keyboard.press('Enter');assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),12);
+ // Each key must activate the answer; wait for the first before pressing the second (the back-to-back presses raced).
+ await wrongCount.focus();await page.keyboard.press('Space');await page.waitForFunction(()=>reviewSoundCounts.clicks===11,null,{timeout:3000});await wrongCount.focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>reviewSoundCounts.clicks===12,null,{timeout:3000});
  await wrongCount.scrollIntoViewIfNeeded();const hit=await wrongCount.boundingBox(),center={x:hit.x+hit.width/2,y:hit.y+hit.height/2,id:1};
  await touch.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[center]});await touch.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...center,y:center.y-35}]});await touch.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),12,'drag is not a tap');
  await wrongCount.scrollIntoViewIfNeeded();const fresh=await wrongCount.boundingBox();await touch.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:fresh.x+fresh.width/2,y:fresh.y+fresh.height/2,id:1}]});await touch.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),12,'cancel is not a tap');await wrongCount.tap();assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),13);

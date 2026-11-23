@@ -5,7 +5,7 @@
 - Stabile Rätsel-ID: `robot`
 - Host: deer
 - Related competence: **MA.2.A.1.c (Unterstützung)** — Benachbarte Schritte im Raum planen
-- Difficulty: 4 × 4; sichtbares Waldziel und gesperrte Felsen
+- Difficulty: 4 × 4; sichtbares Waldziel; Felsen erzwingen immer einen Umweg
 - Pool: 30 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
@@ -26,36 +26,36 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `robot/0-0` | Weg 1 / 1 — Führe das Reh zum Wald. | 0 → 15 (freie Nachbarschritte) |
-| `robot/0-1` | Weg 1 / 2 — Führe das Reh zum Wald. | 12 → 3 (freie Nachbarschritte) |
-| `robot/0-2` | Weg 1 / 3 — Führe das Reh zum Wald. | 3 → 12 (freie Nachbarschritte) |
-| `robot/0-3` | Weg 1 / 4 — Führe das Reh zum Wald. | 15 → 0 (freie Nachbarschritte) |
+| `robot/0-0` | Weg 1 / 1 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
+| `robot/0-1` | Weg 1 / 2 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
+| `robot/0-2` | Weg 1 / 3 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
+| `robot/0-3` | Weg 1 / 4 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
 | `robot/0-4` | Weg 1 / 5 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
-| `robot/0-5` | Weg 1 / 6 — Führe das Reh zum Wald. | 12 → 15 (freie Nachbarschritte) |
-| `robot/1-0` | Weg 2 / 1 — Führe das Reh zum Wald. | 0 → 15 (freie Nachbarschritte) |
-| `robot/1-1` | Weg 2 / 2 — Führe das Reh zum Wald. | 12 → 3 (freie Nachbarschritte) |
-| `robot/1-2` | Weg 2 / 3 — Führe das Reh zum Wald. | 3 → 12 (freie Nachbarschritte) |
-| `robot/1-3` | Weg 2 / 4 — Führe das Reh zum Wald. | 15 → 0 (freie Nachbarschritte) |
-| `robot/1-4` | Weg 2 / 5 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
-| `robot/1-5` | Weg 2 / 6 — Führe das Reh zum Wald. | 12 → 15 (freie Nachbarschritte) |
-| `robot/2-0` | Weg 3 / 1 — Führe das Reh zum Wald. | 0 → 15 (freie Nachbarschritte) |
-| `robot/2-1` | Weg 3 / 2 — Führe das Reh zum Wald. | 12 → 3 (freie Nachbarschritte) |
-| `robot/2-2` | Weg 3 / 3 — Führe das Reh zum Wald. | 3 → 12 (freie Nachbarschritte) |
-| `robot/2-3` | Weg 3 / 4 — Führe das Reh zum Wald. | 15 → 0 (freie Nachbarschritte) |
-| `robot/2-4` | Weg 3 / 5 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
-| `robot/2-5` | Weg 3 / 6 — Führe das Reh zum Wald. | 12 → 15 (freie Nachbarschritte) |
-| `robot/3-0` | Weg 4 / 1 — Führe das Reh zum Wald. | 0 → 15 (freie Nachbarschritte) |
-| `robot/3-1` | Weg 4 / 2 — Führe das Reh zum Wald. | 12 → 3 (freie Nachbarschritte) |
-| `robot/3-2` | Weg 4 / 3 — Führe das Reh zum Wald. | 3 → 12 (freie Nachbarschritte) |
-| `robot/3-3` | Weg 4 / 4 — Führe das Reh zum Wald. | 15 → 0 (freie Nachbarschritte) |
-| `robot/3-4` | Weg 4 / 5 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
-| `robot/3-5` | Weg 4 / 6 — Führe das Reh zum Wald. | 12 → 15 (freie Nachbarschritte) |
-| `robot/4-0` | Weg 5 / 1 — Führe das Reh zum Wald. | 0 → 15 (freie Nachbarschritte) |
-| `robot/4-1` | Weg 5 / 2 — Führe das Reh zum Wald. | 12 → 3 (freie Nachbarschritte) |
-| `robot/4-2` | Weg 5 / 3 — Führe das Reh zum Wald. | 3 → 12 (freie Nachbarschritte) |
-| `robot/4-3` | Weg 5 / 4 — Führe das Reh zum Wald. | 15 → 0 (freie Nachbarschritte) |
-| `robot/4-4` | Weg 5 / 5 — Führe das Reh zum Wald. | 0 → 3 (freie Nachbarschritte) |
-| `robot/4-5` | Weg 5 / 6 — Führe das Reh zum Wald. | 12 → 15 (freie Nachbarschritte) |
+| `robot/0-5` | Weg 1 / 6 — Führe das Reh zum Wald. | 15 → 12 (freie Nachbarschritte) |
+| `robot/1-0` | Weg 2 / 1 — Führe das Reh zum Wald. | 15 → 12 (freie Nachbarschritte) |
+| `robot/1-1` | Weg 2 / 2 — Führe das Reh zum Wald. | 15 → 12 (freie Nachbarschritte) |
+| `robot/1-2` | Weg 2 / 3 — Führe das Reh zum Wald. | 15 → 12 (freie Nachbarschritte) |
+| `robot/1-3` | Weg 2 / 4 — Führe das Reh zum Wald. | 15 → 12 (freie Nachbarschritte) |
+| `robot/1-4` | Weg 2 / 5 — Führe das Reh zum Wald. | 0 → 12 (freie Nachbarschritte) |
+| `robot/1-5` | Weg 2 / 6 — Führe das Reh zum Wald. | 0 → 12 (freie Nachbarschritte) |
+| `robot/2-0` | Weg 3 / 1 — Führe das Reh zum Wald. | 0 → 12 (freie Nachbarschritte) |
+| `robot/2-1` | Weg 3 / 2 — Führe das Reh zum Wald. | 0 → 12 (freie Nachbarschritte) |
+| `robot/2-2` | Weg 3 / 3 — Führe das Reh zum Wald. | 0 → 12 (freie Nachbarschritte) |
+| `robot/2-3` | Weg 3 / 4 — Führe das Reh zum Wald. | 15 → 3 (freie Nachbarschritte) |
+| `robot/2-4` | Weg 3 / 5 — Führe das Reh zum Wald. | 15 → 3 (freie Nachbarschritte) |
+| `robot/2-5` | Weg 3 / 6 — Führe das Reh zum Wald. | 15 → 3 (freie Nachbarschritte) |
+| `robot/3-0` | Weg 4 / 1 — Führe das Reh zum Wald. | 15 → 3 (freie Nachbarschritte) |
+| `robot/3-1` | Weg 4 / 2 — Führe das Reh zum Wald. | 15 → 3 (freie Nachbarschritte) |
+| `robot/3-2` | Weg 4 / 3 — Führe das Reh zum Wald. | 4 → 7 (freie Nachbarschritte) |
+| `robot/3-3` | Weg 4 / 4 — Führe das Reh zum Wald. | 4 → 7 (freie Nachbarschritte) |
+| `robot/3-4` | Weg 4 / 5 — Führe das Reh zum Wald. | 4 → 7 (freie Nachbarschritte) |
+| `robot/3-5` | Weg 4 / 6 — Führe das Reh zum Wald. | 4 → 7 (freie Nachbarschritte) |
+| `robot/4-0` | Weg 5 / 1 — Führe das Reh zum Wald. | 14 → 2 (freie Nachbarschritte) |
+| `robot/4-1` | Weg 5 / 2 — Führe das Reh zum Wald. | 14 → 2 (freie Nachbarschritte) |
+| `robot/4-2` | Weg 5 / 3 — Führe das Reh zum Wald. | 14 → 2 (freie Nachbarschritte) |
+| `robot/4-3` | Weg 5 / 4 — Führe das Reh zum Wald. | 14 → 2 (freie Nachbarschritte) |
+| `robot/4-4` | Weg 5 / 5 — Führe das Reh zum Wald. | 4 → 11 (freie Nachbarschritte) |
+| `robot/4-5` | Weg 5 / 6 — Führe das Reh zum Wald. | 13 → 2 (freie Nachbarschritte) |
 
 ## Exact definitions
 
@@ -72,9 +72,9 @@ These definitions are the same finite data used by the game and review previews.
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
       "start": 0,
-      "goal": 15,
+      "goal": 3,
       "obstacles": [
-        5,
+        1,
         6
       ]
     }
@@ -87,11 +87,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
+      "start": 0,
       "goal": 3,
       "obstacles": [
-        5,
-        6
+        2,
+        5
       ]
     }
   },
@@ -103,11 +103,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 3,
-      "goal": 12,
+      "start": 0,
+      "goal": 3,
       "obstacles": [
-        5,
-        6
+        1,
+        5
       ]
     }
   },
@@ -119,11 +119,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 15,
-      "goal": 0,
+      "start": 0,
+      "goal": 3,
       "obstacles": [
+        1,
         5,
-        6
+        10
       ]
     }
   },
@@ -138,8 +139,9 @@ These definitions are the same finite data used by the game and review previews.
       "start": 0,
       "goal": 3,
       "obstacles": [
-        5,
-        6
+        2,
+        6,
+        10
       ]
     }
   },
@@ -151,11 +153,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 15,
+      "start": 15,
+      "goal": 12,
       "obstacles": [
-        5,
-        6
+        9,
+        14
       ]
     }
   },
@@ -167,11 +169,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 0,
-      "goal": 15,
+      "start": 15,
+      "goal": 12,
       "obstacles": [
-        5,
-        9
+        10,
+        13
       ]
     }
   },
@@ -183,11 +185,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 3,
+      "start": 15,
+      "goal": 12,
       "obstacles": [
-        5,
-        9
+        9,
+        13
       ]
     }
   },
@@ -199,11 +201,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 3,
+      "start": 15,
       "goal": 12,
       "obstacles": [
         5,
-        9
+        9,
+        14
       ]
     }
   },
@@ -216,10 +219,11 @@ These definitions are the same finite data used by the game and review previews.
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
       "start": 15,
-      "goal": 0,
+      "goal": 12,
       "obstacles": [
-        5,
-        9
+        6,
+        10,
+        14
       ]
     }
   },
@@ -232,9 +236,9 @@ These definitions are the same finite data used by the game and review previews.
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
       "start": 0,
-      "goal": 3,
+      "goal": 12,
       "obstacles": [
-        5,
+        4,
         9
       ]
     }
@@ -247,11 +251,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 15,
+      "start": 0,
+      "goal": 12,
       "obstacles": [
         5,
-        9
+        8
       ]
     }
   },
@@ -264,10 +268,10 @@ These definitions are the same finite data used by the game and review previews.
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
       "start": 0,
-      "goal": 15,
+      "goal": 12,
       "obstacles": [
-        6,
-        10
+        4,
+        5
       ]
     }
   },
@@ -279,10 +283,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 3,
+      "start": 0,
+      "goal": 12,
       "obstacles": [
-        6,
+        4,
+        5,
         10
       ]
     }
@@ -295,10 +300,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 3,
+      "start": 0,
       "goal": 12,
       "obstacles": [
-        6,
+        8,
+        9,
         10
       ]
     }
@@ -312,10 +318,10 @@ These definitions are the same finite data used by the game and review previews.
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
       "start": 15,
-      "goal": 0,
+      "goal": 3,
       "obstacles": [
         6,
-        10
+        11
       ]
     }
   },
@@ -327,10 +333,10 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 0,
+      "start": 15,
       "goal": 3,
       "obstacles": [
-        6,
+        7,
         10
       ]
     }
@@ -343,11 +349,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 15,
+      "start": 15,
+      "goal": 3,
       "obstacles": [
         6,
-        10
+        7
       ]
     }
   },
@@ -359,11 +365,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 0,
-      "goal": 15,
+      "start": 15,
+      "goal": 3,
       "obstacles": [
-        9,
-        10
+        5,
+        6,
+        11
       ]
     }
   },
@@ -375,11 +382,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
+      "start": 15,
       "goal": 3,
       "obstacles": [
         9,
-        10
+        10,
+        11
       ]
     }
   },
@@ -391,10 +399,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 3,
-      "goal": 12,
+      "start": 4,
+      "goal": 7,
       "obstacles": [
-        9,
+        0,
+        5,
         10
       ]
     }
@@ -407,10 +416,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 15,
-      "goal": 0,
+      "start": 4,
+      "goal": 7,
       "obstacles": [
-        9,
+        1,
+        6,
         10
       ]
     }
@@ -423,11 +433,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 0,
-      "goal": 3,
+      "start": 4,
+      "goal": 7,
       "obstacles": [
-        9,
-        10
+        0,
+        5,
+        9
       ]
     }
   },
@@ -439,11 +450,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 15,
+      "start": 4,
+      "goal": 7,
       "obstacles": [
-        9,
-        10
+        1,
+        6,
+        9
       ]
     }
   },
@@ -455,12 +467,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 0,
-      "goal": 15,
+      "start": 14,
+      "goal": 2,
       "obstacles": [
-        2,
         5,
-        9
+        6,
+        11
       ]
     }
   },
@@ -472,12 +484,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 3,
+      "start": 14,
+      "goal": 2,
       "obstacles": [
-        2,
-        5,
-        9
+        9,
+        10,
+        11
       ]
     }
   },
@@ -489,12 +501,12 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 3,
-      "goal": 12,
+      "start": 14,
+      "goal": 2,
       "obstacles": [
-        2,
+        3,
         5,
-        9
+        6
       ]
     }
   },
@@ -506,11 +518,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 15,
-      "goal": 0,
+      "start": 14,
+      "goal": 2,
       "obstacles": [
-        2,
-        5,
+        6,
+        7,
         9
       ]
     }
@@ -523,12 +535,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 0,
-      "goal": 3,
+      "start": 4,
+      "goal": 11,
       "obstacles": [
-        2,
         5,
-        9
+        10
       ]
     }
   },
@@ -540,12 +551,11 @@ These definitions are the same finite data used by the game and review previews.
       "mode": "route",
       "prompt": "Führe das Reh zum Wald.",
       "size": 4,
-      "start": 12,
-      "goal": 15,
+      "start": 13,
+      "goal": 2,
       "obstacles": [
-        2,
-        5,
-        9
+        1,
+        6
       ]
     }
   }

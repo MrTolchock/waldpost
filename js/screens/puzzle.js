@@ -6,10 +6,10 @@
   let root,backButton,body,session,game,host,origin,question,locked=false,timer=0,alive=false,status,scene,answerArea;
   const aliases={house:'vocab-house',table:'vocab-table',shoe:'vocab-shoe',leg:'vocab-leg',stone:'vocab-stone',cloth:'vocab-cloth',tower:'vocab-tower',worm:'vocab-worm',pot:'vocab-pot',head:'vocab-head',hand:'vocab-hand',sand:'vocab-sand',scarf:'vocab-scarf',rope:'vocab-rope',arrow:'vocab-arrow',cup:'vocab-cup',till:'vocab-till',bench:'vocab-bench',wardrobe:'vocab-wardrobe',seeds:'vocab-seed',hare:'hare-sit',mouse:'mouse-sit',bird:'bird-sit',fish:'fish-swim',tin:'tin',nut:'forest-nut',feathers:'forest-feather'};
   const labels={...Object.fromEntries(Object.entries(R.wordArt).map(([word,pic])=>[pic,word])),...Object.fromEntries(R.words.map(([word,pic])=>[pic,word.replaceAll('-','')])),
-    'mouse-sit':'Maus sitzt','mouse-run':'Maus rennt','mouse-sleep':'Maus schläft','bird-fly':'Vogel fliegt','bird-sit':'Vogel sitzt','fish-swim':'Fisch schwimmt','hare-run':'Hase rennt','hare-sit':'Hase sitzt','fox-sleep':'Fuchs schläft','fox-run':'Fuchs rennt','cat-sleep':'Katze schläft','cat-sit':'Katze sitzt','dog-run':'Hund rennt','dog-sleep':'Hund schläft','duck-swim':'Ente schwimmt','duck-fly':'Ente fliegt','forest-stone':'Stein','forest-apple':'Apfel','forest-feather':'Feder','forest-flower':'Blume','forest-nut':'Nuss','forest-leaf':'Blatt','forest-berry':'Beere'};
+    'mouse-sit':'Maus sitzt','mouse-run':'Maus rennt','mouse-sleep':'Maus schläft','bird-fly':'Vogel fliegt','bird-sit':'Vogel sitzt','fish-swim':'Fisch schwimmt','hare-run':'Hase rennt','hare-sit':'Hase sitzt','fox-sleep':'Fuchs schläft','fox-run':'Fuchs rennt','cat-sleep':'Katze schläft','cat-sit':'Katze sitzt','dog-run':'Hund rennt','dog-sleep':'Hund schläft','duck-swim':'Ente schwimmt','duck-fly':'Ente fliegt','forest-stone':'Stein','forest-apple':'Apfel','forest-feather':'Feder','forest-flower':'Blume','forest-nut':'Eichel','forest-leaf':'Blatt','forest-berry':'Beere'};
   Object.assign(labels,{'squirrel-sit':'Eichhörnchen sitzt','squirrel-run':'Eichhörnchen rennt','hedgehog-walk':'Igel läuft','hedgehog-sleep':'Igel schläft','badger-walk':'Dachs läuft','badger-sleep':'Dachs schläft','roe-stand':'Reh steht','roe-run':'Reh rennt','frog-sit':'Frosch sitzt','frog-jump':'Frosch springt','forest-fox':'Fuchs','forest-woodpecker':'Buntspecht','forest-bat':'Fledermaus','forest-owl':'Waldkauz','forest-robin':'Rotkehlchen','forest-lynx':'Luchs','forest-marten':'Baummarder'});
   Object.assign(labels,{'empty-basket':'Leerer Korb','habitat-pond':'Teich','squirrel-nut':'Eichhörnchen mit Nuss',firefly:'Glühwürmchen','watering-can':'Giesskanne'});
-  const pictureName=id=>id.startsWith('scene:')?id.slice(6).split('+').map(pictureName).join(' und '):id.startsWith('puzzle-flower-')?id.slice(13)+'e Blume':labels[id]||labels[aliases[id]]||id;
+  const pictureName=id=>id.startsWith('scene:')?id.slice(6).split('+').map(pictureName).join(' und '):id.startsWith('puzzle-flower-')?(['rosa','lila'].includes(id.slice(14))?id.slice(14):id.slice(14)+'e')+' Blume':labels[id]||labels[aliases[id]]||id;
   function picture(id,label='') {
     if(id?.startsWith('scene:'))return h('span',{class:'puzzle-picture puzzle-picture-composite',role:'img','aria-label':label||'Bild mit zwei Motiven'},id.slice(6).split('+').map(pic=>picture(pic)));
     const value=aliases[id]||id;
@@ -268,7 +268,7 @@
     scene.append(pair);option('equal','=','Gleich viele');
   }
   function renderMirror(q) {
-    const selected=new Set(Array.isArray(work().mirror)?work().mirror:[]),pair=h('div',{class:'puzzle-mirror'}),left=h('div',{class:'puzzle-mirror-grid'}),right=h('div',{class:'puzzle-mirror-grid'});
+    const selected=new Set(Array.isArray(work().mirror)?work().mirror:[]),pair=h('div',{class:'puzzle-mirror'}),left=h('div',{class:'puzzle-mirror-grid',role:'img','aria-label':'Vorlage links: Blätter in '+q.left.map(i=>'Reihe '+(Math.floor(i/3)+1)+' Spalte '+(i%3+1)).join(', ')}),right=h('div',{class:'puzzle-mirror-grid'});
     for(let i=0;i<9;i++){
       left.append(h('span',{class:'puzzle-mirror-cell'+(q.left.includes(i)?' filled':'')},q.left.includes(i)?picture('forest-leaf'):''));
       let node;node=button('Spiegelfeld Reihe '+(Math.floor(i/3)+1)+' Spalte '+(i%3+1),()=>{
@@ -289,7 +289,7 @@
     });};
     scene.append(picture(q.picture),slots);answerArea.append(chips);redraw();
   }
-  function renderColours(q) {scene.append(h('p',{class:'puzzle-read-text',text:FK.text.word(q.text)}));q.choices.forEach(([name])=>option(name,picture('puzzle-flower-'+name),(name==='rosa'?'rosa':name+'e')+' Blume'));}
+  function renderColours(q) {scene.append(h('p',{class:'puzzle-read-text',text:FK.text.word(q.text)}));q.choices.forEach(([name])=>option(name,picture('puzzle-flower-'+name),(['rosa','lila'].includes(name)?name:name+'e')+' Blume'));}
   function renderShapeMatch(q) {
     const sample=shape(q.form,q.rotation);
     sample.classList.add('puzzle-form-sample');

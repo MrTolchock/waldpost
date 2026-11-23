@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "8db78099ebe3c9bcb4fc945bbf92b159ad307c8a82b554c9deb5296ab52277d5",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "8c9be37e8fd6207cb2fe7f37422a008d1faa64fbecaf390554f834f7db2473fd",
     "generationRecord": "generation-records/puzzle-mountain.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-mountain.txt"

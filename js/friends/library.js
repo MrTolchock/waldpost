@@ -27,7 +27,7 @@ const games=[
   {
     "id": "friends-beaver",
     "host": "beaver",
-    "title": "Mengen vergleichen",
+    "title": "Reihen ergänzen",
     "picture": "forest-leaf",
     "screen": "puzzle"
   },

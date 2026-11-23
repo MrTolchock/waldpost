@@ -27,41 +27,41 @@
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
 | `neighbours/1-both` | Mitte 1 — Welche Zahlen kommen davor und danach? | [0,2] |
-| `neighbours/1-left` | Mitte 1 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [0,2] |
+| `neighbours/1-left` | Mitte 1 / Vorgänger gegeben — Welche Zahl kommt danach? | [0,2] |
 | `neighbours/2-both` | Mitte 2 — Welche Zahlen kommen davor und danach? | [1,3] |
-| `neighbours/2-left` | Mitte 2 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [1,3] |
+| `neighbours/2-left` | Mitte 2 / Vorgänger gegeben — Welche Zahl kommt danach? | [1,3] |
 | `neighbours/3-both` | Mitte 3 — Welche Zahlen kommen davor und danach? | [2,4] |
-| `neighbours/3-left` | Mitte 3 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [2,4] |
+| `neighbours/3-left` | Mitte 3 / Vorgänger gegeben — Welche Zahl kommt danach? | [2,4] |
 | `neighbours/4-both` | Mitte 4 — Welche Zahlen kommen davor und danach? | [3,5] |
-| `neighbours/4-left` | Mitte 4 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [3,5] |
+| `neighbours/4-left` | Mitte 4 / Vorgänger gegeben — Welche Zahl kommt danach? | [3,5] |
 | `neighbours/5-both` | Mitte 5 — Welche Zahlen kommen davor und danach? | [4,6] |
-| `neighbours/5-left` | Mitte 5 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [4,6] |
+| `neighbours/5-left` | Mitte 5 / Vorgänger gegeben — Welche Zahl kommt danach? | [4,6] |
 | `neighbours/6-both` | Mitte 6 — Welche Zahlen kommen davor und danach? | [5,7] |
-| `neighbours/6-left` | Mitte 6 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [5,7] |
+| `neighbours/6-left` | Mitte 6 / Vorgänger gegeben — Welche Zahl kommt danach? | [5,7] |
 | `neighbours/7-both` | Mitte 7 — Welche Zahlen kommen davor und danach? | [6,8] |
-| `neighbours/7-left` | Mitte 7 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [6,8] |
+| `neighbours/7-left` | Mitte 7 / Vorgänger gegeben — Welche Zahl kommt danach? | [6,8] |
 | `neighbours/8-both` | Mitte 8 — Welche Zahlen kommen davor und danach? | [7,9] |
-| `neighbours/8-left` | Mitte 8 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [7,9] |
+| `neighbours/8-left` | Mitte 8 / Vorgänger gegeben — Welche Zahl kommt danach? | [7,9] |
 | `neighbours/9-both` | Mitte 9 — Welche Zahlen kommen davor und danach? | [8,10] |
-| `neighbours/9-left` | Mitte 9 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [8,10] |
+| `neighbours/9-left` | Mitte 9 / Vorgänger gegeben — Welche Zahl kommt danach? | [8,10] |
 | `neighbours/10-both` | Mitte 10 — Welche Zahlen kommen davor und danach? | [9,11] |
-| `neighbours/10-left` | Mitte 10 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [9,11] |
+| `neighbours/10-left` | Mitte 10 / Vorgänger gegeben — Welche Zahl kommt danach? | [9,11] |
 | `neighbours/11-both` | Mitte 11 — Welche Zahlen kommen davor und danach? | [10,12] |
-| `neighbours/11-left` | Mitte 11 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [10,12] |
+| `neighbours/11-left` | Mitte 11 / Vorgänger gegeben — Welche Zahl kommt danach? | [10,12] |
 | `neighbours/12-both` | Mitte 12 — Welche Zahlen kommen davor und danach? | [11,13] |
-| `neighbours/12-left` | Mitte 12 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [11,13] |
+| `neighbours/12-left` | Mitte 12 / Vorgänger gegeben — Welche Zahl kommt danach? | [11,13] |
 | `neighbours/13-both` | Mitte 13 — Welche Zahlen kommen davor und danach? | [12,14] |
-| `neighbours/13-left` | Mitte 13 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [12,14] |
+| `neighbours/13-left` | Mitte 13 / Vorgänger gegeben — Welche Zahl kommt danach? | [12,14] |
 | `neighbours/14-both` | Mitte 14 — Welche Zahlen kommen davor und danach? | [13,15] |
-| `neighbours/14-left` | Mitte 14 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [13,15] |
+| `neighbours/14-left` | Mitte 14 / Vorgänger gegeben — Welche Zahl kommt danach? | [13,15] |
 | `neighbours/15-both` | Mitte 15 — Welche Zahlen kommen davor und danach? | [14,16] |
-| `neighbours/15-left` | Mitte 15 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [14,16] |
+| `neighbours/15-left` | Mitte 15 / Vorgänger gegeben — Welche Zahl kommt danach? | [14,16] |
 | `neighbours/16-both` | Mitte 16 — Welche Zahlen kommen davor und danach? | [15,17] |
-| `neighbours/16-left` | Mitte 16 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [15,17] |
+| `neighbours/16-left` | Mitte 16 / Vorgänger gegeben — Welche Zahl kommt danach? | [15,17] |
 | `neighbours/17-both` | Mitte 17 — Welche Zahlen kommen davor und danach? | [16,18] |
-| `neighbours/17-left` | Mitte 17 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [16,18] |
+| `neighbours/17-left` | Mitte 17 / Vorgänger gegeben — Welche Zahl kommt danach? | [16,18] |
 | `neighbours/18-both` | Mitte 18 — Welche Zahlen kommen davor und danach? | [17,19] |
-| `neighbours/18-left` | Mitte 18 / Vorgänger gegeben — Welche Zahlen kommen davor und danach? | [17,19] |
+| `neighbours/18-left` | Mitte 18 / Vorgänger gegeben — Welche Zahl kommt danach? | [17,19] |
 
 ## Exact definitions
 
@@ -93,7 +93,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 1 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 1,
       "given": "left",
       "answer": [
@@ -132,7 +132,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 2 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 2,
       "given": "left",
       "answer": [
@@ -171,7 +171,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 3 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 3,
       "given": "left",
       "answer": [
@@ -210,7 +210,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 4 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 4,
       "given": "left",
       "answer": [
@@ -249,7 +249,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 5 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 5,
       "given": "left",
       "answer": [
@@ -288,7 +288,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 6 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 6,
       "given": "left",
       "answer": [
@@ -327,7 +327,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 7 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 7,
       "given": "left",
       "answer": [
@@ -366,7 +366,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 8 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 8,
       "given": "left",
       "answer": [
@@ -405,7 +405,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 9 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 9,
       "given": "left",
       "answer": [
@@ -444,7 +444,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 10 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 10,
       "given": "left",
       "answer": [
@@ -483,7 +483,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 11 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 11,
       "given": "left",
       "answer": [
@@ -522,7 +522,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 12 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 12,
       "given": "left",
       "answer": [
@@ -561,7 +561,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 13 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 13,
       "given": "left",
       "answer": [
@@ -600,7 +600,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 14 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 14,
       "given": "left",
       "answer": [
@@ -639,7 +639,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 15 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 15,
       "given": "left",
       "answer": [
@@ -678,7 +678,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 16 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 16,
       "given": "left",
       "answer": [
@@ -717,7 +717,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 17 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 17,
       "given": "left",
       "answer": [
@@ -756,7 +756,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Mitte 18 / Vorgänger gegeben",
     "question": {
       "kind": "neighbours",
-      "prompt": "Welche Zahlen kommen davor und danach?",
+      "prompt": "Welche Zahl kommt danach?",
       "n": 18,
       "given": "left",
       "answer": [

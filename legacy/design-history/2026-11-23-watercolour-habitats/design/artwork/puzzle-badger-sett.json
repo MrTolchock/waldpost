@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-badger-sett.png",
+  "output": "../../assets/forest-friends/puzzle-badger-sett.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "b8acc26c6d61b3b09442e5f9fe01d10ad49df1945b814fb6ce1c4b5e6ab0b716",
+    "generationRecord": "generation-records/puzzle-badger-sett.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-badger-sett.txt"
+  }
+}

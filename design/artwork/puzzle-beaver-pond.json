@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "d5c146a2789317bcde358076d81292b7acc750ac7a72d5bd2422bfa762fb65aa",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "03b0443a3128fea604390f4bf6b0f8b4ef4ac36f6f1ead21544e85e4b57e20ae",
     "generationRecord": "generation-records/puzzle-beaver-pond.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-beaver-pond.txt"

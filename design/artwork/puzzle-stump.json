@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "c74bddd1dc8a3ac7b0042be789e98dfd59a975f90295f76142cc2e1b9c7a445b",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "8dfdcc6c05338d52fd6fa0720204032381ddbada966bedb776e01396fdfe8482",
     "generationRecord": "generation-records/puzzle-stump.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-stump.txt"

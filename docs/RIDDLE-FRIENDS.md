@@ -1,13 +1,13 @@
 # Rätsel bei den Waldfreunden
 
-Beim Steinbock gibt es das Bergmuster und beim Dachs das Wachstumsrätsel, bei den anderen zehn Brief-Freunden jeweils zwei Rätsel. Die aktuelle Sammlung umfasst 22 Rätsel mit 763 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
+Beim Steinbock gibt es das Bergmuster und beim Dachs das Wachstumsrätsel, bei den anderen zehn Brief-Freunden jeweils zwei Rätsel. Die aktuelle Sammlung umfasst 22 Rätsel mit 797 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
 
 | Freund | Rätsel | Thematischer Bezug |
 | --- | --- | --- |
-| Eichhörnchen | [Mengen zählen](puzzles/friends-squirrel.md), [Gegenstände merken](puzzles/treasure.md) | Nüsse zählen und sich gesammelte Waldschätze merken |
+| Eichhörnchen | [Mengen zählen](puzzles/friends-squirrel.md), [Gegenstände merken](puzzles/treasure.md) | Eicheln zählen und sich gesammelte Waldschätze merken |
 | Blaumeise | [Reime erkennen](puzzles/friends-bird.md), [Wörter in Silben zerlegen](puzzles/syllable.md) | Gesang, Sprachklang und Rhythmus |
 | Waldkauz | [Kurze Sätze verstehen](puzzles/friends-owl.md), [Silben zu Wörtern verbinden](puzzles/read-puzzle.md) | Lesen und Wörter zusammensetzen |
-| Biber | [Mengen vergleichen](puzzles/friends-beaver.md), [Muster spiegeln](puzzles/mirror.md) | Reihen aus Waldgegenständen ergänzen und Formen beim Bauen vergleichen |
+| Biber | [Reihen ergänzen](puzzles/friends-beaver.md), [Muster spiegeln](puzzles/mirror.md) | Reihen aus Waldgegenständen ergänzen und Formen beim Bauen vergleichen |
 | Maus | [Wörter mit Bildern verbinden](puzzles/friends-mouse.md), [Einen Vokal ergänzen](puzzles/vowels.md) | Vertraute Wörter lesen und genau auf Buchstaben achten |
 | Igel | [Tiermerkmale erkennen und Fragen lesen](puzzles/friends-hedgehog.md), [Gezielt Mengen zählen](puzzles/count.md) | Tiere und kleine Waldbewohner beobachten, Marienkäfer gezielt zählen |
 | Fisch | [Mengen addieren](puzzles/add.md), [Mengen vergleichen](puzzles/compare.md) | Fischgruppen zusammenzählen und ihre Grössen vergleichen |

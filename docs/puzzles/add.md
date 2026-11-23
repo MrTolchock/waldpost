@@ -6,7 +6,7 @@
 - Host: fish
 - Related competence: **MA.1.A.3.a** — Sichtbare Gruppen addieren
 - Difficulty: Zwei positive Summanden; Summe höchstens 10
-- Pool: 36 Aufgaben; eine Runde enthält fünf.
+- Pool: 45 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
 ## Mapping to the blueprint
@@ -34,6 +34,7 @@
 | `add/1-6` | 1 + 6 — Wie viele Fische sind es zusammen? | 7 |
 | `add/1-7` | 1 + 7 — Wie viele Fische sind es zusammen? | 8 |
 | `add/1-8` | 1 + 8 — Wie viele Fische sind es zusammen? | 9 |
+| `add/1-9` | 1 + 9 — Wie viele Fische sind es zusammen? | 10 |
 | `add/2-1` | 2 + 1 — Wie viele Fische sind es zusammen? | 3 |
 | `add/2-2` | 2 + 2 — Wie viele Fische sind es zusammen? | 4 |
 | `add/2-3` | 2 + 3 — Wie viele Fische sind es zusammen? | 5 |
@@ -41,27 +42,35 @@
 | `add/2-5` | 2 + 5 — Wie viele Fische sind es zusammen? | 7 |
 | `add/2-6` | 2 + 6 — Wie viele Fische sind es zusammen? | 8 |
 | `add/2-7` | 2 + 7 — Wie viele Fische sind es zusammen? | 9 |
+| `add/2-8` | 2 + 8 — Wie viele Fische sind es zusammen? | 10 |
 | `add/3-1` | 3 + 1 — Wie viele Fische sind es zusammen? | 4 |
 | `add/3-2` | 3 + 2 — Wie viele Fische sind es zusammen? | 5 |
 | `add/3-3` | 3 + 3 — Wie viele Fische sind es zusammen? | 6 |
 | `add/3-4` | 3 + 4 — Wie viele Fische sind es zusammen? | 7 |
 | `add/3-5` | 3 + 5 — Wie viele Fische sind es zusammen? | 8 |
 | `add/3-6` | 3 + 6 — Wie viele Fische sind es zusammen? | 9 |
+| `add/3-7` | 3 + 7 — Wie viele Fische sind es zusammen? | 10 |
 | `add/4-1` | 4 + 1 — Wie viele Fische sind es zusammen? | 5 |
 | `add/4-2` | 4 + 2 — Wie viele Fische sind es zusammen? | 6 |
 | `add/4-3` | 4 + 3 — Wie viele Fische sind es zusammen? | 7 |
 | `add/4-4` | 4 + 4 — Wie viele Fische sind es zusammen? | 8 |
 | `add/4-5` | 4 + 5 — Wie viele Fische sind es zusammen? | 9 |
+| `add/4-6` | 4 + 6 — Wie viele Fische sind es zusammen? | 10 |
 | `add/5-1` | 5 + 1 — Wie viele Fische sind es zusammen? | 6 |
 | `add/5-2` | 5 + 2 — Wie viele Fische sind es zusammen? | 7 |
 | `add/5-3` | 5 + 3 — Wie viele Fische sind es zusammen? | 8 |
 | `add/5-4` | 5 + 4 — Wie viele Fische sind es zusammen? | 9 |
+| `add/5-5` | 5 + 5 — Wie viele Fische sind es zusammen? | 10 |
 | `add/6-1` | 6 + 1 — Wie viele Fische sind es zusammen? | 7 |
 | `add/6-2` | 6 + 2 — Wie viele Fische sind es zusammen? | 8 |
 | `add/6-3` | 6 + 3 — Wie viele Fische sind es zusammen? | 9 |
+| `add/6-4` | 6 + 4 — Wie viele Fische sind es zusammen? | 10 |
 | `add/7-1` | 7 + 1 — Wie viele Fische sind es zusammen? | 8 |
 | `add/7-2` | 7 + 2 — Wie viele Fische sind es zusammen? | 9 |
+| `add/7-3` | 7 + 3 — Wie viele Fische sind es zusammen? | 10 |
 | `add/8-1` | 8 + 1 — Wie viele Fische sind es zusammen? | 9 |
+| `add/8-2` | 8 + 2 — Wie viele Fische sind es zusammen? | 10 |
+| `add/9-1` | 9 + 1 — Wie viele Fische sind es zusammen? | 10 |
 
 ## Exact definitions
 
@@ -206,6 +215,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/1-9",
+    "label": "1 + 9",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 1,
+      "b": 9,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/2-1",
     "label": "2 + 1",
     "question": {
@@ -325,6 +351,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/2-8",
+    "label": "2 + 8",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 2,
+      "b": 8,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/3-1",
     "label": "3 + 1",
     "question": {
@@ -427,6 +470,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/3-7",
+    "label": "3 + 7",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 3,
+      "b": 7,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/4-1",
     "label": "4 + 1",
     "question": {
@@ -512,6 +572,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/4-6",
+    "label": "4 + 6",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 4,
+      "b": 6,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/5-1",
     "label": "5 + 1",
     "question": {
@@ -580,6 +657,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/5-5",
+    "label": "5 + 5",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 5,
+      "b": 5,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/6-1",
     "label": "6 + 1",
     "question": {
@@ -631,6 +725,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/6-4",
+    "label": "6 + 4",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 6,
+      "b": 4,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/7-1",
     "label": "7 + 1",
     "question": {
@@ -665,6 +776,23 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "add/7-3",
+    "label": "7 + 3",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 7,
+      "b": 3,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
     "id": "add/8-1",
     "label": "8 + 1",
     "question": {
@@ -678,6 +806,40 @@ These definitions are the same finite data used by the game and review previews.
         9,
         8,
         10
+      ]
+    }
+  },
+  {
+    "id": "add/8-2",
+    "label": "8 + 2",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 8,
+      "b": 2,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
+      ]
+    }
+  },
+  {
+    "id": "add/9-1",
+    "label": "9 + 1",
+    "question": {
+      "kind": "add",
+      "item": "fish-swim",
+      "prompt": "Wie viele Fische sind es zusammen?",
+      "a": 9,
+      "b": 1,
+      "answer": 10,
+      "choices": [
+        10,
+        9,
+        11
       ]
     }
   }

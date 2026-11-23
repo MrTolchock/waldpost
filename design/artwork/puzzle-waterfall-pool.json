@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "6c8c611a1a48321b298244042109b6d273bd1bd533de865b0921ab068ef73f6c",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "e4e1ecd824c0c3b3b7da1d6915f779aeb069cb73d66071fe67b1c28c079e329c",
     "generationRecord": "generation-records/puzzle-waterfall-pool.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-waterfall-pool.txt"

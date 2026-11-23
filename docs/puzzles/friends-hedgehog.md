@@ -53,7 +53,7 @@
 | `friends-hedgehog/riddle-24` | Wer hat keine Beine? — Wer hat keine Beine? | "vocab-worm" |
 | `friends-hedgehog/nature-question-2` | Wer quakt am Teich? — Wer quakt am Teich? | "frog" |
 | `friends-hedgehog/nature-question-3` | Wer macht Honig aus Nektar? — Wer macht Honig aus Nektar? | "bee" |
-| `friends-hedgehog/nature-question-4` | Wer bellt? — Wer bellt? | "dog" |
+| `friends-hedgehog/nature-question-4` | Wer bellt? — Wer bellt? | "dog-run" |
 | `friends-hedgehog/nature-question-5` | Wer miaut? — Wer miaut? | "cat" |
 | `friends-hedgehog/nature-question-6` | Wer gibt uns Milch? — Wer gibt uns Milch? | "cow" |
 | `friends-hedgehog/nature-question-7` | Wer baut ein Netz? — Wer baut ein Netz? | "spider" |
@@ -489,9 +489,9 @@ These definitions are the same finite data used by the game and review previews.
       "kind": "reading",
       "prompt": "Welches Tier passt?",
       "text": "Wer bellt?",
-      "answer": "dog",
+      "answer": "dog-run",
       "choices": [
-        "dog",
+        "dog-run",
         "frog",
         "snail"
       ]

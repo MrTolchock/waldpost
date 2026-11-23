@@ -1,0 +1,19 @@
+{
+  "format": "waldpost-illustration-image",
+  "version": 1,
+  "source": "sources/puzzle-meadow.png",
+  "output": "../../assets/forest-friends/puzzle-meadow.webp",
+  "width": 1536,
+  "height": 1024,
+  "fit": "contain",
+  "transparent": false,
+  "quality": 82,
+  "provenance": {
+    "date": "2026-11-22",
+    "tool": "ChatGPT image_gen.imagegen",
+    "sourceSha256": "3a5160fdc969e5b337c39ca715ebb0ba9c8f93e254491902704cb6bc05c90a8e",
+    "generationRecord": "generation-records/puzzle-meadow.json",
+    "styleContract": "../illustrations/style.json",
+    "forwardPrompt": "prompts/puzzle-meadow.txt"
+  }
+}

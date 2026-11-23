@@ -6,7 +6,7 @@
 - Host: mouse
 - Related competence: **D.4.A.1.c (Unterstützung)** — Einen Vokal ergänzen
 - Difficulty: Bildwörter; keine Lücke innerhalb von au/ei/ie/eu/äu
-- Pool: 64 Aufgaben; eine Runde enthält fünf.
+- Pool: 81 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
 ## Mapping to the blueprint
@@ -90,6 +90,23 @@
 | `vowels/word-33-3` | Vogel / Lücke 4 — Vogel | "e" |
 | `vowels/word-34-4` | Schnecke / Lücke 5 — Schnecke | "e" |
 | `vowels/word-34-7` | Schnecke / Lücke 8 — Schnecke | "e" |
+| `vowels/bild-hut-1` | Hut / Lücke 2 — Hut | "u" |
+| `vowels/bild-wurm-1` | Wurm / Lücke 2 — Wurm | "u" |
+| `vowels/bild-turm-1` | Turm / Lücke 2 — Turm | "u" |
+| `vowels/bild-hund-1` | Hund / Lücke 2 — Hund | "u" |
+| `vowels/bild-mund-1` | Mund / Lücke 2 — Mund | "u" |
+| `vowels/bild-buch-1` | Buch / Lücke 2 — Buch | "u" |
+| `vowels/bild-topf-1` | Topf / Lücke 2 — Topf | "o" |
+| `vowels/bild-hose-1` | Hose / Lücke 2 — Hose | "o" |
+| `vowels/bild-dose-1` | Dose / Lücke 2 — Dose | "o" |
+| `vowels/bild-kopf-1` | Kopf / Lücke 2 — Kopf | "o" |
+| `vowels/bild-ball-1` | Ball / Lücke 2 — Ball | "a" |
+| `vowels/bild-nase-1` | Nase / Lücke 2 — Nase | "a" |
+| `vowels/bild-tisch-1` | Tisch / Lücke 2 — Tisch | "i" |
+| `vowels/bild-birne-1` | Birne / Lücke 2 — Birne | "i" |
+| `vowels/bild-kirsche-1` | Kirsche / Lücke 2 — Kirsche | "i" |
+| `vowels/bild-zitrone-1` | Zitrone / Lücke 2 — Zitrone | "i" |
+| `vowels/bild-zitrone-4` | Zitrone / Lücke 5 — Zitrone | "o" |
 
 ## Exact definitions
 
@@ -126,8 +143,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -143,8 +160,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "i",
       "choices": [
         "i",
-        "a",
-        "e"
+        "e",
+        "u"
       ]
     }
   },
@@ -160,8 +177,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -177,8 +194,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "I",
       "choices": [
         "I",
-        "A",
-        "E"
+        "E",
+        "O"
       ]
     }
   },
@@ -194,8 +211,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -211,8 +228,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -228,8 +245,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -245,8 +262,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "u"
       ]
     }
   },
@@ -262,8 +279,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -279,8 +296,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "u",
       "choices": [
         "u",
-        "a",
-        "e"
+        "e",
+        "i"
       ]
     }
   },
@@ -296,8 +313,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -313,8 +330,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "u",
       "choices": [
         "u",
-        "a",
-        "e"
+        "e",
+        "a"
       ]
     }
   },
@@ -330,8 +347,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -348,7 +365,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "u"
       ]
     }
   },
@@ -364,8 +381,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -382,7 +399,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "A",
         "E",
-        "I"
+        "O"
       ]
     }
   },
@@ -398,8 +415,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -415,8 +432,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -432,8 +449,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -466,8 +483,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -483,8 +500,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -500,8 +517,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "i",
       "choices": [
         "i",
-        "a",
-        "e"
+        "e",
+        "u"
       ]
     }
   },
@@ -512,13 +529,13 @@ These definitions are the same finite data used by the game and review previews.
       "kind": "vowels",
       "prompt": "Welcher Buchstabe fehlt?",
       "word": "Nuss",
-      "picture": "forest-nut",
+      "picture": "walnut",
       "index": 1,
       "answer": "u",
       "choices": [
         "u",
-        "a",
-        "e"
+        "e",
+        "a"
       ]
     }
   },
@@ -534,8 +551,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "i",
       "choices": [
         "i",
-        "a",
-        "e"
+        "e",
+        "o"
       ]
     }
   },
@@ -551,8 +568,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -585,8 +602,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "i"
       ]
     }
   },
@@ -602,8 +619,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -619,8 +636,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -636,8 +653,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -653,8 +670,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "i",
       "choices": [
         "i",
-        "a",
-        "e"
+        "e",
+        "u"
       ]
     }
   },
@@ -687,8 +704,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -705,7 +722,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "u"
       ]
     }
   },
@@ -738,8 +755,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -755,8 +772,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "u"
       ]
     }
   },
@@ -807,7 +824,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "u"
       ]
     }
   },
@@ -823,8 +840,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -841,7 +858,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "o"
       ]
     }
   },
@@ -858,7 +875,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "u"
       ]
     }
   },
@@ -874,8 +891,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -892,7 +909,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "o"
       ]
     }
   },
@@ -908,8 +925,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -925,8 +942,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "a"
       ]
     }
   },
@@ -942,8 +959,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -960,7 +977,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "a",
         "e",
-        "i"
+        "u"
       ]
     }
   },
@@ -976,8 +993,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "a"
       ]
     }
   },
@@ -1010,8 +1027,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "u"
       ]
     }
   },
@@ -1027,8 +1044,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -1044,8 +1061,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -1061,8 +1078,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "u",
       "choices": [
         "u",
-        "a",
-        "e"
+        "e",
+        "o"
       ]
     }
   },
@@ -1078,8 +1095,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -1095,8 +1112,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -1112,8 +1129,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "u",
+        "a"
       ]
     }
   },
@@ -1129,8 +1146,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "o",
       "choices": [
         "o",
-        "a",
-        "e"
+        "e",
+        "a"
       ]
     }
   },
@@ -1146,8 +1163,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "i",
+        "o"
       ]
     }
   },
@@ -1163,8 +1180,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
-        "i"
+        "o",
+        "u"
       ]
     }
   },
@@ -1180,8 +1197,297 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "e",
       "choices": [
         "e",
-        "a",
+        "u",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-hut-1",
+    "label": "Hut / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Hut",
+      "picture": "hat",
+      "index": 1,
+      "answer": "u",
+      "choices": [
+        "u",
+        "e",
         "i"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-wurm-1",
+    "label": "Wurm / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Wurm",
+      "picture": "vocab-worm",
+      "index": 1,
+      "answer": "u",
+      "choices": [
+        "u",
+        "e",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-turm-1",
+    "label": "Turm / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Turm",
+      "picture": "vocab-tower",
+      "index": 1,
+      "answer": "u",
+      "choices": [
+        "u",
+        "e",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-hund-1",
+    "label": "Hund / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Hund",
+      "picture": "dog-run",
+      "index": 1,
+      "answer": "u",
+      "choices": [
+        "u",
+        "e",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-mund-1",
+    "label": "Mund / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Mund",
+      "picture": "rhyme-mouth",
+      "index": 1,
+      "answer": "u",
+      "choices": [
+        "u",
+        "e",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-buch-1",
+    "label": "Buch / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Buch",
+      "picture": "book",
+      "index": 1,
+      "answer": "u",
+      "choices": [
+        "u",
+        "e",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-topf-1",
+    "label": "Topf / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Topf",
+      "picture": "vocab-pot",
+      "index": 1,
+      "answer": "o",
+      "choices": [
+        "o",
+        "e",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-hose-1",
+    "label": "Hose / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Hose",
+      "picture": "trousers",
+      "index": 1,
+      "answer": "o",
+      "choices": [
+        "o",
+        "e",
+        "u"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-dose-1",
+    "label": "Dose / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Dose",
+      "picture": "tin",
+      "index": 1,
+      "answer": "o",
+      "choices": [
+        "o",
+        "e",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-kopf-1",
+    "label": "Kopf / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Kopf",
+      "picture": "vocab-head",
+      "index": 1,
+      "answer": "o",
+      "choices": [
+        "o",
+        "e",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-ball-1",
+    "label": "Ball / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Ball",
+      "picture": "ball",
+      "index": 1,
+      "answer": "a",
+      "choices": [
+        "a",
+        "e",
+        "u"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-nase-1",
+    "label": "Nase / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Nase",
+      "picture": "nose",
+      "index": 1,
+      "answer": "a",
+      "choices": [
+        "a",
+        "e",
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-tisch-1",
+    "label": "Tisch / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Tisch",
+      "picture": "vocab-table",
+      "index": 1,
+      "answer": "i",
+      "choices": [
+        "i",
+        "e",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-birne-1",
+    "label": "Birne / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Birne",
+      "picture": "pear",
+      "index": 1,
+      "answer": "i",
+      "choices": [
+        "i",
+        "e",
+        "u"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-kirsche-1",
+    "label": "Kirsche / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Kirsche",
+      "picture": "cherry",
+      "index": 1,
+      "answer": "i",
+      "choices": [
+        "i",
+        "e",
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-zitrone-1",
+    "label": "Zitrone / Lücke 2",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Zitrone",
+      "picture": "lemon",
+      "index": 1,
+      "answer": "i",
+      "choices": [
+        "i",
+        "e",
+        "o"
+      ]
+    }
+  },
+  {
+    "id": "vowels/bild-zitrone-4",
+    "label": "Zitrone / Lücke 5",
+    "question": {
+      "kind": "vowels",
+      "prompt": "Welcher Buchstabe fehlt?",
+      "word": "Zitrone",
+      "picture": "lemon",
+      "index": 4,
+      "answer": "o",
+      "choices": [
+        "o",
+        "e",
+        "u"
       ]
     }
   }

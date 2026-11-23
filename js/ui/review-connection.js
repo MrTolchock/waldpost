@@ -18,7 +18,7 @@
     const setup=h('details',{},h('summary',{text:'GitHub zum Speichern verbinden'}),h('p',{text:'Nur zum Bearbeiten nötig. Zugriffstoken für MrTolchock/waldpost mit «Contents: Read and write» erstellen. Der Token bleibt in dieser Browsersitzung und wird nie mit Prüfungen exportiert.'}),
       h('a',{href:'https://github.com/settings/personal-access-tokens/new',target:'_blank',rel:'noopener noreferrer',text:'GitHub-Zugriffstoken erstellen'}),h('label',{},'GitHub-Zugriffstoken',input),connect);
     const conflicts=h('div',{class:'review-conflicts'});
-    root.append(h('h3',{text:'Prüfung auf GitHub'}),h('p',{text:'Freigaben und Verbesserungen stehen in deinem öffentlichen GitHub-Repository. Andere Browser und neue Installationen laden sie automatisch. Offline bleibt die letzte Sicherung verfügbar. Spielstände und Zeichnungen bleiben auf dem Gerät.'}),status,
+    root.append(h('h3',{text:'Prüfung auf GitHub'}),h('p',{text:'Freigaben und Verbesserungen stehen in deinem öffentlichen GitHub-Repository. Andere Browser und neue Installationen laden sie automatisch. Offline bleibt die letzte Sicherung verfügbar. Spielstände bleiben auf dem Gerät.'}),status,
       h('div',{class:'review-actions'},sync,disconnect,h('a',{href:repo.url,target:'_blank',rel:'noopener noreferrer',text:'Gespeicherte Prüfung auf GitHub'})),setup,conflicts);
     function draw(){
       const state=repo.state;status.textContent=state.message+(state.pending?' · '+state.pending+' Änderung(en) noch nicht auf GitHub.':'');

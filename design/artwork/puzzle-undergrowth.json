@@ -9,9 +9,9 @@
   "transparent": false,
   "quality": 82,
   "provenance": {
-    "date": "2026-11-22",
-    "tool": "ChatGPT image_gen.imagegen",
-    "sourceSha256": "2e5958447065da4b04ddd6725636bc3fdaf939bfaedd4cccbe3b35b8e867b01c",
+    "date": "2026-11-23",
+    "tool": "Supplied by the owner (no generator request retained)",
+    "sourceSha256": "adb673e5f95c1968def27ceb0300cc28b52d92f12fe9f259ec4302492c208c94",
     "generationRecord": "generation-records/puzzle-undergrowth.json",
     "styleContract": "../illustrations/style.json",
     "forwardPrompt": "prompts/puzzle-undergrowth.txt"

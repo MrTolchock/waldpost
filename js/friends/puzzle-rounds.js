@@ -5,14 +5,14 @@
   const FK=window.FK;
   const base={squirrel:'Nüsse zählen',bird:'Reimpaare lesen',owl:'Lies und zeig',beaver:'Was fehlt im Wald?',mouse:'Wörter und Bilder',hedgehog:'Tierrätsel',fish:'Fische zählen',deer:'Wer wohnt wo?',kingfisher:'Am Bach zählen',frog:'Tierwörter lesen',badger:'Naturrätsel',ibex:'Bergmuster'};
   const instructions={
-    'friends-squirrel':'Zähle die Nüsse. Tippe auf die passende Zahl.',
+    'friends-squirrel':'Zähle die Eicheln. Tippe auf die passende Zahl.',
     'friends-badger':'Lies die Frage. Tippe auf das passende Bild.',
     'friends-ibex':'Suche die Bildgruppe, die sich wiederholt. Welches Bild gehört in die Lücke?',
     'friends-hedgehog':'Lies die Frage. Tippe auf das Tier, das gemeint ist.',
     'friends-deer':'Lies die Frage. Tippe auf das passende Bild.',
     'friends-bird':'Lies das Wort und die Wörter bei den Bildern. Wähle das Wort, das sich reimt.',
     'friends-owl':'Lies den Satz. Wähle das passende Bild.',
-    'friends-beaver':'In jeder Reihe liegen gleich viele Blätter, Nüsse und Federn wie in der ersten Reihe. Welches Bild fehlt?',
+    'friends-beaver':'In jeder Reihe liegen die gleichen Dinge wie in der ersten Reihe. Welches Bild fehlt?',
     'friends-mouse':'Lies das Wort. Wähle das passende Bild.',
     count:'Zähle nur die roten Marienkäfer zwischen den anderen Waldbewohnern. Wähle dann die Zahl.',
     add:'Zähle die Fische in beiden Gruppen zusammen und wähle das Ergebnis.',
@@ -32,7 +32,7 @@
   const wordArt={...window.FriendsContent.words,Haus:'vocab-house',Tisch:'vocab-table',Schuh:'vocab-shoe',Bein:'vocab-leg',Stein:'vocab-stone',Tuch:'vocab-cloth',Turm:'vocab-tower',Wurm:'vocab-worm',Topf:'vocab-pot',Kopf:'vocab-head',Hand:'vocab-hand',Sand:'vocab-sand',Schal:'vocab-scarf',Seil:'vocab-rope',Pfeil:'vocab-arrow',Tasse:'vocab-cup',Kasse:'vocab-till',Bank:'vocab-bench',Schrank:'vocab-wardrobe',Kern:'vocab-seed',Ast:'forest-branch',
     Bus:'bus',Biene:'bee',Schnecke:'snail',Sonne:'sun',Tanne:'forest-fir',Hund:'dog',
     Brot:'rhyme-bread',Schiene:'rhyme-rail',Decke:'rhyme-blanket',Tonne:'rhyme-bin',Kanne:'rhyme-jug',Mund:'rhyme-mouth',Dach:'rhyme-roof',Bach:'rhyme-brook',Ziege:'rhyme-goat',Fliege:'rhyme-fly'};
-  const words=[['Ha-se','hare-sit'],['Bi-ber','beaver'],['I-gel','hedgehog'],['Fe-der','forest-feather'],['Ro-se','forest-rose'],['Lu-pe','magnifier'],['Blu-me','forest-flower'],['Tan-ne','forest-fir'],['Ap-fel','forest-apple'],['Rau-pe','caterpillar'],['Bee-re','forest-berry'],['Bie-ne','bee'],['Maus','mouse-sit'],['Baum','tree'],['Pilz','forest-mushroom'],['Nuss','forest-nut'],['Fisch','fish-swim'],['Nest','nest'],['Blatt','forest-leaf'],['Son-ne','sun'],['Schmet-ter-ling','butterfly'],['A-mei-se','ant']];
+  const words=[['Ha-se','hare-sit'],['Bi-ber','beaver'],['I-gel','hedgehog'],['Fe-der','forest-feather'],['Ro-se','forest-rose'],['Lu-pe','magnifier'],['Blu-me','forest-flower'],['Tan-ne','forest-fir'],['Ap-fel','forest-apple'],['Rau-pe','caterpillar'],['Bee-re','forest-berry'],['Bie-ne','bee'],['Maus','mouse-sit'],['Baum','tree'],['Pilz','forest-mushroom'],['Nuss','walnut'],['Fisch','fish-swim'],['Nest','nest'],['Blatt','forest-leaf'],['Son-ne','sun'],['Schmet-ter-ling','butterfly'],['A-mei-se','ant']];
   const shapes=['circle','triangle','square','rectangle'];
   const shapeNames={circle:'Kreis',triangle:'Dreieck',square:'Quadrat',rectangle:'Rechteck'};
   function rng(seed){let a=seed>>>0;return ()=>{a+=0x6D2B79F5;let t=a;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;};}

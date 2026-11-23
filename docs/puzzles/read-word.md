@@ -1,5 +1,7 @@
 # Wort und Waldbild
 
+> **Nicht mehr aktiv.** Dieses Rätsel gehört nicht zur aktuellen Sammlung und ist nur noch als historische Seite erhalten. Gespeicherte Prüfungen bleiben bestehen. Die aktiven Rätsel stehen im [Rätselkatalog](../PUZZLE-CATALOGUE.md).
+
 [All puzzles](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 
 - Stable puzzle ID: `read-word`

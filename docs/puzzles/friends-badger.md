@@ -27,24 +27,24 @@
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
 | `friends-badger/riddle-0` | Was fällt aus der Wolke? — Was fällt aus der Wolke? | "rain" |
-| `friends-badger/riddle-1` | Woraus fällt der Regen? — Woraus fällt der Regen? | "cloud" |
+| `friends-badger/riddle-1` | Was wird aus einer Kaulquappe? — Was wird aus einer Kaulquappe? | "frog-sit" |
 | `friends-badger/riddle-2` | Was wächst aus der Bohne? — Was wächst aus der Bohne? | "seedling" |
 | `friends-badger/riddle-3` | Was baut man aus Schnee? — Was baut man aus Schnee? | "snowman" |
 | `friends-badger/riddle-4` | Wer schlüpft aus dem Ei? — Wer schlüpft aus dem Ei? | "chick" |
 | `friends-badger/riddle-5` | Was fällt im Herbst vom Baum? — Was fällt im Herbst vom Baum? | "leaf" |
 | `friends-badger/riddle-6` | Was trinken die Pflanzen? — Was trinken die Pflanzen? | "water" |
-| `friends-badger/riddle-7` | Was machen die Bienen? — Was machen die Bienen? | "honey" |
+| `friends-badger/riddle-7` | Was hängt im Winter vom Dach? — Was hängt im Winter vom Dach? | "icicle" |
 | `friends-badger/riddle-8` | Woraus kommt der Schmetterling? — Woraus kommt der Schmetterling? | "cocoon" |
-| `friends-badger/riddle-9` | Was wird aus der Raupe? — Was wird aus der Raupe? | "butterfly" |
-| `friends-badger/riddle-10` | Was siehst du am Abend? — Was siehst du am Abend? | "sunset" |
-| `friends-badger/riddle-11` | Womit gräbt man in der Erde? — Womit gräbt man in der Erde? | "spade" |
+| `friends-badger/riddle-9` | Was legt der Schmetterling auf ein Blatt? — Was legt der Schmetterling auf ein Blatt? | "butterfly-eggs" |
+| `friends-badger/riddle-10` | Was siehst du, wenn am Abend die Sonne untergeht? — Was siehst du, wenn am Abend die Sonne untergeht? | "sunset" |
+| `friends-badger/riddle-11` | Was fällt im Winter vom Himmel? — Was fällt im Winter vom Himmel? | "snowflake" |
 | `friends-badger/riddle-12` | Wer gräbt Gänge in der Erde? — Wer gräbt Gänge in der Erde? | "vocab-worm" |
 | `friends-badger/riddle-13` | Welche Blume schaut zur Sonne? — Welche Blume schaut zur Sonne? | "sunflower" |
 | `friends-badger/riddle-14` | Welche Pflanze hat Nadeln? — Welche Pflanze hat Nadeln? | "fir" |
-| `friends-badger/riddle-15` | Wer hat Streifen im Gesicht? — Wer hat Streifen im Gesicht? | "badger" |
+| `friends-badger/riddle-15` | Was wächst an der Eiche? — Was wächst an der Eiche? | "forest-nut" |
 | `friends-badger/riddle-16` | Was braucht eine Pflanze zum Wachsen? — Was braucht eine Pflanze zum Wachsen? | "sun" |
 | `friends-badger/riddle-17` | Was wird aus einer Apfelblüte? — Was wird aus einer Apfelblüte? | "apple" |
-| `friends-badger/riddle-18` | Was wächst aus einem Samen in der Erde? — Was wächst aus einem Samen in der Erde? | "plant" |
+| `friends-badger/riddle-18` | Welche Blume blüht im Frühling zuerst? — Welche Blume blüht im Frühling zuerst? | "snowdrop" |
 | `friends-badger/riddle-19` | Was sammelt das Eichhörnchen im Herbst? — Was sammelt das Eichhörnchen im Herbst? | "forest-nut" |
 | `friends-badger/riddle-20` | Was sehen wir bei klarem Himmel in der Nacht? — Was sehen wir bei klarem Himmel in der Nacht? | "moon" |
 | `friends-badger/riddle-21` | Was wächst auf der Erdbeerpflanze? — Was wächst auf der Erdbeerpflanze? | "strawberry" |
@@ -75,16 +75,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-badger/riddle-1",
-    "label": "Woraus fällt der Regen?",
+    "label": "Was wird aus einer Kaulquappe?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Woraus fällt der Regen?",
-      "answer": "cloud",
+      "text": "Was wird aus einer Kaulquappe?",
+      "answer": "frog-sit",
       "choices": [
-        "cloud",
-        "moon",
-        "flower"
+        "frog-sit",
+        "fish-swim",
+        "bird"
       ]
     }
   },
@@ -165,16 +165,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-badger/riddle-7",
-    "label": "Was machen die Bienen?",
+    "label": "Was hängt im Winter vom Dach?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was machen die Bienen?",
-      "answer": "honey",
+      "text": "Was hängt im Winter vom Dach?",
+      "answer": "icicle",
       "choices": [
-        "honey",
-        "cheese",
-        "egg"
+        "icicle",
+        "apple",
+        "flower"
       ]
     }
   },
@@ -195,46 +195,46 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-badger/riddle-9",
-    "label": "Was wird aus der Raupe?",
+    "label": "Was legt der Schmetterling auf ein Blatt?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was wird aus der Raupe?",
-      "answer": "butterfly",
+      "text": "Was legt der Schmetterling auf ein Blatt?",
+      "answer": "butterfly-eggs",
       "choices": [
-        "butterfly",
-        "bee",
-        "bird"
+        "butterfly-eggs",
+        "snowman",
+        "fish"
       ]
     }
   },
   {
     "id": "friends-badger/riddle-10",
-    "label": "Was siehst du am Abend?",
+    "label": "Was siehst du, wenn am Abend die Sonne untergeht?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was siehst du am Abend?",
+      "text": "Was siehst du, wenn am Abend die Sonne untergeht?",
       "answer": "sunset",
       "choices": [
         "sunset",
-        "rain",
-        "snowman"
+        "chick",
+        "bucket"
       ]
     }
   },
   {
     "id": "friends-badger/riddle-11",
-    "label": "Womit gräbt man in der Erde?",
+    "label": "Was fällt im Winter vom Himmel?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Womit gräbt man in der Erde?",
-      "answer": "spade",
+      "text": "Was fällt im Winter vom Himmel?",
+      "answer": "snowflake",
       "choices": [
-        "spade",
-        "spoon",
-        "fork"
+        "snowflake",
+        "sunflower",
+        "butterfly"
       ]
     }
   },
@@ -285,16 +285,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-badger/riddle-15",
-    "label": "Wer hat Streifen im Gesicht?",
+    "label": "Was wächst an der Eiche?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat Streifen im Gesicht?",
-      "answer": "badger",
+      "text": "Was wächst an der Eiche?",
+      "answer": "forest-nut",
       "choices": [
-        "badger",
-        "pig",
-        "sheep"
+        "forest-nut",
+        "banana",
+        "fish"
       ]
     }
   },
@@ -330,16 +330,16 @@ These definitions are the same finite data used by the game and review previews.
   },
   {
     "id": "friends-badger/riddle-18",
-    "label": "Was wächst aus einem Samen in der Erde?",
+    "label": "Welche Blume blüht im Frühling zuerst?",
     "question": {
       "kind": "reading",
       "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was wächst aus einem Samen in der Erde?",
-      "answer": "plant",
+      "text": "Welche Blume blüht im Frühling zuerst?",
+      "answer": "snowdrop",
       "choices": [
-        "plant",
-        "fish",
-        "moon"
+        "snowdrop",
+        "sunflower",
+        "forest-rose"
       ]
     }
   },
