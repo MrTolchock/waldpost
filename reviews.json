@@ -25828,11 +25828,11 @@
     "puzzle:syllable@c281dbb4cb281476": {
       "key": "puzzle:syllable",
       "revision": "c281dbb4cb281476",
-      "status": "approved",
-      "note": "",
-      "at": "2026-11-23T16:00:16.971Z",
+      "status": "improve",
+      "note": "fast immer mittlere antwort, reihenfolge anpassen",
+      "at": "2026-11-23T16:00:33.656Z",
       "seen": true,
-      "operation": "4f2b3934-ac64-478e-a00e-0adda6720f50"
+      "operation": "9fd71e1a-e43f-425f-8870-49571bc4b69e"
     }
   },
   "history": [
@@ -26159,6 +26159,15 @@
       "at": "2026-11-23T15:57:14.892Z",
       "seen": true,
       "operation": "ed7067a9-3941-4010-99a8-7a09726024ad"
+    },
+    {
+      "key": "puzzle:syllable",
+      "revision": "c281dbb4cb281476",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T16:00:16.971Z",
+      "seen": true,
+      "operation": "4f2b3934-ac64-478e-a00e-0adda6720f50"
     }
   ],
   "deletedNotes": [
