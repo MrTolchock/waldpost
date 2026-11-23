@@ -25293,6 +25293,15 @@
       "at": "2026-11-23T15:55:06.550Z",
       "seen": true,
       "operation": "a4b16f16-6a17-4157-848e-cdef377008ff"
+    },
+    "puzzle:friends-deer@2f0c2ae5f323ecdf": {
+      "key": "puzzle:friends-deer",
+      "revision": "2f0c2ae5f323ecdf",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T15:55:09.711Z",
+      "seen": true,
+      "operation": "2956d5a6-3dc6-4113-a283-95636221d3ea"
     }
   },
   "history": [
