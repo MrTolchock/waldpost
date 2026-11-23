@@ -28236,6 +28236,24 @@
       "at": "2026-11-23T20:07:23.501Z",
       "seen": true,
       "operation": "3a2220b2-c117-460a-8eb7-3d8c33124816"
+    },
+    "neighbours/1-both@0a467c3abc0bf0a4": {
+      "key": "neighbours/1-both",
+      "revision": "0a467c3abc0bf0a4",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T20:07:44.263Z",
+      "seen": true,
+      "operation": "8aa5e550-5aff-43b6-8d6d-8acb2e5d322d"
+    },
+    "neighbours/1-left@08bb6da916d902f7": {
+      "key": "neighbours/1-left",
+      "revision": "08bb6da916d902f7",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-23T20:07:47.409Z",
+      "seen": true,
+      "operation": "ebb9b6f7-4e38-4d08-9de1-ec5d131971de"
     }
   },
   "history": [
