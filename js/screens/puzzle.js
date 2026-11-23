@@ -325,8 +325,8 @@
   function finish() {
     // Keep return navigation available throughout the celebration.
     const complete=(...args)=>{FK.puzzleUI.completion(body,...args);body.prepend(backButton);};
-    if(session.review){delete root.dataset.reviewIteration;complete(host,()=>FK.puzzleReview.finishPreview(session),{total:session.questions.length,review:true});return;}
-    if(session.gallery){complete(host,()=>FK.go('puzzle-gallery'),{total:session.questions.length});return;}   // a gallery round leaves no trace
+    if(session.review){delete root.dataset.reviewIteration;complete(host,()=>FK.puzzleReview.finishPreview(session));return;}
+    if(session.gallery){complete(host,()=>FK.go('puzzle-gallery'));return;}   // a gallery round leaves no trace
     if(origin==='friends'&&FK.friends?.mail().host===host&&FK.friends.mail().phase==='to-friend'&&!FK.friends.completeMail(host)){
       announcement(FK.friends.error||'Bitte nochmals versuchen.');return;
     }
@@ -340,10 +340,11 @@
     });
   }
   function blocked(){FK.playLog?.stop('review_required');body.replaceChildren(backButton,h('section',{class:'puzzle-review-blocked'},FK.friendsLibrary.portrait(host),h('h2',{text:"Dieses Rätsel wartet auf Freigabe."}),h('p',{text:'Eine erwachsene Person prüft zuerst alle Aufgaben.'})));}
-  function completion(container,owner,done,{total=5,review=false}={}) {
+  // Child play, gallery rounds and adult reviews end with the identical five-leaf celebration.
+  function completion(container,owner,done) {
     const card=h('section',{class:'puzzle-completion',role:'status'},
       h('div',{class:'puzzle-completion-wreath'},Array.from({length:8},(_,i)=>h('span',{style:{'--i':i}},FK.visual.art(i%3?'forest-leaf':'forest-flower'))),FK.friendsLibrary.portrait(owner)),
-      progress(total,total),h('h2',{text:review?'Juhui, alle geprüft!':'Juhuii, geschafft!'}),h('p',{text:'Dein Waldfreund freut sich mit dir.'}));
+      progress(5,5),h('h2',{text:'Juhuii, geschafft!'}),h('p',{text:'Dein Waldfreund freut sich mit dir.'}));
     container.replaceChildren(card);FK.sound.rainbow();
     let cancelled=false,timeout;
     const finishWhenVisible=()=>{if(cancelled)return;if(document.hidden||document.querySelector('.modal')){timeout=setTimeout(finishWhenVisible,250);return;}done();};
