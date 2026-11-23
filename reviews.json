@@ -28726,6 +28726,11 @@
     },
     {
       "key": "puzzle:syllable",
+      "note": "fast immer mittlere antwort, reihenfolge anpassen",
+      "at": "2026-11-23T20:03:35.380Z"
+    },
+    {
+      "key": "puzzle:syllable",
       "note": "Gebe nur drei auswahlmöglichkeiten für antworten",
       "at": "2026-11-19T20:31:30.091Z"
     },
