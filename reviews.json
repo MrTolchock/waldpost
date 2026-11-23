@@ -27611,6 +27611,11 @@
     },
     {
       "key": "puzzle:friends-squirrel",
+      "note": "ist fast immer mittlere antwort, passe reihenfolge an",
+      "at": "2026-11-23T19:54:55.602Z"
+    },
+    {
+      "key": "puzzle:friends-squirrel",
       "note": "Nüsse rückgängig machen, die waren besser vorher. Leerer korb bei der zahl 0 war das problem, dieser passt nicht",
       "at": "2026-11-18T07:43:37.226Z"
     },
