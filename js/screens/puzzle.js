@@ -343,7 +343,7 @@
   function completion(container,owner,done,{total=5,review=false}={}) {
     const card=h('section',{class:'puzzle-completion',role:'status'},
       h('div',{class:'puzzle-completion-wreath'},Array.from({length:8},(_,i)=>h('span',{style:{'--i':i}},FK.visual.art(i%3?'forest-leaf':'forest-flower'))),FK.friendsLibrary.portrait(owner)),
-      progress(total,total),h('h2',{text:review?'Juhui, alle geprüft!':'Juhui, fünf geschafft!'}),h('p',{text:'Dein Waldfreund freut sich mit dir.'}));
+      progress(total,total),h('h2',{text:review?'Juhui, alle geprüft!':'Juhuii, geschafft!'}),h('p',{text:'Dein Waldfreund freut sich mit dir.'}));
     container.replaceChildren(card);FK.sound.rainbow();
     let cancelled=false,timeout;
     const finishWhenVisible=()=>{if(cancelled)return;if(document.hidden||document.querySelector('.modal')){timeout=setTimeout(finishWhenVisible,250);return;}done();};
