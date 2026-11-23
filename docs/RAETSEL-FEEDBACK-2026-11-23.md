@@ -98,3 +98,11 @@ Auf Wunsch des Eigentümers ersetzen Tiere aus Alpen, Wald und Gewässern die Sa
 | Wörter in Silben zerlegen | Elefant, Giraffe | Eichhörnchen, Murmeltier |
 
 Alle Bilder stammen aus der vorhandenen Bildbibliothek im kanonischen Stil und tragen deutsche Bildnamen. Kein aktives Rätsel verwendet noch ein Zoo-Tier. Wieder offen sind 25 Aufgaben: die 7 Tierfragen, die 7 neuen Lesewörter, 9 Lesekarten, deren falsche Bildantworten Zoo-Tiere waren, und die 2 Silbenwörter.
+
+## Nachtrag: deutsche Bildnamen (9.4.36)
+
+Viele Bildantworten hatten für Bildschirmleser nur ihre interne englische Kennung, zum Beispiel «Bild: frog» oder «Bild: beaver-lodge». Betroffen waren Tiermerkmale, Lebensräume, Wachstum und Wörter mit Bildern. Auch die Bildbibliothek zeigte bei älteren Bildern englische Namen. Jetzt haben 60 Bilder deutsche Namen, etwa Frosch, Biberburg, Sonnenuntergang und Schmetterlingspuppe. Spiel und Bildbibliothek verwenden dieselbe Namenstabelle.
+
+Die neue Prüfung `tests/picture-names.test.cjs` verlangt für jedes Antwort- und Aufgabenbild eines Rätsels einen deutschen Namen.
+
+Freigaben: Nur die Namen für Bildschirmleser ändern sich. Fragen, Antworten, Regeln, Schwierigkeit, Bedienung und Bilder sind gleich. Wie vom Eigentümer gewünscht, verbindet eine Brücke ab 9.4.35 (`e4f4e7e`) genau diese Darstellungspaare. Keine Aufgabe öffnet sich neu: Mit den veröffentlichten Prüfungen hat jedes Rätsel denselben Status wie vorher.

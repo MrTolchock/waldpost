@@ -1184,7 +1184,7 @@
     },
     {
       "id": "apple",
-      "label": "apple",
+      "label": "Apfel",
       "sheet": "words-two",
       "index": 5,
       "column": 1,
@@ -1270,7 +1270,7 @@
     },
     {
       "id": "badger",
-      "label": "badger",
+      "label": "Dachs",
       "sheet": "alphabet",
       "index": 13,
       "column": 1,
@@ -1417,7 +1417,7 @@
     },
     {
       "id": "banana",
-      "label": "banana",
+      "label": "Banane",
       "sheet": "words-one",
       "index": 8,
       "column": 0,
@@ -1571,7 +1571,7 @@
     },
     {
       "id": "bear",
-      "label": "bear",
+      "label": "Bär",
       "sheet": "creatures",
       "index": 10,
       "column": 2,
@@ -1791,7 +1791,7 @@
     },
     {
       "id": "bell",
-      "label": "bell",
+      "label": "Glocke",
       "sheet": "words-two",
       "index": 12,
       "column": 0,
@@ -2343,7 +2343,7 @@
     },
     {
       "id": "bucket",
-      "label": "bucket",
+      "label": "Eimer",
       "sheet": "discovery",
       "index": 7,
       "column": 3,
@@ -2523,7 +2523,7 @@
     },
     {
       "id": "cake",
-      "label": "cake",
+      "label": "Kuchen",
       "sheet": "words-three",
       "index": 7,
       "column": 3,
@@ -2565,7 +2565,7 @@
     },
     {
       "id": "camera",
-      "label": "camera",
+      "label": "Kamera",
       "sheet": "words-one",
       "index": 13,
       "column": 1,
@@ -2656,7 +2656,7 @@
     },
     {
       "id": "carrot",
-      "label": "carrot",
+      "label": "Karotte",
       "sheet": "words-two",
       "index": 6,
       "column": 2,
@@ -2697,7 +2697,7 @@
     },
     {
       "id": "cat",
-      "label": "cat",
+      "label": "Katze",
       "sheet": "animals",
       "index": 1,
       "column": 1,
@@ -2878,7 +2878,7 @@
     },
     {
       "id": "cheese",
-      "label": "cheese",
+      "label": "Käse",
       "sheet": "people",
       "index": 12,
       "column": 0,
@@ -2917,7 +2917,7 @@
     },
     {
       "id": "chick",
-      "label": "chick",
+      "label": "Küken",
       "sheet": "discovery",
       "index": 12,
       "column": 0,
@@ -2938,7 +2938,7 @@
     },
     {
       "id": "chocolate",
-      "label": "chocolate",
+      "label": "Schokolade",
       "sheet": "words-two",
       "index": 9,
       "column": 1,
@@ -2993,7 +2993,7 @@
     },
     {
       "id": "cloud",
-      "label": "cloud",
+      "label": "Wolke",
       "sheet": "discovery",
       "index": 5,
       "column": 1,
@@ -3053,7 +3053,7 @@
     },
     {
       "id": "cocoon",
-      "label": "cocoon",
+      "label": "Schmetterlingspuppe",
       "sheet": "discovery",
       "index": 13,
       "column": 1,
@@ -4006,7 +4006,7 @@
     },
     {
       "id": "egg",
-      "label": "egg",
+      "label": "Ei",
       "sheet": "words-two",
       "index": 11,
       "column": 3,
@@ -4209,7 +4209,7 @@
     },
     {
       "id": "fir",
-      "label": "fir",
+      "label": "Tanne",
       "sheet": "words-two",
       "index": 13,
       "column": 1,
@@ -4229,7 +4229,7 @@
     },
     {
       "id": "fire-engine",
-      "label": "fire engine",
+      "label": "Feuerwehrauto",
       "sheet": "discovery",
       "index": 15,
       "column": 3,
@@ -4326,7 +4326,7 @@
     },
     {
       "id": "flower",
-      "label": "flower",
+      "label": "Blume",
       "sheet": "words-two",
       "index": 4,
       "column": 0,
@@ -4875,7 +4875,7 @@
     },
     {
       "id": "fork",
-      "label": "fork",
+      "label": "Gabel",
       "sheet": "words-two",
       "index": 0,
       "column": 0,
@@ -5019,7 +5019,7 @@
     },
     {
       "id": "frog",
-      "label": "frog",
+      "label": "Frosch",
       "sheet": "creatures",
       "index": 6,
       "column": 2,
@@ -5750,7 +5750,7 @@
     },
     {
       "id": "honey",
-      "label": "honey",
+      "label": "Honig",
       "sheet": "people",
       "index": 11,
       "column": 3,
@@ -6260,7 +6260,7 @@
     },
     {
       "id": "ladybird",
-      "label": "ladybird",
+      "label": "Marienkäfer",
       "sheet": "animals",
       "index": 12,
       "column": 0,
@@ -6299,7 +6299,7 @@
     },
     {
       "id": "leaf",
-      "label": "leaf",
+      "label": "Blatt",
       "sheet": "discovery",
       "index": 14,
       "column": 2,
@@ -7198,7 +7198,7 @@
     },
     {
       "id": "moon",
-      "label": "moon",
+      "label": "Mond",
       "sheet": "words-two",
       "index": 3,
       "column": 3,
@@ -7461,7 +7461,7 @@
     },
     {
       "id": "needle",
-      "label": "needle",
+      "label": "Nadel",
       "sheet": "words-one",
       "index": 15,
       "column": 3,
@@ -8295,7 +8295,7 @@
     },
     {
       "id": "pear",
-      "label": "pear",
+      "label": "Birne",
       "sheet": "words-three",
       "index": 0,
       "column": 0,
@@ -8408,7 +8408,7 @@
     },
     {
       "id": "pig",
-      "label": "pig",
+      "label": "Schwein",
       "sheet": "animals",
       "index": 15,
       "column": 3,
@@ -8848,7 +8848,7 @@
     },
     {
       "id": "rabbit",
-      "label": "rabbit",
+      "label": "Kaninchen",
       "sheet": "animals",
       "index": 2,
       "column": 2,
@@ -8917,7 +8917,7 @@
     },
     {
       "id": "rain",
-      "label": "rain",
+      "label": "Regen",
       "sheet": "discovery",
       "index": 4,
       "column": 0,
@@ -9979,7 +9979,7 @@
     },
     {
       "id": "seedling",
-      "label": "seedling",
+      "label": "Keimling",
       "sheet": "discovery",
       "index": 1,
       "column": 1,
@@ -10031,7 +10031,7 @@
     },
     {
       "id": "sheep",
-      "label": "sheep",
+      "label": "Schaf",
       "sheet": "animals",
       "index": 14,
       "column": 2,
@@ -10451,7 +10451,7 @@
     },
     {
       "id": "snowman",
-      "label": "snowman",
+      "label": "Schneemann",
       "sheet": "words-three",
       "index": 1,
       "column": 1,
@@ -10505,7 +10505,7 @@
     },
     {
       "id": "spade",
-      "label": "spade",
+      "label": "Schaufel",
       "sheet": "alphabet",
       "index": 15,
       "column": 3,
@@ -10526,7 +10526,7 @@
     },
     {
       "id": "spider",
-      "label": "spider",
+      "label": "Spinne",
       "sheet": "animals",
       "index": 9,
       "column": 1,
@@ -10600,7 +10600,7 @@
     },
     {
       "id": "squirrel",
-      "label": "squirrel",
+      "label": "Eichhörnchen",
       "sheet": "menu",
       "index": 0,
       "column": 0,
@@ -11018,7 +11018,7 @@
     },
     {
       "id": "steam-train",
-      "label": "steam train",
+      "label": "Lokomotive",
       "sheet": "creatures",
       "index": 15,
       "column": 3,
@@ -11071,7 +11071,7 @@
     },
     {
       "id": "strawberry",
-      "label": "strawberry",
+      "label": "Erdbeere",
       "sheet": "words-three",
       "index": 8,
       "column": 0,
@@ -11149,7 +11149,7 @@
     },
     {
       "id": "sunflower",
-      "label": "sunflower",
+      "label": "Sonnenblume",
       "sheet": "alphabet",
       "index": 11,
       "column": 3,
@@ -11186,7 +11186,7 @@
     },
     {
       "id": "sunset",
-      "label": "sunset",
+      "label": "Sonnenuntergang",
       "sheet": "discovery",
       "index": 6,
       "column": 2,
@@ -11459,7 +11459,7 @@
     },
     {
       "id": "tomato",
-      "label": "tomato",
+      "label": "Tomate",
       "sheet": "words-one",
       "index": 9,
       "column": 1,
@@ -11498,7 +11498,7 @@
     },
     {
       "id": "tortoise",
-      "label": "tortoise",
+      "label": "Schildkröte",
       "sheet": "creatures",
       "index": 11,
       "column": 3,
@@ -12164,7 +12164,7 @@
     },
     {
       "id": "water",
-      "label": "water",
+      "label": "Wasser",
       "sheet": "discovery",
       "index": 3,
       "column": 3,
@@ -12203,7 +12203,7 @@
     },
     {
       "id": "watermelon",
-      "label": "watermelon",
+      "label": "Wassermelone",
       "sheet": "words-one",
       "index": 11,
       "column": 3,

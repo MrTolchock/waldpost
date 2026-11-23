@@ -31462,6 +31462,979 @@
           "after": "0cf72a3345f3de13b838989990950c23b1b068ac145769e7e5ceb3bd2ffb8236"
         }
       }
+    },
+    {
+      "reason": "Owner request 2026-11-23: give every picture a Rätsel shows its German name for screen readers and the picture library (accessible names only). Questions, answers, rules, difficulty, interactions and picture pixels are identical. Retain existing approvals only across these exact presentation pairs.",
+      "baselineCommit": "e4f4e7e566435cad7c26619466a712087a40e664",
+      "puzzles": {
+        "friends-mouse": {
+          "definition": "a3eedc0c03da1de94ceec33e47424cea6f97497cdff986815ddf066bdb4ce890",
+          "before": "ea8354b03520a134cc75f0334ce7dbccdaa6b1d1cee3e21ad8b83351aba0f72e",
+          "after": "f9fcd39651920d7674daf01176c428a60a69fcf399d02f02d70055b1591fee74"
+        },
+        "friends-hedgehog": {
+          "definition": "107c473e4c2b6254eee9fb9b7dc270512e6fcb52615568715680de9506318e9b",
+          "before": "40e49ef9abf907aec4c898a40713bb43bd8bb82db5163b89d07810c4f58a312f",
+          "after": "e68da638eb722d8f44ecbabd0734572a9f8f6e8e19e18a1502d57a9ba2e7f427"
+        },
+        "friends-deer": {
+          "definition": "b6ffe595b8ccefe8ab723b6b4c4b11cb5a4789e37252f50d605e38721ef58276",
+          "before": "13d2f15e3331fef5f1d4709bbea73369c485ea0064e9649c6d8756530826ec8f",
+          "after": "ed4d83e65c7049c316ad25efd161c7adf8d4cbf91f403ec76c81c1f95c771cb1"
+        },
+        "friends-badger": {
+          "definition": "45c9e0168db4d5c60120a5190fe59c40506aaa12197173462d3907a78e1c823c",
+          "before": "b04d44abaf183d48a2d46cf914a3588f268640f6d1f1afcc0f3151afa95361ca",
+          "after": "d16513ae5d887945848bdf90618d9d1e4f6d1ef551862c931eef1d4dff37b46b"
+        },
+        "count": {
+          "definition": "71f91e7df2fb30db3af4a9b6cb73a011cd69edc9127160d5b66e7880c7c20b41",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "syllable": {
+          "definition": "38ae9a854014aee212e55170770b30522b9612ef5398fd67634d7461efc514b3",
+          "before": "3c5451f260801698a5b8a88590c53a860ae06b37f8ece481597d1e5b65aca36f",
+          "after": "d608180d0c03f33410bbf9d8ebc870cd8eb770fea460caacc64de06705e5c714"
+        },
+        "vowels": {
+          "definition": "510699351f17d258bb389fdc462ac4b8551ca36def560eca2b3e12be449e730e",
+          "before": "d7d5aba339c03f21dfe5964e93699a33c918a93f957acb80362b43b0b5befe10",
+          "after": "e8bc1c98fddd7d91b0c2f174bb113f2a5e46d45567ad40761366196316d84482"
+        },
+        "read-puzzle": {
+          "definition": "8aeefee9a12f703a9effb18d64ac4ef09570f042320ff81a146a2a9d400e80ce",
+          "before": "a22c2532a061fb9f7e23958aff63d2e041716cff0a9ede365c2efdac898c6bc1",
+          "after": "b8b8eab357fd0a22251a1c19e190886895178c8dd9066dfd8b87f6e9e8361525"
+        }
+      },
+      "iterations": {
+        "friends-mouse/friends-frog-animal-0": {
+          "definition": "a15125ae6d93c79b705f0f00f0f97c33504425cd9b23a155e05f85e5a85f4007",
+          "before": "f5fa31216acfbbd4603d30143a0e09181c27758cabc379e8eb8bb71ae196920f",
+          "after": "45ff0214a0f6ee775e21fba1f1189e072549c3f77e4582ddf1e74e66747ee35e"
+        },
+        "friends-mouse/friends-frog-animal-1": {
+          "definition": "b78432b73485c6e8b84040f033f4045a09a5cdf45be3d1c51accbcf83417fe12",
+          "before": "ccb8d8a952368dea41be96c43ec8427be9a0a666056eadcc9f5c51944db6f017",
+          "after": "9c039a392558039f8abdc3df4a6be475b45e826dca764cfc3bd35f02be95a24f"
+        },
+        "friends-mouse/friends-frog-animal-2": {
+          "definition": "4f2ca1968b3657f1c5b10c1bb2d30d5cf7ddd8c5161fa0ebc57536ce267e467c",
+          "before": "e7498176bddc95d02520a416252234ac2a46fdc9a1716c3c016d2f6900b4be18",
+          "after": "04138be7c3da7640deb1e832dca50e0923fdb71fe616341de4c94d5acafead5d"
+        },
+        "friends-mouse/friends-frog-animal-4": {
+          "definition": "e596d7896c136c165ebde271d5e2f347b15ec5e6f10936fc643a0f60b4888fa4",
+          "before": "fb1d178b1fecbb1e24ce8343b2bf46ae82a18868490f2cf582ef02f4ec1e381a",
+          "after": "047d3b527736c15d75e5fd8ac0b876b065ded7c3935877cd91a539a8e13beb8d"
+        },
+        "friends-mouse/friends-frog-animal-5": {
+          "definition": "96155b042747d0eadb16abebf27b5fbe4a251d906a1ff26b7f84fc72b3224430",
+          "before": "f2172dae49d34b20b88a453f3f8ed35eda5ef9875b37d6f317f3ee14a5ab87b2",
+          "after": "bada74e3538d551b931723b4723adc428e1f099e4acb865a4c39264d42e40288"
+        },
+        "friends-mouse/friends-frog-animal-6": {
+          "definition": "fd24a7a629c38aa81bb3114cbaaf2a78833f4ca426d562f329c4a792be9453bc",
+          "before": "77ef39a2485fe5e5fae8691cce30b9028ea310e9d96180b268c2409e539d6d62",
+          "after": "5fb6217f04655b9e720298d3f6fb20ca047db60edab1b6da603f3ee37f443e52"
+        },
+        "friends-mouse/friends-frog-animal-8": {
+          "definition": "373a80c2c6bc7c9a609255141219a8240639add4b4e7248d37826ad5518f167e",
+          "before": "c9f91707623324ec89d5d1c5760a1e220005d2b0c39da9479452ab440ab636fd",
+          "after": "f88309b497c002a79803e2c3d9c2792b5d2fbb73cc059ba009c6a3d4f4332f96"
+        },
+        "friends-mouse/friends-frog-animal-9": {
+          "definition": "211ba2da72b9683f9094c2b20abe3dfb9f25176a9e3af8fc8847215225da2b9e",
+          "before": "cc214f082e4467c4b17e35f7f86bb5df584ee6f1df64a270ad6c532e0bfdfe9e",
+          "after": "4b2b48a0371eb3af7482590a753860a1446c9595821f4a749845a3e4ed842edf"
+        },
+        "friends-mouse/friends-frog-animal-10": {
+          "definition": "23c2a385a071dbc8e1b95d385ed85b7683ff1e53ad9ad8bfb65389978b6676a6",
+          "before": "cc88fdb770aa175f8124b961f9d572cbd382b8498472d1c702925aa361a348bd",
+          "after": "e4fc37e95ee7e85c66c0036eb8fd1298e9c7ee52e5228b133828337cf3daf871"
+        },
+        "friends-mouse/friends-frog-animal-11": {
+          "definition": "d6760682fc7b8f12ed2fec5d8031ab687db824ca3fa2108affd05e67333e5b5a",
+          "before": "29c0e5850d716771b6528b5f3d8f78dc89c4b4db529b955d8170d93ae1c24a9a",
+          "after": "fc4977e24465fc631f9893946e6a4f55115dcf79b48152eb123a55b15b3851ef"
+        },
+        "friends-mouse/friends-frog-animal-14": {
+          "definition": "732ab5f335ff78e28110bdc670b14b8b4c325ed861226adc71cf56010a057bdc",
+          "before": "5f32bb34eca7730b7c41af7380c72be160f04d82be166b77ec126baafcb1a04f",
+          "after": "cf4bc861a1a3929eff8f658402ae53439780204acb38f8133048aa480c4d0184"
+        },
+        "friends-mouse/friends-frog-animal-15": {
+          "definition": "4246e9363d280abfb3956468cc6b94e3d11f7cee53607cb591b8349a49ced593",
+          "before": "6464d8b0ae5fa5b60feca8e4ce599f26ad9b5573284063a67ac58e8cfb954851",
+          "after": "84fdc0a000693c947309b8b568dd2b58070edc73960c42779df4d33804f1f767"
+        },
+        "friends-mouse/friends-frog-animal-16": {
+          "definition": "dc616b1a2900487f1d3141d7f9458c229e766293840e34a67e89378b59428628",
+          "before": "d21a2bef4cd766b78560fd3c9eb02054dc39561663410350249b41c6a6c0c3a3",
+          "after": "65ad1961f464f613888ab702696e19540baf5904df6650207f44b59193ce8fc4"
+        },
+        "friends-mouse/friends-frog-animal-20": {
+          "definition": "225f6c35d61ba3bdd0e50017b3fc999df4b463faf0531648645bb81ccf48fd9e",
+          "before": "b617a93a6c6bfc5d2ea304f149061962a4661df179eeeadfeb63d56b29eafb6b",
+          "after": "7762ed64a62ae22eb688241489efc7810b049d6e3a9dd1e141c75eec612ab816"
+        },
+        "friends-mouse/friends-frog-animal-21": {
+          "definition": "47b76161f8de52cbb6ee31e27e8584f3fb114f6b31675bf12bb6d8ce8b4714bc",
+          "before": "b4140e63c8937dcc9aba810369f1931588e81ce9d53efffaee64d81e1529c67a",
+          "after": "ef8567f3cd0b968ea8e5a4c2aaca82c17265c51dd16a4edec1b0cdd07da2e53a"
+        },
+        "friends-mouse/friends-frog-animal-22": {
+          "definition": "4ff475f41e3350410f56469a745db79844b21b9b12fed4b84a80f2e89acabc4f",
+          "before": "75ad7b3f772d1f33e648dfebf064a453faec144da6d03d4478744a91db2ac9f7",
+          "after": "0cfc54a546cac19bae54f1aa5e1b2ea2a5ab2a911016fd7d347fe17451a7dbec"
+        },
+        "friends-mouse/friends-frog-animal-24": {
+          "definition": "c4a4c9c92b830c5e71aa85aa8b77b6d4bd0759d8282990c5029ce00b3e33f0dd",
+          "before": "7b863cd8ae7acb89f628c400463750b20e830467a1697c069be42766ac96809e",
+          "after": "622156f2d418fc34ba81cacbc10b0db71904e9a65f192ab1227fa5c5c3714862"
+        },
+        "friends-mouse/read-word-word-14": {
+          "definition": "b44a9bc502915407d1bb09ba98899fbd1b0451f6003cddb1ea4419a3225a3f48",
+          "before": "f21cec43b4d436d48b5b4629b5b03904a28d6b5221078dafa9138323fc7f54ec",
+          "after": "92e82b7289600944f56a4e21418543bedd225a523ec95b29d976d98d4e432d65"
+        },
+        "friends-mouse/read-word-word-17": {
+          "definition": "4981c5e5c60a8e95fe552f10b845e581a000dc44fecb02441c45e6a8b72770fb",
+          "before": "b5e89eab4d8e2a1122f99330797a22bb184960ee04c02cc5f4d9fbdc6d81dcba",
+          "after": "42bdf0c84174a774b64f2183908a0bcd83663dcf6e5ff82feed897a85cab53c4"
+        },
+        "friends-mouse/read-word-word-18": {
+          "definition": "f2a6f2553f38706685bbb6493fc6040f2fe742fb65862c4f28552b74b0caa022",
+          "before": "5b5ed907ffa97d38941fe9b83bea5f903e9bea775c246356a02b422217754941",
+          "after": "eea488a14d22fe67d1977e147758d086d5126934f81a9ba52e5f7b4e27170dc4"
+        },
+        "friends-mouse/read-word-word-19": {
+          "definition": "8ab410a68d19fa0a9210d36d47d25ea0fcdcaf238eec659ee4ec9e8e6075da54",
+          "before": "19b866719b05ded9216dd1ca4bf3a96410cb73d7c3156df675bd84abe644e3cd",
+          "after": "98a1e73e6a64d040cfc78345b0256169e8e4937c440f3eaf9dc6edac01e4a372"
+        },
+        "friends-mouse/read-word-word-20": {
+          "definition": "3153fb533d0f2a8fc84ea806eb19be2e037b5a0ad407c67d424231e3f9e00dc2",
+          "before": "5eb6cd3a02d789ca0f9f973a5c307617668e5835aa321b225546a266b7cec10d",
+          "after": "aa7a6eaf3d4e736ed13ee7ad5d181a359e55ecf762c1af66cbfd4481f0e0e88c"
+        },
+        "friends-mouse/read-word-word-22": {
+          "definition": "dbc2c7395829ce9dd3592e29d586aa0b04ade1d55668ca217ad0065ae9e5c5c4",
+          "before": "35a8028e8b973e0d1ea6e42a95da01ee6b200166138944a1e811f163f140d7e6",
+          "after": "7235ba08b939db4ed00438b9e85eb15dd9bcd7596591176eb5bcca4eb1b6506c"
+        },
+        "friends-mouse/read-word-word-23": {
+          "definition": "bbce4119c92f7159c383799f5807d26d648214aac9688cbc612f12f5f96e4c04",
+          "before": "87ea20a8fcdd8c8c6e5ddd1ea6eeb49bdd308e0b266fb4c8a16acf0271d7f7f8",
+          "after": "5ae7c3a75c30eb95ed3a63a374b79598837666f21ac615af7d978ba004691032"
+        },
+        "friends-mouse/read-word-word-24": {
+          "definition": "1a48f4ff5aebaad1f1b66ee87d42875064d347ab6b06d1efdcd897712bf295d5",
+          "before": "60284a697a685bb5e03e3f09b0f09e8187ad55998e513d7542ee71f88b11cdd8",
+          "after": "fa5270f58bdbcc258e61ef2a4b41c54a247892315dd2cd125560f282fab52916"
+        },
+        "friends-mouse/read-word-word-25": {
+          "definition": "b51a6d1b80c1e0a89f3cec99b0e7f4e1be4d6e5138eff4c57c7f10a3ed37d001",
+          "before": "8cc0440eadcfaf8ecf216d89ee7a0be80247d01aa995b94322a9db037bb8a1da",
+          "after": "0f7de7bc64944328c2c6892f9cd29407d41654d7994b9e9ef61b3dcad96ee675"
+        },
+        "friends-mouse/read-word-word-26": {
+          "definition": "d99a5dc897b96a7bef8bde74ea32933c7657cdd8fd0dff4e195e51fa055c74ca",
+          "before": "0fab8ce4de27c8c5aaae8bb9e506fd712772072df871c1c50bbc861ee9fe9f38",
+          "after": "292cbee9b60ddf0a687b65476e7e0b6ee20f5fa687ed2bbcfe4c1597738a791b"
+        },
+        "friends-mouse/read-word-word-27": {
+          "definition": "51856c365dcb2f47c32f065265279ecb14bb7532e8e6113fd758dc6fbbbfc800",
+          "before": "7b34ac14f9bca56d046ca1cf95d6f0ec4d75858c2c0211e392fe4b0c149b8097",
+          "after": "89e9709a92c9f35a8154db29cd3fa5d698ab665abbd80e6a2b2b637aa5f8adcc"
+        },
+        "friends-mouse/read-word-word-28": {
+          "definition": "ee8ceb396f51347db1ca05fac1389e3ccc05a61b1771bf0d64d43ae7a9d12bcb",
+          "before": "f12dbc6d9481b7fc673e7dbea19d2147dbcf67f41e23c006ec221884bb6f9dcf",
+          "after": "0fc5b0a344b380910a6174199e91f3360e40e61d3152a666a3a133ca15857ca7"
+        },
+        "friends-mouse/read-word-word-29": {
+          "definition": "48069bad2806008b5e6c0797596f47a8106cdd441d192e5891f2ab94b16e67de",
+          "before": "068bfa7553640bebbfdf12838ebc52fdda299d1958e187c8b1a097ae2a449173",
+          "after": "40387b7e33c8b30877a7ea5c8e62c6a979876b4850dfbfd5b4b205cdeaa916dd"
+        },
+        "friends-mouse/read-word-word-30": {
+          "definition": "8c33042034cdfe80d78ab13a7e76152ee830b67190e849041f8db99b76a75f7d",
+          "before": "dcf9fb0c6bdb53745b041434472fbfd348ccb0d084dd8cdd4ee04cb6b3bd4358",
+          "after": "52231e03f0db0bec9e073896a2602d19de13e92893fccf319c632ca4253d6efa"
+        },
+        "friends-mouse/read-word-word-31": {
+          "definition": "16c4d3b539f3efc49e252719c5a34abff05ce374bec2a95cfefc6e0fb349850b",
+          "before": "d53185820e5ddc6165ac4a8d95eb94dff5478d9bbaaf9a59f9d8a7aa6a569eff",
+          "after": "f03effa7e306fe84a1bd782d95372cc32ccac6b139f36b455b05e0e992bf5a5c"
+        },
+        "friends-mouse/read-word-word-32": {
+          "definition": "66832540fbdbe019e7890049b6006660e5e6f383ab0456ee7ec5085f87ab0ae4",
+          "before": "dbbd399b189e4297ee4b3e7d1ae1dea72ee6004cd97b04f0c2853ba8239a56ec",
+          "after": "bd586ddebca528c6cfbbf4d5d9296ac9920af775a60e719ac9cfd54a2fc73234"
+        },
+        "friends-hedgehog/riddle-5": {
+          "definition": "272446c841c99aea21d3dc862453bfb54d49308b58ebaf6bd67dfc00a49794ac",
+          "before": "aa90394fe2a83b1761a366629cca7bdfb89f2dd1b64b4c104e6d16be7b65b821",
+          "after": "634d9f02a94d8b28fcbf31c9a93da47b6ad762d9418c66f3952e631b05dea2ed"
+        },
+        "friends-hedgehog/riddle-8": {
+          "definition": "d0440a6c6f673142d13292cd47eda08b7c7b411cbafc95477e60cd835c181cff",
+          "before": "4404fe4ebf455038d55cf60c59c994f67b6a09f54ed9e5febff5040d609a9ac3",
+          "after": "8e6498b318178191d74fa445d0fd5f8ffa8def6514d47e976a5d436f0ea8f41a"
+        },
+        "friends-hedgehog/riddle-14": {
+          "definition": "f4c4b984ae4cbb15267671b72e7162e015e25c4ed9be68d14561b136b15f5d2b",
+          "before": "6243450ffcf97fc376403bf1ab4d9721be4e0deb7a12606167f5574fb559f4bf",
+          "after": "ed746c7411311d1cb16243fa438c8185b1ac606e3c02dafc2a69c6a9b1bfac62"
+        },
+        "friends-hedgehog/nature-question-2": {
+          "definition": "703ac89dadfe1c72020a01abfcbfac14f608233c58f8951a2e5b84e8157ac81b",
+          "before": "7f73cc3f9cdf6e02a72e04462e707e10064acb36c7ee17977e4b1af2dcd9404a",
+          "after": "3ee53e9b5aabbee159b186a4289f4d0085925d7e01f2e35880912f3c77ba19ee"
+        },
+        "friends-hedgehog/nature-question-4": {
+          "definition": "09a12aa470b327a4e079dc1e252255e93714b3a83016f09e097cc9a47dcdcbdd",
+          "before": "a45a7f19bf48d01866a9c4b24712ba60262d205f824d777adfa0e0b16b55cbf0",
+          "after": "30ec50c230de18a769da3e176281183c27f2182e2172ddc816014f12d3de5126"
+        },
+        "friends-hedgehog/nature-question-5": {
+          "definition": "a1f55c0f7188c7ec121225c9d1214198633cfd454b0222f3f7bd5bab8ed05ce7",
+          "before": "8195ab3a951ff3e50019100b4083383d6ba6f53963a3861650dec6aa90cb8649",
+          "after": "5519d6abcceef8274704067ebbee8e08957dfc225b202d910729e7e31cf2465c"
+        },
+        "friends-hedgehog/nature-question-7": {
+          "definition": "abf00b00c6b7a2d386c11a129703d212b9a5f45c7c8e3f0e20ac24edc613ed14",
+          "before": "aba4028c4e1533b35b9ea0618337d0cd298d15463ae2b6b5c671b7830d47f637",
+          "after": "b8966d967c1ba202e9a0f5a53ddf3ae3032950ffc2be9f5cb198d13e647aadca"
+        },
+        "friends-hedgehog/nature-question-9": {
+          "definition": "338ee6ed18747271532ee5c863d3be3edaa9a43795ce454398e8d3b16c36e190",
+          "before": "f12220257646ba1aa719519414073fbbe8603bb62fe5314f6f0be43e9f117a58",
+          "after": "eee8384c8b701c7fb34daccc4343f54ede6b39cb87c87585f0d2aaf34d3f33e1"
+        },
+        "friends-hedgehog/nature-question-11": {
+          "definition": "5466121fc46afc82fbc0a25164f852bc3dbf4e1196d225882627786d6f2fb8e9",
+          "before": "7332c9746550a8a92470049331d8b523a5d8cff956af417be0ebe3d7ce334e66",
+          "after": "e55cb68b321fe0ffb398bb984804c5d7e7081ef15f6b30b705575deb67b6bbd6"
+        },
+        "friends-hedgehog/nature-question-12": {
+          "definition": "30dab0a10c49d6945cc5f07e436518b02e8806097b848a8d1aa5483c3c4422ba",
+          "before": "b448d118006ecc489a673ffd33fbfac33774fb72cda3316689be68f749502192",
+          "after": "61a6fff866ee9963d7055f1ec36d593fbcce286a61f4a857abdc23e0f170c62e"
+        },
+        "friends-hedgehog/nature-question-14": {
+          "definition": "f53423b355040a29f6055135a0ae764905409427b9a9e4a8d92869700435f54f",
+          "before": "77ad12e80ceaed08893442bb795782bc52bf9efc77717dc6fbf162c6bb30400f",
+          "after": "3e8178f47bf34fe128b40bea53e360608197eadfda897ec5dbd69f2e0132b967"
+        },
+        "friends-hedgehog/nature-question-15": {
+          "definition": "7fa8696e701fa89f82f783768d3a5149582c2e1949329065a0221c01fccccc28",
+          "before": "054c0812c416903541d40810e0d4ab34624a92d45cb18fd45c2f9e050f2fa8f5",
+          "after": "41a26604566eeffe8fb274647fefbf1fb913bb3eb3c4526eea75cc33c766024d"
+        },
+        "friends-hedgehog/nature-question-17": {
+          "definition": "b18a6187efe43e06aaf37f05f23e55548b37912cd0315e946f444e93458b6473",
+          "before": "087b3b9a03ad6b001f89d3e985886e572052db014ce9537495041909e596477e",
+          "after": "b4ecb361ca0d5c4faf09c9f2e9b0e4916ce071898b56b3239e40e889debc7b5a"
+        },
+        "friends-hedgehog/nature-question-20": {
+          "definition": "700d6b1b54e6d3234feace36a4d372b86e86666ee37f83479afd3728817debf6",
+          "before": "de3788e6ee16f0d4d897bdda56e0a2e62e81df39509da7dd7b5f4da5bbff57f5",
+          "after": "645f5519590131e3b06be0aabc3c0112c3d878c9f120e2935d9298ab0d625b3f"
+        },
+        "friends-hedgehog/nature-question-24": {
+          "definition": "f6b8ae0473684566a58bbfe342471a3c50cb71876a12ca3db4829e0e48be0f84",
+          "before": "a53a658effe0a255765d3c6fffb9fd7a6bb64ab4407cb3b24106eb07a90dd201",
+          "after": "23b7c0ece15f0ff06b7a6aed12422471509c63814f8e155d3b91ecaf84eef660"
+        },
+        "friends-deer/riddle-1": {
+          "definition": "d9f38e9d6ed208d0445abd5727aa20d52b525c37b82ec8cf8dc377a94065d7d5",
+          "before": "6447bd3a294ac4298d88f3c3c7667e0c0a42ef4741a03b767bff99e80004e0b9",
+          "after": "3b991caf3ca5952f4f603695aeb1c0b68d28291709f67635c5418d74e4808195"
+        },
+        "friends-deer/riddle-2": {
+          "definition": "a482c96222818c621794b180f86e2d709de7363b882a1106295beaf7a194ae09",
+          "before": "54c4635e576dd925206c3ddcb9864b0807fbf83f94e8881a2ff233cef22b7abf",
+          "after": "589043ca6a7d01099e1b1c7c0b6f00971fd9dd1ca1c5a07db02dbb3117f038e4"
+        },
+        "friends-deer/riddle-3": {
+          "definition": "cf6d15ac061fa15b8843c9ecc0bfecf3348603d50fa123c8eff06c6c48bc9454",
+          "before": "921e44f4515ae4655bbc083f78b3abe27dfb2ed47cc7b3b971d23bd87119a92b",
+          "after": "77d7e7a8e6d4d1007d3445c925df0111666bba1c4fedbbba4e3f10eba9a3120f"
+        },
+        "friends-deer/riddle-4": {
+          "definition": "63a867a9c47d7745a82d07bce1e9bf949a036ae9e827607a9aacbe3ade0fa2b0",
+          "before": "677d351898bba01b7818a8329b412900ae502b06f258bdf6094ed87cb3d95696",
+          "after": "e8878bd0ce1608e606a349a1fef23bfc43cdf1f501279ff5ba18a08b42566812"
+        },
+        "friends-deer/riddle-5": {
+          "definition": "6c865636570c6717f1af69630ef47d3e8c3f63db5b11871d19a86bbab31ca908",
+          "before": "19510a2ddf3823a31bc6073d05fed2897371f3293b7f25cfe110aeb820e51201",
+          "after": "7745c4b886416c89001d595306731367cefdc29140e24e6261a9fe7df7afc581"
+        },
+        "friends-deer/riddle-6": {
+          "definition": "5db79c84f8d1c8a9c7b90193e82252c8c36a0f781ddddd9438c21e4bd8da05c1",
+          "before": "f2b5dcb4e200d2f7ba5431e5f05402f68f8bc9d8c7d8568d05dfb2be91aaed5b",
+          "after": "d987ee32da70696ecce7cbd1c45851208a81ea60fd2738fb38b4c1f325528f23"
+        },
+        "friends-deer/riddle-7": {
+          "definition": "d32aaa142b49f88500c59113b17860a4fb29e26226e41e3b764bdfd978cf0928",
+          "before": "d31b7d7ce38b6b14737ab92e0d24e04a8cd64c3da90aaa88a70c359f947a0cc5",
+          "after": "675e8117e5c66c1d7a2e09834f958d7a1baf2ee49de713d31eb2ab5f95ae9324"
+        },
+        "friends-deer/riddle-9": {
+          "definition": "9e5e4cd8fde07fa381775c8f0d4be8591c14ff9490b9236a7001528f7b7694b8",
+          "before": "4ff526db86edb9c9a3db02b1fdc4f0d36ba864ae5249fe395dd51128566db5c0",
+          "after": "5d4773a4262d0e319fcf5d76b4ea3630ef71e61b5930e60c92747725b2e649f3"
+        },
+        "friends-deer/riddle-10": {
+          "definition": "9639481fafee65be1da41a6f0ed14138e77d59e0ebff4e5358db825d25455ec2",
+          "before": "8f1e701438e287618929d13a1f6903653e565c22cf209dc89eaf5af18a31f6ab",
+          "after": "696952b5e9370887bc890d89fc43c76e80f851015b43e1d43ee2a3d38a8f5cac"
+        },
+        "friends-deer/riddle-11": {
+          "definition": "c18c461592950b6ef6adeafdfafbe25fe6218c3e33f6a9e0f96ea29705780084",
+          "before": "291835921886e8c499f98b0f63427905687c4d07b2889d05a00b9e031a880d68",
+          "after": "099363d0d08ad7e69a0986b43dd0c0f956cdebc6996f3cccb1d2830a826a5170"
+        },
+        "friends-deer/riddle-12": {
+          "definition": "5bc9c51bc86b3dc4022c43513fc29667714f67939754b44786d0355f54c3e631",
+          "before": "87b8fc0c81c8a356748aab7a6552d2a357cdf46164c1831483fd47f9647aa94c",
+          "after": "fadd26c8bbe1064d0e8e0d5889569b4fc4060f48f76e41a07bae384996b3d2fc"
+        },
+        "friends-deer/riddle-13": {
+          "definition": "1d440ee748085adcf872898e886229cbed4b11cde9fae5aa780f1f6c47862ebf",
+          "before": "1e6aa55a22c7b6f2464f83ae5b0fed04e7f544d292dc91e82f285e49ddfc5281",
+          "after": "a9a39bce92c6f8a52dadda5d567e8e73efd8c8a67540a54139e5b169e307f7f2"
+        },
+        "friends-deer/riddle-14": {
+          "definition": "61ecbf17cbfb6df09a41557a63014858828a1166b05588e5308bd049d0f73627",
+          "before": "f74ec6f4aa81e1c5b2650de52566c72375b83c34481210e0dfa217c53e33a52e",
+          "after": "adc4338ad28d5dcafeb0d23b84fede90bee57f1accb93ab74f10e95495a51b48"
+        },
+        "friends-deer/riddle-15": {
+          "definition": "ac56737285029bc85cfd9cd0f11d0923c0d611e155b48ddce399856bbf1be9bf",
+          "before": "0af7a8957d5942c2bc9e60cca4f93a3519f28959f405eecdb523d3231153854a",
+          "after": "79bcd2f1b91cb951bebb4f3ddb883fe10fa20baa8416778619934d55fce6169b"
+        },
+        "friends-deer/riddle-16": {
+          "definition": "68959b042cd020bf4e8a24448e5fd8f92a580cfc753d4af737a8d28257c77eff",
+          "before": "2f4a3ef29e465ec4e17602892c04e544e2b510402bc517cff5c4b3d1ce4f9f71",
+          "after": "6652ef3e2a4c660b67b3bbbdf2f5e359f409b9e230f5394b08a0b24192284834"
+        },
+        "friends-deer/riddle-17": {
+          "definition": "ac5ed9c13c4ab4840e5ba5751e7c43740d5241b2b556699624665223e5c73256",
+          "before": "8a9eb044ec8f3b3a220cc101d7949038f7e800b8a25a250d82e647943e0edb2f",
+          "after": "06047984d0c53fc2ef05fc65947293691121f9050cc26da91df250435ef1a029"
+        },
+        "friends-deer/riddle-18": {
+          "definition": "b238da110935b2aefc54efac8da67b494c61828095a5bab7a3ff6216f271a08d",
+          "before": "9ab347c26ec9da076187306cbed48f4a1c5cf83b3cf4336b0883f76f5ab1a4c2",
+          "after": "800fdeaa69ba2474df395ed9bedf9d24dd334c63cd3dab4ef20ec1b56812ce1d"
+        },
+        "friends-deer/riddle-19": {
+          "definition": "319fb7bc1a5e133a480471f374c9be7db9dc25ac8c271a8ce2f606d47f07e542",
+          "before": "34273ad43c87a3ff4e5a530da6fd320eed8135892f0aa5eb6920544daa7593b0",
+          "after": "e3490f78f11df3280465b68a941c3f3e9fa0e0c57acef09c3f734d5a66908eeb"
+        },
+        "friends-deer/riddle-20": {
+          "definition": "9c045013fb029043fdec8cdd3cd8c1b258edba78f2d3a80757e801e45ff9ffbd",
+          "before": "fa8166b0db29f6339cb36bad614e616d66fd04544cf82e9def71ed83b2ba2e0a",
+          "after": "904debb0ac2ffba0e3e448522c5621544d5d422192d9d198f0cfcf8da4f0fde5"
+        },
+        "friends-deer/riddle-21": {
+          "definition": "e19ee8f06311da0fa0d5449ea2348ffe1322c1fb8f6133ad87126da8e6753ab7",
+          "before": "8fa30d1ccea55f037e365a4ee2e6f46f8658b2afb866fef83897a53e5185deec",
+          "after": "322ac510094e3f27e3d43bae04ef0573d93adba1e6ce662d7b2108a68d6bb44d"
+        },
+        "friends-deer/riddle-22": {
+          "definition": "ece04ae7c624b1407ce45ba98e957b185a6a7e7616f52ca16e3178aa7850916d",
+          "before": "5d2c3a385913f9d2e401c6a909aaf755d86992f4489527793e6b2f5ff71f8ff8",
+          "after": "8a8c05479f02af3fea244964d6e1b797d76c017f9404f9d5222c24a926fc27ff"
+        },
+        "friends-deer/riddle-23": {
+          "definition": "2cf848e4d31eea18e1dd45817a2b2ce8c83b15ce8fa741186b26fb7e2e35a5ef",
+          "before": "0af91dc516440a5bac25c3da4112107c0e237d4390fc5037e8b2b9532087fbcb",
+          "after": "50d722b919a402e4cd70e1c26c81ff6ed57239d1755ea155ca5f82feced2df7b"
+        },
+        "friends-deer/riddle-24": {
+          "definition": "97c69abe792604c1c5bc93121dc6cc1379bb8b97803cc308c5b5ecc728e4feea",
+          "before": "7102968220bd710c21f73eae62df7bdbc99e7962b0847532e1723a81629e22d9",
+          "after": "adfc5b6858a54bbf7969b4ee80eb224d6b2d1fa1223b1bd98b8bd3a934726b0b"
+        },
+        "friends-badger/riddle-0": {
+          "definition": "ee4a8256bf668fd029821dcf390e4147a55d9ab3546cab5b420d9ec92d8c3195",
+          "before": "fee3664c96f9d748ac1db037743c5c787dc01bbfbe8578861b75bf46f7235523",
+          "after": "7280d6bd91e8e943582a6c5a69791b51575d90dbf992817d54b2ce320c2988f0"
+        },
+        "friends-badger/riddle-2": {
+          "definition": "b7d03f0fd9d9a80e3bdc52f090dfa4d3de61c180e498c3d27d485459159c031f",
+          "before": "92b77b263101b39083829e1cc7287eaad09d229ebbdb8d89087ffd8540786063",
+          "after": "b7e2d92dc4e291616d348e0a1e3e77aa419627ac27850b2b89368670de1c47de"
+        },
+        "friends-badger/riddle-3": {
+          "definition": "0573cb6d76948d65e9ea64b2b8f48949c710bb1e556be2c5aa6cadabb8beb8a7",
+          "before": "11bedcb04834c8aa9e249d5b20b7e2b9eb8d5185840073b2472756b48909ce2d",
+          "after": "0ca19d78d17d0a1cadc325117cbb479c45e456e6715f6b2d619912a0fa1dd1bf"
+        },
+        "friends-badger/riddle-4": {
+          "definition": "10f49cf8d187958a3764da49e8ef825a06831b2e748bae80efd91b321bd1a0ce",
+          "before": "a23ac0c245aa6aef1156d626000d0167b6b546d5dc8dc73af13052c49abbefc1",
+          "after": "0d3735fab4411ec6b89b33d047aea32af7ea9ab9ab643940afe5d561d17cae1b"
+        },
+        "friends-badger/riddle-5": {
+          "definition": "73497e3ac6f88c02a05e972b35777828773581351b524cbfb3e037ace7ff37d6",
+          "before": "f85a5dee505c49aaaae790ea9c4954ad4fd20d6513fff087e52053fa09c51fbb",
+          "after": "9a0cfe0d6e8197acc2e7f54ebcccc33bf156744b5c0f419008d594c86d4787dc"
+        },
+        "friends-badger/riddle-6": {
+          "definition": "9e922f779820276965b14c683fc00ead4f6be5bac93a461957306cc01990c532",
+          "before": "5bd4552b38d4f8ffa128de460e5590922b88f7947e75f273d4477f09cfa3be2c",
+          "after": "c05099274501c22dc5caefa0a706b153cb755c5d400e179adb1d38411a9dcdf9"
+        },
+        "friends-badger/riddle-7": {
+          "definition": "919f886289c059af5adcb07be92ac15d87ccfbed964665c0caff5a4664362d1f",
+          "before": "c201d1b8b7e25bcc5164237b70dce10ebfbf9b9e858947acb6738f113fcdb9c1",
+          "after": "dc43cdd35be29b2a921c7e04f79eae69eaf053d7752e8035789baabaccf8fb7d"
+        },
+        "friends-badger/riddle-8": {
+          "definition": "80cee69a21d4da90ed5e8d20b618ed0aa7625a4e009fc49649239948b9b679dd",
+          "before": "feab1c7426bebfa25fd1aea4f37e51bd2a4310d416365619f72a25773977ef5f",
+          "after": "6d3276a4e5edda777f54220746699355d255c977ff81246b8b61da334f67894a"
+        },
+        "friends-badger/riddle-9": {
+          "definition": "8860687b41c8340ad3764c9a9fa0c88214bb38deb529d3f23d6cf4805a46124a",
+          "before": "46bb39e97e80f5a58fc3f8f2278b2efdc710ad40188b608a070dcfd73c4213b0",
+          "after": "abe166a907890472e1cbbffa350a8085e61bbc9d50d07ed1f11af4ede8055035"
+        },
+        "friends-badger/riddle-10": {
+          "definition": "608b47ae68f9f841d696e05402d28d4a7c0a68ed614dd3d18675da63695615fb",
+          "before": "95ca5663987884d80a281e6bd3ddd25d3acbe92ec466600644d8837466acf5fc",
+          "after": "5fc9373e99555b948f1b62e47b36f72cd3b38b9104ae938ee6f4838ca4ec9745"
+        },
+        "friends-badger/riddle-11": {
+          "definition": "35712f8e3915840b598126ea0a78fcb3ac8ce6c45f23b265f23c1608e9208645",
+          "before": "7b8b948b39da6b2ddbe897a12b38e0294220ceb762aa76ec5270363908682e57",
+          "after": "f9ad240543d9b49e3259ee020ce85e6c5e3f15e71d4145474936daa9d3bd61e8"
+        },
+        "friends-badger/riddle-13": {
+          "definition": "360f6d376f3175ac40b13f3a579fea24909794267df59cd827962c4392baf23e",
+          "before": "611c92818611c616cb051ff27a283d3812ab531f38f929737f812073a0eace7a",
+          "after": "32edbb3b3d50d54102f1e8e521bd2bdb18b368a9d1e98bacfb5279eea63f125f"
+        },
+        "friends-badger/riddle-14": {
+          "definition": "32a29731aa839dbfc97964a2e2380b4a7b8da2fa64344908b19e22d4547c3e79",
+          "before": "f085274251fb127c7666df991edcfc560c3ef20b974b64da6925720e342cc7a5",
+          "after": "009d8f6acfa7e3905b7f163e2b01b02021f0198a8c58b3959d93ff27957ae90b"
+        },
+        "friends-badger/riddle-15": {
+          "definition": "d926da5de5054179589a0db51db8f3dbf308a9e6ab4a744363893654c14ff79c",
+          "before": "6fddff359414b10b1b36e0290a11345122c5877eb8750fc2927db028aa6d62f1",
+          "after": "9927011afe5e9fcefb6011e32e3631e9450e485feed3d455bf9d701b47a1c593"
+        },
+        "friends-badger/riddle-16": {
+          "definition": "c7d8ba8bbd63bb1ff779e88488adc6acb0330dd7be12821203cf191112667b86",
+          "before": "072e8f3d20d2e09ebae16d5b8e3cd5088b41b97306e96ad6f180d1771cd9f4da",
+          "after": "e0e34b87f8544c0c3a7e798565e03138600a8a443d0879cc54f4c752164b627f"
+        },
+        "friends-badger/riddle-17": {
+          "definition": "a988b66b9bdf8f5467ae9d6a902ce6a1d261448a893a8d8b826654b072fb2fd3",
+          "before": "de707d58aa827dfc183930fd692d74fcacd4e1a1deb59dc3d659b03ac479fa22",
+          "after": "18527960d23add2171ba1ee9f7e43d60fecd4da4333be53fbf40f29380dc7eb5"
+        },
+        "friends-badger/riddle-18": {
+          "definition": "ddfd662a14fe1fcd60e8a7bd36c0265c1b07fd2c26afb789fd6f175605b91453",
+          "before": "8d602bdb91fc4f1423d417dce8649a621ca63ee95b17cbedd160d7da1ca2c070",
+          "after": "7c93d02b2740e7b87548c43399de267e9e7f7ef1b7f10e066251456ba0a9f6c0"
+        },
+        "friends-badger/riddle-19": {
+          "definition": "736811bb3b9d81230650f6bf98ad8a7cc3b2144c7ed8f12058c9087ca01d0640",
+          "before": "6ac8fcdb3ace542a0a87578905ff5115024553090a9c363017465507ab473020",
+          "after": "418fc19126253c76f6956d21d2ad7e5861c18996f04009eadbb85eec6fedf278"
+        },
+        "friends-badger/riddle-20": {
+          "definition": "a2cb5568e590353e3b9362b70d98f3dbfbee0e249b7474e39a0dcecc34be4391",
+          "before": "91d47af31a3274b708dee601d902d4f589a1753fceb190f39fdac99df91e63d4",
+          "after": "3b3c398cbf638c1893532a4065d5adc604f92f430b3f2f8176ffd147db211464"
+        },
+        "friends-badger/riddle-21": {
+          "definition": "f03b7bfc700d47b844a68ee60168fea0391cc3571e5e09a0c3d2d7164d281b55",
+          "before": "43c5c6b88b00b430be1f10fc6670b157a7f67d0f4b4a8db3bd9242f0898c855f",
+          "after": "2ce7e588b8922e48e282b27a6cf7354b5470a36589cad425bb9f020e96d6b6e6"
+        },
+        "friends-badger/riddle-22": {
+          "definition": "39f54267f28702e3afeb89acb30f7f3f3b7607e585d69252384b589beebd6db6",
+          "before": "d25713f9b92d6038ad8d19c6f4ccb64b22eb8409267110492672f4a0ee51447d",
+          "after": "e48dfe5f93d1839e4635e470e4187ded2d2b07af3908ca716f8428edc02afa85"
+        },
+        "friends-badger/riddle-23": {
+          "definition": "4dc5967ad2f7f1d881a01107a16771af3ec80e1ba9539e7d5a9ebcc6b2866a0a",
+          "before": "4e41d195169302f94bc643d83dc3661a5d176c069423ce811bf088ff23d2335a",
+          "after": "132ec3e2402c05af099ed51f54571aaad16845e4a107785412210349def6ea47"
+        },
+        "friends-badger/riddle-24": {
+          "definition": "379f24ed06f870aaaa17563f3d62c2f7290f4c1601d870e1b549b5d4f9ae1e35",
+          "before": "3eaba439e5047d52b98edd841ddf79badb4cdf8c639e9f174a2333dd3aa2f374",
+          "after": "f8e50ed0ad7bf82eddae01a2c13acf68e56984c8228d811647d5b0864488af66"
+        },
+        "count/6-2": {
+          "definition": "8554a20fb741c57d85434c2db773117e9868a585bd9cc9a8ad9bf194ebd780b7",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/6-3": {
+          "definition": "74b6215e6e1bf1329cbba80522ed1c99ba3995aaa6eceb1954e3f10ec49e260f",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/6-4": {
+          "definition": "347a4c44de5bff10f36ce1b31448b993992030e28bdede676e9cfbf6ebe7b613",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/7-2": {
+          "definition": "2ecc717fcf1061b56151c4a0c73b3671a36f1b056189f92322c0df86c5cf4932",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/7-3": {
+          "definition": "8f162f0819e72e222ee21fef518153e783caefee2b7424c73f02f6804e7b00a7",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/7-4": {
+          "definition": "f7b3e42164587424c8f3d8c576f8abd1a1ab19bbf1fdf3834180ac2e9e0de10e",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/8-2": {
+          "definition": "0debd94459a9ce1a9230d701dddf6ba69c6d413e75736a015b0659dac3cbc3d3",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/8-3": {
+          "definition": "1acd143f93c95ce2aecf334e5c7a24cab00581f659935e013787bf57434c820f",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/8-4": {
+          "definition": "6c6e414affb6029f54b2c4c7a36f8960a667ff64f58970b660a25900f0b0afd5",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/9-2": {
+          "definition": "db6479021a198000c5eb50eb9ed97158b905849f4f65d602404cba33d64a737a",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/9-3": {
+          "definition": "cb0760aac4514b48fa2254cd373b65f7d4f7127c97661530cb21d3a0c11c2140",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/9-4": {
+          "definition": "2c8252f6d00635d8d512e9224d1c5ac0b3480942e5db9c45df2e221bd978147e",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/10-2": {
+          "definition": "0028f1608abc27a828755b0c32be9faca5ceb7c4db569dae4213709efe0365ab",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/10-3": {
+          "definition": "e1153b22538306c8861812b07f82c3494bb99f9d57bb0615707d58047b07ebf3",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/10-4": {
+          "definition": "3f5f8c8a8b9946ec413e85882bca629e95fe3b933f2269a670a31980454b1677",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/11-2": {
+          "definition": "22d005dc905bab8c90b203e51e8ab8124015dd8ecdf27eb65ee18a75274eb968",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/11-3": {
+          "definition": "d7deeb6db2243e9a14617f95079e7d0b2b23cc63f04bae2c3569fb13ddfea285",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/11-4": {
+          "definition": "3466746d5719d2ac7edd8e6ead89c19776000f2f4e50d5bcc770f7a8469cfcf8",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/12-2": {
+          "definition": "ee7cf68e60f14fe1017238d224e1add2b41dcbbda755b5a11b2650dca20a815b",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/12-3": {
+          "definition": "f2234ad31fed889e1a930e40df71f93f47666d0efd3042301346c5da1c16d687",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/12-4": {
+          "definition": "0b2e4cdf728bf07eda7792cebf601b462d385c63d6202c8450e49d803526c7ea",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/13-2": {
+          "definition": "1ae1daeeb3d6bb5c69f866f9618050dc956254efbc54a1f580f084b1bcf91ac3",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/13-3": {
+          "definition": "aea7c967fa9ec7ce5a267ddeff3704cc5c8a44a5c431f65fe73fc0ebee63e1ea",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/13-4": {
+          "definition": "3c18534282dbae9e035b18ed57a339e58e94c89d71be32816c943f8a74ab66ca",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/14-2": {
+          "definition": "7c80b1b974784f9c74583d19ab3e2d03283725077afaab083458a496d4f97de0",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/14-3": {
+          "definition": "6b0310335f1c340b6108fe388d1402585f06357d2531bd4125d321b8d32d79d7",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/14-4": {
+          "definition": "8e9e672a58ddd396394264fd894d4ce8b68a006f21f77295a0957a9dbad45f7d",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/15-2": {
+          "definition": "4ede70fcdbb3980e02786185a183e907ecaf98347aa2df85c46d374734f2648f",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/15-3": {
+          "definition": "c1100179101d85a38c49cbd6c0247821d07401574a82bbaced5356e0110fc522",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "count/15-4": {
+          "definition": "11f92ba1e1ba46f02576603e295e98574162197500c5609c20b0d7aa7b5035f1",
+          "before": "b1a58331aa5b27b3d5f1154b90812ed471b87448bc32f50ead6517bd6baa24c2",
+          "after": "866e738b913287a6c6965197bf0010d1cd1ce0efd213a9c9fd30f5f7c91f5817"
+        },
+        "syllable/word-22": {
+          "definition": "a97058b468a0935d9f93b5cd4126f1490f30912fe4adb9fe5bc3b76e25a1c783",
+          "before": "fbf8a97f453944b65688d3f6136b1c4542c157fcb331b5f17593938fe1e4474f",
+          "after": "8ebb315daecac2291980a94d30dfb37f7059f345e6b7f2a82c8dcc131dbc4512"
+        },
+        "syllable/word-23": {
+          "definition": "730f2dbdc0b350a77e70b9a20585fc5aed108731f4cda0bbab458744ed0e1ec4",
+          "before": "a14ac53ba3d53742ef90fb6339aeb7678c39ed31ea1511df05bc91755887f19a",
+          "after": "686ee9b6f180033bb94ba28831b7e5aa282670225d8105d567ffe915da807492"
+        },
+        "syllable/word-24": {
+          "definition": "048523bd225f6aa33070cd6a797ba7b208fc539b73ad27c28dcc21eea3dbee80",
+          "before": "66faf931630249fcb24292ba9ff7062c2e3f223d5a644e643c8df314c2c80494",
+          "after": "46cc14555994db35461b3780cb08eb0da14bd8d20c886e8ad69609a5bf383839"
+        },
+        "syllable/word-25": {
+          "definition": "2b9d4c40ed47f5f13578f1533a90333b7d1d6a169241ae7a101a19c3662fafb5",
+          "before": "d7f10323f9b6dcaf7f6b2ecdf3c4d95550838db08b7db00cf81c5be1570d96ad",
+          "after": "8b2fc2c4a40b55b724cc485dcab50928401c8140953ce0b2e995845e849cfc2b"
+        },
+        "syllable/word-26": {
+          "definition": "456b1c5f35210d11abd4451315a5ec7411d6181045b21490a11935f4f028001a",
+          "before": "3c465f1068a88d3b5ad912e078ed98463273b696d473650f6a5137f9940f51ac",
+          "after": "52414c3a3c64860a19f614569acd312dca80a02630f3f93be29e7533feb425ee"
+        },
+        "syllable/word-27": {
+          "definition": "ad668e2f698c7563cf413339cc6e462b2a050fb74a8fc8597a53e18b087f611a",
+          "before": "b5eb6b2abfe5285f449cfc83060efc4d2b07a86df82c54e3ab5a6d13fc3cbaaf",
+          "after": "a14e3779176cd49ceb1772dc542ceaf78026a6b143f063626a2eccfc2edbe963"
+        },
+        "syllable/word-28": {
+          "definition": "f7bfea58b069291bc11854773bccb7ebf5f5fa05532073849789ea09a2ae0d64",
+          "before": "771423a4dec93415562983b4a1932a0f05e163fbe8899d03e3098f3f7a01a1a5",
+          "after": "a03450ba0bac05c1b3b6a2c6c52b44b4f433aa0f7b9c3d8e7b85a10a60627186"
+        },
+        "syllable/word-29": {
+          "definition": "a299e9350df04c5c6f17717787067c8663f2f0ac36715d3df8a8eb4d7f073637",
+          "before": "3d6bbf8a3cd5d4b4ff81620d892dfac3743104df4288f63ca3fa18d238528b75",
+          "after": "4beac2233ca068b93a1a0ac3e9ea1d22a55ee216789475db7feea200eace10f9"
+        },
+        "syllable/word-30": {
+          "definition": "a90a73a90da08133da65a61b64919d3d940e93ee1dc67466c3ea5e5f88abdd25",
+          "before": "c85b642e74fcf0479eb2cb6734f376ed2b7089ac6bce12855edb8e24829e99e3",
+          "after": "1028dda48fb00b7cb726333b327dd0b7fdaa6e5862a3668998c768316d4eb6cd"
+        },
+        "syllable/word-31": {
+          "definition": "4d908f4ffae0a5505d57c92733f23bd086e4e440c373a9af898ee8eb5f5f51fb",
+          "before": "67357f4fe48b966f41585217ac16524dfd787e7068a5bccf2b27804895d45ddd",
+          "after": "dd06129a506be21adb1e57fd2e08348b19c7596005244a6965b818da06b2d7d9"
+        },
+        "syllable/word-32": {
+          "definition": "dcd9b3780a9dd16b1679447647721dbaa586d3e5327f8710fe5f0f0400121d4b",
+          "before": "8fed711764fa2d89e9a181f65896a43c7fb580529da3e8c403af605f9e2f299f",
+          "after": "251c43beac86922c31addfe68bdbacb664c47913986f078213df6c02e09b3e96"
+        },
+        "syllable/word-35": {
+          "definition": "476acd6302b47d298f38560f601a62878f6b2c2ae0b759d86685712e83e1d1f6",
+          "before": "529e6bb8f071b6276df2e51ebaf6776c4ad5cb95136df65321c138f14fd55a9a",
+          "after": "fea109c4038929382da83e72a8833bea212434549bb32796fc0b4f99f3476e41"
+        },
+        "syllable/word-36": {
+          "definition": "e7d4393cc9f6bdab7b1337f19101fa50faba24af4f304256b175f45659958875",
+          "before": "3ba038b9ac3e341baf3a1e10f2a0dc44e66c39d16c3b62e70eb6d60e6ae7b6ae",
+          "after": "274132d13ee300ba870f513767440a8d3528426938ee4b3c48a97b9dada92892"
+        },
+        "syllable/word-37": {
+          "definition": "243539ebff036d658458d35189cbaa58dc413d0a2e74d221ff3aa06269eb17b4",
+          "before": "2bde021d3780c2474d04ddd7655edaa0831cbdb00971023ce8cc5876c9818b92",
+          "after": "c99144744c4a850d2e63b1282474c911d3e4f3e06a5621423ed7211580e6e8fa"
+        },
+        "syllable/word-38": {
+          "definition": "50e6c9d08457c0ef9950f66f5f767a17e3ec7bbc0c65257d4148532e0a1c20d8",
+          "before": "547c957498137d764a9e1f86e17e713ee61e4b10d1e5375522cf85a32e69b689",
+          "after": "d05ee7a0da5175c871abe39d57b4fa6d92d37c2d014851e1926852971b9ff17f"
+        },
+        "syllable/word-39": {
+          "definition": "1e6826da8cd7de3e60200b0b095a89b702379a1dce479dd1ffc4c8abb0ae7157",
+          "before": "d0e9036e1a7e82aeee8ab8426103e27b70a57a499e8b7b53ed21b4aed5a61c2e",
+          "after": "af1ac8ac1ef61ca41c17a38a6bb62e5a27fd8ce9f06866e27377013b40fa9c7e"
+        },
+        "syllable/word-40": {
+          "definition": "d0c794afc5ed17adabf2441b2b4bcfa3104f1ce84ad58acb2cb3a7a24a3d9bcb",
+          "before": "a65a1ca3c4f678414e7d1f5af6f7066df5c74d1c91c7cad907c05c03e3bf0766",
+          "after": "8c5cb3e9c284b7dba5e2544dc3dce2cbbedc236a7ce2e1eb63b704fd1e57fbd8"
+        },
+        "syllable/word-43": {
+          "definition": "ef641c7a089ce3c664457330e4c3e5265e9902fac857f229ce2b09460908d623",
+          "before": "1051de83de59b6e0732284eea9d72e28df8724907c88d93e317527197bec50dd",
+          "after": "0706ee19283735668f91e78e9028977536db8b87cd467e9599d5f1a7a636ed2f"
+        },
+        "syllable/word-44": {
+          "definition": "b647a5e853f0429a44466be86edd64676b62228857d27d1519728a13d55ed7fe",
+          "before": "9eef0746a25c7ed025d88d11881fe3f5e6b7d2a933dc264c0a54cb06d0f94b0f",
+          "after": "a278c926412eb256a7a7c6ec2e0909c0f4503fd06ad594746a0c65e0d216d3ea"
+        },
+        "syllable/word-45": {
+          "definition": "d4059405a4123a3204fa777d98fa06b401e7c50cc2bd2f4c25bd25ca66763e5c",
+          "before": "24da800542a0eb1dfaa8ec52f2778b4a597d0de9183add6087c2577caa680416",
+          "after": "1d4952b1ed3291c872870bf30acbdcb393acb36f831b301da457a1d24828d87c"
+        },
+        "syllable/word-46": {
+          "definition": "8a9ca074afa9ed54e8b82eeed7484e64f50af132e25e432fb556a25a4df75919",
+          "before": "f0b0fa9146c6a6a3fc7b4a65e93653ec5756ac625387772caf2563d7a4658f5f",
+          "after": "e41a4f396dff7823a4d506ebc7e1ade42de9c26a2c7ee6b7c5a3bad3afd8f83d"
+        },
+        "vowels/word-22-1": {
+          "definition": "69d35c781bb4fd38e3660450d376b60990c84bda51b65ff946a2b139628b60c3",
+          "before": "8621a3f8ba730d6ad4e6597b2bf71545797cac02e27aab7a1f3645e7661e478f",
+          "after": "4fcdb7e79fa3c15d013feca707b49d8073f4450ea0c0aaf6850904435322dd0c"
+        },
+        "vowels/word-22-3": {
+          "definition": "d212d691999faa50d64f68222e08639da2e17d125571021cd5cd94fb4f312664",
+          "before": "8621a3f8ba730d6ad4e6597b2bf71545797cac02e27aab7a1f3645e7661e478f",
+          "after": "4fcdb7e79fa3c15d013feca707b49d8073f4450ea0c0aaf6850904435322dd0c"
+        },
+        "vowels/word-22-5": {
+          "definition": "53bf098b2519b73b2a276c07e04ee415377b9023ab1ba2bf588ae050f083fc0d",
+          "before": "8621a3f8ba730d6ad4e6597b2bf71545797cac02e27aab7a1f3645e7661e478f",
+          "after": "4fcdb7e79fa3c15d013feca707b49d8073f4450ea0c0aaf6850904435322dd0c"
+        },
+        "vowels/word-23-1": {
+          "definition": "47a858317a3fbc8aaceb85d738d4c094484fe191e925d24e639df38bba6c6396",
+          "before": "9792e9931107a933292c93a7089ea6d012d566139f5b520ab67588be4ce36ab3",
+          "after": "cc48a6965f405430744ee1c1e3afe4b1157a1b811162c6eca9b22dec8f718407"
+        },
+        "vowels/word-23-3": {
+          "definition": "27d7bb5c2e0aef97f8a2b4a0539f9f1e979de104b78fb24f972dbbdec5d76ff2",
+          "before": "9792e9931107a933292c93a7089ea6d012d566139f5b520ab67588be4ce36ab3",
+          "after": "cc48a6965f405430744ee1c1e3afe4b1157a1b811162c6eca9b22dec8f718407"
+        },
+        "vowels/word-23-5": {
+          "definition": "3a2d4a8bfaefce3c4b161c89e0ca59f32d0c18384827d7ed86d0d9115482e62f",
+          "before": "9792e9931107a933292c93a7089ea6d012d566139f5b520ab67588be4ce36ab3",
+          "after": "cc48a6965f405430744ee1c1e3afe4b1157a1b811162c6eca9b22dec8f718407"
+        },
+        "vowels/word-24-1": {
+          "definition": "8829ede6c2b2cb10190db43849d76e326383dd7bf74e6e835ba4cafd668f4782",
+          "before": "176aa464d38e8d8c075d5b21f0c3302ba7ae5db6ad25a129b5d494f766b2d48a",
+          "after": "4e3f786ce80331f2298a96006c6786a5c5dd70a8689ad64e28c94097aff2a1f2"
+        },
+        "vowels/word-24-3": {
+          "definition": "4e3acda1cd1cf1641ea9e95d55360622c6270dc0295028443c2a201d359c3c05",
+          "before": "176aa464d38e8d8c075d5b21f0c3302ba7ae5db6ad25a129b5d494f766b2d48a",
+          "after": "4e3f786ce80331f2298a96006c6786a5c5dd70a8689ad64e28c94097aff2a1f2"
+        },
+        "vowels/word-24-5": {
+          "definition": "50afff7cd9709b32a44098f93d15d16eeaf71f9cf6aed88c95cd65060bf8ac36",
+          "before": "176aa464d38e8d8c075d5b21f0c3302ba7ae5db6ad25a129b5d494f766b2d48a",
+          "after": "4e3f786ce80331f2298a96006c6786a5c5dd70a8689ad64e28c94097aff2a1f2"
+        },
+        "vowels/word-25-1": {
+          "definition": "4a7b29ed094eee85ce7ad5e1d11b5231f86c6f9eed701aa2abe26185795f51e9",
+          "before": "826795d1311f963c668546560327809ff8cd6373d7a811fd90eb9ee373c6b31c",
+          "after": "56f67448ed220c324d12f9b8913ae75b6bb8618b3d5d6b2b8503fef7873a81e2"
+        },
+        "vowels/word-25-3": {
+          "definition": "52e5c709c996cbe84af878a674721f3d7043437032a125d61e6b4883e10122e4",
+          "before": "826795d1311f963c668546560327809ff8cd6373d7a811fd90eb9ee373c6b31c",
+          "after": "56f67448ed220c324d12f9b8913ae75b6bb8618b3d5d6b2b8503fef7873a81e2"
+        },
+        "vowels/word-26-1": {
+          "definition": "f63df3dd6ac48c658bd5bdedfb2e102a114e9d2699a729a6d635ea9875c4f4d5",
+          "before": "fb7a800a03028b0fbac168e2994c7e0a5b4570b48e260bf07e227bbbeaa0c996",
+          "after": "5411ca491bae7efcd775bb5d872322709f1be6543ffc837196964e8f01a86cdd"
+        },
+        "vowels/word-26-3": {
+          "definition": "60cbbbd3ac312e1f92fc70c50d49b6d0828c56112a1af25c522b7eed3d8a6095",
+          "before": "fb7a800a03028b0fbac168e2994c7e0a5b4570b48e260bf07e227bbbeaa0c996",
+          "after": "5411ca491bae7efcd775bb5d872322709f1be6543ffc837196964e8f01a86cdd"
+        },
+        "vowels/word-27-2": {
+          "definition": "284ff032fff9aab3579482eef61343dd8bee31387ce9213c82c569361414c72b",
+          "before": "68c320c5991c38e5aa336e2a45c5ac3d59cad96f77d47fe6616fbc32f3f3a565",
+          "after": "76c2ade88ded4c2c6e9fdb074786d1f618e1f968902e509864537bb5e12089a4"
+        },
+        "vowels/word-27-5": {
+          "definition": "98c714bba52e706775a1ada5fa33789a34fdaa84014f421b52ed0a9a01d134c4",
+          "before": "68c320c5991c38e5aa336e2a45c5ac3d59cad96f77d47fe6616fbc32f3f3a565",
+          "after": "76c2ade88ded4c2c6e9fdb074786d1f618e1f968902e509864537bb5e12089a4"
+        },
+        "vowels/word-28-1": {
+          "definition": "2cb286307238bb5cba89158b39cbe098f38edeb918a47fb1a17336f3a46d7149",
+          "before": "1661c860bf2bcbbf66d1b3577eab47aa0d18caf7297ad8eacca3727818893d84",
+          "after": "ef7b07e07484b1afe46d60b04522495a2eb81390852b4b9cf1422e2fb2d78b07"
+        },
+        "vowels/word-28-3": {
+          "definition": "7bc9c4b7c8a4ca418861ea00de6a7bf56a0d0733652a7d5940bcf2b63edb3867",
+          "before": "1661c860bf2bcbbf66d1b3577eab47aa0d18caf7297ad8eacca3727818893d84",
+          "after": "ef7b07e07484b1afe46d60b04522495a2eb81390852b4b9cf1422e2fb2d78b07"
+        },
+        "vowels/word-28-6": {
+          "definition": "5ff0db2eb0fe4abf9bc28031878935cf9968446dd5cc71f3ac819566679102cb",
+          "before": "1661c860bf2bcbbf66d1b3577eab47aa0d18caf7297ad8eacca3727818893d84",
+          "after": "ef7b07e07484b1afe46d60b04522495a2eb81390852b4b9cf1422e2fb2d78b07"
+        },
+        "vowels/word-29-1": {
+          "definition": "49c3bc041f7348f317840d3224c4447a78fda6162518be614de7d35f669c3600",
+          "before": "06b2c3e4a3c6f624e5c0e042d7674c75784d9f36c9c5548b2734f5d5f79188a7",
+          "after": "be1230f0500c16c2b4618e1834120cd3d43a5a3a5bfdeff9a5971c035942ed47"
+        },
+        "vowels/word-29-4": {
+          "definition": "15786533e8d0925d3075567b760468e6275d340dd900a5b5af7df72274414c0d",
+          "before": "06b2c3e4a3c6f624e5c0e042d7674c75784d9f36c9c5548b2734f5d5f79188a7",
+          "after": "be1230f0500c16c2b4618e1834120cd3d43a5a3a5bfdeff9a5971c035942ed47"
+        },
+        "vowels/word-30-6": {
+          "definition": "c7d38db43038ef1fb3c2ea734fb75be71d2abf99b3f4daec143a4323dffa2109",
+          "before": "508d46d42251a3f47a20c281c3a9c27a61d95b90899eae09ce1c7034e6341844",
+          "after": "ee8ec9c94cdeb50ca0a9fb9f44565ad18873366dfd5e1f951189f9103e1eecd5"
+        },
+        "vowels/word-31-1": {
+          "definition": "42a9864a62b8644d412c02860dcb0eb3b413b298be985f2170640fcb3f2451c4",
+          "before": "bf97157f14c31f4df91161d915fdf0ecb048b1a148f6291869a27444c2bac4a8",
+          "after": "8305c928cb0c60249052cdc04ec6483e40fcd0fa97559010b63188273d9c857d"
+        },
+        "vowels/word-31-4": {
+          "definition": "1e4d90bf88cbfe4b2637b2a878fab067952e424e6e4883ea9923963f93e2269c",
+          "before": "bf97157f14c31f4df91161d915fdf0ecb048b1a148f6291869a27444c2bac4a8",
+          "after": "8305c928cb0c60249052cdc04ec6483e40fcd0fa97559010b63188273d9c857d"
+        },
+        "vowels/word-32-1": {
+          "definition": "0fcca7ee6a955f2ad248d07e96a8980fce1f24c1d2aafaeb35f8c174e161b6b9",
+          "before": "d6319d4b0332c630f2e2ad3bfb89e03fc594757760426f4a46cc059af3510988",
+          "after": "5966a241a550c1addc966d95c7e414955a4814254293adf8e1ed721e114c5483"
+        },
+        "vowels/word-32-3": {
+          "definition": "98bb506741c5c7d21aa0737a2ade77ef603ae19da1eddb18e1417e6758ac0cbe",
+          "before": "d6319d4b0332c630f2e2ad3bfb89e03fc594757760426f4a46cc059af3510988",
+          "after": "5966a241a550c1addc966d95c7e414955a4814254293adf8e1ed721e114c5483"
+        },
+        "vowels/bild-birne-1": {
+          "definition": "dda4011ed648e7db044f63587503ab147617ed839b5ebc29c6d8f6ac5fcb352f",
+          "before": "88a39f15636d873533c403f1b8460ec99df2801fca42136de4c922f7d2f26b4f",
+          "after": "9073b63b505b7cf3bf2046f350409490aeec39d456f18440349b1aa995016527"
+        },
+        "vowels/bild-kirsche-1": {
+          "definition": "1b164042dd2a7762589feda6cfb91ba7e22b792a36d7a086a84d9b3e9416721b",
+          "before": "4f068112a189ff17ae777c937a91985b80badb3994f901dadb38855a31487516",
+          "after": "d3ba86a6e3c32ec6eb1c294d041253e14080de3434bb29de897d259cea9b845d"
+        },
+        "vowels/bild-zitrone-1": {
+          "definition": "0e82673fe474454b9173bdcc9a23a614a3720522b9ccdda5607b45670c9dd4dc",
+          "before": "a5f66f4f8145a9c428ecf7692d39dcd64e057d4fcf3cf05a7408516be8168c6b",
+          "after": "e8ad12aa7ba9a42f814fc0de83f30774e1cbf033761883c540c5adfe8f60c05e"
+        },
+        "vowels/bild-zitrone-4": {
+          "definition": "d9ab26ef30a30477bdec1436669cbb62f7b95d3fab37ea1cfa0a586419731e83",
+          "before": "a5f66f4f8145a9c428ecf7692d39dcd64e057d4fcf3cf05a7408516be8168c6b",
+          "after": "e8ad12aa7ba9a42f814fc0de83f30774e1cbf033761883c540c5adfe8f60c05e"
+        },
+        "read-puzzle/word-22": {
+          "definition": "9d75cdea67facdc6f87e6f9513a560219adefcdc17ed461079c3a4e36371af57",
+          "before": "905bfe449377afd69637d000130cadd2541fa64fbdaad645818b267ba12ac8ee",
+          "after": "0640700aed0105d25d8ec90c7269533ae04b876c65439424bf0eaeb472bb36c0"
+        },
+        "read-puzzle/word-23": {
+          "definition": "ff050d4d4dff215cd6274f436b7da447ece90523d779c1e14c78e69a35487706",
+          "before": "d385c2500e08b990a04b1b17b950d14a3cb84bb06869acaeae9b61fd1b2d4f8f",
+          "after": "12d04cf760c75fc657c9e2064012cbf499b0d6d0093c35786df5467038d8b04f"
+        },
+        "read-puzzle/word-24": {
+          "definition": "cb97e48dd3356969c79217ab9e02a6e893ed8f58814b942d544c2b33505d2775",
+          "before": "11c7f909a4afe3bbf56a3d2d83decf3cd8b32ea8706c191486639b4958861423",
+          "after": "21832c2df2443c44db00b888a5f3b4388abdd76cbacf3d08c05f5e2a20dab1cb"
+        },
+        "read-puzzle/word-25": {
+          "definition": "f14b8e220db4877b2301a1312f269c35428a78e9cd628cced4913be2b9a1e78b",
+          "before": "607cc522e291307e2873487edfd94004879e8c0fb33957ca4e1d6384c40bb4b6",
+          "after": "557651e30fa452a7e2bd95d20975157dfda548af4e3a38252b54f60b8f1208ef"
+        },
+        "read-puzzle/word-26": {
+          "definition": "1734ba917a801e884c493380321469d67c6c567bf8e48539392b0259a0eb45d9",
+          "before": "ee43dd3704651822a689fa99223d60b00025ee5c0615d3eeafc3fa826c261d35",
+          "after": "50c385ea729086c6864dd5e9534f096b2442e6e6f653e657f09e8e8d4575df39"
+        },
+        "read-puzzle/word-27": {
+          "definition": "6d88b6561d98b8e06ce5234cc643b01c64993afdaf027095fc1b2645617d0b8f",
+          "before": "ef2a5e752899e28146ba5667cf434efca254cea11c9b13ac81867ed211e504ed",
+          "after": "3f04363df744f08d0ab8ee524a68ab943a42275991bb653bdb800008bd7b8579"
+        },
+        "read-puzzle/word-28": {
+          "definition": "cc8221e18453c08293243d36ef359636c98dc10a846df7613b4c2274d210086d",
+          "before": "f1961461008447da74dadeec969f1b785a2b13bac7cb9b1fd9d9a2f962a4e1c6",
+          "after": "e052b50c0eb6224cf48f97add30bd665eb4dbe0b990aa229d709fcb9d160e8fd"
+        },
+        "read-puzzle/word-29": {
+          "definition": "f36be0becf9cdbf69e4129ca31964b493afd8a96d212017a3e308863c1c1908d",
+          "before": "8b4c0610b857281950cdfd8a049b45467fd8112fdb48b622a5f424b8e3e5c859",
+          "after": "7c248b02c78135d82e6582fc9667c90009d140ce7cbc4713900b19835c000f67"
+        },
+        "read-puzzle/word-30": {
+          "definition": "1dd48825e85d403b5b4fef77788a5141ed7c3a1462f8b6515eb80cc2e0ee202f",
+          "before": "5e12300f1c0c602a0b8007756b3364a45cfc7514a090fb0f8dd1f55781a0b06f",
+          "after": "0b70b4bc9505628fd91a2586d657df338246d09d3445b72cc572b5a7c0b67fd8"
+        },
+        "read-puzzle/word-31": {
+          "definition": "af3f9877fff17458171f61fff53cfad259d6930a93f7c5710d0a3d56d2954506",
+          "before": "28e261e8e2ada65ef1e801270f95aeb40d512ec3a3628f0ad8c82825f939d1b5",
+          "after": "2e0b2ea7175c48a6a608003a4a5f3ace3be03012cad7321c8472b530b25bac02"
+        },
+        "read-puzzle/word-32": {
+          "definition": "04df466919f5bd396705a3f9e70452cdf0421a6f0ea4c5f938ae5a6fc0ee622a",
+          "before": "21e522216f225950f037aaae0f9f81b98d7ec004d69bf1f12576430aa0ffc854",
+          "after": "c3d266ca35d088fed0b368f22515e6401501ddc4b60be71ae8349f5d50d7f5e3"
+        }
+      }
     }
   ]
 }

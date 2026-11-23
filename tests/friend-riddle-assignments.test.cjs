@@ -117,5 +117,6 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const cardBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
  const clearingBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='61ef04562d6ac863a6816f494e3844539cb60758');
  const release32=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9efa9ddd0b5ce64a0c625433ba483b3e5442248c');
- for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,clearingBaseline.puzzles[id].revision,release32.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
+ const release35=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='e4f4e7e566435cad7c26619466a712087a40e664'); // German picture names bridge
+ for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,clearingBaseline.puzzles[id].revision,release32.puzzles[id].revision,release35.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
 });
