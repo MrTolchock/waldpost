@@ -28,7 +28,7 @@ node tests/review-sync-browser.cjs
 node tests/review-comments-browser.cjs   # comment X controls, historical duplicates, offline outbox, other devices and unchanged decisions
 node tests/review-compatibility-browser.cjs
 node tests/review-recovery-browser.cjs   # verified historical approvals, gallery access, later restrictions and zero review writes
-WALDPOST_REVIEW_REF=61ef04562d6ac863a6816f494e3844539cb60758 node tests/review-recovery-browser.cjs   # retain all 23 releases across the habitat-only change, including withdrawals and general holds
+WALDPOST_REVIEW_REF=61ef04562d6ac863a6816f494e3844539cb60758 node tests/review-recovery-browser.cjs   # every Rätsel unchanged since the habitat release keeps its pre-background approvals, including withdrawals and general holds
 node tests/adult-menus-browser.cjs   # Settings frame/type, concise gallery, Fisch, review wording/references and empty saved-comment field
 node tests/puzzle-feedback-browser.cjs
 node tests/artwork-browser.cjs

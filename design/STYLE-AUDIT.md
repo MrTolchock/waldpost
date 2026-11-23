@@ -1,6 +1,12 @@
 # Current visual consistency audit
 
-Current release is **Waldpost 9.4.32** (given neighbour numbers are no longer offered as choices; 9.4.31: no letter on the den pin when Fuchs goes home to sleep; 9.4.30: placed neighbour cards leave the choices; 9.4.29: postman waits 28–34 m away, no long fox shadow at dusk; 9.4.28: dialog buttons fit their labels, letter slider fill follows the knob, no stray «null» in Rätsel-Prüfung; 9.4.27: 22 November Rätsel review: sequence retired, clearer animal questions, stable neighbour and memory layouts; no artwork changes), with the habitat art from 9.4.25. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
+Current release is **Waldpost 9.4.33** (owner-supplied habitat paintings and the fixes from the 9.4.32 release review; 9.4.32: given neighbour numbers are no longer offered as choices; 9.4.31: no letter on the den pin when Fuchs goes home to sleep; 9.4.30: placed neighbour cards leave the choices; 9.4.29: postman waits 28–34 m away, no long fox shadow at dusk; 9.4.28: dialog buttons fit their labels, letter slider fill follows the knob, no stray «null» in Rätsel-Prüfung; 9.4.27: 22 November Rätsel review: sequence retired, clearer animal questions, stable neighbour and memory layouts; no artwork changes), with the habitat art from 9.4.25. The canonical medium remains **`waldpost-watercolour-pencil-v1`**, with frozen animal and object reference pixels and **99** complete forward image-generation prompts.
+
+## Gelieferte Lebensräume und Release-Prüfung · 9.4.33
+
+Die zwölf Gastgeber-Hintergründe sind jetzt die vom Eigentümer gelieferten Bilder. Bildaufbau und Gastgeberzuordnung bleiben, die Malweise ist die weiche Bilderbuchwelt von Bau und Wald. Dadurch fällt der Stilbruch zwischen Welt und Rätselseiten weg. Lernbilder, Porträts, Steuerelemente und Briefe bleiben im kanonischen Aquarell-/Buntstiftstil. Die bisherigen Aquarellszenen sind mit Quellen und Aufträgen [archiviert](../legacy/design-history/2026-11-23-watercolour-habitats/README.md).
+
+Alle Leserätsel haben dasselbe kompakte Lesefeld mit Bildantworten bis 184 px auf dem Tablet, die Zahlenkarten stehen aufsteigend und die gezählten Fische sind grösser. Die Seiten passen weiterhin ohne Scrollen auf das iPad (7956 Aufgaben- und Zustandslayouts geprüft). [Alle Änderungen und die Auswirkungen auf die Freigaben](../docs/RAETSEL-FEEDBACK-2026-11-23.md)
 
 ## Lebensräume hinter den Rätseln · 9.4.25
 

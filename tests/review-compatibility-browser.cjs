@@ -2,7 +2,8 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'/opt/codex/cua_node/lib/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const {remoteServer,installRemote}=require('./review-repository-support.cjs'),{setup}=require('../tools/puzzle-catalogue.cjs');
-const {empty}=require('../js/friends/review-repository.js'),{FK}=setup(),C=FK.puzzleCatalogue,id='friends-squirrel';
+// «Gezielt Mengen zählen» is unchanged since the 22 November habitats; the squirrel counting Rätsel changed on 23 November.
+const {empty}=require('../js/friends/review-repository.js'),{FK}=setup(),C=FK.puzzleCatalogue,id=process.env.WALDPOST_REVIEW_PUZZLE||'count',size=C.iterations(id).length;
 const ledger=process.env.WALDPOST_REVIEW_SNAPSHOT?JSON.parse(fs.readFileSync(process.env.WALDPOST_REVIEW_SNAPSHOT)):empty();
 const compatible=C.formerPuzzleRevisions(id).length>0;
 let former=C;
@@ -20,13 +21,13 @@ if(!process.env.WALDPOST_REVIEW_SNAPSHOT){
  await page.goto((process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000')+'/?screen=puzzle-review');await page.locator('.gate-task').waitFor();
  const [a,b]=(await page.locator('.gate-task').textContent()).match(/\d+/g).map(Number);await page.getByLabel('Deine Antwort',{exact:true}).fill(String(a*b));await page.locator('.gate-submit').click();
  await page.waitForFunction(()=>FK.current()==='puzzle-review'&&FK.reviewRepository.state.phase==='saved');
- const result=await page.evaluate(()=>({ready:FK.puzzleReview.ready('friends-squirrel'),progress:FK.puzzleReview.progress('friends-squirrel'),pending:FK.reviewRepository.state.pending,connected:FK.reviewRepository.state.connected}));
- assert.deepEqual(result,{ready:compatible,progress:{total:25,approved:compatible?25:0,improve:0,pending:compatible?0:25},pending:0,connected:false});assert.deepEqual(server.ledger,ledger);assert.equal(server.writes.length,0);
- await page.locator('[data-puzzle="friends-squirrel"]').click();await page.screenshot({path:'/tmp/waldpost-restored-squirrel.png'});
- await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='saved');assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-squirrel')),compatible);
+ const result=await page.evaluate(id=>({ready:FK.puzzleReview.ready(id),progress:FK.puzzleReview.progress(id),pending:FK.reviewRepository.state.pending,connected:FK.reviewRepository.state.connected}),id);
+ assert.deepEqual(result,{ready:compatible,progress:{total:size,approved:compatible?size:0,improve:0,pending:compatible?0:size},pending:0,connected:false});assert.deepEqual(server.ledger,ledger);assert.equal(server.writes.length,0);
+ await page.locator('[data-puzzle="'+id+'"]').click();await page.screenshot({path:'/tmp/waldpost-restored-'+id+'.png'});
+ await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='saved');assert.equal(await page.evaluate(id=>FK.puzzleReview.ready(id),id),compatible);
  // A later flag from an older compatible app still blocks release, and remains blocked offline.
  const next=server.ledger,key=C.iterations(id)[0].id,revision=earlierIteration(C.iterations(id)[0]);next.entries[key+'@'+revision]={key,revision,status:'improve',note:'Newer fixture rejection',at:'2099-01-01T00:00:00Z',seen:true};server.ledger=next;
- await page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-squirrel')),false);assert.equal(await page.evaluate(()=>FK.puzzleReview.status('friends-squirrel','friends-squirrel/count-0').status),'improve');
- server.offline=true;await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='error');assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-squirrel')),false);assert.equal(server.writes.length,0);assert.deepEqual(errors,[]);
+ await page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await page.evaluate(id=>FK.puzzleReview.ready(id),id),false);assert.equal(await page.evaluate(([id,key])=>FK.puzzleReview.status(id,key).status,[id,key]),'improve');
+ server.offline=true;await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='error');assert.equal(await page.evaluate(id=>FK.puzzleReview.ready(id),id),false);assert.equal(server.writes.length,0);assert.deepEqual(errors,[]);
  await context.close();console.log('PASS '+(compatible?'compatible historical approval recovery':'changed gallery artwork reopens pre-redraw approvals')+': fresh reader, no token/outbox/writes, reload, later rejection and offline cache.');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -17,7 +17,8 @@ if(!snapshot){
    ledger.entries[key+'@'+revision]={key,revision,status:'approved',note:item?'':'Ursprünglicher Kommentar.',at:'2026-11-17T20:00:00Z',seen:true};
   }
  }
- if(process.env.WALDPOST_REVIEW_REF)assert.equal(syntheticReady.length,games.length,'every pre-background release remains compatible');
+ // Rätsel changed on purpose after the habitat release: 22 November (9.4.27–9.4.32) and 23 November (9.4.33).
+ if(process.env.WALDPOST_REVIEW_REF){const changedLater=new Set(['friends-hedgehog','treasure','neighbours',...require('./review-changes-2026-11-23.cjs').puzzles]);assert.deepEqual([...syntheticReady],Array.from(games,g=>g.id).filter(id=>!changedLater.has(id)),'every unchanged pre-background Rätsel remains compatible');}
  const key='puzzle:friends-bird',revision=C.puzzleRevision('friends-bird');ledger.entries[key+'@'+revision]={key,revision,status:'approved',note:'Späterer Kommentar.',at:'2026-11-17T21:00:00Z',seen:true};
  ledger.deletedNotes=[{key:'puzzle:friends-beaver',note:'Ursprünglicher Kommentar.',at:'2026-11-17T21:00:00Z'}];
 }
@@ -64,7 +65,7 @@ const initialReady=expected?expected.filter(r=>r.ready).map(r=>r.id):syntheticRe
    for(const readerPage of [page,fresh.page]){
     assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('friends-deer')),false,'a withdrawn approval stays open');
     assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('friends-mouse')),false,'a general comment stays open');
-    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.progress('friends-mouse').approved),C.iterations('friends-mouse').length,'the general hold retains task approvals');
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.progress('friends-mouse').approved),C.iterations('friends-mouse').filter(it=>!require('./review-changes-2026-11-23.cjs').changed(it.id)).length,'the general hold retains task approvals (the four «Nuss» cards changed on 23 November)');
    }
   }
   server.offline=true;await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='error');assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false,'the flag survives offline restart');

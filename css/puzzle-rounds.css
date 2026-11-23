@@ -277,7 +277,7 @@
  .puzzle-paper:has(>.puzzle-scene>.puzzle-read-text:only-child)>.puzzle-answers>.puzzle-answer>.puzzle-picture{width:clamp(120px,24dvh,184px);height:clamp(120px,24dvh,184px)}
  /* Counted fish fill their groups instead of floating small in an empty panel. */
  .puzzle-addition .puzzle-objects{max-width:320px}
- .puzzle-addition .puzzle-objects>.puzzle-picture{width:clamp(40px,6.5vw,64px)}
+ .puzzle-addition .puzzle-objects>.puzzle-picture{width:clamp(40px,5.5vw,56px)}
  .puzzle-compare .puzzle-berry-plate .puzzle-objects{max-width:360px}
 }
 .puzzle-woods { position:relative;display:block;width:100%;aspect-ratio:1 }

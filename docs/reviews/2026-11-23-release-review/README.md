@@ -145,3 +145,31 @@ No JavaScript errors or console errors occurred in any manual session: review, g
 5. Documentation counts and retired pages (K-1, K-2), plus the small accessibility fixes (B-1, B-2).
 
 Still open for the owner and outside automation: physical iPad/Safari feel, sound comfort, speech quality, and whether the content suits real first graders.
+
+## Follow-up in 9.4.33
+
+The owner asked for all findings to be fixed and the habitat backgrounds to be replaced. The full record is in the [23 November follow-up](../../RAETSEL-FEEDBACK-2026-11-23.md).
+
+| Finding | Status in 9.4.33 |
+| --- | --- |
+| R-1 Zahlennachbarn | Still needs the owner's review in Rätsel-Prüfung. The «given left» prompt now reads «Welche Zahl kommt danach?» (C-9). |
+| R-2 Bulk approvals | Process note. The changed Rätsel must now be reviewed again anyway (see below). |
+| C-1 Guessable vowels | Fixed: wrong vowels rotate, «e» is also offered for every other vowel, and 17 new a/i/o/u words. A vowel that is offered is now correct 22–43 % of the time, where o/u used to be 100 %. |
+| C-2 Acorn called «Nuss» | Fixed: counted acorns are «Eicheln»; «Nuss» shows the drawn Baumnuss. |
+| C-3 Biber title/rule | Fixed: «Reihen ergänzen», with a clear rule. |
+| C-4 Duplicate/weak questions | Fixed: 8 Reh and 7 Dachs questions replaced with habitat, growth and season questions; the barking dog runs. |
+| C-5 Wege | Fixed: 30 authored routes; the rocks always force a detour of at least two steps. |
+| C-6 Sums to 10 | Fixed: nine ten-partner Aufgaben. |
+| C-7 Savannah animals | Kept: the owner curated these questions on 22 November. |
+| C-8 Syllables | Fixed: «Lokomotive», plus eight more three- to five-syllable words. |
+| C-9, C-10 | Fixed: neighbours prompt; number cards ascending. |
+| D-1, D-2 | Fixed: one compact reading layout with larger picture answers; larger fish. |
+| D-3 | Fixed: the map opens showing the letter's destination. |
+| D-4 | Resolved: the habitat paintings now share the den/world style. |
+| D-5, B-1, B-2 | Fixed. A latent «-rote Blume» picture name was also corrected. |
+| B-3 | Kept on purpose: screen-reader users need the picture names. |
+| T-1, T-2, T-3 | Fixed: counts, a race-free keyboard check, a clear shallow-clone message, and a CI browser job. |
+| K-1, K-2 | Fixed: counts and statements aligned; retired Rätsel pages are marked. |
+| Missed in the review | The documented historical recovery check (`WALDPOST_REVIEW_REF=61ef045…`) had failed since 9.4.27; it now names the Rätsel changed on purpose. |
+
+Approvals: 568 unchanged Aufgaben keep them through the owner-requested presentation bridge. 195 changed and 34 new Aufgaben need review in Rätsel-Prüfung before their 12 Rätsel return to children.

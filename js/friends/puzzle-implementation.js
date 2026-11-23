@@ -11,7 +11,7 @@ window.FK.puzzleImplementations = {
   "friends-badger": "4ba6fad2eb035e794826e718ea7075b60916e5169b1b747b7ee9cc7e6290f290",
   "friends-ibex": "f85cfda83d5b3b499c721ce3a201cc0df8af565d18b2ee72aa44e5640ce330cd",
   "count": "0b13f8f203775bada452c01566ad510047e5c6ca0e589276030fa0a81b90e88e",
-  "add": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
+  "add": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
   "rocket": "14809511ccd95df787ef3933412efdb020391bbe1f6464643e28bce232f1cfd6",
   "picnic": "ba573d51b4a16141120e0437d3a611d654005e9022de6af8a156dd5143520886",
   "syllable": "3c5966d4005869dd2b304daa05b43869713eca943587b96554071882e3e56df4",
@@ -371,51 +371,51 @@ window.FK.puzzleIterationImplementations = {
   "count/15-2": "0b13f8f203775bada452c01566ad510047e5c6ca0e589276030fa0a81b90e88e",
   "count/15-3": "0b13f8f203775bada452c01566ad510047e5c6ca0e589276030fa0a81b90e88e",
   "count/15-4": "0b13f8f203775bada452c01566ad510047e5c6ca0e589276030fa0a81b90e88e",
-  "add/1-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-4": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-5": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-6": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-7": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-8": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/1-9": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-4": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-5": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-6": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-7": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/2-8": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-4": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-5": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-6": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/3-7": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/4-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/4-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/4-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/4-4": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/4-5": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/4-6": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/5-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/5-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/5-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/5-4": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/5-5": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/6-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/6-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/6-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/6-4": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/7-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/7-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/7-3": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/8-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/8-2": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
-  "add/9-1": "844ce42d41f3507a4b3f69c9567a1569b15fd73bbac357a7ef3d76298dc16d7e",
+  "add/1-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-4": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-5": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-6": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-7": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-8": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/1-9": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-4": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-5": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-6": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-7": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/2-8": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-4": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-5": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-6": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/3-7": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/4-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/4-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/4-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/4-4": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/4-5": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/4-6": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/5-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/5-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/5-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/5-4": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/5-5": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/6-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/6-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/6-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/6-4": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/7-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/7-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/7-3": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/8-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/8-2": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
+  "add/9-1": "567c526be0b3317b2c809fe140ffeb9de52ce92edb9c0b662cbe6f4cd0bb1720",
   "rocket/5-1": "14809511ccd95df787ef3933412efdb020391bbe1f6464643e28bce232f1cfd6",
   "rocket/5-2": "14809511ccd95df787ef3933412efdb020391bbe1f6464643e28bce232f1cfd6",
   "rocket/5-3": "14809511ccd95df787ef3933412efdb020391bbe1f6464643e28bce232f1cfd6",
@@ -885,7 +885,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add": {
-      "current": "5b428e6aa35fb26a",
+      "current": "5672e06d47ab9a1d",
       "former": []
     },
     "rocket": {
@@ -4531,7 +4531,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-1": {
-      "current": "cd4fe8bfd2a96db5",
+      "current": "e195a5cb17c48329",
       "former": [
         "03732e4c159ba64e",
         "3484e062b56a41be",
@@ -4541,7 +4541,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-2": {
-      "current": "9612b43d56082b51",
+      "current": "7cd2556121e263cd",
       "former": [
         "ab16a63eb4b93faa",
         "5e68878c1cb9dc9a",
@@ -4551,7 +4551,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-3": {
-      "current": "1d1a7527016486f1",
+      "current": "7ee8343b74f9406d",
       "former": [
         "c04245584fa99f0a",
         "b217d5ee7d647c7a",
@@ -4561,7 +4561,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-4": {
-      "current": "6f348ec1a0411f95",
+      "current": "62c4f03da2562609",
       "former": [
         "04afb3aeee2a246e",
         "c0f07bac41fb1d5e",
@@ -4571,7 +4571,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-5": {
-      "current": "7089a5375f1f3535",
+      "current": "026675338b4ebba9",
       "former": [
         "bbde8634385eefce",
         "637c3f0abfae893e",
@@ -4581,7 +4581,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-6": {
-      "current": "f8186105012b3bd9",
+      "current": "c350ecb976bf5345",
       "former": [
         "313a9f068a51c022",
         "6a90f32c5e855f12",
@@ -4591,7 +4591,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-7": {
-      "current": "7182797f52327d79",
+      "current": "07083cc3242b49e5",
       "former": [
         "010e046893418382",
         "9c4c5b5e96e1e0f2",
@@ -4601,7 +4601,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-8": {
-      "current": "ebaa14be73cf8e8e",
+      "current": "03778dd27670b192",
       "former": [
         "05dc852f9cef7115",
         "24ac599512def325",
@@ -4611,11 +4611,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-9": {
-      "current": "0b7c9e02c3ce724e",
+      "current": "b9f380367c647a52",
       "former": []
     },
     "add/2-1": {
-      "current": "4bb1ea23029d37b1",
+      "current": "0af93bb7e475ee2d",
       "former": [
         "29d0e87ce2298bca",
         "2f07426af6ce9aba",
@@ -4625,7 +4625,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-2": {
-      "current": "2c639b5573863c11",
+      "current": "c8ff1dc92733f38d",
       "former": [
         "8d17d5eef35dc66a",
         "5ece5a1cb78450da",
@@ -4635,7 +4635,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-3": {
-      "current": "72e8f3e348521175",
+      "current": "7e4a35dfec6607e9",
       "former": [
         "dd5ffff0bb6e450e",
         "63940b762a0bf6fe",
@@ -4645,7 +4645,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-4": {
-      "current": "9323fba9e42437d5",
+      "current": "4df7f84526523c49",
       "former": [
         "47e554a66d6371ae",
         "a7c1fe2c6665051e",
@@ -4655,7 +4655,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-5": {
-      "current": "8e088f13c3bec639",
+      "current": "6b371eb723545fa5",
       "former": [
         "bd9c6804b7c20c42",
         "129bc432cc671b32",
@@ -4665,7 +4665,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-6": {
-      "current": "07a368bd046d3099",
+      "current": "0cb101e1964cff05",
       "former": [
         "054548e60cdb2ae2",
         "1618220c4ed03552",
@@ -4675,7 +4675,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-7": {
-      "current": "01b68db0bdceaeae",
+      "current": "70e5d1e41f7253b2",
       "former": [
         "765b77f16140a0f5",
         "951d7a0f53e19d85",
@@ -4685,11 +4685,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/2-8": {
-      "current": "a47451da2d3ab0ce",
+      "current": "ad9f294ee5d0b8d2",
       "former": []
     },
     "add/3-1": {
-      "current": "9063c13ff240fd31",
+      "current": "0dd215f38ff036ad",
       "former": [
         "b1c26784838db4ca",
         "e563f222654b113a",
@@ -4699,7 +4699,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/3-2": {
-      "current": "cc45bb9552400955",
+      "current": "7f1c5d81b63b01c9",
       "former": [
         "e28f2a5635a300ae",
         "682d4a8cde233b9e",
@@ -4709,7 +4709,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/3-3": {
-      "current": "8f4d4d3fd119e8f5",
+      "current": "874aac4b3514e169",
       "former": [
         "9092b9983fbdbe0e",
         "7a2ffaee6786de7e",
@@ -4719,7 +4719,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/3-4": {
-      "current": "dd1ed441a7c49419",
+      "current": "7dce89e51d58ab85",
       "former": [
         "93c155660a8c2fe2",
         "cdcd25cc5faf06d2",
@@ -4729,7 +4729,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/3-5": {
-      "current": "bcece30f6d2973b9",
+      "current": "a564afc31507c025",
       "former": [
         "773114b41ad99942",
         "8a93f2621515f7b2",
@@ -4739,7 +4739,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/3-6": {
-      "current": "8206bada98b60b4e",
+      "current": "86d44f4efa59b052",
       "former": [
         "a999ff5fe9e1e955",
         "eab103adf95d1f65",
@@ -4749,11 +4749,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/3-7": {
-      "current": "d31ea126a23ba3ce",
+      "current": "78c8f9fa70ce28d2",
       "former": []
     },
     "add/4-1": {
-      "current": "f9915933e5d42235",
+      "current": "299811cf6a65c1a9",
       "former": [
         "b323ea1cc4c5d94e",
         "ace96672d8f0873e",
@@ -4763,7 +4763,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/4-2": {
-      "current": "a42f6d1d65777715",
+      "current": "23fd20e900079489",
       "former": [
         "e28fd4063850616e",
         "eb5373dcf46d6fde",
@@ -4773,7 +4773,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/4-3": {
-      "current": "006ecd0bbd7dd479",
+      "current": "423e066f8b7404e5",
       "former": [
         "6f458168c84b1902",
         "00ada0f60be9abf2",
@@ -4783,7 +4783,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/4-4": {
-      "current": "1f6eff395280d759",
+      "current": "60882fedc1843ec5",
       "former": [
         "1dd31486bad02322",
         "aca6cfdc93a0b292",
@@ -4793,7 +4793,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/4-5": {
-      "current": "d049f498bf6d566e",
+      "current": "f9705f1ca2a7b472",
       "former": [
         "ad92dfa5634e9435",
         "9e2d3053edaa1ec5",
@@ -4803,11 +4803,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/4-6": {
-      "current": "d78324ce3b2b15ce",
+      "current": "d11d01b24be693d2",
       "former": []
     },
     "add/5-1": {
-      "current": "f24c8e6f3cfc29b5",
+      "current": "7ecd385bad71c729",
       "former": [
         "0aeee83c7fee624e",
         "002e0dda1fbcfdbe",
@@ -4817,7 +4817,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/5-2": {
-      "current": "c21c3245f506ae59",
+      "current": "dc48087982e3e0c5",
       "former": [
         "6452a88eea6034a2",
         "cf07c7645260d192",
@@ -4827,7 +4827,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/5-3": {
-      "current": "4ccf443fba194bf9",
+      "current": "b29b7363bc447b65",
       "former": [
         "415905c0bb0f5402",
         "3559ffaee8ca3172",
@@ -4837,7 +4837,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/5-4": {
-      "current": "9577e40e6376720e",
+      "current": "b665b38246b0d012",
       "former": [
         "3f817a2fdf684e95",
         "e9e8ce253f5952a5",
@@ -4847,11 +4847,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/5-5": {
-      "current": "bb8359ba97bbb74e",
+      "current": "66ea2f2ea8773552",
       "former": []
     },
     "add/6-1": {
-      "current": "4a18c0b3a19bbab9",
+      "current": "d77c269745776b25",
       "former": [
         "072062ac17d080c2",
         "9ed601d22c758fb2",
@@ -4861,7 +4861,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/6-2": {
-      "current": "420fc9cd2c3b0119",
+      "current": "adc282316e7f2e85",
       "former": [
         "51dc28c65ec37b62",
         "5d9a353c22ea05d2",
@@ -4871,7 +4871,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/6-3": {
-      "current": "c257a85874b36d2e",
+      "current": "87caac1c500e9332",
       "former": [
         "ade0c19984586175",
         "092cd0bf76f95e05",
@@ -4881,11 +4881,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/6-4": {
-      "current": "c719bd920127f5ce",
+      "current": "221af3a611e373d2",
       "former": []
     },
     "add/7-1": {
-      "current": "9ea58defaaf5c239",
+      "current": "fa8b2563d73b71a5",
       "former": [
         "9eaa9794eef369c2",
         "046de9cad0b0c632",
@@ -4895,7 +4895,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/7-2": {
-      "current": "dd4445c26819cbce",
+      "current": "93a5cfc64374f1d2",
       "former": [
         "ef9f8dff0cf9a9d5",
         "d849765d5c8ddde5",
@@ -4905,11 +4905,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/7-3": {
-      "current": "176cafd6262b03ce",
+      "current": "ef4d1aaaecdec8d2",
       "former": []
     },
     "add/8-1": {
-      "current": "e81a5750bd8773ee",
+      "current": "e101d8d4907194f2",
       "former": [
         "455ee3b53314b5b5",
         "afcd640bd36ebe45",
@@ -4919,11 +4919,11 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/8-2": {
-      "current": "a257524ed49214ce",
+      "current": "0435c4a2b27f94d2",
       "former": []
     },
     "add/9-1": {
-      "current": "18c470523122b64e",
+      "current": "a40312d60f103652",
       "former": []
     },
     "rocket/5-1": {

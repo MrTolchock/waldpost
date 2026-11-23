@@ -10,7 +10,7 @@ Die Prüfung enthält alle noch offenen Aufgaben. Ihre Nummer zeigt die Position
 
 Seit den [Reviews vom 19. November](RAETSEL-FEEDBACK-2026-11-19.md) gehören die früheren Waldmuster zum Steinbock und die ehemaligen Naturhinweise als Fragen zum Tierrätsel. Mengenreihen enthalten zwei oder drei verschiedene Gegenstände. Die Silben zum Zusammensetzen erscheinen gross. Die Gedächtnisübung verwendet Häkchen und Auge, Zahlenfelder haben nach dem Einsetzen einen durchgezogenen Rand, und die Waldpost führt zu einem gelben Schweizer Briefkasten.
 
-Nach den [Reviews vom 22. November](RAETSEL-FEEDBACK-2026-11-22.md) ist «Zeitliche Abfolgen ordnen» entfernt, das Tierrätsel hat 44 klarere Fragen, und bei Zahlennachbarn sowie der Gedächtnisübung bleibt die Anordnung beim Spielen stehen.
+Nach der [Release-Prüfung vom 23. November](RAETSEL-FEEDBACK-2026-11-23.md) zählt das Eichhörnchen Eicheln, der Biber ergänzt Reihen, die Felsen erzwingen beim Reh immer einen Umweg und die Vokalaufgaben verraten ihre Lösung nicht mehr. Nach den [Reviews vom 22. November](RAETSEL-FEEDBACK-2026-11-22.md) ist «Zeitliche Abfolgen ordnen» entfernt, das Tierrätsel hat 44 klarere Fragen, und bei Zahlennachbarn sowie der Gedächtnisübung bleibt die Anordnung beim Spielen stehen.
 
 Die Sammlung bietet Übung zu den genannten Kompetenzen des Zürcher Zyklus 1; sie bescheinigt keine vollständige Kompetenz. Gelesene Fragen setzen eingeführte Buchstaben voraus. Die Gedächtnisübung hat keinen erfundenen Lehrplancode.
 
