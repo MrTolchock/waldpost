@@ -61,7 +61,6 @@ setInterval(tick,100);
 function close({restoreFocus=true}={}){
   const returnLabel=restoreFocus&&['map','letter'].includes(panel)?'Bildkarte':null;backdropTap=null;
   overlay.classList.remove('ff-postcard-overlay','ff-session-end-overlay');
-  FK.forestVoice.cancel();
   tick();if(panel==='puzzle'&&host){state.record('task_leave',{host,activeMilliseconds:activeMs});if(activeMs)state.duration(host,activeMs);activeMs=0;}
   clearTimeout(feedbackTimer);feedbackTimer=null;panel=null;example=false;overlay.hidden=true;overlay.replaceChildren();world.pause(false);nav.hidden=false;renderHotspots();caption.hidden=true;syncMail();
   // Let the touch-generated click finish before restoring focus to the launcher.
@@ -188,7 +187,7 @@ FK.screen('friends',{
     root.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel){e.preventDefault();e.stopPropagation();if(panel==='session-end')return;if(panel==='animation')endSequence(true);else close();}if(e.key==='Tab'&&panel){const list=[...overlay.querySelectorAll('button:not(:disabled),a,input')].filter(el=>!el.hidden);const first=list[0],last=list.at(-1);if(e.shiftKey&&document.activeElement===first){last?.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===last){first?.focus();e.preventDefault();}}});
     if(state.development){const dock=h('div',{class:'ff-dev-dock'},Object.entries(C.hosts).map(([id,data])=>button(data.name+' direkt öffnen',id,()=>act(id))));root.append(dock);}
   },
-  enter(){if(state?.mail().phase==='finished'){if(!finalSleep){world.setArea('den');world.sequence('sleep',{hold:true});finalSleep=true;}showSessionEnd();return;}world?.pause(!!panel);if(state?.mail().phase==='to-mailman')world?.summonMailman();renderHotspots();syncMail();},leave(){world?.pause(true);FK.forestVoice.cancel();}
+  enter(){if(state?.mail().phase==='finished'){if(!finalSleep){world.setArea('den');world.sequence('sleep',{hold:true});finalSleep=true;}showSessionEnd();return;}world?.pause(!!panel);if(state?.mail().phase==='to-mailman')world?.summonMailman();renderHotspots();syncMail();},leave(){world?.pause(true);}
 });
 // Shared book callbacks return to the paused world before opening a round/saved sheet.
 FK.friendsPuzzleCompleted=id=>{

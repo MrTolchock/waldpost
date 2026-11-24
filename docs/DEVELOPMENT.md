@@ -36,7 +36,7 @@ node tests/habitat-backgrounds-browser.cjs   # all twelve host scenes in play/ga
 node tests/drawn-map-browser.cjs   # compact map, no header icons, outside tap/Escape/focus, pan safety; all 13 named pins and real routes at phone/tablet/landscape
 node tests/swamp-navigation-browser.cjs   # real Steg journeys in both directions, Frosch arrival, steering collision and no off-deck frames at phone/tablet sizes
 node tests/gallery-images-browser.cjs   # actual PNG exports, atlas match, transparency and framing for repaired pictures, plus phone layout
-node tests/audio-browser.cjs   # sound starts on a tap, den sounds (paws, letter flap, door), recovery after a suspended/closed context and stuck speech ducking
+node tests/audio-browser.cjs   # sound starts on a tap, den sounds (paws, letter flap, door), recovery after a suspended/closed context
 node tests/puzzle-sound-browser.cjs   # right answers still advance and game sound returns after iOS closes, stalls or never resumes the context, or Web Audio throws
 node tests/world-streaming-browser.cjs   # walking the forest: tiles dissolve instead of popping, no holes or world edge on screen, trees on screen have their shadows, tile budget
 ```

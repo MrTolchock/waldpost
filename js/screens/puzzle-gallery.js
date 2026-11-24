@@ -7,7 +7,6 @@
   const FK=window.FK,h=FK.h,C=FK.puzzleCatalogue,V=FK.puzzleReview;
   let body,friend='all';
   function draw(){
-    FK.forestVoice.cancel();
     const games=FK.friendsLibrary.catalogue().sort((a,b)=>a.title.localeCompare(b.title,'de-CH')),open=games.filter(g=>V.ready(g.id)),hosts=Object.keys(window.FriendsContent.hosts);
     const tabs=h('nav',{class:'gallery-friends','aria-label':'Nach Freund filtern'});
     const tab=(id,label,pic,count)=>{const b=h('button',{type:'button',class:'gallery-friend','aria-pressed':String(friend===id),'aria-label':label+' ('+count+')',onclick:()=>{friend=id;draw();}},pic,h('small',{text:label}),h('span',{class:'gallery-count',text:String(count)}));if(!count&&id!=='all')b.disabled=true;return b;};
@@ -25,7 +24,7 @@
   FK.screen('puzzle-gallery',{
     build(root){root.classList.add('ff-settings-screen');body=h('div',{class:'ff-settings-body review-body'});root.append(FK.ui.topbar({title:"Rätsel-Galerie",stars:false,onBack:()=>FK.go('settings',{},{isBack:true})}),h('div',{class:'scroll'},body));},
     enter(){if(!V.authorized){FK.go('settings');return;}draw();},
-    leave(){FK.forestVoice.cancel();}
+    leave(){}
   });
   FK.on?.('puzzle-review-change',()=>{if(FK.current?.()==='puzzle-gallery')draw();});
 })();

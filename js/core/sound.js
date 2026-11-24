@@ -11,14 +11,13 @@
   let master = null;
   let noise = null;
   let scribble = null;
-  let speaking = false;
   let lastTwinkle = 0;
 
   const enabled = () => !FK.settings || FK.settings.get('sound') !== false;
 
   function mixLevel() {
     if (!enabled() || document.hidden) return 0;
-    return speaking ? .22 : .66;
+    return .66;
   }
 
   function updateMix() {
@@ -259,7 +258,6 @@
       if (!e.value) FK.sound.scribbleStop();
       updateMix();
     });
-    FK.on('speech', e => { speaking = e.active; updateMix(); });
   }
   document.addEventListener('visibilitychange', () => {
     lastClock = -1;

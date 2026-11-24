@@ -13,7 +13,7 @@ Every active puzzle has an explicit fixed difficulty boundary in the [catalogue]
 
 The reviewed removals of Nüsse verdoppeln, Waldwerkstatt and Waldumfrage leave 31 active puzzles. Drawing and colouring screens are retired; historical artwork and saves remain intact.
 
-Ordinary game rules should be understood through pictures, reversible manipulation, an optional spoken rule explanation. Reading tasks intentionally require reading. Waldwörter ergänzen practises written letters in pictured words; the picture alone does not remove that reading requirement. Speech depends on installed German device voices, including offline availability. No recorded narration is bundled.
+Ordinary game rules should be understood through pictures and reversible manipulation; nothing is read aloud. Reading tasks intentionally require reading. Waldwörter ergänzen practises written letters in pictured words; the picture alone does not remove that reading requirement. Speech depends on installed German device voices, including offline availability. No recorded narration is bundled.
 
 [The puzzle blueprint](../design/PUZZLE-BLUEPRINT.md) describes current interactions and review requirements. [Research records](RESEARCH.md) preserve the original source work; their old feature inventories do not define the current app.
 

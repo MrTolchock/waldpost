@@ -106,3 +106,14 @@ Viele Bildantworten hatten für Bildschirmleser nur ihre interne englische Kennu
 Die neue Prüfung `tests/picture-names.test.cjs` verlangt für jedes Antwort- und Aufgabenbild eines Rätsels einen deutschen Namen.
 
 Freigaben: Nur die Namen für Bildschirmleser ändern sich. Fragen, Antworten, Regeln, Schwierigkeit, Bedienung und Bilder sind gleich. Wie vom Eigentümer gewünscht, verbindet eine Brücke ab 9.4.35 (`e4f4e7e`) genau diese Darstellungspaare. Keine Aufgabe öffnet sich neu: Mit den veröffentlichten Prüfungen hat jedes Rätsel denselben Status wie vorher.
+
+## Nachtrag: Abend-Prüfung, Vorlesen und Biber (9.4.40)
+
+| Hinweis | Umsetzung |
+| --- | --- |
+| Zahlennachbarn: «Success screen passt nicht zu den restlichen Rätseln, grüner Rahmen um richtige Reihenfolge» | Wie bei allen anderen Rätseln werden nur die Karten grün, die das Kind gelegt hat. Das grüne Band über die ganze Reihe und das Schild «Das passt!» entfallen. Die vorgegebene Zahl bleibt unverändert. |
+| Mengen zählen: «Eicheln in den ersten 20 Aufgaben nicht gleich gross wie bei den Viererreihen, wenn möglich grösser» | Alle Eicheln haben jetzt dieselbe Zellgrösse, ob in Fünfer- oder Viererreihen. Auf dem iPad (1080 × 810) misst eine Zelle 93 px statt bisher 64 px (Fünferreihen) bzw. 80 px (Viererreihen). Die Grösse richtet sich nach der Bildschirmhöhe, damit 20 Eicheln ohne Scrollen Platz haben. |
+| Vorlesefunktion «funktioniert überhaupt nicht, Sprache ist Nonsens» | Im ganzen Spiel gibt es keine Sprachausgabe mehr. Die Lautsprecher-Knöpfe in den Rätseln, in der Schreibspur und in der Rätsel-Prüfung sind entfernt, ebenso die Aufnahmen und die Gerätestimme. Die Rätsel-Prüfung zeigt die Spielerklärung als Text. Die alten Dateien liegen nur noch als Referenz unter `legacy/retired-narration/`. |
+| Weg beim Biber: «oft aussen herum statt hindurch, sieht begehbar aus, ist es aber nicht immer» | Die Baumstümpfe und gefällten Stämme standen so dicht, dass die Wegsuche sie als Wand behandelte. Vom Bau zum Biber waren es 48 m statt 25 m. Das Holz liegt jetzt südwestlich von Bibers Platz, jeder Stamm an seinem Stumpf und Richtung Teich, mindestens 4 m von den anderen entfernt. Jede Lücke, die offen aussieht, ist begehbar. Der Stapel Stangen ist jetzt fest und steht neben dem Biber. Die neue Prüfung `tests/beaver-clearing.test.cjs` misst die Umwege rund um die Lichtung. |
+
+Freigaben: Wie bei den früheren Grössen- und Rückmeldungskorrekturen bleiben alle Aufgaben freigegeben, weil Fragen, Antworten, Regeln, Schwierigkeit, Bedienung und Bilder gleich sind. Die beiden Kommentare auf Rätselebene (Zahlennachbarn, Mengen zählen) bleiben offen, bis du die Korrektur in der Rätsel-Prüfung bestätigst.

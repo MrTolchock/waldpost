@@ -1,48 +1,10 @@
 /* Farbtupf – Service Worker: keeps the whole app on the device so it runs without internet. */
-const CACHE = 'farbtupf-v9.4.39-waldpost';
+const CACHE = 'farbtupf-v9.4.40-waldpost';
 const SCOPE=self.registration.scope;
 const INDEX=new URL('index.html',SCOPE).href;
 const ACTIVE_MARKER=new URL('.farbtupf-active-cache',SCOPE).href;
 const ASSETS = [
   './assets/audio/credits.html',
-  './assets/audio/narration/add.mp3',
-  './assets/audio/narration/clips.js',
-  './assets/audio/narration/compare.mp3',
-  './assets/audio/narration/colour-words.mp3',
-  './assets/audio/narration/shape-match.mp3',
-  './assets/audio/narration/count.mp3',
-  './assets/audio/narration/friends-badger.mp3',
-  './assets/audio/narration/friends-beaver.mp3',
-  './assets/audio/narration/friends-bird.mp3',
-  './assets/audio/narration/friends-hedgehog.mp3',
-  './assets/audio/narration/friends-ibex.mp3',
-  './assets/audio/narration/friends-mouse.mp3',
-  './assets/audio/narration/friends-owl.mp3',
-  './assets/audio/narration/friends-squirrel.mp3',
-  './assets/audio/narration/letter-badger.mp3',
-  './assets/audio/narration/letter-beaver.mp3',
-  './assets/audio/narration/letter-bird.mp3',
-  './assets/audio/narration/letter-deer.mp3',
-  './assets/audio/narration/letter-fish.mp3',
-  './assets/audio/narration/letter-frog.mp3',
-  './assets/audio/narration/letter-hedgehog.mp3',
-  './assets/audio/narration/letter-ibex.mp3',
-  './assets/audio/narration/letter-kingfisher.mp3',
-  './assets/audio/narration/letter-mouse.mp3',
-  './assets/audio/narration/letter-owl.mp3',
-  './assets/audio/narration/letter-squirrel.mp3',
-  './assets/audio/narration/mirror.mp3',
-  './assets/audio/narration/nature.mp3',
-  './assets/audio/narration/neighbours.mp3',
-  './assets/audio/narration/pattern.mp3',
-  './assets/audio/narration/picnic.mp3',
-  './assets/audio/narration/read-puzzle.mp3',
-  './assets/audio/narration/robot.mp3',
-  './assets/audio/narration/rocket.mp3',
-  './assets/audio/narration/sequence.mp3',
-  './assets/audio/narration/syllable.mp3',
-  './assets/audio/narration/treasure.mp3',
-  './assets/audio/narration/vowels.mp3',
   './assets/audio/blackbird.mp3',
   './assets/audio/blackcap.mp3',
   './assets/audio/blueTit.mp3',
@@ -234,7 +196,6 @@ const ASSETS = [
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',
   './icons/apple-touch-icon.png',
-  './js/core/speech.js',
   './js/ui/gestures.js',
   './js/scene/materials.js',
   './assets/forest-friends/character-portraits.webp',
@@ -307,7 +268,7 @@ self.addEventListener('activate', (event) => {
 });
 
 // Safari asks for byte ranges even for short audio files. Supply them from the
-// complete installed copy so a narration clip can start without a connection.
+// complete installed copy so a recording can start without a connection.
 async function audioRange(hit, range) {
   const match = /^bytes=(\d*)-(\d*)$/.exec(range);
   if (!match || (!match[1] && !match[2])) return hit;

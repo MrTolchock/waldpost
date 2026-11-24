@@ -24,7 +24,7 @@ The active game follows [letter sessions](LETTER-SESSIONS.md), [visual style](..
 | `js/screens/puzzle.js`, `trace.js` | Shared puzzle page and writing stroke engine |
 | `js/friends/puzzle-review.js`, `js/screens/puzzle-review.js` | Individual editorial decisions, previews, revision gate and backup |
 | `js/friends/settings.js` | Adult gate, letter count (slider 1–10), gallery, sounds, play-log export and updates. Children always read upper and lower case |
-| `js/scene/materials.js`, `js/core/speech.js`, `js/ui/gestures.js` | Current shared scene, requested speech and touch utilities |
+| `js/scene/materials.js`, `js/ui/gestures.js` | Current shared scene and touch utilities |
 
 The catalogue lists all 31 [puzzles and competence assignments](PUZZLE-CATALOGUE.md). An interrupted puzzle resumes before the host rotates. Correct answers advance automatically; only completing all five consumes a letter. Non-invited friends, direct routes and the mailman cannot grant extra puzzles; a non-invited friend shows a small trick and points the way to the friend on the letter (`TRICKS` in `characters3d.js`, `visit` in `forest3d.js`).
 
@@ -34,7 +34,7 @@ The [local gameplay log](PLAY-LOG.md) records child iterations, selected answers
 
 Review decisions are shared in GitHub’s `puzzle-review-data` branch, with a separate local cache and offline outbox. Do not ship approvals, reset storage or silently carry an old approval to a changed revision. Only confirmed exact-revision GitHub approvals enter child play. Export/import is revision checked. See [review storage](REVIEW-STORAGE.md). Tests use isolated fixtures; the owner still inspects every real iteration before children use it.
 
-The world supports requested rule speech, quiet puzzle-button/correct/retry sounds and parent sound preferences. Menus are silent. There is no countdown or automatic answer narration. Updates preserve saved data and defer reload during active puzzles and dialogs. See [Development](DEVELOPMENT.md) for validation and publishing.
+The world has no read-aloud. It supports quiet puzzle-button/correct/retry sounds and parent sound preferences. Menus are silent. There is no countdown or automatic answer narration. Updates preserve saved data and defer reload during active puzzles and dialogs. See [Development](DEVELOPMENT.md) for validation and publishing.
 
 The friends who live on the ground (Eichhörnchen, Biber, Igel, Dachs, and the Reh a little further) stroll a few slow steps round their home spot with pauses, keep off trails and crossings, stand and turn to Fuchs when he comes close (a brief greeting hop, then they look at him), and stay put with reduced motion. The squirrel bounds in short dashes with both hind legs together, glances round, flicks its tail and nibbles; the deer walks smoothly, grazes now and then with flicking ears and lifts its head when Fuchs comes (`MANNERS` in `characters3d.js`); their map pin follows them. Trees between the camera and Fuchs turn translucent in a narrow, soft-edged column (`js/friends/world/textures.js`).
 

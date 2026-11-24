@@ -162,11 +162,14 @@ SOLIDS.push([CAVE.x - 2.95, CAVE.z - CAVE.open + .25, .75], [CAVE.x + 2.95, CAVE
 SOLIDS.push(...CAVE.crystals.map(([u, v, r]) => [CAVE.x + u, CAVE.z - v, r * .8]), ...CAVE.mites.map(([u, v]) => [CAVE.x + u, CAVE.z - v, .3]), ...CAVE.columns.map(([u, v, r]) => [CAVE.x + u, CAVE.z - v, r + .15]), [CAVE.x + CAVE.pool[0], CAVE.z - CAVE.pool[1], CAVE.pool[2] * .9]);
 
 /* What Biber felled for his dam: gnawed stumps [x, z, radius] and trunks lying beside some of them
-   [x, z, radius, yaw, length] (colliders; built with the pond site). */
-export const STUMPS = [[20.6, -19, .3], [18.8, -16.2, .24], [20.9, -22.4, .34], [29.6, -25.2, .26], [16.6, -22.4, .3], [19.6, -13.9, .22], [16.2, -17.6, .28], [21, -25.6, .26]];
-export const FELLED = [[18.6, -19.92, .2, -2, 3], [16.98, -15.69, .16, -1.3, 2.4], [19.86, -24.12, .18, -2.6, 2.6]];
-/* His stack of cut poles [x, z, yaw]. */
-export const POLES = [20.8, -16.9, .9];
+   [x, z, radius, yaw, length] (colliders; built with the pond site). Each trunk lies against its own stump and
+   points towards the pond. The pieces stand at least 4 m apart, south-west of his place and off the trails, so
+   every gap that looks open is open on the 1 m path grid and Fuchs walks through the clearing, not around it
+   (`node --test tests/beaver-clearing.test.cjs`). */
+export const STUMPS = [[14.6, -20.8, .3], [20.4, -24.8, .26], [13.2, -28.2, .28], [22.6, -30.2, .24], [17.2, -31.6, .22], [29.6, -25.2, .26]];
+export const FELLED = [[16.7, -20.6, .2, 1.62, 3], [15, -28, .16, 1.5, 2.4], [22.4, -24.7, .18, 1.75, 2.6]];
+/* His stack of cut poles [x, z, yaw], solid like the rest. */
+export const POLES = [22.8, -20.6, .4];
 
 /* The badger's sett: the mound's centre and the way its main entrance faces [x, z, yaw]. Its bank is part of the ground
    (terrain.js `sett`); its heaps lie on the dug earth in front, [forward, across] from the centre (sett.js). */

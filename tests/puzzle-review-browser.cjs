@@ -18,18 +18,16 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  await page.waitForFunction(()=>FK.current()==='puzzle-review');await page.evaluate(()=>FK.reviewRepository.connect('test-review-token'));assert.equal(await page.locator('.review-puzzle').count(),22);await page.evaluate(()=>{window.menuSounds={tick:0,open:0};for(const name of ['tick','open']){const fn=FK.sound[name];FK.sound[name]=(...args)=>{menuSounds[name]++;return fn(...args);};}});
  assert.equal(await page.locator('.review-puzzle').evaluateAll(nodes=>nodes.some(n=>n.scrollWidth>n.clientWidth+2)),false,'review card contents fit');
  await page.screenshot({path:shots+'/review-catalogue-tablet.png'});
- // One shared spoken rule is tested on each puzzle overview, never per iteration.
- await page.evaluate(()=>{window.reviewSpeechRequests=[];FK.on('speech',event=>{if(event.state==='playing')reviewSpeechRequests.push(event.text);});});
+ // Each puzzle overview shows its rule as text; nothing is read aloud.
  for(const g of entries){
   if(await page.locator('.screen:not([hidden]) .review-iterations').count())await page.locator('.screen:not([hidden]) .btn-back').click();
   await page.locator('[data-puzzle="'+g.id+'"]').click();
   assert.equal(await page.getByLabel('Prüferin oder Prüfer',{exact:true}).count(),0);
   assert.equal(await page.locator('.review-decision input[type="checkbox"],.review-decision fieldset').count(),0);
-  await page.getByRole('button',{name:'Spielerklärung anhören',exact:true}).click();
-  await page.waitForFunction(()=>document.querySelector('.review-speech-status')?.textContent==='Spielerklärung wird vorgelesen.');
-  assert.equal(await page.evaluate(()=>reviewSpeechRequests.at(-1)),await page.evaluate(id=>FK.puzzleCatalogue.puzzle(id).instruction,g.id),g.id+' spoken rule');
+  assert.equal(await page.locator('.screen:not([hidden]) .review-instruction p').textContent(),await page.evaluate(id=>FK.puzzleCatalogue.puzzle(id).instruction,g.id),g.id+' written rule');
+  assert.equal(await page.getByRole('button',{name:'Spielerklärung anhören',exact:true}).count(),0,g.id+' has no read-aloud');
  }
- assert.equal(await page.evaluate(()=>reviewSpeechRequests.length),22);console.log('PASS one spoken rule on each of 22 riddle overviews');assert.deepEqual(await page.evaluate(()=>menuSounds),{tick:0,open:0},'menu navigation and speech controls do not click');
+ console.log('PASS written rule and no read-aloud on each of 22 riddle overviews');assert.deepEqual(await page.evaluate(()=>menuSounds),{tick:0,open:0},'menu navigation does not click');
 
  const active=()=>page.locator('.screen:not([hidden])');
  const preview=async(id,iteration)=>page.evaluate(({id,iteration})=>FK.puzzleReview.preview(id,iteration),{id,iteration});
