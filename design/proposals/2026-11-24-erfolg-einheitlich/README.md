@@ -1,4 +1,4 @@
-# Vorschlag: ein Erfolgsbild für alle Rätsel (24. November 2026)
+# Vorschlag: ein Erfolgsbild für alle Rätsel und die Kartenform der Zahlennachbarn (24. November 2026)
 
 Status: **Entwurf, wartet auf Freigabe.** Das Spiel lädt `proposal.css` nicht. Nur die Aufnahmen spielen es ein (`RAETSEL_CSS=…/proposal.css`, Werkzeuge in [tools/raetsel-ansichten](../../../tools/raetsel-ansichten/README.md)).
 
@@ -29,4 +29,8 @@ Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwor
 | Schritte im Raum planen | das Zielfeld mit dem Reh |
 | alle anderen | die gewählte Antwortkachel (unverändert) |
 
-Nach der Freigabe kommt die Regel in den Abschnitt «Erfolg» von [design/RAETSEL-LAYOUT.md](../../RAETSEL-LAYOUT.md) und in `css/puzzle-rounds.css`.
+## Zahlennachbarn: Kartenform
+
+Der Besitzer wünschte, dass die Karten in der Zahlenreihe dieselbe Form haben wie die Antwortkacheln. Im Spiel 9.4.41 sind die Karten in der Reihe 76 × 76 px (Handy 52 × 62 px), die Antwortkacheln 112 × 70 px (Handy 56 × 56 px). Vorschlag: Reihe und Antworten haben genau dieselbe Kachel, auf dem Tablet 112 × 70 px und auf dem Handy 64 × 62 px, leer wie gefüllt (feste Aussengrösse, damit beim Legen nichts springt).
+
+Nach der Freigabe kommt die Regel in die Abschnitte «Erfolg» und «Kästchen» von [design/RAETSEL-LAYOUT.md](../../RAETSEL-LAYOUT.md) und in `css/puzzle-rounds.css`.

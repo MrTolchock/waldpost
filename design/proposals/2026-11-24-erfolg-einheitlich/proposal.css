@@ -9,3 +9,10 @@ body .screen-puzzle .puzzle-scene :is(.puzzle-syllable-slots.is-correct>.puzzle-
 /* Reh: am Ziel wird nur das Feld mit dem Reh grün, nicht das ganze Wegraster */
 body .screen-puzzle .puzzle-scene .puzzle-route.is-correct{background:transparent !important;border-color:transparent !important;box-shadow:none !important}
 body .screen-puzzle .puzzle-scene .puzzle-route.is-correct>.puzzle-route-cell.post{background:var(--pv-ok-bg) !important;border:2px solid var(--pv-ok-line) !important;box-shadow:var(--pv-ok-ring) !important}
+
+/* Zahlennachbarn: die Karten in der Reihe haben genau die Form der Antwortkacheln
+   (Tablet 112 × 70, Handy 64 × 62), leer wie gefüllt, damit beim Legen nichts springt. */
+body .screen-puzzle[data-game=neighbours]{--pv-num-w:112px;--pv-num-h:70px}
+@media(max-width:600px){body .screen-puzzle[data-game=neighbours]{--pv-num-w:64px;--pv-num-h:62px}}
+body .screen-puzzle[data-game=neighbours] :is(.puzzle-neighbours .puzzle-number-card,.puzzle-answers .puzzle-neighbour-tile){
+ box-sizing:border-box;width:var(--pv-num-w) !important;min-width:var(--pv-num-w) !important;max-width:var(--pv-num-w) !important;height:var(--pv-num-h) !important;min-height:var(--pv-num-h) !important;padding:0 !important;flex:none !important}
