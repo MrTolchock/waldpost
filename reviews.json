@@ -28749,6 +28749,15 @@
       "at": "2026-11-24T06:53:05.320Z",
       "seen": true,
       "operation": "000d449b-616d-4d45-a217-570b519818bd"
+    },
+    "puzzle:neighbours@13fc2d6ec27f0ad2": {
+      "key": "puzzle:neighbours",
+      "revision": "13fc2d6ec27f0ad2",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T06:53:08.470Z",
+      "seen": true,
+      "operation": "e4642c05-bb2f-4eb1-b37b-4192847dd56d"
     }
   },
   "history": [
