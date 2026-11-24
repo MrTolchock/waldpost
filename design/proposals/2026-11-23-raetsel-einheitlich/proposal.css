@@ -120,3 +120,17 @@ body .screen-puzzle .puzzle-picnic-place{padding:4px 6px !important}
 body .screen-puzzle .puzzle-picnic-berries{min-height:0 !important}
 /* Zahlennachbarn: die gelöste Reihe wird nur um die Zahlen grün, nicht über die ganze Rahmenbreite */
 body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-neighbours{width:auto !important;align-self:center;padding:8px 12px;border-radius:14px}
+
+/* ---- Runde 4 (24.11.) ---- */
+/* Mengen zählen: weniger als eine volle Reihe steht in der Mitte, waagrecht und senkrecht; volle Reihen bleiben im Fünferraster */
+body .screen-puzzle .puzzle-paper>.puzzle-scene>:is(.puzzle-nuts,.puzzle-meadow){margin:auto !important}
+body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow):not(:has(>:nth-child(5))){display:flex !important;flex-wrap:wrap;justify-content:center;align-items:center;width:100% !important}
+body .screen-puzzle .puzzle-empty-basket{width:auto !important;height:auto !important;display:grid;place-items:center}
+
+/* Erfolg überall gleich: grüne Markierung am Gelösten und Konfetti, kein Text wie «Das passt!» */
+body .screen-puzzle .puzzle-group-result{display:none !important}
+
+/* Spiegel flach: eine Fläche mit einer Linie, ohne Verlauf, Glanz oder Schatten */
+body .screen-puzzle .puzzle-mirror-line{background:#d3e1e3 !important;box-shadow:none !important;border:1px solid #9fb4b8;border-radius:6px !important}
+/* Bilder in Kästchen: ausdrücklich Kästchengrösse minus Rand (100 % ergibt in Raster-Knöpfen 0) */
+body .screen-puzzle :is(.puzzle-pattern-cell,.puzzle-treasures>span,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell)>.puzzle-picture{width:calc(var(--pv-cell) - 10px) !important;height:calc(var(--pv-cell) - 10px) !important}

@@ -26,17 +26,37 @@ Vergleich Heute / Vorschlag für alle 22 Rätsel auf Tablet und Handy: Artifact 
 | Mindesthöhe des Rahmens | 208 px | 160 px |
 | Mengen verteilen: Bildgrösse | 60 px | 52 px |
 
-Bilder stehen immer über ihrem Wort, im Rahmen wie bei den Antworten (zum Beispiel bei «Reime erkennen»).
+Bilder in Kästchen haben ausdrücklich die Kästchengrösse minus 10 px, weil 100 % in Raster-Knöpfen (z. B. Spiegelbild) die Breite 0 ergibt. Bilder stehen immer über ihrem Wort, im Rahmen wie bei den Antworten (zum Beispiel bei «Reime erkennen»).
 
 ### Leere Felder
 
 Ein leeres Feld ist überall gleich gestaltet: Hintergrund `#fffaf0`, 2 px gestrichelte Linie `#b39a70`, Rundung 14 px und ein «?» in Schriftgrösse 2. Es hat keinen Unterstrich und keinen Bogen. Das gilt für fehlende Muster- und Reihenteile, leere Fliegenplätze, Silbenfelder, Zahlennachbarn und die leeren Felder im Spiegelbild. Ist ein Feld gefüllt, bekommt es die normale Kästchenlinie. Ausnahme: Die Buchstabenlücke bei «Einen Vokal ergänzen» bleibt ein Teil des Wortes, so wie sie heute ist.
 
+### Erfolg
+
+Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: grüne Markierung am Gelösten (Antwort, Reihe, Plätze) und Konfetti. Es gibt keinen zusätzlichen Text wie «Das passt!». Bei «Mengen verteilen» und «Zahlennachbarn bestimmen» fällt dieser Text weg.
+
+### Wenige Bilder
+
+Gibt es weniger Bilder als eine volle Reihe, zum Beispiel eine einzige Eichel oder den leeren Korb, stehen sie waagrecht und senkrecht in der Mitte des Rahmens. Volle Reihen bleiben im Fünferraster, damit das Zählen in Fünfern bleibt.
+
+### Texte
+
+| Wo | Heute | Vorschlag |
+|---|---|---|
+| Titel | Tiermerkmale erkennen und Fragen lesen | Tiermerkmale erkennen |
+| Titel | Gezielt Mengen zählen | Mengen gezielt zählen |
+| Frage, Reihen ergänzen | Welcher Waldgegenstand fehlt? | Welcher Gegenstand fehlt? |
+| Frage, Muster fortsetzen | Welches Bild fehlt im Bergmuster? | Welches Bild fehlt im Muster? |
+| Frage, Mengen gezielt zählen | Wie viele rote Marienkäfer sind hier? | Wie viele Marienkäfer sind hier? |
+
+Die Titel stehen in `js/friends/puzzle-catalogue.js` und `js/friends/library.js`, die Fragen im Katalog, in `js/friends/puzzle-rounds.js` und in `js/friends/content.js`. Neue Titel behalten die Freigaben. Geänderte Fragen öffnen die Prüfung der betroffenen Aufgaben neu. Für die Aufnahme ersetzt `capture/harness.cjs` die Fragen nur im Browser.
+
 ### Einzelne Rätsel
 
 - **Schritte im Raum planen:** Der Wald bleibt das gemalte Bild mit drei Bäumen in einem Feld. Start und Ziel bleiben markiert.
-- **Zahlennachbarn:** «Das passt!» erscheint unten im Rahmen und reserviert vorher keinen Platz. So steht die Zahlenreihe senkrecht in der Mitte. Gelöst wird nur die Zahlenreihe grün hinterlegt, nicht die ganze Rahmenbreite.
-- **Spiegelbild:** Zwischen den beiden Rastern steht ein angedeuteter Spiegel, eine schmale, silbrig glänzende Leiste.
+- **Zahlennachbarn:** Die Zahlenreihe steht senkrecht in der Mitte. Gelöst wird nur die Zahlenreihe grün hinterlegt, nicht die ganze Rahmenbreite, und es erscheint kein «Das passt!».
+- **Spiegelbild:** Zwischen den beiden Rastern steht ein angedeuteter, flacher Spiegel: eine schmale hellblaue Fläche (`#d3e1e3`) mit dünner Linie (`#9fb4b8`), ohne Verlauf, Glanz oder Schatten.
 - **Mengen verteilen:** Auf dem Tablet sind die Bilder 60 px gross, damit die vollsten Verteilungen (2 × 10, 3 × 6, 4 × 5) aufs Papier passen. Am knappsten ist 3 × 6 auf dem Tablet. Beeren und Freunde sind innerhalb des Rätsels gleich gross.
 - **Gegenstände merken:** Die Auswahlleiste nach dem Merken ist im Artifact mit aufgeführt.
 - **Silben zu Wörtern:** Im Spiel muss der Platzhalter `'___'` in `js/screens/puzzle.js` durch «?» ersetzt werden. Der Vorschlag blendet ihn nur per CSS aus.

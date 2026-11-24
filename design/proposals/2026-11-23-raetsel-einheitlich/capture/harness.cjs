@@ -4,7 +4,11 @@ exports.open=async(b,opt,css)=>{
  await ctx.route(u=>!/^http:\/\/127\.0\.0\.1:8000\//.test(u.toString()),r=>r.abort());   // nothing leaves this machine
  const page=await ctx.newPage();page.setDefaultTimeout(30000);
  await page.goto('http://127.0.0.1:8000/?software=1&dev=1');await page.waitForFunction(()=>window.FK?.friendsView&&FK.current()==='friends',null,{timeout:120000});
- if(css)await page.addStyleTag({content:css});
+ if(css){await page.addStyleTag({content:css});
+  // Vorschlag: geänderte Fragen (im Spiel später im Katalog und in den Runden)
+  await page.evaluate(()=>{const T=[['Welcher Waldgegenstand fehlt?','Welcher Gegenstand fehlt?'],['Welches Bild fehlt im Bergmuster?','Welches Bild fehlt im Muster?'],['rote Marienkäfer','Marienkäfer']];
+   const fix=()=>document.querySelectorAll('.puzzle-prompt').forEach(e=>{let t=e.textContent;for(const [a,b] of T)t=t.split(a).join(b);if(t!==e.textContent)e.textContent=t;});
+   new MutationObserver(fix).observe(document.body,{subtree:true,childList:true,characterData:true});fix();});}
  await page.getByRole('button',{name:'Einstellungen für Erwachsene',exact:true}).first().click();
  const n=(await page.locator('.gate-task').innerText()).match(/\d+/g).map(Number);await page.locator('.gate-input').fill(String(n[0]*n[1]));await page.getByRole('button',{name:'Öffnen',exact:true}).click();
  await page.waitForFunction(()=>FK.current()==='settings');await page.getByRole('button',{name:'Rätsel-Galerie',exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-gallery');
