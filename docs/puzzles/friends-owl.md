@@ -1,5 +1,7 @@
 # Kurze Sätze verstehen
 
+> **Nicht mehr aktiv.** Seit 9.4.43 gehören alle Aufgaben dieses Rätsels zum Rätsel [Lesen und verstehen](friends-badger.md) des Dachses. Die Aufgaben behalten ihre IDs und ihre Prüfungen. Diese Seite ist nur noch als historische Seite erhalten.
+
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 
 - Stabile Rätsel-ID: `friends-owl`

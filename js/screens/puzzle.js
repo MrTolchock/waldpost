@@ -86,7 +86,7 @@
   }
   function renderPattern(q) {
     const line=h('div',{class:'puzzle-pattern'});
-    q.sequence.forEach((id,i)=>line.append(h('span',{class:'puzzle-pattern-cell'+(i===q.gap?' gap':'')},i===q.gap?'?':picture(id))));
+    q.sequence.forEach((id,i)=>line.append(h('span',{class:'puzzle-pattern-cell'+(i===q.gap?' gap':''),role:'img','aria-label':i===q.gap?'Lücke':pictureName(id)},i===q.gap?'?':picture(id))));
     scene.append(line);q.choices.forEach(v=>option(v,picture(v),'Dieses Bild einsetzen: '+pictureName(v)));
   }
   function renderFireflies(q) {
@@ -141,13 +141,14 @@
       FK.playLog?.place?.('berry',{from,to,counts:counts.slice()});
       selected='bank';update();
     };
-    const berry=from=>draggable(button(from==='bank'?'Beere auswählen':'Beere von Freund '+(from+1)+' zurücknehmen',()=>{if(from==='bank'){selected='bank';announcement('Wähle einen Freund.');}else move(from,'bank');},'puzzle-picnic-berry',picture('forest-berry')),'[data-picnic-target]',target=>move(from,target.dataset.picnicTarget==='bank'?'bank':Number(target.dataset.picnicTarget)));
+    const guests=['fox','mouse','bird','deer'],guestName=i=>({fox:'Fuchs',mouse:'Maus',bird:'Blaumeise',deer:'Reh'})[guests[i]];
+    const berry=from=>draggable(button(from==='bank'?'Beere auswählen':'Beere von '+guestName(from)+' zurücknehmen',()=>{if(from==='bank'){selected='bank';announcement('Wähle einen Freund.');}else move(from,'bank');},'puzzle-picnic-berry',picture('forest-berry')),'[data-picnic-target]',target=>move(from,target.dataset.picnicTarget==='bank'?'bank':Number(target.dataset.picnicTarget)));
     const redraw=()=>{
       basket.replaceChildren(...Array.from({length:q.total-counts.reduce((a,b)=>a+b,0)},()=>berry('bank')));
       places.replaceChildren();
       for(let i=0;i<q.friends;i++){
-        const friend=button('Beere zu Freund '+(i+1)+' legen',()=>move(selected,i),'puzzle-picnic-friend',FK.friendsLibrary.portrait(['fox','mouse','bird','deer'][i]));
-        places.append(h('section',{'data-picnic-target':i,class:'puzzle-picnic-place','aria-label':'Freund '+(i+1)},friend,h('div',{class:'puzzle-picnic-berries'},Array.from({length:counts[i]},()=>berry(i)))));
+        const friend=button('Beere zu '+guestName(i)+' legen',()=>move(selected,i),'puzzle-picnic-friend',FK.friendsLibrary.portrait(guests[i]));
+        places.append(h('section',{'data-picnic-target':i,class:'puzzle-picnic-place','aria-label':guestName(i)+': '+counts[i]+(counts[i]===1?' Beere':' Beeren')},friend,h('div',{class:'puzzle-picnic-berries'},Array.from({length:counts[i]},()=>berry(i)))));
       }
     };
     const update=()=>{work().plates=counts;persist();redraw();if(counts.every(n=>n===q.each))solved(places);};
@@ -230,7 +231,7 @@
     scene.append(slots,cards);redraw();
   }
   function renderTreasure(q) {
-    const reveal=!!work().hidden,items=h('div',{class:'puzzle-treasures'},q.objects.map((id,i)=>h('span',{class:reveal&&i===q.missing?'gap':''},reveal&&i===q.missing?'?':picture(id))));
+    const reveal=!!work().hidden,items=h('div',{class:'puzzle-treasures'},q.objects.map((id,i)=>h('span',{class:reveal&&i===q.missing?'gap':'',role:'img','aria-label':reveal&&i===q.missing?'Lücke':pictureName(id)},reveal&&i===q.missing?'?':picture(id))));
     scene.append(items);
     if(!reveal)answerArea.append(button('Ich habe sie mir gemerkt',()=>{if(locked)return;work().hidden=true;persist();draw();},'puzzle-memory-ready puzzle-memory-button',FK.icons.element('check')));
     else {body.querySelector('.puzzle-prompt').textContent='Welcher Gegenstand fehlt?';q.choices.forEach(v=>option(v,picture(v),'Diesen Gegenstand wählen: '+pictureName(v)));}
@@ -268,7 +269,7 @@
   }
   function renderCompare(q) {
     const pair=h('div',{class:'puzzle-compare'});
-    for(const [id,n]of [['left',q.a],['right',q.b]]){let node;node=button(id==='left'?'Links sind mehr Fische':'Rechts sind mehr Fische',()=>choose(id,node),'puzzle-berry-plate',h('span',{},objects(q.item||'forest-berry',n)));node.dataset.answer=id;pair.append(node);}
+    for(const [id,n]of [['left',q.a],['right',q.b]]){let node;node=button((id==='left'?'Links sind mehr Fische':'Rechts sind mehr Fische')+' ('+n+(n===1?' Fisch':' Fische')+')',()=>choose(id,node),'puzzle-berry-plate',h('span',{},objects(q.item||'forest-berry',n)));node.dataset.answer=id;pair.append(node);}
     scene.append(pair);option('equal','=','Gleich viele');
   }
   function renderMirror(q) {

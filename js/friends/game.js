@@ -140,7 +140,10 @@ function meet(id){
     // A visit still shows something: the friend does a little trick and points the way.
     world.visit?.(id,toward);
     FK.ui.toast(m.phase==='return-home'?name+' winkt. Fuchs geht nach Hause schlafen.':m.phase==='to-friend'?name+' zeigt dir den Weg zu '+(C.hosts[m.host]?.name||'deinem Freund')+'.':m.phase==='to-mailman'?name+' zeigt dir den Weg zum Briefträger.':'Dein Brief zeigt dir deinen Freund.');return;}
-  const game=FK.friendsLibrary.pick(id);if(!game){state.record('friend_unavailable',{host:id,reason:'not_reviewed'});FK.ui.toast("Dieses Rätsel wartet noch auf die Freigabe von Erwachsenen.");return;}
+  const game=FK.friendsLibrary.pick(id);if(!game){state.record('friend_unavailable',{host:id,reason:'not_reviewed'});
+    // Never strand the child: the letter goes to a friend who can play, and the trail leads there (release review R-2).
+    if(state.retarget()){syncMail();const to=state.mail().host;world.visit?.(id,to);FK.ui.toast((C.hosts[id]?.name||'Dein Freund')+' schickt dich weiter zu '+(C.hosts[to]?.name||'einem anderen Freund')+'.');return;}
+    FK.ui.toast("Dieses Rätsel wartet noch auf die Freigabe von Erwachsenen.");return;}
   // a short close shot of the two friends, then the puzzle opens
   if(framing)return;const wait=world.frame?.(id)||0;framing=true;
   setTimeout(()=>{framing=false;if(!state.canPuzzle(id)||panel==='puzzle')return;state.record('friend_visited',{host:id,puzzleId:game.id});if(panel)close();world.pause(true);FK.friendsLibrary.visit(game);},wait*1000);
@@ -175,6 +178,8 @@ FK.screen('friends',{
     state=window.FriendsState.create({storage,content:C,puzzleHosts:()=>FK.friendsLibrary.catalogue().map(g=>g.host),eligible:host=>!FK.puzzleReview||FK.friendsLibrary.catalogue().some(g=>g.host===host&&FK.puzzleReview.ready(g.id)),development:new URLSearchParams(location.search).get('dev')==='1',onStatus:()=>queueMicrotask(saveStatus),appVersion:()=>FK.VERSION,logContext:()=>({screen:FK.current(),viewport:{width:innerWidth,height:innerHeight},textCase:FK.text.mode()})});
     FK.friends=state;
     FK.on('settings',event=>{if(event.key==='developerMode')renderNav();});
+    // Released Rätsel can change while playing (review data loads or is withdrawn): keep the open letter playable.
+    FK.on('puzzle-review-change',()=>{if(state.retarget())syncMail();});
     audio=createAudio(()=>state.audioSettings(),()=>world?.soundscape);FK.friendsAudio=audio;
     world=createWorld(canvas,{position:()=>state.get().world,onPosition:(x,z,region)=>state.position(x,z,region),onMove:e=>state.record(e.event,e),onNear:()=>{},onAction:act,onAnimationEnd:()=>endSequence(false),onProject:items=>{positionDoor();for(const p of items){const b=hotspots.querySelector(`[data-place="${p.id}"]`);if(b){b.hidden=!p.visible;b.style.left=p.x+'px';b.style.top=p.y+'px';}}}});
     FK.friendsView=()=>({...world.diagnostics,soundscape:world.soundscape});renderNav();renderHotspots();saveStatus();

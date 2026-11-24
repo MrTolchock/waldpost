@@ -57,7 +57,7 @@ Der [Vergleichsbogen vom 20. November](evidence/raetselvergleich/README.md) (dam
 
 ## Content and competence
 
-Each iteration has an ID, readable label, complete question, correct answer/solution and an exact revision. All 22 current riddles are mapped individually in the [catalogue](../docs/PUZZLE-CATALOGUE.md); each has a GitHub-readable page listing every iteration and its competence. These are practice mappings, not certification of curriculum attainment. Memory enrichment has no invented curriculum code.
+Each iteration has an ID, readable label, complete question, correct answer/solution and an exact revision. All 17 current riddles are mapped individually in the [catalogue](../docs/PUZZLE-CATALOGUE.md); each has a GitHub-readable page listing every iteration and its competence. These are practice mappings, not certification of curriculum attainment. Memory enrichment has no invented curriculum code.
 
 Numeric bounds and reading prerequisites are explicit. Expanding variety must not silently expand difficulty: use different operand combinations, missing positions, routes, reflections and pictured word targets within the stated boundary. Any intentional difficulty change is a new review revision.
 

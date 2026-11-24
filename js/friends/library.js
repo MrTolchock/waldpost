@@ -18,13 +18,6 @@ const games=[
     "screen": "puzzle"
   },
   {
-    "id": "friends-owl",
-    "host": "owl",
-    "title": "Kurze Sätze verstehen",
-    "picture": "book",
-    "screen": "puzzle"
-  },
-  {
     "id": "friends-beaver",
     "host": "beaver",
     "title": "Reihen ergänzen",
@@ -32,31 +25,10 @@ const games=[
     "screen": "puzzle"
   },
   {
-    "id": "friends-mouse",
-    "host": "mouse",
-    "title": "Wörter mit Bildern verbinden",
-    "picture": "mouse-sit",
-    "screen": "puzzle"
-  },
-  {
-    "id": "friends-hedgehog",
-    "host": "hedgehog",
-    "title": "Tiermerkmale erkennen",
-    "picture": "hedgehog",
-    "screen": "puzzle"
-  },
-  {
-    "id": "friends-deer",
-    "host": "deer",
-    "title": "Lebensräume und Nahrung zuordnen",
-    "picture": "nest",
-    "screen": "puzzle"
-  },
-  {
     "id": "friends-badger",
     "host": "badger",
-    "title": "Wachstum und Naturveränderungen erkennen",
-    "picture": "seedling",
+    "title": "Lesen und verstehen",
+    "picture": "book",
     "screen": "puzzle"
   },
   {
@@ -150,13 +122,6 @@ const games=[
     "picture": "words",
     "screen": "puzzle"
   },
-  {
-    "id": "colour-words",
-    "host": "kingfisher",
-    "title": "Farbwörter verstehen",
-    "picture": "puzzle-flower-blau",
-    "screen": "puzzle"
-  }
 ];
 const hosts=Object.fromEntries(games.map(g=>[g.id,g.host]));
 function catalogue(){return games.map(g=>({...g}));}

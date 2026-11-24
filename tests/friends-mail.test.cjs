@@ -48,3 +48,17 @@ test('new sessions vary their first friend and never restart with the current re
   const s=create({storage,content,random});for(let j=0;j<5;j++){const before=s.mail().host;assert.ok(s.startLetterSession(3));assert.notEqual(s.mail().host,before);starts.add(s.mail().host);s.openLetter();const invitation=s.mail();assert.deepEqual(create({storage,content}).mail(),invitation);}
  }assert.equal(starts.size,11);
 });
+test('an invitation to a friend without released Rätsel moves to a friend who can play (release review R-2)',()=>{
+ const map=new Map(),storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v),removeItem:k=>map.delete(k)};
+ let released=new Set(Object.keys(content.hosts));const eligible=host=>released.has(host);
+ const state=create({storage,content,eligible});assert.ok(state.openLetter());const invited=state.mail().host,before=state.mail();
+ // the friend's last Rätsel loses its approval while the letter is open
+ released.delete(invited);assert.ok(state.retarget());const after=state.mail();
+ assert.notEqual(after.host,invited);assert.ok(released.has(after.host));assert.equal(after.phase,'to-friend');assert.equal(after.completed,before.completed);assert.equal(after.index,before.index);
+ assert.equal(state.retarget(),false,'a playable invitation stays');
+ // a saved stranded invitation is moved when the game loads
+ const saved=state.get();saved.mail.host=invited;storage.setItem(state.key,JSON.stringify(saved));
+ const reloaded=create({storage,content,eligible});assert.notEqual(reloaded.mail().host,invited);assert.ok(released.has(reloaded.mail().host));assert.equal(reloaded.mail().phase,'to-friend');
+ // with nobody released the letter keeps its friend (the adult text explains the wait)
+ released=new Set();assert.equal(reloaded.retarget(),false);
+});

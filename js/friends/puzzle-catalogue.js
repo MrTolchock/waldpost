@@ -6,14 +6,8 @@
   const meta={
     'friends-squirrel':['MA.1.A.2.a','Mengen zählen','0–20 Eicheln; Vierer- und Fünferstruktur'],
     'friends-bird':['D.2.A.1.b; D.1.A.1.b','Reime erkennen','25 verschiedene Reimpaare ohne vertauschte Doppelungen; eingeführte Buchstaben'],
-    'friends-owl':['D.2.A.1.b; D.2.B.1.b','Kurze Sätze verstehen','Ein kurzer Satz über ein Tier; immer zwei Bildantworten'],
     'friends-beaver':['MA.2.A.1.a','Reihen mit Waldgegenständen ergänzen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste'],
-    // Keep the original difficulty contract for existing word cards; the fourth field describes the expanded pool.
-    'friends-mouse':['D.2.A.1.b','Wörter mit Bildern verbinden','25 vertraute Nomen; eingeführte Buchstaben','Vertraute Nomen und Tiernamen; eingeführte Buchstaben'],
-    // Keep the reviewed difficulty contract; the fourth field shows the 44 remaining questions.
-    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen','50 kurze Tierfragen; drei Bildantworten','44 kurze Tierfragen; drei Bildantworten'],
-    'friends-deer':['NMG.2.1.a; D.2.B.1.b','Lebensräume und Nahrung zuordnen','25 kurze Naturfragen; drei Bildantworten'],
-    'friends-badger':['NMG.2.3.a; D.2.B.1.b','Wachstum und Naturveränderungen erkennen','25 kurze Fragen zu Wetter, Pflanzen und Entwicklung'],
+    'friends-badger':['D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a','Lesen und verstehen','Vertraute Wörter, kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten'],
     'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe'],
     count:['MA.1.A.2.a','Mengen gezielt zählen','6–15 Marienkäfer zwischen Bienen und Schnecken'],
     add:['MA.1.A.3.a','Sichtbare Gruppen addieren','Zwei positive Summanden; Summe höchstens 10'],
@@ -26,7 +20,6 @@
     compare:['MA.1.A.1.a (Übung)','Mengen vergleichen','1–10 Fische; mehr oder gleich viele'],
     mirror:['MA.2.A.2.c','Ein Muster spiegeln','3 × 3; drei bis fünf Blätter; senkrechte Spiegelachse'],
     vowels:['D.4.A.1.c (Unterstützung)','Einen Vokal ergänzen','Bildwörter; keine Lücke innerhalb von au/ei/ie/eu/äu'],
-    'colour-words':['D.2.A.1.b','Farbwörter verstehen','Sechs Farbwörter; drei verschiedenfarbige Blumen zur Auswahl'],
     'read-puzzle':['D.2.A.1.b','Silben zu Wörtern verbinden','28 Bildwörter; zwei bis drei Silben; ein Ablenker'],
   };
   const pools={},clone=v=>JSON.parse(JSON.stringify(v));
@@ -275,6 +268,13 @@
       add('colour-words',choices.map(choice=>choice[0]).join('-'),'Farbe '+colour[0]+' zwischen '+choices.slice(1).map(choice=>choice[0]).join(' und '),{kind:'colours',prompt:'Welche Blume passt zum Satz?',text:'Die Blume ist '+colour[0]+'.',answer:colour[0],choices});
     }
   }
+  // 24 Nov (owner): the six reading Rätsel are one Rätsel of Dachs. Every Aufgabe keeps its ID, so its
+  // review follows it (tools/puzzle-layout-compatibility.cjs «merge» edges). Prompts are harmonised by text
+  // type: word, sentence or question. Choice counts stay as authored (two-picture minimal pairs stay two).
+  const readingParts=['friends-badger','friends-deer','friends-hedgehog','friends-owl','friends-mouse','colour-words'];
+  const harmonised={'Welches Tier passt?':'Welches Bild passt zur Frage?','Welche Blume passt zum Satz?':'Welches Bild passt zum Satz?'};
+  pools['friends-badger']=readingParts.flatMap(id=>pools[id]||[]).map(it=>{if(harmonised[it.question.prompt])it.question.prompt=harmonised[it.question.prompt];return it;});
+  for(const id of readingParts.slice(1))delete pools[id];
   const canonical=v=>Array.isArray(v)?'['+v.map(canonical).join(',')+']':v&&typeof v==='object'?'{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}':JSON.stringify(v);
   function hash(v){const s=canonical(v);let a=2166136261,b=5381;for(let i=0;i<s.length;i++){a=Math.imul(a^s.charCodeAt(i),16777619);b=Math.imul(b,33)^s.charCodeAt(i);}return (a>>>0).toString(16).padStart(8,'0')+(b>>>0).toString(16).padStart(8,'0');}
   function puzzle(id){const g=FK.friendsLibrary.catalogue().find(g=>g.id===id),m=meta[id];return g&&m?{...g,hostName:C.hosts[g.host].name,reference:m[0],competence:m[1],difficulty:m[2],displayDifficulty:m[3]||m[2],instruction:R.instructions[id]}:null;}

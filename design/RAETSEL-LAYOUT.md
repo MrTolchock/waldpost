@@ -42,7 +42,13 @@ Die Zeile mit dem Waldfreund oben (Zurück, Porträt, «… spielt mit dir») ge
 
 **Falsche Eingabe.** Die gewählte Karte bekommt die warme, gestrichelte Innenkontur. Grösse und Platz bleiben gleich, und das Kind kann sofort weiter versuchen.
 
-**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](proposals/2026-11-24-erfolg-einheitlich/README.md))
+**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln, und das aktuelle Fortschrittsblatt wächst kurz. Das Papier bekommt keinen grünen Schein, und das Porträt des Freundes bleibt in seiner Zeile. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](proposals/2026-11-24-erfolg-einheitlich/README.md))
+
+**Folgen und Muster.** Eine Folge, die das Kind fortsetzen oder ergänzen soll, steht immer in einer einzigen Zeile, damit kein Umbruch eine Wiederholungseinheit zerschneidet. Ist die Zeile zu schmal, werden alle Felder gemeinsam kleiner und das «?» der Lücke mit ihnen (Tablet 9 Felder zu 68 px, Handy 390 px zu 32 px, 320 px zu 24 px).
+
+**Zählfelder.** Gezählte Dinge stehen aufrecht auf dem schlichten Rahmen, ohne eigenen Hintergrund, Verlauf oder Drehung.
+
+**Barrierefreiheit.** Jedes Bild, das für die Lösung wichtig ist, hat einen Namen für den Bildschirmleser: Musterfelder und Lücken, die Gegenstände beim Merken, die Freunde beim Verteilen (Fuchs, Maus, Blaumeise, Reh) mit ihrer Beerenzahl und die Fischanzahl der Gruppen beim Vergleichen.
 
 **Schmale Bildschirme.** Der Rahmen ist ein Grössen-Container. Jedes Kästchenraster nimmt die kleinere von Designgrösse und tatsächlich verfügbarer Spaltenbreite. So bleiben auf Handys von 320 bis 390 px alle Kästchen, Plätze und Bilder im Rahmen. Kein Kästchen darf je über den Rahmen oder den Bildschirm hinausragen, auch wenn nichts scrollt.
 
@@ -99,3 +105,6 @@ Den Vorschlag, alle Aufnahmen und die Vermessung aller 797 Aufgaben hält [desig
   - die Zahlenkarten in der Reihe haben die Form der Antwortkacheln
 - **Release-Prüfung vom 24. November (B-1):**
   - auf schmalen Handys schrumpfen die Kästchen mit dem Papier
+- **Sechste Runde und Release-Prüfung (B-2, B-3, B-4, A-1):**
+  - die sechs Lese-Rätsel sind ein Rätsel des Dachses mit vereinheitlichten Fragen
+  - Muster in einer Zeile, Erfolg ohne Papierschein und Porträtsprung, schlichte Zählwiese, Namen für den Bildschirmleser

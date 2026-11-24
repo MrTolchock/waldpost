@@ -466,3 +466,24 @@ body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow)>.puzzle-counter{width:var(-
 /* two 3-column grids (3 px gaps), the 12 px mirror and its two 14 px gaps */
 body .screen-puzzle .puzzle-mirror{--pv-cell:min(var(--pv-mirror-cell),calc((100cqi - 12px - 28px - 4 * 3px) / 6))}
 body .screen-puzzle .puzzle-mirror-grid{gap:3px !important}
+
+/* ---- 9.4.43: release review 2026-11-24 ---- */
+/* B-2 Muster fortsetzen: the whole sequence stays on one line, so no line break cuts a repeating unit.
+   Cells share the line and shrink together when it is too narrow; their pictures fill them. */
+body .screen-puzzle .puzzle-pattern{display:grid !important;grid-auto-flow:column;grid-auto-columns:minmax(0,calc(var(--pv-pic) + 10px));justify-content:center;width:100%;max-width:none !important;gap:var(--pv-gap) !important}
+body .screen-puzzle .puzzle-pattern .puzzle-pattern-cell{position:relative;width:100% !important;height:auto !important;aspect-ratio:1;max-width:none !important}
+body .screen-puzzle .puzzle-pattern .puzzle-pattern-cell>.puzzle-picture{position:absolute !important;inset:4px;width:auto !important;height:auto !important}
+/* B-3 success shows the green solved parts, confetti and the growing progress leaf; the paper gets no halo
+   and the host portrait stays in its row. */
+body .screen-puzzle .puzzle-paper.wb-won{box-shadow:0 12px 40px #5d472f16 !important}
+body .screen-puzzle .wb-hop{animation:none !important}
+/* B-4 Mengen gezielt zählen: the counters stand on the plain frame, upright, like every other Rätsel. */
+body .screen-puzzle .puzzle-meadow{background:none !important;border-radius:0 !important}
+body .screen-puzzle .puzzle-meadow .puzzle-counter{transform:none !important}
+/* The «?» of a pattern gap shrinks with the line (it never outgrows its cell); phones use 2 px gaps. */
+body .screen-puzzle .puzzle-pattern .puzzle-pattern-cell.gap{font-size:min(var(--pv-text),7cqi) !important;line-height:1 !important}
+@media(max-width:600px){body .screen-puzzle .puzzle-pattern{gap:2px !important}}
+@media(max-width:600px){
+ body .screen-puzzle .puzzle-pattern .puzzle-pattern-cell{border-radius:8px !important}
+ body .screen-puzzle .puzzle-pattern .puzzle-pattern-cell>.puzzle-picture{inset:1px}
+}

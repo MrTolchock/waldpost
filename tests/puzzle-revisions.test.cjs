@@ -33,13 +33,14 @@ test('habitat paintings reopen only their hosts, including both mouse word puzzl
 });
 test('typography corrections retain review compatibility while exact rendered revisions still change',()=>{
  const typography=changed('css/puzzle-rounds.css',s=>s+'\n.puzzle-read-text{font-size:32px;font-weight:700;line-height:1.4;letter-spacing:0;overflow-wrap:anywhere}\n');
- for(const id of ['friends-owl','friends-mouse','friends-hedgehog','friends-deer']){
+ // the reading Aufgaben of Eule, Maus, Igel and Reh are part of Dachs' «Lesen und verstehen» since 9.4.43
+ for(const id of ['friends-badger']){
   assert.notEqual(base.puzzles[id].presentation,typography.puzzles[id].presentation,id+' retains its exact display revision');
   assert.equal(base.puzzles[id].reviewPresentation,typography.puzzles[id].reviewPresentation,id+' keeps its content approval');
   assert.equal(base.puzzles[id].definition,typography.puzzles[id].definition);
  }
  const hidden=changed('css/puzzle-rounds.css',s=>s+'\n.puzzle-read-text{display:none}\n');
- different(base,hidden,'friends-owl');
+ different(base,hidden,'friends-badger');
 });
 test('the previous release stays review-compatible only for typography corrections and the same answer pictures',()=>{
  const {snapshotReader}=require('../tools/puzzle-review-build.cjs');
@@ -60,7 +61,7 @@ test('only actual image cells affect a puzzle, including shared-atlas changes',a
  const sharp=require('../tools/node_modules/sharp'),file='assets/waldatelier/forest-objects.webp';
  const {data,info}=await sharp(reader.read(file)).ensureAlpha().raw().toBuffer({resolveWithObject:true});
  async function cell(index){const pixels=Buffer.from(data),x=Math.floor((index%4+.5)*info.width/4),y=Math.floor((Math.floor(index/4)+.5)*info.height/4),at=(y*info.width+x)*4;pixels.set([255,0,255,255],at);const bytes=await sharp(pixels,{raw:info}).png().toBuffer();return build({...reader,read:name=>name===file?bytes:reader.read(name)});}
- const lantern=await cell(12);same(base,lantern,'friends-squirrel');different(base,lantern,'friends-owl');
+ const lantern=await cell(12);same(base,lantern,'friends-squirrel');different(base,lantern,'read-puzzle'); // the lantern is the owl host's progress item
  const nut=await cell(0);different(base,nut,'friends-squirrel');
  const basketFile='assets/waldatelier/review-nature.webp',basket=await sharp(reader.read(basketFile)).ensureAlpha().raw().toBuffer({resolveWithObject:true});
  basket.data.set([255,0,255,255],(Math.floor(basket.info.height/4)*basket.info.width+Math.floor(basket.info.width/4))*4);

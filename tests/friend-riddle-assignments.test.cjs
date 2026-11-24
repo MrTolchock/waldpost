@@ -7,21 +7,22 @@ const {create}=require('../js/friends/state.js');
 const assignments={
  squirrel:['friends-squirrel','treasure'],
  bird:['friends-bird','syllable'],
- owl:['friends-owl','read-puzzle'],
+ owl:['read-puzzle'],
  beaver:['friends-beaver','mirror'],
- mouse:['friends-mouse','vowels'],
- hedgehog:['friends-hedgehog','count'],
+ mouse:['vowels'],
+ hedgehog:['count'],
  fish:['add','compare'],
- deer:['friends-deer','robot'],
- kingfisher:['neighbours','colour-words'],
+ deer:['robot'],
+ kingfisher:['neighbours'],
  frog:['rocket','picnic'],
+ // 9.4.43: the six reading Rätsel are one Rätsel of Dachs («Lesen und verstehen»).
  badger:['friends-badger'],
  ibex:['friends-ibex']
 };
 
 test('all twelve letter friends have their reviewed riddle assignments',()=>{
  const games=setup().FK.friendsLibrary.catalogue();
- assert.equal(games.length,22);
+ assert.equal(games.length,17);
  assert.deepEqual(Object.keys(assignments).sort(),Object.keys(content.hosts).sort());
  for(const [host,ids]of Object.entries(assignments)){
   const actual=Array.from(games.filter(game=>game.host===host),game=>game.id);
@@ -82,7 +83,8 @@ test('old friend queues cannot launch reassigned riddles at their previous host'
 
 test('colour discrimination tasks remain distinct and shape matching is retired',()=>{
  const {FK}=setup(),catalogue=FK.puzzleCatalogue;
- const colours=catalogue.iterations('colour-words');
+ // colour words are part of Dachs' reading Rätsel since 9.4.43; their Aufgaben keep their IDs
+ const colours=catalogue.iterations('friends-badger').filter(it=>it.id.startsWith('colour-words/'));
  assert.equal(colours.length,30);
  assert.equal(new Set(colours.map(({question:q})=>q.answer+':'+q.choices.map(choice=>choice[0]).sort().join('/'))).size,30);
  assert.equal(new Set(colours.map(it=>it.question.answer)).size,6);
@@ -100,7 +102,7 @@ test('Fisch tasks count fish and the wayfinding prompt guides Reh to the forest'
  assert.equal(FK.puzzleRounds.question('robot',0,1).prompt,'Führe das Reh zum Wald.');
 });
 
-const R23=require('./review-changes-2026-11-23.cjs'),R24=require('./review-changes-2026-11-24.cjs');
+const R23=require('./review-changes-2026-11-23.cjs'),R24=require('./review-changes-2026-11-24.cjs'),R25=require('./review-changes-2026-11-24-reading.cjs');
 test('unchanged riddles retain approvals while reassigned and new riddles require current review',()=>{
  const catalogue=setup().FK.puzzleCatalogue;
  const baseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9bd41c8acd07db2eb7901ce0895f9a422cccd8e2');
@@ -109,8 +111,8 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const capitalVowels=new Set(['vowels/word-2-0','vowels/word-8-0','vowels/word-21-0']);
  for(const [id,puzzle]of Object.entries(baseline.puzzles)){
   // Aufgaben changed or added on 23 November (9.4.33) reopen on purpose.
-  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id),id);
-  for(const item of catalogue.iterations(id))if(baseline.iterations[item.id])assert.equal(catalogue.acceptsRevision(id,item.id,baseline.iterations[item.id].revision),!reassigned.has(id)&&!capitalVowels.has(item.id)&&!R23.changed(item.id)&&!R24.changed(item.id),item.id);
+  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id)&&!R25.puzzleChanged(id),id);
+  for(const item of R25.items(catalogue,id))if(baseline.iterations[item.id])assert.equal(catalogue.acceptsRevision(R25.owner(id),item.id,baseline.iterations[item.id].revision),!reassigned.has(id)&&!capitalVowels.has(item.id)&&!R23.changed(item.id)&&!R24.changed(item.id)&&!R25.changed(item.id),item.id);
  }
  const introduction=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='301e506b5061af35eeba8825992795827d5802ed');
  const feedbackBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='1e48d04bdc65836e95ce9d9b7c3cc28b9b177a3a');
@@ -121,5 +123,6 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const release37=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='18684545406bb5eb7932c0bce134bc99af069dbc'); // confetti bridge
  const release38=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9a4009f94b7be863517fefb8e13510ad4332c078'); // review celebration bridge
  const release39=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='01791c164c1f86ecc64599350577bc6467a57cc3'); // read-aloud removal bridge
- for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,clearingBaseline.puzzles[id].revision,release32.puzzles[id].revision,release35.puzzles[id].revision,release37.puzzles[id].revision,release38.puzzles[id].revision,release39.puzzles[id].revision,require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit===R24.commit).puzzles[id].revision,require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='a05b3a838ae654f1a3b8b18cce37397bb3eb8988').puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
+ // Farbwörter is part of Dachs' reading Rätsel since 9.4.43: the merged Rätsel inherits no puzzle-level decision.
+ assert.equal(catalogue.puzzle('colour-words'),null);assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions('friends-badger')),[]);
 });

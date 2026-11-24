@@ -25,8 +25,12 @@
       if(!m.session){m.session=session(s.settings.letterLimit);if(m.phase==='to-mailman')m.session.completed=1;if(m.session.completed>=m.session.limit)m.phase='return-home';}
       // Retarget an unfinished invitation without an assigned puzzle, keeping its letter, phase and completed count.
       if(['den-letter','to-friend'].includes(m.phase)&&!activeMailHosts.includes(m.host)){const index=m.index;nextHost(s);m.index=index;}
+      // An invitation to a friend whose Rätsel are not released goes to a friend who can play (release review R-2).
+      if(stranded(s)){const index=m.index;nextHost(s);m.index=index;}
       s.unlocks.leaf=true;s.unlocks.pencils=true;return s;
     };
+    // An open invitation is stranded when its friend has no released Rätsel but another friend has one.
+    const stranded=s=>['den-letter','to-friend'].includes(s.mail.phase)&&!ok(s.mail.host)&&activeMailHosts.some(id=>id!==s.mail.host&&ok(id));
     function nextHost(s){
       const m=s.mail,next=()=>m.remaining.findIndex(id=>id!==m.host&&ok(id));
       m.remaining=m.remaining.filter(id=>activeMailHosts.includes(id));
@@ -118,6 +122,8 @@
     const api={key,get:()=>clone(state),round:host=>clone(state.rounds[host]||null),audioSettings:()=>({...state.settings}),get error(){return error;},get blocked(){return blocked;},development,record,start,answer,
       mail:()=>clone(state.mail),
       openLetter(){return commit(s=>{if(!['den-letter','to-mailman'].includes(s.mail.phase)||s.mail.session.completed>=s.mail.session.limit)return false;if(s.mail.phase==='to-mailman')nextHost(s);s.mail.phase='to-friend';},'letter_opened');},
+      // Move a stranded invitation to a friend who can play; keeps the letter, its phase and the completed count.
+      retarget(){const from=state.mail.host;return commit(s=>{if(!stranded(s))return false;const index=s.mail.index;nextHost(s);s.mail.index=index;},'letter_retargeted',{from});},
       canPuzzle(host){return state.mail.phase==='to-friend'&&state.mail.host===host&&state.mail.session.completed<state.mail.session.limit;},
       setLetterLimit(limit){if(!letterLimit(limit))return false;return commit(s=>{s.settings.letterLimit=limit;if(s.mail.phase==='den-letter')s.mail.session.limit=limit;},'letter_limit',{limit});},
       startLetterSession(limit=state.settings.letterLimit){if(!letterLimit(limit))return false;return commit(s=>{

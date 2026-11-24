@@ -5,8 +5,9 @@ function setup(saved){
  for(const path of ['js/learn/glyphs.js','js/learn/routes.js','js/friends/puzzles.js','js/friends/library.js','js/friends/puzzle-rounds.js','js/friends/puzzle-catalogue.js'])vm.runInContext(fs.readFileSync(path,'utf8'),ctx);
  return {FK,memory};
 }
-test('all 22 active riddles have one route, one instruction and five tasks; retired games are absent',()=>{
- const {FK}=setup(),entries=FK.friendsLibrary.catalogue();assert.equal(entries.length,22);assert.equal(new Set(entries.map(g=>g.id)).size,22);
+test('all 17 active riddles have one route, one instruction and five tasks; retired games are absent',()=>{
+ // 9.4.43: six reading Rätsel are one Rätsel of Dachs, so 17 remain.
+ const {FK}=setup(),entries=FK.friendsLibrary.catalogue();assert.equal(entries.length,17);assert.equal(new Set(entries.map(g=>g.id)).size,17);
  for(const g of entries){assert.ok(FK.puzzleRounds.instructions[g.id],g.id);assert.ok(g.host);assert.ok(['puzzle','trace'].includes(g.screen));}
  assert.ok(!entries.some(g=>['rhyme','dots','double','shapes','survey'].includes(g.id)));assert.ok(!entries.some(g=>['trace', 'trace-numbers', 'friends-frog', 'friends-kingfisher', 'read-colours', 'read-leaves', 'read-word'].includes(g.id)));
 });

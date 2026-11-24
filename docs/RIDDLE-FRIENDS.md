@@ -1,20 +1,20 @@
 # Rätsel bei den Waldfreunden
 
-Beim Steinbock gibt es das Bergmuster und beim Dachs das Wachstumsrätsel, bei den anderen zehn Brief-Freunden jeweils zwei Rätsel. Die aktuelle Sammlung umfasst 22 Rätsel mit 797 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
+Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Die aktuelle Sammlung umfasst 17 Rätsel mit 797 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
 
 | Freund | Rätsel | Thematischer Bezug |
 | --- | --- | --- |
 | Eichhörnchen | [Mengen zählen](puzzles/friends-squirrel.md), [Gegenstände merken](puzzles/treasure.md) | Eicheln zählen und sich gesammelte Waldschätze merken |
 | Blaumeise | [Reime erkennen](puzzles/friends-bird.md), [Wörter in Silben zerlegen](puzzles/syllable.md) | Gesang, Sprachklang und Rhythmus |
-| Waldkauz | [Kurze Sätze verstehen](puzzles/friends-owl.md), [Silben zu Wörtern verbinden](puzzles/read-puzzle.md) | Lesen und Wörter zusammensetzen |
+| Waldkauz | [Silben zu Wörtern verbinden](puzzles/read-puzzle.md) | Wörter aus Silben zusammensetzen |
 | Biber | [Reihen ergänzen](puzzles/friends-beaver.md), [Muster spiegeln](puzzles/mirror.md) | Reihen aus Waldgegenständen ergänzen und Formen beim Bauen vergleichen |
-| Maus | [Wörter mit Bildern verbinden](puzzles/friends-mouse.md), [Einen Vokal ergänzen](puzzles/vowels.md) | Vertraute Wörter lesen und genau auf Buchstaben achten |
-| Igel | [Tiermerkmale erkennen](puzzles/friends-hedgehog.md), [Mengen gezielt zählen](puzzles/count.md) | Tiere und kleine Waldbewohner beobachten, Marienkäfer gezielt zählen |
+| Maus | [Einen Vokal ergänzen](puzzles/vowels.md) | Genau auf Buchstaben achten |
+| Igel | [Mengen gezielt zählen](puzzles/count.md) | Marienkäfer zwischen anderen Waldbewohnern gezielt zählen |
 | Fisch | [Mengen addieren](puzzles/add.md), [Mengen vergleichen](puzzles/compare.md) | Fischgruppen zusammenzählen und ihre Grössen vergleichen |
-| Reh | [Lebensräume und Nahrung zuordnen](puzzles/friends-deer.md), [Schritte im Raum planen](puzzles/robot.md) | Lebensräume kennen und den Weg zurück zum Wald finden |
-| Eisvogel | [Zahlennachbarn bestimmen](puzzles/neighbours.md), [Farbwörter verstehen](puzzles/colour-words.md) | Reihenfolgen am Bach üben und Farben wie beim bunten Gefieder unterscheiden |
+| Reh | [Schritte im Raum planen](puzzles/robot.md) | Den Weg zurück zum Wald finden |
+| Eisvogel | [Zahlennachbarn bestimmen](puzzles/neighbours.md) | Reihenfolgen am Bach üben |
 | Frosch | [Mengen ergänzen](puzzles/rocket.md), [Mengen verteilen](puzzles/picnic.md) | Fliegen am Teich und gemeinsames Picknick mit den Freunden |
-| Dachs | [Wachstum und Naturveränderungen erkennen](puzzles/friends-badger.md) | Naturveränderungen und Entwicklungsschritte erkennen |
+| Dachs | [Lesen und verstehen](puzzles/friends-badger.md) | Wörter, kurze Sätze und Naturfragen lesen und das passende Bild wählen: Tiere, Lebensräume, Wachstum, Wetter und Farben |
 | Steinbock | [Muster fortsetzen](puzzles/friends-ibex.md) | Wiederholungen mit Stein, Tanne und Blume |
 
 Das Reh bewegt sich beim Weg-Rätsel mit den vier Pfeilen zum Wald. Felsen sperren einzelne Felder. Beim Fisch zeigen Addition und Mengenvergleich gezeichnete Fischgruppen.

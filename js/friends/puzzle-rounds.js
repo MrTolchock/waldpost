@@ -6,14 +6,10 @@
   const base={squirrel:'Nüsse zählen',bird:'Reimpaare lesen',owl:'Lies und zeig',beaver:'Was fehlt im Wald?',mouse:'Wörter und Bilder',hedgehog:'Tierrätsel',fish:'Fische zählen',deer:'Wer wohnt wo?',kingfisher:'Am Bach zählen',frog:'Tierwörter lesen',badger:'Naturrätsel',ibex:'Bergmuster'};
   const instructions={
     'friends-squirrel':'Zähle die Eicheln. Tippe auf die passende Zahl.',
-    'friends-badger':'Lies die Frage. Tippe auf das passende Bild.',
+    'friends-badger':'Lies das Wort, den Satz oder die Frage. Tippe auf das passende Bild.',
     'friends-ibex':'Suche die Bildgruppe, die sich wiederholt. Welches Bild gehört in die Lücke?',
-    'friends-hedgehog':'Lies die Frage. Tippe auf das Tier, das gemeint ist.',
-    'friends-deer':'Lies die Frage. Tippe auf das passende Bild.',
     'friends-bird':'Lies das Wort und die Wörter bei den Bildern. Wähle das Wort, das sich reimt.',
-    'friends-owl':'Lies den Satz. Wähle das passende Bild.',
     'friends-beaver':'In jeder Reihe liegen die gleichen Dinge wie in der ersten Reihe. Welches Bild fehlt?',
-    'friends-mouse':'Lies das Wort. Wähle das passende Bild.',
     count:'Zähle nur die roten Marienkäfer zwischen den anderen Waldbewohnern. Wähle dann die Zahl.',
     add:'Zähle die Fische in beiden Gruppen zusammen und wähle das Ergebnis.',
     rocket:'Jede Fliege hat einen Platz. Zähle die freien Plätze.',
@@ -25,7 +21,6 @@
     compare:'Vergleiche die beiden Fischgruppen. Tippe auf die mit mehr Fischen. Sind es gleich viele, wähle das Gleichheitszeichen.',
     mirror:'Ergänze rechts das Spiegelbild. Felder in derselben Reihe liegen gleich weit von der Spiegellinie entfernt. Ein zweites Tippen leert ein Feld wieder.',
     vowels:'Lies das Bildwort. Welcher Buchstabe fehlt in der Lücke?',
-    'colour-words':'Lies den Satz. Wähle die Blume in der beschriebenen Farbe.',
     'read-puzzle':'Das Bild zeigt ein Wort. Tippe seine Silben in der richtigen Reihenfolge an.',
   };
   const title=id=>FK.friendsLibrary?.catalogue().find(g=>g.id===id)?.title||(id.startsWith('friends-')?base[id.slice(8)]:id==='trace-numbers'?'Zahlenspuren':FK.puzzles.names[id]);

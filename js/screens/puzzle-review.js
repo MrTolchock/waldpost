@@ -6,19 +6,14 @@
   const drafts=new Map();
   // Describe the bounded practice in this puzzle; these are explanations, not curriculum quotations.
   const competences={
-    'colour-words':'Das Kind liest ein Farbwort im Satz und ordnet es der passenden gezeichneten Blume zu.',
     'shape-match':'Das Kind erkennt Kreis, Dreieck, Quadrat und Rechteck in unterschiedlichen Lagen wieder.',
     'friends-squirrel':'Das Kind zählt abgebildete Eicheln bis 20 und nutzt Vierer- oder Fünferreihen, um Mengen zu überblicken.',
     'friends-bird':'Das Kind liest vertraute Wörter und erkennt an ihrem Klang, welche Wörter sich reimen.',
-    'friends-owl':'Das Kind liest einen kurzen Satz, versteht die beschriebene Handlung und wählt das passende Tierbild.',
     'friends-beaver':'Das Kind vergleicht die ersten zwei Reihen mit zwei oder drei verschiedenen Waldgegenständen. Es ergänzt die dritte Reihe, sodass sie dieselben Dinge enthält wie die erste.',
-    'friends-mouse':'Das Kind liest ein vertrautes Nomen und verbindet das gelesene Wort mit dem passenden Bild.',
-    'friends-hedgehog':'Das Kind versteht kurze Tierfragen und ordnet Merkmale, Tierlaute und bekannte Verhaltensweisen dem passenden Tier zu.',
-    'friends-deer':'Das Kind liest Naturfragen und ordnet Tieren passende Lebensräume oder Nahrung zu.',
     'friends-kingfisher':'Das Kind zählt unterschiedliche Gegenstände am Bach und bestimmt ihre Anzahl bis 20.',
     'friends-frog':'Das Kind liest Tiernamen und erkennt, welches Tierbild zum gelesenen Wort gehört.',
     'friends-ibex':'Das Kind erkennt wiederkehrende Gruppen aus Stein, Tanne und Blume und ergänzt ein fehlendes Bild innerhalb oder am Ende des Musters.',
-    'friends-badger':'Das Kind liest kurze Naturfragen und erkennt Zusammenhänge bei Pflanzenwachstum, Wetter und Entwicklung.',
+    'friends-badger':'Das Kind liest ein vertrautes Wort, einen kurzen Satz oder eine Naturfrage und wählt das passende Bild: Tiere und ihre Handlungen, Merkmale, Lebensräume und Nahrung, Wachstum und Wetter sowie Farbwörter.',
     count:'Das Kind unterscheidet Marienkäfer von anderen kleinen Tieren und zählt gezielt nur die gesuchte Menge.',
     add:'Das Kind fasst zwei sichtbare Gruppen zu einer Gesamtmenge zusammen und bestimmt ihre Summe bis 10.',
     pattern:'Das Kind erkennt die wiederkehrende Einheit eines Musters und setzt die Folge nach derselben Regel fort.',
