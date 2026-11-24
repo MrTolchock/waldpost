@@ -29595,6 +29595,24 @@
       "at": "2026-11-24T19:03:06.848Z",
       "seen": true,
       "operation": "0f50a7c6-84e4-4558-a267-2ccc41c2103d"
+    },
+    "friends-ibex/pattern-AABC-6@f46e409ed3efb43e": {
+      "key": "friends-ibex/pattern-AABC-6",
+      "revision": "f46e409ed3efb43e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:03:10.248Z",
+      "seen": true,
+      "operation": "5d53f06d-d669-4473-9610-5738e4eb905a"
+    },
+    "puzzle:friends-ibex@8013f4869c0a3870": {
+      "key": "puzzle:friends-ibex",
+      "revision": "8013f4869c0a3870",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:03:13.479Z",
+      "seen": true,
+      "operation": "12b19cb4-9c55-46ab-854e-9495808521e4"
     }
   },
   "history": [
