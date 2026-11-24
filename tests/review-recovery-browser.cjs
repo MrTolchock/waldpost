@@ -53,9 +53,9 @@ const initialReady=expected?expected.filter(r=>r.ready).map(r=>r.id):syntheticRe
   const item=C.iterations('friends-beaver')[0],entry={key:item.id,revision:'later-unknown-renderer',status:'improve',note:'Späterer Hinweis hat Vorrang.',at:'2099-01-01T00:00:00Z',seen:true},next=server.ledger;next.entries[R.address(entry)]=entry;server.ledger=next;
   if(process.env.WALDPOST_REVIEW_REF){
    // A withdrawal and a general hold must survive the same background bridge.
-   const key=C.iterations('friends-deer')[0].id;
+   const key=C.iterations('robot')[0].id; // Reh's remaining Rätsel since 9.4.43
    next.entries[key+'@later-withdrawal']={key,revision:'later-withdrawal',status:'pending',note:'Freigabe zurückgezogen.',at:'2099-01-01T00:00:00Z',seen:true};
-   const hold={key:'puzzle:friends-mouse',revision:'later-general-hold',status:'improve',note:'Allgemeiner Hinweis bleibt offen.',at:'2099-01-01T00:00:00Z',seen:true};
+   const hold={key:'puzzle:vowels',revision:'later-general-hold',status:'improve',note:'Allgemeiner Hinweis bleibt offen.',at:'2099-01-01T00:00:00Z',seen:true};
    next.entries[R.address(hold)]=hold;server.ledger=next;
   }
   await page.evaluate(()=>FK.reviewRepository.refresh());assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false);
@@ -63,9 +63,9 @@ const initialReady=expected?expected.filter(r=>r.ready).map(r=>r.id):syntheticRe
   const fresh=await reader();assert.equal(await fresh.page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false,'a fresh device also respects the later flag');
   if(process.env.WALDPOST_REVIEW_REF){
    for(const readerPage of [page,fresh.page]){
-    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('friends-deer')),false,'a withdrawn approval stays open');
-    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('friends-mouse')),false,'a general comment stays open');
-    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.progress('friends-mouse').approved),C.iterations('friends-mouse').filter(it=>!require('./review-changes-2026-11-23.cjs').changed(it.id)).length,'the general hold retains task approvals (the four «Nuss» cards changed on 23 November)');
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('robot')),false,'a withdrawn approval stays open');
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.ready('vowels')),false,'a general comment stays open');
+    assert.equal(await readerPage.evaluate(()=>FK.puzzleReview.progress('vowels').approved),C.iterations('vowels').filter(it=>!require('./review-changes-2026-11-23.cjs').changed(it.id)).length,'the general hold retains task approvals');
    }
   }
   server.offline=true;await page.reload();await page.waitForFunction(()=>FK.reviewRepository.state.phase==='error');assert.equal(await page.evaluate(()=>FK.puzzleReview.ready('friends-beaver')),false,'the flag survives offline restart');

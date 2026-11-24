@@ -48,7 +48,7 @@ try{
    if(g.id==='trace-numbers')assert.equal(await active.locator('.puzzle-trace-quantity').isVisible(),true,'digit quantity context is visible');
    for(const subject of result.subjects)assert.match(subject.image,/assets\/waldatelier\//,g.id+' missing/mixed subject '+subject.id);
    report.push({puzzle:g.id,width,checks:'passed',subjects:result.subjects.length});
-   if(['add','friends-owl','trace','trace-numbers','read-puzzle'].includes(g.id))await page.screenshot({path:out+'/'+g.id+'-'+width+'.png'});
+   if(['add','friends-badger','trace','trace-numbers','read-puzzle'].includes(g.id))await page.screenshot({path:out+'/'+g.id+'-'+width+'.png'});
    assert.equal(await active.locator('.review-preview,.review-decision').count(),0,g.id+' no sign-off footer');
    const review=await geometry();
    await page.evaluate(g=>{const it=FK.puzzleCatalogue.iterations(g.id)[0];FK.puzzleRounds.start=()=>({id:g.id,seed:0,round:0,solved:false,work:{},questions:Array.from({length:5},()=>structuredClone(it.question)),iterationIds:Array(5).fill(it.id)});FK.go(g.screen,{game:g.id});},g);

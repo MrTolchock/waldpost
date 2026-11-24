@@ -27,7 +27,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
   await page.evaluate(()=>document.fonts.ready);
   const games=await page.evaluate(()=>FK.friendsLibrary.catalogue());
   const hosts=await page.evaluate(()=>Object.fromEntries(Object.entries(FriendsContent.hosts).map(([id,host])=>[id,host.name])));
-  assert.equal(games.length,22);
+  assert.equal(games.length,17);
   await seedFromPage(page,remote,games.map(game=>game.id));
   const snapshot=()=>page.evaluate(()=>Object.fromEntries(Object.entries(localStorage).filter(([key])=>!key.startsWith('farbtupf.puzzle-review.'))));
   const before=await snapshot();
@@ -37,7 +37,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
     const {width,height}=node.getBoundingClientRect();
     return {width:Math.round(width*100)/100,height:Math.round(height*100)/100,overflow:node.scrollWidth>node.clientWidth+1||node.scrollHeight>node.clientHeight+1};
    }));
-   assert.equal(sizes.length,22,'all puzzle tiles are measured');
+   assert.equal(sizes.length,17,'all puzzle tiles are measured');
    assert.ok(sizes.every(size=>Math.abs(size.width-sizes[0].width)<1&&Math.abs(size.height-sizes[0].height)<1&&!size.overflow),'all tiles have the same size with no clipped content: '+JSON.stringify(sizes));
    return sizes[0];
   };
@@ -45,7 +45,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
   for(const [width,height]of [[1024,700],[390,844]]){
    await page.setViewportSize({width,height});
    await page.evaluate(()=>FK.go('puzzle-gallery'));
-   await active().getByRole('button',{name:'Alle (22)',exact:true}).click();
+   await active().getByRole('button',{name:'Alle (17)',exact:true}).click();
    await page.evaluate(()=>document.fonts.ready);
    const gallerySize=await cardSize();
    await active().locator('.review-grid').evaluate(grid=>grid.scrollIntoView({block:'start'}));
@@ -83,9 +83,9 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
     assert.equal(await active().locator(selector+' [data-subject="forest-apple"],'+selector+' [data-subject="forest-berry"]').count(),0);
     if(id==='add')await page.screenshot({path:output+'/fish-addition-'+width+'.png'});
    }
-   for(const [id,key]of [['colour-words','rot-gelb-blau']]){
+   for(const [id,key]of [['friends-badger','colour-words/rot-gelb-blau']]){ // colour words are part of Dachs' reading Rätsel since 9.4.43
     const question=await page.evaluate(({id,key})=>{
-     const item=FK.puzzleCatalogue.iterations(id).find(item=>item.id===id+'/'+key);
+     const item=FK.puzzleCatalogue.iterations(id).find(item=>item.id===key);
      FK.puzzleReview.decide(id,item.id,'pending');
      FK.puzzleReview.preview(id,item.id);
      return item.question;

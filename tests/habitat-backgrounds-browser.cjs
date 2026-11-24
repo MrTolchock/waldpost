@@ -58,8 +58,8 @@ const out=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-habitat-backgrounds';
    await page.evaluate(g=>FK.go(g.screen,{game:g.id}),game);await inspect(game,'child');
   }
   // A newly blocked host must never inherit the previous host's scenery.
-  await page.evaluate(()=>{FK.puzzleReview.ready=()=>false;FK.go('puzzle',{game:'friends-deer'});});
-  await page.locator('.screen:not([hidden]) .puzzle-review-blocked').waitFor();await inspect({id:'friends-deer',host:'deer'},'blocked');
+  await page.evaluate(()=>{FK.puzzleReview.ready=()=>false;FK.go('puzzle',{game:'robot'});});
+  await page.locator('.screen:not([hidden]) .puzzle-review-blocked').waitFor();await inspect({id:'robot',host:'deer'},'blocked');
   assert.deepEqual(errors,[]);assert.equal(remote.writes.length,0);
   fs.writeFileSync(out+'/report.json',JSON.stringify({checks:report.length,scenes:habitats,reviewWrites:remote.writes.length,report},null,2)+'\n');
   console.log('PASS '+report.length+' host backgrounds across gallery, review, child play, celebration and blocked screens; all 12 scenes decode at phone, tablet and landscape sizes.');

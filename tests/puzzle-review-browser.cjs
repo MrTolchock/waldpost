@@ -15,7 +15,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  const entries=await page.evaluate(()=>FK.friendsLibrary.catalogue());
  // The gallery itself is now behind the adult gate; child access is covered by letter-sessions-browser.cjs.
  const task=await page.locator('.gate-task').textContent(),[a,b]=task.match(/\d+/g).map(Number);await page.getByLabel('Deine Antwort',{exact:true}).fill(String(a*b));await page.locator('.gate-submit').click();
- await page.waitForFunction(()=>FK.current()==='puzzle-review');await page.evaluate(()=>FK.reviewRepository.connect('test-review-token'));assert.equal(await page.locator('.review-puzzle').count(),22);await page.evaluate(()=>{window.menuSounds={tick:0,open:0};for(const name of ['tick','open']){const fn=FK.sound[name];FK.sound[name]=(...args)=>{menuSounds[name]++;return fn(...args);};}});
+ await page.waitForFunction(()=>FK.current()==='puzzle-review');await page.evaluate(()=>FK.reviewRepository.connect('test-review-token'));assert.equal(await page.locator('.review-puzzle').count(),17);await page.evaluate(()=>{window.menuSounds={tick:0,open:0};for(const name of ['tick','open']){const fn=FK.sound[name];FK.sound[name]=(...args)=>{menuSounds[name]++;return fn(...args);};}});
  assert.equal(await page.locator('.review-puzzle').evaluateAll(nodes=>nodes.some(n=>n.scrollWidth>n.clientWidth+2)),false,'review card contents fit');
  await page.screenshot({path:shots+'/review-catalogue-tablet.png'});
  // Each puzzle overview shows its rule as text; nothing is read aloud.
@@ -27,7 +27,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
   assert.equal(await page.locator('.screen:not([hidden]) .review-instruction p').textContent(),await page.evaluate(id=>FK.puzzleCatalogue.puzzle(id).instruction,g.id),g.id+' written rule');
   assert.equal(await page.getByRole('button',{name:'Spielerklärung anhören',exact:true}).count(),0,g.id+' has no read-aloud');
  }
- console.log('PASS written rule and no read-aloud on each of 22 riddle overviews');assert.deepEqual(await page.evaluate(()=>menuSounds),{tick:0,open:0},'menu navigation does not click');
+ console.log('PASS written rule and no read-aloud on each of 17 riddle overviews');assert.deepEqual(await page.evaluate(()=>menuSounds),{tick:0,open:0},'menu navigation does not click');
 
  const active=()=>page.locator('.screen:not([hidden])');
  const preview=async(id,iteration)=>page.evaluate(({id,iteration})=>FK.puzzleReview.preview(id,iteration),{id,iteration});
@@ -111,7 +111,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
    assert.equal(await active().evaluate(e=>e.scrollWidth>e.clientWidth+2),false,it.id+' overflow');
    assert.equal(await active().locator('.review-preview,.review-decision').count(),0,it.id+' no footer');
    const missing=await active().locator('.puzzle-paper .wa-illustration,.tr-play .wa-illustration').evaluateAll(nodes=>nodes.filter(n=>getComputedStyle(n).backgroundImage==='none').length);assert.equal(missing,0,it.id+' artwork');
-   if(g.id==='friends-owl'){
+   if(it.id.startsWith('friends-owl/')){ // Eule's sentences are part of Dachs' reading Rätsel since 9.4.43
     assert.match(it.question.text,/^[^.?!]+\.$/,it.id+' one sentence');
     assert.equal(await active().locator('.puzzle-answer').count(),2,it.id+' two pictures');
     assert.equal(await active().locator('.puzzle-picture-composite').count(),0,it.id+' one animal per picture');
