@@ -10,7 +10,7 @@ exports.open=async(b,opt,css)=>{
  await page.waitForFunction(()=>FK.current()==='settings');await page.getByRole('button',{name:'Rätsel-Galerie',exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-gallery');
  const games=await page.evaluate(()=>{const gs=FK.friendsLibrary.catalogue();for(const g of gs){for(const it of FK.puzzleCatalogue.iterations(g.id)){FK.puzzleReview.seen(g.id,it.id);FK.puzzleReview.decide(g.id,it.id,'approved');}FK.puzzleReview.decide(g.id,null,'approved');}
   // fixed first task per Rätsel so "Heute" and "Vorschlag" show the same Aufgabe
-  const orig=FK.puzzleReview.gallerySession;FK.puzzleReview.gallerySession=id=>{const r=Math.random;Math.random=()=>0.37;try{const s=orig(id);window.__s=s;return s;}finally{Math.random=r;}};
+  const orig=FK.puzzleReview.gallerySession;FK.puzzleReview.gallerySession=id=>{const r=Math.random;Math.random=()=>0.37;try{const s=orig(id);const f=window.__force?.[id];if(s&&f){s.questions[0]=f;}window.__s=s;return s;}finally{Math.random=r;}};
   return gs.map(g=>({id:g.id,host:g.host,title:g.title}));});
  const play=async id=>{await page.evaluate(id=>{window.__s=null;FK.go('puzzle-gallery');},id);await page.waitForFunction(()=>FK.current()==='puzzle-gallery');
   await page.evaluate(id=>FK.puzzleReview.play(id),id);await page.waitForFunction(()=>FK.current()==='puzzle'&&window.__s);

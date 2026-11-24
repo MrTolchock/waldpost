@@ -24,6 +24,22 @@ Vergleich Heute / Vorschlag für alle 22 Rätsel auf Tablet und Handy: Artifact 
 | Bildgrösse, im Rahmen und bei den Antworten | 76 px | 52 px |
 | Kästchen mit Bild | Bild + 10 px | Bild + 10 px (Spiegelbild: 46 px) |
 | Mindesthöhe des Rahmens | 208 px | 160 px |
+| Mengen verteilen: Bildgrösse | 60 px | 52 px |
+
+Bilder stehen immer über ihrem Wort, im Rahmen wie bei den Antworten (zum Beispiel bei «Reime erkennen»).
+
+### Leere Felder
+
+Ein leeres Feld ist überall gleich gestaltet: Hintergrund `#fffaf0`, 2 px gestrichelte Linie `#b39a70`, Rundung 14 px und ein «?» in Schriftgrösse 2. Es hat keinen Unterstrich und keinen Bogen. Das gilt für fehlende Muster- und Reihenteile, leere Fliegenplätze, Silbenfelder, Zahlennachbarn und die leeren Felder im Spiegelbild. Ist ein Feld gefüllt, bekommt es die normale Kästchenlinie. Ausnahme: Die Buchstabenlücke bei «Einen Vokal ergänzen» bleibt ein Teil des Wortes, so wie sie heute ist.
+
+### Einzelne Rätsel
+
+- **Schritte im Raum planen:** Der Wald bleibt das gemalte Bild mit drei Bäumen in einem Feld. Start und Ziel bleiben markiert.
+- **Zahlennachbarn:** «Das passt!» erscheint unten im Rahmen und reserviert vorher keinen Platz. So steht die Zahlenreihe senkrecht in der Mitte.
+- **Spiegelbild:** Zwischen den beiden Rastern steht ein angedeuteter Spiegel, eine schmale, silbrig glänzende Leiste.
+- **Mengen verteilen:** Auf dem Tablet sind die Bilder 60 px gross, damit die vollsten Verteilungen (2 × 10, 3 × 6, 4 × 5) aufs Papier passen. Am knappsten ist 3 × 6 auf dem Tablet. Beeren und Freunde sind innerhalb des Rätsels gleich gross.
+- **Gegenstände merken:** Die Auswahlleiste nach dem Merken ist im Artifact mit aufgeführt.
+- **Silben zu Wörtern:** Im Spiel muss der Platzhalter `'___'` in `js/screens/puzzle.js` durch «?» ersetzt werden. Der Vorschlag blendet ihn nur per CSS aus.
 
 Rahmen: Hintergrund `#f4f0e1`, Linie 1 px `#d6c5a4`, Rundung 22 px, ohne Schatten. Kästchen im Rahmen: Hintergrund `#fffaf0`, gleiche Linie, Rundung 14 px. Leere Felder: 2 px gestrichelt `#b39a70`.
 
@@ -32,7 +48,7 @@ Nachgemessen mit `capture/measure.cjs` in allen 22 Rätseln auf beiden Geräten:
 ## Offene Punkte
 
 - **Fliegen (Handy):** Das letzte Kästchen sitzt knapp am Rahmen.
-- **Spiegelbild (Handy):** Die Kästchen sind kleiner, damit beide Raster nebeneinander passen. Das Rätsel hat keine Bild-Antworten.
+- **Spiegelbild (Handy):** Die Kästchen sind kleiner, damit beide Raster und der Spiegel nebeneinander passen. Das Rätsel hat keine Bild-Antworten.
 - **Addieren (Handy):** Die beiden Gruppen stehen untereinander statt nebeneinander.
 
 ## Umsetzung nach der Freigabe
@@ -53,4 +69,4 @@ node measure.cjs tablet   # bzw. phone; misst mit proposal.css
 python3 montage.py <ausgabeordner> tablet vorschlag uebersicht.jpg
 ```
 
-Die Skripte geben alle Rätsel in einem Wegwerf-Browser nur lokal frei (Entwicklungsmodus `dev=1`, alle Anfragen nach aussen gesperrt). In die Prüfdaten wird nichts geschrieben. Jedes Rätsel zeigt in beiden Ständen dieselbe Aufgabe.
+Die Skripte geben alle Rätsel in einem Wegwerf-Browser nur lokal frei (Entwicklungsmodus `dev=1`, alle Anfragen nach aussen gesperrt). In die Prüfdaten wird nichts geschrieben. Jedes Rätsel zeigt in beiden Ständen dieselbe Aufgabe. Zusätzlich werden die drei vollsten Beeren-Verteilungen und die Auswahlleiste beim Merken aufgenommen.

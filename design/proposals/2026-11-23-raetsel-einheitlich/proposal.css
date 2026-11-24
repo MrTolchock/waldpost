@@ -80,3 +80,41 @@ body .screen-puzzle .puzzle-addition>section{padding:10px !important;gap:4px !im
  body .screen-puzzle .puzzle-mirror .puzzle-picture{width:100% !important;height:100% !important}
  body .screen-puzzle .puzzle-mirror-grid{gap:3px !important}
 }
+
+/* ---- Runde 2 (24.11.) ---- */
+/* Bild immer über dem Wort: Rahmen wie Antworten */
+body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-picture{order:-1}
+
+/* Wald: das gemalte Bild mit drei Bäumen bleibt in einem Feld; Start und Ziel bleiben markiert */
+body .screen-puzzle .puzzle-route-cell .puzzle-woods{width:100% !important;height:100% !important;aspect-ratio:1;position:relative !important}
+body .screen-puzzle .puzzle-route-cell .puzzle-woods>.puzzle-picture{position:absolute !important;width:64% !important;height:64% !important;left:0;top:4%}
+body .screen-puzzle .puzzle-route-cell .puzzle-woods>.puzzle-picture:nth-child(2){left:36%;top:8%}
+body .screen-puzzle .puzzle-route-cell .puzzle-woods>.puzzle-picture:last-child{left:17%;top:32%}
+body .screen-puzzle .puzzle-route-cell.post{background:#efdeb5 !important;border:2px solid #b88c44 !important}
+body .screen-puzzle .puzzle-route-cell.goal{border:2px solid #7b965a !important}
+
+/* Zahlennachbarn: «Das passt!» belegt keinen Platz, die Reihe steht mittig */
+body .screen-puzzle .puzzle-scene>.puzzle-neighbours+.puzzle-group-result{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);margin:0 !important}
+
+/* Spiegelbild: ein angedeuteter Spiegel in der Mitte */
+body .screen-puzzle .puzzle-mirror{align-items:stretch;gap:14px !important}
+body .screen-puzzle .puzzle-mirror-line{flex:none;width:12px !important;min-height:100%;border-radius:6px !important;
+ background:linear-gradient(90deg,#b9cacc 0%,#eef5f5 35%,#ffffff 50%,#d7e3e4 65%,#a9bcbf 100%) !important;box-shadow:0 0 0 1px #94a9ac,0 0 10px #cfe0e266}
+
+/* Leere Felder überall gleich: helles Papier, 2 px gestrichelt, ohne Strich und Bogen.
+   Ausnahme: die Buchstabenlücke beim Vokal-Rätsel bleibt im Text. */
+body .screen-puzzle :is(.gap,.puzzle-firefly-slot.is-empty,.puzzle-syllable-slot:not(.filled),.puzzle-number-card[data-neighbour-slot]:not(.filled),.puzzle-mirror-grid button.puzzle-mirror-cell:not(.filled)){
+ background:var(--pv-card) !important;border:2px dashed #b39a70 !important;border-radius:14px !important;color:#9a825e}
+body .screen-puzzle .puzzle-syllable-slot{padding:8px 14px !important}
+body .screen-puzzle .puzzle-syllable-slot::after{display:none !important}
+body .screen-puzzle .puzzle-syllable-chip{border-bottom:1px solid #bda482 !important}
+/* Leere Silbenfelder zeigen dasselbe «?» wie die anderen leeren Felder (im Spiel: Text statt '___') */
+body .screen-puzzle .puzzle-scene .puzzle-syllable-slot:not(.filled){font-size:0 !important;color:#9a825e}
+body .screen-puzzle .puzzle-scene .puzzle-syllable-slot:not(.filled)::before{content:"?";font-size:var(--pv-text)}
+/* Mengen verteilen (bis 2 × 10 Beeren): auf dem Tablet 60 px, damit das Papier auf den Bildschirm passt.
+   Beeren und Freunde bleiben innerhalb des Rätsels gleich gross. */
+@media(min-width:601px){body .screen-puzzle[data-game=picnic]{--pv-pic:60px}}
+body .screen-puzzle .puzzle-picnic-bank{margin-bottom:8px !important;min-height:calc(var(--pv-pic) + 14px) !important;padding:6px !important}
+body .screen-puzzle .puzzle-picnic-friends{gap:8px !important}
+body .screen-puzzle .puzzle-picnic-place{padding:4px 6px !important}
+body .screen-puzzle .puzzle-picnic-berries{min-height:0 !important}
