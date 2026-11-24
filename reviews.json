@@ -28758,6 +28758,303 @@
       "at": "2026-11-24T06:53:08.470Z",
       "seen": true,
       "operation": "e4642c05-bb2f-4eb1-b37b-4192847dd56d"
+    },
+    "treasure/0-0@8d3c7d48557b1f58": {
+      "key": "treasure/0-0",
+      "revision": "8d3c7d48557b1f58",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:51:54.040Z",
+      "seen": true,
+      "operation": "a63d9be1-ff9f-4e11-8c84-2b8e207cc4b4"
+    },
+    "treasure/0-1@5ed9424ecd4458f0": {
+      "key": "treasure/0-1",
+      "revision": "5ed9424ecd4458f0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:51:57.202Z",
+      "seen": true,
+      "operation": "33b22946-39f9-4b48-a1a1-4167083b6081"
+    },
+    "treasure/0-2@2b9a04c3918640b1": {
+      "key": "treasure/0-2",
+      "revision": "2b9a04c3918640b1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:51:59.719Z",
+      "seen": true,
+      "operation": "8f79ac66-8ab0-4516-a326-7cb8f3782f81"
+    },
+    "treasure/0-3@cd7c558c95bf75bc": {
+      "key": "treasure/0-3",
+      "revision": "cd7c558c95bf75bc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:03.570Z",
+      "seen": true,
+      "operation": "4b97e54d-032a-4f4e-bf37-d05ffbc91e13"
+    },
+    "treasure/1-0@7b19e7497823f2f9": {
+      "key": "treasure/1-0",
+      "revision": "7b19e7497823f2f9",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:07.617Z",
+      "seen": true,
+      "operation": "fc0ad077-53a2-4c73-a118-5563aaf40a67"
+    },
+    "treasure/1-1@3a4900a0358545da": {
+      "key": "treasure/1-1",
+      "revision": "3a4900a0358545da",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:10.503Z",
+      "seen": true,
+      "operation": "728605ee-82d6-4968-be40-dac7963ff1d6"
+    },
+    "treasure/1-2@dbde2c57f8075d91": {
+      "key": "treasure/1-2",
+      "revision": "dbde2c57f8075d91",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:12.702Z",
+      "seen": true,
+      "operation": "bf503353-f708-4f8b-b09f-b50817e6afa2"
+    },
+    "treasure/1-3@d6687c1968c0259d": {
+      "key": "treasure/1-3",
+      "revision": "d6687c1968c0259d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:14.916Z",
+      "seen": true,
+      "operation": "2c66a5ac-7af8-4597-a1aa-3d1d3862248b"
+    },
+    "treasure/2-0@b55e6af0e017db7a": {
+      "key": "treasure/2-0",
+      "revision": "b55e6af0e017db7a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:17.935Z",
+      "seen": true,
+      "operation": "98ee9255-f588-41a9-96ad-b44e03470fc9"
+    },
+    "treasure/2-1@dfe65303d2412439": {
+      "key": "treasure/2-1",
+      "revision": "dfe65303d2412439",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:19.951Z",
+      "seen": true,
+      "operation": "8250a50b-d5dd-4d9d-9a7d-ce0158e02ddb"
+    },
+    "treasure/2-2@4794cff2eeea5cda": {
+      "key": "treasure/2-2",
+      "revision": "4794cff2eeea5cda",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:22.218Z",
+      "seen": true,
+      "operation": "15907c7c-b5a1-4d9d-8ee7-7f8317670845"
+    },
+    "treasure/2-3@43e8806bbcff6d31": {
+      "key": "treasure/2-3",
+      "revision": "43e8806bbcff6d31",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:24.284Z",
+      "seen": true,
+      "operation": "379eb102-af42-43c0-85e1-2bcf88f0c492"
+    },
+    "treasure/3-0@6ef817d2f198e5c8": {
+      "key": "treasure/3-0",
+      "revision": "6ef817d2f198e5c8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:26.983Z",
+      "seen": true,
+      "operation": "8db62dd5-4c2d-4e99-b387-bb8c1dd0da33"
+    },
+    "treasure/3-1@37d8a1be3ca859d8": {
+      "key": "treasure/3-1",
+      "revision": "37d8a1be3ca859d8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:28.919Z",
+      "seen": true,
+      "operation": "bdec304b-8a6c-44d8-8878-0c62172ab2c8"
+    },
+    "treasure/3-2@08c8c761889f2d1b": {
+      "key": "treasure/3-2",
+      "revision": "08c8c761889f2d1b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:31.349Z",
+      "seen": true,
+      "operation": "cc365474-21ec-4546-8641-80180ecf5979"
+    },
+    "treasure/3-3@90b9a8579ec85dbf": {
+      "key": "treasure/3-3",
+      "revision": "90b9a8579ec85dbf",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:33.467Z",
+      "seen": true,
+      "operation": "4d48b718-9990-48cf-9215-a3a2cfff0b86"
+    },
+    "treasure/4-0@2d9dd3cdfba14ded": {
+      "key": "treasure/4-0",
+      "revision": "2d9dd3cdfba14ded",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:37.800Z",
+      "seen": true,
+      "operation": "05d6b0d4-86da-4009-9bb3-840e78250e9f"
+    },
+    "treasure/4-1@067feac3fb08890d": {
+      "key": "treasure/4-1",
+      "revision": "067feac3fb08890d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:40.332Z",
+      "seen": true,
+      "operation": "834dd1fd-2fba-4440-9c27-69a8ac5254cd"
+    },
+    "treasure/4-2@272597162f67153c": {
+      "key": "treasure/4-2",
+      "revision": "272597162f67153c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:42.582Z",
+      "seen": true,
+      "operation": "9764ec39-ab46-41da-b422-afc102948ce0"
+    },
+    "treasure/4-3@34275e2e6bcc2938": {
+      "key": "treasure/4-3",
+      "revision": "34275e2e6bcc2938",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:45.913Z",
+      "seen": true,
+      "operation": "8be23071-9578-48c7-8888-4023a26d6141"
+    },
+    "treasure/5-0@85021944d917228a": {
+      "key": "treasure/5-0",
+      "revision": "85021944d917228a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:51.132Z",
+      "seen": true,
+      "operation": "10f2738f-044d-48f2-8e09-e9b370da3cf3"
+    },
+    "treasure/5-1@f9b326c4f1e9da82": {
+      "key": "treasure/5-1",
+      "revision": "f9b326c4f1e9da82",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:52:54.098Z",
+      "seen": true,
+      "operation": "e839842f-b478-40aa-beb0-f354c9699c39"
+    },
+    "treasure/5-2@79b1f285689f4db9": {
+      "key": "treasure/5-2",
+      "revision": "79b1f285689f4db9",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:15.918Z",
+      "seen": true,
+      "operation": "a7d2f4bb-df59-401d-83c8-e7fdee31d055"
+    },
+    "treasure/5-3@4580fc00f60f56cc": {
+      "key": "treasure/5-3",
+      "revision": "4580fc00f60f56cc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:19.906Z",
+      "seen": true,
+      "operation": "e98902be-be4d-4194-80dc-a8b3832c189a"
+    },
+    "treasure/6-0@8ba83d33c87ca1d7": {
+      "key": "treasure/6-0",
+      "revision": "8ba83d33c87ca1d7",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:23.103Z",
+      "seen": true,
+      "operation": "eb21386d-36da-4106-adb4-c3779d12582b"
+    },
+    "treasure/6-1@e795dfc4a9a2087a": {
+      "key": "treasure/6-1",
+      "revision": "e795dfc4a9a2087a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:25.440Z",
+      "seen": true,
+      "operation": "662e9180-4a81-4c8f-b766-32ca72a7f9bd"
+    },
+    "treasure/6-2@58d102d9bdfb3c0f": {
+      "key": "treasure/6-2",
+      "revision": "58d102d9bdfb3c0f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:27.504Z",
+      "seen": true,
+      "operation": "dda1f7d0-05f8-4bcc-bb71-b1b7bba5784d"
+    },
+    "treasure/6-3@3fd2da7db613ae09": {
+      "key": "treasure/6-3",
+      "revision": "3fd2da7db613ae09",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:29.689Z",
+      "seen": true,
+      "operation": "68a21e02-63b0-4f03-ac37-acf7f3b17158"
+    },
+    "treasure/7-0@83fa3e05530b8e7b": {
+      "key": "treasure/7-0",
+      "revision": "83fa3e05530b8e7b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:41.140Z",
+      "seen": true,
+      "operation": "8287a450-f830-44f3-bced-1254cccff1cb"
+    },
+    "treasure/7-1@a5d9b0bb1a56b92d": {
+      "key": "treasure/7-1",
+      "revision": "a5d9b0bb1a56b92d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:43.203Z",
+      "seen": true,
+      "operation": "84e8f9e4-120f-40ab-82bb-29263006bb40"
+    },
+    "treasure/7-2@534d15dc6f962368": {
+      "key": "treasure/7-2",
+      "revision": "534d15dc6f962368",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:46.371Z",
+      "seen": true,
+      "operation": "39d396cc-688b-4d0d-b577-3fb3dfc11c95"
+    },
+    "treasure/7-3@883585bc38ffacd6": {
+      "key": "treasure/7-3",
+      "revision": "883585bc38ffacd6",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:48.701Z",
+      "seen": true,
+      "operation": "5f8c0f38-86c1-4082-8573-fe9e0a9210a9"
+    },
+    "puzzle:treasure@3ad774d6cebff4c8": {
+      "key": "puzzle:treasure",
+      "revision": "3ad774d6cebff4c8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T18:54:51.860Z",
+      "seen": true,
+      "operation": "75cf02af-a265-490f-8bd1-3dd3313d4f74"
     }
   },
   "history": [
