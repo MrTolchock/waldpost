@@ -29460,6 +29460,105 @@
       "at": "2026-11-24T19:02:32.797Z",
       "seen": true,
       "operation": "5d5a936e-e2be-497b-9bf0-0e08c4fb253a"
+    },
+    "friends-ibex/pattern-ABC-3@99daf9df87da08f9": {
+      "key": "friends-ibex/pattern-ABC-3",
+      "revision": "99daf9df87da08f9",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:35.609Z",
+      "seen": true,
+      "operation": "6bbac8ee-e864-40ae-be0a-7fde747eb8b4"
+    },
+    "friends-ibex/pattern-ABC-4@8f7de3294911f4a3": {
+      "key": "friends-ibex/pattern-ABC-4",
+      "revision": "8f7de3294911f4a3",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:38.150Z",
+      "seen": true,
+      "operation": "23dfeb6b-dab1-45e9-8e7b-f0172c96b8e7"
+    },
+    "friends-ibex/pattern-ABC-5@cbd6bda95cbf3ebf": {
+      "key": "friends-ibex/pattern-ABC-5",
+      "revision": "cbd6bda95cbf3ebf",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:39.833Z",
+      "seen": true,
+      "operation": "066ac3b2-8cfe-4b1c-9f28-d75c3db51080"
+    },
+    "friends-ibex/pattern-ABC-6@c8d6c6b2a6ea7106": {
+      "key": "friends-ibex/pattern-ABC-6",
+      "revision": "c8d6c6b2a6ea7106",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:41.731Z",
+      "seen": true,
+      "operation": "71eb6484-eb46-4f2b-a986-1db2bd8e39b6"
+    },
+    "friends-ibex/pattern-ABAC-1@ccfb92265a284dd4": {
+      "key": "friends-ibex/pattern-ABAC-1",
+      "revision": "ccfb92265a284dd4",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:43.300Z",
+      "seen": true,
+      "operation": "3c120358-82d2-4062-9a24-d7b1d09eec57"
+    },
+    "friends-ibex/pattern-ABAC-2@c4c1f34b9e8dcf5b": {
+      "key": "friends-ibex/pattern-ABAC-2",
+      "revision": "c4c1f34b9e8dcf5b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:45.252Z",
+      "seen": true,
+      "operation": "daaa4826-63a3-41a5-8200-97464d669099"
+    },
+    "friends-ibex/pattern-ABAC-3@42638ab888a3db56": {
+      "key": "friends-ibex/pattern-ABAC-3",
+      "revision": "42638ab888a3db56",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:46.880Z",
+      "seen": true,
+      "operation": "8823b14b-b290-48ac-b52a-be7cea26674b"
+    },
+    "friends-ibex/pattern-ABAC-4@61b0709b589c509f": {
+      "key": "friends-ibex/pattern-ABAC-4",
+      "revision": "61b0709b589c509f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:48.553Z",
+      "seen": true,
+      "operation": "138e6b43-35c0-42a7-9e34-37e028dd7c7e"
+    },
+    "friends-ibex/pattern-ABAC-5@0424007a69a065d0": {
+      "key": "friends-ibex/pattern-ABAC-5",
+      "revision": "0424007a69a065d0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:50.479Z",
+      "seen": true,
+      "operation": "0cae6e0e-3dda-48fe-b571-0f85c3ef8a05"
+    },
+    "friends-ibex/pattern-ABAC-6@306321bbf3c9bbdf": {
+      "key": "friends-ibex/pattern-ABAC-6",
+      "revision": "306321bbf3c9bbdf",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:52.032Z",
+      "seen": true,
+      "operation": "4f8ac981-f231-472a-9942-c5ffe74907b3"
+    },
+    "friends-ibex/pattern-AABC-1@22180560abd36bf4": {
+      "key": "friends-ibex/pattern-AABC-1",
+      "revision": "22180560abd36bf4",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-24T19:02:53.931Z",
+      "seen": true,
+      "operation": "f2659c68-c8a3-487e-8949-295aeca183e3"
     }
   },
   "history": [
