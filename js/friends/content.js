@@ -16,7 +16,7 @@
     // Dachs (Natur): how plants and animals grow, weather, day and evening.
     badger: { name: 'Dachs', picture: 'friend-badger', resource: 'seeds', category: 'Natur', code: 'NAT-03', reference: 'NMG.2.3.a', instruction: 'Lies die Frage. Tippe auf das passende Bild.' },
     // Steinbock (Mathematik) lives up on the Rock, across the bridging stone: patterns of stone, fir and flower.
-    ibex: { name: 'Steinbock', picture: 'friend-ibex', resource: 'seeds', category: 'Mathematik', code: 'PAT-01', reference: 'MA.2.A.2.a', instruction: 'Welches Bild fehlt im Bergmuster?' },
+    ibex: { name: 'Steinbock', picture: 'friend-ibex', resource: 'seeds', category: 'Mathematik', code: 'PAT-01', reference: 'MA.2.A.2.a', instruction: 'Welches Bild fehlt im Muster?' },
   };
   const words = { Maus:'mouse', Haus:'house', Hose:'trousers', Hut:'hat', Rose:'rose', Nase:'nose', Fisch:'fish', Tisch:'table', Ball:'ball', Baum:'tree', Boot:'boat', Kuh:'cow', Schuh:'shoe', Bein:'leg', Stein:'stone', Buch:'book', Tuch:'cloth', Hase:'hare', Dose:'tin', Bus:'bus', Nuss:'nut', Stern:'star', Turm:'tower', Wurm:'worm', Topf:'pot', Kopf:'head', Hand:'hand', Sand:'sand', Schal:'scarf', Wal:'whale', Seil:'rope', Pfeil:'arrow', Tasse:'cup', Kasse:'till', Bank:'bench', Schrank:'wardrobe', Kern:'seeds' };
   const version = 'friends-2';

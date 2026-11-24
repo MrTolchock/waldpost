@@ -1,6 +1,6 @@
 # Vorschlag: einheitliche Rätsel (23. November 2026)
 
-Status: **Entwurf, wartet auf Freigabe.** Nichts davon ist im Spiel. `proposal.css` wird nur bei der Aufnahme in den Browser eingespielt; keine Laufzeitdatei lädt es.
+Status: **Umgesetzt in 9.4.41.** Die geltenden Regeln stehen im [einheitlichen Rätsel-Layout](../../RAETSEL-LAYOUT.md), die Werkzeuge in [tools/raetsel-ansichten](../../../tools/raetsel-ansichten/README.md). Diese Seite und `proposal.css` halten fest, wie der Vorschlag entstand; das Spiel lädt `proposal.css` nicht.
 
 Vergleich Heute / Vorschlag für alle 22 Rätsel auf Tablet und Handy: Artifact «Waldpost Rätselbilder» (privat, im claude.ai-Konto des Besitzers).
 

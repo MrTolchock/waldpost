@@ -46,7 +46,7 @@
     const random=rng((seed+Math.imul(round+1,2654435761))>>>0),q={id,round};
     if(id==='count'){
       const count=mix([6,8,9,11,13],r)[round];
-      return {...q,kind:'count',prompt:'Wie viele rote Marienkäfer sind hier?',count,answer:count,choices:numbers(count,15,random),bugs:mix([...Array(count).fill('ladybird'),...Array(3+round%2).fill('bee'),...Array(2).fill('snail')],random)};
+      return {...q,kind:'count',prompt:'Wie viele Marienkäfer sind hier?',count,answer:count,choices:numbers(count,15,random),bugs:mix([...Array(count).fill('ladybird'),...Array(3+round%2).fill('bee'),...Array(2).fill('snail')],random)};
     }
     if(id==='add'){
       const [a,b]=mix([[2,3],[4,2],[3,4],[5,3],[6,4]],r)[round];
@@ -97,7 +97,7 @@
     }
     if(id==='treasure'){
       const objects=mix(['forest-leaf','forest-feather','forest-mushroom','forest-stone','forest-berry','forest-nut','forest-apple','forest-flower'],random).slice(0,4),missing=int(random,0,3);
-      return {...q,kind:'treasure',prompt:'Merke dir die vier Waldschätze.',objects,missing,answer:objects[missing],choices:mix([objects[missing],...mix(objects.filter((_,i)=>i!==missing),random).slice(0,2)],random)};
+      return {...q,kind:'treasure',prompt:'Merke dir die vier Gegenstände.',objects,missing,answer:objects[missing],choices:mix([objects[missing],...mix(objects.filter((_,i)=>i!==missing),random).slice(0,2)],random)};
     }
     if(id==='neighbours'){
       const n=mix([3,5,7,9,12],r)[round];return {...q,kind:'neighbours',prompt:'Welche Zahlen kommen davor und danach?',n,answer:[n-1,n+1],choices:mix([n-2,n-1,n+1,n+2],random)};

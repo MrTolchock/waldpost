@@ -15,11 +15,11 @@ Competences below are bounded practice references to [Zürich Zyklus 1](CURRICUL
 | [Kurze Sätze verstehen](puzzles/friends-owl.md) | Waldkauz | D.2.A.1.b; D.2.B.1.b — Kurze Sätze verstehen | Ein kurzer Satz über ein Tier; immer zwei Bildantworten | 25 |
 | [Reihen ergänzen](puzzles/friends-beaver.md) | Biber | MA.2.A.1.a — Reihen mit Waldgegenständen ergänzen | Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste | 43 |
 | [Wörter mit Bildern verbinden](puzzles/friends-mouse.md) | Maus | D.2.A.1.b — Wörter mit Bildern verbinden | Vertraute Nomen und Tiernamen; eingeführte Buchstaben | 74 |
-| [Tiermerkmale erkennen und Fragen lesen](puzzles/friends-hedgehog.md) | Igel | NMG.2.4.a; D.2.B.1.b — Tiermerkmale erkennen und Fragen lesen | 44 kurze Tierfragen; drei Bildantworten | 44 |
+| [Tiermerkmale erkennen](puzzles/friends-hedgehog.md) | Igel | NMG.2.4.a; D.2.B.1.b — Tiermerkmale erkennen | 44 kurze Tierfragen; drei Bildantworten | 44 |
 | [Lebensräume und Nahrung zuordnen](puzzles/friends-deer.md) | Reh | NMG.2.1.a; D.2.B.1.b — Lebensräume und Nahrung zuordnen | 25 kurze Naturfragen; drei Bildantworten | 25 |
 | [Wachstum und Naturveränderungen erkennen](puzzles/friends-badger.md) | Dachs | NMG.2.3.a; D.2.B.1.b — Wachstum und Naturveränderungen erkennen | 25 kurze Fragen zu Wetter, Pflanzen und Entwicklung | 25 |
 | [Muster fortsetzen](puzzles/friends-ibex.md) | Steinbock | MA.2.A.2.a — Wiederholungsmuster fortsetzen und ergänzen | AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe | 30 |
-| [Gezielt Mengen zählen](puzzles/count.md) | Igel | MA.1.A.2.a — Gezielt Mengen zählen | 6–15 Marienkäfer zwischen Bienen und Schnecken | 30 |
+| [Mengen gezielt zählen](puzzles/count.md) | Igel | MA.1.A.2.a — Mengen gezielt zählen | 6–15 Marienkäfer zwischen Bienen und Schnecken | 30 |
 | [Mengen addieren](puzzles/add.md) | Fisch | MA.1.A.3.a — Sichtbare Gruppen addieren | Zwei positive Summanden; Summe höchstens 10 | 45 |
 | [Mengen ergänzen](puzzles/rocket.md) | Frosch | MA.1.A.4.b — Mengen ergänzen | Gesamtmenge 5–10; besetzte und freie Plätze | 39 |
 | [Mengen verteilen](puzzles/picnic.md) | Frosch | MA.1.A.4.a (Übung) — Eins zu eins gerecht verteilen | 2–4 Freunde; 1–10 Beeren je Freund; insgesamt höchstens 20 | 25 |

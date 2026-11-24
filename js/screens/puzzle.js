@@ -233,7 +233,7 @@
     const reveal=!!work().hidden,items=h('div',{class:'puzzle-treasures'},q.objects.map((id,i)=>h('span',{class:reveal&&i===q.missing?'gap':''},reveal&&i===q.missing?'?':picture(id))));
     scene.append(items);
     if(!reveal)answerArea.append(button('Ich habe sie mir gemerkt',()=>{if(locked)return;work().hidden=true;persist();draw();},'puzzle-memory-ready puzzle-memory-button',FK.icons.element('check')));
-    else {body.querySelector('.puzzle-prompt').textContent='Welcher Waldschatz fehlt?';q.choices.forEach(v=>option(v,picture(v),'Diesen Waldschatz wählen: '+pictureName(v)));}
+    else {body.querySelector('.puzzle-prompt').textContent='Welcher Gegenstand fehlt?';q.choices.forEach(v=>option(v,picture(v),'Diesen Gegenstand wählen: '+pictureName(v)));}
   }
   function renderNeighbours(q) {
     const saved=work().neighbours;
@@ -288,7 +288,7 @@
   function renderSyllables(q) {
     let picked=Array.isArray(work().syllables)?work().syllables:[];
     const slots=h('div',{class:'puzzle-syllable-slots'}),chips=h('div',{class:'puzzle-syllable-chips'});
-    const redraw=()=>{slots.replaceChildren(...q.parts.map((part,i)=>h('span',{class:'puzzle-syllable-slot'+(i<picked.length?' filled':'')},i<picked.length?FK.text.syllable(part).toLocaleUpperCase('de-CH'):'___')));chips.replaceChildren();q.order.forEach(i=>{
+    const redraw=()=>{slots.replaceChildren(...q.parts.map((part,i)=>h('span',{class:'puzzle-syllable-slot'+(i<picked.length?' filled':'')},i<picked.length?FK.text.syllable(part).toLocaleUpperCase('de-CH'):'?')));chips.replaceChildren();q.order.forEach(i=>{
       let node;node=button(q.chips[i].toLocaleUpperCase('de-CH'),()=>{if(locked)return;const expected=q.parts[picked.length];if(q.chips[i]!==expected){fail(node);return;}picked.push(i);work().syllables=picked;persist();redraw();if(picked.length===q.parts.length)solved(slots);},'puzzle-syllable-chip',FK.text.syllable(q.chips[i]).toLocaleUpperCase('de-CH'));node.disabled=picked.includes(i);node.dataset.part=q.chips[i];chips.append(node);
     });};
     scene.append(picture(q.picture),slots);answerArea.append(chips);redraw();

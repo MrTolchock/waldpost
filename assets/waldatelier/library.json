@@ -35,7 +35,7 @@
       "host": "mouse"
     },
     "friends-hedgehog": {
-      "title": "Tiermerkmale erkennen und Fragen lesen",
+      "title": "Tiermerkmale erkennen",
       "host": "hedgehog"
     },
     "friends-deer": {
@@ -51,7 +51,7 @@
       "host": "ibex"
     },
     "count": {
-      "title": "Gezielt Mengen zählen",
+      "title": "Mengen gezielt zählen",
       "host": "hedgehog"
     },
     "add": {

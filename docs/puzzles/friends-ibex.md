@@ -26,36 +26,36 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `friends-ibex/pattern-AAB-1` | Stein, Stein, Tanne, Stein, Stein, Tanne, ? — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-AAB-2` | Stein, Stein, Blume, Stein, ?, Blume, Stein — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-AAB-3` | Tanne, Tanne, Stein, Tanne, Tanne, Stein, ? — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-AAB-4` | Tanne, Tanne, Blume, ?, Tanne, Blume, Tanne — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-AAB-5` | Blume, Blume, Stein, Blume, Blume, Stein, ? — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-AAB-6` | Blume, Blume, Tanne, Blume, Blume, ?, Blume — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-ABB-1` | Stein, Tanne, Tanne, Stein, Tanne, Tanne, ? — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-ABB-2` | Stein, Blume, Blume, Stein, Blume, ?, Stein — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-ABB-3` | Tanne, Stein, Stein, Tanne, Stein, Stein, ? — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-ABB-4` | Tanne, Blume, Blume, Tanne, ?, Blume, Tanne — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-ABB-5` | Blume, Stein, Stein, Blume, Stein, Stein, ? — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-ABB-6` | Blume, Tanne, Tanne, ?, Tanne, Tanne, Blume — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-ABC-1` | Stein, Tanne, Blume, Stein, Tanne, Blume, ? — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-ABC-2` | Stein, Blume, Tanne, ?, Blume, Tanne, Stein — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-ABC-3` | Tanne, Stein, Blume, Tanne, Stein, Blume, ? — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-ABC-4` | Tanne, Blume, Stein, Tanne, Blume, ?, Tanne — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-ABC-5` | Blume, Stein, Tanne, Blume, Stein, Tanne, ? — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-ABC-6` | Blume, Tanne, Stein, Blume, ?, Stein, Blume — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-ABAC-1` | Stein, Tanne, Stein, Blume, Stein, Tanne, Stein, Blume, ? — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-ABAC-2` | Stein, Blume, Stein, Tanne, ?, Blume, Stein, Tanne, Stein — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-ABAC-3` | Tanne, Stein, Tanne, Blume, Tanne, Stein, Tanne, Blume, ? — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-ABAC-4` | Tanne, Blume, Tanne, Stein, Tanne, Blume, ?, Stein, Tanne — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-ABAC-5` | Blume, Stein, Blume, Tanne, Blume, Stein, Blume, Tanne, ? — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-ABAC-6` | Blume, Tanne, Blume, Stein, ?, Tanne, Blume, Stein, Blume — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-AABC-1` | Stein, Stein, Tanne, Blume, Stein, Stein, Tanne, Blume, ? — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-AABC-2` | Stein, Stein, Blume, Tanne, Stein, ?, Blume, Tanne, Stein — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-AABC-3` | Tanne, Tanne, Stein, Blume, Tanne, Tanne, Stein, Blume, ? — Welches Bild fehlt im Bergmuster? | "forest-fir" |
-| `friends-ibex/pattern-AABC-4` | Tanne, Tanne, Blume, Stein, Tanne, Tanne, Blume, ?, Tanne — Welches Bild fehlt im Bergmuster? | "forest-stone" |
-| `friends-ibex/pattern-AABC-5` | Blume, Blume, Stein, Tanne, Blume, Blume, Stein, Tanne, ? — Welches Bild fehlt im Bergmuster? | "forest-flower" |
-| `friends-ibex/pattern-AABC-6` | Blume, Blume, Tanne, Stein, Blume, ?, Tanne, Stein, Blume — Welches Bild fehlt im Bergmuster? | "forest-flower" |
+| `friends-ibex/pattern-AAB-1` | Stein, Stein, Tanne, Stein, Stein, Tanne, ? — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-AAB-2` | Stein, Stein, Blume, Stein, ?, Blume, Stein — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-AAB-3` | Tanne, Tanne, Stein, Tanne, Tanne, Stein, ? — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-AAB-4` | Tanne, Tanne, Blume, ?, Tanne, Blume, Tanne — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-AAB-5` | Blume, Blume, Stein, Blume, Blume, Stein, ? — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-AAB-6` | Blume, Blume, Tanne, Blume, Blume, ?, Blume — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-ABB-1` | Stein, Tanne, Tanne, Stein, Tanne, Tanne, ? — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-ABB-2` | Stein, Blume, Blume, Stein, Blume, ?, Stein — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-ABB-3` | Tanne, Stein, Stein, Tanne, Stein, Stein, ? — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-ABB-4` | Tanne, Blume, Blume, Tanne, ?, Blume, Tanne — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-ABB-5` | Blume, Stein, Stein, Blume, Stein, Stein, ? — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-ABB-6` | Blume, Tanne, Tanne, ?, Tanne, Tanne, Blume — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-ABC-1` | Stein, Tanne, Blume, Stein, Tanne, Blume, ? — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-ABC-2` | Stein, Blume, Tanne, ?, Blume, Tanne, Stein — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-ABC-3` | Tanne, Stein, Blume, Tanne, Stein, Blume, ? — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-ABC-4` | Tanne, Blume, Stein, Tanne, Blume, ?, Tanne — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-ABC-5` | Blume, Stein, Tanne, Blume, Stein, Tanne, ? — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-ABC-6` | Blume, Tanne, Stein, Blume, ?, Stein, Blume — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-ABAC-1` | Stein, Tanne, Stein, Blume, Stein, Tanne, Stein, Blume, ? — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-ABAC-2` | Stein, Blume, Stein, Tanne, ?, Blume, Stein, Tanne, Stein — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-ABAC-3` | Tanne, Stein, Tanne, Blume, Tanne, Stein, Tanne, Blume, ? — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-ABAC-4` | Tanne, Blume, Tanne, Stein, Tanne, Blume, ?, Stein, Tanne — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-ABAC-5` | Blume, Stein, Blume, Tanne, Blume, Stein, Blume, Tanne, ? — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-ABAC-6` | Blume, Tanne, Blume, Stein, ?, Tanne, Blume, Stein, Blume — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-AABC-1` | Stein, Stein, Tanne, Blume, Stein, Stein, Tanne, Blume, ? — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-AABC-2` | Stein, Stein, Blume, Tanne, Stein, ?, Blume, Tanne, Stein — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-AABC-3` | Tanne, Tanne, Stein, Blume, Tanne, Tanne, Stein, Blume, ? — Welches Bild fehlt im Muster? | "forest-fir" |
+| `friends-ibex/pattern-AABC-4` | Tanne, Tanne, Blume, Stein, Tanne, Tanne, Blume, ?, Tanne — Welches Bild fehlt im Muster? | "forest-stone" |
+| `friends-ibex/pattern-AABC-5` | Blume, Blume, Stein, Tanne, Blume, Blume, Stein, Tanne, ? — Welches Bild fehlt im Muster? | "forest-flower" |
+| `friends-ibex/pattern-AABC-6` | Blume, Blume, Tanne, Stein, Blume, ?, Tanne, Stein, Blume — Welches Bild fehlt im Muster? | "forest-flower" |
 
 ## Exact definitions
 
@@ -68,7 +68,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Stein, Tanne, Stein, Stein, Tanne, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-stone",
@@ -92,7 +92,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Stein, Blume, Stein, ?, Blume, Stein",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-stone",
@@ -116,7 +116,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Tanne, Stein, Tanne, Tanne, Stein, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-fir",
@@ -140,7 +140,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Tanne, Blume, ?, Tanne, Blume, Tanne",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-fir",
@@ -164,7 +164,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Blume, Stein, Blume, Blume, Stein, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-flower",
@@ -188,7 +188,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Blume, Tanne, Blume, Blume, ?, Blume",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-flower",
@@ -212,7 +212,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Tanne, Tanne, Stein, Tanne, Tanne, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-fir",
@@ -236,7 +236,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Blume, Blume, Stein, Blume, ?, Stein",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-flower",
@@ -260,7 +260,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Stein, Stein, Tanne, Stein, Stein, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-stone",
@@ -284,7 +284,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Blume, Blume, Tanne, ?, Blume, Tanne",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-flower",
@@ -308,7 +308,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Stein, Stein, Blume, Stein, Stein, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-stone",
@@ -332,7 +332,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Tanne, Tanne, ?, Tanne, Tanne, Blume",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-fir",
@@ -356,7 +356,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Tanne, Blume, Stein, Tanne, Blume, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-fir",
@@ -380,7 +380,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Blume, Tanne, ?, Blume, Tanne, Stein",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-flower",
@@ -404,7 +404,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Stein, Blume, Tanne, Stein, Blume, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-stone",
@@ -428,7 +428,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Blume, Stein, Tanne, Blume, ?, Tanne",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-flower",
@@ -452,7 +452,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Stein, Tanne, Blume, Stein, Tanne, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-stone",
@@ -476,7 +476,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Tanne, Stein, Blume, ?, Stein, Blume",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-fir",
@@ -500,7 +500,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Tanne, Stein, Blume, Stein, Tanne, Stein, Blume, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-fir",
@@ -526,7 +526,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Blume, Stein, Tanne, ?, Blume, Stein, Tanne, Stein",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-flower",
@@ -552,7 +552,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Stein, Tanne, Blume, Tanne, Stein, Tanne, Blume, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-stone",
@@ -578,7 +578,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Blume, Tanne, Stein, Tanne, Blume, ?, Stein, Tanne",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-flower",
@@ -604,7 +604,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Stein, Blume, Tanne, Blume, Stein, Blume, Tanne, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-stone",
@@ -630,7 +630,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Tanne, Blume, Stein, ?, Tanne, Blume, Stein, Blume",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-fir",
@@ -656,7 +656,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Stein, Tanne, Blume, Stein, Stein, Tanne, Blume, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-stone",
@@ -682,7 +682,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Stein, Stein, Blume, Tanne, Stein, ?, Blume, Tanne, Stein",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-stone",
         "forest-stone",
@@ -708,7 +708,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Tanne, Stein, Blume, Tanne, Tanne, Stein, Blume, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-fir",
@@ -734,7 +734,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Tanne, Tanne, Blume, Stein, Tanne, Tanne, Blume, ?, Tanne",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-fir",
         "forest-fir",
@@ -760,7 +760,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Blume, Stein, Tanne, Blume, Blume, Stein, Tanne, ?",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-flower",
@@ -786,7 +786,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Blume, Blume, Tanne, Stein, Blume, ?, Tanne, Stein, Blume",
     "question": {
       "kind": "pattern",
-      "prompt": "Welches Bild fehlt im Bergmuster?",
+      "prompt": "Welches Bild fehlt im Muster?",
       "sequence": [
         "forest-flower",
         "forest-flower",

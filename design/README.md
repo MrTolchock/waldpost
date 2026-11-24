@@ -10,6 +10,7 @@ These documents define the game shipped from `main`. There is one current visual
 | [Artwork workflow](artwork/README.md) | Icons, letter, backgrounds, preparation and central image library |
 | [Illustration handoff](illustrations/README.md) | How to make matching drawn pictures: generation prompts, references, source sheets and atlas preparation |
 | [Puzzle blueprint](PUZZLE-BLUEPRINT.md) | Required appearance, five-iteration behaviour, guidance, sounds, feedback and review |
+| [Einheitliches Rätsel-Layout](RAETSEL-LAYOUT.md) | One paper, frame, cell, empty-field, picture-size, type and success treatment for every Rätsel; checklist and tools for new Rätsel |
 | [Consistency audit](STYLE-AUDIT.md) | Findings, implemented corrections, evidence and remaining human review |
 | [Asset rules](asset-rules.json) | Machine-readable roles used by repository checks |
 

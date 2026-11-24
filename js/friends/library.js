@@ -41,7 +41,7 @@ const games=[
   {
     "id": "friends-hedgehog",
     "host": "hedgehog",
-    "title": "Tiermerkmale erkennen und Fragen lesen",
+    "title": "Tiermerkmale erkennen",
     "picture": "hedgehog",
     "screen": "puzzle"
   },
@@ -69,7 +69,7 @@ const games=[
   {
     "id": "count",
     "host": "hedgehog",
-    "title": "Gezielt Mengen zählen",
+    "title": "Mengen gezielt zählen",
     "picture": "ladybird",
     "screen": "puzzle"
   },

@@ -1,10 +1,10 @@
-# Gezielt Mengen zählen
+# Mengen gezielt zählen
 
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 
 - Stabile Rätsel-ID: `count`
 - Host: hedgehog
-- Related competence: **MA.1.A.2.a** — Gezielt Mengen zählen
+- Related competence: **MA.1.A.2.a** — Mengen gezielt zählen
 - Difficulty: 6–15 Marienkäfer zwischen Bienen und Schnecken
 - Pool: 30 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
@@ -26,36 +26,36 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `count/6-2` | 6 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 6 |
-| `count/6-3` | 6 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 6 |
-| `count/6-4` | 6 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 6 |
-| `count/7-2` | 7 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 7 |
-| `count/7-3` | 7 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 7 |
-| `count/7-4` | 7 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 7 |
-| `count/8-2` | 8 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 8 |
-| `count/8-3` | 8 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 8 |
-| `count/8-4` | 8 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 8 |
-| `count/9-2` | 9 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 9 |
-| `count/9-3` | 9 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 9 |
-| `count/9-4` | 9 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 9 |
-| `count/10-2` | 10 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 10 |
-| `count/10-3` | 10 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 10 |
-| `count/10-4` | 10 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 10 |
-| `count/11-2` | 11 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 11 |
-| `count/11-3` | 11 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 11 |
-| `count/11-4` | 11 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 11 |
-| `count/12-2` | 12 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 12 |
-| `count/12-3` | 12 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 12 |
-| `count/12-4` | 12 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 12 |
-| `count/13-2` | 13 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 13 |
-| `count/13-3` | 13 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 13 |
-| `count/13-4` | 13 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 13 |
-| `count/14-2` | 14 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 14 |
-| `count/14-3` | 14 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 14 |
-| `count/14-4` | 14 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 14 |
-| `count/15-2` | 15 Käfer, 2 Bienen — Wie viele rote Marienkäfer sind hier? | 15 |
-| `count/15-3` | 15 Käfer, 3 Bienen — Wie viele rote Marienkäfer sind hier? | 15 |
-| `count/15-4` | 15 Käfer, 4 Bienen — Wie viele rote Marienkäfer sind hier? | 15 |
+| `count/6-2` | 6 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 6 |
+| `count/6-3` | 6 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 6 |
+| `count/6-4` | 6 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 6 |
+| `count/7-2` | 7 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 7 |
+| `count/7-3` | 7 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 7 |
+| `count/7-4` | 7 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 7 |
+| `count/8-2` | 8 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 8 |
+| `count/8-3` | 8 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 8 |
+| `count/8-4` | 8 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 8 |
+| `count/9-2` | 9 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 9 |
+| `count/9-3` | 9 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 9 |
+| `count/9-4` | 9 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 9 |
+| `count/10-2` | 10 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 10 |
+| `count/10-3` | 10 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 10 |
+| `count/10-4` | 10 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 10 |
+| `count/11-2` | 11 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 11 |
+| `count/11-3` | 11 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 11 |
+| `count/11-4` | 11 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 11 |
+| `count/12-2` | 12 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 12 |
+| `count/12-3` | 12 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 12 |
+| `count/12-4` | 12 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 12 |
+| `count/13-2` | 13 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 13 |
+| `count/13-3` | 13 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 13 |
+| `count/13-4` | 13 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 13 |
+| `count/14-2` | 14 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 14 |
+| `count/14-3` | 14 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 14 |
+| `count/14-4` | 14 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 14 |
+| `count/15-2` | 15 Käfer, 2 Bienen — Wie viele Marienkäfer sind hier? | 15 |
+| `count/15-3` | 15 Käfer, 3 Bienen — Wie viele Marienkäfer sind hier? | 15 |
+| `count/15-4` | 15 Käfer, 4 Bienen — Wie viele Marienkäfer sind hier? | 15 |
 
 ## Exact definitions
 
@@ -68,7 +68,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "6 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 6,
       "answer": 6,
       "choices": [
@@ -95,7 +95,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "6 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 6,
       "answer": 6,
       "choices": [
@@ -123,7 +123,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "6 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 6,
       "answer": 6,
       "choices": [
@@ -152,7 +152,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "7 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 7,
       "answer": 7,
       "choices": [
@@ -180,7 +180,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "7 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 7,
       "answer": 7,
       "choices": [
@@ -209,7 +209,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "7 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 7,
       "answer": 7,
       "choices": [
@@ -239,7 +239,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "8 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 8,
       "answer": 8,
       "choices": [
@@ -268,7 +268,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "8 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 8,
       "answer": 8,
       "choices": [
@@ -298,7 +298,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "8 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 8,
       "answer": 8,
       "choices": [
@@ -329,7 +329,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "9 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 9,
       "answer": 9,
       "choices": [
@@ -359,7 +359,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "9 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 9,
       "answer": 9,
       "choices": [
@@ -390,7 +390,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "9 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 9,
       "answer": 9,
       "choices": [
@@ -422,7 +422,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "10 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 10,
       "answer": 10,
       "choices": [
@@ -453,7 +453,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "10 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 10,
       "answer": 10,
       "choices": [
@@ -485,7 +485,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "10 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 10,
       "answer": 10,
       "choices": [
@@ -518,7 +518,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "11 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 11,
       "answer": 11,
       "choices": [
@@ -550,7 +550,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "11 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 11,
       "answer": 11,
       "choices": [
@@ -583,7 +583,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "11 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 11,
       "answer": 11,
       "choices": [
@@ -617,7 +617,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "12 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 12,
       "answer": 12,
       "choices": [
@@ -650,7 +650,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "12 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 12,
       "answer": 12,
       "choices": [
@@ -684,7 +684,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "12 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 12,
       "answer": 12,
       "choices": [
@@ -719,7 +719,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "13 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 13,
       "answer": 13,
       "choices": [
@@ -753,7 +753,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "13 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 13,
       "answer": 13,
       "choices": [
@@ -788,7 +788,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "13 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 13,
       "answer": 13,
       "choices": [
@@ -824,7 +824,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "14 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 14,
       "answer": 14,
       "choices": [
@@ -859,7 +859,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "14 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 14,
       "answer": 14,
       "choices": [
@@ -895,7 +895,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "14 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 14,
       "answer": 14,
       "choices": [
@@ -932,7 +932,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "15 Käfer, 2 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 15,
       "answer": 15,
       "choices": [
@@ -968,7 +968,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "15 Käfer, 3 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 15,
       "answer": 15,
       "choices": [
@@ -1005,7 +1005,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "15 Käfer, 4 Bienen",
     "question": {
       "kind": "count",
-      "prompt": "Wie viele rote Marienkäfer sind hier?",
+      "prompt": "Wie viele Marienkäfer sind hier?",
       "count": 15,
       "answer": 15,
       "choices": [

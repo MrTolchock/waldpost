@@ -100,7 +100,7 @@ test('Fisch tasks count fish and the wayfinding prompt guides Reh to the forest'
  assert.equal(FK.puzzleRounds.question('robot',0,1).prompt,'Führe das Reh zum Wald.');
 });
 
-const R23=require('./review-changes-2026-11-23.cjs');
+const R23=require('./review-changes-2026-11-23.cjs'),R24=require('./review-changes-2026-11-24.cjs');
 test('unchanged riddles retain approvals while reassigned and new riddles require current review',()=>{
  const catalogue=setup().FK.puzzleCatalogue;
  const baseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9bd41c8acd07db2eb7901ce0895f9a422cccd8e2');
@@ -109,8 +109,8 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const capitalVowels=new Set(['vowels/word-2-0','vowels/word-8-0','vowels/word-21-0']);
  for(const [id,puzzle]of Object.entries(baseline.puzzles)){
   // Aufgaben changed or added on 23 November (9.4.33) reopen on purpose.
-  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id),id);
-  for(const item of catalogue.iterations(id))if(baseline.iterations[item.id])assert.equal(catalogue.acceptsRevision(id,item.id,baseline.iterations[item.id].revision),!reassigned.has(id)&&!capitalVowels.has(item.id)&&!R23.changed(item.id),item.id);
+  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!reassigned.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id),id);
+  for(const item of catalogue.iterations(id))if(baseline.iterations[item.id])assert.equal(catalogue.acceptsRevision(id,item.id,baseline.iterations[item.id].revision),!reassigned.has(id)&&!capitalVowels.has(item.id)&&!R23.changed(item.id)&&!R24.changed(item.id),item.id);
  }
  const introduction=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='301e506b5061af35eeba8825992795827d5802ed');
  const feedbackBaseline=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='1e48d04bdc65836e95ce9d9b7c3cc28b9b177a3a');
@@ -121,5 +121,5 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const release37=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='18684545406bb5eb7932c0bce134bc99af069dbc'); // confetti bridge
  const release38=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9a4009f94b7be863517fefb8e13510ad4332c078'); // review celebration bridge
  const release39=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='01791c164c1f86ecc64599350577bc6467a57cc3'); // read-aloud removal bridge
- for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,clearingBaseline.puzzles[id].revision,release32.puzzles[id].revision,release35.puzzles[id].revision,release37.puzzles[id].revision,release38.puzzles[id].revision,release39.puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
+ for(const id of ['colour-words'])assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions(id)),[introduction.puzzles[id].revision,feedbackBaseline.puzzles[id].revision,cardBaseline.puzzles[id].revision,clearingBaseline.puzzles[id].revision,release32.puzzles[id].revision,release35.puzzles[id].revision,release37.puzzles[id].revision,release38.puzzles[id].revision,release39.puzzles[id].revision,require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit===R24.commit).puzzles[id].revision],id+' inherits only its own reviews before the presentation corrections');
 });

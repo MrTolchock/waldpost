@@ -285,3 +285,149 @@
 @media(min-width:601px) and (max-height:700px){
  .screen-puzzle[data-game=sequence] .puzzle-story-card>span>.puzzle-picture { width:76px;height:76px }
 }
+
+/* ===== Einheitliches Rätsel-Layout (9.4.41, design/RAETSEL-LAYOUT.md) =====
+   The last layer of the puzzle styles: one paper, one frame, two type sizes, one picture size,
+   one empty-field and one success treatment for every Rätsel, in play, gallery and review.
+   Measured on all Aufgaben at 1080 × 810 and 390 × 844 (tools/raetsel-ansichten). Keep it last. */
+body .screen-puzzle{
+ --pv-prompt:26px;        /* Schriftgrösse 1: Frage/Einleitung und Bedienknöpfe */
+ --pv-text:34px;          /* Schriftgrösse 2: alles, was gelesen, gezählt oder gewählt wird */
+ --pv-pic:76px;           /* eine Bildgrösse im Rahmen und bei den Antworten */
+ --pv-frame-h:208px;      /* gleiche Rahmenhöhe in allen Rätseln */
+ --pv-paper:760px;
+ --pv-card:#fffaf0;--pv-card-line:#d6c5a4;--pv-frame:#f4f0e1;
+}
+@media(max-width:600px){body .screen-puzzle{--pv-prompt:22px;--pv-text:29px;--pv-pic:52px;--pv-frame-h:160px;--pv-paper:100%}}
+
+/* Kleineres Papier: mehr vom Hintergrund bleibt sichtbar */
+body .screen-puzzle{display:flex;flex-direction:column;justify-content:center}
+body .friends-interface .screen-puzzle .puzzle-paper,body .screen-puzzle .puzzle-paper,body .screen-puzzle .puzzle-paper:has(>.puzzle-context){
+ width:min(var(--pv-paper),100%) !important;flex:none !important;height:auto !important;margin:auto !important;padding:14px 22px 20px !important;background:#fffaf0ee}
+@media(max-width:600px){body .screen-puzzle{padding:24px 18px !important}body .screen-puzzle .puzzle-paper{padding:10px 10px 16px !important}}
+
+/* Eine Schriftart, eine Stärke, zwei Grössen */
+body .screen-puzzle .puzzle-paper :is(*):not(.puzzle-context,.puzzle-context *){font-family:var(--read) !important;font-weight:700 !important}
+body .screen-puzzle .puzzle-paper>.puzzle-prompt{font-size:var(--pv-prompt) !important;line-height:1.3 !important;min-height:calc(var(--pv-prompt) * 1.3);margin:14px auto 14px !important}
+body .screen-puzzle .puzzle-scene :is(*),body .screen-puzzle .puzzle-answers :is(*){font-size:var(--pv-text) !important;line-height:1.3}
+body .screen-puzzle :is(.puzzle-group-result,.puzzle-small,.puzzle-memory-button,.puzzle-reset,.puzzle-picnic-bank+*,.puzzle-answers>.puzzle-button:not(.puzzle-answer)) ,
+body .screen-puzzle .puzzle-paper :is(.puzzle-group-result,.puzzle-group-result *,small){font-size:var(--pv-prompt) !important}
+
+/* Ein Rahmen: gleiche Breite, Höhe, Farbe, Linie und Rundung */
+body .screen-puzzle .puzzle-paper>.puzzle-scene,
+body .screen-puzzle .puzzle-paper>.puzzle-scene:has(>.puzzle-read-text:only-child){
+ display:flex !important;flex-direction:column;justify-content:center;align-items:center;gap:12px;
+ flex:none !important;width:100% !important;max-width:none !important;min-height:var(--pv-frame-h);margin:0 auto !important;padding:16px !important;
+ background:var(--pv-frame) !important;border:1px solid var(--pv-card-line) !important;border-radius:22px !important;box-shadow:none !important}
+body .screen-puzzle .puzzle-paper>.puzzle-scene>*{margin-top:0 !important;margin-bottom:0 !important}
+body .screen-puzzle .puzzle-paper>.puzzle-answers{margin:16px auto 0 !important}
+
+/* Innenkästchen alle gleich: helles Papier, eine Linie, eine Rundung */
+body .screen-puzzle :is(.puzzle-addition>section,.puzzle-matrix-row,.puzzle-picnic-bank,.puzzle-picnic-place,.puzzle-treasures>span,.puzzle-berry-plate,.puzzle-pattern-cell,.puzzle-number-card,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell,.puzzle-syllable-slot,.puzzle-neighbour-tile){
+ background:var(--pv-card) !important;border:1px solid var(--pv-card-line) !important;border-radius:14px !important;box-shadow:none !important}
+body .screen-puzzle :is(.puzzle-pattern-cell.gap,.puzzle-firefly-slot.is-empty,.puzzle-syllable-slot:not(.filled),.puzzle-number-card[data-neighbour-slot]:not(.filled)){border:2px dashed #b39a70 !important}
+body .screen-puzzle .puzzle-route-cell.hedge{background:#dfe6c4 !important}
+
+/* Eine Bildgrösse: im Rahmen und bei den Antworten */
+body .screen-puzzle :is(.puzzle-scene,.puzzle-answers) .puzzle-picture,
+body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-picture,
+body .screen-puzzle .puzzle-paper:has(>.puzzle-scene>.puzzle-read-text:only-child)>.puzzle-answers>.puzzle-answer>.puzzle-picture,
+body .screen-puzzle .puzzle-addition .puzzle-objects>.puzzle-picture{width:var(--pv-pic) !important;height:var(--pv-pic) !important;max-width:none !important;max-height:none !important;flex:none}
+/* Bilder, die eine Zelle füllen, bekommen die Zelle in Bildgrösse */
+body .screen-puzzle{--pv-cell:calc(var(--pv-pic) + 10px)}
+body .screen-puzzle :is(.puzzle-pattern-cell,.puzzle-treasures>span,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell){box-sizing:border-box;width:var(--pv-cell) !important;height:var(--pv-cell) !important;min-width:0 !important;min-height:0 !important;padding:4px !important;aspect-ratio:1}
+body .screen-puzzle .puzzle-counter{width:var(--pv-pic) !important;height:var(--pv-pic) !important;min-width:0 !important;min-height:0 !important;padding:0 !important}
+body .screen-puzzle :is(.puzzle-pattern-cell,.puzzle-treasures>span,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell,.puzzle-counter) .puzzle-picture{width:100% !important;height:100% !important;position:static !important;inset:auto}
+body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow){grid-template-columns:repeat(5,var(--pv-pic)) !important;max-width:none !important;justify-content:center;gap:8px !important}
+body .screen-puzzle .puzzle-firefly-slots{grid-template-columns:repeat(5,var(--pv-cell)) !important;max-width:none !important;justify-content:center}
+body .screen-puzzle .puzzle-route{grid-template-columns:repeat(var(--size),var(--pv-cell)) !important;max-width:none !important;justify-content:center}
+body .screen-puzzle .puzzle-treasures{grid-template-columns:repeat(4,var(--pv-cell)) !important;max-width:none !important;justify-content:center}
+body .screen-puzzle .puzzle-mirror{display:flex !important;justify-content:center;max-width:none !important}
+body .screen-puzzle .puzzle-mirror-grid{grid-template-columns:repeat(3,var(--pv-cell)) !important}
+body .screen-puzzle .puzzle-matrix{max-width:none !important}
+body .screen-puzzle .puzzle-matrix-row{grid-template-columns:repeat(3,var(--pv-pic)) !important;justify-content:center}
+body .screen-puzzle .puzzle-matrix-row>span{height:var(--pv-pic) !important}
+body .screen-puzzle .puzzle-matrix-row .puzzle-picture{max-width:none !important;max-height:none !important}
+body .screen-puzzle :is(.puzzle-objects){display:flex !important;flex-wrap:wrap;justify-content:center;gap:6px !important;max-width:none !important}
+body .screen-puzzle .puzzle-picnic-berry{width:var(--pv-pic) !important;height:var(--pv-pic) !important}
+body .screen-puzzle .puzzle-picnic-friend,body .screen-puzzle .puzzle-picnic-friend>.forest-portrait{width:var(--pv-pic) !important;height:var(--pv-pic) !important}
+/* Empty (2 px dashed) and filled (1 px) fields keep one outer size, so nothing moves when a field fills. */
+body .screen-puzzle :is(.puzzle-number-card,.puzzle-syllable-slot){box-sizing:border-box}
+body .screen-puzzle .puzzle-number-card{width:var(--pv-pic) !important;min-height:max(var(--pv-pic),calc(var(--pv-text) * 1.3 + 24px)) !important}
+body .screen-puzzle .puzzle-syllable-slot{min-height:calc(var(--pv-text) * 1.3 + 24px) !important}
+
+/* Bild-Antworten sind so gross wie ihr Bild (plus gleiches Innenmass) */
+body .screen-puzzle .puzzle-answers>.puzzle-answer:has(>.puzzle-picture){flex:none !important;min-width:0 !important;max-width:none !important;padding:12px !important}
+body .screen-puzzle .puzzle-answers>.puzzle-answer.puzzle-word-answer:has(>.puzzle-picture){padding:10px 18px !important}
+/* Addieren: Gruppen nebeneinander, Bilder in Reihen zu dritt */
+body .screen-puzzle .puzzle-addition{grid-template-columns:1fr 32px 1fr !important;gap:12px !important;width:100%}
+body .screen-puzzle .puzzle-addition .puzzle-objects{min-height:0 !important}
+body .screen-puzzle .puzzle-addition>section{padding:10px !important;gap:4px !important}
+/* Handy: weniger Rand, Gruppen beim Addieren untereinander, Spiegelbild mit kleineren Kästchen */
+@media(max-width:600px){
+ body .screen-puzzle{padding:20px 12px !important}
+ body .screen-puzzle .puzzle-paper>.puzzle-scene{padding:8px !important}
+ body .screen-puzzle :is(.puzzle-firefly-slots,.puzzle-nuts,.puzzle-meadow,.puzzle-route,.puzzle-treasures){gap:4px !important}
+ body .screen-puzzle .puzzle-addition{grid-template-columns:1fr !important;gap:4px !important}
+ body .screen-puzzle .puzzle-addition>.puzzle-sign{justify-self:center}
+ body .screen-puzzle .puzzle-mirror{--pv-cell:46px;gap:6px !important}
+ body .screen-puzzle .puzzle-mirror .puzzle-picture{width:100% !important;height:100% !important}
+ body .screen-puzzle .puzzle-mirror-grid{gap:3px !important}
+}
+
+/* ---- Runde 2 (24.11.) ---- */
+/* Bild immer über dem Wort: Rahmen wie Antworten */
+body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-picture{order:-1}
+
+/* Wald: das gemalte Bild mit drei Bäumen bleibt in einem Feld; Start und Ziel bleiben markiert */
+body .screen-puzzle .puzzle-route-cell .puzzle-woods{width:100% !important;height:100% !important;aspect-ratio:1;position:relative !important}
+body .screen-puzzle .puzzle-route-cell .puzzle-woods>.puzzle-picture{position:absolute !important;width:64% !important;height:64% !important;left:0;top:4%}
+body .screen-puzzle .puzzle-route-cell .puzzle-woods>.puzzle-picture:nth-child(2){left:36%;top:8%}
+body .screen-puzzle .puzzle-route-cell .puzzle-woods>.puzzle-picture:last-child{left:17%;top:32%}
+body .screen-puzzle .puzzle-route-cell.post{background:#efdeb5 !important;border:2px solid #b88c44 !important}
+body .screen-puzzle .puzzle-route-cell.goal{border:2px solid #7b965a !important}
+
+/* Zahlennachbarn: «Das passt!» belegt keinen Platz, die Reihe steht mittig */
+body .screen-puzzle .puzzle-scene>.puzzle-neighbours+.puzzle-group-result{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);margin:0 !important}
+
+/* Spiegelbild: ein angedeuteter Spiegel in der Mitte */
+body .screen-puzzle .puzzle-mirror{align-items:stretch;gap:14px !important}
+body .screen-puzzle .puzzle-mirror-line{flex:none;width:12px !important;min-height:100%;border-radius:6px !important;
+ background:linear-gradient(90deg,#b9cacc 0%,#eef5f5 35%,#ffffff 50%,#d7e3e4 65%,#a9bcbf 100%) !important;box-shadow:0 0 0 1px #94a9ac,0 0 10px #cfe0e266}
+
+/* Leere Felder überall gleich: helles Papier, 2 px gestrichelt, ohne Strich und Bogen.
+   Ausnahme: die Buchstabenlücke beim Vokal-Rätsel bleibt im Text. */
+body .screen-puzzle :is(.gap,.puzzle-firefly-slot.is-empty,.puzzle-syllable-slot:not(.filled),.puzzle-number-card[data-neighbour-slot]:not(.filled),.puzzle-mirror-grid button.puzzle-mirror-cell:not(.filled)){
+ background:var(--pv-card) !important;border:2px dashed #b39a70 !important;border-radius:14px !important;color:#9a825e}
+body .screen-puzzle .puzzle-syllable-slot{padding:8px 14px !important}
+body .screen-puzzle .puzzle-syllable-slot::after{display:none !important}
+body .screen-puzzle .puzzle-syllable-chip{border-bottom:1px solid #bda482 !important}
+/* Mengen verteilen (bis 2 × 10 Beeren): auf dem Tablet 60 px, damit das Papier auf den Bildschirm passt.
+   Beeren und Freunde bleiben innerhalb des Rätsels gleich gross. */
+@media(min-width:601px){body .screen-puzzle[data-game=picnic]{--pv-pic:60px}}
+body .screen-puzzle .puzzle-picnic-bank{margin-bottom:8px !important;min-height:calc(var(--pv-pic) + 14px) !important;padding:6px !important}
+body .screen-puzzle .puzzle-picnic-friends{gap:8px !important}
+body .screen-puzzle .puzzle-picnic-place{padding:4px 6px !important}
+body .screen-puzzle .puzzle-picnic-berries{min-height:0 !important}
+/* Zahlennachbarn: die gelöste Reihe wird nur um die Zahlen grün, nicht über die ganze Rahmenbreite */
+body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-neighbours{width:auto !important;align-self:center;padding:8px 12px;border-radius:14px}
+
+/* ---- Runde 4 (24.11.) ---- */
+/* Mengen zählen: weniger als eine volle Reihe steht in der Mitte, waagrecht und senkrecht; volle Reihen bleiben im Fünferraster */
+body .screen-puzzle .puzzle-paper>.puzzle-scene>:is(.puzzle-nuts,.puzzle-meadow){margin:auto !important}
+body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow):not(:has(>:nth-child(5))){display:flex !important;flex-wrap:wrap;justify-content:center;align-items:center;width:100% !important}
+body .screen-puzzle .puzzle-empty-basket{width:auto !important;height:auto !important;display:grid;place-items:center}
+
+/* Erfolg überall gleich: grüne Markierung am Gelösten und Konfetti, kein Text wie «Das passt!» */
+body .screen-puzzle .puzzle-group-result{display:none !important}
+
+/* Spiegel flach: eine Fläche mit einer Linie, ohne Verlauf, Glanz oder Schatten */
+body .screen-puzzle .puzzle-mirror-line{background:#d3e1e3 !important;box-shadow:none !important;border:1px solid #9fb4b8;border-radius:6px !important}
+/* Bilder in Kästchen: ausdrücklich Kästchengrösse minus Rand (100 % ergibt in Raster-Knöpfen 0) */
+body .screen-puzzle :is(.puzzle-pattern-cell,.puzzle-treasures>span,.puzzle-firefly-slot,.puzzle-route-cell,.puzzle-mirror-cell)>.puzzle-picture{width:calc(var(--pv-cell) - 10px) !important;height:calc(var(--pv-cell) - 10px) !important}
+/* Gegenstände merken: the check button and the later picture choices share one row height,
+   so the remembered row stays where it was (the paper is centred on the screen). */
+body .screen-puzzle[data-game=treasure] .puzzle-paper>.puzzle-answers{min-height:calc(var(--pv-pic) + 28px) !important;align-items:center !important;align-content:center !important}
+/* Phone: the question always takes two lines of room, so a question that wraps (or a phase whose
+   question is shorter) never moves the task below it. */
+@media(max-width:600px){body .screen-puzzle .puzzle-paper>.puzzle-prompt{min-height:calc(var(--pv-prompt) * 1.3 * 2) !important;display:flex;align-items:center;justify-content:center}}

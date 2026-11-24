@@ -2,7 +2,7 @@
 
 User-facing terminology is **Rätsel** for a game and **Aufgaben** for its individual tasks; internal IDs and historical records stay stable.
 
-This is the required contract for every active and future puzzle. It builds on the existing Waldbuch page and Silben-Puzzle interaction. Visual decisions are defined once in [Visual style](VISUAL-STYLE.md); the [runtime inventory](../docs/PUZZLE-CATALOGUE.md) maps every puzzle to this contract.
+This is the required contract for every active and future puzzle. It builds on the existing Waldbuch page and Silben-Puzzle interaction. Every Rätsel's appearance — paper, frame, cells, empty fields, picture size, type and success — follows the [einheitliches Rätsel-Layout](RAETSEL-LAYOUT.md). Visual decisions are defined once in [Visual style](VISUAL-STYLE.md); the [runtime inventory](../docs/PUZZLE-CATALOGUE.md) maps every puzzle to this contract.
 
 All generated learning pictures follow the [canonical watercolour/pencil style](illustrations/STYLE.md), with its fixed reference images and style-complete prompts. Historical generation records do not define new artwork.
 
@@ -17,13 +17,13 @@ Use bundled Andika for puzzle text in child play, gallery rounds and review prev
 | Task prompt and celebration heading | Andika 700, 22 px at widths up to 600 px and 26 px above |
 | Scored words, sentences, syllables and numerals | Andika 700, 29 px at widths up to 600 px and 34 px above |
 | Text controls | Same size and weight as the task prompt; memory actions use the shared icons |
-| Picture captions and group success text | Andika 700, 14/16 px on phone/tablet |
+| Picture captions and small labels | Same size and weight as the task prompt (never a third size); no visible group success text |
 | Host context | Andika 400, 14/16 px on phone/tablet; numeric pool position appears only in adult review |
 | Tracing quantities and labels | Andika 400, 16 px |
 
-Give longer words and captions room to wrap. Keep the same touch area for equivalent controls.
+Give longer words and captions room to wrap. Keep the same touch area for equivalent controls. At most two type sizes and one weight per Rätsel, excluding the host row ([layout](RAETSEL-LAYOUT.md)).
 
-On tablets, the task panel grows into the available page height and centres its content. Answers occupy the lower part of that same page, with a 14–20 px gap from the task and at least 16 px bottom padding. Keep every task/state visible without scrolling on a 9th-generation iPad, including Safari's shorter viewport; phones retain vertical scrolling when needed. The back and rule-speaker controls share a quiet 48 px circular frame and 28 px icon. Child/gallery rounds use only the five leaves for progress.
+The paper is as tall as its task and centred on the host's habitat; the frame centres its content and answers follow 16 px below it ([layout](RAETSEL-LAYOUT.md)). Keep every task/state visible without scrolling on a 9th-generation iPad, including Safari's shorter viewport; phones retain vertical scrolling when needed. The back and rule-speaker controls share a quiet 48 px circular frame and 28 px icon. Child/gallery rounds use only the five leaves for progress.
 
 ## Vergleichsmuster für eine Rätselseite
 
@@ -31,11 +31,11 @@ Der [Vergleichsbogen vom 20. November](evidence/raetselvergleich/README.md) (dam
 
 | Bereich | Gestaltungsregel |
 | --- | --- |
-| Rahmen | Papier maximal 1000 px breit, Aufgabenfeld und Antwortreihe maximal 800 px. Zurück und Gastgeber bilden die Kopfzeile. Darunter stehen fünf Blätter und die zentrierte Frage. |
+| Rahmen | Papier 760 px breit und so hoch wie der Inhalt, senkrecht mittig vor dem Lebensraum. Zurück und Gastgeber bilden die Kopfzeile. Darunter stehen fünf Blätter, die zentrierte Frage und ein einheitlicher Rahmen ([Layout](RAETSEL-LAYOUT.md)). |
 | Antwortkarten | Auf dem Tablet teilen sich gleichartige Auswahlkarten den Platz. Kurze Zahlen bekommen kompakte Karten. Längere Wörter erhalten Platz für ihre natürliche Breite. Auf dem Telefon dürfen die Karten umbrechen. |
 | Spielfeld | Bildzellen bleiben quadratisch. Anzahlen, Raster, Spiegelachsen und Wege behalten ihre fachlich notwendige Anordnung. Bei Zuordnungsaufgaben liegen die bedienbaren Teile direkt am Ziel. |
 | Falsche Eingabe | Die betroffene Karte oder Gruppe erhält eine warme, innen gestrichelte Kontur. Ihre Grösse bleibt stabil, der Tastaturfokus aussen sichtbar. Das Kind kann sofort einen weiteren Versuch machen. |
-| Richtige Eingabe | Karte, Ziel oder gelöste Gruppe wird sanft grün. Die Statusmeldung lautet «Das passt!». Die Lösung bleibt 900 ms sichtbar. Nach der fünften Aufgabe folgt die gemeinsame Feier für 2,2 Sekunden. |
+| Richtige Eingabe | Karte, Ziel oder gelöste Gruppe wird sanft grün, Konfetti fliegt. Ein sichtbarer Text erscheint nicht. Nur der Bildschirmleser hört «Das passt!». Die Lösung bleibt 900 ms sichtbar. Nach der fünften Aufgabe folgt die gemeinsame Feier für 2,2 Sekunden. |
 
 ## The shared contract
 
@@ -102,5 +102,5 @@ Use `js/screens/puzzle.js` and `css/puzzle-rounds.css`. Writing uses the existin
 1. Choose a stable ID, host, competence, prerequisites and explicit fixed difficulty. Add its inventory entry to `js/friends/library.js` and finite definitions to `js/friends/puzzle-catalogue.js`.
 2. Supply at least 25 substantively different, inspectable iterations; include each expected answer/solution. Use complete natural sets where appropriate (alphabet, digits). Do not create a second page shell or duplicate a retired engine.
 3. Implement the interaction in the shared renderer, including saved partial work, editable retries, mute, keyboard/touch input and the common finish sequence. Retain shared play-log hooks; log relevant actions for any new interaction and classify construction/tracing separately from choice questions in its summaries.
-4. Run `node tools/puzzle-catalogue.cjs`, `node tools/check-design.cjs`, model checks and the relevant browser suites. Review the real phone/tablet layout against [Visual style](VISUAL-STYLE.md).
+4. Run `node tools/puzzle-catalogue.cjs`, `node tools/check-design.cjs`, model checks and the relevant browser suites. Review the real phone/tablet layout against [Visual style](VISUAL-STYLE.md) and the [Rätsel layout](RAETSEL-LAYOUT.md). Capture and measure every distinct screen and state with [tools/raetsel-ansichten](../tools/raetsel-ansichten/README.md) and show the owner a Heute/Vorschlag comparison before changing the shared appearance.
 5. Open Settings → Rätsel-Prüfung and play through **every unconfirmed iteration**. Solve to approve or use × to request improvement. The final iteration ends the queue automatically. New assets, interaction or difficulty change the affected revisions and require review again.

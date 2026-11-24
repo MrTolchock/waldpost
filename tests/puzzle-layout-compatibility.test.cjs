@@ -4,6 +4,8 @@ const proof=require('../tools/puzzle-layout-compatibility.json'),baselines=requi
 const {sameReviewPresentation}=require('../tools/puzzle-layout-compatibility.cjs'),{setup}=require('../tools/puzzle-catalogue.cjs');
 const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
 // Aufgaben changed or added on 23 November (9.4.33) reopen on purpose; all others keep every earlier decision.
+// Aufgaben whose question changed with the unified layout (9.4.41) reopen too.
+const R24=require('./review-changes-2026-11-24.cjs'),release40=baselines.releases.find(r=>r.commit===R24.commit);
 const R23=require('./review-changes-2026-11-23.cjs'),release32=baselines.releases.find(r=>r.commit==='9efa9ddd0b5ce64a0c625433ba483b3e5442248c'),release35=baselines.releases.find(r=>r.commit==='e4f4e7e566435cad7c26619466a712087a40e664'),release36=baselines.releases.find(r=>r.commit==='d369e95fb46421103b77ca71a96c3ccce378b757'),release37=baselines.releases.find(r=>r.commit==='18684545406bb5eb7932c0bce134bc99af069dbc'),release38=baselines.releases.find(r=>r.commit==='9a4009f94b7be863517fefb8e13510ad4332c078'),release39=baselines.releases.find(r=>r.commit==='01791c164c1f86ecc64599350577bc6467a57cc3');
 // Compare against the last shared-clearing release and exercise every bridge
 // against the current production catalogue.
@@ -30,8 +32,8 @@ test('restoring picture proportions preserves reviews for every unchanged task',
  assert.ok(migration,'exact picture-proportion correction is recorded');
  const baseline=baselines.releases.find(r=>r.commit===migration.baselineCommit),C=setup().FK.puzzleCatalogue;
  for(const [id,p]of Object.entries(baseline.puzzles)){
-  assert.equal(C.acceptsRevision(id,null,p.revision),!reassigned.has(id)&&!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id),id);
-  for(const it of C.iterations(id))if(baseline.iterations[it.id])assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!reassigned.has(id)&&!revised.has(id)&&!capitalVowels.has(it.id)&&!R23.changed(it.id),it.id);
+  assert.equal(C.acceptsRevision(id,null,p.revision),!reassigned.has(id)&&!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id),id);
+  for(const it of C.iterations(id))if(baseline.iterations[it.id])assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!reassigned.has(id)&&!revised.has(id)&&!capitalVowels.has(it.id)&&!R23.changed(it.id)&&!R24.changed(it.id),it.id);
  }
 });
 test('balanced iPad layout preserves all existing task decisions',()=>{
@@ -39,8 +41,8 @@ test('balanced iPad layout preserves all existing task decisions',()=>{
  assert.ok(migration,'exact iPad balance correction is recorded');
  const baseline=baselines.releases.find(r=>r.commit===migration.baselineCommit),C=setup().FK.puzzleCatalogue;
  for(const [id,p]of Object.entries(baseline.puzzles)){
-  assert.equal(C.acceptsRevision(id,null,p.revision),!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id),id);
-  for(const it of C.iterations(id))if(baseline.iterations[it.id])assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!revised.has(id)&&!capitalVowels.has(it.id)&&!R23.changed(it.id),it.id);
+  assert.equal(C.acceptsRevision(id,null,p.revision),!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id),id);
+  for(const it of C.iterations(id))if(baseline.iterations[it.id])assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!revised.has(id)&&!capitalVowels.has(it.id)&&!R23.changed(it.id)&&!R24.changed(it.id),it.id);
  }
 });
 test('every layout bridge rejects subsequent changes and unrelated keys',()=>{
@@ -57,17 +59,17 @@ test('removing success check marks preserves existing task decisions',()=>{
  assert.ok(migration,'exact feedback-only correction is recorded');
  const baseline=baselines.releases.find(r=>r.commit===migration.baselineCommit),C=setup().FK.puzzleCatalogue;
  for(const [id,p]of Object.entries(baseline.puzzles)){
-  assert.equal(C.acceptsRevision(id,null,p.revision),!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id),id);
-  for(const it of C.iterations(id))if(baseline.iterations[it.id])assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!revised.has(id)&&!capitalVowels.has(it.id)&&!R23.changed(it.id),it.id);
+  assert.equal(C.acceptsRevision(id,null,p.revision),!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id),id);
+  for(const it of C.iterations(id))if(baseline.iterations[it.id])assert.equal(C.acceptsRevision(id,it.id,baseline.iterations[it.id].revision),!revised.has(id)&&!capitalVowels.has(it.id)&&!R23.changed(it.id)&&!R24.changed(it.id),it.id);
  }
 });
 test('the comparison blueprint retains reviews for unchanged tasks after the November 20 revisions',()=>{
  const previous=baselines.releases.find(release=>release.commit==='ddc66a42827d648e1936aa8962f91284b3398584');
  const catalogue=setup().FK.puzzleCatalogue;
  for(const [id,puzzle] of Object.entries(previous.puzzles)){
-  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id),id);
+  assert.equal(catalogue.acceptsRevision(id,null,puzzle.revision),!revised.has(id)&&id!=='friends-ibex'&&id!=='vowels'&&!R23.puzzles.has(id)&&!R24.has(id),id);
   for(const task of catalogue.iterations(id)){
-   if(previous.iterations[task.id])assert.equal(catalogue.acceptsRevision(id,task.id,previous.iterations[task.id].revision),!revised.has(id)&&!capitalVowels.has(task.id)&&!R23.changed(task.id),task.id);
+   if(previous.iterations[task.id])assert.equal(catalogue.acceptsRevision(id,task.id,previous.iterations[task.id].revision),!revised.has(id)&&!capitalVowels.has(task.id)&&!R23.changed(task.id)&&!R24.changed(task.id),task.id);
   }
  }
 });
@@ -77,20 +79,21 @@ const changedTasks22=new Set(['riddle-3','riddle-12','nature-question-11','natur
 test('background-only habitat changes preserve every existing puzzle and task review',()=>{
  const catalogue=setup().FK.puzzleCatalogue;
  for(const game of setup().FK.friendsLibrary.catalogue()){
-  if(!reviewed22.has(game.id)&&!R23.puzzles.has(game.id)){
+  if(R24.has(game.id)){assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),false,game.id+' reopens after the 24 November question change');}
+  else if(!reviewed22.has(game.id)&&!R23.puzzles.has(game.id)){
    assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),true,game.id);
    // The 9.4.33 bridge adds exactly the 9.4.32 release to the previously compatible ones.
-   assert.deepEqual(new Set(catalogue.formerPuzzleRevisions(game.id)),new Set([...historicalCatalogue.puzzleRevisions(game.id),release32.puzzles[game.id].revision,release35.puzzles[game.id].revision,release36.puzzles[game.id].revision,release37.puzzles[game.id].revision,release38.puzzles[game.id].revision,release39.puzzles[game.id].revision]),game.id+' retains exactly the previously compatible releases');
+   assert.deepEqual(new Set(catalogue.formerPuzzleRevisions(game.id)),new Set([...historicalCatalogue.puzzleRevisions(game.id),release32.puzzles[game.id].revision,release35.puzzles[game.id].revision,release36.puzzles[game.id].revision,release37.puzzles[game.id].revision,release38.puzzles[game.id].revision,release39.puzzles[game.id].revision,release40.puzzles[game.id].revision]),game.id+' retains exactly the previously compatible releases');
   }else if(!reviewed22.has(game.id))assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),false,game.id+' reopens after the 23 November change');
   for(const it of catalogue.iterations(game.id)){
    const before=historicalCatalogue.iterations(game.id).find(old=>old.id===it.id);
    if(!before){assert.ok(R23.added(it.id),it.id+' is a recorded addition');continue;}
-   if(changedTasks22.has(it.id)||game.id==='treasure'||game.id==='neighbours'||R23.changed(it.id)){
+   if(changedTasks22.has(it.id)||game.id==='treasure'||game.id==='neighbours'||R23.changed(it.id)||R24.changed(it.id)){
     assert.equal(catalogue.acceptsRevision(game.id,it.id,historicalCatalogue.iterationRevision(game.id,before)),false,it.id+' reopens after the 22 November change');continue;
    }
    assert.deepEqual(JSON.parse(JSON.stringify(it.question)),JSON.parse(JSON.stringify(before.question)),'backgrounds preserve the task '+it.id);
    assert.equal(catalogue.acceptsRevision(game.id,it.id,historicalCatalogue.iterationRevision(game.id,before)),true,it.id);
-   assert.deepEqual(new Set(catalogue.formerIterationRevisions(game.id,it)),new Set([...historicalCatalogue.iterationRevisions(game.id,before),release32.iterations[it.id].revision,release35.iterations[it.id].revision,release36.iterations[it.id].revision,release37.iterations[it.id].revision,release38.iterations[it.id].revision,release39.iterations[it.id].revision]),it.id+' does not revive incompatible task decisions');
+   assert.deepEqual(new Set(catalogue.formerIterationRevisions(game.id,it)),new Set([...historicalCatalogue.iterationRevisions(game.id,before),release32.iterations[it.id].revision,release35.iterations[it.id].revision,release36.iterations[it.id].revision,release37.iterations[it.id].revision,release38.iterations[it.id].revision,release39.iterations[it.id].revision,release40.iterations[it.id].revision]),it.id+' does not revive incompatible task decisions');
   }
  }
 });
@@ -101,39 +104,55 @@ test('the 23 November habitat paintings and layout corrections keep exactly the 
  let kept=0,reopened=0;
  for(const game of setup().FK.friendsLibrary.catalogue())for(const it of catalogue.iterations(game.id)){
   const before=release32.iterations[it.id];
-  if(!before){assert.ok(R23.added(it.id),it.id+' is new');assert.deepEqual([...catalogue.formerIterationRevisions(game.id,it)].filter(r=>r!==release35.iterations[it.id].revision&&r!==release36.iterations[it.id].revision&&r!==release37.iterations[it.id].revision&&r!==release38.iterations[it.id].revision&&r!==release39.iterations[it.id].revision),[],it.id+' inherits nothing from before its addition');continue;}
+  if(!before){assert.ok(R23.added(it.id),it.id+' is new');assert.deepEqual([...catalogue.formerIterationRevisions(game.id,it)].filter(r=>r!==release35.iterations[it.id].revision&&r!==release36.iterations[it.id].revision&&r!==release37.iterations[it.id].revision&&r!==release38.iterations[it.id].revision&&r!==release39.iterations[it.id].revision&&r!==release40.iterations[it.id].revision),[],it.id+' inherits nothing from before its addition');continue;}
   const accepted=catalogue.acceptsRevision(game.id,it.id,before.revision);
-  assert.equal(accepted,!R23.changed(it.id),it.id);accepted?kept++:reopened++;
+  assert.equal(accepted,!R23.changed(it.id)&&!R24.changed(it.id),it.id);accepted?kept++:reopened++;
   if(R23.changedFirst(it.id))assert.equal(Boolean(migration.iterations[it.id]),false,it.id+' has no bridge edge');
  }
- // 568 kept after the first round; the second (balanced number windows) and third (local animals) rounds reopened 155 of them.
- assert.equal(kept,413);assert.equal(reopened,350);
+ // 568 kept after the first round; the second (balanced number windows) and third (local animals) rounds reopened 155 of them,
+ // and the changed questions of the unified layout (9.4.41) reopen 62 more.
+ assert.equal(kept,351);assert.equal(reopened,412);
 });
 test('the «Juhuii, geschafft!» celebration text keeps every 9.4.36 decision',()=>{
  const release36=baselines.releases.find(r=>r.commit==='d369e95fb46421103b77ca71a96c3ccce378b757'),{FK}=setup(),C=FK.puzzleCatalogue;
  for(const game of FK.friendsLibrary.catalogue()){
-  assert.equal(C.acceptsRevision(game.id,null,release36.puzzles[game.id].revision),true,game.id);
-  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release36.iterations[it.id].revision),true,it.id);
+  assert.equal(C.acceptsRevision(game.id,null,release36.puzzles[game.id].revision),!R24.has(game.id),game.id);
+  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release36.iterations[it.id].revision),!R24.changed(it.id),it.id);
  }
 });
 test('leaves, flowers and acorns as correct-answer confetti keep every 9.4.37 decision',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
  for(const game of FK.friendsLibrary.catalogue()){
-  assert.equal(C.acceptsRevision(game.id,null,release37.puzzles[game.id].revision),true,game.id);
-  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release37.iterations[it.id].revision),true,it.id);
+  assert.equal(C.acceptsRevision(game.id,null,release37.puzzles[game.id].revision),!R24.has(game.id),game.id);
+  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release37.iterations[it.id].revision),!R24.changed(it.id),it.id);
  }
 });
 test('the adult review ending like child play keeps every 9.4.38 decision',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
  for(const game of FK.friendsLibrary.catalogue()){
-  assert.equal(C.acceptsRevision(game.id,null,release38.puzzles[game.id].revision),true,game.id);
-  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release38.iterations[it.id].revision),true,it.id);
+  assert.equal(C.acceptsRevision(game.id,null,release38.puzzles[game.id].revision),!R24.has(game.id),game.id);
+  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release38.iterations[it.id].revision),!R24.changed(it.id),it.id);
  }
 });
 test('removing read-aloud and the 23 November Rätsel corrections keep every 9.4.39 decision',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
  for(const game of FK.friendsLibrary.catalogue()){
-  assert.equal(C.acceptsRevision(game.id,null,release39.puzzles[game.id].revision),true,game.id);
-  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release39.iterations[it.id].revision),true,it.id);
+  assert.equal(C.acceptsRevision(game.id,null,release39.puzzles[game.id].revision),!R24.has(game.id),game.id);
+  for(const it of C.iterations(game.id))assert.equal(C.acceptsRevision(game.id,it.id,release39.iterations[it.id].revision),!R24.changed(it.id),it.id);
  }
+});
+test('the unified Rätsel layout keeps every 9.4.40 decision except the four changed questions',()=>{
+ const migration=proof.migrations.find(m=>m.baselineCommit===R24.commit),{FK}=setup(),C=FK.puzzleCatalogue;
+ assert.ok(migration&&/Owner request 2026-11-24/.test(migration.reason),'the owner-requested layout bridge is recorded');
+ let kept=0,reopened=0;
+ for(const game of FK.friendsLibrary.catalogue()){
+  assert.equal(C.acceptsRevision(game.id,null,release40.puzzles[game.id].revision),!R24.has(game.id),game.id);
+  if(R24.has(game.id))assert.equal(Boolean(migration.puzzles[game.id]),false,game.id+' has no bridge edge');
+  for(const it of C.iterations(game.id)){
+   const accepted=C.acceptsRevision(game.id,it.id,release40.iterations[it.id].revision);
+   assert.equal(accepted,!R24.changed(it.id),it.id);accepted?kept++:reopened++;
+   if(R24.changed(it.id))assert.equal(Boolean(migration.iterations[it.id]),false,it.id+' has no bridge edge');
+  }
+ }
+ assert.equal(kept,662);assert.equal(reopened,135);
 });

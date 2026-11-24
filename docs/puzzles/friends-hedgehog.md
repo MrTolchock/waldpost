@@ -1,10 +1,10 @@
-# Tiermerkmale erkennen und Fragen lesen
+# Tiermerkmale erkennen
 
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 
 - Stabile Rätsel-ID: `friends-hedgehog`
 - Host: hedgehog
-- Related competence: **NMG.2.4.a; D.2.B.1.b** — Tiermerkmale erkennen und Fragen lesen
+- Related competence: **NMG.2.4.a; D.2.B.1.b** — Tiermerkmale erkennen
 - Difficulty: 44 kurze Tierfragen; drei Bildantworten
 - Pool: 44 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.

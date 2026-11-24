@@ -9,7 +9,7 @@ Beim Steinbock gibt es das Bergmuster und beim Dachs das Wachstumsrätsel, bei d
 | Waldkauz | [Kurze Sätze verstehen](puzzles/friends-owl.md), [Silben zu Wörtern verbinden](puzzles/read-puzzle.md) | Lesen und Wörter zusammensetzen |
 | Biber | [Reihen ergänzen](puzzles/friends-beaver.md), [Muster spiegeln](puzzles/mirror.md) | Reihen aus Waldgegenständen ergänzen und Formen beim Bauen vergleichen |
 | Maus | [Wörter mit Bildern verbinden](puzzles/friends-mouse.md), [Einen Vokal ergänzen](puzzles/vowels.md) | Vertraute Wörter lesen und genau auf Buchstaben achten |
-| Igel | [Tiermerkmale erkennen und Fragen lesen](puzzles/friends-hedgehog.md), [Gezielt Mengen zählen](puzzles/count.md) | Tiere und kleine Waldbewohner beobachten, Marienkäfer gezielt zählen |
+| Igel | [Tiermerkmale erkennen](puzzles/friends-hedgehog.md), [Mengen gezielt zählen](puzzles/count.md) | Tiere und kleine Waldbewohner beobachten, Marienkäfer gezielt zählen |
 | Fisch | [Mengen addieren](puzzles/add.md), [Mengen vergleichen](puzzles/compare.md) | Fischgruppen zusammenzählen und ihre Grössen vergleichen |
 | Reh | [Lebensräume und Nahrung zuordnen](puzzles/friends-deer.md), [Schritte im Raum planen](puzzles/robot.md) | Lebensräume kennen und den Weg zurück zum Wald finden |
 | Eisvogel | [Zahlennachbarn bestimmen](puzzles/neighbours.md), [Farbwörter verstehen](puzzles/colour-words.md) | Reihenfolgen am Bach üben und Farben wie beim bunten Gefieder unterscheiden |

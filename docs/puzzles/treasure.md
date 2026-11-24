@@ -26,38 +26,38 @@
 
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
-| `treasure/0-0` | Korb 1, fehlt: forest-leaf — Merke dir die vier Waldschätze. | "forest-leaf" |
-| `treasure/0-1` | Korb 1, fehlt: forest-feather — Merke dir die vier Waldschätze. | "forest-feather" |
-| `treasure/0-2` | Korb 1, fehlt: forest-mushroom — Merke dir die vier Waldschätze. | "forest-mushroom" |
-| `treasure/0-3` | Korb 1, fehlt: forest-stone — Merke dir die vier Waldschätze. | "forest-stone" |
-| `treasure/1-0` | Korb 2, fehlt: forest-feather — Merke dir die vier Waldschätze. | "forest-feather" |
-| `treasure/1-1` | Korb 2, fehlt: forest-mushroom — Merke dir die vier Waldschätze. | "forest-mushroom" |
-| `treasure/1-2` | Korb 2, fehlt: forest-stone — Merke dir die vier Waldschätze. | "forest-stone" |
-| `treasure/1-3` | Korb 2, fehlt: forest-berry — Merke dir die vier Waldschätze. | "forest-berry" |
-| `treasure/2-0` | Korb 3, fehlt: forest-mushroom — Merke dir die vier Waldschätze. | "forest-mushroom" |
-| `treasure/2-1` | Korb 3, fehlt: forest-stone — Merke dir die vier Waldschätze. | "forest-stone" |
-| `treasure/2-2` | Korb 3, fehlt: forest-berry — Merke dir die vier Waldschätze. | "forest-berry" |
-| `treasure/2-3` | Korb 3, fehlt: forest-nut — Merke dir die vier Waldschätze. | "forest-nut" |
-| `treasure/3-0` | Korb 4, fehlt: forest-stone — Merke dir die vier Waldschätze. | "forest-stone" |
-| `treasure/3-1` | Korb 4, fehlt: forest-berry — Merke dir die vier Waldschätze. | "forest-berry" |
-| `treasure/3-2` | Korb 4, fehlt: forest-nut — Merke dir die vier Waldschätze. | "forest-nut" |
-| `treasure/3-3` | Korb 4, fehlt: forest-apple — Merke dir die vier Waldschätze. | "forest-apple" |
-| `treasure/4-0` | Korb 5, fehlt: forest-berry — Merke dir die vier Waldschätze. | "forest-berry" |
-| `treasure/4-1` | Korb 5, fehlt: forest-nut — Merke dir die vier Waldschätze. | "forest-nut" |
-| `treasure/4-2` | Korb 5, fehlt: forest-apple — Merke dir die vier Waldschätze. | "forest-apple" |
-| `treasure/4-3` | Korb 5, fehlt: forest-flower — Merke dir die vier Waldschätze. | "forest-flower" |
-| `treasure/5-0` | Korb 6, fehlt: forest-nut — Merke dir die vier Waldschätze. | "forest-nut" |
-| `treasure/5-1` | Korb 6, fehlt: forest-apple — Merke dir die vier Waldschätze. | "forest-apple" |
-| `treasure/5-2` | Korb 6, fehlt: forest-flower — Merke dir die vier Waldschätze. | "forest-flower" |
-| `treasure/5-3` | Korb 6, fehlt: forest-leaf — Merke dir die vier Waldschätze. | "forest-leaf" |
-| `treasure/6-0` | Korb 7, fehlt: forest-apple — Merke dir die vier Waldschätze. | "forest-apple" |
-| `treasure/6-1` | Korb 7, fehlt: forest-flower — Merke dir die vier Waldschätze. | "forest-flower" |
-| `treasure/6-2` | Korb 7, fehlt: forest-leaf — Merke dir die vier Waldschätze. | "forest-leaf" |
-| `treasure/6-3` | Korb 7, fehlt: forest-feather — Merke dir die vier Waldschätze. | "forest-feather" |
-| `treasure/7-0` | Korb 8, fehlt: forest-flower — Merke dir die vier Waldschätze. | "forest-flower" |
-| `treasure/7-1` | Korb 8, fehlt: forest-leaf — Merke dir die vier Waldschätze. | "forest-leaf" |
-| `treasure/7-2` | Korb 8, fehlt: forest-feather — Merke dir die vier Waldschätze. | "forest-feather" |
-| `treasure/7-3` | Korb 8, fehlt: forest-mushroom — Merke dir die vier Waldschätze. | "forest-mushroom" |
+| `treasure/0-0` | Korb 1, fehlt: forest-leaf — Merke dir die vier Gegenstände. | "forest-leaf" |
+| `treasure/0-1` | Korb 1, fehlt: forest-feather — Merke dir die vier Gegenstände. | "forest-feather" |
+| `treasure/0-2` | Korb 1, fehlt: forest-mushroom — Merke dir die vier Gegenstände. | "forest-mushroom" |
+| `treasure/0-3` | Korb 1, fehlt: forest-stone — Merke dir die vier Gegenstände. | "forest-stone" |
+| `treasure/1-0` | Korb 2, fehlt: forest-feather — Merke dir die vier Gegenstände. | "forest-feather" |
+| `treasure/1-1` | Korb 2, fehlt: forest-mushroom — Merke dir die vier Gegenstände. | "forest-mushroom" |
+| `treasure/1-2` | Korb 2, fehlt: forest-stone — Merke dir die vier Gegenstände. | "forest-stone" |
+| `treasure/1-3` | Korb 2, fehlt: forest-berry — Merke dir die vier Gegenstände. | "forest-berry" |
+| `treasure/2-0` | Korb 3, fehlt: forest-mushroom — Merke dir die vier Gegenstände. | "forest-mushroom" |
+| `treasure/2-1` | Korb 3, fehlt: forest-stone — Merke dir die vier Gegenstände. | "forest-stone" |
+| `treasure/2-2` | Korb 3, fehlt: forest-berry — Merke dir die vier Gegenstände. | "forest-berry" |
+| `treasure/2-3` | Korb 3, fehlt: forest-nut — Merke dir die vier Gegenstände. | "forest-nut" |
+| `treasure/3-0` | Korb 4, fehlt: forest-stone — Merke dir die vier Gegenstände. | "forest-stone" |
+| `treasure/3-1` | Korb 4, fehlt: forest-berry — Merke dir die vier Gegenstände. | "forest-berry" |
+| `treasure/3-2` | Korb 4, fehlt: forest-nut — Merke dir die vier Gegenstände. | "forest-nut" |
+| `treasure/3-3` | Korb 4, fehlt: forest-apple — Merke dir die vier Gegenstände. | "forest-apple" |
+| `treasure/4-0` | Korb 5, fehlt: forest-berry — Merke dir die vier Gegenstände. | "forest-berry" |
+| `treasure/4-1` | Korb 5, fehlt: forest-nut — Merke dir die vier Gegenstände. | "forest-nut" |
+| `treasure/4-2` | Korb 5, fehlt: forest-apple — Merke dir die vier Gegenstände. | "forest-apple" |
+| `treasure/4-3` | Korb 5, fehlt: forest-flower — Merke dir die vier Gegenstände. | "forest-flower" |
+| `treasure/5-0` | Korb 6, fehlt: forest-nut — Merke dir die vier Gegenstände. | "forest-nut" |
+| `treasure/5-1` | Korb 6, fehlt: forest-apple — Merke dir die vier Gegenstände. | "forest-apple" |
+| `treasure/5-2` | Korb 6, fehlt: forest-flower — Merke dir die vier Gegenstände. | "forest-flower" |
+| `treasure/5-3` | Korb 6, fehlt: forest-leaf — Merke dir die vier Gegenstände. | "forest-leaf" |
+| `treasure/6-0` | Korb 7, fehlt: forest-apple — Merke dir die vier Gegenstände. | "forest-apple" |
+| `treasure/6-1` | Korb 7, fehlt: forest-flower — Merke dir die vier Gegenstände. | "forest-flower" |
+| `treasure/6-2` | Korb 7, fehlt: forest-leaf — Merke dir die vier Gegenstände. | "forest-leaf" |
+| `treasure/6-3` | Korb 7, fehlt: forest-feather — Merke dir die vier Gegenstände. | "forest-feather" |
+| `treasure/7-0` | Korb 8, fehlt: forest-flower — Merke dir die vier Gegenstände. | "forest-flower" |
+| `treasure/7-1` | Korb 8, fehlt: forest-leaf — Merke dir die vier Gegenstände. | "forest-leaf" |
+| `treasure/7-2` | Korb 8, fehlt: forest-feather — Merke dir die vier Gegenstände. | "forest-feather" |
+| `treasure/7-3` | Korb 8, fehlt: forest-mushroom — Merke dir die vier Gegenstände. | "forest-mushroom" |
 
 ## Exact definitions
 
@@ -70,7 +70,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 1, fehlt: forest-leaf",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-leaf",
         "forest-feather",
@@ -91,7 +91,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 1, fehlt: forest-feather",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-leaf",
         "forest-feather",
@@ -112,7 +112,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 1, fehlt: forest-mushroom",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-leaf",
         "forest-feather",
@@ -133,7 +133,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 1, fehlt: forest-stone",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-leaf",
         "forest-feather",
@@ -154,7 +154,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 2, fehlt: forest-feather",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-feather",
         "forest-mushroom",
@@ -175,7 +175,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 2, fehlt: forest-mushroom",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-feather",
         "forest-mushroom",
@@ -196,7 +196,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 2, fehlt: forest-stone",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-feather",
         "forest-mushroom",
@@ -217,7 +217,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 2, fehlt: forest-berry",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-feather",
         "forest-mushroom",
@@ -238,7 +238,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 3, fehlt: forest-mushroom",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-mushroom",
         "forest-stone",
@@ -259,7 +259,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 3, fehlt: forest-stone",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-mushroom",
         "forest-stone",
@@ -280,7 +280,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 3, fehlt: forest-berry",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-mushroom",
         "forest-stone",
@@ -301,7 +301,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 3, fehlt: forest-nut",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-mushroom",
         "forest-stone",
@@ -322,7 +322,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 4, fehlt: forest-stone",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-stone",
         "forest-berry",
@@ -343,7 +343,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 4, fehlt: forest-berry",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-stone",
         "forest-berry",
@@ -364,7 +364,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 4, fehlt: forest-nut",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-stone",
         "forest-berry",
@@ -385,7 +385,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 4, fehlt: forest-apple",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-stone",
         "forest-berry",
@@ -406,7 +406,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 5, fehlt: forest-berry",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-berry",
         "forest-nut",
@@ -427,7 +427,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 5, fehlt: forest-nut",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-berry",
         "forest-nut",
@@ -448,7 +448,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 5, fehlt: forest-apple",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-berry",
         "forest-nut",
@@ -469,7 +469,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 5, fehlt: forest-flower",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-berry",
         "forest-nut",
@@ -490,7 +490,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 6, fehlt: forest-nut",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-nut",
         "forest-apple",
@@ -511,7 +511,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 6, fehlt: forest-apple",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-nut",
         "forest-apple",
@@ -532,7 +532,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 6, fehlt: forest-flower",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-nut",
         "forest-apple",
@@ -553,7 +553,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 6, fehlt: forest-leaf",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-nut",
         "forest-apple",
@@ -574,7 +574,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 7, fehlt: forest-apple",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-apple",
         "forest-flower",
@@ -595,7 +595,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 7, fehlt: forest-flower",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-apple",
         "forest-flower",
@@ -616,7 +616,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 7, fehlt: forest-leaf",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-apple",
         "forest-flower",
@@ -637,7 +637,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 7, fehlt: forest-feather",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-apple",
         "forest-flower",
@@ -658,7 +658,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 8, fehlt: forest-flower",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-flower",
         "forest-leaf",
@@ -679,7 +679,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 8, fehlt: forest-leaf",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-flower",
         "forest-leaf",
@@ -700,7 +700,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 8, fehlt: forest-feather",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-flower",
         "forest-leaf",
@@ -721,7 +721,7 @@ These definitions are the same finite data used by the game and review previews.
     "label": "Korb 8, fehlt: forest-mushroom",
     "question": {
       "kind": "treasure",
-      "prompt": "Merke dir die vier Waldschätze.",
+      "prompt": "Merke dir die vier Gegenstände.",
       "objects": [
         "forest-flower",
         "forest-leaf",

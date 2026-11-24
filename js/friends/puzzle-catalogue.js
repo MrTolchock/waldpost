@@ -11,11 +11,11 @@
     // Keep the original difficulty contract for existing word cards; the fourth field describes the expanded pool.
     'friends-mouse':['D.2.A.1.b','Wörter mit Bildern verbinden','25 vertraute Nomen; eingeführte Buchstaben','Vertraute Nomen und Tiernamen; eingeführte Buchstaben'],
     // Keep the reviewed difficulty contract; the fourth field shows the 44 remaining questions.
-    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen und Fragen lesen','50 kurze Tierfragen; drei Bildantworten','44 kurze Tierfragen; drei Bildantworten'],
+    'friends-hedgehog':['NMG.2.4.a; D.2.B.1.b','Tiermerkmale erkennen','50 kurze Tierfragen; drei Bildantworten','44 kurze Tierfragen; drei Bildantworten'],
     'friends-deer':['NMG.2.1.a; D.2.B.1.b','Lebensräume und Nahrung zuordnen','25 kurze Naturfragen; drei Bildantworten'],
     'friends-badger':['NMG.2.3.a; D.2.B.1.b','Wachstum und Naturveränderungen erkennen','25 kurze Fragen zu Wetter, Pflanzen und Entwicklung'],
     'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe'],
-    count:['MA.1.A.2.a','Gezielt Mengen zählen','6–15 Marienkäfer zwischen Bienen und Schnecken'],
+    count:['MA.1.A.2.a','Mengen gezielt zählen','6–15 Marienkäfer zwischen Bienen und Schnecken'],
     add:['MA.1.A.3.a','Sichtbare Gruppen addieren','Zwei positive Summanden; Summe höchstens 10'],
     rocket:['MA.1.A.4.b','Mengen ergänzen','Gesamtmenge 5–10; besetzte und freie Plätze'],
     picnic:['MA.1.A.4.a (Übung)','Eins zu eins gerecht verteilen','2–4 Freunde; 1–10 Beeren je Freund; insgesamt höchstens 20'],
@@ -39,7 +39,7 @@
     for(const n of [4,8,12,16])add(id,'four-'+n,'Menge '+n+' in Viererreihen',numberQ(n,item,4));
   }
   // Steinbock: mountain patterns of stone, fir and flower (content.js mountainPatterns), 30 tasks.
-  for(const p of C.mountainPatterns())add('friends-ibex','pattern-'+p.key,p.label,{kind:'pattern',prompt:'Welches Bild fehlt im Bergmuster?',sequence:p.sequence,gap:p.gap,answer:p.answer,choices:p.choices});
+  for(const p of C.mountainPatterns())add('friends-ibex','pattern-'+p.key,p.label,{kind:'pattern',prompt:'Welches Bild fehlt im Muster?',sequence:p.sequence,gap:p.gap,answer:p.answer,choices:p.choices});
   // «Nuss» shows the drawn Baumnuss; the acorn is called «Eichel» (23 Nov review).
   const wordArt={...R.wordArt,Bus:'bus',Hose:'trousers',Stern:'star',Topf:'vocab-pot',Nuss:'walnut'};
   const reading=['Maus','Haus','Hut','Rose','Nase','Fisch','Tisch','Ball','Baum','Boot','Kuh','Schuh','Bein','Stein','Buch','Hase','Dose','Nuss','Hose','Bus','Stern','Turm','Wurm','Tuch','Topf'];
@@ -79,12 +79,12 @@
   for(let n=0;n<25;n++){
     const order=shapeOrders[n%6],line=[shapes[order[0]],shapes[order[0]],shapes[order[1]]],shift=1+Math.floor(n/6)%2,phase=Math.floor(n/12),hole=6+Math.floor(n/6)%3;
     const matrix=Array.from({length:9},(_,i)=>line[(i%3+Math.floor(i/3)*shift+phase)%3]);
-    add('friends-beaver','matrix-'+n,'Waldreihe '+(n+1),{kind:'matrix',prompt:'Welcher Waldgegenstand fehlt?',matrix,gap:hole,answer:matrix[hole],choices:shapes});
+    add('friends-beaver','matrix-'+n,'Waldreihe '+(n+1),{kind:'matrix',prompt:'Welcher Gegenstand fehlt?',matrix,gap:hole,answer:matrix[hole],choices:shapes});
   }
   // Additional rows with all three kinds, keeping the original 25 tasks verbatim.
   shapeOrders.forEach((order,n)=>[6,7,8].forEach(hole=>{
     const matrix=Array.from({length:9},(_,i)=>shapes[order[(i%3+Math.floor(i/3))%3]]);
-    add('friends-beaver','matrix-three-'+n+'-'+hole,'Drei Gegenstände / Reihe '+(n+1)+' / Lücke '+(hole-5),{kind:'matrix',prompt:'Welcher Waldgegenstand fehlt?',matrix,gap:hole,answer:matrix[hole],choices:shapes});
+    add('friends-beaver','matrix-three-'+n+'-'+hole,'Drei Gegenstände / Reihe '+(n+1)+' / Lücke '+(hole-5),{kind:'matrix',prompt:'Welcher Gegenstand fehlt?',matrix,gap:hole,answer:matrix[hole],choices:shapes});
   }));
   const extra={
     deer:[['Wo sammelt der Schmetterling Nektar?','flower','water','egg'],['Was knabbert der Biber ab?','tree','fish','egg'],['Was pickt der Vogel aus der Erde?','vocab-worm','boat','moon'],['Was frisst die Schnecke?','leaf','fish','egg'],['Wo sucht der Igel kleine Tiere?','leaf','cloud','moon'],['Was stellt die Biene aus Nektar her?','honey','cheese','egg'],['Wo kann der Frosch schwimmen?','water','cloud','tree'],['Was knabbert der Hase auf der Wiese?','leaf','moon','nest'],['Was hängt an einer Weinrebe?','grapes','egg','fish']],
@@ -156,7 +156,7 @@
   }
   const animals=C.pools.frog.map(t=>t.answer==='nest'?['Ente','duck-swim']:t.answer==='egg'?['Fuchs','forest-fox']:['mushroom','forest-mushroom'].includes(t.answer)?['Eichhörnchen','squirrel-sit']:[t.target,t.answer]).concat([['Steinbock','alpine-ibex'],['Murmeltier','alpine-marmot'],['Storch','stork'],['Reiher','heron'],['Wildschwein','wild-boar'],['Maulwurf','mole'],['Libelle','dragonfly'],['Dachs','badger']]); // local animals instead of zoo animals (23 Nov)
   animals.forEach(([text,answer],i)=>addMouseWord('friends-frog-animal-'+i,text,answer,[answer,animals[(i+4)%animals.length][1],animals[(i+9)%animals.length][1]]));
-  for(let n=6;n<=15;n++)for(let b=2;b<=4;b++)add('count',n+'-'+b,n+' Käfer, '+b+' Bienen',{kind:'count',prompt:'Wie viele rote Marienkäfer sind hier?',count:n,answer:n,choices:numeric(n),bugs:[...Array(n).fill('ladybird'),...Array(b).fill('bee'),...Array(2).fill('snail')]});
+  for(let n=6;n<=15;n++)for(let b=2;b<=4;b++)add('count',n+'-'+b,n+' Käfer, '+b+' Bienen',{kind:'count',prompt:'Wie viele Marienkäfer sind hier?',count:n,answer:n,choices:numeric(n),bugs:[...Array(n).fill('ladybird'),...Array(b).fill('bee'),...Array(2).fill('snail')]});
   // Sums 2–10; the ten-partners (sum 10) were added on 23 Nov.
   for(let a=1;a<=9;a++)for(let b=1;b<=10-a;b++)add('add',a+'-'+b,a+' + '+b,{kind:'add',item:'fish-swim',prompt:'Wie viele Fische sind es zusammen?',a,b,answer:a+b,choices:numeric(a+b)});
   const animalQuestions=[
@@ -239,7 +239,7 @@
     const objects=Array.from({length:4},(_,n)=>treasures[(i+n)%treasures.length]),decoys=treasures.filter(id=>!objects.includes(id));
     for(let missing=0;missing<objects.length;missing++){
       const answer=objects[missing],choices=[answer,decoys[missing],decoys[(missing+1)%decoys.length]];
-      add('treasure',i+'-'+missing,'Korb '+(i+1)+', fehlt: '+answer,{kind:'treasure',prompt:'Merke dir die vier Waldschätze.',objects,missing,answer,choices});
+      add('treasure',i+'-'+missing,'Korb '+(i+1)+', fehlt: '+answer,{kind:'treasure',prompt:'Merke dir die vier Gegenstände.',objects,missing,answer,choices});
     }
   }
   // A given left neighbour is already on the card row, so it is never offered again (22 Nov review); three choices remain.
