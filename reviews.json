@@ -29419,6 +29419,11 @@
     },
     {
       "key": "puzzle:neighbours",
+      "note": "Success screen passt nicht zu den restlichen rätseln, ich meine grüner rahmen um richtige reihenfolge. Anpassen",
+      "at": "2026-11-24T06:52:43.246Z"
+    },
+    {
+      "key": "puzzle:neighbours",
       "note": "Wenn falsch platziertes bild zurückfällt mache es nicht gestrichelt, sondern genau wie es vorher war. Bei korrekter antwort verschiebt sich reihe mit zahlen. Schaue dass es sich nicht verschiebt",
       "at": "2026-11-22T21:09:20.939Z"
     },
