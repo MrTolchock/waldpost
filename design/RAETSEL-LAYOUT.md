@@ -1,6 +1,6 @@
 # Einheitliches Rätsel-Layout
 
-Dieser Blueprint bestimmt, wie **jedes** Rätsel aussieht: im Spiel, in der Rätsel-Galerie und in der Rätsel-Prüfung. Er entstand am 23. und 24. November 2026 aus der Durchsicht aller 22 Rätsel mit dem Besitzer und gilt seit Version 9.4.41. Ein neues Rätsel folgt ihm, ohne eigene Schriftgrössen, Farben, Rahmen oder Bildgrössen einzuführen.
+Dieser Blueprint bestimmt, wie **jedes** Rätsel aussieht: im Spiel, in der Rätsel-Galerie und in der Rätsel-Prüfung. Er entstand am 23. und 24. November 2026 aus der Durchsicht aller 22 Rätsel mit dem Besitzer und gilt seit Version 9.4.41 (Erfolgsbild, Zahlenkarten und schmale Handys seit 9.4.42). Ein neues Rätsel folgt ihm, ohne eigene Schriftgrössen, Farben, Rahmen oder Bildgrössen einzuführen.
 
 Er ergänzt den [Rätsel-Blueprint](PUZZLE-BLUEPRINT.md) (Verhalten, Aufgaben, Prüfung) und den [visuellen Stil](VISUAL-STYLE.md) (Bilder und Farben). Umgesetzt ist er als letzter Abschnitt von [`css/puzzle-rounds.css`](../css/puzzle-rounds.css) mit den Variablen `--pv-*`. Geprüft wird er mit den [Rätsel-Ansichten](../tools/raetsel-ansichten/README.md).
 
@@ -13,7 +13,8 @@ Er ergänzt den [Rätsel-Blueprint](PUZZLE-BLUEPRINT.md) (Verhalten, Aufgaben, P
 | Schriftgrösse 2: alles, was gelesen, gezählt oder gewählt wird | 34 px | 29 px | `--pv-text` |
 | Schrift | Andika 700 | Andika 700 | |
 | Bildgrösse im Rahmen und bei den Antworten | 76 px | 52 px | `--pv-pic` |
-| Kästchen mit Bild | Bild + 10 px | Bild + 10 px | `--pv-cell` |
+| Kästchen mit Bild | Bild + 10 px | Bild + 10 px, auf schmalen Handys kleiner (siehe Regel «Schmale Bildschirme») | `--pv-cell` |
+| Abstand in Kästchenrastern | 8 px | 4 px | `--pv-gap` |
 | Mindesthöhe des Rahmens | 208 px | 160 px | `--pv-frame-h` |
 | Platz für die Frage | eine Zeile | immer zwei Zeilen | |
 
@@ -29,7 +30,7 @@ Die Zeile mit dem Waldfreund oben (Zurück, Porträt, «… spielt mit dir») ge
 
 **Rahmen.** Unter der Frage steht in jedem Rätsel genau ein Rahmen: gleich breit wie das Papier innen, Hintergrund `#f4f0e1`, Linie 1 px `#d6c5a4`, Rundung 22 px, ohne Schatten, Inhalt waagrecht und senkrecht mittig. Er wird nie grösser als nötig, und grosse leere Flächen gibt es nicht.
 
-**Kästchen.** Alle Kästchen im Rahmen sehen gleich aus: Hintergrund `#fffaf0`, Linie 1 px `#d6c5a4`, Rundung 14 px, ohne Schatten. Das gilt für Gruppen beim Addieren und Vergleichen, Reihen, Muster- und Zahlenkarten, Plätze, Wegfelder und Spiegelfelder. Hindernisse und Ziele dürfen eine fachliche Markierung haben, zum Beispiel grüne Steinfelder, den braunen Start des Rehs oder das grün umrandete Ziel.
+**Kästchen.** Alle Kästchen im Rahmen sehen gleich aus: Hintergrund `#fffaf0`, Linie 1 px `#d6c5a4`, Rundung 14 px, ohne Schatten. Das gilt für Gruppen beim Addieren und Vergleichen, Reihen, Muster- und Zahlenkarten, Plätze, Wegfelder und Spiegelfelder. Hindernisse und Ziele dürfen eine fachliche Markierung haben, zum Beispiel grüne Steinfelder, den braunen Start des Rehs oder das grün umrandete Ziel. Karten, die das Kind aus den Antworten in den Rahmen legt, haben genau die Form der Antwortkacheln: Bei den Zahlennachbarn sind Reihe und Antworten 112 × 70 px (Handy 64 × 62 px), leer wie gefüllt.
 
 **Leere Felder.** Ein Feld, das das Kind füllen soll, sieht überall gleich aus: Hintergrund `#fffaf0`, 2 px gestrichelte Linie `#b39a70`, Rundung 14 px und ein «?» in Schriftgrösse 2. Es hat keinen Unterstrich und keinen Bogen. Ist es gefüllt, bekommt es die normale Kästchenlinie. Leere und gefüllte Felder haben dieselbe Aussengrösse, damit beim Füllen nichts springt. Ausnahme: Die Buchstabenlücke im Wort («Banan_») bleibt ein Teil des Wortes.
 
@@ -41,7 +42,9 @@ Die Zeile mit dem Waldfreund oben (Zurück, Porträt, «… spielt mit dir») ge
 
 **Falsche Eingabe.** Die gewählte Karte bekommt die warme, gestrichelte Innenkontur. Grösse und Platz bleiben gleich, und das Kind kann sofort weiter versuchen.
 
-**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Das Gelöste (Antwort, Reihe, Plätze) wird grün, und Konfetti aus Blättern, Blumen und Eicheln fliegt. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. Bei einer gelösten Reihe wird nur die Reihe grün, nicht die ganze Rahmenbreite. Offener Vorschlag vom 24. November: Grün werden immer die einzelnen gelösten Teile wie eine Antwortkachel, nie ein Band dahinter ([Vorschlag](proposals/2026-11-24-erfolg-einheitlich/README.md)).
+**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](proposals/2026-11-24-erfolg-einheitlich/README.md))
+
+**Schmale Bildschirme.** Der Rahmen ist ein Grössen-Container. Jedes Kästchenraster nimmt die kleinere von Designgrösse und tatsächlich verfügbarer Spaltenbreite. So bleiben auf Handys von 320 bis 390 px alle Kästchen, Plätze und Bilder im Rahmen. Kein Kästchen darf je über den Rahmen oder den Bildschirm hinausragen, auch wenn nichts scrollt.
 
 **Spiegel.** Beim Spiegelbild steht zwischen den Rastern ein angedeuteter, flacher Spiegel: eine schmale Fläche `#d3e1e3` mit Linie `#9fb4b8`, ohne Verlauf, Glanz oder Schatten.
 
@@ -59,7 +62,7 @@ Jede Ausnahme braucht einen fachlichen Grund und steht hier.
 ## Ein neues Rätsel gestalten
 
 1. Nur die gemeinsamen Klassen und Variablen verwenden: `.puzzle-prompt`, `.puzzle-scene`, `.puzzle-answers`, `.puzzle-picture`, die Kästchenklassen und `--pv-*`. Eigene Grössen, Farben, Schatten oder Rundungen gibt es nur als begründete Ausnahme in der Tabelle oben.
-2. Jede Aufgabe auf Tablet und Handy vermessen (`tools/raetsel-ansichten/survey.cjs`). Keine darf über den Bildschirm ragen oder seitlich scrollen.
+2. Jede Aufgabe auf Tablet und auf Handys mit 390, 360 und 320 px vermessen (`tools/raetsel-ansichten/survey.cjs`). Keine darf über den Bildschirm ragen oder seitlich scrollen, und `clip` muss überall 0 sein: Kein Knopf, Kästchen oder Bild darf über den Rahmen oder den Bildschirm hinausragen.
 3. Alle Ansichten aufnehmen, in denen der Bildschirm anders aussieht: die erste Aufgabe, die meisten und wenigsten Bilder, der längste Text, der höchste Bildschirm, jede andere Anordnung und Antwortanzahl. Dazu jeder Zustand nach einer Handlung: Etwas verschwindet, füllt sich, ist halb gelöst, bewegt sich, ist falsch beantwortet oder gelöst.
 4. Die Ansichten dem Besitzer als Vergleich Heute/Vorschlag auf Tablet und Handy vorlegen. Gestaltungsänderungen werden zuerst nur dort und in diesem Blueprint festgehalten und erst nach der Freigabe umgesetzt.
 5. Mit `tools/raetsel-ansichten/measure.cjs` prüfen: zwei Schriftgrössen, eine Schriftstärke und eine Bildgrösse pro Rätsel.
@@ -91,3 +94,8 @@ Den Vorschlag, alle Aufnahmen und die Vermessung aller 797 Aufgaben hält [desig
   - einheitlicher Erfolg ohne «Das passt!»
   - ein flacher Spiegel
   - «Gegenstand» statt «Waldschatz»
+- **Fünfte Runde:**
+  - grün werden die gelösten Teile, nie ein Band dahinter
+  - die Zahlenkarten in der Reihe haben die Form der Antwortkacheln
+- **Release-Prüfung vom 24. November (B-1):**
+  - auf schmalen Handys schrumpfen die Kästchen mit dem Papier

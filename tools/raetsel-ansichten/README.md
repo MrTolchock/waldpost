@@ -21,7 +21,7 @@ Die Skripte brauchen Playwright mit Chromium. Für einen Vorschlag zeigt `RAETSE
 | 5. Schrift und Bilder messen | `node measure.cjs tablet` bzw. `phone` | Schriftgrössen, Schriftstärke und Bildgrössen pro Rätsel |
 | 6. Übersicht | `python3 montage.py <bilder> tablet vorschlag uebersicht.jpg` | ein Kontaktbogen aller Rätsel |
 
-Tablet ist 1080 × 810, Handy 390 × 844 (CSS-Pixel). Für den Vergleich hält `harness.cjs` die erste Aufgabe pro Rätsel fest. `window.__force` setzt eine bestimmte Aufgabe.
+Tablet ist 1080 × 810, Handy 390 × 844 (CSS-Pixel). `survey.cjs` kennt dazu `phone360` (360 × 780) und `phone320` (320 × 640) und meldet mit `clip`, wie weit ein Knopf, Kästchen oder Bild über den Rahmen (`scene`) oder den Bildschirm (`view`) hinausragt. Beides muss 0 sein. Für den Vergleich hält `harness.cjs` die erste Aufgabe pro Rätsel fest. `window.__force` setzt eine bestimmte Aufgabe.
 
 ## Zustände nach einer Handlung
 

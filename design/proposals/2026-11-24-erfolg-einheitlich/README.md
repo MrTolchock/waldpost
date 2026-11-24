@@ -1,6 +1,6 @@
 # Vorschlag: ein Erfolgsbild für alle Rätsel und die Kartenform der Zahlennachbarn (24. November 2026)
 
-Status: **Entwurf, wartet auf Freigabe.** Das Spiel lädt `proposal.css` nicht. Nur die Aufnahmen spielen es ein (`RAETSEL_CSS=…/proposal.css`, Werkzeuge in [tools/raetsel-ansichten](../../../tools/raetsel-ansichten/README.md)).
+Status: **Freigegeben und umgesetzt in 9.4.42.** Die geltenden Regeln stehen im [einheitlichen Rätsel-Layout](../../RAETSEL-LAYOUT.md) (Abschnitte «Erfolg» und «Kästchen»). Diese Seite und `proposal.css` halten fest, wie der Vorschlag entstand.
 
 ## Anlass
 

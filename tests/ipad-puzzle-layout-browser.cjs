@@ -68,6 +68,19 @@ const {installRemote}=require('./review-repository-support.cjs');
    if(process.env.FARBTUPF_SHOTS){fs.mkdirSync(process.env.FARBTUPF_SHOTS,{recursive:true});await page.screenshot({path:process.env.FARBTUPF_SHOTS+'/vowels-'+width+'x'+height+'.png'});}
   }
  }
+ // Narrow phones (release review 2026-11-24, B-1): cell grids shrink with the paper, so no button,
+ // cell or picture leaves the frame or the screen at 360 or 320 px, in every Aufgabe of the grid Rätsel.
+ for(const [width,height] of [[360,780],[320,640]]){
+  await page.setViewportSize({width,height});
+  for(const id of ['rocket','mirror','friends-squirrel','count','robot','treasure'])for(const it of await page.evaluate(id=>FK.puzzleCatalogue.iterations(id).map(i=>i.id),id)){
+   await page.evaluate(({id,it})=>FK.puzzleReview.preview(id,it),{id,it});await page.locator('.screen:not([hidden]) .puzzle-scene').waitFor();
+   const clip=await page.evaluate(()=>{const paper=document.querySelector('.screen:not([hidden]) .puzzle-paper'),scene=paper.querySelector('.puzzle-scene'),sr=scene.getBoundingClientRect();let worst=0;
+    for(const e of paper.querySelectorAll('button,.puzzle-picture,.puzzle-number-card,.puzzle-firefly-slot,.puzzle-mirror-cell,.puzzle-route-cell,.puzzle-counter,.puzzle-treasures>span')){if(!e.getClientRects().length||getComputedStyle(e).visibility==='hidden')continue;const r=e.getBoundingClientRect();if(!r.width)continue;
+     if(scene.contains(e))worst=Math.max(worst,r.right-sr.right,sr.left-r.left);worst=Math.max(worst,r.right-innerWidth,-r.left);}
+    return Math.round(worst);});
+   assert.ok(clip<=1,it+' stays inside its frame and the screen at '+width+' px ('+clip+' px outside)');total++;
+  }
+ }
  // The shortened header also fits a narrow phone, with ordinary vertical scroll available.
  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>FK.puzzleReview.preview('friends-bird','friends-bird/rhyme-2'));
  assert.equal(await page.locator('.screen-puzzle').evaluate(n=>n.scrollWidth>n.clientWidth+1),false);

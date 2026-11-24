@@ -431,3 +431,38 @@ body .screen-puzzle[data-game=treasure] .puzzle-paper>.puzzle-answers{min-height
 /* Phone: the question always takes two lines of room, so a question that wraps (or a phase whose
    question is shorter) never moves the task below it. */
 @media(max-width:600px){body .screen-puzzle .puzzle-paper>.puzzle-prompt{min-height:calc(var(--pv-prompt) * 1.3 * 2) !important;display:flex;align-items:center;justify-content:center}}
+
+/* ---- 9.4.42: one success look – every solved part turns green like a correct answer tile, never a band behind a group ---- */
+body .screen-puzzle{--pv-ok-bg:#e8efd6;--pv-ok-line:#7f9a48;--pv-ok-ring:0 0 0 2px #8fa76055}
+/* Gruppen bekommen keinen eigenen grünen Hintergrund */
+body .screen-puzzle .puzzle-scene :is(.puzzle-syllable-slots,.puzzle-picnic-friends,.puzzle-mirror-grid,.puzzle-neighbours).is-correct{background:transparent !important;border-color:transparent !important;box-shadow:none !important}
+/* die gelösten Teile werden grün wie eine richtige Antwortkachel */
+body .screen-puzzle .puzzle-scene :is(.puzzle-syllable-slots.is-correct>.puzzle-syllable-slot,.puzzle-picnic-friends.is-correct>.puzzle-picnic-place,.puzzle-mirror-grid.is-correct>.puzzle-mirror-cell.filled,.puzzle-number-card.is-correct,.puzzle-berry-plate.is-correct){
+ background:var(--pv-ok-bg) !important;border:1px solid var(--pv-ok-line) !important;box-shadow:var(--pv-ok-ring) !important}
+/* Reh: am Ziel wird nur das Feld mit dem Reh grün, nicht das ganze Wegraster */
+body .screen-puzzle .puzzle-scene .puzzle-route.is-correct{background:transparent !important;border-color:transparent !important;box-shadow:none !important}
+body .screen-puzzle .puzzle-scene .puzzle-route.is-correct>.puzzle-route-cell.post{background:var(--pv-ok-bg) !important;border:2px solid var(--pv-ok-line) !important;box-shadow:var(--pv-ok-ring) !important}
+
+/* Zahlennachbarn: the row cards have exactly the shape of the answer tiles
+   (Tablet 112 × 70, Handy 64 × 62), leer wie gefüllt, damit beim Legen nichts springt. */
+body .screen-puzzle[data-game=neighbours]{--pv-num-w:112px;--pv-num-h:70px}
+@media(max-width:600px){body .screen-puzzle[data-game=neighbours]{--pv-num-w:64px;--pv-num-h:62px}}
+body .screen-puzzle[data-game=neighbours] :is(.puzzle-neighbours .puzzle-number-card,.puzzle-answers .puzzle-neighbour-tile){
+ box-sizing:border-box;width:var(--pv-num-w) !important;min-width:var(--pv-num-w) !important;max-width:var(--pv-num-w) !important;height:var(--pv-num-h) !important;min-height:var(--pv-num-h) !important;padding:0 !important;flex:none !important}
+
+/* ---- 9.4.42: cell grids shrink with the paper on narrow phones (release review B-1) ----
+   The frame is a size container. Every grid of picture cells takes the smaller of its design size
+   and the width that its columns really have, so no cell, place or picture leaves the frame at 320–390 px.
+   Tablet and 390 px phones keep the approved sizes. */
+body .screen-puzzle{--pv-gap:8px;--pv-mirror-cell:calc(var(--pv-pic) + 10px)}
+@media(max-width:600px){body .screen-puzzle{--pv-gap:4px;--pv-mirror-cell:46px}}
+body .screen-puzzle .puzzle-paper>.puzzle-scene{container-type:inline-size}
+body .screen-puzzle :is(.puzzle-firefly-slots,.puzzle-nuts,.puzzle-meadow,.puzzle-route,.puzzle-treasures){gap:var(--pv-gap) !important}
+body .screen-puzzle .puzzle-firefly-slots{--pv-cell:min(calc(var(--pv-pic) + 10px),calc((100cqi - 4 * var(--pv-gap)) / 5))}
+body .screen-puzzle .puzzle-treasures{--pv-cell:min(calc(var(--pv-pic) + 10px),calc((100cqi - 3 * var(--pv-gap)) / 4))}
+body .screen-puzzle .puzzle-route{--pv-cell:min(calc(var(--pv-pic) + 10px),calc((100cqi - (var(--size) - 1) * var(--pv-gap)) / var(--size)))}
+body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow){--pv-count:min(var(--pv-pic),calc((100cqi - 4 * var(--pv-gap)) / 5));grid-template-columns:repeat(5,var(--pv-count)) !important}
+body .screen-puzzle :is(.puzzle-nuts,.puzzle-meadow)>.puzzle-counter{width:var(--pv-count) !important;height:var(--pv-count) !important}
+/* two 3-column grids (3 px gaps), the 12 px mirror and its two 14 px gaps */
+body .screen-puzzle .puzzle-mirror{--pv-cell:min(var(--pv-mirror-cell),calc((100cqi - 12px - 28px - 4 * 3px) / 6))}
+body .screen-puzzle .puzzle-mirror-grid{gap:3px !important}
