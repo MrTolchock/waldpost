@@ -1,7 +1,7 @@
 // Screenshot chosen Aufgaben and interaction states for both variants. plan.json: [{id,key,it,action}]
 const {chromium}=require('playwright'),fs=require('fs'),{open}=require('./harness.cjs');
 const [,,plan,out,devs,variants]=process.argv;const P=JSON.parse(fs.readFileSync(plan));const css=process.env.RAETSEL_CSS?require('fs').readFileSync(process.env.RAETSEL_CSS,'utf8'):null;
-const DEV={tablet:{viewport:{width:1080,height:810},hasTouch:true},phone:{viewport:{width:390,height:844},hasTouch:true,isMobile:true}};
+const DEV={tablet:{viewport:{width:1080,height:810},hasTouch:true},phone:{viewport:{width:390,height:844},hasTouch:true,isMobile:true},phone360:{viewport:{width:360,height:780},hasTouch:true,isMobile:true},phone320:{viewport:{width:320,height:640},hasTouch:true,isMobile:true}};
 (async()=>{const b=await chromium.launch({args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});const fails=[];
 for(const dev of devs.split(','))for(const v of variants.split(',')){
  const {ctx,page,play}=await open(b,DEV[dev],v==='vorschlag'?css:null);const act=page.locator('.screen:not([hidden])');
