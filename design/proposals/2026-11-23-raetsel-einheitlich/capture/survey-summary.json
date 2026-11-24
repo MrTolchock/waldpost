@@ -1,0 +1,622 @@
+{
+ "tablet": {
+  "friends-squirrel": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    508,
+    662
+   ],
+   "bilder_im_rahmen": [
+    1,
+    20
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-mouse": {
+   "aufgaben": 74,
+   "papierhoehe": [
+    528,
+    528
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 13,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-ibex": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    528,
+    534
+   ],
+   "bilder_im_rahmen": [
+    6,
+    8
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "picnic": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    410,
+    606
+   ],
+   "bilder_im_rahmen": [
+    2,
+    20
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "neighbours": {
+   "aufgaben": 36,
+   "papierhoehe": [
+    496,
+    496
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 2,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "read-puzzle": {
+   "aufgaben": 28,
+   "papierhoehe": [
+    504,
+    504
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 3,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-bird": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    578,
+    578
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 8,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-hedgehog": {
+   "aufgaben": 44,
+   "papierhoehe": [
+    528,
+    528
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 42,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "count": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    508,
+    746
+   ],
+   "bilder_im_rahmen": [
+    10,
+    21
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "syllable": {
+   "aufgaben": 47,
+   "papierhoehe": [
+    508,
+    508
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 13,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "compare": {
+   "aufgaben": 28,
+   "papierhoehe": [
+    508,
+    682
+   ],
+   "bilder_im_rahmen": [
+    2,
+    20
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "colour-words": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    528,
+    528
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 20,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-owl": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    528,
+    528
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 23,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-deer": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    528,
+    528
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 36,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "add": {
+   "aufgaben": 45,
+   "papierhoehe": [
+    536,
+    700
+   ],
+   "bilder_im_rahmen": [
+    2,
+    10
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "robot": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    692,
+    692
+   ],
+   "bilder_im_rahmen": [
+    5,
+    6
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "mirror": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    506,
+    506
+   ],
+   "bilder_im_rahmen": [
+    3,
+    5
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-beaver": {
+   "aufgaben": 43,
+   "papierhoehe": [
+    642,
+    642
+   ],
+   "bilder_im_rahmen": [
+    8,
+    8
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-badger": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    528,
+    528
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 49,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "rocket": {
+   "aufgaben": 39,
+   "papierhoehe": [
+    508,
+    514
+   ],
+   "bilder_im_rahmen": [
+    1,
+    9
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "treasure": {
+   "aufgaben": 32,
+   "papierhoehe": [
+    572,
+    572
+   ],
+   "bilder_im_rahmen": [
+    4,
+    4
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "vowels": {
+   "aufgaben": 81,
+   "papierhoehe": [
+    508,
+    508
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  }
+ },
+ "phone": {
+  "friends-squirrel": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    432,
+    510
+   ],
+   "bilder_im_rahmen": [
+    1,
+    20
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-mouse": {
+   "aufgaben": 74,
+   "papierhoehe": [
+    468,
+    468
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 13,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-ibex": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    468,
+    522
+   ],
+   "bilder_im_rahmen": [
+    6,
+    8
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "picnic": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    351,
+    594
+   ],
+   "bilder_im_rahmen": [
+    2,
+    20
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "neighbours": {
+   "aufgaben": 36,
+   "papierhoehe": [
+    418,
+    446
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 2,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "read-puzzle": {
+   "aufgaben": 28,
+   "papierhoehe": [
+    462,
+    534
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 3,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-bird": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    475,
+    475
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 8,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-hedgehog": {
+   "aufgaben": 44,
+   "papierhoehe": [
+    440,
+    440
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 42,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "count": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    460,
+    594
+   ],
+   "bilder_im_rahmen": [
+    10,
+    21
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "syllable": {
+   "aufgaben": 47,
+   "papierhoehe": [
+    460,
+    460
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 13,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "compare": {
+   "aufgaben": 28,
+   "papierhoehe": [
+    435,
+    592
+   ],
+   "bilder_im_rahmen": [
+    2,
+    20
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "colour-words": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    468,
+    468
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 20,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-owl": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    440,
+    440
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 23,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-deer": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    468,
+    468
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 36,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "add": {
+   "aufgaben": 45,
+   "papierhoehe": [
+    645,
+    761
+   ],
+   "bilder_im_rahmen": [
+    2,
+    10
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "robot": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    546,
+    546
+   ],
+   "bilder_im_rahmen": [
+    5,
+    6
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "mirror": {
+   "aufgaben": 30,
+   "papierhoehe": [
+    376,
+    376
+   ],
+   "bilder_im_rahmen": [
+    3,
+    5
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-beaver": {
+   "aufgaben": 43,
+   "papierhoehe": [
+    540,
+    540
+   ],
+   "bilder_im_rahmen": [
+    8,
+    8
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "friends-badger": {
+   "aufgaben": 25,
+   "papierhoehe": [
+    468,
+    468
+   ],
+   "bilder_im_rahmen": [
+    0,
+    0
+   ],
+   "laengster_text": 49,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "rocket": {
+   "aufgaben": 39,
+   "papierhoehe": [
+    432,
+    432
+   ],
+   "bilder_im_rahmen": [
+    1,
+    9
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "treasure": {
+   "aufgaben": 32,
+   "papierhoehe": [
+    470,
+    470
+   ],
+   "bilder_im_rahmen": [
+    4,
+    4
+   ],
+   "laengster_text": 0,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  },
+  "vowels": {
+   "aufgaben": 81,
+   "papierhoehe": [
+    432,
+    432
+   ],
+   "bilder_im_rahmen": [
+    1,
+    1
+   ],
+   "laengster_text": 1,
+   "ueber_bildschirm": 0,
+   "seitlich_scrollbar": 0
+  }
+ }
+}

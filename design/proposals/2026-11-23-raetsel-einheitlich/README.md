@@ -35,7 +35,7 @@ Ein leeres Feld ist überall gleich gestaltet: Hintergrund `#fffaf0`, 2 px gestr
 ### Einzelne Rätsel
 
 - **Schritte im Raum planen:** Der Wald bleibt das gemalte Bild mit drei Bäumen in einem Feld. Start und Ziel bleiben markiert.
-- **Zahlennachbarn:** «Das passt!» erscheint unten im Rahmen und reserviert vorher keinen Platz. So steht die Zahlenreihe senkrecht in der Mitte.
+- **Zahlennachbarn:** «Das passt!» erscheint unten im Rahmen und reserviert vorher keinen Platz. So steht die Zahlenreihe senkrecht in der Mitte. Gelöst wird nur die Zahlenreihe grün hinterlegt, nicht die ganze Rahmenbreite.
 - **Spiegelbild:** Zwischen den beiden Rastern steht ein angedeuteter Spiegel, eine schmale, silbrig glänzende Leiste.
 - **Mengen verteilen:** Auf dem Tablet sind die Bilder 60 px gross, damit die vollsten Verteilungen (2 × 10, 3 × 6, 4 × 5) aufs Papier passen. Am knappsten ist 3 × 6 auf dem Tablet. Beeren und Freunde sind innerhalb des Rätsels gleich gross.
 - **Gegenstände merken:** Die Auswahlleiste nach dem Merken ist im Artifact mit aufgeführt.
@@ -44,6 +44,25 @@ Ein leeres Feld ist überall gleich gestaltet: Hintergrund `#fffaf0`, 2 px gestr
 Rahmen: Hintergrund `#f4f0e1`, Linie 1 px `#d6c5a4`, Rundung 22 px, ohne Schatten. Kästchen im Rahmen: Hintergrund `#fffaf0`, gleiche Linie, Rundung 14 px. Leere Felder: 2 px gestrichelt `#b39a70`.
 
 Nachgemessen mit `capture/measure.cjs` in allen 22 Rätseln auf beiden Geräten: zwei Schriftgrössen, eine Schriftstärke, eine Bildgrösse. Die einzige Ausnahme sind die gedrehten Marienkäfer beim Zählen, deren Umriss grösser misst.
+
+## Ansichten im Artifact
+
+Das Artifact zeigt pro Rätsel jede Ansicht, in der der Bildschirm anders aussieht, jeweils im heutigen Stand und im Vorschlag:
+
+- **Erste Aufgabe:** feste Aufgabe pro Rätsel, in beiden Ständen dieselbe.
+- **Aus der Vermessung aller 797 Aufgaben** (`capture/survey.cjs`, Ergebnis in `capture/survey-summary.json`): die Aufgabe mit den meisten und den wenigsten Bildern im Rahmen (bei einem Unterschied ab 2 Bildern), mit dem längsten Text (ab 10 Zeichen) und mit dem höchsten Bildschirm auf Tablet bzw. Handy (ab 20 px Unterschied). Dazu jede weitere Anordnung im Rahmen und jede abweichende Anzahl Antwortknöpfe. Die Auswahl steht in `capture/plan-variants.json`.
+- **Zustände nach einer Handlung** (`capture/plan-states.json`):
+  - Merken: die Auswahl, nachdem die Gegenstände verschwunden sind
+  - Picknick: die verteilten Beeren bei 2 × 10, 3 × 6 und 4 × 5
+  - Zahlennachbarn: die gelegten Nachbarn, beide bzw. einer gegeben
+  - Silben: die erste gelegte Silbe
+  - Spiegelbild: halb gefüllt
+  - Reh: unterwegs
+  - Alle Rätsel mit Auswahlknöpfen: der Bildschirm nach einer falschen Antwort
+
+Ergebnis der Vermessung im Vorschlag: In keiner der 797 Aufgaben ragt das Papier auf Tablet (1080 × 810) oder Handy (390 × 844) über den Bildschirm oder lässt sich seitlich scrollen. Am knappsten sind die vollsten Beeren-Verteilungen auf dem Tablet.
+
+Neue Ansichten kommen dazu, wenn ein neues Rätsel oder eine neue Aufgabenart einen anders aussehenden Bildschirm erzeugt.
 
 ## Offene Punkte
 
@@ -64,8 +83,11 @@ Nachgemessen mit `capture/measure.cjs` in allen 22 Rätseln auf beiden Geräten:
 Das Spiel auf `http://127.0.0.1:8000` bereitstellen (`python3 -m http.server 8000` im Repo), dann in `capture/`:
 
 ```
-node shoot2.cjs <ausgabeordner> tablet,phone heute,vorschlag
-node measure.cjs tablet   # bzw. phone; misst mit proposal.css
+node shoot2.cjs <ausgabeordner> tablet,phone heute,vorschlag       # erste Aufgabe je Rätsel
+node survey.cjs tablet <ergebnis.json> <rätsel-id> …               # jede Aufgabe vermessen (bzw. phone)
+node reps.cjs plan-variants.json <ausgabeordner> tablet,phone heute,vorschlag
+node reps.cjs plan-states.json <ausgabeordner> tablet,phone heute,vorschlag
+node measure.cjs tablet   # bzw. phone; Schriftgrössen und Bildgrössen mit proposal.css
 python3 montage.py <ausgabeordner> tablet vorschlag uebersicht.jpg
 ```
 

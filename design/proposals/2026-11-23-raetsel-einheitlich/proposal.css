@@ -118,3 +118,5 @@ body .screen-puzzle .puzzle-picnic-bank{margin-bottom:8px !important;min-height:
 body .screen-puzzle .puzzle-picnic-friends{gap:8px !important}
 body .screen-puzzle .puzzle-picnic-place{padding:4px 6px !important}
 body .screen-puzzle .puzzle-picnic-berries{min-height:0 !important}
+/* Zahlennachbarn: die gelöste Reihe wird nur um die Zahlen grün, nicht über die ganze Rahmenbreite */
+body .screen-puzzle .puzzle-paper>.puzzle-scene>.puzzle-neighbours{width:auto !important;align-self:center;padding:8px 12px;border-radius:14px}
