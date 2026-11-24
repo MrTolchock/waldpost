@@ -41,7 +41,7 @@ Die Zeile mit dem Waldfreund oben (Zurück, Porträt, «… spielt mit dir») ge
 
 **Falsche Eingabe.** Die gewählte Karte bekommt die warme, gestrichelte Innenkontur. Grösse und Platz bleiben gleich, und das Kind kann sofort weiter versuchen.
 
-**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Das Gelöste (Antwort, Reihe, Plätze) wird grün, und Konfetti aus Blättern, Blumen und Eicheln fliegt. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. Bei einer gelösten Reihe wird nur die Reihe grün, nicht die ganze Rahmenbreite.
+**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Das Gelöste (Antwort, Reihe, Plätze) wird grün, und Konfetti aus Blättern, Blumen und Eicheln fliegt. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. Bei einer gelösten Reihe wird nur die Reihe grün, nicht die ganze Rahmenbreite. Offener Vorschlag vom 24. November: Grün werden immer die einzelnen gelösten Teile wie eine Antwortkachel, nie ein Band dahinter ([Vorschlag](proposals/2026-11-24-erfolg-einheitlich/README.md)).
 
 **Spiegel.** Beim Spiegelbild steht zwischen den Rastern ein angedeuteter, flacher Spiegel: eine schmale Fläche `#d3e1e3` mit Linie `#9fb4b8`, ohne Verlauf, Glanz oder Schatten.
 

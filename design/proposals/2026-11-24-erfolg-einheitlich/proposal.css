@@ -1,0 +1,11 @@
+/* Vorschlag 2026-11-24 – ein Erfolgsbild für alle Rätsel. Nur zur Aufnahme eingespielt, nicht im Spiel.
+   Grün werden die einzelnen gelösten Teile, wie die gewählte Antwortkachel; nie ein Band dahinter. */
+body .screen-puzzle{--pv-ok-bg:#e8efd6;--pv-ok-line:#7f9a48;--pv-ok-ring:0 0 0 2px #8fa76055}
+/* Gruppen bekommen keinen eigenen grünen Hintergrund */
+body .screen-puzzle .puzzle-scene :is(.puzzle-syllable-slots,.puzzle-picnic-friends,.puzzle-mirror-grid,.puzzle-neighbours).is-correct{background:transparent !important;border-color:transparent !important;box-shadow:none !important}
+/* die gelösten Teile werden grün wie eine richtige Antwortkachel */
+body .screen-puzzle .puzzle-scene :is(.puzzle-syllable-slots.is-correct>.puzzle-syllable-slot,.puzzle-picnic-friends.is-correct>.puzzle-picnic-place,.puzzle-mirror-grid.is-correct>.puzzle-mirror-cell.filled,.puzzle-number-card.is-correct,.puzzle-berry-plate.is-correct){
+ background:var(--pv-ok-bg) !important;border:1px solid var(--pv-ok-line) !important;box-shadow:var(--pv-ok-ring) !important}
+/* Reh: am Ziel wird nur das Feld mit dem Reh grün, nicht das ganze Wegraster */
+body .screen-puzzle .puzzle-scene .puzzle-route.is-correct{background:transparent !important;border-color:transparent !important;box-shadow:none !important}
+body .screen-puzzle .puzzle-scene .puzzle-route.is-correct>.puzzle-route-cell.post{background:var(--pv-ok-bg) !important;border:2px solid var(--pv-ok-line) !important;box-shadow:var(--pv-ok-ring) !important}

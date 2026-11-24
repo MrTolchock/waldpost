@@ -36,6 +36,7 @@ Tablet ist 1080 × 810, Handy 390 × 844 (CSS-Pixel). Für den Vergleich hält `
 | `mirror-partial` | Spiegelbild halb gefüllt |
 | `robot-partial` | Reh unterwegs, ein Schritt vor dem Ziel |
 | `wrong` | eine falsche Antwort gewählt |
+| `right` | richtig gelöst, kurz vor dem Weiterschalten (grüne Markierung) |
 
 Ein neues Rätsel mit einer Handlung, die den Bildschirm verändert (etwas verschwindet, füllt sich oder bewegt sich), bekommt hier eine eigene Handlung und einen Eintrag in `plan-states.json`.
 
