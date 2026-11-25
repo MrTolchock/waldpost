@@ -31521,6 +31521,51 @@
       "at": "2026-11-25T12:23:42.633Z",
       "seen": true,
       "operation": "fbb734bb-93a8-45c4-a24f-fa440fafd69e"
+    },
+    "read-puzzle/word-8@b4162ccaca7e6112": {
+      "key": "read-puzzle/word-8",
+      "revision": "b4162ccaca7e6112",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:45.267Z",
+      "seen": true,
+      "operation": "708374d9-4967-4dd1-85c6-b26fd0979ea5"
+    },
+    "read-puzzle/word-9@7b68f8b3082c2cf3": {
+      "key": "read-puzzle/word-9",
+      "revision": "7b68f8b3082c2cf3",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:47.481Z",
+      "seen": true,
+      "operation": "ba125f96-4658-4ce8-bf0f-3b4b4c69931d"
+    },
+    "read-puzzle/word-10@decf417cf8973ad8": {
+      "key": "read-puzzle/word-10",
+      "revision": "decf417cf8973ad8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:50.929Z",
+      "seen": true,
+      "operation": "9592de59-4420-4e5b-921e-fa7c8cc8fb4f"
+    },
+    "read-puzzle/word-11@04630f196d8b07df": {
+      "key": "read-puzzle/word-11",
+      "revision": "04630f196d8b07df",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:53.460Z",
+      "seen": true,
+      "operation": "32ecf1f8-0c60-4ea1-b5b5-05d494e1a77a"
+    },
+    "read-puzzle/word-19@476736e7678f037d": {
+      "key": "read-puzzle/word-19",
+      "revision": "476736e7678f037d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:55.759Z",
+      "seen": true,
+      "operation": "47917745-e779-489f-9036-507e347b5f08"
     }
   },
   "history": [
