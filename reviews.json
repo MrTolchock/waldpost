@@ -31206,6 +31206,24 @@
       "at": "2026-11-25T12:15:20.326Z",
       "seen": true,
       "operation": "77f717ba-712d-46d3-8e04-cc99b23b674a"
+    },
+    "compare/10-7@e9241f53961c4445": {
+      "key": "compare/10-7",
+      "revision": "e9241f53961c4445",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:22.074Z",
+      "seen": true,
+      "operation": "6c820fe4-3ecf-4ed9-983d-196001df6b69"
+    },
+    "puzzle:compare@98e5f2bcf1382a74": {
+      "key": "puzzle:compare",
+      "revision": "98e5f2bcf1382a74",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:25.238Z",
+      "seen": true,
+      "operation": "b7225d57-e78f-4abb-aedc-41cb25027ad0"
     }
   },
   "history": [
