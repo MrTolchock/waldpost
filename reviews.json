@@ -30009,6 +30009,672 @@
       "at": "2026-11-24T19:08:02.099Z",
       "seen": true,
       "operation": "45985c03-51ec-4a2f-a840-3cd094c8d388"
+    },
+    "friends-hedgehog/riddle-0@1871d4e80f5bb842": {
+      "key": "friends-hedgehog/riddle-0",
+      "revision": "1871d4e80f5bb842",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:18.287Z",
+      "seen": true,
+      "operation": "44d22723-115f-4796-98f3-9d2f7cd77bce"
+    },
+    "friends-hedgehog/riddle-1@a22f3723d49e9005": {
+      "key": "friends-hedgehog/riddle-1",
+      "revision": "a22f3723d49e9005",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:22.354Z",
+      "seen": true,
+      "operation": "1fddef45-3b42-4e61-9531-faf5867e2447"
+    },
+    "friends-hedgehog/riddle-2@7af79c77c03c318f": {
+      "key": "friends-hedgehog/riddle-2",
+      "revision": "7af79c77c03c318f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:26.519Z",
+      "seen": true,
+      "operation": "429382e7-f26e-4fb7-9d7f-36ba86b42841"
+    },
+    "friends-hedgehog/riddle-3@7c3eb99458368de0": {
+      "key": "friends-hedgehog/riddle-3",
+      "revision": "7c3eb99458368de0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:35.615Z",
+      "seen": true,
+      "operation": "64f48eec-a017-46a0-bbd1-5d34e9f435bd"
+    },
+    "friends-hedgehog/riddle-4@d2aefbfb2b1ed25d": {
+      "key": "friends-hedgehog/riddle-4",
+      "revision": "d2aefbfb2b1ed25d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:39.449Z",
+      "seen": true,
+      "operation": "088c7c6b-7fe0-445c-8103-52b1ac37e681"
+    },
+    "friends-hedgehog/riddle-5@9f74b71f9710538d": {
+      "key": "friends-hedgehog/riddle-5",
+      "revision": "9f74b71f9710538d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:43.278Z",
+      "seen": true,
+      "operation": "994cbc16-52a8-45b9-a733-a790073b5b0a"
+    },
+    "friends-hedgehog/riddle-6@125202bd0ac7f6f1": {
+      "key": "friends-hedgehog/riddle-6",
+      "revision": "125202bd0ac7f6f1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:47.133Z",
+      "seen": true,
+      "operation": "a37bd932-969b-4fad-850d-61ae459029f1"
+    },
+    "friends-hedgehog/riddle-7@380ebc52fd58872c": {
+      "key": "friends-hedgehog/riddle-7",
+      "revision": "380ebc52fd58872c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:50.428Z",
+      "seen": true,
+      "operation": "2c5a1099-7761-4cd8-9e9d-895008af0f9b"
+    },
+    "friends-hedgehog/riddle-8@d8e1f6e365c97489": {
+      "key": "friends-hedgehog/riddle-8",
+      "revision": "d8e1f6e365c97489",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:52.826Z",
+      "seen": true,
+      "operation": "014bdd6e-f364-4d35-9020-c5fef25118e9"
+    },
+    "friends-hedgehog/riddle-9@c9043721512cec1d": {
+      "key": "friends-hedgehog/riddle-9",
+      "revision": "c9043721512cec1d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:55.447Z",
+      "seen": true,
+      "operation": "e56a352f-11f0-4665-a4f2-ab235784a8fe"
+    },
+    "friends-hedgehog/riddle-10@0df8b80145124d41": {
+      "key": "friends-hedgehog/riddle-10",
+      "revision": "0df8b80145124d41",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:41:57.962Z",
+      "seen": true,
+      "operation": "bc663db3-7d63-40b9-b9ce-31263959df5f"
+    },
+    "friends-hedgehog/riddle-11@cd7f9c08eb049ff0": {
+      "key": "friends-hedgehog/riddle-11",
+      "revision": "cd7f9c08eb049ff0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:00.560Z",
+      "seen": true,
+      "operation": "5a3e0ccc-7289-4593-bf3b-ec056bd5f2b1"
+    },
+    "friends-hedgehog/riddle-12@251471732f0b7777": {
+      "key": "friends-hedgehog/riddle-12",
+      "revision": "251471732f0b7777",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:03.061Z",
+      "seen": true,
+      "operation": "4a1c07bf-1eba-41de-bf9e-307333f361a9"
+    },
+    "friends-hedgehog/riddle-13@157eb598ea9d0556": {
+      "key": "friends-hedgehog/riddle-13",
+      "revision": "157eb598ea9d0556",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:05.944Z",
+      "seen": true,
+      "operation": "e18dfccf-02d1-4ea6-9440-0687c3a7021a"
+    },
+    "friends-hedgehog/riddle-14@33a3b4c2c8937674": {
+      "key": "friends-hedgehog/riddle-14",
+      "revision": "33a3b4c2c8937674",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:08.456Z",
+      "seen": true,
+      "operation": "f3a1ba0e-e873-466b-b221-537d5d8e5920"
+    },
+    "friends-hedgehog/riddle-15@87280fba09d165bc": {
+      "key": "friends-hedgehog/riddle-15",
+      "revision": "87280fba09d165bc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:11.040Z",
+      "seen": true,
+      "operation": "2227dcf7-cb1f-443a-bea3-61d3448923c2"
+    },
+    "friends-hedgehog/riddle-16@d4e6c419e58cf47f": {
+      "key": "friends-hedgehog/riddle-16",
+      "revision": "d4e6c419e58cf47f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:14.641Z",
+      "seen": true,
+      "operation": "5d82de9a-5e89-49dd-a964-fe2553ccad0e"
+    },
+    "friends-hedgehog/riddle-17@ebdb0bc38650fa97": {
+      "key": "friends-hedgehog/riddle-17",
+      "revision": "ebdb0bc38650fa97",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:17.706Z",
+      "seen": true,
+      "operation": "3cf88fa6-ff3f-4b82-8ffc-a238f8bed843"
+    },
+    "friends-hedgehog/riddle-18@1ff6bd265c66846a": {
+      "key": "friends-hedgehog/riddle-18",
+      "revision": "1ff6bd265c66846a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:21.253Z",
+      "seen": true,
+      "operation": "39098fec-9920-45f4-aa7b-54e18b43a63d"
+    },
+    "friends-hedgehog/riddle-19@6d961371029d4ed7": {
+      "key": "friends-hedgehog/riddle-19",
+      "revision": "6d961371029d4ed7",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:23.438Z",
+      "seen": true,
+      "operation": "58b81d16-1e54-4f86-9e00-35d7e2209a0a"
+    },
+    "friends-hedgehog/riddle-20@fdfa93b6ad79afc4": {
+      "key": "friends-hedgehog/riddle-20",
+      "revision": "fdfa93b6ad79afc4",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:25.835Z",
+      "seen": true,
+      "operation": "1180cebb-3a60-4f98-afd6-962a13374451"
+    },
+    "friends-hedgehog/riddle-21@56a0c155ab49ac07": {
+      "key": "friends-hedgehog/riddle-21",
+      "revision": "56a0c155ab49ac07",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:42:29.019Z",
+      "seen": true,
+      "operation": "3fce10c0-87bd-4b71-94f6-74a3dac18127"
+    },
+    "friends-hedgehog/riddle-22@dbcae1d1ac9221ed": {
+      "key": "friends-hedgehog/riddle-22",
+      "revision": "dbcae1d1ac9221ed",
+      "status": "improve",
+      "note": "aufgabe löschen",
+      "at": "2026-11-25T07:47:33.351Z",
+      "seen": true,
+      "operation": "3c109f76-4469-4b59-8b37-6db00050e3b5"
+    },
+    "friends-hedgehog/riddle-23@893e31a7ffb780ff": {
+      "key": "friends-hedgehog/riddle-23",
+      "revision": "893e31a7ffb780ff",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:24.820Z",
+      "seen": true,
+      "operation": "c43d9ab1-5174-43ce-ae8f-c6ddc9e28d42"
+    },
+    "friends-hedgehog/riddle-24@d741cfc6f3f635bc": {
+      "key": "friends-hedgehog/riddle-24",
+      "revision": "d741cfc6f3f635bc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:28.232Z",
+      "seen": true,
+      "operation": "ec80a32e-692e-4786-95f1-ca26b3eeda5b"
+    },
+    "friends-hedgehog/nature-question-2@0373673d3542ef31": {
+      "key": "friends-hedgehog/nature-question-2",
+      "revision": "0373673d3542ef31",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:30.848Z",
+      "seen": true,
+      "operation": "f1e236e4-1c0b-4321-8bc6-f4acfdefde45"
+    },
+    "friends-hedgehog/nature-question-3@f7224fcb10315a81": {
+      "key": "friends-hedgehog/nature-question-3",
+      "revision": "f7224fcb10315a81",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:34.350Z",
+      "seen": true,
+      "operation": "e6c35a8e-5bb9-408f-b5b0-156409a332c6"
+    },
+    "friends-hedgehog/nature-question-4@365de2c5a7568a89": {
+      "key": "friends-hedgehog/nature-question-4",
+      "revision": "365de2c5a7568a89",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:37.498Z",
+      "seen": true,
+      "operation": "b427d840-a35b-4317-a8bf-3712cbb925b3"
+    },
+    "friends-hedgehog/nature-question-5@52e233a3533b6c21": {
+      "key": "friends-hedgehog/nature-question-5",
+      "revision": "52e233a3533b6c21",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:39.463Z",
+      "seen": true,
+      "operation": "e58a87e6-4654-4270-a639-dee5ee28d4c8"
+    },
+    "friends-hedgehog/nature-question-6@696ea2fed5be0886": {
+      "key": "friends-hedgehog/nature-question-6",
+      "revision": "696ea2fed5be0886",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:41.545Z",
+      "seen": true,
+      "operation": "b2641170-3a3d-40d3-97d1-468e13422512"
+    },
+    "friends-hedgehog/nature-question-7@19974956ee6b524e": {
+      "key": "friends-hedgehog/nature-question-7",
+      "revision": "19974956ee6b524e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:43.729Z",
+      "seen": true,
+      "operation": "8b7d296e-2de2-4503-afea-2983c0f9c0ae"
+    },
+    "friends-hedgehog/nature-question-9@762fb167c201f5a5": {
+      "key": "friends-hedgehog/nature-question-9",
+      "revision": "762fb167c201f5a5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:47.360Z",
+      "seen": true,
+      "operation": "3ecec37e-ed58-4956-b36e-65fcc9334009"
+    },
+    "friends-hedgehog/nature-question-11@04d6b08eed2a1bec": {
+      "key": "friends-hedgehog/nature-question-11",
+      "revision": "04d6b08eed2a1bec",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:51.025Z",
+      "seen": true,
+      "operation": "3dff3230-8273-4f78-b4cc-846d46921839"
+    },
+    "friends-hedgehog/nature-question-12@61eb3f26d0fdc576": {
+      "key": "friends-hedgehog/nature-question-12",
+      "revision": "61eb3f26d0fdc576",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:54.055Z",
+      "seen": true,
+      "operation": "5b471a70-8f3f-4506-ad18-0c2e53726d86"
+    },
+    "friends-hedgehog/nature-question-14@5996ae01f0b27869": {
+      "key": "friends-hedgehog/nature-question-14",
+      "revision": "5996ae01f0b27869",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:56.136Z",
+      "seen": true,
+      "operation": "df71eb50-ec20-462d-93d1-541d723b4925"
+    },
+    "friends-hedgehog/nature-question-15@39afb381f09aefd5": {
+      "key": "friends-hedgehog/nature-question-15",
+      "revision": "39afb381f09aefd5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:43:58.736Z",
+      "seen": true,
+      "operation": "f374317e-3163-464f-8a08-4be53e710102"
+    },
+    "friends-hedgehog/nature-question-16@e6d3fb24e71baabe": {
+      "key": "friends-hedgehog/nature-question-16",
+      "revision": "e6d3fb24e71baabe",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:44:01.233Z",
+      "seen": true,
+      "operation": "7b95c819-7849-493a-bd49-7b22f23b192d"
+    },
+    "friends-hedgehog/nature-question-17@7f9eaf730b38cc5d": {
+      "key": "friends-hedgehog/nature-question-17",
+      "revision": "7f9eaf730b38cc5d",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:44:03.703Z",
+      "seen": true,
+      "operation": "6a711151-facf-4b62-b1f4-cf83218a2763"
+    },
+    "friends-hedgehog/nature-question-18@d842cfe965e77933": {
+      "key": "friends-hedgehog/nature-question-18",
+      "revision": "d842cfe965e77933",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:44:06.600Z",
+      "seen": true,
+      "operation": "e0338767-0ea7-479b-8c61-383ea313f5df"
+    },
+    "friends-hedgehog/nature-question-19@bbddf2e0a5cd50da": {
+      "key": "friends-hedgehog/nature-question-19",
+      "revision": "bbddf2e0a5cd50da",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:44:10.798Z",
+      "seen": true,
+      "operation": "c8fae2cf-d3e0-435a-b919-1b5ea8494b44"
+    },
+    "friends-hedgehog/nature-question-20@0863c9deaaa23972": {
+      "key": "friends-hedgehog/nature-question-20",
+      "revision": "0863c9deaaa23972",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:44:18.990Z",
+      "seen": true,
+      "operation": "380ca035-563b-4f30-927a-9c755258c731"
+    },
+    "friends-hedgehog/nature-question-21@d90fc52c4d9369c8": {
+      "key": "friends-hedgehog/nature-question-21",
+      "revision": "d90fc52c4d9369c8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:44:34.104Z",
+      "seen": true,
+      "operation": "6cb5b227-18f9-46fb-8b1c-58b4bd5d0b97"
+    },
+    "friends-hedgehog/nature-question-22@15a4a5b7c8ba7e27": {
+      "key": "friends-hedgehog/nature-question-22",
+      "revision": "15a4a5b7c8ba7e27",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:07.970Z",
+      "seen": true,
+      "operation": "2c5f40bd-aa5f-411c-b14b-bed258a63272"
+    },
+    "friends-hedgehog/nature-question-24@23886ae34e044ae1": {
+      "key": "friends-hedgehog/nature-question-24",
+      "revision": "23886ae34e044ae1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:15.304Z",
+      "seen": true,
+      "operation": "186f40d1-5643-474b-9892-7330ac879f08"
+    },
+    "colour-words/rot-gelb-blau@672869de41f12d52": {
+      "key": "colour-words/rot-gelb-blau",
+      "revision": "672869de41f12d52",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:17.801Z",
+      "seen": true,
+      "operation": "54ad70eb-b3ea-4668-87c5-858585e83116"
+    },
+    "colour-words/rot-blau-rosa@214bb3070d3f45a3": {
+      "key": "colour-words/rot-blau-rosa",
+      "revision": "214bb3070d3f45a3",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:20.202Z",
+      "seen": true,
+      "operation": "d411addd-39c2-4481-8a7d-2bebcb9d50c1"
+    },
+    "colour-words/rot-rosa-weiss@e404711d13d9ace1": {
+      "key": "colour-words/rot-rosa-weiss",
+      "revision": "e404711d13d9ace1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:22.986Z",
+      "seen": true,
+      "operation": "d52001ce-c6b4-41bb-aeb5-dfdf9f2d53cb"
+    },
+    "colour-words/rot-weiss-lila@5a30d64a5b862b7c": {
+      "key": "colour-words/rot-weiss-lila",
+      "revision": "5a30d64a5b862b7c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:25.052Z",
+      "seen": true,
+      "operation": "8cdf16df-e1c6-4b85-a1d6-9cc170846038"
+    },
+    "colour-words/rot-lila-gelb@fc7660e917a25f9b": {
+      "key": "colour-words/rot-lila-gelb",
+      "revision": "fc7660e917a25f9b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:26.832Z",
+      "seen": true,
+      "operation": "a066ae33-9d50-4ee3-b382-27b0a6856db3"
+    },
+    "colour-words/gelb-rot-blau@404649928a46c4d2": {
+      "key": "colour-words/gelb-rot-blau",
+      "revision": "404649928a46c4d2",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:45:29.465Z",
+      "seen": true,
+      "operation": "208444d7-35a3-4a9e-803b-2ea616607d0a"
+    },
+    "colour-words/gelb-blau-rosa@0b85f614060fa4c4": {
+      "key": "colour-words/gelb-blau-rosa",
+      "revision": "0b85f614060fa4c4",
+      "status": "improve",
+      "note": "die blume ist gelb kommt als satz häufig vor, auch mit anderen farben. satz nur einmal aufführen und restliche aufgaben löschen",
+      "at": "2026-11-25T07:47:37.001Z",
+      "seen": true,
+      "operation": "2a0471d7-494c-423c-b0ea-6b9010590da7"
+    },
+    "colour-words/gelb-rosa-weiss@eaf7fc4e56d06420": {
+      "key": "colour-words/gelb-rosa-weiss",
+      "revision": "eaf7fc4e56d06420",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:46:12.330Z",
+      "seen": true,
+      "operation": "11aba7ad-952f-48d5-afe8-288769c0b684"
+    },
+    "colour-words/gelb-weiss-lila@e8cd4fcf348a52d1": {
+      "key": "colour-words/gelb-weiss-lila",
+      "revision": "e8cd4fcf348a52d1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:46:14.346Z",
+      "seen": true,
+      "operation": "89299d20-c8b5-4a62-88fb-8a59e5ec6b7f"
+    },
+    "colour-words/gelb-lila-rot@54ea1f293805819b": {
+      "key": "colour-words/gelb-lila-rot",
+      "revision": "54ea1f293805819b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:38.721Z",
+      "seen": true,
+      "operation": "5355420c-08cb-4ece-9d57-b113bde77288"
+    },
+    "colour-words/blau-rot-gelb@3413c7101fd7d9f2": {
+      "key": "colour-words/blau-rot-gelb",
+      "revision": "3413c7101fd7d9f2",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:40.617Z",
+      "seen": true,
+      "operation": "58ba7ccb-c3e5-486b-91b2-1fbc3aa6e08b"
+    },
+    "colour-words/blau-gelb-rosa@0e95092261391b64": {
+      "key": "colour-words/blau-gelb-rosa",
+      "revision": "0e95092261391b64",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:42.368Z",
+      "seen": true,
+      "operation": "f1118953-8fbe-4621-8226-645b7a320f32"
+    },
+    "colour-words/blau-rosa-weiss@9776495c57b06ae6": {
+      "key": "colour-words/blau-rosa-weiss",
+      "revision": "9776495c57b06ae6",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:44.086Z",
+      "seen": true,
+      "operation": "f3c7ed3e-12b2-4a82-a22c-ff512161c260"
+    },
+    "colour-words/blau-weiss-lila@d23e379a825c042c": {
+      "key": "colour-words/blau-weiss-lila",
+      "revision": "d23e379a825c042c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:45.967Z",
+      "seen": true,
+      "operation": "84a07d3f-7d28-4ab7-a470-28c1b24967d9"
+    },
+    "colour-words/blau-lila-rot@937c86cd4ee408c7": {
+      "key": "colour-words/blau-lila-rot",
+      "revision": "937c86cd4ee408c7",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:47.785Z",
+      "seen": true,
+      "operation": "45dae50a-3e0b-4646-a4fb-9aeaef29ce5c"
+    },
+    "colour-words/rosa-rot-gelb@1f0eca824670899a": {
+      "key": "colour-words/rosa-rot-gelb",
+      "revision": "1f0eca824670899a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:49.686Z",
+      "seen": true,
+      "operation": "2bfcfff9-13cd-418c-a06f-39682321ca6b"
+    },
+    "colour-words/rosa-gelb-blau@489641fae07328e4": {
+      "key": "colour-words/rosa-gelb-blau",
+      "revision": "489641fae07328e4",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:51.305Z",
+      "seen": true,
+      "operation": "5e620718-2357-480a-a500-4dcb81da028c"
+    },
+    "colour-words/rosa-blau-weiss@98cf5c80d1b3d626": {
+      "key": "colour-words/rosa-blau-weiss",
+      "revision": "98cf5c80d1b3d626",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:53.266Z",
+      "seen": true,
+      "operation": "2a564885-a034-4bf5-8067-f86fe886e298"
+    },
+    "colour-words/rosa-weiss-lila@88f8e91a7fbff3ce": {
+      "key": "colour-words/rosa-weiss-lila",
+      "revision": "88f8e91a7fbff3ce",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:55.132Z",
+      "seen": true,
+      "operation": "560dc011-8314-45f8-bdee-dad6be91657f"
+    },
+    "colour-words/rosa-lila-rot@227afcabb303cc15": {
+      "key": "colour-words/rosa-lila-rot",
+      "revision": "227afcabb303cc15",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:56.935Z",
+      "seen": true,
+      "operation": "83340808-4660-4194-b273-560b7e53fcee"
+    },
+    "colour-words/weiss-rot-gelb@0e4084fd44551707": {
+      "key": "colour-words/weiss-rot-gelb",
+      "revision": "0e4084fd44551707",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:47:58.933Z",
+      "seen": true,
+      "operation": "da6060dd-24d3-41d0-b774-48198008718e"
+    },
+    "colour-words/weiss-gelb-blau@995f1d8a1d181de8": {
+      "key": "colour-words/weiss-gelb-blau",
+      "revision": "995f1d8a1d181de8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:00.582Z",
+      "seen": true,
+      "operation": "5a288bdf-d42f-404f-8763-786e631485ce"
+    },
+    "colour-words/weiss-blau-rosa@2b4c781af16623c6": {
+      "key": "colour-words/weiss-blau-rosa",
+      "revision": "2b4c781af16623c6",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:02.251Z",
+      "seen": true,
+      "operation": "79010a62-5dcb-483f-a27a-64d4e7c1f0dd"
+    },
+    "colour-words/weiss-rosa-lila@a87a6d7ec0f1d44e": {
+      "key": "colour-words/weiss-rosa-lila",
+      "revision": "a87a6d7ec0f1d44e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:04.599Z",
+      "seen": true,
+      "operation": "0e427c87-4e5a-4b3d-b5b1-9fe7e9831398"
+    },
+    "colour-words/weiss-lila-rot@09c17ba872d7711c": {
+      "key": "colour-words/weiss-lila-rot",
+      "revision": "09c17ba872d7711c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:06.431Z",
+      "seen": true,
+      "operation": "2ce98c54-b999-48ec-8c19-bf35c5e19012"
+    },
+    "colour-words/lila-rot-gelb@e89621ddc216da9b": {
+      "key": "colour-words/lila-rot-gelb",
+      "revision": "e89621ddc216da9b",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:09.699Z",
+      "seen": true,
+      "operation": "f751317d-41d1-4756-82da-b705f0ae5e44"
+    },
+    "colour-words/lila-gelb-blau@0fb7f4cc43697dd0": {
+      "key": "colour-words/lila-gelb-blau",
+      "revision": "0fb7f4cc43697dd0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:11.580Z",
+      "seen": true,
+      "operation": "dd3f7694-d960-4611-ad8e-75a48997e13c"
+    },
+    "colour-words/lila-blau-rosa@36f094e1b747c747": {
+      "key": "colour-words/lila-blau-rosa",
+      "revision": "36f094e1b747c747",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:13.880Z",
+      "seen": true,
+      "operation": "a581778a-4524-411a-a291-43546e930774"
+    },
+    "colour-words/lila-rosa-weiss@58f18d1eb90da90e": {
+      "key": "colour-words/lila-rosa-weiss",
+      "revision": "58f18d1eb90da90e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:16.348Z",
+      "seen": true,
+      "operation": "60bee984-e764-46d6-8ce6-6207ae5b3c83"
+    },
+    "colour-words/lila-weiss-rot@fab22dc2ecad3fbc": {
+      "key": "colour-words/lila-weiss-rot",
+      "revision": "fab22dc2ecad3fbc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T07:48:18.181Z",
+      "seen": true,
+      "operation": "94d9c5ba-d353-4bd7-9f29-e5d55c2a7553"
     }
   },
   "history": [
