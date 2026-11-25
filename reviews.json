@@ -31827,6 +31827,33 @@
       "at": "2026-11-25T12:25:48.521Z",
       "seen": true,
       "operation": "32dec770-4604-421b-b304-d109c2a420e0"
+    },
+    "neighbours/8-both@6275555b9774a4f5": {
+      "key": "neighbours/8-both",
+      "revision": "6275555b9774a4f5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:25:50.802Z",
+      "seen": true,
+      "operation": "591a31a0-466a-4fb4-a6d8-7c309112dd87"
+    },
+    "neighbours/8-left@59a2e305c63947f7": {
+      "key": "neighbours/8-left",
+      "revision": "59a2e305c63947f7",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:25:52.809Z",
+      "seen": true,
+      "operation": "6f625c8b-6abf-4e77-adb4-e2318c6a50e5"
+    },
+    "neighbours/9-both@920150cfecdf29a3": {
+      "key": "neighbours/9-both",
+      "revision": "920150cfecdf29a3",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:25:56.366Z",
+      "seen": true,
+      "operation": "24b8c5e6-dc4c-4fa4-bc04-5e531eb5ad63"
     }
   },
   "history": [
