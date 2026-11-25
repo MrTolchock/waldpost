@@ -2,13 +2,13 @@
    must end in the game, never in a loop between settings and the review. */
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const assert=require('node:assert/strict');
-const fs=require('node:fs'),{installRemote}=require('./review-repository-support.cjs');
+const fs=require('node:fs'),{installRemote,releaseAll}=require('./review-repository-support.cjs');
 const BASE=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000';
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  try{
-  const context=await browser.newContext({viewport:{width:1024,height:768},hasTouch:true,reducedMotion:'reduce',serviceWorkers:'block'});await installRemote(context);const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));page.setDefaultTimeout(60000);
-  await page.goto(BASE+'/?software=1&dev=1');await page.waitForFunction(()=>window.FK?.friendsView&&FK.current()==='friends',null,{timeout:120000});
+  const context=await browser.newContext({viewport:{width:1024,height:768},hasTouch:true,reducedMotion:'reduce',serviceWorkers:'block'});const remote=await installRemote(context);const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));page.setDefaultTimeout(60000);
+  await page.goto(BASE+'/?software=1&dev=1');await page.waitForFunction(()=>window.FK?.friendsView&&FK.current()==='friends',null,{timeout:120000});await releaseAll(page,remote);
   const current=()=>page.evaluate(()=>FK.current()),gameCount=await page.evaluate(()=>FK.friendsLibrary.catalogue().length);
   const appearance=button=>button.evaluate(n=>{const s=getComputedStyle(n),icon=n.querySelector('[data-hud="back"]'),i=icon&&getComputedStyle(icon);return {width:s.width,height:s.height,background:s.background,border:s.border,borderRadius:s.borderRadius,boxShadow:s.boxShadow,icon:i&&{width:i.width,height:i.height,image:i.backgroundImage,position:i.backgroundPosition,filter:i.filter}};});
   const invitation=page.getByRole('button',{name:'Einladungsbrief öffnen',exact:true});
@@ -28,7 +28,7 @@ const BASE=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000';
    for(let k=0;k<2;k++){await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');await back();assert.equal(await current(),'settings','review back → settings');}
    await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');
    assert.equal(await page.locator('.review-puzzle').count(),gameCount);assert.equal(await page.getByRole('button',{name:"Alle Rätsel",exact:true}).count(),0);
-   const id=round===0?'friends-squirrel':'syllable',it=await page.evaluate(id=>FK.puzzleCatalogue.iterations(id)[0].id,id);
+   const id=round===0?'count':'syllable',it=await page.evaluate(id=>FK.puzzleCatalogue.iterations(id)[0].id,id);
    await page.locator('[data-puzzle="'+id+'"]').click();assert.equal(await page.locator('.screen:not([hidden]) .review-connection').count(),0);assert.ok((await page.locator('.review-competence').innerText()).includes('Das Kind'));
    assert.ok(await page.evaluate(([id,it])=>FK.puzzleReview.preview(id,it),[id,it]),'preview opens');await page.waitForTimeout(400);assert.notEqual(await current(),'puzzle-review');
    await back();assert.equal(await current(),'puzzle-review','puzzle back → review');

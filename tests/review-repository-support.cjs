@@ -53,4 +53,13 @@ async function seedFromPage(page,server,ids){
  for(const decision of Object.values(exported.decisions))ledger.entries[decision.key+'@'+decision.revision]={...decision,seen:decision.key.startsWith('puzzle:')||exported.seen[decision.key]===decision.revision};
  server.ledger=ledger;await page.evaluate(()=>FK.reviewRepository.refresh());
 }
-module.exports={remoteServer,installRemote,seedFromPage};
+// Since 9.4.47 the den holds its letter back while no Rätsel is released (release review R-1). World suites that start
+// with the letter release every current Rätsel in their disposable fixture first, as a reviewed installation would have.
+async function releaseAll(page,server=null){
+ const ids=await page.evaluate(()=>FK.friendsLibrary.catalogue().map(g=>g.id));
+ // Development saves (?dev=1) keep their reviews on the device; there is no repository to seed.
+ if(server&&await page.evaluate(()=>!!FK.reviewRepository))await seedFromPage(page,server,ids);
+ else await page.evaluate(ids=>{for(const id of ids){for(const it of FK.puzzleCatalogue.iterations(id)){FK.puzzleReview.seen(id,it.id);FK.puzzleReview.decide(id,it.id,'approved');}FK.puzzleReview.decide(id,null,'approved');}},ids);
+ await page.waitForFunction(()=>!FK.friends.waiting());
+}
+module.exports={remoteServer,installRemote,seedFromPage,releaseAll};

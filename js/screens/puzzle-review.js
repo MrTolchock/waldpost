@@ -7,7 +7,6 @@
   // Describe the bounded practice in this puzzle; these are explanations, not curriculum quotations.
   const competences={
     'shape-match':'Das Kind erkennt Kreis, Dreieck, Quadrat und Rechteck in unterschiedlichen Lagen wieder.',
-    'friends-squirrel':'Das Kind zählt abgebildete Eicheln bis 20 und nutzt Vierer- oder Fünferreihen, um Mengen zu überblicken.',
     'friends-bird':'Das Kind liest vertraute Wörter und erkennt an ihrem Klang, welche Wörter sich reimen.',
     'friends-beaver':'Das Kind vergleicht die ersten zwei Reihen mit zwei oder drei verschiedenen Waldgegenständen. Es ergänzt die dritte Reihe, sodass sie dieselben Dinge enthält wie die erste.',
     'friends-kingfisher':'Das Kind zählt unterschiedliche Gegenstände am Bach und bestimmt ihre Anzahl bis 20.',

@@ -15,7 +15,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  const entries=await page.evaluate(()=>FK.friendsLibrary.catalogue());
  // The gallery itself is now behind the adult gate; child access is covered by letter-sessions-browser.cjs.
  const task=await page.locator('.gate-task').textContent(),[a,b]=task.match(/\d+/g).map(Number);await page.getByLabel('Deine Antwort',{exact:true}).fill(String(a*b));await page.locator('.gate-submit').click();
- await page.waitForFunction(()=>FK.current()==='puzzle-review');await page.evaluate(()=>FK.reviewRepository.connect('test-review-token'));assert.equal(await page.locator('.review-puzzle').count(),17);await page.evaluate(()=>{window.menuSounds={tick:0,open:0};for(const name of ['tick','open']){const fn=FK.sound[name];FK.sound[name]=(...args)=>{menuSounds[name]++;return fn(...args);};}});
+ await page.waitForFunction(()=>FK.current()==='puzzle-review');await page.evaluate(()=>FK.reviewRepository.connect('test-review-token'));assert.equal(await page.locator('.review-puzzle').count(),16);await page.evaluate(()=>{window.menuSounds={tick:0,open:0};for(const name of ['tick','open']){const fn=FK.sound[name];FK.sound[name]=(...args)=>{menuSounds[name]++;return fn(...args);};}});
  assert.equal(await page.locator('.review-puzzle').evaluateAll(nodes=>nodes.some(n=>n.scrollWidth>n.clientWidth+2)),false,'review card contents fit');
  await page.screenshot({path:shots+'/review-catalogue-tablet.png'});
  // Each puzzle overview shows its rule as text; nothing is read aloud.
@@ -27,7 +27,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
   assert.equal(await page.locator('.screen:not([hidden]) .review-instruction p').textContent(),await page.evaluate(id=>FK.puzzleCatalogue.puzzle(id).instruction,g.id),g.id+' written rule');
   assert.equal(await page.getByRole('button',{name:'Spielerklärung anhören',exact:true}).count(),0,g.id+' has no read-aloud');
  }
- console.log('PASS written rule and no read-aloud on each of 17 riddle overviews');assert.deepEqual(await page.evaluate(()=>menuSounds),{tick:0,open:0},'menu navigation does not click');
+ console.log('PASS written rule and no read-aloud on each of 16 riddle overviews');assert.deepEqual(await page.evaluate(()=>menuSounds),{tick:0,open:0},'menu navigation does not click');
 
  const active=()=>page.locator('.screen:not([hidden])');
  const preview=async(id,iteration)=>page.evaluate(({id,iteration})=>FK.puzzleReview.preview(id,iteration),{id,iteration});
@@ -128,16 +128,16 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
    }),false,it.id+' success has no check mark');checked++;
   }console.log('PASS every iteration:',g.id,pool.length);
  }
- if(!process.env.FARBTUPF_GAMES)assert.equal(checked,652);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
+ if(!process.env.FARBTUPF_GAMES)assert.equal(checked,627);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
  // All puzzle types accept real taps, including SVG/image descendants and redrawing controls.
  for(const width of [1080,390]){
   await page.setViewportSize({width,height:width===390?844:810});nativeInput=width===390?'mouse':true;
   for(const g of entries){const it=await page.evaluate(id=>FK.puzzleCatalogue.iterations(id)[0],g.id);await preview(g.id,it.id);assert.equal(await active().evaluate(e=>e.scrollWidth>e.clientWidth+2),false,g.id+' '+width);await solve(it.question);if(['add','trace','read-colours'].includes(g.id))await page.screenshot({path:shots+'/'+g.id+'-'+width+'.png'});}
  }console.log('PASS native touch/mouse for '+entries.length+' puzzles at phone and tablet sizes');
  // Quiet button clicks use Web Audio and obey mute.
- await preview('friends-squirrel','friends-squirrel/count-2');
+ await preview('count','count/6-2');
  await page.evaluate(()=>{window.reviewSoundCounts={clicks:0,oscillators:0};const tick=FK.sound.tick;FK.sound.tick=()=>{reviewSoundCounts.clicks++;tick();};const AC=window.AudioContext||window.webkitAudioContext;const create=AC.prototype.createOscillator;AC.prototype.createOscillator=function(){reviewSoundCounts.oscillators++;return create.call(this);};FK.settings.set('sound',true);});
- const wrongCount=active().locator('[data-answer]:not([data-answer="2"])').first();
+ const wrongCount=active().locator('[data-answer]:not([data-answer="6"])').first();
  await page.locator('.puzzle-counter').first().tap();assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),0,'counted pictures are static');
  await wrongCount.tap();assert.equal(await page.evaluate(()=>reviewSoundCounts.clicks),1);assert.ok(await page.evaluate(()=>reviewSoundCounts.oscillators)>0);
  await page.evaluate(()=>{FK.settings.set('sound',false);reviewSoundCounts.clicks=0;reviewSoundCounts.oscillators=0;});

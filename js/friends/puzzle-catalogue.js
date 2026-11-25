@@ -4,10 +4,9 @@
   'use strict';
   const FK=window.FK,R=FK.puzzleRounds,C=window.FriendsContent;
   const meta={
-    'friends-squirrel':['MA.1.A.2.a','Mengen zählen','0–20 Eicheln; Vierer- und Fünferstruktur'],
     'friends-bird':['D.2.A.1.b; D.1.A.1.b','Reime erkennen','25 verschiedene Reimpaare ohne vertauschte Doppelungen; eingeführte Buchstaben'],
     'friends-beaver':['MA.2.A.1.a','Reihen mit Waldgegenständen ergänzen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste'],
-    'friends-badger':['D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a','Lesen und verstehen','Vertraute Wörter, kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten','Kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten'], // the third field is the reviewed contract; the fourth shows the pool since 9.4.45 (no single words)
+    'friends-badger':['D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a','Lesen und verstehen','Kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten'], // no single words since 9.4.45; rule and difficulty say so since 9.4.47
     'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe'],
     count:['MA.1.A.2.a','Mengen gezielt zählen','6–15 Marienkäfer zwischen Bienen und Schnecken'],
     add:['MA.1.A.3.a','Sichtbare Gruppen addieren','Zwei positive Summanden; Summe höchstens 10'],
@@ -25,12 +24,7 @@
   const pools={},clone=v=>JSON.parse(JSON.stringify(v));
   function add(id,key,label,q){(pools[id]||=[]).push({id:id+'/'+key,label,question:clone(q)});}
   const numeric=(n,max=20)=>[n,Math.max(0,n-1),Math.min(max,n+1)].filter((v,i,a)=>a.indexOf(v)===i).concat(n===0?[2]:n===max?[max-2]:[]);
-  // The counted picture is an acorn: name it «Eicheln» (23 Nov review).
-  const numberQ=(count,item,columns=5)=>({kind:'nuts',prompt:'Wie viele '+(item==='fish'?'Fische':item==='forest-nut'?'Eicheln':'Dinge')+' sind hier?',count,item,columns,answer:count,choices:numeric(count)});
-  for(const [id,item]of [['friends-squirrel','forest-nut']]){
-    for(let n=0;n<=20;n++)add(id,'count-'+n,'Menge '+n,numberQ(n,item));
-    for(const n of [4,8,12,16])add(id,'four-'+n,'Menge '+n+' in Viererreihen',numberQ(n,item,4));
-  }
+  // 25 Nov (owner, 9.4.47): Mengen zählen with the acorns is retired; Eichhörnchen keeps Gegenstände merken.
   // Steinbock: mountain patterns of stone, fir and flower (content.js mountainPatterns), 30 tasks.
   for(const p of C.mountainPatterns())add('friends-ibex','pattern-'+p.key,p.label,{kind:'pattern',prompt:'Welches Bild fehlt im Muster?',sequence:p.sequence,gap:p.gap,answer:p.answer,choices:p.choices});
   // «Nuss» shows the drawn Baumnuss; the acorn is called «Eichel» (23 Nov review).
@@ -257,9 +251,9 @@
   // Each Aufgabe's slot depends only on its own stable ID and a fixed per-pool salt, so adding or editing another Aufgabe never moves it
   // (and never reopens its review). The salts were chosen once so that every pool spreads its answers evenly (syllable words with one
   // or five syllables can only stand left or right).
-  const slotSalts={'friends-squirrel':'5:',count:'39:',add:'24:',rocket:'39:',syllable:'2207:','neighbours-both':'25:','neighbours-left':'13:'};
+  const slotSalts={count:'39:',add:'24:',rocket:'39:',syllable:'2207:','neighbours-both':'25:','neighbours-left':'13:'};
   function balanceSlots(pool,items,slots,apply){for(const it of items){const allowed=slots(it);apply(it,allowed[spread(slotSalts[pool]+it.id)%allowed.length]);}}
-  const numberWindows={'friends-squirrel':[0,20],count:[0,20],add:[0,20],rocket:[0,10],syllable:[1,5]};
+  const numberWindows={count:[0,20],add:[0,20],rocket:[0,10],syllable:[1,5]};
   for(const [id,[min,max]]of Object.entries(numberWindows))balanceSlots(id,pools[id],it=>[0,1,2].filter(slot=>it.question.answer-slot>=min&&it.question.answer-slot+2<=max),(it,slot)=>{const start=it.question.answer-slot;it.question.choices=[start,start+1,start+2];});
   // Zahlennachbarn: the right neighbours appear at the start, in the middle or at the end of the card row; the shown numbers never repeat.
   const neighbourRows={null:[n=>[n-1,n+1,n+2,n+3],n=>[n-2,n-1,n+1,n+2],n=>[n-3,n-2,n-1,n+1]],left:[n=>[n+1,n+2,n+3],n=>[n-2,n+1,n+2],n=>[n-3,n-2,n+1]]};
@@ -367,7 +361,11 @@
   function select(id,seed,previous=[]){const r=R.rng(seed);let pool=R.mix(iterations(id),r);
     if(id==='trace')pool=pool.filter(i=>seed%2?i.question.glyph===i.question.glyph.toLocaleUpperCase('de-CH'):i.question.glyph===i.question.glyph.toLocaleLowerCase('de-CH'));
     pool.sort((a,b)=>Number(previous.includes(a.id))-Number(previous.includes(b.id)));
-    const chosen=[];for(const it of pool){if(it.question.glyph&&chosen.some(c=>c.question.glyph===it.question.glyph))continue;chosen.push(it);if(chosen.length===5)break;}return arrange(chosen,r);}
+    // «Lesen und verstehen» (25 Nov, release review 9.4.46 C-1): no picture appears twice in a round, so an answer is
+    // never offered again as a wrong picture and no Aufgabe can be solved by recall. If too few remain, the round still has five.
+    const pictures=q=>['reading','colours'].includes(q.kind)?q.choices.map(c=>Array.isArray(c)?'puzzle-flower-'+c[0]:c):[];
+    const shown=new Set(),fresh=it=>pictures(it.question).every(p=>!shown.has(p));
+    const chosen=[];for(const strict of [true,false])for(const it of pool){if(chosen.length===5)break;if(chosen.includes(it)||strict&&!fresh(it))continue;if(it.question.glyph&&chosen.some(c=>c.question.glyph===it.question.glyph))continue;chosen.push(it);pictures(it.question).forEach(p=>shown.add(p));}return arrange(chosen,r);}
   // Number cards always read in ascending order, like the neighbours row; other choices are shuffled (23 Nov review).
   const numberKinds=new Set(['nuts','count','add','fireflies','syllable']);
   function arrange(items,r){return clone(items).map(item=>{const q=item.question;if(q.choices&&q.kind!=='neighbours'){q.choices=R.mix(q.choices,r);if(numberKinds.has(q.kind))q.choices.sort((a,b)=>a-b);}if(q.kind==='count')q.bugs=R.mix(q.bugs,r);if(q.kind==='syllables')q.order=R.mix(q.order,r);if(q.kind==='order')q.order=R.mix(q.order,r);return item;});}

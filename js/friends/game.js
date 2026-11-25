@@ -5,15 +5,17 @@ const FK=window.FK,h=FK.h,C=window.FriendsContent;
 let root,canvas,world,state,audio,overlay,hotspots,nav,statusBar,nearButton,letterStatus,caption,fader,doorScene,denEnvelope,framing=false,backdropTap=null;
 let area='den',panel=null,host=null,example=false,feedbackTimer=null,activeMs=0,lastTick=performance.now(),returnArea='den',finalSleep=false;
 const actionPictures={outside:'door'};
+const noLetterYet='Heute ist noch kein Brief da. Du kannst draussen den Wald erkunden.',letterArrived='Oh, ein Brief! Er kommt durch die Briefklappe. Tippe auf den Umschlag.';
+let letterHeld=false;
 const actionNames={outside:'Nach draussen'};
 const doorSVG=`<svg viewBox="0 0 1448 1086" preserveAspectRatio="none"><defs><linearGradient id="letter-flap" x2="0" y2="1"><stop stop-color="#cc9743"/><stop offset=".5" stop-color="#e5bd70"/><stop offset="1" stop-color="#ae7633"/></linearGradient></defs><rect class="ff-mail-opening" x="1180" y="280" width="106" height="34" rx="3" fill="#49331f"/><rect class="ff-mail-lid" x="1180" y="280" width="106" height="34" rx="3" fill="url(#letter-flap)" stroke="#d7af64" stroke-width="2"/></svg>`;
 function syncMail(){
   if(!world||!state||!doorScene)return;
   const m=state.mail();root.dataset.mail=m.phase;
   if(letterStatus){const {completed,limit}=m.session;letterStatus.textContent=completed+'/'+limit;letterStatus.dataset.compact=String(letterStatus.textContent.length>4);letterStatus.setAttribute('aria-label',completed+' von '+limit+' Briefen geschafft');}
-  const arriving=denEnvelope.hidden;doorScene.hidden=area!=='den';denEnvelope.hidden=area!=='den'||m.phase!=='den-letter'||!!panel;
+  const arriving=denEnvelope.hidden;doorScene.hidden=area!=='den';denEnvelope.hidden=area!=='den'||m.phase!=='den-letter'||!!panel||state.waiting();
   if(arriving&&!denEnvelope.hidden)audio?.cue({type:'letterbox',pan:.55});   // the letter comes through the flap (timed to its animation)
-  world.mailTarget(area==='forest'?(m.phase==='to-friend'?m.host:m.phase==='to-mailman'?'mailman':['return-home','den-letter'].includes(m.phase)?'home':null):null);
+  world.mailTarget(area==='forest'?(m.phase==='to-friend'?m.host:m.phase==='to-mailman'?'mailman':m.phase==='return-home'||m.phase==='den-letter'&&!state.waiting()?'home':null):null);
   // The day follows the journey: morning for the first letter, golden afternoon in the middle, dusk on the way home.
   // Time passes while a puzzle is solved, so the new hour is there at once when the forest shows again (no crawling shadows).
   const j=m.session||{limit:1,completed:0};world.timeOfDay?.(['return-home','sleeping','finished'].includes(m.phase)?1:j.limit>1?Math.min(1,j.completed/(j.limit-1))*.55:0,true);
@@ -36,6 +38,7 @@ function showLetter(fromMailman){
   const before=state.mail();
   if(!['den-letter','to-friend','to-mailman'].includes(before.phase)){say('Fuchs geht jetzt nach Hause schlafen.');return;}
   if(before.phase==='den-letter'&&area!=='den')return;
+  if(state.waiting()){say(noLetterYet);return;}
   if(before.phase==='to-mailman'&&!fromMailman){say('Der Briefträger hat deinen nächsten Brief. Folge dem Pfeil zu ihm.');return;}
   if(before.phase!=='to-friend'&&!state.openLetter()){saveStatus();return;}
   open('letter');renderNav();syncMail();
@@ -87,10 +90,11 @@ function renderNav(){nav.replaceChildren();if(state.development||FK.playLog.deve
   if(!['sleeping','finished'].includes(state.mail().phase)){
     const {completed,limit}=state.mail().session;
     letterStatus=h('span',{class:'ff-letter-status',role:'status','aria-live':'polite',text:completed+'/'+limit,'data-compact':String((completed+'/'+limit).length>4),'aria-label':completed+' von '+limit+' Briefen geschafft'});
+    // While no Rätsel is released there is no letter to open yet (release review R-1).
     const destination=state.mail().phase==='den-letter'
-      ? button('Einladungsbrief öffnen','letter',()=>showLetter(false))
+      ? state.waiting()?null:button('Einladungsbrief öffnen','letter',()=>showLetter(false))
       : button('Bildkarte','map',map);
-    nav.append(letterStatus,destination);
+    nav.append(letterStatus);if(destination)nav.append(destination);
   }
   nav.append(button('Einstellungen für Erwachsene','gear',()=>FK.ui.parentGate(settings)));
 }
@@ -105,7 +109,7 @@ function act(id){if(panel||['sleeping','finished'].includes(state.mail().phase))
   const destination=places[id];if(!destination)return;
   const p=world.position;if(Math.hypot(p.x-destination.x,p.z-destination.z)>3.2){world.route(id);say('Folge Fuchs zu '+(C.hosts[id]?.name||(id==='home'?'deinem Zuhause':'dem Briefträger'))+'.');return;}
   if(id==='home')go('den');else if(id==='mailman'){if(state.mail().phase==='to-mailman')showLetter(true);}else meet(id);
-}else if(id==='outside'){if(state.mail().phase==='den-letter')showLetter(false);else go('forest');}}
+}else if(id==='outside'){if(state.mail().phase==='den-letter'&&!state.waiting())showLetter(false);else go('forest');}}
 // Picture-only touch targets sit on the calibrated painting; routes still use the actual world destinations.
 function map(){
   state.record('map_opened',{area});open('map');const card=h('section',{class:'ff-card ff-map-card'});overlay.append(card);
@@ -180,16 +184,17 @@ FK.screen('friends',{
     root.append(canvas,doorScene,denEnvelope,hotspots,nav,nearButton,caption,fader,overlay,statusBar);
     let storage;try{storage=window.localStorage;}catch{storage={getItem(){throw new Error('storage blocked');},setItem(){throw new Error('storage blocked');},removeItem(){}};}
     state=window.FriendsState.create({storage,content:C,puzzleHosts:()=>FK.friendsLibrary.catalogue().map(g=>g.host),eligible:host=>!FK.puzzleReview||FK.friendsLibrary.catalogue().some(g=>g.host===host&&FK.puzzleReview.ready(g.id)),development:new URLSearchParams(location.search).get('dev')==='1',onStatus:()=>queueMicrotask(saveStatus),appVersion:()=>FK.VERSION,logContext:()=>({screen:FK.current(),viewport:{width:innerWidth,height:innerHeight},textCase:FK.text.mode()})});
-    FK.friends=state;
+    FK.friends=state;letterHeld=state.waiting();
     FK.on('settings',event=>{if(event.key==='developerMode')renderNav();});
     // Released Rätsel can change while playing (review data loads or is withdrawn): keep the open letter playable.
-    FK.on('puzzle-review-change',()=>{if(state.retarget())syncMail();});
+    // While no Rätsel is released the den has no letter; it comes through the flap as soon as the review data arrives.
+    FK.on('puzzle-review-change',()=>{const held=letterHeld;state.retarget();letterHeld=state.waiting();syncMail();if(!panel)renderNav();if(held&&!letterHeld&&area==='den'&&!panel)say(letterArrived);});
     audio=createAudio(()=>state.audioSettings(),()=>world?.soundscape);FK.friendsAudio=audio;
     world=createWorld(canvas,{position:()=>state.get().world,onPosition:(x,z,region)=>state.position(x,z,region),onMove:e=>state.record(e.event,e),onNear:()=>{},onAction:act,onAnimationEnd:()=>endSequence(false),onProject:items=>{positionDoor();const bar=menuArea();for(const p of items){const b=hotspots.querySelector(`[data-place="${p.id}"]`);if(b){b.hidden=!p.visible;b.style.left=p.x+'px';b.style.top=clearOfMenu(p.x,p.y,bar)+'px';}}}});
     FK.friendsView=()=>({...world.diagnostics,soundscape:world.soundscape});renderNav();renderHotspots();saveStatus();
     const interrupted=state.get().animation;if(interrupted)state.finishAnimation(true);
     if(['return-home','sleeping','finished'].includes(state.mail().phase)){go('den',true);}
-    else say(state.mail().phase==='den-letter'?'Oh, ein Brief! Er kommt durch die Briefklappe. Tippe auf den Umschlag.':'Dein Brief wartet auf dich. Er zeigt dir, wen du besuchen kannst.');
+    else say(state.mail().phase==='den-letter'?(state.waiting()?noLetterYet:letterArrived):'Dein Brief wartet auf dich. Er zeigt dir, wen du besuchen kannst.');
     syncMail();
     document.addEventListener('visibilitychange',()=>{tick();if(document.hidden){if(panel==='puzzle'&&activeMs){state.duration(host,activeMs);activeMs=0;}state.record('pause',{reason:'hidden'});state.flushLog();}else state.record('resume',{reason:'visible'});});
     window.addEventListener('pagehide',()=>{tick();if(panel==='puzzle'&&activeMs){state.duration(host,activeMs);activeMs=0;}state.record('session_end');state.flushLog();});

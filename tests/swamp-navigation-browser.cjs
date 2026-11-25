@@ -1,12 +1,12 @@
 /* The actual forest: route along the Steg, stop at Frosch, walk back and keep manual input out of the bog. */
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'/opt/codex/cua_node/lib/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
-const {installRemote}=require('./review-repository-support.cjs');
+const {installRemote,releaseAll}=require('./review-repository-support.cjs');
 const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',out=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-swamp';fs.mkdirSync(out,{recursive:true});
 (async()=>{const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
  const context=await browser.newContext({viewport:{width:1080,height:810},hasTouch:true,reducedMotion:'reduce',serviceWorkers:'block'}),remote=await installRemote(context),page=await context.newPage(),errors=[];
  page.on('pageerror',e=>errors.push(e.message));page.setDefaultTimeout(60000);
- await page.goto(base+'/?software=1');await page.waitForFunction(()=>!!window.FK?.friendsForest&&!!FK.friendsView,null,{timeout:120000});
+ await page.goto(base+'/?software=1');await page.waitForFunction(()=>!!window.FK?.friendsForest&&!!FK.friendsView,null,{timeout:120000});await releaseAll(page,remote);
  await page.getByRole('button',{name:'Brief öffnen',exact:true}).click();await page.getByRole('button',{name:'Zum Freund gehen',exact:true}).click();await page.waitForFunction(()=>FK.friendsView().area==='forest');
  await page.evaluate(()=>{
   FK.friendsForest.weather(false);window.swampSamples=[];window.swampFailures=[];

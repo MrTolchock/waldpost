@@ -4,13 +4,6 @@
 const FK=window.FK;
 const games=[
   {
-    "id": "friends-squirrel",
-    "host": "squirrel",
-    "title": "Mengen zählen",
-    "picture": "forest-nut",
-    "screen": "puzzle"
-  },
-  {
     "id": "friends-bird",
     "host": "bird",
     "title": "Reime erkennen",

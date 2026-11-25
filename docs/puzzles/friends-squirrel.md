@@ -1,5 +1,7 @@
 # Mengen zählen
 
+> **Nicht mehr aktiv.** Seit 9.4.47 ist dieses Rätsel auf Wunsch des Eigentümers aus dem Spiel genommen. Das Eichhörnchen bietet weiter [Gegenstände merken](treasure.md). Diese Seite ist nur noch als historische Seite erhalten.
+
 [Alle Rätsel](../PUZZLE-CATALOGUE.md) · [Shared blueprint](../PUZZLE-BLUEPRINT.md)
 
 - Stabile Rätsel-ID: `friends-squirrel`

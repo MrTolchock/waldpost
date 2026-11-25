@@ -23,7 +23,7 @@ Use bundled Andika for puzzle text in child play, gallery rounds and review prev
 
 Give longer words and captions room to wrap. Keep the same touch area for equivalent controls. At most two type sizes and one weight per Rätsel, excluding the host row ([layout](RAETSEL-LAYOUT.md)).
 
-The paper is as tall as its task and centred on the host's habitat; the frame centres its content and answers follow 16 px below it ([layout](RAETSEL-LAYOUT.md)). Keep every task/state visible without scrolling on a 9th-generation iPad, including Safari's shorter viewport; phones retain vertical scrolling when needed. The back and rule-speaker controls share a quiet 48 px circular frame and 28 px icon. Child/gallery rounds use only the five leaves for progress.
+The paper is as tall as its task and centred on the host's habitat; the frame centres its content and answers follow 16 px below it ([layout](RAETSEL-LAYOUT.md)). Keep every task/state visible without scrolling on a 9th-generation iPad, including Safari's shorter viewport; phones retain vertical scrolling when needed. The back control has a quiet 48 px circular frame and a 28 px icon; there is no rule speaker. Child/gallery rounds use only the five leaves for progress.
 
 ## Vergleichsmuster für eine Rätselseite
 

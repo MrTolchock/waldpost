@@ -37,7 +37,7 @@ test('no timer runtime, stylesheet or initialization remains in the active app',
 });
 
 test('unassigned Fisch is excluded from invitations without hiding the character',()=>{
- const {storage}=fixture(),s=create({storage,content,puzzleHosts:()=>Object.keys(content.hosts).filter(id=>id!=='fish'),eligible:()=>false});assert.ok(s.startLetterSession(30));
+ const {storage}=fixture(),s=create({storage,content,puzzleHosts:()=>Object.keys(content.hosts).filter(id=>id!=='fish'),eligible:()=>true});assert.ok(s.startLetterSession(30));
  for(let n=0;n<30;n++){assert.notEqual(s.mail().host,'fish');assert.equal(s.mail().remaining.includes('fish'),false);assert.ok(s.openLetter());assert.ok(s.completeMail(s.mail().host));}
  assert.equal(s.mail().phase,'return-home');
 });

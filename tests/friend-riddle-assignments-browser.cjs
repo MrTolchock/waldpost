@@ -27,7 +27,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
   await page.evaluate(()=>document.fonts.ready);
   const games=await page.evaluate(()=>FK.friendsLibrary.catalogue());
   const hosts=await page.evaluate(()=>Object.fromEntries(Object.entries(FriendsContent.hosts).map(([id,host])=>[id,host.name])));
-  assert.equal(games.length,17);
+  assert.equal(games.length,16);
   await seedFromPage(page,remote,games.map(game=>game.id));
   const snapshot=()=>page.evaluate(()=>Object.fromEntries(Object.entries(localStorage).filter(([key])=>!key.startsWith('farbtupf.puzzle-review.'))));
   const before=await snapshot();
@@ -37,7 +37,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
     const {width,height}=node.getBoundingClientRect();
     return {width:Math.round(width*100)/100,height:Math.round(height*100)/100,overflow:node.scrollWidth>node.clientWidth+1||node.scrollHeight>node.clientHeight+1};
    }));
-   assert.equal(sizes.length,17,'all puzzle tiles are measured');
+   assert.equal(sizes.length,16,'all puzzle tiles are measured');
    assert.ok(sizes.every(size=>Math.abs(size.width-sizes[0].width)<1&&Math.abs(size.height-sizes[0].height)<1&&!size.overflow),'all tiles have the same size with no clipped content: '+JSON.stringify(sizes));
    return sizes[0];
   };
@@ -45,7 +45,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
   for(const [width,height]of [[1024,700],[390,844]]){
    await page.setViewportSize({width,height});
    await page.evaluate(()=>FK.go('puzzle-gallery'));
-   await active().getByRole('button',{name:'Alle (17)',exact:true}).click();
+   await active().getByRole('button',{name:'Alle (16)',exact:true}).click();
    await page.evaluate(()=>document.fonts.ready);
    const gallerySize=await cardSize();
    await active().locator('.review-grid').evaluate(grid=>grid.scrollIntoView({block:'start'}));
@@ -58,7 +58,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
    for(const [host,name]of Object.entries(hosts)){
     const expected=games.filter(game=>game.host===host).map(game=>game.id).sort();
     // since 9.4.43 the reading Rätsel are Dachs' only one; Eule, Maus, Igel, Reh, Eisvogel and Steinbock keep one each
-    assert.equal(expected.length,['squirrel','bird','beaver','fish','frog'].includes(host)?2:1,host);
+    assert.equal(expected.length,['bird','beaver','fish','frog'].includes(host)?2:1,host);
     await active().getByRole('button',{name:name+' ('+expected.length+')',exact:true}).click();
     const cards=active().locator('.gallery-puzzle');
     assert.deepEqual((await cards.evaluateAll(nodes=>nodes.map(node=>node.dataset.puzzle))).sort(),expected);

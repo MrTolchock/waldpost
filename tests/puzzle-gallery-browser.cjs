@@ -25,7 +25,7 @@ const BASE=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
   await page.waitForTimeout(300);assert.equal(await act().locator('.gallery-puzzle').count(),2,'only signed-off puzzles');
   await page.screenshot({path:shots+'/gallery-1080.png'});
   // friend filter
-  const tab=act().locator('.gallery-friend').nth(1+await page.evaluate(h=>[...new Set(FK.friendsLibrary.catalogue().map(g=>g.host))].indexOf(h),ids[0].host));
+  const tab=act().locator('.gallery-friend').nth(1+await page.evaluate(h=>Object.keys(window.FriendsContent.hosts).indexOf(h),ids[0].host)); // tabs follow the friends, not the Rätsel order
   await tab.click();await page.waitForTimeout(200);assert.equal(await act().locator('.gallery-puzzle').count(),1);assert.equal(await act().locator('.gallery-puzzle').getAttribute('data-puzzle'),ids[0].id);
   // play a round of five: nothing is saved for the child, no letter changes
   const before=await page.evaluate(()=>({rounds:localStorage.getItem('farbtupf.puzzles.v1')||localStorage.getItem('farbtupf.puzzles.v1.dev'),mail:JSON.stringify(FK.friends.mail())}));
@@ -39,7 +39,7 @@ const BASE=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
   const after=await page.evaluate(()=>({rounds:localStorage.getItem('farbtupf.puzzles.v1')||localStorage.getItem('farbtupf.puzzles.v1.dev'),mail:JSON.stringify(FK.friends.mail())}));
   assert.deepEqual(after,before,'no saved round and no letter change');
   await act().locator('.btn-back').click();await page.waitForTimeout(300);assert.equal(await current(),'settings');
-  await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');assert.equal(await act().locator('.review-puzzle').count(),17,'the review still lists every puzzle');
+  await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');assert.equal(await act().locator('.review-puzzle').count(),16,'the review still lists every puzzle');
   assert.deepEqual(errors,[]);console.log("PASS: Rätsel-Galerie lists only signed-off puzzles, filters by friend and plays five tasks without saving; Rätsel-Prüfung is separate.");
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});

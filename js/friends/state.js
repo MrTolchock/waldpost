@@ -29,6 +29,8 @@
       if(stranded(s)){const index=m.index;nextHost(s);m.index=index;}
       s.unlocks.leaf=true;s.unlocks.pencils=true;return s;
     };
+    // No friend has a released Rätsel (first start offline, review data blocked): no letter is delivered yet (release review R-1).
+    const waiting=s=>s.mail.phase==='den-letter'&&!activeMailHosts.some(ok);
     // An open invitation is stranded when its friend has no released Rätsel but another friend has one.
     const stranded=s=>['den-letter','to-friend'].includes(s.mail.phase)&&!ok(s.mail.host)&&activeMailHosts.some(id=>id!==s.mail.host&&ok(id));
     function nextHost(s){
@@ -121,7 +123,9 @@
     }
     const api={key,get:()=>clone(state),round:host=>clone(state.rounds[host]||null),audioSettings:()=>({...state.settings}),get error(){return error;},get blocked(){return blocked;},development,record,start,answer,
       mail:()=>clone(state.mail),
-      openLetter(){return commit(s=>{if(!['den-letter','to-mailman'].includes(s.mail.phase)||s.mail.session.completed>=s.mail.session.limit)return false;if(s.mail.phase==='to-mailman')nextHost(s);s.mail.phase='to-friend';},'letter_opened');},
+      // True while the den letter is held back because no Rätsel is released yet.
+      waiting:()=>waiting(state),
+      openLetter(){return commit(s=>{if(!['den-letter','to-mailman'].includes(s.mail.phase)||s.mail.session.completed>=s.mail.session.limit||waiting(s))return false;if(s.mail.phase==='to-mailman')nextHost(s);s.mail.phase='to-friend';},'letter_opened');},
       // Move a stranded invitation to a friend who can play; keeps the letter, its phase and the completed count.
       retarget(){const from=state.mail.host;return commit(s=>{if(!stranded(s))return false;const index=s.mail.index;nextHost(s);s.mail.index=index;},'letter_retargeted',{from});},
       canPuzzle(host){return state.mail.phase==='to-friend'&&state.mail.host===host&&state.mail.session.completed<state.mail.session.limit;},

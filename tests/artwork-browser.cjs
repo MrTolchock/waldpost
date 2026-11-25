@@ -1,11 +1,11 @@
 /* Real world navigation/letters and the standalone image library, using disposable storage and intercepted review APIs. */
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'/opt/codex/cua_node/lib/node_modules/playwright');
-const fs=require('node:fs'),assert=require('node:assert/strict'),sharp=require('../tools/node_modules/sharp'),{installRemote}=require('./review-repository-support.cjs');
+const fs=require('node:fs'),assert=require('node:assert/strict'),sharp=require('../tools/node_modules/sharp'),{installRemote,releaseAll}=require('./review-repository-support.cjs');
 const library=require('../assets/waldatelier/library.json');
 const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',out=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-artwork';fs.mkdirSync(out,{recursive:true});
 (async()=>{const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
  const context=await browser.newContext({viewport:{width:1080,height:810},hasTouch:true,reducedMotion:'reduce',serviceWorkers:'block',acceptDownloads:true,permissions:['clipboard-read','clipboard-write']}),page=await context.newPage(),errors=[];page.setDefaultTimeout(60000);page.on('pageerror',e=>errors.push(e.message));const remote=await installRemote(context);
- await page.goto(base+'/?software=1');await page.waitForFunction(()=>!!window.FK?.friendsView&&FK.current()==='friends',{},{timeout:120000});
+ await page.goto(base+'/?software=1');await page.waitForFunction(()=>!!window.FK?.friendsView&&FK.current()==='friends',{},{timeout:120000});await releaseAll(page,remote);
  const exit=page.getByRole('button',{name:'Nach draussen',exact:true}),den=[];
  for(const [width,height]of [[1080,810],[390,844],[844,390]]){
   await page.setViewportSize({width,height});await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));

@@ -62,3 +62,15 @@ test('an invitation to a friend without released Rätsel moves to a friend who c
  // with nobody released the letter keeps its friend (the adult text explains the wait)
  released=new Set();assert.equal(reloaded.retarget(),false);
 });
+test('without any released Rätsel the den letter is held back until the review data arrives (release review 9.4.46 R-1)',()=>{
+ const map=new Map(),storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v),removeItem:k=>map.delete(k)};
+ let released=new Set();const eligible=host=>released.has(host);
+ const state=create({storage,content,eligible});
+ assert.equal(state.mail().phase,'den-letter');assert.equal(state.waiting(),true,'first start offline: no letter yet');
+ assert.equal(state.openLetter(),false,'a held-back letter cannot be opened');assert.equal(state.mail().phase,'den-letter');
+ assert.equal(create({storage,content,eligible}).waiting(),true,'still held back after a reload');
+ // the review data loads: only Biber can play, and the letter goes to Biber
+ released=new Set(['beaver']);assert.equal(state.waiting(),false);
+ if(state.mail().host!=='beaver')assert.ok(state.retarget());
+ assert.equal(state.mail().host,'beaver');assert.ok(state.openLetter());assert.equal(state.mail().phase,'to-friend');assert.equal(state.waiting(),false);
+});

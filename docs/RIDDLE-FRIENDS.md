@@ -1,10 +1,10 @@
 # Rätsel bei den Waldfreunden
 
-Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Seit 9.4.45 hat «Lesen und verstehen» 78 Aufgaben, nur Sätze und Fragen: Jedes Tier und jedes Ding ist nur in einer Aufgabe die Antwort, und jeder Farbsatz kommt einmal vor. Die aktuelle Sammlung umfasst 17 Rätsel mit 652 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
+Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Seit 9.4.45 hat «Lesen und verstehen» 78 Aufgaben, nur Sätze und Fragen: Jedes Tier und jedes Ding ist nur in einer Aufgabe die Antwort, und jeder Farbsatz kommt einmal vor. Seit 9.4.47 ist «Mengen zählen» nicht mehr im Spiel; das Eichhörnchen bietet «Gegenstände merken». Die aktuelle Sammlung umfasst 16 Rätsel mit 627 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
 
 | Freund | Rätsel | Thematischer Bezug |
 | --- | --- | --- |
-| Eichhörnchen | [Mengen zählen](puzzles/friends-squirrel.md), [Gegenstände merken](puzzles/treasure.md) | Eicheln zählen und sich gesammelte Waldschätze merken |
+| Eichhörnchen | [Gegenstände merken](puzzles/treasure.md) | Sich gesammelte Waldschätze merken |
 | Blaumeise | [Reime erkennen](puzzles/friends-bird.md), [Wörter in Silben zerlegen](puzzles/syllable.md) | Gesang, Sprachklang und Rhythmus |
 | Waldkauz | [Silben zu Wörtern verbinden](puzzles/read-puzzle.md) | Wörter aus Silben zusammensetzen |
 | Biber | [Reihen ergänzen](puzzles/friends-beaver.md), [Muster spiegeln](puzzles/mirror.md) | Reihen aus Waldgegenständen ergänzen und Formen beim Bauen vergleichen |

@@ -146,3 +146,24 @@ Drei Reime hat er zurückgewiesen, weil die dritte Karte für Kinder doch reimt:
 
 Die neue Karte teilt nur noch den Anfangslaut. Vokal und Ende sind anders. Die 22 freigegebenen Reime bleiben unverändert. Damit sind 16 von 17 Rätseln freigegeben. Offen sind nur noch diese drei Aufgaben von Reime erkennen.
 
+## Auftrag nach der Release-Prüfung von 9.4.46 (9.4.47)
+
+Grundlage ist die [Release-Prüfung von 9.4.46](reviews/2026-11-25-release-review-9.4.46/README.md). Der Eigentümer wünschte:
+
+| Wunsch | Umsetzung |
+| --- | --- |
+| «Mengen zählen» vom Eichhörnchen löschen | Das Rätsel ist nicht mehr im Spiel. Das Eichhörnchen bietet weiter «Gegenstände merken». Die 25 Aufgaben sind zurückgezogen, die Seite [friends-squirrel](puzzles/friends-squirrel.md) bleibt als historische Seite. Ein gespeicherter Brief an das Eichhörnchen bleibt gültig. |
+| Befund R-1: erster Start ohne Prüfdaten | Solange kein Rätsel freigegeben ist, liegt kein Brief im Fuchsbau: kein Umschlag, kein Briefknopf, der Fuchs sagt «Heute ist noch kein Brief da. Du kannst draussen den Wald erkunden.» In den Einstellungen steht bei der Rätsel-Prüfung, dass kein Rätsel freigegeben ist und meist die Prüfdaten fehlen. Sobald die Freigaben geladen sind, kommt der Brief durch die Briefklappe, an einen Freund, der spielen kann (`js/friends/state.js`, `game.js`, `settings.js`). |
+| Befund B-1: Zahlennachbarn davor und danach | Sind beide Felder offen, füllt das erste Tippen das erste Feld (davor), das zweite Tippen das zweite (danach). Eine Zahl, die nicht in das nächste offene Feld gehört, bekommt den gestrichelten Ring. Regel: «Tippe zuerst auf die Zahl davor, dann auf die Zahl danach.» |
+| Befund C-1: wiederholte Bilder bei «Lesen und verstehen» | Die Auswahl der fünf Aufgaben überspringt eine Aufgabe, deren Bilder schon in der Runde vorkommen. Kein Bild erscheint zweimal in einer Runde (geprüft mit 50 000 Runden). Die Aufgaben selbst ändern sich nicht. |
+| Befund C-2: «Lies das Wort» | Regel «Lies den Satz oder die Frage. Tippe auf das passende Bild.», Schwierigkeit «Kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten». Die zwölf Satzaufgaben behalten ihre zwei Bilder. |
+| Befund K-1: Vorlesen in drei Zeilen | Blueprint, Stil und Stil-Audit nennen keinen Regel-Lautsprecher mehr. |
+
+Die Sammlung umfasst jetzt **16 Rätsel mit 627 Aufgaben**.
+
+**Prüfung.** Regel und Bedienung haben sich geändert, deshalb sind wieder offen:
+
+- Lesen und verstehen: alle 78 Aufgaben
+- Zahlennachbarn: alle 36 Aufgaben
+
+Die geänderte Rundenauswahl betrifft nur die Reihenfolge, in der Aufgaben gezogen werden. Eine Brücke vom Release `81b0bcd` (9.4.46) hält die übrigen 513 Aufgaben und 14 Rätsel freigegeben (`tests/review-changes-2026-11-25-fourth.cjs`). Gegen die veröffentlichten Prüfdaten sind 14 von 16 Rätseln freigegeben. Bis die 114 offenen Aufgaben in der Rätsel-Prüfung freigegeben sind, bekommen Dachs und Eisvogel keine Briefe. Der vierte Reim-Befund (R-2 der Prüfung) bleibt auf Wunsch des Eigentümers unverändert.

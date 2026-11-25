@@ -21,7 +21,7 @@ test('across real rounds no answer position dominates in any Rätsel',()=>{
 });
 test('number choices are ascending windows whose answer is not always the middle value',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
- for(const id of ['friends-squirrel','count','add','rocket','syllable']){
+ for(const id of ['count','add','rocket','syllable']){
   const items=C.iterations(id),middle=items.filter(it=>it.question.choices[1]===it.question.answer).length;
   for(const it of items){const c=it.question.choices;assert.deepEqual([...c],[c[0],c[0]+1,c[0]+2],it.id);assert.ok(c.includes(it.question.answer),it.id);}
   assert.ok(middle/items.length<0.45,id+': middle value correct in '+middle+' of '+items.length);

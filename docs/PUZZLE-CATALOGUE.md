@@ -1,6 +1,6 @@
 # Rätselkatalog und Kompetenzübersicht
 
-Die aktive Sammlung enthält **17 Rätsel und 652 einzeln prüfbare Aufgaben**. Each play is five randomly selected, distinct iterations. Children start puzzles only at the friend on their current letter; the full gallery is in adult Settings. [Parent letter limits](LETTER-SESSIONS.md) end the journey at the den after sleeping.
+Die aktive Sammlung enthält **16 Rätsel und 627 einzeln prüfbare Aufgaben**. Each play is five randomly selected, distinct iterations. Children start puzzles only at the friend on their current letter; the full gallery is in adult Settings. [Parent letter limits](LETTER-SESSIONS.md) end the journey at the den after sleeping.
 
 Generated from the runtime catalogue with `node tools/puzzle-catalogue.cjs`. Every linked puzzle page lists all iteration IDs, content and expected solutions. No generated item is automatically approved.
 
@@ -10,7 +10,6 @@ Competences below are bounded practice references to [Zürich Zyklus 1](CURRICUL
 
 | Rätsel / alle Aufgaben | Host | Related competence | Schwierigkeit | Aufgaben |
 | --- | --- | --- | --- | ---: |
-| [Mengen zählen](puzzles/friends-squirrel.md) | Eichhörnchen | MA.1.A.2.a — Mengen zählen | 0–20 Eicheln; Vierer- und Fünferstruktur | 25 |
 | [Reime erkennen](puzzles/friends-bird.md) | Blaumeise | D.2.A.1.b; D.1.A.1.b — Reime erkennen | 25 verschiedene Reimpaare ohne vertauschte Doppelungen; eingeführte Buchstaben | 25 |
 | [Reihen ergänzen](puzzles/friends-beaver.md) | Biber | MA.2.A.1.a — Reihen mit Waldgegenständen ergänzen | Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste | 43 |
 | [Lesen und verstehen](puzzles/friends-badger.md) | Dachs | D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a — Lesen und verstehen | Kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten | 78 |

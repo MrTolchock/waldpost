@@ -2,7 +2,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const {setup}=require('../tools/puzzle-catalogue.cjs');
 test('November 19 reviews merge the requested pools and add three-object rows',()=>{
  const {FK}=setup(),C=FK.puzzleCatalogue;
- assert.equal(FK.friendsLibrary.catalogue().length,17); // six reading Rätsel are one since 9.4.43
+ assert.equal(FK.friendsLibrary.catalogue().length,16); // six reading Rätsel are one since 9.4.43; Mengen zählen retired in 9.4.47
  for(const id of ['pattern','nature']){assert.equal(C.puzzle(id),null);assert.deepEqual(Array.from(C.iterations(id)),[]);assert.equal(FK.puzzleRounds.instructions[id],undefined);}
  const mountain=C.iterations('friends-ibex');assert.equal(mountain.length,30);assert.equal(mountain.filter(it=>it.id.includes('/woodland-')).length,0);
  const R25=require('./review-changes-2026-11-24-reading.cjs'),animals=R25.items(C,'friends-hedgehog');assert.equal(animals.length,22);assert.equal(animals.filter(it=>it.id.includes('/nature-question-')).length,14); // 25 Nov: one Aufgabe per answer subject

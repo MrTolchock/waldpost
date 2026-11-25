@@ -7,13 +7,13 @@ await page.goto(BASE+'/?software=1&dev=1');await page.waitForFunction(()=>window
 const gate=async()=>{const n=(await page.locator('.gate-task').innerText()).match(/\d+/g).map(Number);await page.locator('.gate-input').fill(String(n[0]*n[1]));await page.getByRole('button',{name:'Öffnen',exact:true}).click();};
 await page.getByRole('button',{name:'Einstellungen für Erwachsene',exact:true}).first().click();await gate();await page.waitForFunction(()=>FK.current()==='settings');
 await page.getByRole('button',{name:"Rätsel-Prüfung",exact:true}).click();await page.waitForFunction(()=>FK.current()==='puzzle-review');
-await page.evaluate(()=>FK.puzzleReview.start('friends-squirrel'));await page.waitForTimeout(600);
+await page.evaluate(()=>FK.puzzleReview.start('count'));await page.waitForTimeout(600);
 const it=await page.evaluate(()=>document.querySelector('.screen:not([hidden])').dataset.reviewIteration);
 // another tab writes the record without this task's seen mark
 await page.evaluate(()=>{const k=Object.keys(localStorage).find(k=>k.startsWith('farbtupf.puzzle-review'));const d=JSON.parse(localStorage.getItem(k));d.seen={};window.dispatchEvent(new StorageEvent('storage',{key:k,newValue:JSON.stringify(d)}));});
-assert.equal(await page.evaluate(it=>FK.puzzleReview.status('friends-squirrel',it).seen,it),false,'the other tab removed the seen mark');
+assert.equal(await page.evaluate(it=>FK.puzzleReview.status('count',it).seen,it),false,'the other tab removed the seen mark');
 const tiles=page.locator('.screen:not([hidden]) [data-answer]');const n=await tiles.count();let res='none';
-for(let k=0;k<n;k++){await tiles.nth(k).click({force:true}).catch(()=>{});await page.waitForTimeout(300);const err=await page.locator('.modal-card:has-text("nicht gespeichert")').count();if(err){res='ERROR dialog';break;}if(await page.evaluate(it=>FK.puzzleReview.status('friends-squirrel',it).status==='approved',it)){res='approved';break;}}
+for(let k=0;k<n;k++){await tiles.nth(k).click({force:true}).catch(()=>{});await page.waitForTimeout(300);const err=await page.locator('.modal-card:has-text("nicht gespeichert")').count();if(err){res='ERROR dialog';break;}if(await page.evaluate(it=>FK.puzzleReview.status('count',it).status==='approved',it)){res='approved';break;}}
 assert.equal(res,'approved','answering approves the task on screen');
 // show the dialog to check its buttons
 await page.evaluate(()=>FK.puzzleReview.saveFailure(()=>{}));await page.waitForTimeout(400);

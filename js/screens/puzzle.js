@@ -255,12 +255,14 @@
       if(!fixed)slot.dataset.neighbourSlot=pos;
       row.append(slot);slots[pos]=slot;
     }
-    // 25 Nov (owner): tap instead of drag and drop. A right number goes to its own place (davor or danach);
-    // a wrong one gets the usual retry ring and stays where it is.
+    // 25 Nov (owner): tap instead of drag and drop. The fields fill in order: the first tap answers the first open
+    // field (davor), the next one the second (danach), so the child decides which number comes before and which after.
+    // A wrong number gets the usual retry ring and stays where it is.
     function tap(value,tile){
       if(locked)return;
-      const pos=[0,1].find(p=>values[p]===null&&q.answer[p]===value);
-      if(pos===undefined){fail(tile,undefined,value);return;}
+      const pos=values.findIndex(v=>v===null);
+      if(pos<0)return;
+      if(q.answer[pos]!==value){fail(tile,undefined,value);return;}
       tile.classList.remove('is-retry');place(value,pos);
     }
     function place(value,pos){

@@ -72,7 +72,7 @@ const {installRemote}=require('./review-repository-support.cjs');
  // cell or picture leaves the frame or the screen at 360 or 320 px, in every Aufgabe of the grid Rätsel.
  for(const [width,height] of [[360,780],[320,640]]){
   await page.setViewportSize({width,height});
-  for(const id of ['rocket','mirror','friends-squirrel','count','robot','treasure'])for(const it of await page.evaluate(id=>FK.puzzleCatalogue.iterations(id).map(i=>i.id),id)){
+  for(const id of ['rocket','mirror','count','robot','treasure'])for(const it of await page.evaluate(id=>FK.puzzleCatalogue.iterations(id).map(i=>i.id),id)){
    await page.evaluate(({id,it})=>FK.puzzleReview.preview(id,it),{id,it});await page.locator('.screen:not([hidden]) .puzzle-scene').waitFor();
    const clip=await page.evaluate(()=>{const paper=document.querySelector('.screen:not([hidden]) .puzzle-paper'),scene=paper.querySelector('.puzzle-scene'),sr=scene.getBoundingClientRect();let worst=0;
     for(const e of paper.querySelectorAll('button,.puzzle-picture,.puzzle-number-card,.puzzle-firefly-slot,.puzzle-mirror-cell,.puzzle-route-cell,.puzzle-counter,.puzzle-treasures>span')){if(!e.getClientRects().length||getComputedStyle(e).visibility==='hidden')continue;const r=e.getBoundingClientRect();if(!r.width)continue;
@@ -86,8 +86,8 @@ const {installRemote}=require('./review-repository-support.cjs');
  assert.equal(await page.locator('.screen-puzzle').evaluate(n=>n.scrollWidth>n.clientWidth+1),false);
  await page.locator('.screen-puzzle .btn-back').focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>FK.current()==='puzzle-review');
  await page.getByRole('button',{name:"Zur Rätsel-Übersicht",exact:true}).click();
- assert.equal(await page.locator('[data-puzzle="friends-squirrel"] b').textContent(),'Mengen zählen');
- assert.equal(await page.locator('[data-puzzle="friends-squirrel"]>span:not(.review-status):not(.forest-portrait)').count(),0,'no duplicate subtitle');
+ assert.equal(await page.locator('[data-puzzle="count"] b').textContent(),'Mengen gezielt zählen');
+ assert.equal(await page.locator('[data-puzzle="count"]>span:not(.review-status):not(.forest-portrait)').count(),0,'no duplicate subtitle');
  if(process.env.FARBTUPF_SHOTS){fs.mkdirSync(process.env.FARBTUPF_SHOTS,{recursive:true});await page.setViewportSize({width:1280,height:854});await page.evaluate(()=>FK.puzzleReview.preview('friends-bird','friends-bird/rhyme-2'));await page.screenshot({path:process.env.FARBTUPF_SHOTS+'/ipad-rhyme.png'});}
  assert.deepEqual(errors,[]);console.log('PASS '+total+' iPad/phone task/state layouts: original artwork proportions, no iPad scrolling, inline return arrow, memory phases, distributed berries and keyboard return.');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

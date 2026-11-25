@@ -16301,7 +16301,6 @@
             "🌰"
           ],
           "usedBy": [
-            "friends-squirrel",
             "friends-bird",
             "friends-beaver",
             "friends-badger",
@@ -16376,7 +16375,6 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-squirrel",
             "friends-bird",
             "friends-beaver",
             "friends-badger",
@@ -16479,7 +16477,6 @@
           },
           "tokens": [],
           "usedBy": [
-            "friends-squirrel",
             "friends-bird",
             "friends-beaver",
             "friends-badger",
@@ -18601,9 +18598,7 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": [
-            "friends-squirrel"
-          ]
+          "usedBy": []
         },
         {
           "id": "habitat-pond",

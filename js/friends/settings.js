@@ -53,6 +53,8 @@
       updateStatus=h('p',{class:'ff-update-status',role:'status','aria-live':'polite'});
       const updates=h('section',{class:'setting-card ff-update-settings'},heading('App-Version'),h('p',{class:'ff-settings-version',text:FK.APP_NAME+' '+FK.VERSION}),updateButton,updateStatus);
       const review=h('section',{class:'setting-card ff-puzzle-review-settings'},heading("Rätsel-Galerie und Rätsel-Prüfung"),h('p',{text:"Galerie: freigegebene Rätsel nach Freund ansehen und eine Runde mit fünf Aufgaben spielen. Prüfung: jede Aufgabe vor dem Spielen prüfen und freigeben. Kinder rätseln nur beim Freund auf ihrem Brief."}),h('div',{class:'setting-buttons'},FK.ui.btn({label:"Rätsel-Galerie",onClick:()=>FK.puzzleReview.openGallery()}),FK.ui.btn({label:"Rätsel-Prüfung",onClick:()=>FK.puzzleReview.open()})));
+      // Release review R-1: without any released Rätsel (usually the review data could not be loaded) the den has no letter.
+      if(FK.puzzleReview&&!FK.friendsLibrary?.catalogue().some(g=>FK.puzzleReview.ready(g.id)))review.append(h('p',{class:'ff-setting-note ff-review-missing',role:'status',text:"Noch ist kein Rätsel freigegeben, deshalb liegt kein Brief im Fuchsbau. Meist fehlen die Prüfdaten: Bitte das Gerät mit dem Internet verbinden. Sobald die Freigaben geladen sind, kommt der Brief."}));
       body.append(letters,sounds,review,records,updates);showUpdate();
     },
     leave(){}

@@ -5,8 +5,7 @@
   const FK=window.FK;
   const base={squirrel:'Nüsse zählen',bird:'Reimpaare lesen',owl:'Lies und zeig',beaver:'Was fehlt im Wald?',mouse:'Wörter und Bilder',hedgehog:'Tierrätsel',fish:'Fische zählen',deer:'Wer wohnt wo?',kingfisher:'Am Bach zählen',frog:'Tierwörter lesen',badger:'Naturrätsel',ibex:'Bergmuster'};
   const instructions={
-    'friends-squirrel':'Zähle die Eicheln. Tippe auf die passende Zahl.',
-    'friends-badger':'Lies das Wort, den Satz oder die Frage. Tippe auf das passende Bild.',
+    'friends-badger':'Lies den Satz oder die Frage. Tippe auf das passende Bild.',
     'friends-ibex':'Suche die Bildgruppe, die sich wiederholt. Welches Bild gehört in die Lücke?',
     'friends-bird':'Lies das Wort und die Wörter bei den Bildern. Wähle das Wort, das sich reimt.',
     'friends-beaver':'In jeder Reihe liegen die gleichen Dinge wie in der ersten Reihe. Welches Bild fehlt?',
@@ -17,7 +16,7 @@
     syllable:'Sprich das Bildwort langsam. Zähle seine Silben und wähle die passende Zahl.',
     robot:'Führe das Reh zum Wald. Tippe auf die Pfeile. Um die Felsen musst du herumgehen.',
     treasure:'Merke dir die vier Dinge. Tippe dann auf das Häkchen. Welches Ding fehlt?',
-    neighbours:'Tippe auf die Zahl davor und auf die Zahl danach. Sie springt an ihren Platz.',
+    neighbours:'Tippe zuerst auf die Zahl davor, dann auf die Zahl danach.',
     compare:'Vergleiche die beiden Fischgruppen. Tippe auf die mit mehr Fischen. Sind es gleich viele, wähle das Gleichheitszeichen.',
     mirror:'Ergänze rechts das Spiegelbild. Felder in derselben Reihe liegen gleich weit von der Spiegellinie entfernt. Ein zweites Tippen leert ein Feld wieder.',
     vowels:'Lies das Bildwort. Welcher Buchstabe fehlt in der Lücke?',

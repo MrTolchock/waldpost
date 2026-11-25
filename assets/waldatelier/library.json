@@ -14,10 +14,6 @@
   },
   "runtimeRegistry": "js/ui/waldatelier.js",
   "puzzles": {
-    "friends-squirrel": {
-      "title": "Mengen zählen",
-      "host": "squirrel"
-    },
     "friends-bird": {
       "title": "Reime erkennen",
       "host": "bird"
@@ -4017,9 +4013,7 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": [
-        "friends-squirrel"
-      ]
+      "usedBy": []
     },
     {
       "id": "fabric-pouch",
@@ -4456,7 +4450,6 @@
       },
       "tokens": [],
       "usedBy": [
-        "friends-squirrel",
         "friends-bird",
         "friends-beaver",
         "friends-badger",
@@ -4542,7 +4535,6 @@
       },
       "tokens": [],
       "usedBy": [
-        "friends-squirrel",
         "friends-bird",
         "friends-beaver",
         "friends-badger",
@@ -4633,7 +4625,6 @@
         "🌰"
       ],
       "usedBy": [
-        "friends-squirrel",
         "friends-bird",
         "friends-beaver",
         "friends-badger",

@@ -1,5 +1,7 @@
 # Final release review — Waldpost 9.4.46
 
+> Follow-up: 9.4.47 implements R-1, B-1 (fields fill in order), C-1, C-2 (rule only) and K-1, and retires Mengen zählen; R-2 stays as the owner decided ([change notes](../../RAETSEL-FEEDBACK-2026-11-25.md#auftrag-nach-der-release-prüfung-von-946-947)).
+
 | | |
 | --- | --- |
 | Reviewed build | `main` @ `81b0bcd` — Waldpost **9.4.46** (`FK.VERSION`, service-worker cache `farbtupf-v9.4.46-waldpost`) |
