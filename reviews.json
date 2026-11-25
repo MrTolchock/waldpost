@@ -31629,6 +31629,15 @@
       "at": "2026-11-25T12:24:17.521Z",
       "seen": true,
       "operation": "c39283b3-dacf-4281-968e-8d3c5557d846"
+    },
+    "read-puzzle/word-28@fc34951b2f8c5673": {
+      "key": "read-puzzle/word-28",
+      "revision": "fc34951b2f8c5673",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:24:21.310Z",
+      "seen": true,
+      "operation": "ec01e199-f968-4e13-b10c-26ad2c6784b0"
     }
   },
   "history": [
