@@ -6,7 +6,7 @@
 - Host: badger
 - Related competence: **D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a** — Lesen und verstehen
 - Difficulty: Vertraute Wörter, kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten
-- Pool: 223 Aufgaben; eine Runde enthält fünf.
+- Pool: 113 Aufgaben; eine Runde enthält fünf.
 - Review: solve every unconfirmed iteration to approve it; × rejects with an optional note. The puzzle is released when all current iterations passed. Exact per-iteration revisions gate release; only affected iterations require review after changes.
 
 ## Mapping to the blueprint
@@ -16,7 +16,7 @@
 | Picture roles | Drawn woodland subjects; painted host/companions; SVG geometry and tracing |
 | Shared page | Waldbuch paper, host, Andika, five progress leaves |
 | Child access | Only the character on the current letter; parent-controlled journey limit |
-| Guidance | One optional rule explanation; no hints or next-task button |
+| Guidance | The written rule only; nothing is read aloud, no hints or next-task button |
 | Sound | Enabled button clicks, success/retry, mute respected |
 | Round | Five distinct sampled iterations; saved questions/partial work |
 | Ending | 900 ms correct feedback, then 2.2 s celebration; reduced motion |
@@ -27,7 +27,6 @@
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
 | `friends-badger/riddle-0` | Was fällt aus der Wolke? — Was fällt aus der Wolke? | "rain" |
-| `friends-badger/riddle-1` | Was wird aus einer Kaulquappe? — Was wird aus einer Kaulquappe? | "frog-sit" |
 | `friends-badger/riddle-2` | Was wächst aus der Bohne? — Was wächst aus der Bohne? | "seedling" |
 | `friends-badger/riddle-3` | Was baut man aus Schnee? — Was baut man aus Schnee? | "snowman" |
 | `friends-badger/riddle-4` | Wer schlüpft aus dem Ei? — Wer schlüpft aus dem Ei? | "chick" |
@@ -45,7 +44,6 @@
 | `friends-badger/riddle-16` | Was braucht eine Pflanze zum Wachsen? — Was braucht eine Pflanze zum Wachsen? | "sun" |
 | `friends-badger/riddle-17` | Was wird aus einer Apfelblüte? — Was wird aus einer Apfelblüte? | "apple" |
 | `friends-badger/riddle-18` | Welche Blume blüht im Frühling zuerst? — Welche Blume blüht im Frühling zuerst? | "snowdrop" |
-| `friends-badger/riddle-19` | Was sammelt das Eichhörnchen im Herbst? — Was sammelt das Eichhörnchen im Herbst? | "forest-nut" |
 | `friends-badger/riddle-20` | Was sehen wir bei klarem Himmel in der Nacht? — Was sehen wir bei klarem Himmel in der Nacht? | "moon" |
 | `friends-badger/riddle-21` | Was wächst auf der Erdbeerpflanze? — Was wächst auf der Erdbeerpflanze? | "strawberry" |
 | `friends-badger/riddle-22` | Womit giessen wir die Pflanzen? — Womit giessen wir die Pflanzen? | "watering-can" |
@@ -55,63 +53,31 @@
 | `friends-deer/riddle-1` | Wo brütet der Vogel? — Wo brütet der Vogel? | "nest" |
 | `friends-deer/riddle-2` | Was frisst der Hase gern? — Was frisst der Hase gern? | "carrot" |
 | `friends-deer/riddle-3` | Was legt der Vogel? — Was legt der Vogel? | "egg" |
-| `friends-deer/riddle-4` | Was frisst das Eichhörnchen? — Was frisst das Eichhörnchen? | "forest-nut" |
-| `friends-deer/riddle-5` | Wo klettert das Eichhörnchen? — Wo klettert das Eichhörnchen? | "tree" |
 | `friends-deer/riddle-6` | Wo holt die Biene Nektar? — Wo holt die Biene Nektar? | "flower" |
-| `friends-deer/riddle-7` | Was wächst am Baum? — Was wächst am Baum? | "apple" |
-| `friends-deer/riddle-8` | Wer lebt im Wasser? — Wer lebt im Wasser? | "fish" |
-| `friends-deer/riddle-9` | Wer wohnt im Nest? — Wer wohnt im Nest? | "bird" |
 | `friends-deer/riddle-10` | Wer frisst Blätter? — Wer frisst Blätter? | "caterpillar" |
 | `friends-deer/riddle-11` | Wo wohnt der Biber? — Wo wohnt der Biber? | "beaver-lodge" |
 | `friends-deer/riddle-12` | Was wächst unter den Bäumen? — Was wächst unter den Bäumen? | "forest-mushroom" |
 | `friends-deer/riddle-13` | Wo wohnt der Dachs? — Wo wohnt der Dachs? | "badger-sett" |
 | `friends-deer/riddle-14` | Wo wohnen viele Ameisen? — Wo wohnen viele Ameisen? | "ant-hill" |
-| `friends-deer/riddle-15` | Wer frisst Gras? — Wer frisst Gras? | "cow" |
 | `friends-deer/riddle-16` | Wo wohnt der Fuchs? — Wo wohnt der Fuchs? | "fox-den-entrance" |
-| `friends-deer/riddle-17` | Was knabbert der Biber ab? — Was knabbert der Biber ab? | "tree" |
-| `friends-deer/riddle-18` | Was pickt der Vogel aus der Erde? — Was pickt der Vogel aus der Erde? | "vocab-worm" |
-| `friends-deer/riddle-19` | Was frisst die Schnecke? — Was frisst die Schnecke? | "leaf" |
 | `friends-deer/riddle-20` | Wo wohnt der Waldkauz? — Wo wohnt der Waldkauz? | "hollow-tree" |
 | `friends-deer/riddle-21` | Was frisst das Reh gern? — Was frisst das Reh gern? | "red-clover" |
-| `friends-deer/riddle-22` | Wo kann der Frosch schwimmen? — Wo kann der Frosch schwimmen? | "habitat-pond" |
 | `friends-deer/riddle-23` | Was knabbert der Hase auf der Wiese? — Was knabbert der Hase auf der Wiese? | "dandelion-flower" |
 | `friends-deer/riddle-24` | Was fressen die Vögel im Herbst? — Was fressen die Vögel im Herbst? | "rowan-sprig" |
-| `friends-hedgehog/riddle-0` | Wer hat Stacheln? — Wer hat Stacheln? | "hedgehog" |
-| `friends-hedgehog/riddle-1` | Wer hat einen blauen Kopf? — Wer hat einen blauen Kopf? | "bird-sit" |
 | `friends-hedgehog/riddle-2` | Wer hat Flossen? — Wer hat Flossen? | "fish-swim" |
-| `friends-hedgehog/riddle-3` | Wer ist gelb und schwarz? — Wer ist gelb und schwarz? | "bee" |
 | `friends-hedgehog/riddle-4` | Wer trägt ein Haus? — Wer trägt ein Haus? | "snail" |
-| `friends-hedgehog/riddle-5` | Wer hat acht Beine? — Wer hat acht Beine? | "spider" |
-| `friends-hedgehog/riddle-6` | Wer hat bunte Flügel? — Wer hat bunte Flügel? | "butterfly" |
-| `friends-hedgehog/riddle-7` | Wer hat viele Beine? — Wer hat viele Beine? | "caterpillar" |
 | `friends-hedgehog/riddle-8` | Wer hat schwarze Punkte? — Wer hat schwarze Punkte? | "ladybird" |
-| `friends-hedgehog/riddle-9` | Wer hat lange Ohren? — Wer hat lange Ohren? | "hare-sit" |
-| `friends-hedgehog/riddle-10` | Wer hält eine Eichel? — Wer hält eine Eichel? | "squirrel-nut" |
-| `friends-hedgehog/riddle-11` | Wer hat Streifen im Gesicht? — Wer hat Streifen im Gesicht? | "badger-walk" |
-| `friends-hedgehog/riddle-12` | Wer hat einen breiten Schwanz? — Wer hat einen breiten Schwanz? | "beaver" |
-| `friends-hedgehog/riddle-13` | Wer ist grün? — Wer ist grün? | "frog-sit" |
-| `friends-hedgehog/riddle-14` | Wer hat Fühler? — Wer hat Fühler? | "ant" |
-| `friends-hedgehog/riddle-15` | Wer hat einen dünnen Schwanz? — Wer hat einen dünnen Schwanz? | "mouse-sit" |
-| `friends-hedgehog/riddle-16` | Wer hat eine weisse Schwanzspitze? — Wer hat eine weisse Schwanzspitze? | "forest-fox" |
-| `friends-hedgehog/riddle-17` | Wer hat ein Geweih? — Wer hat ein Geweih? | "roe-stand" |
 | `friends-hedgehog/riddle-18` | Wessen Kopf ist oben rot? — Wessen Kopf ist oben rot? | "forest-woodpecker" |
 | `friends-hedgehog/riddle-19` | Wer hängt am Ast? — Wer hängt am Ast? | "forest-bat" |
 | `friends-hedgehog/riddle-20` | Wer hat grosse Augen? — Wer hat grosse Augen? | "forest-owl" |
 | `friends-hedgehog/riddle-21` | Wer hat eine rote Brust? — Wer hat eine rote Brust? | "forest-robin" |
-| `friends-hedgehog/riddle-22` | Wer hat Flecken im Fell? — Wer hat Flecken im Fell? | "forest-lynx" |
 | `friends-hedgehog/riddle-23` | Wer hat einen hellen Hals? — Wer hat einen hellen Hals? | "forest-marten" |
-| `friends-hedgehog/riddle-24` | Wer hat keine Beine? — Wer hat keine Beine? | "vocab-worm" |
-| `friends-hedgehog/nature-question-2` | Wer quakt am Teich? — Wer quakt am Teich? | "frog" |
 | `friends-hedgehog/nature-question-3` | Wer macht Honig aus Nektar? — Wer macht Honig aus Nektar? | "bee" |
-| `friends-hedgehog/nature-question-4` | Wer bellt? — Wer bellt? | "dog-run" |
-| `friends-hedgehog/nature-question-5` | Wer miaut? — Wer miaut? | "cat" |
 | `friends-hedgehog/nature-question-6` | Wer gibt uns Milch? — Wer gibt uns Milch? | "cow" |
 | `friends-hedgehog/nature-question-7` | Wer baut ein Netz? — Wer baut ein Netz? | "spider" |
 | `friends-hedgehog/nature-question-9` | Wen schützt ein Panzer? — Wen schützt ein Panzer? | "tortoise" |
 | `friends-hedgehog/nature-question-11` | Wer entsteht aus einer Raupe? — Wer entsteht aus einer Raupe? | "butterfly" |
-| `friends-hedgehog/nature-question-12` | Wer baut ein Nest im Baum? — Wer baut ein Nest im Baum? | "bird" |
 | `friends-hedgehog/nature-question-14` | Wer hat weiche Wolle? — Wer hat weiche Wolle? | "sheep" |
-| `friends-hedgehog/nature-question-15` | Wer hat einen buschigen Schwanz? — Wer hat einen buschigen Schwanz? | "squirrel" |
 | `friends-hedgehog/nature-question-16` | Wer klettert auf steile Felsen? — Wer klettert auf steile Felsen? | "alpine-ibex" |
 | `friends-hedgehog/nature-question-17` | Wer pfeift in den Bergen? — Wer pfeift in den Bergen? | "alpine-marmot" |
 | `friends-hedgehog/nature-question-18` | Wer wühlt mit der Schnauze im Waldboden? — Wer wühlt mit der Schnauze im Waldboden? | "wild-boar" |
@@ -120,135 +86,59 @@
 | `friends-hedgehog/nature-question-21` | Wer hat durchsichtige Flügel? — Wer hat durchsichtige Flügel? | "dragonfly" |
 | `friends-hedgehog/nature-question-22` | Welcher Vogel hat lange rote Beine? — Welcher Vogel hat lange rote Beine? | "stork" |
 | `friends-hedgehog/nature-question-24` | Wer baut einen Damm aus Ästen? — Wer baut einen Damm aus Ästen? | "beaver" |
-| `friends-owl/sentence-0` | Die Maus sitzt. — Die Maus sitzt. | "mouse-sit" |
-| `friends-owl/sentence-1` | Die Maus rennt. — Die Maus rennt. | "mouse-run" |
 | `friends-owl/sentence-2` | Der Vogel fliegt. — Der Vogel fliegt. | "bird-fly" |
-| `friends-owl/sentence-3` | Der Vogel sitzt. — Der Vogel sitzt. | "bird-sit" |
 | `friends-owl/sentence-4` | Die Maus schläft. — Die Maus schläft. | "mouse-sleep" |
-| `friends-owl/sentence-5` | Der Hase rennt. — Der Hase rennt. | "hare-run" |
 | `friends-owl/sentence-6` | Der Hase sitzt. — Der Hase sitzt. | "hare-sit" |
-| `friends-owl/sentence-7` | Der Fuchs schläft. — Der Fuchs schläft. | "fox-sleep" |
 | `friends-owl/sentence-8` | Der Fuchs rennt. — Der Fuchs rennt. | "fox-run" |
 | `friends-owl/sentence-9` | Die Katze schläft. — Die Katze schläft. | "cat-sleep" |
-| `friends-owl/sentence-10` | Die Katze sitzt. — Die Katze sitzt. | "cat-sit" |
 | `friends-owl/sentence-11` | Der Hund rennt. — Der Hund rennt. | "dog-run" |
-| `friends-owl/sentence-12` | Der Hund schläft. — Der Hund schläft. | "dog-sleep" |
 | `friends-owl/sentence-13` | Die Ente schwimmt. — Die Ente schwimmt. | "duck-swim" |
-| `friends-owl/sentence-14` | Die Ente fliegt. — Die Ente fliegt. | "duck-fly" |
-| `friends-owl/pair-0` | Das Eichhörnchen sitzt. — Das Eichhörnchen sitzt. | "squirrel-sit" |
 | `friends-owl/pair-1` | Das Eichhörnchen rennt. — Das Eichhörnchen rennt. | "squirrel-run" |
 | `friends-owl/pair-2` | Der Igel läuft. — Der Igel läuft. | "hedgehog-walk" |
-| `friends-owl/pair-3` | Der Igel schläft. — Der Igel schläft. | "hedgehog-sleep" |
-| `friends-owl/pair-4` | Der Dachs läuft. — Der Dachs läuft. | "badger-walk" |
 | `friends-owl/pair-5` | Der Dachs schläft. — Der Dachs schläft. | "badger-sleep" |
 | `friends-owl/pair-6` | Das Reh steht. — Das Reh steht. | "roe-stand" |
-| `friends-owl/pair-7` | Das Reh rennt. — Das Reh rennt. | "roe-run" |
-| `friends-owl/pair-8` | Der Frosch sitzt. — Der Frosch sitzt. | "frog-sit" |
 | `friends-owl/pair-9` | Der Frosch springt. — Der Frosch springt. | "frog-jump" |
-| `friends-mouse/word-0` | Maus — Maus | "mouse" |
 | `friends-mouse/word-1` | Haus — Haus | "vocab-house" |
 | `friends-mouse/word-2` | Hut — Hut | "hat" |
 | `friends-mouse/word-3` | Rose — Rose | "rose" |
 | `friends-mouse/word-4` | Nase — Nase | "nose" |
-| `friends-mouse/word-5` | Fisch — Fisch | "fish" |
 | `friends-mouse/word-6` | Tisch — Tisch | "vocab-table" |
 | `friends-mouse/word-7` | Ball — Ball | "ball" |
-| `friends-mouse/word-8` | Baum — Baum | "tree" |
 | `friends-mouse/word-9` | Boot — Boot | "boat" |
-| `friends-mouse/word-10` | Kuh — Kuh | "cow" |
 | `friends-mouse/word-11` | Schuh — Schuh | "vocab-shoe" |
 | `friends-mouse/word-12` | Bein — Bein | "vocab-leg" |
 | `friends-mouse/word-13` | Stein — Stein | "vocab-stone" |
 | `friends-mouse/word-14` | Buch — Buch | "book" |
-| `friends-mouse/word-15` | Hase — Hase | "hare" |
 | `friends-mouse/word-16` | Dose — Dose | "tin" |
 | `friends-mouse/word-17` | Nuss — Nuss | "walnut" |
 | `friends-mouse/word-18` | Hose — Hose | "trousers" |
 | `friends-mouse/word-19` | Bus — Bus | "bus" |
 | `friends-mouse/word-20` | Stern — Stern | "star" |
 | `friends-mouse/word-21` | Turm — Turm | "vocab-tower" |
-| `friends-mouse/word-22` | Wurm — Wurm | "vocab-worm" |
 | `friends-mouse/word-23` | Tuch — Tuch | "vocab-cloth" |
 | `friends-mouse/word-24` | Topf — Topf | "vocab-pot" |
-| `friends-mouse/friends-frog-animal-0` | Frosch — Frosch | "frog" |
-| `friends-mouse/friends-frog-animal-1` | Igel — Igel | "hedgehog" |
-| `friends-mouse/friends-frog-animal-2` | Biene — Biene | "bee" |
-| `friends-mouse/friends-frog-animal-3` | Schnecke — Schnecke | "snail" |
-| `friends-mouse/friends-frog-animal-4` | Hund — Hund | "dog" |
-| `friends-mouse/friends-frog-animal-5` | Katze — Katze | "cat" |
-| `friends-mouse/friends-frog-animal-6` | Spinne — Spinne | "spider" |
-| `friends-mouse/friends-frog-animal-7` | Raupe — Raupe | "caterpillar" |
 | `friends-mouse/friends-frog-animal-8` | Bär — Bär | "bear" |
-| `friends-mouse/friends-frog-animal-9` | Schaf — Schaf | "sheep" |
 | `friends-mouse/friends-frog-animal-10` | Schwein — Schwein | "pig" |
-| `friends-mouse/friends-frog-animal-11` | Fuchs — Fuchs | "forest-fox" |
-| `friends-mouse/friends-frog-animal-12` | Ente — Ente | "duck-swim" |
 | `friends-mouse/friends-frog-animal-13` | Ameise — Ameise | "ant" |
-| `friends-mouse/friends-frog-animal-14` | Käfer — Käfer | "ladybird" |
-| `friends-mouse/friends-frog-animal-15` | Schildkröte — Schildkröte | "tortoise" |
-| `friends-mouse/friends-frog-animal-16` | Eichhörnchen — Eichhörnchen | "squirrel-sit" |
-| `friends-mouse/friends-frog-animal-17` | Steinbock — Steinbock | "alpine-ibex" |
-| `friends-mouse/friends-frog-animal-18` | Murmeltier — Murmeltier | "alpine-marmot" |
-| `friends-mouse/friends-frog-animal-19` | Storch — Storch | "stork" |
-| `friends-mouse/friends-frog-animal-20` | Reiher — Reiher | "heron" |
-| `friends-mouse/friends-frog-animal-21` | Wildschwein — Wildschwein | "wild-boar" |
 | `friends-mouse/friends-frog-animal-22` | Maulwurf — Maulwurf | "mole" |
-| `friends-mouse/friends-frog-animal-23` | Libelle — Libelle | "dragonfly" |
-| `friends-mouse/friends-frog-animal-24` | Dachs — Dachs | "badger" |
-| `friends-mouse/read-word-word-1` | Biber — Biber | "beaver" |
 | `friends-mouse/read-word-word-3` | Feder — Feder | "forest-feather" |
 | `friends-mouse/read-word-word-5` | Lupe — Lupe | "magnifier" |
-| `friends-mouse/read-word-word-6` | Blume — Blume | "forest-flower" |
-| `friends-mouse/read-word-word-7` | Tanne — Tanne | "forest-fir" |
-| `friends-mouse/read-word-word-8` | Apfel — Apfel | "forest-apple" |
 | `friends-mouse/read-word-word-10` | Beere — Beere | "forest-berry" |
-| `friends-mouse/read-word-word-14` | Pilz — Pilz | "forest-mushroom" |
-| `friends-mouse/read-word-word-17` | Nest — Nest | "nest" |
-| `friends-mouse/read-word-word-18` | Blatt — Blatt | "forest-leaf" |
-| `friends-mouse/read-word-word-19` | Sonne — Sonne | "sun" |
-| `friends-mouse/read-word-word-20` | Schmetterling — Schmetterling | "butterfly" |
 | `friends-mouse/read-word-word-22` | Banane — Banane | "banana" |
 | `friends-mouse/read-word-word-23` | Tomate — Tomate | "tomato" |
 | `friends-mouse/read-word-word-24` | Kamera — Kamera | "camera" |
 | `friends-mouse/read-word-word-25` | Nadel — Nadel | "needle" |
 | `friends-mouse/read-word-word-26` | Gabel — Gabel | "fork" |
 | `friends-mouse/read-word-word-27` | Glocke — Glocke | "bell" |
-| `friends-mouse/read-word-word-28` | Karotte — Karotte | "carrot" |
 | `friends-mouse/read-word-word-29` | Wolke — Wolke | "cloud" |
 | `friends-mouse/read-word-word-30` | Schaufel — Schaufel | "spade" |
 | `friends-mouse/read-word-word-31` | Kuchen — Kuchen | "cake" |
-| `friends-mouse/read-word-word-32` | Regen — Regen | "rain" |
-| `friends-mouse/read-word-word-33` | Vogel — Vogel | "bird-sit" |
 | `colour-words/rot-gelb-blau` | Farbe rot zwischen gelb und blau — Die Blume ist rot. | "rot" |
-| `colour-words/rot-blau-rosa` | Farbe rot zwischen blau und rosa — Die Blume ist rot. | "rot" |
-| `colour-words/rot-rosa-weiss` | Farbe rot zwischen rosa und weiss — Die Blume ist rot. | "rot" |
-| `colour-words/rot-weiss-lila` | Farbe rot zwischen weiss und lila — Die Blume ist rot. | "rot" |
-| `colour-words/rot-lila-gelb` | Farbe rot zwischen lila und gelb — Die Blume ist rot. | "rot" |
 | `colour-words/gelb-rot-blau` | Farbe gelb zwischen rot und blau — Die Blume ist gelb. | "gelb" |
-| `colour-words/gelb-blau-rosa` | Farbe gelb zwischen blau und rosa — Die Blume ist gelb. | "gelb" |
-| `colour-words/gelb-rosa-weiss` | Farbe gelb zwischen rosa und weiss — Die Blume ist gelb. | "gelb" |
-| `colour-words/gelb-weiss-lila` | Farbe gelb zwischen weiss und lila — Die Blume ist gelb. | "gelb" |
-| `colour-words/gelb-lila-rot` | Farbe gelb zwischen lila und rot — Die Blume ist gelb. | "gelb" |
 | `colour-words/blau-rot-gelb` | Farbe blau zwischen rot und gelb — Die Blume ist blau. | "blau" |
-| `colour-words/blau-gelb-rosa` | Farbe blau zwischen gelb und rosa — Die Blume ist blau. | "blau" |
-| `colour-words/blau-rosa-weiss` | Farbe blau zwischen rosa und weiss — Die Blume ist blau. | "blau" |
-| `colour-words/blau-weiss-lila` | Farbe blau zwischen weiss und lila — Die Blume ist blau. | "blau" |
-| `colour-words/blau-lila-rot` | Farbe blau zwischen lila und rot — Die Blume ist blau. | "blau" |
 | `colour-words/rosa-rot-gelb` | Farbe rosa zwischen rot und gelb — Die Blume ist rosa. | "rosa" |
-| `colour-words/rosa-gelb-blau` | Farbe rosa zwischen gelb und blau — Die Blume ist rosa. | "rosa" |
-| `colour-words/rosa-blau-weiss` | Farbe rosa zwischen blau und weiss — Die Blume ist rosa. | "rosa" |
-| `colour-words/rosa-weiss-lila` | Farbe rosa zwischen weiss und lila — Die Blume ist rosa. | "rosa" |
-| `colour-words/rosa-lila-rot` | Farbe rosa zwischen lila und rot — Die Blume ist rosa. | "rosa" |
 | `colour-words/weiss-rot-gelb` | Farbe weiss zwischen rot und gelb — Die Blume ist weiss. | "weiss" |
-| `colour-words/weiss-gelb-blau` | Farbe weiss zwischen gelb und blau — Die Blume ist weiss. | "weiss" |
-| `colour-words/weiss-blau-rosa` | Farbe weiss zwischen blau und rosa — Die Blume ist weiss. | "weiss" |
-| `colour-words/weiss-rosa-lila` | Farbe weiss zwischen rosa und lila — Die Blume ist weiss. | "weiss" |
-| `colour-words/weiss-lila-rot` | Farbe weiss zwischen lila und rot — Die Blume ist weiss. | "weiss" |
 | `colour-words/lila-rot-gelb` | Farbe lila zwischen rot und gelb — Die Blume ist lila. | "lila" |
-| `colour-words/lila-gelb-blau` | Farbe lila zwischen gelb und blau — Die Blume ist lila. | "lila" |
-| `colour-words/lila-blau-rosa` | Farbe lila zwischen blau und rosa — Die Blume ist lila. | "lila" |
-| `colour-words/lila-rosa-weiss` | Farbe lila zwischen rosa und weiss — Die Blume ist lila. | "lila" |
-| `colour-words/lila-weiss-rot` | Farbe lila zwischen weiss und rot — Die Blume ist lila. | "lila" |
 
 ## Exact definitions
 
@@ -272,21 +162,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-badger/riddle-1",
-    "label": "Was wird aus einer Kaulquappe?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was wird aus einer Kaulquappe?",
-      "answer": "frog-sit",
-      "choices": [
-        "frog-sit",
-        "fish-swim",
-        "bird"
-      ]
-    }
-  },
-  {
     "id": "friends-badger/riddle-2",
     "label": "Was wächst aus der Bohne?",
     "question": {
@@ -296,8 +171,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "seedling",
       "choices": [
         "seedling",
-        "chick",
-        "snowman"
+        "forest-mushroom",
+        "strawberry"
       ]
     }
   },
@@ -326,8 +201,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "chick",
       "choices": [
         "chick",
-        "fish",
-        "bee"
+        "hare-sit",
+        "mouse-sit"
       ]
     }
   },
@@ -341,8 +216,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "leaf",
       "choices": [
         "leaf",
-        "egg",
-        "moon"
+        "snowflake",
+        "rain"
       ]
     }
   },
@@ -357,7 +232,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "water",
         "honey",
-        "cheese"
+        "chocolate"
       ]
     }
   },
@@ -371,8 +246,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "icicle",
       "choices": [
         "icicle",
-        "apple",
-        "flower"
+        "snowman",
+        "snowflake"
       ]
     }
   },
@@ -387,7 +262,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "cocoon",
         "nest",
-        "bucket"
+        "flower"
       ]
     }
   },
@@ -401,8 +276,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "butterfly-eggs",
       "choices": [
         "butterfly-eggs",
-        "snowman",
-        "fish"
+        "forest-berry",
+        "forest-feather"
       ]
     }
   },
@@ -416,8 +291,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "sunset",
       "choices": [
         "sunset",
-        "chick",
-        "bucket"
+        "rain",
+        "snowflake"
       ]
     }
   },
@@ -431,8 +306,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "snowflake",
       "choices": [
         "snowflake",
-        "sunflower",
-        "butterfly"
+        "leaf",
+        "sun"
       ]
     }
   },
@@ -446,8 +321,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "vocab-worm",
       "choices": [
         "vocab-worm",
-        "bird",
-        "fish"
+        "snail",
+        "caterpillar"
       ]
     }
   },
@@ -491,8 +366,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-nut",
       "choices": [
         "forest-nut",
-        "banana",
-        "fish"
+        "apple",
+        "pear"
       ]
     }
   },
@@ -507,7 +382,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "sun",
         "moon",
-        "cheese"
+        "vocab-stone"
       ]
     }
   },
@@ -521,8 +396,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "apple",
       "choices": [
         "apple",
-        "egg",
-        "snowman"
+        "pear",
+        "strawberry"
       ]
     }
   },
@@ -542,21 +417,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-badger/riddle-19",
-    "label": "Was sammelt das Eichhörnchen im Herbst?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was sammelt das Eichhörnchen im Herbst?",
-      "answer": "forest-nut",
-      "choices": [
-        "forest-nut",
-        "egg",
-        "snowman"
-      ]
-    }
-  },
-  {
     "id": "friends-badger/riddle-20",
     "label": "Was sehen wir bei klarem Himmel in der Nacht?",
     "question": {
@@ -567,7 +427,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "moon",
         "sun",
-        "sunflower"
+        "cloud"
       ]
     }
   },
@@ -582,7 +442,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "strawberry",
         "carrot",
-        "egg"
+        "banana"
       ]
     }
   },
@@ -596,8 +456,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "watering-can",
       "choices": [
         "watering-can",
-        "fork",
-        "hat"
+        "spade",
+        "fork"
       ]
     }
   },
@@ -611,8 +471,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "tree",
       "choices": [
         "tree",
-        "cloud",
-        "snowman"
+        "sunflower",
+        "forest-mushroom"
       ]
     }
   },
@@ -626,8 +486,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "pear",
       "choices": [
         "pear",
-        "fish",
-        "egg"
+        "apple",
+        "banana"
       ]
     }
   },
@@ -657,7 +517,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "nest",
         "habitat-pond",
-        "carrot"
+        "ant-hill"
       ]
     }
   },
@@ -671,8 +531,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "carrot",
       "choices": [
         "carrot",
-        "fish",
-        "egg"
+        "forest-nut",
+        "vocab-worm"
       ]
     }
   },
@@ -686,38 +546,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "egg",
       "choices": [
         "egg",
-        "apple",
-        "flower"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-4",
-    "label": "Was frisst das Eichhörnchen?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was frisst das Eichhörnchen?",
-      "answer": "forest-nut",
-      "choices": [
         "forest-nut",
-        "fish",
-        "egg"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-5",
-    "label": "Wo klettert das Eichhörnchen?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wo klettert das Eichhörnchen?",
-      "answer": "tree",
-      "choices": [
-        "tree",
-        "habitat-pond",
-        "egg"
+        "vocab-stone"
       ]
     }
   },
@@ -731,53 +561,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "flower",
       "choices": [
         "flower",
-        "fish",
-        "nest"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-7",
-    "label": "Was wächst am Baum?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was wächst am Baum?",
-      "answer": "apple",
-      "choices": [
-        "apple",
-        "carrot",
-        "egg"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-8",
-    "label": "Wer lebt im Wasser?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer lebt im Wasser?",
-      "answer": "fish",
-      "choices": [
-        "fish",
-        "cow",
-        "bee"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-9",
-    "label": "Wer wohnt im Nest?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer wohnt im Nest?",
-      "answer": "bird",
-      "choices": [
-        "bird",
-        "pig",
-        "snail"
+        "forest-mushroom",
+        "leaf"
       ]
     }
   },
@@ -791,8 +576,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "caterpillar",
       "choices": [
         "caterpillar",
-        "fish",
-        "spider"
+        "spider",
+        "forest-owl"
       ]
     }
   },
@@ -821,8 +606,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-mushroom",
       "choices": [
         "forest-mushroom",
-        "fish",
-        "egg"
+        "apple",
+        "pear"
       ]
     }
   },
@@ -857,21 +642,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-deer/riddle-15",
-    "label": "Wer frisst Gras?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer frisst Gras?",
-      "answer": "cow",
-      "choices": [
-        "cow",
-        "spider",
-        "fish"
-      ]
-    }
-  },
-  {
     "id": "friends-deer/riddle-16",
     "label": "Wo wohnt der Fuchs?",
     "question": {
@@ -883,51 +653,6 @@ These definitions are the same finite data used by the game and review previews.
         "fox-den-entrance",
         "nest",
         "habitat-pond"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-17",
-    "label": "Was knabbert der Biber ab?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was knabbert der Biber ab?",
-      "answer": "tree",
-      "choices": [
-        "tree",
-        "fish",
-        "egg"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-18",
-    "label": "Was pickt der Vogel aus der Erde?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was pickt der Vogel aus der Erde?",
-      "answer": "vocab-worm",
-      "choices": [
-        "vocab-worm",
-        "boat",
-        "moon"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-19",
-    "label": "Was frisst die Schnecke?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Was frisst die Schnecke?",
-      "answer": "leaf",
-      "choices": [
-        "leaf",
-        "fish",
-        "egg"
       ]
     }
   },
@@ -956,23 +681,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "red-clover",
       "choices": [
         "red-clover",
-        "fish",
-        "cheese"
-      ]
-    }
-  },
-  {
-    "id": "friends-deer/riddle-22",
-    "label": "Wo kann der Frosch schwimmen?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wo kann der Frosch schwimmen?",
-      "answer": "habitat-pond",
-      "choices": [
-        "habitat-pond",
-        "cloud",
-        "tree"
+        "vocab-worm",
+        "honey"
       ]
     }
   },
@@ -986,8 +696,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "dandelion-flower",
       "choices": [
         "dandelion-flower",
-        "moon",
-        "nest"
+        "vocab-stone",
+        "forest-feather"
       ]
     }
   },
@@ -1001,38 +711,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "rowan-sprig",
       "choices": [
         "rowan-sprig",
-        "cheese",
-        "fish"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-0",
-    "label": "Wer hat Stacheln?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat Stacheln?",
-      "answer": "hedgehog",
-      "choices": [
-        "hedgehog",
-        "mouse-sit",
-        "fish-swim"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-1",
-    "label": "Wer hat einen blauen Kopf?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat einen blauen Kopf?",
-      "answer": "bird-sit",
-      "choices": [
-        "bird-sit",
-        "forest-robin",
-        "hare-sit"
+        "leaf",
+        "forest-mushroom"
       ]
     }
   },
@@ -1046,22 +726,7 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "fish-swim",
       "choices": [
         "fish-swim",
-        "snail",
-        "hedgehog"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-3",
-    "label": "Wer ist gelb und schwarz?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer ist gelb und schwarz?",
-      "answer": "bee",
-      "choices": [
-        "bee",
-        "mouse-sit",
+        "duck-swim",
         "frog-sit"
       ]
     }
@@ -1077,52 +742,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "snail",
         "caterpillar",
-        "forest-owl"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-5",
-    "label": "Wer hat acht Beine?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat acht Beine?",
-      "answer": "spider",
-      "choices": [
-        "spider",
-        "bird-sit",
-        "mouse-sit"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-6",
-    "label": "Wer hat bunte Flügel?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat bunte Flügel?",
-      "answer": "butterfly",
-      "choices": [
-        "butterfly",
-        "vocab-worm",
-        "badger-walk"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-7",
-    "label": "Wer hat viele Beine?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat viele Beine?",
-      "answer": "caterpillar",
-      "choices": [
-        "caterpillar",
-        "snail",
-        "fish-swim"
+        "ladybird"
       ]
     }
   },
@@ -1137,142 +757,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "ladybird",
         "bee",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-9",
-    "label": "Wer hat lange Ohren?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat lange Ohren?",
-      "answer": "hare-sit",
-      "choices": [
-        "hare-sit",
-        "hedgehog",
-        "bee"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-10",
-    "label": "Wer hält eine Eichel?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hält eine Eichel?",
-      "answer": "squirrel-nut",
-      "choices": [
-        "squirrel-nut",
-        "frog-sit",
-        "fish-swim"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-11",
-    "label": "Wer hat Streifen im Gesicht?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat Streifen im Gesicht?",
-      "answer": "badger-walk",
-      "choices": [
-        "badger-walk",
-        "forest-fox",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-12",
-    "label": "Wer hat einen breiten Schwanz?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat einen breiten Schwanz?",
-      "answer": "beaver",
-      "choices": [
-        "beaver",
-        "hare-sit",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-13",
-    "label": "Wer ist grün?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer ist grün?",
-      "answer": "frog-sit",
-      "choices": [
-        "frog-sit",
-        "mouse-sit",
-        "badger-walk"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-14",
-    "label": "Wer hat Fühler?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat Fühler?",
-      "answer": "ant",
-      "choices": [
-        "ant",
-        "spider",
-        "hare-sit"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-15",
-    "label": "Wer hat einen dünnen Schwanz?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat einen dünnen Schwanz?",
-      "answer": "mouse-sit",
-      "choices": [
-        "mouse-sit",
-        "squirrel-sit",
-        "forest-owl"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-16",
-    "label": "Wer hat eine weisse Schwanzspitze?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat eine weisse Schwanzspitze?",
-      "answer": "forest-fox",
-      "choices": [
-        "forest-fox",
-        "mouse-sit",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-17",
-    "label": "Wer hat ein Geweih?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat ein Geweih?",
-      "answer": "roe-stand",
-      "choices": [
-        "roe-stand",
-        "hare-sit",
-        "fish-swim"
+        "ant"
       ]
     }
   },
@@ -1286,8 +771,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-woodpecker",
       "choices": [
         "forest-woodpecker",
-        "frog-sit",
-        "mouse-sit"
+        "forest-robin",
+        "bird-sit"
       ]
     }
   },
@@ -1301,8 +786,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-bat",
       "choices": [
         "forest-bat",
-        "squirrel-sit",
-        "frog-sit"
+        "forest-owl",
+        "squirrel-sit"
       ]
     }
   },
@@ -1316,8 +801,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-owl",
       "choices": [
         "forest-owl",
-        "vocab-worm",
-        "ant"
+        "forest-robin",
+        "forest-woodpecker"
       ]
     }
   },
@@ -1332,22 +817,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "forest-robin",
         "bird-sit",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-22",
-    "label": "Wer hat Flecken im Fell?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat Flecken im Fell?",
-      "answer": "forest-lynx",
-      "choices": [
-        "forest-lynx",
-        "forest-fox",
-        "bird-sit"
+        "forest-owl"
       ]
     }
   },
@@ -1361,38 +831,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "forest-marten",
       "choices": [
         "forest-marten",
-        "vocab-worm",
-        "fish-swim"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/riddle-24",
-    "label": "Wer hat keine Beine?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat keine Beine?",
-      "answer": "vocab-worm",
-      "choices": [
-        "vocab-worm",
-        "ant",
-        "hare-sit"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/nature-question-2",
-    "label": "Wer quakt am Teich?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer quakt am Teich?",
-      "answer": "frog",
-      "choices": [
-        "frog",
-        "cat",
-        "dog"
+        "badger-walk",
+        "mole"
       ]
     }
   },
@@ -1406,38 +846,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "bee",
       "choices": [
         "bee",
-        "cow",
-        "fish"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/nature-question-4",
-    "label": "Wer bellt?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer bellt?",
-      "answer": "dog-run",
-      "choices": [
-        "dog-run",
-        "frog",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/nature-question-5",
-    "label": "Wer miaut?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer miaut?",
-      "answer": "cat",
-      "choices": [
-        "cat",
-        "fish",
-        "pig"
+        "butterfly",
+        "ladybird"
       ]
     }
   },
@@ -1451,8 +861,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "cow",
       "choices": [
         "cow",
-        "bee",
-        "ant"
+        "pig",
+        "dog"
       ]
     }
   },
@@ -1466,8 +876,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "spider",
       "choices": [
         "spider",
-        "bird",
-        "cow"
+        "ant",
+        "ladybird"
       ]
     }
   },
@@ -1481,8 +891,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "tortoise",
       "choices": [
         "tortoise",
-        "rabbit",
-        "bee"
+        "hedgehog",
+        "frog-sit"
       ]
     }
   },
@@ -1496,23 +906,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "butterfly",
       "choices": [
         "butterfly",
-        "pig",
-        "fish"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/nature-question-12",
-    "label": "Wer baut ein Nest im Baum?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer baut ein Nest im Baum?",
-      "answer": "bird",
-      "choices": [
-        "bird",
-        "cow",
-        "pig"
+        "bee",
+        "dragonfly"
       ]
     }
   },
@@ -1526,23 +921,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "sheep",
       "choices": [
         "sheep",
-        "fish",
-        "bee"
-      ]
-    }
-  },
-  {
-    "id": "friends-hedgehog/nature-question-15",
-    "label": "Wer hat einen buschigen Schwanz?",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zur Frage?",
-      "text": "Wer hat einen buschigen Schwanz?",
-      "answer": "squirrel",
-      "choices": [
-        "squirrel",
-        "spider",
-        "cow"
+        "cow",
+        "pig"
       ]
     }
   },
@@ -1556,8 +936,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "alpine-ibex",
       "choices": [
         "alpine-ibex",
-        "snail",
-        "fish"
+        "cow",
+        "wild-boar"
       ]
     }
   },
@@ -1571,8 +951,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "alpine-marmot",
       "choices": [
         "alpine-marmot",
-        "sheep",
-        "fish"
+        "alpine-ibex",
+        "cow"
       ]
     }
   },
@@ -1586,8 +966,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "wild-boar",
       "choices": [
         "wild-boar",
-        "bird",
-        "fish"
+        "roe-stand",
+        "hare-sit"
       ]
     }
   },
@@ -1616,8 +996,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "otter",
       "choices": [
         "otter",
-        "cow",
-        "sheep"
+        "beaver",
+        "frog-sit"
       ]
     }
   },
@@ -1631,8 +1011,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "dragonfly",
       "choices": [
         "dragonfly",
-        "snail",
-        "frog-sit"
+        "butterfly",
+        "ladybird"
       ]
     }
   },
@@ -1661,36 +1041,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "beaver",
       "choices": [
         "beaver",
-        "cat",
-        "bee"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/sentence-0",
-    "label": "Die Maus sitzt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Maus sitzt.",
-      "answer": "mouse-sit",
-      "choices": [
-        "mouse-sit",
-        "mouse-run"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/sentence-1",
-    "label": "Die Maus rennt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Maus rennt.",
-      "answer": "mouse-run",
-      "choices": [
-        "mouse-run",
-        "mouse-sit"
+        "otter",
+        "alpine-marmot"
       ]
     }
   },
@@ -1709,20 +1061,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-owl/sentence-3",
-    "label": "Der Vogel sitzt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Vogel sitzt.",
-      "answer": "bird-sit",
-      "choices": [
-        "bird-sit",
-        "bird-fly"
-      ]
-    }
-  },
-  {
     "id": "friends-owl/sentence-4",
     "label": "Die Maus schläft.",
     "question": {
@@ -1737,20 +1075,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-owl/sentence-5",
-    "label": "Der Hase rennt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Hase rennt.",
-      "answer": "hare-run",
-      "choices": [
-        "hare-run",
-        "hare-sit"
-      ]
-    }
-  },
-  {
     "id": "friends-owl/sentence-6",
     "label": "Der Hase sitzt.",
     "question": {
@@ -1761,20 +1085,6 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "hare-sit",
         "hare-run"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/sentence-7",
-    "label": "Der Fuchs schläft.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Fuchs schläft.",
-      "answer": "fox-sleep",
-      "choices": [
-        "fox-sleep",
-        "fox-run"
       ]
     }
   },
@@ -1807,20 +1117,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-owl/sentence-10",
-    "label": "Die Katze sitzt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Katze sitzt.",
-      "answer": "cat-sit",
-      "choices": [
-        "cat-sit",
-        "cat-sleep"
-      ]
-    }
-  },
-  {
     "id": "friends-owl/sentence-11",
     "label": "Der Hund rennt.",
     "question": {
@@ -1835,20 +1131,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-owl/sentence-12",
-    "label": "Der Hund schläft.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Hund schläft.",
-      "answer": "dog-sleep",
-      "choices": [
-        "dog-sleep",
-        "dog-run"
-      ]
-    }
-  },
-  {
     "id": "friends-owl/sentence-13",
     "label": "Die Ente schwimmt.",
     "question": {
@@ -1859,34 +1141,6 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "duck-swim",
         "duck-fly"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/sentence-14",
-    "label": "Die Ente fliegt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Ente fliegt.",
-      "answer": "duck-fly",
-      "choices": [
-        "duck-fly",
-        "duck-swim"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/pair-0",
-    "label": "Das Eichhörnchen sitzt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Das Eichhörnchen sitzt.",
-      "answer": "squirrel-sit",
-      "choices": [
-        "squirrel-sit",
-        "squirrel-run"
       ]
     }
   },
@@ -1919,34 +1173,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-owl/pair-3",
-    "label": "Der Igel schläft.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Igel schläft.",
-      "answer": "hedgehog-sleep",
-      "choices": [
-        "hedgehog-sleep",
-        "hedgehog-walk"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/pair-4",
-    "label": "Der Dachs läuft.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Dachs läuft.",
-      "answer": "badger-walk",
-      "choices": [
-        "badger-walk",
-        "badger-sleep"
-      ]
-    }
-  },
-  {
     "id": "friends-owl/pair-5",
     "label": "Der Dachs schläft.",
     "question": {
@@ -1975,34 +1201,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-owl/pair-7",
-    "label": "Das Reh rennt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Das Reh rennt.",
-      "answer": "roe-run",
-      "choices": [
-        "roe-run",
-        "roe-stand"
-      ]
-    }
-  },
-  {
-    "id": "friends-owl/pair-8",
-    "label": "Der Frosch sitzt.",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Der Frosch sitzt.",
-      "answer": "frog-sit",
-      "choices": [
-        "frog-sit",
-        "frog-jump"
-      ]
-    }
-  },
-  {
     "id": "friends-owl/pair-9",
     "label": "Der Frosch springt.",
     "question": {
@@ -2013,21 +1211,6 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "frog-jump",
         "frog-sit"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/word-0",
-    "label": "Maus",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Maus",
-      "answer": "mouse",
-      "choices": [
-        "mouse",
-        "rose",
-        "ball"
       ]
     }
   },
@@ -2092,21 +1275,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/word-5",
-    "label": "Fisch",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Fisch",
-      "answer": "fish",
-      "choices": [
-        "fish",
-        "tree",
-        "vocab-leg"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/word-6",
     "label": "Tisch",
     "question": {
@@ -2137,21 +1305,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/word-8",
-    "label": "Baum",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Baum",
-      "answer": "tree",
-      "choices": [
-        "tree",
-        "vocab-shoe",
-        "hare"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/word-9",
     "label": "Boot",
     "question": {
@@ -2163,21 +1316,6 @@ These definitions are the same finite data used by the game and review previews.
         "boat",
         "vocab-leg",
         "tin"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/word-10",
-    "label": "Kuh",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Kuh",
-      "answer": "cow",
-      "choices": [
-        "cow",
-        "vocab-stone",
-        "walnut"
       ]
     }
   },
@@ -2238,21 +1376,6 @@ These definitions are the same finite data used by the game and review previews.
         "book",
         "walnut",
         "vocab-tower"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/word-15",
-    "label": "Hase",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Hase",
-      "answer": "hare",
-      "choices": [
-        "hare",
-        "trousers",
-        "vocab-worm"
       ]
     }
   },
@@ -2347,21 +1470,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/word-22",
-    "label": "Wurm",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Wurm",
-      "answer": "vocab-worm",
-      "choices": [
-        "vocab-worm",
-        "mouse",
-        "nose"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/word-23",
     "label": "Tuch",
     "question": {
@@ -2392,126 +1500,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/friends-frog-animal-0",
-    "label": "Frosch",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Frosch",
-      "answer": "frog",
-      "choices": [
-        "frog",
-        "dog",
-        "sheep"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-1",
-    "label": "Igel",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Igel",
-      "answer": "hedgehog",
-      "choices": [
-        "hedgehog",
-        "cat",
-        "pig"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-2",
-    "label": "Biene",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Biene",
-      "answer": "bee",
-      "choices": [
-        "bee",
-        "spider",
-        "forest-fox"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-3",
-    "label": "Schnecke",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Schnecke",
-      "answer": "snail",
-      "choices": [
-        "snail",
-        "caterpillar",
-        "duck-swim"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-4",
-    "label": "Hund",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Hund",
-      "answer": "dog",
-      "choices": [
-        "dog",
-        "bear",
-        "ant"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-5",
-    "label": "Katze",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Katze",
-      "answer": "cat",
-      "choices": [
-        "cat",
-        "sheep",
-        "ladybird"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-6",
-    "label": "Spinne",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Spinne",
-      "answer": "spider",
-      "choices": [
-        "spider",
-        "pig",
-        "tortoise"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-7",
-    "label": "Raupe",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Raupe",
-      "answer": "caterpillar",
-      "choices": [
-        "caterpillar",
-        "forest-fox",
-        "squirrel-sit"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/friends-frog-animal-8",
     "label": "Bär",
     "question": {
@@ -2523,21 +1511,6 @@ These definitions are the same finite data used by the game and review previews.
         "bear",
         "duck-swim",
         "alpine-ibex"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-9",
-    "label": "Schaf",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Schaf",
-      "answer": "sheep",
-      "choices": [
-        "sheep",
-        "ant",
-        "alpine-marmot"
       ]
     }
   },
@@ -2557,36 +1530,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/friends-frog-animal-11",
-    "label": "Fuchs",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Fuchs",
-      "answer": "forest-fox",
-      "choices": [
-        "forest-fox",
-        "tortoise",
-        "heron"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-12",
-    "label": "Ente",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Ente",
-      "answer": "duck-swim",
-      "choices": [
-        "duck-swim",
-        "squirrel-sit",
-        "wild-boar"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/friends-frog-animal-13",
     "label": "Ameise",
     "question": {
@@ -2602,126 +1545,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/friends-frog-animal-14",
-    "label": "Käfer",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Käfer",
-      "answer": "ladybird",
-      "choices": [
-        "ladybird",
-        "alpine-marmot",
-        "dragonfly"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-15",
-    "label": "Schildkröte",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Schildkröte",
-      "answer": "tortoise",
-      "choices": [
-        "tortoise",
-        "stork",
-        "badger"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-16",
-    "label": "Eichhörnchen",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Eichhörnchen",
-      "answer": "squirrel-sit",
-      "choices": [
-        "squirrel-sit",
-        "heron",
-        "frog"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-17",
-    "label": "Steinbock",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Steinbock",
-      "answer": "alpine-ibex",
-      "choices": [
-        "alpine-ibex",
-        "wild-boar",
-        "hedgehog"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-18",
-    "label": "Murmeltier",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Murmeltier",
-      "answer": "alpine-marmot",
-      "choices": [
-        "alpine-marmot",
-        "mole",
-        "bee"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-19",
-    "label": "Storch",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Storch",
-      "answer": "stork",
-      "choices": [
-        "stork",
-        "dragonfly",
-        "snail"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-20",
-    "label": "Reiher",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Reiher",
-      "answer": "heron",
-      "choices": [
-        "heron",
-        "badger",
-        "dog"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-21",
-    "label": "Wildschwein",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Wildschwein",
-      "answer": "wild-boar",
-      "choices": [
-        "wild-boar",
-        "frog",
-        "cat"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/friends-frog-animal-22",
     "label": "Maulwurf",
     "question": {
@@ -2733,51 +1556,6 @@ These definitions are the same finite data used by the game and review previews.
         "mole",
         "hedgehog",
         "spider"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-23",
-    "label": "Libelle",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Libelle",
-      "answer": "dragonfly",
-      "choices": [
-        "dragonfly",
-        "bee",
-        "caterpillar"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/friends-frog-animal-24",
-    "label": "Dachs",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Dachs",
-      "answer": "badger",
-      "choices": [
-        "badger",
-        "snail",
-        "bear"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-1",
-    "label": "Biber",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Biber",
-      "answer": "beaver",
-      "choices": [
-        "beaver",
-        "magnifier",
-        "forest-berry"
       ]
     }
   },
@@ -2812,51 +1590,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/read-word-word-6",
-    "label": "Blume",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Blume",
-      "answer": "forest-flower",
-      "choices": [
-        "forest-flower",
-        "forest-berry",
-        "walnut"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-7",
-    "label": "Tanne",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Tanne",
-      "answer": "forest-fir",
-      "choices": [
-        "forest-fir",
-        "bee",
-        "fish-swim"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-8",
-    "label": "Apfel",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Apfel",
-      "answer": "forest-apple",
-      "choices": [
-        "forest-apple",
-        "mouse-sit",
-        "nest"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/read-word-word-10",
     "label": "Beere",
     "question": {
@@ -2868,81 +1601,6 @@ These definitions are the same finite data used by the game and review previews.
         "forest-berry",
         "forest-mushroom",
         "sun"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-14",
-    "label": "Pilz",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Pilz",
-      "answer": "forest-mushroom",
-      "choices": [
-        "forest-mushroom",
-        "forest-leaf",
-        "tomato"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-17",
-    "label": "Nest",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Nest",
-      "answer": "nest",
-      "choices": [
-        "nest",
-        "ant",
-        "fork"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-18",
-    "label": "Blatt",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Blatt",
-      "answer": "forest-leaf",
-      "choices": [
-        "forest-leaf",
-        "banana",
-        "bell"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-19",
-    "label": "Sonne",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Sonne",
-      "answer": "sun",
-      "choices": [
-        "sun",
-        "tomato",
-        "carrot"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-20",
-    "label": "Schmetterling",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Schmetterling",
-      "answer": "butterfly",
-      "choices": [
-        "butterfly",
-        "camera",
-        "cloud"
       ]
     }
   },
@@ -3037,21 +1695,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/read-word-word-28",
-    "label": "Karotte",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Karotte",
-      "answer": "carrot",
-      "choices": [
-        "carrot",
-        "rain",
-        "hedgehog"
-      ]
-    }
-  },
-  {
     "id": "friends-mouse/read-word-word-29",
     "label": "Wolke",
     "question": {
@@ -3097,36 +1740,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "friends-mouse/read-word-word-32",
-    "label": "Regen",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Regen",
-      "answer": "rain",
-      "choices": [
-        "rain",
-        "beaver",
-        "forest-flower"
-      ]
-    }
-  },
-  {
-    "id": "friends-mouse/read-word-word-33",
-    "label": "Vogel",
-    "question": {
-      "kind": "reading",
-      "prompt": "Welches Bild passt zum Wort?",
-      "text": "Vogel",
-      "answer": "bird-sit",
-      "choices": [
-        "bird-sit",
-        "hedgehog",
-        "forest-fir"
-      ]
-    }
-  },
-  {
     "id": "colour-words/rot-gelb-blau",
     "label": "Farbe rot zwischen gelb und blau",
     "question": {
@@ -3146,102 +1759,6 @@ These definitions are the same finite data used by the game and review previews.
         [
           "blau",
           "#5d91b4"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rot-blau-rosa",
-    "label": "Farbe rot zwischen blau und rosa",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rot.",
-      "answer": "rot",
-      "choices": [
-        [
-          "rot",
-          "#bf5143"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rot-rosa-weiss",
-    "label": "Farbe rot zwischen rosa und weiss",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rot.",
-      "answer": "rot",
-      "choices": [
-        [
-          "rot",
-          "#bf5143"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rot-weiss-lila",
-    "label": "Farbe rot zwischen weiss und lila",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rot.",
-      "answer": "rot",
-      "choices": [
-        [
-          "rot",
-          "#bf5143"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rot-lila-gelb",
-    "label": "Farbe rot zwischen lila und gelb",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rot.",
-      "answer": "rot",
-      "choices": [
-        [
-          "rot",
-          "#bf5143"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "gelb",
-          "#deb845"
         ]
       ]
     }
@@ -3271,102 +1788,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "colour-words/gelb-blau-rosa",
-    "label": "Farbe gelb zwischen blau und rosa",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist gelb.",
-      "answer": "gelb",
-      "choices": [
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/gelb-rosa-weiss",
-    "label": "Farbe gelb zwischen rosa und weiss",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist gelb.",
-      "answer": "gelb",
-      "choices": [
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/gelb-weiss-lila",
-    "label": "Farbe gelb zwischen weiss und lila",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist gelb.",
-      "answer": "gelb",
-      "choices": [
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/gelb-lila-rot",
-    "label": "Farbe gelb zwischen lila und rot",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist gelb.",
-      "answer": "gelb",
-      "choices": [
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "rot",
-          "#bf5143"
-        ]
-      ]
-    }
-  },
-  {
     "id": "colour-words/blau-rot-gelb",
     "label": "Farbe blau zwischen rot und gelb",
     "question": {
@@ -3386,102 +1807,6 @@ These definitions are the same finite data used by the game and review previews.
         [
           "gelb",
           "#deb845"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/blau-gelb-rosa",
-    "label": "Farbe blau zwischen gelb und rosa",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist blau.",
-      "answer": "blau",
-      "choices": [
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/blau-rosa-weiss",
-    "label": "Farbe blau zwischen rosa und weiss",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist blau.",
-      "answer": "blau",
-      "choices": [
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/blau-weiss-lila",
-    "label": "Farbe blau zwischen weiss und lila",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist blau.",
-      "answer": "blau",
-      "choices": [
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/blau-lila-rot",
-    "label": "Farbe blau zwischen lila und rot",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist blau.",
-      "answer": "blau",
-      "choices": [
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "rot",
-          "#bf5143"
         ]
       ]
     }
@@ -3511,102 +1836,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "colour-words/rosa-gelb-blau",
-    "label": "Farbe rosa zwischen gelb und blau",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rosa.",
-      "answer": "rosa",
-      "choices": [
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rosa-blau-weiss",
-    "label": "Farbe rosa zwischen blau und weiss",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rosa.",
-      "answer": "rosa",
-      "choices": [
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rosa-weiss-lila",
-    "label": "Farbe rosa zwischen weiss und lila",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rosa.",
-      "answer": "rosa",
-      "choices": [
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/rosa-lila-rot",
-    "label": "Farbe rosa zwischen lila und rot",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist rosa.",
-      "answer": "rosa",
-      "choices": [
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "rot",
-          "#bf5143"
-        ]
-      ]
-    }
-  },
-  {
     "id": "colour-words/weiss-rot-gelb",
     "label": "Farbe weiss zwischen rot und gelb",
     "question": {
@@ -3631,102 +1860,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "colour-words/weiss-gelb-blau",
-    "label": "Farbe weiss zwischen gelb und blau",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist weiss.",
-      "answer": "weiss",
-      "choices": [
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/weiss-blau-rosa",
-    "label": "Farbe weiss zwischen blau und rosa",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist weiss.",
-      "answer": "weiss",
-      "choices": [
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/weiss-rosa-lila",
-    "label": "Farbe weiss zwischen rosa und lila",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist weiss.",
-      "answer": "weiss",
-      "choices": [
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/weiss-lila-rot",
-    "label": "Farbe weiss zwischen lila und rot",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist weiss.",
-      "answer": "weiss",
-      "choices": [
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "rot",
-          "#bf5143"
-        ]
-      ]
-    }
-  },
-  {
     "id": "colour-words/lila-rot-gelb",
     "label": "Farbe lila zwischen rot und gelb",
     "question": {
@@ -3746,102 +1879,6 @@ These definitions are the same finite data used by the game and review previews.
         [
           "gelb",
           "#deb845"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/lila-gelb-blau",
-    "label": "Farbe lila zwischen gelb und blau",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist lila.",
-      "answer": "lila",
-      "choices": [
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "gelb",
-          "#deb845"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/lila-blau-rosa",
-    "label": "Farbe lila zwischen blau und rosa",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist lila.",
-      "answer": "lila",
-      "choices": [
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "blau",
-          "#5d91b4"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/lila-rosa-weiss",
-    "label": "Farbe lila zwischen rosa und weiss",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist lila.",
-      "answer": "lila",
-      "choices": [
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "rosa",
-          "#ce8a9b"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ]
-      ]
-    }
-  },
-  {
-    "id": "colour-words/lila-weiss-rot",
-    "label": "Farbe lila zwischen weiss und rot",
-    "question": {
-      "kind": "colours",
-      "prompt": "Welches Bild passt zum Satz?",
-      "text": "Die Blume ist lila.",
-      "answer": "lila",
-      "choices": [
-        [
-          "lila",
-          "#9874b1"
-        ],
-        [
-          "weiss",
-          "#f8f4df"
-        ],
-        [
-          "rot",
-          "#bf5143"
         ]
       ]
     }

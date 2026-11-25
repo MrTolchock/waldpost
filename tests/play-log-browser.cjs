@@ -27,7 +27,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
  data=await log();const berry=data.events.findLast(e=>e.event==='puzzle_action'&&e.subject==='berry');assert.equal(berry.action,'place');assert.equal(berry.from,'bank');assert.equal(berry.to,target);assert.deepEqual(berry.counts,counts);assert.equal(berry.inputMethod,'mouse');
  // Dragging a number records the chosen number and destination without retaining pointer coordinates.
  await launch('neighbours');const numbers=await question('neighbours'),next=numbers.q.answer[1];
- await active().locator('[data-answer="'+next+'"]').dragTo(active().locator('[data-neighbour-slot="1"]'));
+ await active().locator('[data-answer="'+next+'"]').click(); // a tapped number jumps to its place (25 Nov)
  data=await log();const placement=data.events.findLast(e=>e.event==='puzzle_action'&&e.subject==='neighbour');assert.equal(placement.value,next);assert.equal(placement.pos,1);assert.equal(JSON.stringify(data).includes('clientX'),false);
  // Owner review is excluded, including solving a preview with the production renderer.
  await page.evaluate(()=>FK.go('settings'));const count=(await log()).events.filter(e=>e.runId).length;await page.evaluate(()=>{FK.puzzleReview.open();FK.puzzleReview.preview('add',FK.puzzleCatalogue.iterations('add')[0].id);});await active().locator('[data-answer="2"]').click();await page.evaluate(()=>FK.go('settings'));assert.equal((await log()).events.filter(e=>e.runId).length,count);

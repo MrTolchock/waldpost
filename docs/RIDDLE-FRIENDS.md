@@ -1,6 +1,6 @@
 # Rätsel bei den Waldfreunden
 
-Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Die aktuelle Sammlung umfasst 17 Rätsel mit 797 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
+Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Seit 9.4.44 hat «Lesen und verstehen» 113 Aufgaben: Jedes Tier und jedes Ding ist nur in einer Aufgabe die Antwort, und jeder Farbsatz kommt einmal vor. Die aktuelle Sammlung umfasst 17 Rätsel mit 687 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
 
 | Freund | Rätsel | Thematischer Bezug |
 | --- | --- | --- |

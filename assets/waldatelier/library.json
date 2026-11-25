@@ -1260,9 +1260,7 @@
       "tokens": [
         "🦡"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "badger-dig",
@@ -2321,9 +2319,7 @@
       "tokens": [
         "🪣"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "bumblebee",
@@ -2672,9 +2668,7 @@
         "🐱",
         "🐈"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "cat-sit",
@@ -2847,9 +2841,7 @@
       "tokens": [
         "🧀"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "cherry",
@@ -2907,6 +2899,7 @@
         "🍫"
       ],
       "usedBy": [
+        "friends-badger",
         "syllable"
       ]
     },
@@ -4504,9 +4497,7 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "forest-honey",
@@ -4592,9 +4583,7 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "forest-marten",
@@ -4949,9 +4938,7 @@
       "tokens": [
         "🐸"
       ],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "frog-croak",
@@ -10504,9 +10491,7 @@
         "height": 512
       },
       "tokens": [],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "squirrel-climb",
@@ -10570,9 +10555,7 @@
         "height": 320
       },
       "tokens": [],
-      "usedBy": [
-        "friends-badger"
-      ]
+      "usedBy": []
     },
     {
       "id": "squirrel-run",

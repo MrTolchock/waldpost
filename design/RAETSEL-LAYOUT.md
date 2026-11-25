@@ -1,6 +1,6 @@
 # Einheitliches Rätsel-Layout
 
-Dieser Blueprint bestimmt, wie **jedes** Rätsel aussieht: im Spiel, in der Rätsel-Galerie und in der Rätsel-Prüfung. Er entstand am 23. und 24. November 2026 aus der Durchsicht aller 22 Rätsel mit dem Besitzer und gilt seit Version 9.4.41 (Erfolgsbild, Zahlenkarten und schmale Handys seit 9.4.42). Ein neues Rätsel folgt ihm, ohne eigene Schriftgrössen, Farben, Rahmen oder Bildgrössen einzuführen.
+Dieser Blueprint bestimmt, wie **jedes** Rätsel aussieht: im Spiel, in der Rätsel-Galerie und in der Rätsel-Prüfung. Er entstand am 23. und 24. November 2026 aus der Durchsicht aller damals 22 Rätsel (heute 17) mit dem Besitzer und gilt seit Version 9.4.41 (Erfolgsbild, Zahlenkarten und schmale Handys seit 9.4.42). Ein neues Rätsel folgt ihm, ohne eigene Schriftgrössen, Farben, Rahmen oder Bildgrössen einzuführen.
 
 Er ergänzt den [Rätsel-Blueprint](PUZZLE-BLUEPRINT.md) (Verhalten, Aufgaben, Prüfung) und den [visuellen Stil](VISUAL-STYLE.md) (Bilder und Farben). Umgesetzt ist er als letzter Abschnitt von [`css/puzzle-rounds.css`](../css/puzzle-rounds.css) mit den Variablen `--pv-*`. Geprüft wird er mit den [Rätsel-Ansichten](../tools/raetsel-ansichten/README.md).
 
@@ -42,7 +42,7 @@ Die Zeile mit dem Waldfreund oben (Zurück, Porträt, «… spielt mit dir») ge
 
 **Falsche Eingabe.** Die gewählte Karte bekommt die warme, gestrichelte Innenkontur. Grösse und Platz bleiben gleich, und das Kind kann sofort weiter versuchen.
 
-**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln, und das aktuelle Fortschrittsblatt wächst kurz. Das Papier bekommt keinen grünen Schein, und das Porträt des Freundes bleibt in seiner Zeile. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](proposals/2026-11-24-erfolg-einheitlich/README.md))
+**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln, und das aktuelle Fortschrittsblatt wächst kurz. Das Papier bekommt keinen grünen Schein, und das Porträt des Freundes bleibt in seiner Zeile. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Hat die Aufgabe eine Lücke im Rahmen (Muster, Reihe, Merkreihe), steht nach der richtigen Antwort das gewählte Bild grün in der Lücke, damit das Kind die vollständige Folge sieht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](proposals/2026-11-24-erfolg-einheitlich/README.md))
 
 **Folgen und Muster.** Eine Folge, die das Kind fortsetzen oder ergänzen soll, steht immer in einer einzigen Zeile, damit kein Umbruch eine Wiederholungseinheit zerschneidet. Ist die Zeile zu schmal, werden alle Felder gemeinsam kleiner und das «?» der Lücke mit ihnen (Tablet 9 Felder zu 68 px, Handy 390 px zu 32 px, 320 px zu 24 px).
 
@@ -64,6 +64,8 @@ Jede Ausnahme braucht einen fachlichen Grund und steht hier.
 | Muster spiegeln | Kästchen 46 px auf dem Handy | Zwei Raster und der Spiegel müssen nebeneinander passen. Das Rätsel hat keine Bild-Antworten. |
 | Mengen addieren | Gruppen auf dem Handy untereinander | Nebeneinander stünden die Fische in einer einzigen Spalte. |
 | Einen Vokal ergänzen | Lücke im Wort statt leerem Feld | Die Lücke gehört zum Wortbild. |
+| Muster fortsetzen | Musterfelder und «?» schrumpfen gemeinsam (Tablet 9 Felder zu 68 px, Handy 390 px zu 32 px) | Die Folge steht in einer Zeile, damit kein Umbruch eine Wiederholungseinheit zerschneidet (siehe «Folgen und Muster»). |
+| Mengen addieren, Mengen vergleichen, Mengen verteilen | Bilder 38 px (Beeren 34 px) auf Handys bis 340 px; beim Addieren stehen die Gruppen dort nebeneinander | Auf 320 px breiten Handys bleiben so alle Gruppen und die Antworten auf dem Bildschirm. |
 
 ## Ein neues Rätsel gestalten
 
@@ -108,3 +110,7 @@ Den Vorschlag, alle Aufnahmen und die Vermessung aller 797 Aufgaben hält [desig
 - **Sechste Runde und Release-Prüfung (B-2, B-3, B-4, A-1):**
   - die sechs Lese-Rätsel sind ein Rätsel des Dachses mit vereinheitlichten Fragen
   - Muster in einer Zeile, Erfolg ohne Papierschein und Porträtsprung, schlichte Zählwiese, Namen für den Bildschirmleser
+- **Release-Prüfung vom 25. November (B-3, B-6, A-1):**
+  - die gelöste Lücke zeigt das gewählte Bild
+  - schmale 320-px-Handys: kleinere Bilder bei Fischen und Beeren
+  - das Bild bei «Silben zu Wörtern verbinden» hat einen Namen für den Bildschirmleser

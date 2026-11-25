@@ -17,7 +17,7 @@
     syllable:'Sprich das Bildwort langsam. Zähle seine Silben und wähle die passende Zahl.',
     robot:'Führe das Reh zum Wald. Tippe auf die Pfeile. Um die Felsen musst du herumgehen.',
     treasure:'Merke dir die vier Dinge. Tippe dann auf das Häkchen. Welches Ding fehlt?',
-    neighbours:'Ziehe die Zahl davor nach links und die Zahl danach nach rechts.',
+    neighbours:'Tippe auf die Zahl davor und auf die Zahl danach. Sie springt an ihren Platz.',
     compare:'Vergleiche die beiden Fischgruppen. Tippe auf die mit mehr Fischen. Sind es gleich viele, wähle das Gleichheitszeichen.',
     mirror:'Ergänze rechts das Spiegelbild. Felder in derselben Reihe liegen gleich weit von der Spiegellinie entfernt. Ein zweites Tippen leert ein Feld wieder.',
     vowels:'Lies das Bildwort. Welcher Buchstabe fehlt in der Lücke?',

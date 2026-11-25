@@ -3429,9 +3429,7 @@
           "tokens": [
             "🦡"
           ],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "bowl",
@@ -3562,9 +3560,7 @@
             "🐱",
             "🐈"
           ],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "rabbit",
@@ -4041,9 +4037,7 @@
           "tokens": [
             "🐸"
           ],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "mouse",
@@ -4421,9 +4415,7 @@
           "tokens": [
             "🪣"
           ],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "letter",
@@ -16234,9 +16226,7 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         }
       ],
       "manifest": "design/illustrations/forest-fox.json",
@@ -16975,9 +16965,7 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "forest-marten",
@@ -17078,9 +17066,7 @@
             "height": 512
           },
           "tokens": [],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "blue-tit",
@@ -17788,9 +17774,7 @@
           "tokens": [
             "🧀"
           ],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         },
         {
           "id": "comet",
@@ -18665,9 +18649,7 @@
             "height": 320
           },
           "tokens": [],
-          "usedBy": [
-            "friends-badger"
-          ]
+          "usedBy": []
         }
       ],
       "manifest": "design/illustrations/review-nature.json",
@@ -20025,6 +20007,7 @@
             "🍫"
           ],
           "usedBy": [
+            "friends-badger",
             "syllable"
           ]
         },

@@ -49,7 +49,7 @@ Der [Vergleichsbogen vom 20. November](evidence/raetselvergleich/README.md) (dam
 | Guidance | The prompt and pictures carry the rule. Nothing is read aloud. No hint, demonstration, question-mark help, timed question or next-task button. Children choose when to hide the four memory objects. They then identify the missing object from memory. |
 | Answer cards | No position or value gives the answer away: shuffled picture, word and letter cards; number cards ascending, each Aufgabe with its own window so the answer stands left, middle or right about equally often. `tests/answer-positions.test.cjs` enforces it. |
 | Input | Finger, stylus and mouse as appropriate; keyboard-operable buttons, visible focus, readable labels and responsive phone/tablet layout. Wrong answers remain editable; no penalty or countdown. |
-| Sound | A quiet click for task/answer buttons, then distinct correct/retry feedback. Menus, navigation and adult review controls are silent. Respect Spielklänge mute. Speech only when requested. |
+| Sound | A quiet click for task/answer buttons, then distinct correct/retry feedback. Menus, navigation and adult review controls are silent. Respect Spielklänge mute. There is no speech or read-aloud (removed in 9.4.40). |
 | Progress | Correct answers use the shared soft green highlight without a check mark. They stay visible for 900 ms, then advance automatically. After five: the existing 2.2-second friend/leaf/flower celebration. Reduced motion uses a static wreath. |
 | Access | Children visit the character on their current letter. Only that character can start a puzzle. The complete gallery/review workbench is in adult Settings. Parents choose the number of letters; the last puzzle leads home to sleep and game over. |
 | Continuity | Back returns to the actual entry point. Child play, parent previews, reviews and historical saves are separate. Previews must not complete invitations, award progress or alter an unfinished child round. |
@@ -80,7 +80,7 @@ Physical iPad/Safari, sound comfort and child suitability still need the owner's
 ## Required anatomy
 
 ```text
-┌ Back · Host portrait · context · Explain ──┐
+┌ Back · Host portrait · context ────────────┐
 │                 five progress leaves        │
 │                   prompt                    │
 │          drawn subject / exact board        │
@@ -89,7 +89,7 @@ Physical iPad/Safari, sound comfort and child suitability still need the owner's
 └─────────────────────────────────────────────┘
 ```
 
-Use `js/screens/puzzle.js` and `css/puzzle-rounds.css`. Writing uses the existing stroke engine in `js/screens/trace.js` inside the same page shell. The inline return arrow, context portrait, five leaves, guidance, feedback and celebration are shared. Active puzzles have no separate title bar; the task prompt is the visible heading. Adult review uses the same sized task region, with a small rejection × in the usual speech-control slot and no review strip. The counter shows the full review queue; five leaves represent its overall progress. The speech test belongs to the puzzle overview; children keep the shared “Spiel erklären” control during normal play.
+Use `js/screens/puzzle.js` and `css/puzzle-rounds.css`. Writing uses the existing stroke engine in `js/screens/trace.js` inside the same page shell. The inline return arrow, context portrait, five leaves, guidance, feedback and celebration are shared. Active puzzles have no separate title bar; the task prompt is the visible heading. Adult review uses the same sized task region, with a small rejection × at the right end of the context row and no review strip. The counter shows the full review queue; five leaves represent its overall progress. The puzzle overview shows the rule in writing. Nothing is read aloud, neither in review nor in child play.
 
 - Cream stitched paper and quiet woodland background; one main task per page. Cards use the shared wood/cream treatment, soft brown borders and sage selected states. Feedback adds a visible mark and accessible status, never colour alone.
 - Use the typography roles above in the shared puzzle and tracing layouts.

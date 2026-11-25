@@ -16,7 +16,7 @@
 | Picture roles | Drawn woodland subjects; painted host/companions; SVG geometry and tracing |
 | Shared page | Waldbuch paper, host, Andika, five progress leaves |
 | Child access | Only the character on the current letter; parent-controlled journey limit |
-| Guidance | One optional rule explanation; no hints or next-task button |
+| Guidance | The written rule only; nothing is read aloud, no hints or next-task button |
 | Sound | Enabled button clicks, success/retry, mute respected |
 | Round | Five distinct sampled iterations; saved questions/partial work |
 | Ending | 900 ms correct feedback, then 2.2 s celebration; reduced motion |

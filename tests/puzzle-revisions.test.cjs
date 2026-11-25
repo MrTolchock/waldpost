@@ -1,4 +1,5 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+require('./history-hint.cjs')('12511e417e384f8e912be4a62496fce2c234c1e8','94948722951a6196b39524b3ffe804cbb724e637','b7c77ec0a318ac52e36ad5e1fcfdac9e249d4467','d030f8d0919c980ecf7fc49b80f9785ded68e09b');
 const {build,currentReader}=require('../tools/puzzle-review-build.cjs');
 const base=build(),reader=currentReader();
 const changed=(file,transform)=>{const source=reader.read(file).toString(),next=transform(source);assert.notEqual(next,source,'fixture must change '+file);return build({...reader,read:name=>name===file?Buffer.from(next):reader.read(name)});};
@@ -101,9 +102,9 @@ test('the iteration recovery release retained verified historical decisions with
  }
 });
 test('one edited question reopens only its iteration while menu text and summaries retain all approvals',()=>{
- const question=changed('js/friends/puzzle-catalogue.js',s=>s.replace('Wer hält eine Eichel?','Wer trägt eine Eichel?'));
+ const question=changed('js/friends/puzzle-catalogue.js',s=>s.replace('Wer hat schwarze Punkte?','Wer hat schwarze Tupfen?'));
  const affected=built=>Object.keys(base.iterations).filter(key=>JSON.stringify(base.iterations[key])!==JSON.stringify(built.iterations[key]));
- assert.deepEqual(affected(question),['friends-hedgehog/riddle-10']);
+ assert.deepEqual(affected(question),['friends-hedgehog/riddle-8']);
  const summary=changed('js/friends/puzzle-catalogue.js',s=>s.replace("'Mengen zählen'","'Anzahlen bestimmen'"));assert.deepEqual(affected(summary),[]);
  const menu=changed('css/puzzle-review.css',s=>s+'\n.review-grid{gap:31px}\n');assert.deepEqual(affected(menu),[]);
 });

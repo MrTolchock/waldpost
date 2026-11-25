@@ -16,7 +16,7 @@
 | Picture roles | Drawn woodland subjects; painted host/companions; SVG geometry and tracing |
 | Shared page | Waldbuch paper, host, Andika, five progress leaves |
 | Child access | Only the character on the current letter; parent-controlled journey limit |
-| Guidance | One optional rule explanation; no hints or next-task button |
+| Guidance | The written rule only; nothing is read aloud, no hints or next-task button |
 | Sound | Enabled button clicks, success/retry, mute respected |
 | Round | Five distinct sampled iterations; saved questions/partial work |
 | Ending | 900 ms correct feedback, then 2.2 s celebration; reduced motion |
@@ -76,7 +76,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Ha",
         "se",
-        "ma"
+        "ho"
       ],
       "order": [
         0,
@@ -101,7 +101,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Bi",
         "ber",
-        "ma"
+        "bo"
       ],
       "order": [
         0,
@@ -126,7 +126,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "I",
         "gel",
-        "ma"
+        "gal"
       ],
       "order": [
         0,
@@ -151,7 +151,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Fe",
         "der",
-        "ma"
+        "fa"
       ],
       "order": [
         0,
@@ -176,7 +176,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Ro",
         "se",
-        "ma"
+        "ra"
       ],
       "order": [
         0,
@@ -201,7 +201,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Lu",
         "pe",
-        "ma"
+        "li"
       ],
       "order": [
         0,
@@ -226,7 +226,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Blu",
         "me",
-        "ma"
+        "bla"
       ],
       "order": [
         0,
@@ -251,7 +251,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Tan",
         "ne",
-        "ma"
+        "ton"
       ],
       "order": [
         0,
@@ -276,7 +276,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Ap",
         "fel",
-        "ma"
+        "op"
       ],
       "order": [
         0,
@@ -301,7 +301,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Rau",
         "pe",
-        "ma"
+        "rei"
       ],
       "order": [
         0,
@@ -326,7 +326,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Bee",
         "re",
-        "ma"
+        "bie"
       ],
       "order": [
         0,
@@ -351,7 +351,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Bie",
         "ne",
-        "ma"
+        "ba"
       ],
       "order": [
         0,
@@ -376,7 +376,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Son",
         "ne",
-        "ma"
+        "sen"
       ],
       "order": [
         0,
@@ -403,7 +403,7 @@ These definitions are the same finite data used by the game and review previews.
         "Schmet",
         "ter",
         "ling",
-        "ma"
+        "lang"
       ],
       "order": [
         0,
@@ -431,7 +431,7 @@ These definitions are the same finite data used by the game and review previews.
         "A",
         "mei",
         "se",
-        "ma"
+        "mau"
       ],
       "order": [
         0,
@@ -459,7 +459,7 @@ These definitions are the same finite data used by the game and review previews.
         "Ba",
         "na",
         "ne",
-        "ma"
+        "no"
       ],
       "order": [
         0,
@@ -515,7 +515,7 @@ These definitions are the same finite data used by the game and review previews.
         "Ka",
         "me",
         "ra",
-        "ma"
+        "mo"
       ],
       "order": [
         0,
@@ -541,7 +541,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Na",
         "del",
-        "ma"
+        "dal"
       ],
       "order": [
         0,
@@ -566,7 +566,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Ga",
         "bel",
-        "ma"
+        "bal"
       ],
       "order": [
         0,
@@ -591,7 +591,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Glo",
         "cke",
-        "ma"
+        "gla"
       ],
       "order": [
         0,
@@ -618,7 +618,7 @@ These definitions are the same finite data used by the game and review previews.
         "Ka",
         "rot",
         "te",
-        "ma"
+        "rat"
       ],
       "order": [
         0,
@@ -644,7 +644,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Wol",
         "ke",
-        "ma"
+        "wal"
       ],
       "order": [
         0,
@@ -669,7 +669,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Schau",
         "fel",
-        "ma"
+        "schei"
       ],
       "order": [
         0,
@@ -694,7 +694,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Ku",
         "chen",
-        "ma"
+        "ko"
       ],
       "order": [
         0,
@@ -719,7 +719,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Re",
         "gen",
-        "ma"
+        "ro"
       ],
       "order": [
         0,
@@ -744,7 +744,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Vo",
         "gel",
-        "ma"
+        "va"
       ],
       "order": [
         0,
@@ -769,7 +769,7 @@ These definitions are the same finite data used by the game and review previews.
       "chips": [
         "Schne",
         "cke",
-        "ma"
+        "schna"
       ],
       "order": [
         0,

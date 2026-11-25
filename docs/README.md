@@ -4,7 +4,7 @@ Start with [current design](../design/README.md). The [visual style](../design/V
 
 - [All puzzles, competences and iterations](PUZZLE-CATALOGUE.md)
 - [Adult review and sign-off](PUZZLE-REVIEW.md)
-- [Release review of 9.4.43](reviews/2026-11-25-release-review/README.md)
+- [Release review of 9.4.43](reviews/2026-11-25-release-review/README.md) and its [follow-up in 9.4.44](RAETSEL-FEEDBACK-2026-11-25.md)
 - [Release review of 9.4.41](reviews/2026-11-24-release-review/README.md)
 - [Release review of 9.4.32](reviews/2026-11-23-release-review/README.md) and its [follow-up in 9.4.33](RAETSEL-FEEDBACK-2026-11-23.md)
 - [Follow-up to all 26 puzzle notes from 15 November](PUZZLE-FEEDBACK-2026-11-15.md)

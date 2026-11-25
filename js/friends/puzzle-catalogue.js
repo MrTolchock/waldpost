@@ -204,10 +204,13 @@
   function vowelTasks(key,word,picture,keep=()=>true){
     Array.from(word).forEach((answer,index)=>{if(!/[aeiou]/i.test(answer)||/(au|ei|ie|eu|äu)/i.test(word.slice(Math.max(0,index-1),index+2))||!keep(answer))return;add('vowels',key+'-'+index,word+' / Lücke '+(index+1),{kind:'vowels',prompt:'Welcher Buchstabe fehlt?',word,picture,index,answer,choices:vowelChoices(answer)});});
   }
+  // 25 Nov (owner, release review C-4): every word gets its own near-miss syllable instead of the same «ma».
+  // It differs from a real syllable of the word by one sound, so the child has to read it. Tomate keeps «lo».
+  const nearSyllable={Hase:'ho',Biber:'bo',Igel:'gal',Feder:'fa',Rose:'ra',Lupe:'li',Blume:'bla',Tanne:'ton',Apfel:'op',Raupe:'rei',Beere:'bie',Biene:'ba',Sonne:'sen',Schmetterling:'lang',Ameise:'mau',Banane:'no',Kamera:'mo',Nadel:'dal',Gabel:'bal',Glocke:'gla',Karotte:'rat',Wolke:'wal',Schaufel:'schei',Kuchen:'ko',Regen:'ro',Vogel:'va',Schnecke:'schna'};
   words.forEach(([w,picture],i)=>{
     const word=w.replaceAll('-',''),parts=w.split('-'),choices=[picture,words[(i+4)%words.length][1],words[(i+9)%words.length][1]];
     addMouseWord('read-word-word-'+i,word,picture,choices);
-    if(parts.length>1){const distractor=['ma','lo','su','ta','fe'].find(s=>!parts.some(p=>p.toLowerCase()===s)),chips=parts.concat(distractor);add('read-puzzle','word-'+i,word,{kind:'syllables',prompt:'Setze das Wort aus Silben zusammen.',word,picture,parts,chips,order:chips.map((_,n)=>n),answer:word});}
+    if(parts.length>1){const distractor=nearSyllable[word]||['ma','lo','su','ta','fe'].find(s=>!parts.some(p=>p.toLowerCase()===s)),chips=parts.concat(distractor);add('read-puzzle','word-'+i,word,{kind:'syllables',prompt:'Setze das Wort aus Silben zusammen.',word,picture,parts,chips,order:chips.map((_,n)=>n),answer:word});}
     vowelTasks('word-'+i,word,picture);
   });
   // More pictured words whose gap is a, i, o or u, so «e» is no longer the answer of most vowel tasks.
@@ -275,6 +278,69 @@
   const harmonised={'Welches Tier passt?':'Welches Bild passt zur Frage?','Welche Blume passt zum Satz?':'Welches Bild passt zum Satz?'};
   pools['friends-badger']=readingParts.flatMap(id=>pools[id]||[]).map(it=>{if(harmonised[it.question.prompt])it.question.prompt=harmonised[it.question.prompt];return it;});
   for(const id of readingParts.slice(1))delete pools[id];
+  // 25 Nov (owner and review notes): «Lesen und verstehen» keeps one Aufgabe per answer subject, so a word, a
+  // sentence and a question never show the same animal or thing (where an animal has short sentences, one sentence
+  // stays). Each colour sentence appears once, and «Wer hat Flecken im Fell?» is gone. Kept Aufgaben keep their IDs.
+  const retiredReading={
+    'colour-words':['blau-gelb-rosa','blau-lila-rot','blau-rosa-weiss','blau-weiss-lila','gelb-blau-rosa','gelb-lila-rot','gelb-rosa-weiss','gelb-weiss-lila','lila-blau-rosa','lila-gelb-blau','lila-rosa-weiss','lila-weiss-rot','rosa-blau-weiss','rosa-gelb-blau','rosa-lila-rot','rosa-weiss-lila','rot-blau-rosa','rot-lila-gelb','rot-rosa-weiss','rot-weiss-lila','weiss-blau-rosa','weiss-gelb-blau','weiss-lila-rot','weiss-rosa-lila'],
+    'friends-badger':['riddle-1','riddle-19'],
+    'friends-deer':['riddle-15','riddle-17','riddle-18','riddle-19','riddle-22','riddle-4','riddle-5','riddle-7','riddle-8','riddle-9'],
+    'friends-hedgehog':['nature-question-12','nature-question-15','nature-question-2','nature-question-4','nature-question-5','riddle-0','riddle-1','riddle-10','riddle-11','riddle-12','riddle-13','riddle-14','riddle-15','riddle-16','riddle-17','riddle-22','riddle-24','riddle-3','riddle-5','riddle-6','riddle-7','riddle-9'],
+    'friends-mouse':['friends-frog-animal-0','friends-frog-animal-1','friends-frog-animal-11','friends-frog-animal-12','friends-frog-animal-14','friends-frog-animal-15','friends-frog-animal-16','friends-frog-animal-17','friends-frog-animal-18','friends-frog-animal-19','friends-frog-animal-2','friends-frog-animal-20','friends-frog-animal-21','friends-frog-animal-23','friends-frog-animal-24','friends-frog-animal-3','friends-frog-animal-4','friends-frog-animal-5','friends-frog-animal-6','friends-frog-animal-7','friends-frog-animal-9','read-word-word-1','read-word-word-14','read-word-word-17','read-word-word-18','read-word-word-19','read-word-word-20','read-word-word-28','read-word-word-32','read-word-word-33','read-word-word-6','read-word-word-7','read-word-word-8','word-0','word-10','word-15','word-22','word-5','word-8'],
+    'friends-owl':['pair-0','pair-3','pair-4','pair-7','pair-8','sentence-0','sentence-1','sentence-10','sentence-12','sentence-14','sentence-3','sentence-5','sentence-7']
+  };
+  // Wrong pictures come from the same field as the answer (animal, plant, weather, place, food), so a fish or an egg
+  // never gives the answer away. None of them is also right.
+  const plausibleReading={
+    'friends-badger/riddle-2':['forest-mushroom','strawberry'],
+    'friends-badger/riddle-4':['hare-sit','mouse-sit'],
+    'friends-badger/riddle-5':['snowflake','rain'],
+    'friends-badger/riddle-6':['honey','chocolate'],
+    'friends-badger/riddle-7':['snowman','snowflake'],
+    'friends-badger/riddle-8':['nest','flower'],
+    'friends-badger/riddle-9':['forest-berry','forest-feather'],
+    'friends-badger/riddle-10':['rain','snowflake'],
+    'friends-badger/riddle-11':['leaf','sun'],
+    'friends-badger/riddle-12':['snail','caterpillar'],
+    'friends-badger/riddle-15':['apple','pear'],
+    'friends-badger/riddle-16':['moon','vocab-stone'],
+    'friends-badger/riddle-17':['pear','strawberry'],
+    'friends-badger/riddle-20':['sun','cloud'],
+    'friends-badger/riddle-21':['carrot','banana'],
+    'friends-badger/riddle-22':['spade','fork'],
+    'friends-badger/riddle-23':['sunflower','forest-mushroom'],
+    'friends-badger/riddle-24':['apple','banana'],
+    'friends-deer/riddle-1':['habitat-pond','ant-hill'],
+    'friends-deer/riddle-2':['forest-nut','vocab-worm'],
+    'friends-deer/riddle-3':['forest-nut','vocab-stone'],
+    'friends-deer/riddle-6':['forest-mushroom','leaf'],
+    'friends-deer/riddle-10':['spider','forest-owl'],
+    'friends-deer/riddle-12':['apple','pear'],
+    'friends-deer/riddle-21':['vocab-worm','honey'],
+    'friends-deer/riddle-23':['vocab-stone','forest-feather'],
+    'friends-deer/riddle-24':['leaf','forest-mushroom'],
+    'friends-hedgehog/riddle-2':['duck-swim','frog-sit'],
+    'friends-hedgehog/riddle-4':['caterpillar','ladybird'],
+    'friends-hedgehog/riddle-8':['bee','ant'],
+    'friends-hedgehog/riddle-18':['forest-robin','bird-sit'],
+    'friends-hedgehog/riddle-19':['forest-owl','squirrel-sit'],
+    'friends-hedgehog/riddle-20':['forest-robin','forest-woodpecker'],
+    'friends-hedgehog/riddle-21':['bird-sit','forest-owl'],
+    'friends-hedgehog/riddle-23':['badger-walk','mole'],
+    'friends-hedgehog/nature-question-3':['butterfly','ladybird'],
+    'friends-hedgehog/nature-question-6':['pig','dog'],
+    'friends-hedgehog/nature-question-7':['ant','ladybird'],
+    'friends-hedgehog/nature-question-9':['hedgehog','frog-sit'],
+    'friends-hedgehog/nature-question-11':['bee','dragonfly'],
+    'friends-hedgehog/nature-question-14':['cow','pig'],
+    'friends-hedgehog/nature-question-16':['cow','wild-boar'],
+    'friends-hedgehog/nature-question-17':['alpine-ibex','cow'],
+    'friends-hedgehog/nature-question-18':['roe-stand','hare-sit'],
+    'friends-hedgehog/nature-question-20':['beaver','frog-sit'],
+    'friends-hedgehog/nature-question-21':['butterfly','ladybird'],
+    'friends-hedgehog/nature-question-24':['otter','alpine-marmot']
+  };
+  pools['friends-badger']=pools['friends-badger'].filter(it=>{const [home,key]=it.id.split('/');return !retiredReading[home]?.includes(key);}).map(it=>{const wrong=plausibleReading[it.id];if(wrong)it.question.choices=[it.question.answer,...wrong];return it;});
   const canonical=v=>Array.isArray(v)?'['+v.map(canonical).join(',')+']':v&&typeof v==='object'?'{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}':JSON.stringify(v);
   function hash(v){const s=canonical(v);let a=2166136261,b=5381;for(let i=0;i<s.length;i++){a=Math.imul(a^s.charCodeAt(i),16777619);b=Math.imul(b,33)^s.charCodeAt(i);}return (a>>>0).toString(16).padStart(8,'0')+(b>>>0).toString(16).padStart(8,'0');}
   function puzzle(id){const g=FK.friendsLibrary.catalogue().find(g=>g.id===id),m=meta[id];return g&&m?{...g,hostName:C.hosts[g.host].name,reference:m[0],competence:m[1],difficulty:m[2],displayDifficulty:m[3]||m[2],instruction:R.instructions[id]}:null;}

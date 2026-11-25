@@ -238,7 +238,7 @@ export const details = {
    back, and a context that is closed or stopped running is replaced on the next tap. */
 export function createAudio(settings, environment = () => null) {
   let ctx, ambience, room, near, analyser, timer, area = 'den', birdCalls = 0, steps = 0, cues = 0, noise, beds = null, director, birds, foliage;
-  let lastClock = -1, clockMoved = 0, stalled = 0, recoveries = 0, sources = [];
+  let lastClock = -1, clockMoved = 0, stalled = 0, recoveries = 0, sources = [], waking = 0;
   function gain(node, value) { node.gain.cancelScheduledValues(ctx.currentTime); if (document.hidden) node.gain.setValueAtTime(0, ctx.currentTime); else node.gain.setTargetAtTime(value, ctx.currentTime, .3); }
   function update() { if (!ctx || ctx.state === 'closed') return; const s = settings(), audible = !document.hidden;
     gain(ambience, s.ambience && audible ? (area === 'forest' ? 1.4 : 1) : 0);
@@ -306,15 +306,15 @@ export function createAudio(settings, environment = () => null) {
   function watchClock(now) { if (ctx.currentTime !== lastClock) { lastClock = ctx.currentTime; clockMoved = now; } stalled = (now - clockMoved) / 1000; }
   function tick() {
     if (!ctx || document.hidden) return; const now = performance.now();
-    if (ctx.state !== 'running') { clockMoved = now; if (ctx.state !== 'closed') ctx.resume().catch(() => {}); return; }
-    watchClock(now); const s = settings();
+    if (ctx.state !== 'running') { clockMoved = now; waking ||= now; if (ctx.state !== 'closed') ctx.resume().catch(() => {}); return; }
+    waking = 0; watchClock(now); const s = settings();
     const here = environment() || {}, {beds: b, events} = director.step(ctx.currentTime, {...here, indoors: inside()});
     if (!s.ambience) { here.cues?.splice(0); return; }
     setBeds(b, (here.rain || 0) * (1 - (here.snow || 0)));
     for (const e of events) play(e);
     if (here.cues?.length) for (const c of here.cues.splice(0)) cue(c);
   }
-  function teardown() { clearInterval(timer); timer = null; sources.forEach(s => { try { s.stop(); } catch { /* already stopped */ } }); sources = []; const old = ctx; ctx = null; beds = null; birds = null; foliage = null; if (old && old.state !== 'closed') old.close().catch(() => {}); if (old) old.onstatechange = null; }
+  function teardown() { clearInterval(timer); timer = null; waking = 0; sources.forEach(s => { try { s.stop(); } catch { /* already stopped */ } }); sources = []; const old = ctx; ctx = null; beds = null; birds = null; foliage = null; if (old && old.state !== 'closed') old.close().catch(() => {}); if (old) old.onstatechange = null; }
   function build() {
     const Audio = window.AudioContext || window.webkitAudioContext; if (!Audio || document.hidden) return;
     try {
@@ -329,7 +329,10 @@ export function createAudio(settings, environment = () => null) {
   }
   // Called from every tap, click and key: start the sound, or wake it if the browser stopped it.
   function unlock() {
-    if (ctx && (ctx.state === 'closed' || stalled > 1.5)) { teardown(); recoveries++; }
+    // A context that will not wake (iOS can leave it suspended or interrupted, and resume() never settles) is
+    // replaced too, but only once it has refused to wake for 1.5 s, so an ordinary resume still keeps it.
+    const stuck = ctx && ctx.state !== 'running' && waking && performance.now() - waking > 1500;
+    if (ctx && (ctx.state === 'closed' || stalled > 1.5 || stuck)) { teardown(); recoveries++; }
     if (!ctx) { build(); return; }
     if (ctx.state !== 'running') ctx.resume().then(update, () => {});
   }

@@ -55,6 +55,12 @@
     if(locked)return;
     if(value===question.answer)solved(node,value);else fail(node,undefined,value);
   }
+  // A solved row or pattern shows itself complete: the right picture takes the place of its «?» (release review B-6).
+  function fillsGap(node,value,gap) {
+    node.addEventListener('click',()=>{if(!locked||value!==question.answer||!gap?.isConnected)return;
+      gap.classList.remove('gap');gap.classList.add('puzzle-filled-gap','is-correct');gap.setAttribute('aria-label',pictureName(value));gap.replaceChildren(picture(value));});
+    return node;
+  }
   function option(value,visual,label) {
     let node;node=button(label??String(value),()=>choose(value,node),'puzzle-answer',visual??String(value));
     node.dataset.answer=String(value);answerArea.append(node);return node;
@@ -87,7 +93,7 @@
   function renderPattern(q) {
     const line=h('div',{class:'puzzle-pattern'});
     q.sequence.forEach((id,i)=>line.append(h('span',{class:'puzzle-pattern-cell'+(i===q.gap?' gap':''),role:'img','aria-label':i===q.gap?'Lücke':pictureName(id)},i===q.gap?'?':picture(id))));
-    scene.append(line);q.choices.forEach(v=>option(v,picture(v),'Dieses Bild einsetzen: '+pictureName(v)));
+    scene.append(line);q.choices.forEach(v=>fillsGap(option(v,picture(v),'Dieses Bild einsetzen: '+pictureName(v)),v,line.querySelector('.gap')));
   }
   function renderFireflies(q) {
     const slots=h('div',{class:'puzzle-firefly-slots'});for(let i=0;i<q.total;i++)slots.append(h('span',{class:'puzzle-firefly-slot'+(i<q.filled?' filled':' is-empty'),'aria-label':i<q.filled?'Eine Fliege':'Ein freier Platz'},i<q.filled?picture('rhyme-fly','Fliege'):'?'));
@@ -164,7 +170,7 @@
       }
       matrix.append(line);
     }
-    scene.append(matrix);q.choices.forEach(id=>option(id,picture(id),pictureName(id)));
+    scene.append(matrix);q.choices.forEach(id=>fillsGap(option(id,picture(id),pictureName(id)),id,matrix.querySelector('.gap')));
   }
   function renderSyllable(q) {
     scene.append(picture(q.picture),h('p',{class:'puzzle-read-text',text:FK.text.word(q.word)}));numeric();
@@ -234,7 +240,7 @@
     const reveal=!!work().hidden,items=h('div',{class:'puzzle-treasures'},q.objects.map((id,i)=>h('span',{class:reveal&&i===q.missing?'gap':'',role:'img','aria-label':reveal&&i===q.missing?'Lücke':pictureName(id)},reveal&&i===q.missing?'?':picture(id))));
     scene.append(items);
     if(!reveal)answerArea.append(button('Ich habe sie mir gemerkt',()=>{if(locked)return;work().hidden=true;persist();draw();},'puzzle-memory-ready puzzle-memory-button',FK.icons.element('check')));
-    else {body.querySelector('.puzzle-prompt').textContent='Welcher Gegenstand fehlt?';q.choices.forEach(v=>option(v,picture(v),'Diesen Gegenstand wählen: '+pictureName(v)));}
+    else {body.querySelector('.puzzle-prompt').textContent='Welcher Gegenstand fehlt?';q.choices.forEach(v=>fillsGap(option(v,picture(v),'Diesen Gegenstand wählen: '+pictureName(v)),v,items.querySelector('.gap')));}
   }
   function renderNeighbours(q) {
     const saved=work().neighbours;
@@ -248,10 +254,15 @@
       if(!fixed)slot.dataset.neighbourSlot=pos;
       row.append(slot);slots[pos]=slot;
     }
+    // 25 Nov (owner): tap instead of drag and drop. A right number goes to its own place (davor or danach);
+    // a wrong one gets the usual retry ring and stays where it is.
+    function tap(value,tile){
+      if(locked)return;
+      const pos=[0,1].find(p=>values[p]===null&&q.answer[p]===value);
+      if(pos===undefined){fail(tile,undefined,value);return;}
+      tile.classList.remove('is-retry');place(value,pos);
+    }
     function place(value,pos){
-      if(value!==q.answer[pos]){
-        returnTile(answerArea.querySelector('[data-answer="'+value+'"]'),slots[pos],value);return;
-      }
       values[pos]=value;work().neighbours=values;persist();slots[pos].firstChild.textContent=value;slots[pos].classList.add('filled');
       used(answerArea.querySelector('[data-answer="'+value+'"]'));
       FK.playLog?.place?.('neighbour',{value,pos});
@@ -259,11 +270,11 @@
       if(values.every((v,i)=>v===q.answer[i])){slots.forEach(slot=>{if(slot?.dataset.neighbourSlot!==undefined)slot.classList.add('is-correct');});solved(slots[pos]);}
     }
     // A correctly placed card leaves the choices; its empty place keeps the others where they were.
-    function used(tile){if(!tile)return;tile.classList.add('is-used');tile.setAttribute('aria-hidden','true');}
+    function used(tile){if(!tile)return;tile.classList.add('is-used');tile.setAttribute('aria-hidden','true');tile.disabled=true;}
     scene.append(row);
     for(const value of q.choices){
-      const tile=h('span',{class:'puzzle-answer puzzle-neighbour-tile','data-answer':value},String(value));
-      answerArea.append(draggable(tile,'[data-neighbour-slot]',target=>place(value,Number(target.dataset.neighbourSlot))));
+      let tile;tile=button('Zahl '+value,()=>tap(value,tile),'puzzle-answer puzzle-neighbour-tile',String(value));tile.dataset.answer=value;
+      answerArea.append(tile);
       if(values.some((v,i)=>v===value&&!(i===0&&q.given==='left')))used(tile);
     }
   }
@@ -292,7 +303,7 @@
     const redraw=()=>{slots.replaceChildren(...q.parts.map((part,i)=>h('span',{class:'puzzle-syllable-slot'+(i<picked.length?' filled':'')},i<picked.length?FK.text.syllable(part).toLocaleUpperCase('de-CH'):'?')));chips.replaceChildren();q.order.forEach(i=>{
       let node;node=button(q.chips[i].toLocaleUpperCase('de-CH'),()=>{if(locked)return;const expected=q.parts[picked.length];if(q.chips[i]!==expected){fail(node);return;}picked.push(i);work().syllables=picked;persist();redraw();if(picked.length===q.parts.length)solved(slots);},'puzzle-syllable-chip',FK.text.syllable(q.chips[i]).toLocaleUpperCase('de-CH'));node.disabled=picked.includes(i);node.dataset.part=q.chips[i];chips.append(node);
     });};
-    scene.append(picture(q.picture),slots);answerArea.append(chips);redraw();
+    scene.append(picture(q.picture,'Bild: '+pictureName(q.picture)),slots);answerArea.append(chips);redraw();
   }
   function renderColours(q) {scene.append(h('p',{class:'puzzle-read-text',text:FK.text.word(q.text)}));q.choices.forEach(([name])=>option(name,picture('puzzle-flower-'+name),(['rosa','lila'].includes(name)?name:name+'e')+' Blume'));}
   function renderShapeMatch(q) {

@@ -285,7 +285,7 @@
 @media(prefers-reduced-motion:reduce){.ff-game *,.ff-game *::before,.ff-game *::after{animation:none!important;transition:none!important}}
 /* Painted scenes: the reviewed paintings fill the frame; a blurred copy fills any spare edge. */
 .ff-world.ff-painted{background-repeat:no-repeat}
-.ff-painted-fill{position:absolute;inset:-48px;z-index:-1;background:#7a4a2a center/cover no-repeat;box-shadow:inset 0 0 0 100vmax #2a180b52}
+.ff-painted-fill{position:absolute;inset:-48px;z-index:-1;background:#7a4a2a center/cover no-repeat;box-shadow:inset 0 0 0 100vmax #2a180b52;filter:blur(18px) saturate(.8) brightness(.72)}
 .ff-painted-game::after{display:none}
 .ff-painted-night{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at 30% 60%,#1a2440 0%,#0e1428 100%);opacity:0;transition:opacity .9s ease}
 .ff-painted-night.on{opacity:.42}

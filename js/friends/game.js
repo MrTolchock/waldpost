@@ -19,6 +19,10 @@ function syncMail(){
   const j=m.session||{limit:1,completed:0};world.timeOfDay?.(['return-home','sleeping','finished'].includes(m.phase)?1:j.limit>1?Math.min(1,j.completed/(j.limit-1))*.55:0,true);
   positionDoor();
 }
+// A pin (70 px circle above its point) never sits under the letter counter, map and settings: near the top
+// edge it moves down below them (release review 2026-11-25, B-5).
+function menuArea(){if(!nav||nav.hidden||!hotspots)return null;const n=nav.getBoundingClientRect(),o=hotspots.getBoundingClientRect();return n.width?{left:n.left-o.left-8,right:n.right-o.left+8,bottom:n.bottom-o.top+8}:null;}
+function clearOfMenu(x,y,bar){return bar&&x+35>bar.left&&x-35<bar.right&&y-82<bar.bottom?bar.bottom+82:y;}
 function positionDoor(){
   if(!doorScene||area!=='den')return;
   const sizes=canvas.style.backgroundSize.split(' ').map(parseFloat),pos=canvas.style.backgroundPosition.split(' ').map(parseFloat);
@@ -181,7 +185,7 @@ FK.screen('friends',{
     // Released Rätsel can change while playing (review data loads or is withdrawn): keep the open letter playable.
     FK.on('puzzle-review-change',()=>{if(state.retarget())syncMail();});
     audio=createAudio(()=>state.audioSettings(),()=>world?.soundscape);FK.friendsAudio=audio;
-    world=createWorld(canvas,{position:()=>state.get().world,onPosition:(x,z,region)=>state.position(x,z,region),onMove:e=>state.record(e.event,e),onNear:()=>{},onAction:act,onAnimationEnd:()=>endSequence(false),onProject:items=>{positionDoor();for(const p of items){const b=hotspots.querySelector(`[data-place="${p.id}"]`);if(b){b.hidden=!p.visible;b.style.left=p.x+'px';b.style.top=p.y+'px';}}}});
+    world=createWorld(canvas,{position:()=>state.get().world,onPosition:(x,z,region)=>state.position(x,z,region),onMove:e=>state.record(e.event,e),onNear:()=>{},onAction:act,onAnimationEnd:()=>endSequence(false),onProject:items=>{positionDoor();const bar=menuArea();for(const p of items){const b=hotspots.querySelector(`[data-place="${p.id}"]`);if(b){b.hidden=!p.visible;b.style.left=p.x+'px';b.style.top=clearOfMenu(p.x,p.y,bar)+'px';}}}});
     FK.friendsView=()=>({...world.diagnostics,soundscape:world.soundscape});renderNav();renderHotspots();saveStatus();
     const interrupted=state.get().animation;if(interrupted)state.finishAnimation(true);
     if(['return-home','sleeping','finished'].includes(state.mail().phase)){go('den',true);}

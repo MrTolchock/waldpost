@@ -76,7 +76,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
    let prev=q.start;for(const cell of route){const delta=cell-prev,label=delta===1?'Nach rechts':delta===-1?'Nach links':delta>0?'Nach unten':'Nach oben';await activate(page.getByRole('button',{name:label,exact:true}));prev=cell;}
   }else if(q.kind==='order'){for(const n of [0,1,2]){await activate(page.locator('.puzzle-story-card[data-order="'+n+'"]'));await activate(page.locator('[data-story-slot="'+n+'"]'));}}
   else if(q.kind==='treasure'){await activate(page.getByRole('button',{name:'Ich habe sie mir gemerkt',exact:true}));await answer(q.answer);}
-  else if(q.kind==='neighbours'){for(const pos of q.given?[1]:[0,1])await active().locator('[data-answer="'+q.answer[pos]+'"]').dragTo(active().locator('[data-neighbour-slot="'+pos+'"]'));}
+  else if(q.kind==='neighbours'){for(const pos of q.given?[1]:[0,1])await active().locator('[data-answer="'+q.answer[pos]+'"]').click();}
   else if(q.kind==='mirror'){for(const n of q.answer)await activate(page.locator('.puzzle-mirror-grid button[data-cell="'+n+'"]'));}
   else if(q.kind==='syllables'){for(const part of q.parts)await activate(page.locator('.puzzle-syllable-chip:not(:disabled)[data-part="'+part+'"]').first());}
   else await answer(q.answer);
@@ -128,7 +128,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
    }),false,it.id+' success has no check mark');checked++;
   }console.log('PASS every iteration:',g.id,pool.length);
  }
- if(!process.env.FARBTUPF_GAMES)assert.equal(checked,797);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
+ if(!process.env.FARBTUPF_GAMES)assert.equal(checked,687);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
  // All puzzle types accept real taps, including SVG/image descendants and redrawing controls.
  for(const width of [1080,390]){
   await page.setViewportSize({width,height:width===390?844:810});nativeInput=width===390?'mouse':true;
