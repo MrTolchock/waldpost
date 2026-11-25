@@ -31467,6 +31467,15 @@
       "at": "2026-11-25T12:23:25.539Z",
       "seen": true,
       "operation": "368797e1-f77b-4194-8da8-2a495702062b"
+    },
+    "read-puzzle/word-2@ba72351896c4c3de": {
+      "key": "read-puzzle/word-2",
+      "revision": "ba72351896c4c3de",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:27.959Z",
+      "seen": true,
+      "operation": "738a2456-d4d2-4473-93ae-3a642e04c217"
     }
   },
   "history": [
