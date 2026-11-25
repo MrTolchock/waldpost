@@ -31719,6 +31719,24 @@
       "at": "2026-11-25T12:25:19.581Z",
       "seen": true,
       "operation": "e0cf3cca-bf9e-497a-97bc-bdbfec1aa3a2"
+    },
+    "neighbours/2-both@ef38426452ce10b0": {
+      "key": "neighbours/2-both",
+      "revision": "ef38426452ce10b0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:25:22.483Z",
+      "seen": true,
+      "operation": "5780e547-7f49-4e64-afc7-15aa0818a7b0"
+    },
+    "neighbours/2-left@0613a79ba950bf67": {
+      "key": "neighbours/2-left",
+      "revision": "0613a79ba950bf67",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:25:24.542Z",
+      "seen": true,
+      "operation": "7b270c32-93bb-411e-95b8-811e0c9ba98a"
     }
   },
   "history": [
