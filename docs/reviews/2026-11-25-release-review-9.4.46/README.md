@@ -1,6 +1,6 @@
 # Final release review — Waldpost 9.4.46
 
-> Follow-up: 9.4.47 implements R-1, B-1 (fields fill in order), C-1, C-2 (rule only) and K-1, and retires Mengen zählen; R-2 stays as the owner decided ([change notes](../../RAETSEL-FEEDBACK-2026-11-25.md#auftrag-nach-der-release-prüfung-von-946-947)).
+> Follow-up: 9.4.47 implements R-1, B-1 (fields fill in order), C-1, C-2 (rule only) and K-1, and retires Mengen zählen; R-2 stays as the owner decided ([change notes](../../RAETSEL-FEEDBACK-2026-11-25.md#auftrag-nach-der-release-prüfung-von-946-947)). The [review of 9.4.48](../2026-11-25-release-review-9.4.48/README.md) (same day, evening) checks every finding below.
 
 | | |
 | --- | --- |
