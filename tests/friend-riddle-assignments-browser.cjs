@@ -78,7 +78,7 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
    assert.equal(await active().locator('.hedge [data-subject="forest-stone"]').count(),3); // 23 Nov: rocks [1,5,10] force a detour
    assert.equal(await active().locator('[data-character="mailman"],[data-subject="swiss-postbox"]').count(),0);
    await page.screenshot({path:output+'/deer-route-'+width+'.png'});
-   for(const [id,key,selector]of [['add','1-1','.puzzle-addition'],['compare','3-5','.puzzle-compare']]){
+   for(const [id,key,selector]of [['add','1-1','.puzzle-addition'],['compare','3-4','.puzzle-compare']]){
     await page.evaluate(({id,key})=>FK.puzzleReview.preview(id,id+'/'+key),{id,key});
     assert.ok(await active().locator(selector+' [data-subject="fish-swim"]').count());
     assert.equal(await active().locator(selector+' [data-subject="forest-apple"],'+selector+' [data-subject="forest-berry"]').count(),0);

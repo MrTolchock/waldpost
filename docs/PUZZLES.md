@@ -1,6 +1,6 @@
 # Aktuelle Waldrätsel
 
-Waldpost enthält **17 Rätsel mit 687 Aufgaben**. Jedes Rätsel hat mindestens 25 verschiedene Aufgaben. Der [Rätselkatalog](PUZZLE-CATALOGUE.md) beschreibt alle Kompetenzen, Schwierigkeiten, Fragen und Lösungen. Im Spiel und in der Prüfung heissen die Spiele immer **Rätsel**, die einzelnen Fragen und Konfigurationen immer **Aufgaben**. Technische IDs und Speicherformate bleiben stabil.
+Waldpost enthält **17 Rätsel mit 652 Aufgaben**. Jedes Rätsel hat mindestens 25 verschiedene Aufgaben. Der [Rätselkatalog](PUZZLE-CATALOGUE.md) beschreibt alle Kompetenzen, Schwierigkeiten, Fragen und Lösungen. Im Spiel und in der Prüfung heissen die Spiele immer **Rätsel**, die einzelnen Fragen und Konfigurationen immer **Aufgaben**. Technische IDs und Speicherformate bleiben stabil.
 
 Eine Runde enthält fünf verschiedene Aufgaben, bevorzugt solche, die zuletzt nicht gespielt wurden. Fragen, Antwortreihenfolge und begonnene Arbeit bleiben beim Wiederöffnen erhalten. Eine richtige Antwort bleibt 900 ms sichtbar, dann geht es automatisch weiter. Nach fünf Aufgaben folgt die gemeinsame Feier. Falsche Antworten können korrigiert werden; es gibt keine Zeitbegrenzung. Die gemeinsame [Gestaltung und Bedienung](../design/PUZZLE-BLUEPRINT.md) gilt für alle Rätsel.
 

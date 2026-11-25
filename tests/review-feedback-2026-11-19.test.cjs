@@ -9,7 +9,7 @@ test('November 19 reviews merge the requested pools and add three-object rows',(
  for(const it of animals){assert.match(it.question.text,/\?$/);assert.equal(it.question.choices.length,3);}
  const rows=C.iterations('friends-beaver');assert.equal(rows.length,43);let three=0;
  for(const it of rows){const q=it.question;if(new Set(q.matrix.slice(0,3)).size===3)three++;for(let n=1;n<3;n++)assert.deepEqual([...q.matrix.slice(n*3,n*3+3)].sort(),[...q.matrix.slice(0,3)].sort());assert.equal(q.matrix[q.gap],q.answer);}
- assert.equal(three,18);assert.equal(R25.items(C,'friends-mouse').length,35);
+ assert.equal(three,18);assert.equal(R25.items(C,'friends-mouse').length,0); // single words retired on 25 Nov
 });
 test('system approval notes from either terminology are hidden without rewriting history',()=>{
  const {FK}=setup(),V=FK.puzzleReview,C=FK.puzzleCatalogue,id='add',data=V.exportData();

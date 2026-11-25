@@ -13,7 +13,7 @@
     'friends-kingfisher':'Das Kind zählt unterschiedliche Gegenstände am Bach und bestimmt ihre Anzahl bis 20.',
     'friends-frog':'Das Kind liest Tiernamen und erkennt, welches Tierbild zum gelesenen Wort gehört.',
     'friends-ibex':'Das Kind erkennt wiederkehrende Gruppen aus Stein, Tanne und Blume und ergänzt ein fehlendes Bild innerhalb oder am Ende des Musters.',
-    'friends-badger':'Das Kind liest ein vertrautes Wort, einen kurzen Satz oder eine Naturfrage und wählt das passende Bild: Tiere und ihre Handlungen, Merkmale, Lebensräume und Nahrung, Wachstum und Wetter sowie Farbwörter.',
+    'friends-badger':'Das Kind liest einen kurzen Satz oder eine Naturfrage und wählt das passende Bild: Tiere und ihre Handlungen, Merkmale, Lebensräume und Nahrung, Wachstum und Wetter sowie Farbwörter.',
     count:'Das Kind unterscheidet Marienkäfer von anderen kleinen Tieren und zählt gezielt nur die gesuchte Menge.',
     add:'Das Kind fasst zwei sichtbare Gruppen zu einer Gesamtmenge zusammen und bestimmt ihre Summe bis 10.',
     pattern:'Das Kind erkennt die wiederkehrende Einheit eines Musters und setzt die Folge nach derselben Regel fort.',

@@ -1,5 +1,7 @@
 # Anpassungen nach der Release-Prüfung vom 25. November 2026
 
+> Ergänzt durch den [zweiten Auftrag desselben Tages (9.4.45)](#zweiter-auftrag-945): Reime mit drei Karten, Fische in Fünferreihen, Vergleiche mit wechselndem Unterschied, keine einzelnen Wörter mehr bei «Lesen und verstehen». Die Zahlen weiter unten beschreiben den Stand von 9.4.44.
+
 Grundlage sind die [Release-Prüfung von 9.4.43](reviews/2026-11-25-release-review/README.md), die Prüfnotizen des Eigentümers vom Morgen des 25. November und sein Auftrag vom selben Tag. Umgesetzt in **Waldpost 9.4.44**.
 
 ## Prüfnotizen vom 25. November
@@ -89,3 +91,38 @@ Alle anderen Aufgaben behalten ihre Freigaben über die Brücke vom Release `430
 - Zahlennachbarn: 0 von 36
 
 Diese drei Rätsel erscheinen für Kinder erst, wenn ihre offenen Aufgaben in der Rätsel-Prüfung geprüft sind. Bis dahin bekommen Dachs, Waldkauz und Eisvogel keine Briefe.
+
+## Zweiter Auftrag (9.4.45)
+
+Am selben Tag wünschte der Eigentümer drei weitere Änderungen.
+
+**Reime erkennen: drei Karten.** Jede Aufgabe hat eine dritte Karte, die ähnlich klingt, sich aber nicht reimt (gleicher Anfang oder gleicher Vokal). Beispiele:
+
+- Tisch → Fisch / Hut / Tasse
+- Hase → Nase / Baum / Hose
+- Hand → Sand / Kuh / Hund
+
+Raten trifft nur noch jedes dritte Mal. Alle 25 Aufgaben sind wieder offen.
+
+**Fische in Fünferreihen.** Bei Mengen addieren und Mengen vergleichen stehen die Fische in Reihen zu fünf, wie Eicheln, Marienkäfer und Fliegenplätze: 7 ist 5 + 2, 10 ist 5 + 5. Weniger als fünf Fische stehen mittig in einer Reihe.
+
+- Auf dem Tablet sind die Fische 56 px gross.
+- Auf dem Handy stehen die verglichenen Gruppen untereinander.
+- Der Bildschirmleser nennt sie «Erste Gruppe» und «Zweite Gruppe» statt «Links» und «Rechts».
+
+Das ist eine reine Darstellung: Die Aufgaben von Mengen addieren und die 16 unveränderten Vergleiche behalten ihre Freigaben.
+
+**Mengen vergleichen ohne festes Muster.** Vorher war links immer genau 1 Fisch mehr, rechts immer 2 mehr, und «=» war in 10 von 28 Aufgaben richtig. Jetzt gewinnt links 11-mal und rechts 11-mal, je mit 1, 2 oder 3 Fischen Unterschied. «=» ist 6-mal richtig. 12 Vergleiche sind neu, 12 sind gelöscht.
+
+**Lesen und verstehen ohne einzelne Wörter.** Die 35 Aufgaben mit nur einem Wort sind gelöscht. Das Rätsel hat jetzt 78 Aufgaben: 12 Sätze, 6 Farbsätze und 60 Fragen. Die Sammlung umfasst 17 Rätsel mit 652 Aufgaben. Die Schwierigkeitsangabe der Prüfung bleibt unverändert, damit die übrigen Freigaben gelten. Die Anzeige nennt «Kurze Sätze und Naturfragen».
+
+Gegen die veröffentlichten Prüfdaten sind damit 12 von 17 Rätseln freigegeben. Offen sind:
+
+| Rätsel | Freigegeben | Offen | Gastgeber |
+| --- | ---: | ---: | --- |
+| Reime erkennen | 0 von 25 | 25 | Blaumeise, die Silben zerlegen weiter anbietet |
+| Mengen vergleichen | 16 von 28 | 12 | Fisch, der Mengen addieren weiter anbietet |
+| Lesen und verstehen | 31 von 78 | 47 | Dachs |
+| Silben zu Wörtern verbinden | 1 von 28 | 27 | Waldkauz |
+| Zahlennachbarn | 0 von 36 | 36 | Eisvogel |
+

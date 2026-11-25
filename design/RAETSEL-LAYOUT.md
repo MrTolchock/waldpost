@@ -65,7 +65,8 @@ Jede Ausnahme braucht einen fachlichen Grund und steht hier.
 | Mengen addieren | Gruppen auf dem Handy untereinander | Nebeneinander stünden die Fische in einer einzigen Spalte. |
 | Einen Vokal ergänzen | Lücke im Wort statt leerem Feld | Die Lücke gehört zum Wortbild. |
 | Muster fortsetzen | Musterfelder und «?» schrumpfen gemeinsam (Tablet 9 Felder zu 68 px, Handy 390 px zu 32 px) | Die Folge steht in einer Zeile, damit kein Umbruch eine Wiederholungseinheit zerschneidet (siehe «Folgen und Muster»). |
-| Mengen addieren, Mengen vergleichen, Mengen verteilen | Bilder 38 px (Beeren 34 px) auf Handys bis 340 px; beim Addieren stehen die Gruppen dort nebeneinander | Auf 320 px breiten Handys bleiben so alle Gruppen und die Antworten auf dem Bildschirm. |
+| Mengen addieren, Mengen vergleichen | Fische in Fünferreihen; Tablet 56 px, auf Handys höchstens ein Fünftel der Rahmenbreite (bis 340 px: 34 px beim Addieren, 38 px beim Vergleichen); beim Vergleichen stehen die Gruppen auf Handys untereinander | Fünf Fische pro Reihe wie bei Eicheln, Marienkäfern und Fliegenplätzen: 7 ist auf einen Blick 5 + 2. Zwei Gruppen zu fünf Fischen passen so nebeneinander, und auf schmalen Handys bleiben die Antworten auf dem Bildschirm. |
+| Mengen verteilen | Beeren 34 px auf Handys bis 340 px | Auf 320 px breiten Handys bleiben alle Freunde und die Antworten auf dem Bildschirm. |
 
 ## Ein neues Rätsel gestalten
 
@@ -114,3 +115,5 @@ Den Vorschlag, alle Aufnahmen und die Vermessung aller 797 Aufgaben hält [desig
   - die gelöste Lücke zeigt das gewählte Bild
   - schmale 320-px-Handys: kleinere Bilder bei Fischen und Beeren
   - das Bild bei «Silben zu Wörtern verbinden» hat einen Namen für den Bildschirmleser
+- **Zweiter Auftrag vom 25. November (C-6):**
+  - Fische in Fünferreihen, verglichene Gruppen auf Handys untereinander

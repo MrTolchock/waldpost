@@ -1,6 +1,6 @@
 # Rätsel bei den Waldfreunden
 
-Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Seit 9.4.44 hat «Lesen und verstehen» 113 Aufgaben: Jedes Tier und jedes Ding ist nur in einer Aufgabe die Antwort, und jeder Farbsatz kommt einmal vor. Die aktuelle Sammlung umfasst 17 Rätsel mit 687 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
+Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmale, Wachstum, Farbwörter, Wörter mit Bildern) ein grosses Rätsel des Dachses: «Lesen und verstehen». Jeder Brief-Freund hat damit ein oder zwei Rätsel. Seit 9.4.45 hat «Lesen und verstehen» 78 Aufgaben, nur Sätze und Fragen: Jedes Tier und jedes Ding ist nur in einer Aufgabe die Antwort, und jeder Farbsatz kommt einmal vor. Die aktuelle Sammlung umfasst 17 Rätsel mit 652 Aufgaben. Bei erneuten Besuchen wechseln sich die freigegebenen Rätsel eines Freundes ab. Begonnene Runden haben bei der Auswahl Vorrang.
 
 | Freund | Rätsel | Thematischer Bezug |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Seit 9.4.43 sind die sechs Lese-Rätsel (Kurze Sätze, Lebensräume, Tiermerkmal
 | Reh | [Schritte im Raum planen](puzzles/robot.md) | Den Weg zurück zum Wald finden |
 | Eisvogel | [Zahlennachbarn bestimmen](puzzles/neighbours.md) | Reihenfolgen am Bach üben |
 | Frosch | [Mengen ergänzen](puzzles/rocket.md), [Mengen verteilen](puzzles/picnic.md) | Fliegen am Teich und gemeinsames Picknick mit den Freunden |
-| Dachs | [Lesen und verstehen](puzzles/friends-badger.md) | Wörter, kurze Sätze und Naturfragen lesen und das passende Bild wählen: Tiere, Lebensräume, Wachstum, Wetter und Farben |
+| Dachs | [Lesen und verstehen](puzzles/friends-badger.md) | Kurze Sätze und Naturfragen lesen und das passende Bild wählen: Tiere, Lebensräume, Wachstum, Wetter und Farben |
 | Steinbock | [Muster fortsetzen](puzzles/friends-ibex.md) | Wiederholungen mit Stein, Tanne und Blume |
 
 Das Reh bewegt sich beim Weg-Rätsel mit den vier Pfeilen zum Wald. Felsen sperren einzelne Felder. Beim Fisch zeigen Addition und Mengenvergleich gezeichnete Fischgruppen.

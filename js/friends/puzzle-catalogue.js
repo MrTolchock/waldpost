@@ -7,7 +7,7 @@
     'friends-squirrel':['MA.1.A.2.a','Mengen zählen','0–20 Eicheln; Vierer- und Fünferstruktur'],
     'friends-bird':['D.2.A.1.b; D.1.A.1.b','Reime erkennen','25 verschiedene Reimpaare ohne vertauschte Doppelungen; eingeführte Buchstaben'],
     'friends-beaver':['MA.2.A.1.a','Reihen mit Waldgegenständen ergänzen','Zwei gleiche und ein anderer Gegenstand je Reihe; das Muster der ersten zwei Reihen ergänzen','Zwei oder drei verschiedene Waldgegenstände je Reihe; jede Reihe enthält dieselben Dinge wie die erste'],
-    'friends-badger':['D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a','Lesen und verstehen','Vertraute Wörter, kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten'],
+    'friends-badger':['D.2.A.1.b; D.2.B.1.b; NMG.2.1.a; NMG.2.3.a; NMG.2.4.a','Lesen und verstehen','Vertraute Wörter, kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten','Kurze Sätze und Naturfragen lesen; zwei oder drei Bildantworten'], // the third field is the reviewed contract; the fourth shows the pool since 9.4.45 (no single words)
     'friends-ibex':['MA.2.A.2.a','Wiederholungsmuster fortsetzen und ergänzen','AAB, ABB, ABC, ABAC, AABC mit Stein, Tanne und Blume; Lücke am Ende oder in der zweiten Gruppe'],
     count:['MA.1.A.2.a','Mengen gezielt zählen','6–15 Marienkäfer zwischen Bienen und Schnecken'],
     add:['MA.1.A.3.a','Sichtbare Gruppen addieren','Zwei positive Summanden; Summe höchstens 10'],
@@ -44,7 +44,10 @@
     ['Schnecke','Decke','Ball'],['Sonne','Tonne','Kuh'],['Kanne','Tanne','Hut'],
     ['Mund','Hund','Stern'],['Dach','Bach','Schuh'],['Ziege','Fliege','Nase']
   ]);
-  rhymes.forEach(([text,answer,wrong],i)=>add('friends-bird','rhyme-'+i,text+' – '+answer,{kind:'rhyme',prompt:'Welches Wort reimt sich?',text,picture:wordArt[text],answer,choices:[answer,wrong]}));
+  // 25 Nov (owner, release review C-5): a third card sounds close but does not rhyme (same beginning or vowel),
+  // so the child has to listen to the ending; guessing is right only one time in three.
+  const nearRhyme={Tisch:'Tasse',Bein:'Ball',Kuh:'Kopf',Hase:'Hose',Rose:'Nase',Buch:'Bus',Hose:'Hase',Turm:'Tuch',Topf:'Tonne',Hand:'Hund',Schal:'Schuh',Seil:'Stein',Tasse:'Tanne',Bank:'Ball',Stern:'Stein',Maus:'Mund',Nuss:'Nase',Boot:'Bach',Biene:'Bein',Schnecke:'Schrank',Sonne:'Sand',Kanne:'Kasse',Mund:'Maus',Dach:'Dose',Ziege:'Biene'};
+  rhymes.forEach(([text,answer,wrong],i)=>add('friends-bird','rhyme-'+i,text+' – '+answer,{kind:'rhyme',prompt:'Welches Wort reimt sich?',text,picture:wordArt[text],answer,choices:[answer,wrong,nearRhyme[text]]}));
   C.pools.owl.forEach((t,i)=>{
     // Like the other short sentences, compare actions of the same animal.
     // The fish has no alternative action drawing; use the sleeping mouse instead.
@@ -241,7 +244,10 @@
   // A given left neighbour is already on the card row, so it is never offered again (22 Nov review); three choices remain.
   const neighbourChoices=(n,given)=>{const c=Array.from(new Set([Math.max(0,n-2),n-1,n+1,n+2])).filter(v=>!(given==='left'&&v===n-1));if(c.length<3)c.push(n+3);return c;};
   for(let n=1;n<=18;n++)for(const given of [null,'left'])add('neighbours',n+'-'+(given||'both'),'Mitte '+n+(given?' / Vorgänger gegeben':''),{kind:'neighbours',prompt:given==='left'?'Welche Zahl kommt danach?':'Welche Zahlen kommen davor und danach?',n,given,answer:[n-1,n+1],choices:neighbourChoices(n,given)});
-  for(let a=1;a<=10;a++)for(const b of [a,Math.max(1,a-1),Math.min(10,a+2)])if(!pools.compare?.some(t=>t.question.a===a&&t.question.b===b))add('compare',a+'-'+b,a+' und '+b,{kind:'compare',item:'fish-swim',prompt:'Wo sind mehr Fische?',a,b,answer:a===b?'equal':a>b?'left':'right',choices:['left','equal','right']});
+  // 25 Nov (owner, release review C-6): either group can be bigger by 1, 2 or 3 fish (left 11, right 11, equal 6),
+  // so no fixed difference gives the answer away. Kept pairs keep their IDs.
+  const comparePairs=[[1,1],[2,1],[1,3],[2,4],[3,2],[3,3],[3,4],[4,3],[4,7],[5,3],[5,5],[5,6],[5,8],[6,3],[6,6],[6,8],[7,6],[7,9],[7,10],[8,5],[8,6],[8,8],[8,9],[9,7],[9,10],[10,7],[10,9],[10,10]];
+  for(const [a,b]of comparePairs)add('compare',a+'-'+b,a+' und '+b,{kind:'compare',item:'fish-swim',prompt:'Wo sind mehr Fische?',a,b,answer:a===b?'equal':a>b?'left':'right',choices:['left','equal','right']});
   const mirrorMasks=[7,56,448,73,146,292,273,84,15,30,60,120,240,480,31,62,124,248,496,91,182,364,341,170,85,340,325,387,457,199];
   mirrorMasks.forEach((mask,n)=>{const left=Array.from({length:9},(_,i)=>i).filter(i=>mask&(1<<i));add('mirror','grid-'+mask,'Blattmuster '+(n+1),{kind:'mirror',prompt:'Ergänze rechts das Spiegelbild.',width:3,rows:3,left,answer:left.map(i=>Math.floor(i/3)*3+2-i%3).sort((a,b)=>a-b)});});
   // 23 November review: number cards stand in ascending order, so each Aufgabe gets its own window of numbers.
@@ -340,7 +346,8 @@
     'friends-hedgehog/nature-question-21':['butterfly','ladybird'],
     'friends-hedgehog/nature-question-24':['otter','alpine-marmot']
   };
-  pools['friends-badger']=pools['friends-badger'].filter(it=>{const [home,key]=it.id.split('/');return !retiredReading[home]?.includes(key);}).map(it=>{const wrong=plausibleReading[it.id];if(wrong)it.question.choices=[it.question.answer,...wrong];return it;});
+  // 25 Nov (owner, second request): only sentences and questions are read; the single-word Aufgaben are retired.
+  pools['friends-badger']=pools['friends-badger'].filter(it=>{const [home,key]=it.id.split('/');return home!=='friends-mouse'&&!retiredReading[home]?.includes(key);}).map(it=>{const wrong=plausibleReading[it.id];if(wrong)it.question.choices=[it.question.answer,...wrong];return it;});
   const canonical=v=>Array.isArray(v)?'['+v.map(canonical).join(',')+']':v&&typeof v==='object'?'{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}':JSON.stringify(v);
   function hash(v){const s=canonical(v);let a=2166136261,b=5381;for(let i=0;i<s.length;i++){a=Math.imul(a^s.charCodeAt(i),16777619);b=Math.imul(b,33)^s.charCodeAt(i);}return (a>>>0).toString(16).padStart(8,'0')+(b>>>0).toString(16).padStart(8,'0');}
   function puzzle(id){const g=FK.friendsLibrary.catalogue().find(g=>g.id===id),m=meta[id];return g&&m?{...g,hostName:C.hosts[g.host].name,reference:m[0],competence:m[1],difficulty:m[2],displayDifficulty:m[3]||m[2],instruction:R.instructions[id]}:null;}

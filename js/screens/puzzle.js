@@ -66,7 +66,8 @@
     node.dataset.answer=String(value);answerArea.append(node);return node;
   }
   function numeric(q=question) {q.choices.forEach(n=>option(n,null,String(n)));}
-  function objects(id,n,cls='') {return h('div',{class:'puzzle-objects '+cls,'aria-label':n+' Objekte'},Array.from({length:n},()=>picture(id)));}
+  // Groups stand in rows of five (25 Nov, release review C-6); fewer than five stand in one centred row.
+  function objects(id,n,cls='') {return h('div',{class:'puzzle-objects '+cls,'aria-label':n+' Objekte',style:{'--pv-cols':String(Math.max(1,Math.min(5,n)))}},Array.from({length:n},()=>picture(id)));}
   function renderCount(q) {
     // Acorns keep one cell size whatever the number of columns (rows of four or five, 23 Nov review).
     const field=h('div',{class:q.kind==='nuts'?'puzzle-nuts':'puzzle-meadow',style:q.kind==='nuts'?{'--nut-columns':String(q.columns||5)}:q.columns?{gridTemplateColumns:'repeat('+q.columns+', minmax(0,1fr))'}:{}});
@@ -280,7 +281,7 @@
   }
   function renderCompare(q) {
     const pair=h('div',{class:'puzzle-compare'});
-    for(const [id,n]of [['left',q.a],['right',q.b]]){let node;node=button((id==='left'?'Links sind mehr Fische':'Rechts sind mehr Fische')+' ('+n+(n===1?' Fisch':' Fische')+')',()=>choose(id,node),'puzzle-berry-plate',h('span',{},objects(q.item||'forest-berry',n)));node.dataset.answer=id;pair.append(node);}
+    for(const [id,n]of [['left',q.a],['right',q.b]]){let node;node=button((id==='left'?'Erste Gruppe hat mehr Fische':'Zweite Gruppe hat mehr Fische')+' ('+n+(n===1?' Fisch':' Fische')+')',()=>choose(id,node),'puzzle-berry-plate',h('span',{},objects(q.item||'forest-berry',n)));node.dataset.answer=id;pair.append(node);}
     scene.append(pair);option('equal','=','Gleich viele');
   }
   function renderMirror(q) {

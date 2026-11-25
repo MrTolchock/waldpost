@@ -7,11 +7,11 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',out=process.en
  await page.goto(base+'/?screen=puzzle-review');await page.locator('.gate-task').waitFor();const [a,b]=(await page.locator('.gate-task').textContent()).match(/\d+/g).map(Number);await page.getByLabel('Deine Antwort',{exact:true}).fill(String(a*b));await page.locator('.gate-submit').click();await page.waitForFunction(()=>FK.current()==='puzzle-review');await page.evaluate(()=>document.fonts.ready);
  const active=()=>page.locator('.screen:not([hidden])'),preview=async(id,it)=>{await page.evaluate(({id,it})=>FK.puzzleReview.preview(id,it),{id,it});await active().locator('.puzzle-scene').waitFor();};
  assert.equal(await page.getByRole('heading',{name:'Rätsel-Prüfung',exact:true}).count(),1);assert.equal(await page.locator('.review-puzzle').count(),17);for(const id of ['nature','pattern'])assert.equal(await page.locator('[data-puzzle="'+id+'"]').count(),0);assert.doesNotMatch(await active().innerText(),/\b(Puzzles?|Iterationen?)\b/);
- // The review numbers each Aufgabe by its place in the whole Rätsel (since 9.4.44 the 113 Aufgaben of «Lesen und verstehen»).
+ // The review numbers each Aufgabe by its place in the whole Rätsel (since 9.4.45 the 78 Aufgaben of «Lesen und verstehen»).
  await page.evaluate(()=>{const V=FK.puzzleReview;for(const it of FK.puzzleCatalogue.iterations('friends-badger').slice(0,24)){V.seen('friends-badger',it.id);V.decide('friends-badger',it.id,'approved');}V.start('friends-badger');});
- assert.equal(await active().locator('.puzzle-round').textContent(),'25 / 113');
- const word=await page.evaluate(()=>FK.puzzleCatalogue.iterations('friends-badger').findIndex(it=>it.id==='friends-mouse/word-1')+1);
- await preview('friends-badger','friends-mouse/word-1');assert.equal(await active().locator('.puzzle-round').textContent(),word+' / 113');
+ assert.equal(await active().locator('.puzzle-round').textContent(),'25 / 78');
+ const word=await page.evaluate(()=>FK.puzzleCatalogue.iterations('friends-badger').findIndex(it=>it.id==='friends-owl/sentence-4')+1);
+ await preview('friends-badger','friends-owl/sentence-4');assert.equal(await active().locator('.puzzle-round').textContent(),word+' / 78');
  for(const [width,height]of [[1024,700],[390,844]]){
   await page.setViewportSize({width,height});
   await preview('friends-beaver','friends-beaver/matrix-three-0-6');assert.equal(await active().locator('.puzzle-matrix-row').count(),3);assert.equal(await active().locator('.puzzle-matrix-row').first().locator('[data-subject]').evaluateAll(n=>new Set(n.map(e=>e.dataset.subject)).size),3);await page.screenshot({path:out+'/three-objects-'+width+'.png'});

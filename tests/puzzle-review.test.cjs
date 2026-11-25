@@ -1,7 +1,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 require('./history-hint.cjs')('073657f32f87daa47739910df090e4250289cc55','12511e417e384f8e912be4a62496fce2c234c1e8');
 // 9.4.43: six reading Rätsel are one Rätsel of Dachs; their Aufgaben keep their IDs (home before «/»).
-const R25=require('./review-changes-2026-11-24-reading.cjs'),R26=require('./review-changes-2026-11-25.cjs');
+const R25=require('./review-changes-2026-11-24-reading.cjs'),R26=require('./review-changes-2026-11-25.cjs'),R27=require('./review-changes-2026-11-25-second.cjs');
 const {setup,check}=require('../tools/puzzle-catalogue.cjs');
 const plain=v=>JSON.parse(JSON.stringify(v));
 function approve(FK,id){const V=FK.puzzleReview,C=FK.puzzleCatalogue;for(const it of C.iterations(id)){assert.ok(V.seen(id,it.id));assert.ok(V.decide(id,it.id,'approved'));}assert.ok(V.decide(id,null,'approved'));}
@@ -29,7 +29,7 @@ test('every active puzzle has at least 25 unique finite definitions, competence 
    if(q.kind==='survey'&&q.task==='most'){const max=Math.max(...q.counts);assert.equal(q.counts.filter(n=>n===max).length,1);assert.equal(q.answer,q.fruit[q.counts.indexOf(max)]);}
   }
  }
- assert.equal(total,687);
+ assert.equal(total,652);
 });
 test('rhyme pairs are distinct even when their word order is ignored',()=>{
  const pool=setup().FK.puzzleCatalogue.iterations('friends-bird'),pairs=pool.map(it=>[it.question.text,it.question.answer].map(w=>w.toLocaleLowerCase('de-CH')).sort().join('/'));
@@ -79,7 +79,8 @@ test('latest review fixes apply throughout the relevant pools and retire the req
  const {FK}=setup(),C=FK.puzzleCatalogue;
  for(const id of ['double','shapes','survey','friends-fish','trace','trace-numbers','friends-frog','friends-kingfisher','read-colours','read-leaves','read-word','pattern','nature','sequence']){assert.equal(C.puzzle(id),null);assert.equal(C.iterations(id).length,0);assert.equal(FK.puzzleRounds.instructions[id],undefined);}
  const animalPictures=new Set(['frog','hedgehog','bee','snail','dog','cat','spider','caterpillar','bear','sheep','pig','forest-fox','duck-swim','ant','ladybird','tortoise','squirrel-sit','alpine-ibex','alpine-marmot','stork','heron','wild-boar','mole','dragonfly','badger']); // local animals since 23 Nov
- const mouse=R25.items(C,'friends-mouse');assert.equal(new Set(mouse.map(it=>it.question.text)).size,mouse.length);assert.ok(mouse.some(it=>it.id.includes('friends-frog-animal-'))&&mouse.some(it=>it.id.includes('read-word-word-')));
+ // 25 Nov: «Lesen und verstehen» reads only sentences and questions; the single-word Aufgaben are retired
+ const mouse=R25.items(C,'friends-mouse');assert.equal(mouse.length,0);
  for(const it of mouse.filter(it=>it.id.includes('friends-frog-animal-')))assert.ok(it.question.choices.every(id=>animalPictures.has(id)),it.id+' has only animals');
  const added=R25.items(C,'friends-hedgehog').filter(it=>it.id.includes('/nature-question-'));assert.equal(added.length,14);
  for(const it of added){assert.match(it.question.text,/^[^.!?]+\?$/,it.id+' is a question');assert.equal(it.question.choices.length,3);}
@@ -207,13 +208,13 @@ test('the expanded mouse reading pool keeps approval for all 25 original word ca
  const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
  const old=environment({read:snapshotReader('12511e417e384f8e912be4a62496fce2c234c1e8').read});old.execute('js/friends/puzzle-implementation.js');
  const id='friends-mouse',former=old.FK.puzzleCatalogue,current=setup().FK.puzzleCatalogue,items=former.iterations(id);
- assert.equal(items.length,25);assert.ok(R25.items(current,id).length>items.length);
+ assert.equal(items.length,25);assert.equal(R25.items(current,id).length,0,'single-word reading Aufgaben are retired (25 Nov)');
  // On 23 November «Nuss» became the drawn Baumnuss; those three cards reopened on purpose.
  const R23=require('./review-changes-2026-11-23.cjs');
- for(const item of items)assert.equal(current.acceptsRevision(R25.owner(id),item.id,former.iterationRevision(id,item)),!R23.changed(item.id)&&!(R25.changed(item.id)||R26.changed(item.id)),item.id);
+ for(const item of items)assert.equal(current.acceptsRevision(R25.owner(id),item.id,former.iterationRevision(id,item)),!R23.changed(item.id)&&!(R25.changed(item.id)||R26.changed(item.id)||R27.changed(item.id)),item.id);
 });
 test('verified unchanged partial rounds resume verbatim; changed questions remain archived',()=>{
- const {FK,memory}=setup(),id='compare',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);
+ const {FK,memory}=setup(),id='add',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);
  assert.deepEqual(plain(setup(memory).FK.puzzleRounds.start(id)),plain(s));
  s.questions[0].a=99;FK.puzzleRounds.save(s);const restored=setup(memory),next=restored.FK.puzzleRounds.start(id);assert.equal(next.round,0);assert.equal(JSON.parse(restored.memory.get('farbtupf.puzzles.v1')).legacy[id].questions[0].a,99,'the earlier snapshot is archived');
 });
@@ -274,7 +275,7 @@ test('November 17 follow-up uses a pictured nut, real swimming habitat and a sho
 });
 test('«Lesen und verstehen» asks about every subject once with plausible wrong pictures; syllables have their own distractor',()=>{
  const C=setup().FK.puzzleCatalogue,reading=C.iterations('friends-badger'),R26=require('./review-changes-2026-11-25.cjs');
- assert.equal(reading.length,113);
+ assert.equal(reading.length,78);assert.equal(reading.filter(it=>it.id.startsWith('friends-mouse/')).length,0,'no single-word Aufgaben');
  // one Aufgabe per answer subject: a word, a sentence and a question never share their answer picture (25 Nov)
  const subject=p=>p.replace(/^(vocab|forest|alpine|habitat)-/,'').replace(/-(sit|run|swim|walk|stand|fly|sleep|jump|nut)$/,'').replace(/^nut$/,'acorn');
  const pictures=reading.filter(it=>it.question.kind==='reading').map(it=>subject(it.question.answer));
@@ -288,4 +289,15 @@ test('«Lesen und verstehen» asks about every subject once with plausible wrong
  const syllables=C.iterations('read-puzzle'),extra=syllables.map(it=>it.question.chips.filter(chip=>!it.question.parts.includes(chip)));
  for(const [i,chips]of extra.entries()){assert.equal(chips.length,1,syllables[i].id);assert.ok(!syllables[i].question.parts.some(p=>p.toLowerCase()===chips[0]),syllables[i].id);}
  assert.ok(new Set(extra.flat()).size>=25,'the distractor differs from word to word');assert.ok(extra.flat().filter(s=>s==='ma').length<=1);
+});
+test('rhymes offer a third card that sounds close; fish comparisons vary their difference on both sides',()=>{
+ const C=setup().FK.puzzleCatalogue,W=setup().FK.puzzleRounds.wordArt,ending=w=>w.toLocaleLowerCase('de-CH').replace(/^[^aeiouäöü]*/,'').replace(/(.)\1/g,'$1');
+ for(const {id,question:q}of C.iterations('friends-bird')){
+  assert.equal(q.choices.length,3,id);assert.equal(new Set(q.choices).size,3,id);assert.ok(q.choices.every(word=>W[word]),id+' pictures every card');
+  assert.equal(ending(q.answer),ending(q.text),id+' the answer rhymes');
+  for(const word of q.choices.filter(word=>word!==q.answer))assert.notEqual(ending(word),ending(q.text),id+' '+word+' does not rhyme');
+ }
+ const compare=C.iterations('compare'),count=answer=>compare.filter(it=>it.question.answer===answer).length;
+ assert.equal(compare.length,28);assert.equal(count('left'),11);assert.equal(count('right'),11);assert.equal(count('equal'),6);
+ for(const side of ['left','right']){const gaps=new Set(compare.filter(it=>it.question.answer===side).map(it=>Math.abs(it.question.a-it.question.b)));assert.deepEqual([...gaps].sort(),[1,2,3],side+' wins by 1, 2 or 3');}
 });

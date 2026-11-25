@@ -128,7 +128,7 @@ const base=process.env.FARBTUPF_BASE_URL||'http://127.0.0.1:8000',shots=process.
    }),false,it.id+' success has no check mark');checked++;
   }console.log('PASS every iteration:',g.id,pool.length);
  }
- if(!process.env.FARBTUPF_GAMES)assert.equal(checked,687);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
+ if(!process.env.FARBTUPF_GAMES)assert.equal(checked,652);assert.deepEqual(await snapshot(),before,'review leaves child saves unchanged');
  // All puzzle types accept real taps, including SVG/image descendants and redrawing controls.
  for(const width of [1080,390]){
   await page.setViewportSize({width,height:width===390?844:810});nativeInput=width===390?'mouse':true;

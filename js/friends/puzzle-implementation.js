@@ -2,19 +2,19 @@
 window.FK.puzzleImplementation = "58dc132291d4a1570169a46f85a872ffb1e49291ef95360425b243f877c6ae50";
 window.FK.puzzleImplementations = {
   "friends-squirrel": "991301d28e48b0f29f7d8618faf7bc422e0d090cdcafb3b721f608764d57bf39",
-  "friends-bird": "1fe8c2b877f21c2852bda84270c44f817a46fd67913a36a45d0e51e25ae64838",
+  "friends-bird": "56bc8cb4cfd7490244179cf6b8aa460e1a94b50501ccc45aee95d3b1d93fdc6c",
   "friends-beaver": "ad9ef4f5fea90b4f255ff5b90e0f3afa50044e18db0dfb200d50e95ee772673e",
-  "friends-badger": "31b50815418d7b6e8dfba656e76794aaf2b7386c022ad70e776e701747b39811",
+  "friends-badger": "d7b874eb83872c93a339518e714101be20d89a0626ee8251dd49a78bf436353b",
   "friends-ibex": "3db93b1e3c42fce55bf8078b5400002b178a3156cbedcd0b831437a1002c32e2",
   "count": "2ad2568722d38a83cd11d74fb839f72f383db7cf7e4ad7b217327c4b2edd2ec4",
-  "add": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
+  "add": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
   "rocket": "38ef172115bf76d504342a5c3c4f826f822866ffb880dc6df3050131533df8fd",
   "picnic": "03d3922752a958fb45f7d8d05912188cca25469d61006b4d3ed74721861ed7ad",
   "syllable": "326194b079ca71cd2baafdd572843710489a040ab2d84d10d87621d06b6ce5ec",
   "robot": "662b8f1a470fbb8122080e89f38980c2fa0f0deef5466ee414e1226fb087edc3",
   "treasure": "8c762dbd3cab1bcc20b2c9068be77e312f3a349b5743229aa136fde26dd60622",
   "neighbours": "1f695fe419d228d2008ff066a1a2b32fe68fa3a473c1c3aac4f89decc66c52f0",
-  "compare": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
+  "compare": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
   "mirror": "fed983f8106b8197d796bf210f9f091d4108aa9d01a39d4bb002f3578c319841",
   "vowels": "a73fded6acb1749c8586572891cf158c665ad5b30b7e0aa56cad27a46a7004f2",
   "read-puzzle": "662936bd732860327c3e9bc64e0bec6089dcc15f25ac4e841d8d573616fa4f0b"
@@ -45,31 +45,31 @@ window.FK.puzzleIterationImplementations = {
   "friends-squirrel/four-8": "0729ef579345ad5fe0a35f388faceb05eefbaf4ebd70f430bf8cb8928de9b920",
   "friends-squirrel/four-12": "0729ef579345ad5fe0a35f388faceb05eefbaf4ebd70f430bf8cb8928de9b920",
   "friends-squirrel/four-16": "0729ef579345ad5fe0a35f388faceb05eefbaf4ebd70f430bf8cb8928de9b920",
-  "friends-bird/rhyme-0": "9edc1a6ed1d5cbe641737e9d19cc4b3201f491c5bfa53261c9c21b22f97a8157",
-  "friends-bird/rhyme-1": "e50e14abfe8108d5b68bd94df1efb2f24bf290f39931ec64f5e9f53c992840dc",
-  "friends-bird/rhyme-2": "d562efa09dc56e9cec9fb4660fefb3d419f02c60e2bdc3bd8a1111225237aea0",
-  "friends-bird/rhyme-3": "999c244455a1e54f89fc09434f046cf6e7460360344c9106e27e0fcfdba25889",
-  "friends-bird/rhyme-4": "3dd7dc3c006b37ba72310cc709c3db293b85d4fccd07ae1965895faba873047e",
-  "friends-bird/rhyme-5": "838345cc1036f6aa2510f344f22127dfdb4bcd51a912e87ba542e4476c6f0739",
-  "friends-bird/rhyme-6": "3dfd7c29b288e59c5dd344f60cc51256d33e8d606107b32f91ecae6a568950b0",
-  "friends-bird/rhyme-7": "d3de567f68ee5549b011f275b8f0822dd0d1dd1efe316d60836f1a0d91dd5002",
-  "friends-bird/rhyme-8": "744f02a6625dc6a0d3ef480a6073cbf4b05b4ae152e16c83df547d18a7ed4938",
-  "friends-bird/rhyme-9": "7276e0ab5235f25b1aa42d80086218ef69d08213c080385b434c8012455a8e22",
-  "friends-bird/rhyme-10": "39171b427ba24a86562d5f177d77f73d99916abe0338176b73505e617244e58e",
-  "friends-bird/rhyme-11": "d86f538336c613e10af871ad872e1ed31a319cd4ad776cf12c22f0a3348d7f1f",
-  "friends-bird/rhyme-12": "20d9c297858ba26edebefe90dab56c8bab4a786f19821a71955b53c20be26633",
-  "friends-bird/rhyme-13": "d9ddb79bf4d5bd52dd576b932760ef54478624832683d85144a7ee859bfa72c4",
-  "friends-bird/rhyme-14": "6984940c66b07fb85528475620d6591291ee0091072433d2d9819658b9b6cbe4",
-  "friends-bird/rhyme-15": "eac87e780b4c3363461b28ecefa32114c825ecebc31f3738aec62bd74c25d70d",
-  "friends-bird/rhyme-16": "16e59bb6d45f98fd478912ec357eb98ed248570a3b3a761b838e64195d42c214",
-  "friends-bird/rhyme-17": "b30f1762b8a6062fc8a528871278f8bfb3be4a15fc081c3252d0ef03a6a25f93",
-  "friends-bird/rhyme-18": "87264ce6fae1124c9c661c4896d12e5dff636eafec4858f61c28cfe6bba22446",
-  "friends-bird/rhyme-19": "da15a6439e51e1183038345173efe4658ab8d749f2cc2e97b57d23925b0be10f",
-  "friends-bird/rhyme-20": "f01178f434d95bd5ce58081eb1945c8a98535e4d4e4cde64198c19209316531d",
-  "friends-bird/rhyme-21": "5776be230979c5af1b83e4c8f87cb353851502383385f658e6363d64eeea62b0",
-  "friends-bird/rhyme-22": "01854c9d5ce35f0a72346ca57dd0756f56f6d56199cbe1ff5e32fb3f37d120be",
-  "friends-bird/rhyme-23": "f6fca572e3015f3890df7943b2af65ac5a304ca9d1d31149b5094fe4805ad080",
-  "friends-bird/rhyme-24": "9620d7f126de9ad1954fcc426b1834ffed505bc1097cc152a8466c89f93ba3a9",
+  "friends-bird/rhyme-0": "f9bad7a9f21c860550bda10a792d72cff1ca375a3659e31fdecbb9d52f60faf4",
+  "friends-bird/rhyme-1": "f239168d60ce7ca14d82519bf71ca9de2f50ac5ccc190ab1209e98bd4c5ce85d",
+  "friends-bird/rhyme-2": "0fa09f65cd65b96f1297d0e5188f60080a057dccb48289676400647d1638714f",
+  "friends-bird/rhyme-3": "c90675db84e1ec232b14142bd5f4b27e3133fa4d47b7e33643c20024a6b248c5",
+  "friends-bird/rhyme-4": "fba1ec5fe42503548e2744bb8230f0fd34a643eb45b8d54994ea298288f42bf2",
+  "friends-bird/rhyme-5": "cbd89aef4da84a2816c85095bbf50c376997b1ab5776a6dba3630cbf4c089e7b",
+  "friends-bird/rhyme-6": "86e1ec3795c78af4034e4d564619a96697310d3e95c0942d1b5220521a5bd460",
+  "friends-bird/rhyme-7": "5a066cf23217a6f1da4c93b7eeada27bbd96eed8b6e1d9916d7f19d891acf60d",
+  "friends-bird/rhyme-8": "b90b4e1402b37952425dff15959c063446565a24b7c2cecfd250f49947bebe86",
+  "friends-bird/rhyme-9": "36e6183962fbffcef09ef039110860a2dd7f6c1ac41f6dbfece34ded7c6b8fdd",
+  "friends-bird/rhyme-10": "6523e4a387edbc01060099317ffd21f1ad17ba0772e14a75d44c62bfb294f200",
+  "friends-bird/rhyme-11": "68a3f41a7a15b5e0197e36aecb5ea3b466ae2ad040b854400adf1fc346aaf47d",
+  "friends-bird/rhyme-12": "08e62b0302d8856b846e987462d00611e66524662799c3cd65897ca0949dbb38",
+  "friends-bird/rhyme-13": "43bbe3ae633eb76ebbc6241c9b6de74fd3d5d5741bd825ed73be33dc7dcb20d7",
+  "friends-bird/rhyme-14": "ba1ab56b675c4b054374eaf9c56aaa9105fb947294a0b124fed335406adeabb3",
+  "friends-bird/rhyme-15": "b92c724e682ee0565f93867969ec88af8deb24a96e9c04deed3545c08d87620b",
+  "friends-bird/rhyme-16": "4a31faf9287a772baffe260e168101e4f8ca3fccc3b271d8c82406494a320261",
+  "friends-bird/rhyme-17": "965a12d584feb323c994ef20e6e12206ebd26480d070a39a111e16b80b91cdcd",
+  "friends-bird/rhyme-18": "d55ef22d3e2943c4c48892cbb2d6ca7788c7ed348a31fdb145c4e76397469735",
+  "friends-bird/rhyme-19": "ac29b0b6587d6506c3d7d0008c15bf30bc6254a8c8f99c48fa273b0f3aaa973a",
+  "friends-bird/rhyme-20": "c40e77b2c235c544e219451ee9ffd2021efb402b47ad253f85a7d94574f19217",
+  "friends-bird/rhyme-21": "9a6abecab701e127eee6a00a9cc4f0864627a472631b907bf3c43bd8e3638ec9",
+  "friends-bird/rhyme-22": "bf9211aa57b433d9426fc2ad32dc2f92194e19b911fc2823e48903c4ab8dbc6f",
+  "friends-bird/rhyme-23": "5e84d484375d14de75c19979f135be9c1774a1c8b9daf1d3972b1a2ade339d59",
+  "friends-bird/rhyme-24": "5dedfe6b256525d12c4548ba87e8eb0fc62f55d5f4562cc3160a81d8c547e940",
   "friends-beaver/matrix-0": "ad9ef4f5fea90b4f255ff5b90e0f3afa50044e18db0dfb200d50e95ee772673e",
   "friends-beaver/matrix-1": "ad9ef4f5fea90b4f255ff5b90e0f3afa50044e18db0dfb200d50e95ee772673e",
   "friends-beaver/matrix-2": "ad9ef4f5fea90b4f255ff5b90e0f3afa50044e18db0dfb200d50e95ee772673e",
@@ -185,41 +185,6 @@ window.FK.puzzleIterationImplementations = {
   "friends-owl/pair-5": "e67df299699ab06071b3fd47d419f283db8a6c698f39b2671b19c409f8bb2acb",
   "friends-owl/pair-6": "8c2c0c9718fe17e0926d6dfd3e3dd5c15805627a015a137d5cb067a3f3d00f01",
   "friends-owl/pair-9": "6ecab1ccf6d36bd70e7e65d1f24e5d01c819c92368b645933161b49014267e33",
-  "friends-mouse/word-1": "9163e04b9be860ec4bf9145ac9150a9ae0d8cfb55dac17821229e3e12aa4cda1",
-  "friends-mouse/word-2": "e999d3202db0080fb5bfe3505281a0e4ca6f21eddcc6eb9373efa3fd6d88dc28",
-  "friends-mouse/word-3": "e7f54034886ddede5183343a241240028525bbcc1bd2ad8d8b31a2b6e7073f98",
-  "friends-mouse/word-4": "ab75ccf64960bf643408b1ecf0bae64f6cede4002e372fe0f65ea55445e7284a",
-  "friends-mouse/word-6": "e0496c692d44eed73151260acbe7154f109afe698f92c2da9963295ba454a072",
-  "friends-mouse/word-7": "97a3802b6ec7324c1d516c90dd9719d403ef107b780b9e3ab479b1b50c6db14a",
-  "friends-mouse/word-9": "403f0da30ce82ee434288412934c1058681ade925d9b11c09e64ee98b45151f8",
-  "friends-mouse/word-11": "4adda94940fefbc8dae449878ff0ec0236424de2e6d92097251f9cf698c1c83a",
-  "friends-mouse/word-12": "3ef7cb4256cf5b9449cbbc8cef04098c2e5dc997d4829f1ba026abbe50f27e8f",
-  "friends-mouse/word-13": "ea31920f777e1bdca44e96b7f473e552c7cd8e382e4130c4458772bb72d6135d",
-  "friends-mouse/word-14": "51d93ac9fa0d73a0691a7a51f26f25db29ad85590d28548b23cfe75867a0a52c",
-  "friends-mouse/word-16": "9d5f94bd91d980d943754a81797b6dc4043218b7fb94b318a0f9dd71598684c5",
-  "friends-mouse/word-17": "affdf063082f90e2f35eb5a44903cac515cc0a7908516cd62d7f739a786046e2",
-  "friends-mouse/word-18": "5a03fa5aeb9aa869708b3f9dd52dc0aec98237c2e4a5235124e928e037e84c2c",
-  "friends-mouse/word-19": "9432c965ee8c7e43dff2706dea0498dcfec1d1413b9941add5347798c12d416b",
-  "friends-mouse/word-20": "9bbf7f51ae179f2d0b55f6863b1b759a11da4a8eed741e0d34d6a084cdb03086",
-  "friends-mouse/word-21": "75710c6c4553262f4909d34c96fdf3866eb88865bd7d2d8c4b0d4e8aa18d8232",
-  "friends-mouse/word-23": "c0618a25157bbbd385ffa2c4884eca61b271f7845c4197f5cf90de2dbedb6d86",
-  "friends-mouse/word-24": "194819154b82b129e51dc56ca0f97ef1a0dddfbd001ee977debe2bc01ee63f74",
-  "friends-mouse/friends-frog-animal-8": "6f851cdef9ee813bd76d04ebda4ce4f0794e6ed6e1730152a5e4c50aaf868195",
-  "friends-mouse/friends-frog-animal-10": "bab77427c27296741765967459db2e164921338b24b7c84d787cf2a32d4f2e26",
-  "friends-mouse/friends-frog-animal-13": "73ce7a09020ae808e8c2c9e7ec72a1bbb7165f9eb9fbb73b7796c8547cbde008",
-  "friends-mouse/friends-frog-animal-22": "2a96d90a1c94a789890a3af0cdb4ba57f641898a591da4b1ec0ccf272439093d",
-  "friends-mouse/read-word-word-3": "e039e1c1a761d5eb2207eaec761bf85e6882426f88ed3b757c6a4fa1c158ea81",
-  "friends-mouse/read-word-word-5": "b33e74ce5b14792b4b76294a0e8104acc3b480e0a7c99143022f09e7a14ed460",
-  "friends-mouse/read-word-word-10": "771f7a07ae9c4f1d2f18a4c3ceb448322d9e71adddc85a5d8c734e2fa7703547",
-  "friends-mouse/read-word-word-22": "e86a7028724145149765929eb5bede41ec0fff03e4a1d64e42bf25a080484dfb",
-  "friends-mouse/read-word-word-23": "7865703b98174495867f948c307e20654938a84021592083cb848960ef824710",
-  "friends-mouse/read-word-word-24": "cca3f429486f10f2155f61afa8eb9b18f2839d9a7a726cdb357179a2b6b22cc5",
-  "friends-mouse/read-word-word-25": "f4531f065794e61a4adb5b816de58b1c9e26bd7c98ddc8c837e0f72126aa5ab8",
-  "friends-mouse/read-word-word-26": "e472e6b0eac4fe7734fecf4bf10d52b50c2d306060d54c28e5fc1220a6d83eff",
-  "friends-mouse/read-word-word-27": "6b3c5affd95319fde57a675b59cd5abbb61a5b19925113813afaa461d02ca568",
-  "friends-mouse/read-word-word-29": "a012ebbd17d38e667c73dabe83712291dcc7ebb7486a50c229100f80d41975f6",
-  "friends-mouse/read-word-word-30": "81dc038ef2c95f19e3761d7b703c98ef8da35a18a9a5c7db91a66fa932208ee3",
-  "friends-mouse/read-word-word-31": "59102e7650a1a29c8bf9598c86c528750469117a04930eb0a5b3abb76cdf6d7e",
   "colour-words/rot-gelb-blau": "f2fcff4b67e46cfbd3c463f42046c13ddf9bf9bfb8897d3aa0e2cfbf3ee21d6e",
   "colour-words/gelb-rot-blau": "f2fcff4b67e46cfbd3c463f42046c13ddf9bf9bfb8897d3aa0e2cfbf3ee21d6e",
   "colour-words/blau-rot-gelb": "f2fcff4b67e46cfbd3c463f42046c13ddf9bf9bfb8897d3aa0e2cfbf3ee21d6e",
@@ -286,51 +251,51 @@ window.FK.puzzleIterationImplementations = {
   "count/15-2": "2ad2568722d38a83cd11d74fb839f72f383db7cf7e4ad7b217327c4b2edd2ec4",
   "count/15-3": "2ad2568722d38a83cd11d74fb839f72f383db7cf7e4ad7b217327c4b2edd2ec4",
   "count/15-4": "2ad2568722d38a83cd11d74fb839f72f383db7cf7e4ad7b217327c4b2edd2ec4",
-  "add/1-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-4": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-5": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-6": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-7": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-8": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/1-9": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-4": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-5": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-6": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-7": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/2-8": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-4": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-5": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-6": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/3-7": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/4-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/4-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/4-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/4-4": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/4-5": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/4-6": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/5-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/5-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/5-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/5-4": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/5-5": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/6-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/6-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/6-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/6-4": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/7-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/7-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/7-3": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/8-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/8-2": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
-  "add/9-1": "472ec62372845c878c0a56bb0fb837502dd4a2ffb209c744a1e8af93d15ce29b",
+  "add/1-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-4": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-5": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-6": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-7": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-8": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/1-9": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-4": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-5": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-6": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-7": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/2-8": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-4": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-5": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-6": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/3-7": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/4-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/4-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/4-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/4-4": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/4-5": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/4-6": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/5-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/5-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/5-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/5-4": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/5-5": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/6-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/6-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/6-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/6-4": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/7-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/7-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/7-3": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/8-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/8-2": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
+  "add/9-1": "6132701f7809d279dec411ef22d475150aa9d55c82c867ac3bfb0ed22a5fb346",
   "rocket/5-1": "38ef172115bf76d504342a5c3c4f826f822866ffb880dc6df3050131533df8fd",
   "rocket/5-2": "38ef172115bf76d504342a5c3c4f826f822866ffb880dc6df3050131533df8fd",
   "rocket/5-3": "38ef172115bf76d504342a5c3c4f826f822866ffb880dc6df3050131533df8fd",
@@ -540,34 +505,34 @@ window.FK.puzzleIterationImplementations = {
   "neighbours/17-left": "1f695fe419d228d2008ff066a1a2b32fe68fa3a473c1c3aac4f89decc66c52f0",
   "neighbours/18-both": "1f695fe419d228d2008ff066a1a2b32fe68fa3a473c1c3aac4f89decc66c52f0",
   "neighbours/18-left": "1f695fe419d228d2008ff066a1a2b32fe68fa3a473c1c3aac4f89decc66c52f0",
-  "compare/1-1": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/1-3": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/2-2": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/2-1": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/2-4": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/3-3": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/3-2": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/3-5": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/4-4": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/4-3": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/4-6": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/5-5": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/5-4": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/5-7": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/6-6": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/6-5": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/6-8": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/7-7": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/7-6": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/7-9": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/8-8": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/8-7": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/8-10": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/9-9": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/9-8": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/9-10": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/10-10": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
-  "compare/10-9": "aa1173cef9406d83eb09e86c4a3e07356ef9117f8788328ba69b4b617f0672db",
+  "compare/1-1": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/2-1": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/1-3": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/2-4": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/3-2": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/3-3": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/3-4": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/4-3": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/4-7": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/5-3": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/5-5": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/5-6": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/5-8": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/6-3": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/6-6": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/6-8": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/7-6": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/7-9": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/7-10": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/8-5": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/8-6": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/8-8": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/8-9": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/9-7": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/9-10": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/10-7": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/10-9": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
+  "compare/10-10": "67347cfc139b7ee16ae221acfaab50c106897dc764c9ec28dbba38b72fd00556",
   "mirror/grid-7": "fed983f8106b8197d796bf210f9f091d4108aa9d01a39d4bb002f3578c319841",
   "mirror/grid-56": "fed983f8106b8197d796bf210f9f091d4108aa9d01a39d4bb002f3578c319841",
   "mirror/grid-448": "fed983f8106b8197d796bf210f9f091d4108aa9d01a39d4bb002f3578c319841",
@@ -724,28 +689,20 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-bird": {
-      "current": "7f966d5398d1109b",
-      "former": [
-        "e0ad41bfa574e413",
-        "d84bb66aeb52df98",
-        "60e70fa288593b76",
-        "3006a3e854db94a0",
-        "2dc132cdb38d4c11",
-        "05e7bbafdf1a888f",
-        "033fda965987766a",
-        "7f966d5398d1109b"
-      ]
+      "current": "5720f9f1722e4e11",
+      "former": []
     },
     "friends-beaver": {
       "current": "e51b91f17363e783",
       "former": [
         "3223b87295736c28",
         "2b12ae0f602d1d51",
-        "031c4a050a51e997"
+        "031c4a050a51e997",
+        "e51b91f17363e783"
       ]
     },
     "friends-badger": {
-      "current": "56065f6d0fd21d3f",
+      "current": "8590344bf8ec6e81",
       "former": []
     },
     "friends-ibex": {
@@ -753,7 +710,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "8013f4869c0a3870",
         "841a47a0507853d0",
-        "576a8461f758073d"
+        "576a8461f758073d",
+        "075f67336282b46b"
       ]
     },
     "count": {
@@ -765,7 +723,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add": {
-      "current": "61fff3c2cdd14fbe",
+      "current": "c94f6221eaadb71d",
       "former": [
         "0ff744738e27ec4b",
         "ccee0fb4a349548a",
@@ -774,7 +732,8 @@ window.FK.puzzleReviewCompatibility = {
         "444e430b3a48cbf5",
         "9cc0fba0c37230b8",
         "06195a48c74deace",
-        "e2bd6bb2a0ac51e6"
+        "e2bd6bb2a0ac51e6",
+        "61fff3c2cdd14fbe"
       ]
     },
     "rocket": {
@@ -805,7 +764,8 @@ window.FK.puzzleReviewCompatibility = {
         "cbebb9f07c2b7656",
         "4593f9c6d7bb3a8c",
         "02b82230af8156a4",
-        "4dba592b976fc713"
+        "4dba592b976fc713",
+        "1107d8eefd70bb98"
       ]
     },
     "syllable": {
@@ -840,27 +800,19 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "3ad774d6cebff4c8",
         "6e3ddcd55df5b949",
-        "a67aff7caafb1c8e"
+        "a67aff7caafb1c8e",
+        "16ec01efc66727fd"
       ]
     },
     "neighbours": {
       "current": "ead445bf12d1b7fd",
-      "former": []
+      "former": [
+        "ead445bf12d1b7fd"
+      ]
     },
     "compare": {
-      "current": "68c229ea53ced3da",
-      "former": [
-        "05fa889654e7cc12",
-        "7dcae422e65a3a46",
-        "17545ecf8d38d2d1",
-        "74df38cb339ccceb",
-        "af012178af7079be",
-        "9d3903d5897cc857",
-        "22f5b2af85824f3f",
-        "f3daf3e3d336a55d",
-        "5f85fdf0f3072148",
-        "e18196d011fb6484"
-      ]
+      "current": "98e5f2bcf1382a74",
+      "former": []
     },
     "mirror": {
       "current": "410d565ca64c8782",
@@ -901,7 +853,9 @@ window.FK.puzzleReviewCompatibility = {
     },
     "read-puzzle": {
       "current": "481756a8b79db90c",
-      "former": []
+      "former": [
+        "481756a8b79db90c"
+      ]
     }
   },
   "iterations": {
@@ -1231,548 +1185,112 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "friends-bird/rhyme-0": {
-      "current": "f33fca0aee2a5f52",
-      "former": [
-        "8517b6041d4adf76",
-        "69acfe89cf9fd7db",
-        "4066b0f9ec9f6cad",
-        "50995402840c1512",
-        "8dbb869e836e4868",
-        "88a560c2b68db606",
-        "1d7e6bafb57b40c9",
-        "29bda3abf0ba4467",
-        "602dbfeb6ee4f57b",
-        "73bc9ce9c06242db",
-        "d7242064ac1101aa",
-        "c1a381bbf80c63d9",
-        "f980f3ffaf8e26fb",
-        "a6a421515f9a5dcf",
-        "a97a4ca732bb2cf7",
-        "ac5f5e5801577718",
-        "f33fca0aee2a5f52"
-      ]
+      "current": "e881a344e6a116b0",
+      "former": []
     },
     "friends-bird/rhyme-1": {
-      "current": "471e3add3e86ff39",
-      "former": [
-        "0018f72740ab85d9",
-        "08468929dac847f1",
-        "8b2a5a269104c8bc",
-        "a0b4a6d85184e82e",
-        "7307d6ae014f1c52",
-        "d188cfb1efaa6747",
-        "f05053f04a5e4584",
-        "9a511a164133380e",
-        "5fff927f037afb99",
-        "e1a02e3d2043b165",
-        "b0dfa250de72433e",
-        "fcf7312ddd93ff83",
-        "2d1c7973b548efaf",
-        "3ed3c6db52706bc1",
-        "2d0fd51379215c23",
-        "6aa0afb1335ac507",
-        "471e3add3e86ff39"
-      ]
+      "current": "c0a60285e8f74ced",
+      "former": []
     },
     "friends-bird/rhyme-2": {
-      "current": "aa121b93a171fc39",
-      "former": [
-        "5b654531de2598b7",
-        "93d4b96c5b83261e",
-        "6d59d882da2f4d94",
-        "c4269c3614c20f54",
-        "a88d70f579df7189",
-        "f1b0d4f3a26f9083",
-        "0705bce0155b2bf4",
-        "0801ed8f4f2d9ce5",
-        "1e3c8c34434749c6",
-        "fe22e954844c4a16",
-        "5ef546922acc25c8",
-        "c4b1a2616db19363",
-        "379be1175b00cea1",
-        "92f225da587ed28c",
-        "1f3a23c152ae7145",
-        "68237b8db4460301",
-        "aa121b93a171fc39"
-      ]
+      "current": "ac8b513444d1256c",
+      "former": []
     },
     "friends-bird/rhyme-3": {
-      "current": "8c0585a65c23cfc0",
-      "former": [
-        "5dd322e593030d95",
-        "b783d2950dbdba2b",
-        "5b66fd28f12d0aa8",
-        "2d286335f636e059",
-        "8e6f9e1234fed326",
-        "7dc246a604f99f7a",
-        "d3d9b3a01f8d311a",
-        "c8d4fb54e55ee40a",
-        "b0208b6783525d21",
-        "e7ef088879c70f38",
-        "3610683b7aa607fd",
-        "f4f959f6dce480fa",
-        "ea70e7ff833e745f",
-        "e2774015c4a7b927",
-        "791dd311929306ef",
-        "13e86efa816e9540",
-        "8c0585a65c23cfc0"
-      ]
+      "current": "3454daa1265f3095",
+      "former": []
     },
     "friends-bird/rhyme-4": {
-      "current": "c6db03b3990a206f",
-      "former": [
-        "3bd1d3fd2b360f17",
-        "33c2848b8bde90d1",
-        "ba7f4fd0dc609bae",
-        "c818e5736c5289bb",
-        "5f3191a5ae76bdfd",
-        "b34bf4160b8d55fc",
-        "04f5073d299e33bd",
-        "7e4593dc36984866",
-        "fc6b2d598786e7b9",
-        "0e675f760ac0af30",
-        "9c4d52baec50e152",
-        "4696f74b86f753c5",
-        "390adfff885c2127",
-        "7956a53edb601ef8",
-        "0d309c9610c1b602",
-        "c6db03b3990a206f"
-      ]
+      "current": "bce6762971d8db8b",
+      "former": []
     },
     "friends-bird/rhyme-5": {
-      "current": "644164633cfa4d87",
-      "former": [
-        "65d656508fc0047c",
-        "0476d34bf9b00029",
-        "976f351e6f029700",
-        "015bde2e38a578d8",
-        "a69b6d016481195d",
-        "4db66c32c5dc1504",
-        "7a6a9c282efc4cfc",
-        "40fa0c08be666220",
-        "316a3c8480f77fce",
-        "76acd8d8e4015020",
-        "7f2db99871e5c38a",
-        "cfaa187a0bc2b426",
-        "debf7f8176d023e3",
-        "30a1106559e1cb8d",
-        "e65e528f298008a1",
-        "f9532940c6f6797c",
-        "644164633cfa4d87"
-      ]
+      "current": "b384f1b16c4b3965",
+      "former": []
     },
     "friends-bird/rhyme-6": {
-      "current": "c881a8f6e92b7a0a",
-      "former": [
-        "e57721fd451f9f6d",
-        "08a3dfd1d19a0975",
-        "5b2f55e04efef63e",
-        "3877b54cf6a5297e",
-        "f6de29408221d508",
-        "7ddc03f28123884e",
-        "a81a65f7ee2f442f",
-        "b23a4b228ee47612",
-        "a96b78fe8206ac20",
-        "161790e34194a63b",
-        "f9a192026cbbf1f4",
-        "918c87efa24ec25d",
-        "0ca822f025f87558",
-        "11a4195b88b1cdb3",
-        "b416cc4da3732013",
-        "c881a8f6e92b7a0a"
-      ]
+      "current": "9d399716fe584c9e",
+      "former": []
     },
     "friends-bird/rhyme-7": {
-      "current": "7758dea32fd48109",
-      "former": [
-        "4c4c305970692d6d",
-        "45d923d5bdf000b1",
-        "c93fc51bab81e423",
-        "050e547d799de369",
-        "03b3094b46e9875d",
-        "568fef3e2649f168",
-        "0b0d488a768f7a0a",
-        "20b507b1dc229a9f",
-        "5f8aae98fc8f5c88",
-        "33f67ddad561d838",
-        "1365fb0121cd884f",
-        "e2f269688af6d322",
-        "a99fee8bccc7a305",
-        "f2495bbe80dc9af0",
-        "48f4fb16d29e4ed2",
-        "42c98038ee993e4c",
-        "7758dea32fd48109"
-      ]
+      "current": "4ed4b3891b70f7cf",
+      "former": []
     },
     "friends-bird/rhyme-8": {
-      "current": "6f44e339a9771687",
-      "former": [
-        "c1f47b5f95762acd",
-        "b7d0c02c92645cba",
-        "b742a5f44ffae4c8",
-        "116dffba5d2f270a",
-        "0d193053fa363c37",
-        "a4144c784dd4bac8",
-        "f95200fa65fb855a",
-        "9bdb58d38a1634d5",
-        "aec465676192b9d9",
-        "5c48e696846377b0",
-        "5270b2f95c20e235",
-        "21a1c7919db1efe5",
-        "92cd42ea8af39fe8",
-        "e20da3ae2b77618a",
-        "76f1169b957ba2d5",
-        "932961fdd7a8b1a5",
-        "6f44e339a9771687"
-      ]
+      "current": "2d81d026e4fec1e2",
+      "former": []
     },
     "friends-bird/rhyme-9": {
-      "current": "48fd6e833499c82b",
-      "former": [
-        "d4363b81872e2aa9",
-        "3f6926763cac44b8",
-        "9afe89841c34913a",
-        "1a0ab82bb514eb7b",
-        "05da238d25d81cb1",
-        "bdb94031b39f4fad",
-        "166fbb4ee9ef2c3c",
-        "138de0bd53c1e15b",
-        "e5e68c58f0182f76",
-        "87cafc1ed6ca8486",
-        "a4b8e0c5ceace0b9",
-        "72506a7f038c772b",
-        "497ffb35625e0471",
-        "484f1a4c1f767b72",
-        "68d039472a8a00e3",
-        "f3941af9fe9c52e5",
-        "48fd6e833499c82b"
-      ]
+      "current": "de13fe0168920ddf",
+      "former": []
     },
     "friends-bird/rhyme-10": {
-      "current": "1e90d1475b9ce91b",
-      "former": [
-        "21bb8e932514aded",
-        "637038aeb9c3eb26",
-        "a0788a90d0ab0d9a",
-        "9498e92059a2bd52",
-        "72afafca6f8473d0",
-        "b0153b0745475529",
-        "d0e161272ee52c1b",
-        "da76143efa3b1808",
-        "535b8c1293a6b532",
-        "514c1f34321bdcec",
-        "82302d1674179a6e",
-        "f2621316794a910c",
-        "00fde1e87ba9e2a8",
-        "4bfe41fe928fe088",
-        "2b43bc247418a6a4",
-        "8f952c7e8b3f7f4c",
-        "1e90d1475b9ce91b"
-      ]
+      "current": "66d9f60a9affebbc",
+      "former": []
     },
     "friends-bird/rhyme-11": {
-      "current": "2574e3efcfdf4219",
-      "former": [
-        "66d501bacca58cf8",
-        "bd85b13fe01dbf9d",
-        "b0f9f65956a352e9",
-        "3a75998466dcb87a",
-        "2c8e15adb17df603",
-        "039628f53b018c4b",
-        "305788d8bf327d14",
-        "60f808d8a8f1082a",
-        "6d3d0b12be1f62c6",
-        "1a44c2fa747dbf20",
-        "6945544baa4c6705",
-        "e59732e63889f530",
-        "518e1ba7c0bd10d1",
-        "ea2d1deea65f6aa8",
-        "be191922a454d36c",
-        "2574e3efcfdf4219"
-      ]
+      "current": "f7fd93b8016c4278",
+      "former": []
     },
     "friends-bird/rhyme-12": {
-      "current": "aff79cc40845f02c",
-      "former": [
-        "246b9954d099981a",
-        "1c676df38b226465",
-        "49e4b00204881532",
-        "bdea0fa74cfd70c7",
-        "bc1c8647cac45f4b",
-        "ce3ca7bb5ad945a5",
-        "2997e97206a845ee",
-        "75126db9845af881",
-        "7a75c6af57345ad7",
-        "276ecb4e80113a98",
-        "429723908356494e",
-        "378ab53e77781708",
-        "7d33123711b94613",
-        "fb0ce96617c612e6",
-        "80fa8c9ad77a0162",
-        "1d4dc1fc93afa29a",
-        "aff79cc40845f02c"
-      ]
+      "current": "ab2604ecb624efbe",
+      "former": []
     },
     "friends-bird/rhyme-13": {
-      "current": "9729a03b728be3d1",
-      "former": [
-        "dfc0be3b9e02e7cd",
-        "af10b6cf8f5e7ab3",
-        "0ec338a6f0d956a4",
-        "c09d6dbf4d261f1d",
-        "c9b9bbefa06a9491",
-        "f6375637339344d5",
-        "3a9531f56ee03b3d",
-        "36dc9e724bf8f820",
-        "3e357b0654cba170",
-        "7cecef92403c6902",
-        "d77bfe212ab10b6d",
-        "cf90db56ec700130",
-        "e762ce5eadd5efde",
-        "4629c51b0306cab3",
-        "6d8b4d41028f16b1",
-        "3fdbb74a7a906f5e",
-        "9729a03b728be3d1"
-      ]
+      "current": "e4939a482546ba22",
+      "former": []
     },
     "friends-bird/rhyme-14": {
-      "current": "8defafb73fb371f3",
-      "former": [
-        "4cb7f1771295ee99",
-        "7f1d31d709949019",
-        "bf2ce9b8fba93a62",
-        "1d66cbafca83203b",
-        "c4c4dd9777db7f37",
-        "27cabb0db53b9d1f",
-        "88bd1ca30d8c7b9d",
-        "687e28891ed4dc13",
-        "1c9c610b8825435d",
-        "08efe481bcdcd6c3",
-        "dc03dc6bc3e0db77",
-        "78e6da0f201c16d9",
-        "a2fc34fb0ee4eed5",
-        "a5ce49ce7262d0e4",
-        "fed3937ea981949a",
-        "87fa4940f6e80162",
-        "8defafb73fb371f3"
-      ]
+      "current": "ace5f7c3fc504ce5",
+      "former": []
     },
     "friends-bird/rhyme-15": {
-      "current": "0819876ac53a9624",
-      "former": [
-        "0a8e097aaed04d78",
-        "99acc27f9f29ddaf",
-        "db48b0b6a480be9a",
-        "189737afae12ba67",
-        "7c2340256d9d225f",
-        "43f44abb1d192bc9",
-        "f24c72fb108475d5",
-        "f3977595def5f783",
-        "52930b6db438b6a5",
-        "4682a6bc1f66b02a",
-        "2eddf1607fe832ba",
-        "819d3d4edc12ddfc",
-        "e32003b2ffd2c606",
-        "7e3a248fb50ff851",
-        "cb6a8246345e304e",
-        "361af7ad42dc3ba1",
-        "0819876ac53a9624"
-      ]
+      "current": "8e5be46788accc9d",
+      "former": []
     },
     "friends-bird/rhyme-16": {
-      "current": "a1fb0a908227d422",
-      "former": [
-        "34308a8a26216530",
-        "957e0d79410cdbc7",
-        "101005b5e197250f",
-        "7d7565dc68ce7540",
-        "3c6bb358092e1600",
-        "327621a07022ff36",
-        "03bc113e26862342",
-        "a1fb0a908227d422"
-      ]
+      "current": "9e3cc2cb229fa301",
+      "former": []
     },
     "friends-bird/rhyme-17": {
-      "current": "f5664a2b4e4c6009",
-      "former": [
-        "50eccd83745448d9",
-        "3dafc597a35a42f3",
-        "7250342d556e4843",
-        "aadcc51d8704bf61",
-        "e8d7fd6d147296a9",
-        "63d5d7e918e626c7",
-        "5d635962d296030e",
-        "1332bf43178d98c5",
-        "56c5501e155e968e",
-        "dc3a2ccbbb859d51",
-        "59e9759555655b13",
-        "cfb207a99d538ca1",
-        "3b24d34e119e608e",
-        "e9f638c2443183e8",
-        "b30cf28601db07ec",
-        "14a7610ce91130c0",
-        "f5664a2b4e4c6009"
-      ]
+      "current": "6f335f56717b7bac",
+      "former": []
     },
     "friends-bird/rhyme-18": {
-      "current": "89823bc26d4752f0",
-      "former": [
-        "f45158a50edd551b",
-        "177bc83f722b8341",
-        "c803b19b2520f1a7",
-        "fc055b8ed6b5f282",
-        "c6f6a0bb1325b849",
-        "6ec5abcf3ed454bf",
-        "3d9590ea182fbad2",
-        "0b3555d3e3495523",
-        "33d348588ca00158",
-        "da14db28018e8f36",
-        "8483c4a9a760ea97",
-        "bd3e328437881d1c",
-        "1f28e16808785d54",
-        "3458e3e73a3ca527",
-        "1cd41220b91ec198",
-        "89823bc26d4752f0"
-      ]
+      "current": "ed480d2741b1351d",
+      "former": []
     },
     "friends-bird/rhyme-19": {
-      "current": "d699b67de203ecc5",
-      "former": [
-        "4bc75c28321a04b0",
-        "d05c4515e100cebb",
-        "fb0caa2db96b9545",
-        "3ea893cd0590b3eb",
-        "98331fd8430993d2",
-        "9c9dc59a6a38d9b2",
-        "c19942a8c6e6519e",
-        "cf67563e1694ac94",
-        "3ce53c334ae0e9d3",
-        "32497b2a658fff62",
-        "05de1f05c24586a3",
-        "0fefc1843dd2f502",
-        "be8b1afa9f8c873a",
-        "20eb0a32ee742cc0",
-        "cfb1074efa03bbdc",
-        "a473baf32a66373d",
-        "d699b67de203ecc5"
-      ]
+      "current": "2fa7f4359f7a5e4b",
+      "former": []
     },
     "friends-bird/rhyme-20": {
-      "current": "e29bb96f0f03238b",
-      "former": [
-        "3800f239559f20ab",
-        "bea0b5d3bad8f0c3",
-        "30cf9a535dbcaf93",
-        "3493a7a4cf2cfc2c",
-        "7d70eda50ac508c5",
-        "10de249fec1385f5",
-        "4e5150bd0bd7a3f3",
-        "5ed92acf28956ecf",
-        "66e93ab9f3df1f95",
-        "2481c35c5d00ad9e",
-        "d6ee284a68e5bae6",
-        "04b0ab08c0da8e86",
-        "2f2267830bb33431",
-        "180cd6bdb0ce768d",
-        "a78af9fdff40ad81",
-        "a3fa5307a56874b1",
-        "e29bb96f0f03238b"
-      ]
+      "current": "f3ff09a6e104e754",
+      "former": []
     },
     "friends-bird/rhyme-21": {
-      "current": "3cfd0e46e0ede4dc",
-      "former": [
-        "11a68c060e2cb100",
-        "89e398bd7e815ebb",
-        "8500bdffa22cf103",
-        "170195335463f35b",
-        "a942ecfbb27b25d7",
-        "4de4211d400b237f",
-        "c3cf5495e4d1ca11",
-        "3b0802a52f6a3337",
-        "3ae229febcbbcf6e",
-        "150efdfda7e6f437",
-        "afde5d679c1052bd",
-        "a58b57756846283b",
-        "8414752c3db741bc",
-        "420d2b69e3f68415",
-        "c76dc305302cfebf",
-        "df2d9700ad0e1416",
-        "3cfd0e46e0ede4dc"
-      ]
+      "current": "a0777ad5cc7f69ed",
+      "former": []
     },
     "friends-bird/rhyme-22": {
-      "current": "18fb0a73bd20a3cd",
-      "former": [
-        "e65944a25aaed3a8",
-        "037a6b1e883d1434",
-        "3ccdd77c3b71f9be",
-        "253a705891468e9c",
-        "7206f5d546b18fbd",
-        "de93da830c37dc67",
-        "013e935017b34444",
-        "20130e87a4f912c9",
-        "9d4b26189c945988",
-        "a7e20e62fd556324",
-        "4d96b763a7528fd5",
-        "2f98b57d150c0a4f",
-        "5560f08bc0e482a3",
-        "a56bedac17865118",
-        "91c492d92d2b8e8b",
-        "ec0fdaa8711344c4",
-        "18fb0a73bd20a3cd"
-      ]
+      "current": "6d7d709edb4d668e",
+      "former": []
     },
     "friends-bird/rhyme-23": {
-      "current": "99ad8397f55b5bd7",
-      "former": [
-        "3aeaa6221b1b3d58",
-        "cb94288ff88eb861",
-        "910167e4d06f9370",
-        "40f1fa9e3a114a90",
-        "3a2ad33983f61245",
-        "04e166b74ad12cdf",
-        "a0956336eba3e88c",
-        "ffa1b01d2ba4ccd5",
-        "2163e9c7a68c58cb",
-        "a8e7ec0a4ed7ca9c",
-        "72bd5877c74b7acb",
-        "7db96c9407e16c24",
-        "c94d890d684eab67",
-        "b570bfde2449807a",
-        "6bce02dc3203b8a0",
-        "f73bc31f2d2ac4f5",
-        "99ad8397f55b5bd7"
-      ]
+      "current": "6514f2fbe98b762d",
+      "former": []
     },
     "friends-bird/rhyme-24": {
-      "current": "fc5f4b8d2c84dfeb",
-      "former": [
-        "7bdfcb1fba75e9cf",
-        "5909d790204e990a",
-        "605c095027c53e8a",
-        "99f4a109bee7197b",
-        "e72e4b5dd204a8af",
-        "a4524da387702193",
-        "088f441dd93ad677",
-        "b8c290040546abd6",
-        "50ec4053b8adf779",
-        "0af6ed0cd519c7e4",
-        "d1a398c6805c49cc",
-        "336c4300018f1a9e",
-        "657c48a168a625f7",
-        "c9c2fed714ab0ba5",
-        "e6875a820572f39c",
-        "1e05f7baedb727d0",
-        "fc5f4b8d2c84dfeb"
-      ]
+      "current": "244153309e30c380",
+      "former": []
     },
     "friends-beaver/matrix-0": {
       "current": "537039bf6b38d52d",
       "former": [
         "d309b8b8c2b30864",
         "8816d1aeee99ed8c",
-        "56bbae3e0b30a2d0"
+        "56bbae3e0b30a2d0",
+        "537039bf6b38d52d"
       ]
     },
     "friends-beaver/matrix-1": {
@@ -1780,7 +1298,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "5330915fdf01a765",
         "04ffc10578b5fe0d",
-        "8133a0d58ff9bc51"
+        "8133a0d58ff9bc51",
+        "5eb0f500934a1fac"
       ]
     },
     "friends-beaver/matrix-2": {
@@ -1788,7 +1307,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "03c4ee968e8ffe66",
         "403d9d287ed6b30e",
-        "d883b238d7aed252"
+        "d883b238d7aed252",
+        "31a926f90ffe436f"
       ]
     },
     "friends-beaver/matrix-3": {
@@ -1796,7 +1316,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "5b05ee0b4ea5d307",
         "a112e175c2626b2f",
-        "e6b0f3c514519873"
+        "e6b0f3c514519873",
+        "ee9bb0dc8e20020e"
       ]
     },
     "friends-beaver/matrix-4": {
@@ -1804,7 +1325,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "7433b50caae18260",
         "badeb3da60f5d808",
-        "bf4bd82ad17d2a54"
+        "bf4bd82ad17d2a54",
+        "91e0ea63213a45e9"
       ]
     },
     "friends-beaver/matrix-5": {
@@ -1812,7 +1334,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "4774ad719e2c2d01",
         "f5fb678f61838829",
-        "112c7c5f4b19c375"
+        "112c7c5f4b19c375",
+        "63dcaabed4b42d08"
       ]
     },
     "friends-beaver/matrix-6": {
@@ -1820,7 +1343,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "2a7a203fc3979683",
         "b4754161c01eedab",
-        "229de371184fddf7"
+        "229de371184fddf7",
+        "6d05f55409c95e0a"
       ]
     },
     "friends-beaver/matrix-7": {
@@ -1828,7 +1352,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "e25f3b04edb37082",
         "f3a0f27652815d2a",
-        "9f70be06b8d2cb76"
+        "9f70be06b8d2cb76",
+        "e0e7a69f22ecd58b"
       ]
     },
     "friends-beaver/matrix-8": {
@@ -1836,7 +1361,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "8e8846cb069ffaed",
         "e264e2714e6f8a05",
-        "31040e8134dbb659"
+        "31040e8134dbb659",
+        "302cb4e812b4b0e4"
       ]
     },
     "friends-beaver/matrix-9": {
@@ -1844,7 +1370,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "60a048506e894dec",
         "4bc30cf6eb428604",
-        "879b4f0658852558"
+        "879b4f0658852558",
+        "fcba4fcbd56b6c25"
       ]
     },
     "friends-beaver/matrix-10": {
@@ -1852,7 +1379,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "80c054fc032e97d4",
         "33d07e3ebdee093c",
-        "9d0cf10ee54b7ee0"
+        "9d0cf10ee54b7ee0",
+        "f797f9e13f8fbffd"
       ]
     },
     "friends-beaver/matrix-11": {
@@ -1860,7 +1388,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cf0bba4fe8130555",
         "584d44e13bf410bd",
-        "a65083b1e4d72161"
+        "a65083b1e4d72161",
+        "75612846eb53c43c"
       ]
     },
     "friends-beaver/matrix-12": {
@@ -1868,7 +1397,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "321b9d07bec132d9",
         "4abf10c15d21b731",
-        "a850e4d110e255ed"
+        "a850e4d110e255ed",
+        "7a5c00f24416ddb0"
       ]
     },
     "friends-beaver/matrix-13": {
@@ -1876,7 +1406,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "fc2d3fe040bc48d8",
         "1fae54dab52629b0",
-        "7b6fd16a0dedf16c"
+        "7b6fd16a0dedf16c",
+        "7ddc7bf1baa475b1"
       ]
     },
     "friends-beaver/matrix-14": {
@@ -1884,7 +1415,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "6efa83557cc7415f",
         "0b12af834cf68a37",
-        "6dd081537e37bceb"
+        "6dd081537e37bceb",
+        "bf266a4cd743aa76"
       ]
     },
     "friends-beaver/matrix-15": {
@@ -1892,7 +1424,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "f51fec587003e13e",
         "52ad665625fc2f96",
-        "70c5a026ca6e764a"
+        "70c5a026ca6e764a",
+        "ff4077c5ce0205d7"
       ]
     },
     "friends-beaver/matrix-16": {
@@ -1900,7 +1433,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "65b08dfb9f4111dd",
         "d2b5e81d03771fb5",
-        "5feb8e2d0ca91469"
+        "5feb8e2d0ca91469",
+        "801317cadbdb4574"
       ]
     },
     "friends-beaver/matrix-17": {
@@ -1908,7 +1442,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "e7ee568aaa1f94bc",
         "278c95b4b03f5214",
-        "9778f0c41f9d11c8"
+        "9778f0c41f9d11c8",
+        "40838ff7686f3955"
       ]
     },
     "friends-beaver/matrix-18": {
@@ -1916,7 +1451,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cc9a6dabe09da79d",
         "e2f693b5ca7ad9f5",
-        "ea7f0105a002eba9"
+        "ea7f0105a002eba9",
+        "9dd0bf1a84b01374"
       ]
     },
     "friends-beaver/matrix-19": {
@@ -1924,7 +1460,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "7668250442c5f01c",
         "6678db7e3266c5f4",
-        "1a2efd8e6f33dea8"
+        "1a2efd8e6f33dea8",
+        "ac6a1fd185e42cf5"
       ]
     },
     "friends-beaver/matrix-20": {
@@ -1932,7 +1469,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "9490f744374b81f6",
         "306a144a42a8185e",
-        "4694291a7444f002"
+        "4694291a7444f002",
+        "1e9c91a1b6392f5f"
       ]
     },
     "friends-beaver/matrix-21": {
@@ -1940,7 +1478,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "87274715b222c397",
         "72fe74534be6947f",
-        "c7399ca3f69b2f23"
+        "c7399ca3f69b2f23",
+        "8ff281e06ccd567e"
       ]
     },
     "friends-beaver/matrix-22": {
@@ -1948,7 +1487,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cfa0a7a249aaa4f4",
         "188ba4944ec5385c",
-        "bb7a6d64134a2b00"
+        "bb7a6d64134a2b00",
+        "59285ea79fcf41dd"
       ]
     },
     "friends-beaver/matrix-23": {
@@ -1956,7 +1496,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "52b6ac7b0a0d4215",
         "989d9a8df9195cfd",
-        "7b61201d8310aca1"
+        "7b61201d8310aca1",
+        "24da94560487f1fc"
       ]
     },
     "friends-beaver/matrix-24": {
@@ -1964,7 +1505,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "1abc982dae674893",
         "7c0f68e32539147b",
-        "f129a473395c8f27"
+        "f129a473395c8f27",
+        "8be5ab3ce0d75cfa"
       ]
     },
     "friends-beaver/matrix-three-0-6": {
@@ -1972,7 +1514,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "da69dbab164262dd",
         "48e9eb45ee9d9335",
-        "68f89c55d1b505e9"
+        "68f89c55d1b505e9",
+        "34aa12d2735ca0f4"
       ]
     },
     "friends-beaver/matrix-three-0-7": {
@@ -1980,7 +1523,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "30c397bab1cbb8ba",
         "f786010cd5a936d2",
-        "63ea673c91a1368e"
+        "63ea673c91a1368e",
+        "fd2e52d540b7b433"
       ]
     },
     "friends-beaver/matrix-three-0-8": {
@@ -1988,7 +1532,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "5a4ce6430a07fe7b",
         "68b19281dfb9bd53",
-        "e59028114e10cf0f"
+        "e59028114e10cf0f",
+        "769719b2c4573fd2"
       ]
     },
     "friends-beaver/matrix-three-1-6": {
@@ -1996,7 +1541,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "792c528a3039041a",
         "e8b22fe030da5172",
-        "456687b01b58ae2e"
+        "456687b01b58ae2e",
+        "4ca288ab80348233"
       ]
     },
     "friends-beaver/matrix-three-1-7": {
@@ -2004,7 +1550,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "7cb58fb16cd94ebb",
         "e4d6f54ba41838d3",
-        "b2aa5bbbaa0bf78f"
+        "b2aa5bbbaa0bf78f",
+        "b92056eaf6b868b2"
       ]
     },
     "friends-beaver/matrix-three-1-8": {
@@ -2012,7 +1559,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "59fab40ed3778dbc",
         "21af9e405c8d1e94",
-        "148dfe90893e6048"
+        "148dfe90893e6048",
+        "cbfb0b578b74b215"
       ]
     },
     "friends-beaver/matrix-three-2-6": {
@@ -2020,7 +1568,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "94c1f0419d40245f",
         "7f3b405f107de0b7",
-        "ef9e5f6f13cdf46b"
+        "ef9e5f6f13cdf46b",
+        "c3e719bc3e6dd376"
       ]
     },
     "friends-beaver/matrix-three-2-7": {
@@ -2028,7 +1577,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "19038fe75bfd40d9",
         "d1edef915b2cfd31",
-        "d04580e1b19362ed"
+        "d04580e1b19362ed",
+        "6bb9cd7aa6756070"
       ]
     },
     "friends-beaver/matrix-three-2-8": {
@@ -2036,7 +1586,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c3d2bd80d1fa7ab8",
         "0b439146c040add0",
-        "87b14736e55e258c"
+        "87b14736e55e258c",
+        "aba050d7a1309db1"
       ]
     },
     "friends-beaver/matrix-three-3-6": {
@@ -2044,7 +1595,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "5a3b6d4f13ce92b9",
         "887b60ad2612f5d1",
-        "081abb1d715fab8d"
+        "081abb1d715fab8d",
+        "ea739754540f9c30"
       ]
     },
     "friends-beaver/matrix-three-3-7": {
@@ -2052,7 +1604,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "b7a8e4aaae76dc78",
         "dea8a87c0a8adf50",
-        "056a958cf4abe30c"
+        "056a958cf4abe30c",
+        "f361dc0bf5cb9c51"
       ]
     },
     "friends-beaver/matrix-three-3-8": {
@@ -2060,7 +1613,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c83c25e87c61cabe",
         "d80ece0e7c4a9396",
-        "801091de2ad74a4a"
+        "801091de2ad74a4a",
+        "bfacfa8503b7be17"
       ]
     },
     "friends-beaver/matrix-three-4-6": {
@@ -2068,7 +1622,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "efe74bd35f0a0b3f",
         "d30dc7e918770817",
-        "a94aa1f9867cd8cb"
+        "a94aa1f9867cd8cb",
+        "d883f73692407796"
       ]
     },
     "friends-beaver/matrix-three-4-7": {
@@ -2076,7 +1631,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "280995a919eb9039",
         "a5b01bfb8427ad11",
-        "65c83e4b04636acd"
+        "65c83e4b04636acd",
+        "4543d82445e6d410"
       ]
     },
     "friends-beaver/matrix-three-4-8": {
@@ -2084,7 +1640,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "0d6f4492a182a7fe",
         "a9a5d47c9fc85e16",
-        "795e48acfedcaaca"
+        "795e48acfedcaaca",
+        "904cc5f517fa2cf7"
       ]
     },
     "friends-beaver/matrix-three-5-6": {
@@ -2092,7 +1649,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cd65a065d6a3a4ff",
         "e09c1367a66c7c17",
-        "0f06f1d7182030cb"
+        "0f06f1d7182030cb",
+        "11966f1647499b76"
       ]
     },
     "friends-beaver/matrix-three-5-7": {
@@ -2100,7 +1658,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c8eff74c73792898",
         "b58e8ee6ac8a39f0",
-        "327b6ff6bc8b5aac"
+        "327b6ff6bc8b5aac",
+        "e66ac09dd0019031"
       ]
     },
     "friends-beaver/matrix-three-5-8": {
@@ -2108,7 +1667,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "d968793e69eb4d5e",
         "90197becd51da7b6",
-        "cff7863c44408e6a"
+        "cff7863c44408e6a",
+        "d932e583ec0fb677"
       ]
     },
     "friends-badger/riddle-0": {
@@ -2140,7 +1700,9 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-badger/riddle-2": {
       "current": "7ba0b387cf4b2aeb",
-      "former": []
+      "former": [
+        "7ba0b387cf4b2aeb"
+      ]
     },
     "friends-badger/riddle-3": {
       "current": "17a9ae138973ada7",
@@ -2167,39 +1729,57 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-badger/riddle-4": {
       "current": "850d9505838e0701",
-      "former": []
+      "former": [
+        "850d9505838e0701"
+      ]
     },
     "friends-badger/riddle-5": {
       "current": "92d691dc986c149a",
-      "former": []
+      "former": [
+        "92d691dc986c149a"
+      ]
     },
     "friends-badger/riddle-6": {
       "current": "c756b8fb0d8adea9",
-      "former": []
+      "former": [
+        "c756b8fb0d8adea9"
+      ]
     },
     "friends-badger/riddle-7": {
       "current": "deb670e46981d3c0",
-      "former": []
+      "former": [
+        "deb670e46981d3c0"
+      ]
     },
     "friends-badger/riddle-8": {
       "current": "61d371f823d9345a",
-      "former": []
+      "former": [
+        "61d371f823d9345a"
+      ]
     },
     "friends-badger/riddle-9": {
       "current": "ea2b1b363566bd56",
-      "former": []
+      "former": [
+        "ea2b1b363566bd56"
+      ]
     },
     "friends-badger/riddle-10": {
       "current": "5c12ba733e391391",
-      "former": []
+      "former": [
+        "5c12ba733e391391"
+      ]
     },
     "friends-badger/riddle-11": {
       "current": "d6f4cb6c121a53ae",
-      "former": []
+      "former": [
+        "d6f4cb6c121a53ae"
+      ]
     },
     "friends-badger/riddle-12": {
       "current": "115d63cea8ce00bc",
-      "former": []
+      "former": [
+        "115d63cea8ce00bc"
+      ]
     },
     "friends-badger/riddle-13": {
       "current": "0dbd95f3b171d07b",
@@ -2247,15 +1827,21 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-badger/riddle-15": {
       "current": "605e249b64fbc511",
-      "former": []
+      "former": [
+        "605e249b64fbc511"
+      ]
     },
     "friends-badger/riddle-16": {
       "current": "0f660a75b068eda5",
-      "former": []
+      "former": [
+        "0f660a75b068eda5"
+      ]
     },
     "friends-badger/riddle-17": {
       "current": "1fdcdc5868b9cc3c",
-      "former": []
+      "former": [
+        "1fdcdc5868b9cc3c"
+      ]
     },
     "friends-badger/riddle-18": {
       "current": "e9be810ccf461090",
@@ -2273,23 +1859,33 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-badger/riddle-20": {
       "current": "be3d23e6b8f1ad1c",
-      "former": []
+      "former": [
+        "be3d23e6b8f1ad1c"
+      ]
     },
     "friends-badger/riddle-21": {
       "current": "55d70c60db4f27e8",
-      "former": []
+      "former": [
+        "55d70c60db4f27e8"
+      ]
     },
     "friends-badger/riddle-22": {
       "current": "5bc17e2d60b17b49",
-      "former": []
+      "former": [
+        "5bc17e2d60b17b49"
+      ]
     },
     "friends-badger/riddle-23": {
       "current": "d5c693ccfa8f8d20",
-      "former": []
+      "former": [
+        "d5c693ccfa8f8d20"
+      ]
     },
     "friends-badger/riddle-24": {
       "current": "74a40a1b8d4b78cd",
-      "former": []
+      "former": [
+        "74a40a1b8d4b78cd"
+      ]
     },
     "friends-deer/riddle-0": {
       "current": "2b2bf1bebad44302",
@@ -2315,23 +1911,33 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-deer/riddle-1": {
       "current": "cc8cbda4239f4a18",
-      "former": []
+      "former": [
+        "cc8cbda4239f4a18"
+      ]
     },
     "friends-deer/riddle-2": {
       "current": "0e7cab1393cdff03",
-      "former": []
+      "former": [
+        "0e7cab1393cdff03"
+      ]
     },
     "friends-deer/riddle-3": {
       "current": "1082194f17bbf819",
-      "former": []
+      "former": [
+        "1082194f17bbf819"
+      ]
     },
     "friends-deer/riddle-6": {
       "current": "97df15c52a7832bf",
-      "former": []
+      "former": [
+        "97df15c52a7832bf"
+      ]
     },
     "friends-deer/riddle-10": {
       "current": "1ce0d33fd991a541",
-      "former": []
+      "former": [
+        "1ce0d33fd991a541"
+      ]
     },
     "friends-deer/riddle-11": {
       "current": "b8a0b2448921f68c",
@@ -2349,7 +1955,9 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-deer/riddle-12": {
       "current": "3e664eed46691f8f",
-      "former": []
+      "former": [
+        "3e664eed46691f8f"
+      ]
     },
     "friends-deer/riddle-13": {
       "current": "eb3aac62907d130e",
@@ -2409,83 +2017,123 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-deer/riddle-21": {
       "current": "1d9f0446696f1a9e",
-      "former": []
+      "former": [
+        "1d9f0446696f1a9e"
+      ]
     },
     "friends-deer/riddle-23": {
       "current": "f1ec08ff4924af69",
-      "former": []
+      "former": [
+        "f1ec08ff4924af69"
+      ]
     },
     "friends-deer/riddle-24": {
       "current": "57e7309517a2e1eb",
-      "former": []
+      "former": [
+        "57e7309517a2e1eb"
+      ]
     },
     "friends-hedgehog/riddle-2": {
       "current": "b4bf1152b0201cdc",
-      "former": []
+      "former": [
+        "b4bf1152b0201cdc"
+      ]
     },
     "friends-hedgehog/riddle-4": {
       "current": "95c0c481964783bd",
-      "former": []
+      "former": [
+        "95c0c481964783bd"
+      ]
     },
     "friends-hedgehog/riddle-8": {
       "current": "790ad89337ed06eb",
-      "former": []
+      "former": [
+        "790ad89337ed06eb"
+      ]
     },
     "friends-hedgehog/riddle-18": {
       "current": "75c40ff31ba51e99",
-      "former": []
+      "former": [
+        "75c40ff31ba51e99"
+      ]
     },
     "friends-hedgehog/riddle-19": {
       "current": "f7aa1d86a15f350a",
-      "former": []
+      "former": [
+        "f7aa1d86a15f350a"
+      ]
     },
     "friends-hedgehog/riddle-20": {
       "current": "917703548d8e55ca",
-      "former": []
+      "former": [
+        "917703548d8e55ca"
+      ]
     },
     "friends-hedgehog/riddle-21": {
       "current": "b4fbe177e5544d31",
-      "former": []
+      "former": [
+        "b4fbe177e5544d31"
+      ]
     },
     "friends-hedgehog/riddle-23": {
       "current": "4f22d9a3516b762f",
-      "former": []
+      "former": [
+        "4f22d9a3516b762f"
+      ]
     },
     "friends-hedgehog/nature-question-3": {
       "current": "165fa58cfd50b0b6",
-      "former": []
+      "former": [
+        "165fa58cfd50b0b6"
+      ]
     },
     "friends-hedgehog/nature-question-6": {
       "current": "270551b797a202f7",
-      "former": []
+      "former": [
+        "270551b797a202f7"
+      ]
     },
     "friends-hedgehog/nature-question-7": {
       "current": "64ea6d773b6c8111",
-      "former": []
+      "former": [
+        "64ea6d773b6c8111"
+      ]
     },
     "friends-hedgehog/nature-question-9": {
       "current": "ac9e8f8ef957db24",
-      "former": []
+      "former": [
+        "ac9e8f8ef957db24"
+      ]
     },
     "friends-hedgehog/nature-question-11": {
       "current": "9a29719a3ceb0bb2",
-      "former": []
+      "former": [
+        "9a29719a3ceb0bb2"
+      ]
     },
     "friends-hedgehog/nature-question-14": {
       "current": "c7b13ea1e584e5c1",
-      "former": []
+      "former": [
+        "c7b13ea1e584e5c1"
+      ]
     },
     "friends-hedgehog/nature-question-16": {
       "current": "a3030d4868861286",
-      "former": []
+      "former": [
+        "a3030d4868861286"
+      ]
     },
     "friends-hedgehog/nature-question-17": {
       "current": "389b55a29e21d83e",
-      "former": []
+      "former": [
+        "389b55a29e21d83e"
+      ]
     },
     "friends-hedgehog/nature-question-18": {
       "current": "363157ffd139ac41",
-      "former": []
+      "former": [
+        "363157ffd139ac41"
+      ]
     },
     "friends-hedgehog/nature-question-19": {
       "current": "bbddf2e0a5cd50da",
@@ -2495,11 +2143,15 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-hedgehog/nature-question-20": {
       "current": "3e1b83f4fda98bda",
-      "former": []
+      "former": [
+        "3e1b83f4fda98bda"
+      ]
     },
     "friends-hedgehog/nature-question-21": {
       "current": "1affc0693f67b81f",
-      "former": []
+      "former": [
+        "1affc0693f67b81f"
+      ]
     },
     "friends-hedgehog/nature-question-22": {
       "current": "15a4a5b7c8ba7e27",
@@ -2509,7 +2161,9 @@ window.FK.puzzleReviewCompatibility = {
     },
     "friends-hedgehog/nature-question-24": {
       "current": "7d242f4342ab4ced",
-      "former": []
+      "former": [
+        "7d242f4342ab4ced"
+      ]
     },
     "friends-owl/sentence-2": {
       "current": "ade1ca69f0676b79",
@@ -2793,749 +2447,6 @@ window.FK.puzzleReviewCompatibility = {
         "51a0090be9a6cdf7"
       ]
     },
-    "friends-mouse/word-1": {
-      "current": "0b6ef444fda77634",
-      "former": [
-        "549e66f38c20e83b",
-        "1ebae364d81e0c5c",
-        "4680f8497ac795f9",
-        "56370108b0f50466",
-        "8741d8ea00f82a82",
-        "77b6c2a62503fe8a",
-        "94f6ed838ccd4b67",
-        "9993eb05072b3f07",
-        "58585c76ac0c967c",
-        "39c7affb6c789a55",
-        "00fff364cd240f00",
-        "9ca6a73bc1de3ac1",
-        "6c7ff08ef589717c",
-        "16bf0955572ec5a5",
-        "eb61c5ac530c6d0c",
-        "f112c2ec1035f5d0",
-        "54fd89452073a153",
-        "0b6ef444fda77634"
-      ]
-    },
-    "friends-mouse/word-2": {
-      "current": "ee9386323668aa4e",
-      "former": [
-        "2e66012314c82f21",
-        "e219bbfc5bfa039e",
-        "95a8a217ac0997c7",
-        "bf0cb5c0c91fa564",
-        "34c5136b92ea97bd",
-        "2d5dde497a889a5d",
-        "afba83d5b6943d63",
-        "1fb67d7dc0e21b05",
-        "4a6cc0bd0e6cfb23",
-        "f265c331f6a29299",
-        "385b72507e8826bc",
-        "0a8d6fa1695b3dd1",
-        "10c30a288650064a",
-        "e890bbb7c9fe1ead",
-        "e8b78ce86efa1c0e",
-        "32369c4c010dd346",
-        "52de5e239e55c229",
-        "ee9386323668aa4e"
-      ]
-    },
-    "friends-mouse/word-3": {
-      "current": "62ed6777992895cb",
-      "former": [
-        "04b41b604f52855c",
-        "60428a29c929ae39",
-        "cf0f1f6e167ec264",
-        "3d63dd26b04a9f06",
-        "5d9f655ec3681dc6",
-        "9ae74a1a18d0b230",
-        "b477901d8f427c7d",
-        "f287fde4f7db9af2",
-        "f31148ee1d598cf4",
-        "c2d785d3aab2c4a7",
-        "47a9cc02e91cfb12",
-        "2ef48b1c4fe63b4c",
-        "9724c353bf6d54a7",
-        "f118957fed105359",
-        "2e4c8abde5ab3f93",
-        "1439d4ba530aceb0",
-        "62ed6777992895cb"
-      ]
-    },
-    "friends-mouse/word-4": {
-      "current": "b16f933a5726f854",
-      "former": [
-        "b74d3537c06a4c19",
-        "e50f1131a593a613",
-        "d42e8a683b816880",
-        "2aa887c382e8435d",
-        "c6bb650a61337c20",
-        "651c66ef26639b23",
-        "77953248fe087272",
-        "e1040010910e269c",
-        "507644be8118570a",
-        "ea0462d1cc47f8a5",
-        "8f29bcc6ecdb7fca",
-        "7525906352564777",
-        "a48836e312718589",
-        "56a7d9d560068bb1",
-        "5a391f404cf0ecee",
-        "3ad2af27a99d249d",
-        "01454c103fff4062",
-        "b16f933a5726f854"
-      ]
-    },
-    "friends-mouse/word-6": {
-      "current": "e23576fd72bd58a3",
-      "former": [
-        "66ff07c684270d0a",
-        "a84270c38fcd9111",
-        "516ad015bb28a70f",
-        "6c9bdd3814a9ec54",
-        "6230ed100b1b756a",
-        "4d649bcb18ec7959",
-        "004a1ff9ed00b64f",
-        "b3081f19ad1a71df",
-        "30a25d266faf3778",
-        "8f9fa66bb97ed155",
-        "1ed71884218d1aaa",
-        "12288eafae64de73",
-        "c6282e3b43576485",
-        "195227e0007609c0",
-        "b5d0370cbbdf3fe6",
-        "3eb0105db6b9ab25",
-        "090c7c26e06fd912",
-        "e23576fd72bd58a3"
-      ]
-    },
-    "friends-mouse/word-7": {
-      "current": "926846df6f8641f7",
-      "former": [
-        "533af063920b588b",
-        "6915c34c64d34846",
-        "d6ae04e9c17e702b",
-        "9dc1623db232c91d",
-        "f117a18d69f8351d",
-        "e530007abda68204",
-        "4d3b97ce01b3796e",
-        "43e5118245357d66",
-        "982bd0e7b5d3f431",
-        "681ee31c0b372ad6",
-        "fd746945d662fbd1",
-        "290a62ded23ceb44",
-        "83131b643e7d4916",
-        "f59dfe59acb7a0a3",
-        "dbfd83b39aad0a65",
-        "8853a57e1df818a2",
-        "e051cb7ad48368cc",
-        "926846df6f8641f7"
-      ]
-    },
-    "friends-mouse/word-9": {
-      "current": "a4298b4fc2df2913",
-      "former": [
-        "386623d76dc1703b",
-        "ed16e93ee5d93f7c",
-        "59882f50708b7f32",
-        "b17eda78a7c0b9ea",
-        "470af0536e68aba7",
-        "fea152536eb58715",
-        "afc1e73257ae82c2",
-        "fbdb796035021832",
-        "e9d26bd44bddb136",
-        "76cea1b12c5daa39",
-        "a9a432633c0c8215",
-        "cad18d4ed328059a",
-        "044a814155b64fdb",
-        "a89ea0917f2da675",
-        "9dd5fc382d2570d8",
-        "faa44d46b3089b20",
-        "90f45bab1bcdbe5d",
-        "a4298b4fc2df2913"
-      ]
-    },
-    "friends-mouse/word-11": {
-      "current": "e26abe5eee2cbb40",
-      "former": [
-        "fb04985bc6ce0785",
-        "0dc19b9f857a7009",
-        "5ef157e9f1892161",
-        "cc7813c2f472618a",
-        "6f0807e305cc6915",
-        "c33cd2a8c2acc498",
-        "3fc9f3137a5719d9",
-        "e44c37f171a1507d",
-        "fd2df619e0f2e261",
-        "0978783df812427d",
-        "44e6bcbf756d29a7",
-        "dd118d89f756c7e5",
-        "b662d61dcd4b745b",
-        "633ccbf48702a732",
-        "ed9bcadda8d1addb",
-        "81a993a0fa84ea1c",
-        "000d1dc184807c03",
-        "e26abe5eee2cbb40"
-      ]
-    },
-    "friends-mouse/word-12": {
-      "current": "96d809d91042eb4d",
-      "former": [
-        "369c960160ad719f",
-        "51adac557e699c97",
-        "209a0ab22eba924e",
-        "e63f8e542291c61c",
-        "33be6795d04394ad",
-        "3bcf6d6687f9b464",
-        "38da936832f4b536",
-        "54161a83da892109",
-        "f2014f05018e0f31",
-        "09fa6ae80ea1994c",
-        "f6629dcfd68d7205",
-        "ab6b33733a3eda85",
-        "b52e34d3df62612b",
-        "347447512cc68957",
-        "7517be33d0f2527b",
-        "fed906e667df5f3c",
-        "79843805bc8f500f",
-        "96d809d91042eb4d"
-      ]
-    },
-    "friends-mouse/word-13": {
-      "current": "5e4857dfd7b9b78d",
-      "former": [
-        "ed7cb99a8fe9b7dc",
-        "55549ce08130197c",
-        "6b9cdb8aa8e2ae76",
-        "95ba024de85d4e0d",
-        "99064fa60091d676",
-        "ffd765532a856957",
-        "4cec6904f8e8a564",
-        "d864c280d025239e",
-        "2e245fd4a1ce8eec",
-        "46995b205e03b5b8",
-        "e476b72fc7e22235",
-        "faea12e91302777f",
-        "808c1734bf4fe3c6",
-        "34874539ebc5a5ef",
-        "9620983aa241b5b6",
-        "8712ef50ded6f00a",
-        "d1ee22e9d7f4d1b3",
-        "5e4857dfd7b9b78d"
-      ]
-    },
-    "friends-mouse/word-14": {
-      "current": "83a7d0673cbf2e1b",
-      "former": [
-        "f700bfb1a2bda129",
-        "b134a3e346a94a01",
-        "cdc0e9d8a32126cc",
-        "f49da6ea017a3016",
-        "8cf88dbc7757d67e",
-        "5415f5e4d0a65408",
-        "2446de9b7e37a1f7",
-        "83a7d0673cbf2e1b"
-      ]
-    },
-    "friends-mouse/word-16": {
-      "current": "da7e8cef200d7e2f",
-      "former": [
-        "04521b518390237f",
-        "8bf7b037c483824b",
-        "65790ca3c257e79f",
-        "7b4c794fce61a379",
-        "ffab5f51e9d5b5b3",
-        "e5470a52df49fa50",
-        "95936a35efd24e19",
-        "6b30a1608002fe28",
-        "0cb33f18128ccb4a",
-        "884120cada729248",
-        "74665ed8f76ae9ce",
-        "460b033ca6a175e8",
-        "4c8eac230f7ce4bd",
-        "5a6e62f4f4e6d082",
-        "5564b6142683f9a0",
-        "76dbe2fe613abf8c",
-        "b2611aea99222cee",
-        "da7e8cef200d7e2f"
-      ]
-    },
-    "friends-mouse/word-17": {
-      "current": "26325e57a3b8994b",
-      "former": [
-        "fc71f33c287d1e94",
-        "2682a1c1cda3f313",
-        "d8cef83e4a692d82",
-        "0f37dbb6a4de0974",
-        "2aac266dc1136557",
-        "5c4d586ec15281f4",
-        "30785271be854b87",
-        "26325e57a3b8994b"
-      ]
-    },
-    "friends-mouse/word-18": {
-      "current": "13d4d876f086b902",
-      "former": [
-        "3ac6b084ebd80386",
-        "c061b410ed269be8",
-        "059dd3b167adcbb7",
-        "77e57a39b12837c5",
-        "cd29b733878a4b7d",
-        "9775474c8c5991b8",
-        "5437b8242a3134c6",
-        "cfa0f3aa20f90d50",
-        "5f8babcf1578b3b1",
-        "416cac9525628633",
-        "aedb594e823189a6",
-        "664901e16e5e6d09",
-        "a047d04e665ee3d0",
-        "d7d6293381e7fe21",
-        "1c3456e5948b2799",
-        "4e5145471592548f",
-        "a9574b692bdea1d5",
-        "13d4d876f086b902"
-      ]
-    },
-    "friends-mouse/word-19": {
-      "current": "20403ad2bdf3d360",
-      "former": [
-        "3ae9cb0ad38fcd94",
-        "26d38517e29244cf",
-        "3831e2f6697df4d0",
-        "7a3c19494ceed767",
-        "3b583ab5fbbe6bb7",
-        "3d2fecdd11b815e3",
-        "27ff13d3bd454471",
-        "a557cfa16c88b18d",
-        "a6b62ca0de4db1bc",
-        "d2c75f25c28e731d",
-        "f5efad180718ef78",
-        "5e1c9000cf64e786",
-        "bf7d535fe0a6ef8f",
-        "bed96f40ea0d1e96",
-        "103f0ac626c499ae",
-        "e738293a8c307736",
-        "f2dd4415b8e8ca89",
-        "20403ad2bdf3d360"
-      ]
-    },
-    "friends-mouse/word-20": {
-      "current": "066decbc2ef280e0",
-      "former": [
-        "40c0961f75fd66cd",
-        "63446bcd5c83f8cf",
-        "1f88562f9a7771c5",
-        "ccc9e991a982996d",
-        "8346da4f027b8aaf",
-        "178c475e7bddc8ca",
-        "175635f90b9ae3e9",
-        "6468e2383a26603a",
-        "0ec5c1f28545d0b0",
-        "d5d88ee90853aee1",
-        "f65aeabad172dd24",
-        "d5475d2753f2ebef",
-        "95e0f447911ff88d",
-        "171540ceab7e92fc",
-        "60cb536fd799c0d1",
-        "5483ec688377e076",
-        "ccadbc75f3b3b375",
-        "066decbc2ef280e0"
-      ]
-    },
-    "friends-mouse/word-21": {
-      "current": "c480a5a6eaa86eb2",
-      "former": [
-        "6f684ec426ddeb7e",
-        "cdde9e29fb4d9279",
-        "691079ee552ee3c6",
-        "025238a9570ca725",
-        "7d5940b71ec2b84d",
-        "c061a51722314255",
-        "8a5f199873385ae6",
-        "c07bbb0d5fa23bd3",
-        "4aa64f46104d3446",
-        "696339afdd66ae05",
-        "e4ff6b51bfee8a61",
-        "f087b2552a226307",
-        "17afa9d724647b27",
-        "fadb456821cdfcc0",
-        "f1f6b692e3cee36c",
-        "ba4d990ce2a48e94",
-        "c480a5a6eaa86eb2"
-      ]
-    },
-    "friends-mouse/word-23": {
-      "current": "237e00168cf53fbe",
-      "former": [
-        "cddad6c1085fcfc7",
-        "ee374e590be8a9e5",
-        "fe901c5e95088634",
-        "1e6e5a3a7448cf6c",
-        "5a38918ad778210e",
-        "a04b464dcb1cbadf",
-        "1d0a21baacb43d70",
-        "5bafbb70545f9544",
-        "055fcdabef6e797f",
-        "05eb4c783ed2e21c",
-        "5b821c409035a91c",
-        "74e00008ed416d76",
-        "7ab911a652f141f0",
-        "702fc3f172b491a9",
-        "059720ea69a9d6ce",
-        "6d7d722ff5833b89",
-        "c370847867b63bae",
-        "237e00168cf53fbe"
-      ]
-    },
-    "friends-mouse/word-24": {
-      "current": "4634e6c7c500c737",
-      "former": [
-        "a2c57472e3c867fa",
-        "a55431712d6becbf",
-        "de52ccd881c1b4a8",
-        "f25d37f02f246e24",
-        "1ba2857594c33f11",
-        "d5ff259121e30ebb",
-        "c54cd24c9a00c996",
-        "613c7c1093851320",
-        "e3cfa1212064e819",
-        "9cb400bcee631bb8",
-        "ac5da6815cb0c67f",
-        "102a49f36e64ac65",
-        "3871516671596ffe",
-        "f9adbd23444a1ca9",
-        "d2793b634e66d3b1",
-        "2c1135fc84d12c0e",
-        "3020535177fedf49",
-        "4634e6c7c500c737"
-      ]
-    },
-    "friends-mouse/friends-frog-animal-8": {
-      "current": "195311d83160d852",
-      "former": [
-        "a3b8544707a2e21d",
-        "90a42fe62e605fda",
-        "e025181cde9dbf76",
-        "2b1c2c396680a25b",
-        "8a0fc869f0c56857",
-        "08a7cb7ba71bf1d5",
-        "749a0c87ff9a9a4d",
-        "d6d62b2f4eacd315",
-        "195311d83160d852"
-      ]
-    },
-    "friends-mouse/friends-frog-animal-10": {
-      "current": "e70068b1f0f7823b",
-      "former": [
-        "9fb6e005f7205ef1",
-        "6f5751e431d767e2",
-        "88d866973e45d9dd",
-        "3d065b8744973633",
-        "92c213ab3c8bfbff",
-        "4043e4a7641a95bf",
-        "de0252fe3ac97e60",
-        "82a9ae81187f8139",
-        "e70068b1f0f7823b"
-      ]
-    },
-    "friends-mouse/friends-frog-animal-13": {
-      "current": "54ccb32933223cfd",
-      "former": [
-        "e17aeee8ff375892",
-        "f1ecfca476e2d2d6",
-        "529f15f224144d00",
-        "5467a3ae9936e084",
-        "b6d345e57cb3842f",
-        "461cf1d866c375a8",
-        "5e5156f0b72bcf42",
-        "54ccb32933223cfd"
-      ]
-    },
-    "friends-mouse/friends-frog-animal-22": {
-      "current": "212a313aa510eb2e",
-      "former": [
-        "a2138f53e4b0e0dd",
-        "b946c54d23bb258f",
-        "32052478c9625494",
-        "937000cd6ce71af1",
-        "bd232ff8421f27f2",
-        "b240d1fe1b873952",
-        "b863ba9e7a1cb28a",
-        "814878e7cc0141e3",
-        "212a313aa510eb2e"
-      ]
-    },
-    "friends-mouse/read-word-word-3": {
-      "current": "508edeb39c1ef683",
-      "former": [
-        "3da0a3fae0729586",
-        "e2055660b11caaf2",
-        "eefc6ce698e73bd2",
-        "9ddcfa787bd5e9fe",
-        "68f3fa51c695ff87",
-        "4c6f92c8aa0ceb9c",
-        "ade41118a2574b3a",
-        "2b8d7a9fa0892d51",
-        "58f82a4441d427fe",
-        "edb24477bc130a3b",
-        "6d69587ab7a71dfc",
-        "d475e1caa31ec686",
-        "c952651062b84dba",
-        "98ffd5b3d5c810cd",
-        "a1296a18af95bef2",
-        "b509f470fdb716dc",
-        "508edeb39c1ef683"
-      ]
-    },
-    "friends-mouse/read-word-word-5": {
-      "current": "85dabf6035685e5a",
-      "former": [
-        "dacf6ef439b00e40",
-        "d5db565894b0bc76",
-        "2a33a4ad0288e397",
-        "3d2cef34bda02ecc",
-        "270e557226677734",
-        "fd4bcf42b5b6c57c",
-        "38dd66497a0a8553",
-        "08eef6394dd473f5",
-        "d412b337b39b1c27",
-        "fa56e1a093790bee",
-        "40d52de894370608",
-        "5d85fa6d6bc5ff87",
-        "9219e412e56f3706",
-        "7f20b2f4cac988e2",
-        "1e834fe0a8c5a8a2",
-        "0ebdc2cf460e558d",
-        "85dabf6035685e5a"
-      ]
-    },
-    "friends-mouse/read-word-word-10": {
-      "current": "6b581b2e76930b48",
-      "former": [
-        "c5823e5e8befc82c",
-        "4132110e9a759af8",
-        "e10c939dde99bb3d",
-        "d3b369d1844ecf2d",
-        "46825f151097621b",
-        "448bea56be50d282",
-        "720142c7f8bad13f",
-        "08e22ec12b36109f",
-        "24107220c8558444",
-        "0ed3978c09f8f36a",
-        "d755f1477185fcd9",
-        "b32b0860ce6a9d2e",
-        "f13c843a232586a0",
-        "f17e3d04495ace48",
-        "cd6927d98aaffd9f",
-        "506400142a9422ae",
-        "6b581b2e76930b48"
-      ]
-    },
-    "friends-mouse/read-word-word-22": {
-      "current": "7006279ce1806fdc",
-      "former": [
-        "4687db1d9dce2559",
-        "942b169aca817b98",
-        "d175187708f1385f",
-        "9fc763f154673823",
-        "7a128dd6d48d4be2",
-        "1521dec3ae61a603",
-        "afe15ec110a853d5",
-        "e8c4fb71299f79b7",
-        "c87c8247b596c343",
-        "23d6632d48078e33",
-        "6dafed12780a5e26",
-        "395801bd63f886a3",
-        "235eb895908d22ab",
-        "fd5e344b4ddb08e9",
-        "fb451ed210fc0c8c",
-        "c89b0e4fa5d8cab5",
-        "a613add6bb3c9c18",
-        "7006279ce1806fdc"
-      ]
-    },
-    "friends-mouse/read-word-word-23": {
-      "current": "5a82fe03615c713f",
-      "former": [
-        "c498a85323497b03",
-        "0279d2db6cc636db",
-        "8a7958acedd15dac",
-        "c0dccaf52a1439c5",
-        "0d8a60840def4224",
-        "dc6c7fb458e3912c",
-        "310f42c55bd5aabf",
-        "46d6dc2238cdafa6",
-        "f6f652f479795042",
-        "a07e3e03610f6ad7",
-        "c2db0fdaf031bbb2",
-        "fc756c28360f2574",
-        "1e4172ba7795a298",
-        "3be1255515dde0fb",
-        "a936ab77ca7804d7",
-        "8aba8a49d27b6873",
-        "2784e4b3e6cd91cb",
-        "5a82fe03615c713f"
-      ]
-    },
-    "friends-mouse/read-word-word-24": {
-      "current": "6fcde382d0ba2392",
-      "former": [
-        "5eecbeb7c085cf47",
-        "9266fd57b76ac379",
-        "475433608562f564",
-        "38ff067511c42cbb",
-        "bb7ee65b23f4cf79",
-        "c76492bf87da6d87",
-        "6fdc7e650b0d0ef3",
-        "f9a05251cded07ab",
-        "493d6ee78d34150b",
-        "8504fccb75c327c3",
-        "b115d48956f3200d",
-        "04ad017a722cbda6",
-        "316b0ad1d4620ce3",
-        "253cce628fdf7388",
-        "87ecac33cfafc0b9",
-        "d34008b065536116",
-        "c6a7986aaf681322",
-        "6fcde382d0ba2392"
-      ]
-    },
-    "friends-mouse/read-word-word-25": {
-      "current": "622c447ad151b53e",
-      "former": [
-        "4ae7efb4376fbf54",
-        "dce555209e37f272",
-        "f093ae975709a077",
-        "4e38edf067ba4548",
-        "9614b7c3b0767c8d",
-        "f4d576c8a1e69604",
-        "1e006e354baaac13",
-        "3e2273d9d8a34379",
-        "a3823338dab25236",
-        "8a76b0a6ab611f1a",
-        "8bfce6a8ceb4bcfe",
-        "060f41a21ddf40a0",
-        "4e0d4177506fd915",
-        "7acfb4c3228ce4bb",
-        "b5eca5360d7bf72c",
-        "c901adbf85003c73",
-        "d16c56c8ceaf7954",
-        "622c447ad151b53e"
-      ]
-    },
-    "friends-mouse/read-word-word-26": {
-      "current": "ecc263163543da0a",
-      "former": [
-        "5b00562dba732859",
-        "6a91c245705c2e23",
-        "2c516172a90a4e3e",
-        "38b2bc5f573dd04f",
-        "db28bd6c3c079c1e",
-        "1a97d4f7373b83e9",
-        "327b7bcb309bd2f5",
-        "35b60790c670c512",
-        "5657f7f013dd12e0",
-        "3af458714e4f4711",
-        "14ed2a294e8e8a51",
-        "f9a7d214677ba63c",
-        "053e98ce1866e12e",
-        "985cc2053e08a8c9",
-        "6c052b314a261985",
-        "149d1720e23c6a8a",
-        "6f95644f936f91a1",
-        "ecc263163543da0a"
-      ]
-    },
-    "friends-mouse/read-word-word-27": {
-      "current": "b7b286454f01e371",
-      "former": [
-        "770e6f35da0127d9",
-        "1940b277be418e75",
-        "3311cc2007e38256",
-        "0403f7ba26926910",
-        "5d2f08d70bc3b475",
-        "d0617a4aec63a9ba",
-        "6004adf20ee0857a",
-        "477fb37a6abd4362",
-        "6774bdbf4aff9839",
-        "f6ceb0493844bb99",
-        "9d8a057659e1772e",
-        "d70fe14039ac8ea0",
-        "15c24c4a0d412a26",
-        "3bdcd9b2b33198a6",
-        "45139263f3d7b0a1",
-        "97b0bc682b71a82c",
-        "6e979826f221dfb2",
-        "b7b286454f01e371"
-      ]
-    },
-    "friends-mouse/read-word-word-29": {
-      "current": "d48dc3ad2af23a95",
-      "former": [
-        "90b949533e645773",
-        "da172f960be14f9e",
-        "a8bda37442ad68f6",
-        "7aae365fe727a823",
-        "7e599b03fa44ba6f",
-        "a5175579c4800e87",
-        "175f44d47cead358",
-        "0afe465bd87c4b27",
-        "e3eb3ba4147906e6",
-        "00261ea69ad95d9a",
-        "09c673d6fdb6b30a",
-        "bdbc3cd5880aa887",
-        "179cf80bd7738ef7",
-        "25a7cecc66f7b954",
-        "8ab7960df8e1edc3",
-        "d8a39cdafd653774",
-        "d5e23fe725a8d13b",
-        "d48dc3ad2af23a95"
-      ]
-    },
-    "friends-mouse/read-word-word-30": {
-      "current": "c3972d408cac380c",
-      "former": [
-        "62814fddac6afef3",
-        "a77a51c2051d2a72",
-        "0f768157c7070d7d",
-        "1cec1dadd3291289",
-        "6c1479d2640409f2",
-        "8b57c0dcd78c9246",
-        "c1b7f57a3390657a",
-        "387a6dc0f8cc7168",
-        "4dbd63872e374fe9",
-        "4ec5fe895ce9be67",
-        "a91f362610f9f294",
-        "a8657bcbadf3667d",
-        "c23f772108c391cd",
-        "81a4d3d3b474b8fd",
-        "79e23bb9d2f35a11",
-        "c65bb0bd6bc2c427",
-        "66e6bf13a8570471",
-        "c3972d408cac380c"
-      ]
-    },
-    "friends-mouse/read-word-word-31": {
-      "current": "6ee4d641182e94ff",
-      "former": [
-        "e2546a5a72f6f8a0",
-        "842f2ad7570efa95",
-        "4877fca1d865704f",
-        "3d8fcb8995ceda39",
-        "b459a4587c8d7262",
-        "8045ccc24ae812c2",
-        "f142d3bbbe3cd811",
-        "5ab0574a9e544f46",
-        "25e3d9c61ba48620",
-        "930075c8768c2914",
-        "d9c117679544c9ef",
-        "db46936e8666718e",
-        "eeb7d7455b7cc2e9",
-        "4c4d55877161293f",
-        "7966e7c8f546e0ea",
-        "a168900c2e2f3b7a",
-        "0ee842cd7b64bcb5",
-        "6ee4d641182e94ff"
-      ]
-    },
     "colour-words/rot-gelb-blau": {
       "current": "672869de41f12d52",
       "former": [
@@ -3577,7 +2488,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "41a360675c97f2f9",
         "ca01204cad2b4a74",
-        "fef71c26df45c3dc"
+        "fef71c26df45c3dc",
+        "7a98dd1a4c8d2154"
       ]
     },
     "friends-ibex/pattern-AAB-2": {
@@ -3585,7 +2497,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "eba127727c629018",
         "1819cfdd4909d9d5",
-        "dd276fe7a72ca33d"
+        "dd276fe7a72ca33d",
+        "747f2bdbd7e03ab5"
       ]
     },
     "friends-ibex/pattern-AAB-3": {
@@ -3593,7 +2506,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "085e3a51cd964b3b",
         "872fbb3ef86bc436",
-        "1a4162ecdf99369e"
+        "1a4162ecdf99369e",
+        "48482cf0db604616"
       ]
     },
     "friends-ibex/pattern-AAB-4": {
@@ -3601,7 +2515,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "344ab54f6aacfdb9",
         "cca32180c1434734",
-        "b770fe52fe85779c"
+        "b770fe52fe85779c",
+        "14b17bd62b6dc514"
       ]
     },
     "friends-ibex/pattern-AAB-5": {
@@ -3609,7 +2524,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "348c39cbbc325d7d",
         "bc8cd2dc0c4a8ff0",
-        "ea54226eb3f3ef58"
+        "ea54226eb3f3ef58",
+        "4cf791fabbd906d0"
       ]
     },
     "friends-ibex/pattern-AAB-6": {
@@ -3617,7 +2533,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "648a85ab571671c5",
         "cab6fc9a108142e8",
-        "675763484c519d00"
+        "675763484c519d00",
+        "35c8ffbc26d5db88"
       ]
     },
     "friends-ibex/pattern-ABB-1": {
@@ -3625,7 +2542,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c4227574163ebada",
         "3e7f1f5b876a9c97",
-        "be842a69ccd342ff"
+        "be842a69ccd342ff",
+        "794e396d5f39d877"
       ]
     },
     "friends-ibex/pattern-ABB-2": {
@@ -3633,7 +2551,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "51a701448343b75c",
         "86ff7d855efa4bf1",
-        "0fa0c1bbf1fa6499"
+        "0fa0c1bbf1fa6499",
+        "a58aad7fc6e04711"
       ]
     },
     "friends-ibex/pattern-ABB-3": {
@@ -3641,7 +2560,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cf7377c6938e6d98",
         "c6edb2657384e6d5",
-        "00e0ffc75c03593d"
+        "00e0ffc75c03593d",
+        "64a79a6bd62a24b5"
       ]
     },
     "friends-ibex/pattern-ABB-4": {
@@ -3649,7 +2569,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "894fae9b59134705",
         "9c32ae9e56a16ea8",
-        "f22c9374a1700cc0"
+        "f22c9374a1700cc0",
+        "5af92d7899dc5948"
       ]
     },
     "friends-ibex/pattern-ABB-5": {
@@ -3657,7 +2578,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "a8d8f00af722b27e",
         "fce80719f7c15df3",
-        "6773504fea9372db"
+        "6773504fea9372db",
+        "26feccabad878653"
       ]
     },
     "friends-ibex/pattern-ABB-6": {
@@ -3665,7 +2587,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "95c2e6bc20d49178",
         "bb4a31ab16f2e6f5",
-        "aefeea6dbfa4f1dd"
+        "aefeea6dbfa4f1dd",
+        "dc78c541dc270555"
       ]
     },
     "friends-ibex/pattern-ABC-1": {
@@ -3673,7 +2596,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "f83c891d5f7a26bb",
         "242f977e3571a036",
-        "012a3124589b541e"
+        "012a3124589b541e",
+        "178ba9f87a73a796"
       ]
     },
     "friends-ibex/pattern-ABC-2": {
@@ -3681,7 +2605,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "00d02cf91e560a1d",
         "bc8bce660ed0f9d0",
-        "fbd134d81426c238"
+        "fbd134d81426c238",
+        "ae6550a4e291e1b0"
       ]
     },
     "friends-ibex/pattern-ABC-3": {
@@ -3689,7 +2614,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "99daf9df87da08f9",
         "d8c550fc03cce074",
-        "00b822b6d6022a5c"
+        "00b822b6d6022a5c",
+        "1633411a863db1d4"
       ]
     },
     "friends-ibex/pattern-ABC-4": {
@@ -3697,7 +2623,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "8f7de3294911f4a3",
         "2debf6e65c6013ae",
-        "08d86604ad666286"
+        "08d86604ad666286",
+        "6c606b58f0a7200e"
       ]
     },
     "friends-ibex/pattern-ABC-5": {
@@ -3705,7 +2632,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cbd6bda95cbf3ebf",
         "91104602bfc107b2",
-        "a60462d8068f699a"
+        "a60462d8068f699a",
+        "e40042b43ec44112"
       ]
     },
     "friends-ibex/pattern-ABC-6": {
@@ -3713,7 +2641,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c8d6c6b2a6ea7106",
         "b4ad953b7422ac2b",
-        "9d068635629f8443"
+        "9d068635629f8443",
+        "5d058629899a92cb"
       ]
     },
     "friends-ibex/pattern-ABAC-1": {
@@ -3721,7 +2650,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "ccfb92265a284dd4",
         "091d7d73601c91f9",
-        "36328ae115a2d5d1"
+        "36328ae115a2d5d1",
+        "fa4d2df5d8b61659"
       ]
     },
     "friends-ibex/pattern-ABAC-2": {
@@ -3729,7 +2659,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c4c1f34b9e8dcf5b",
         "530ba6a6497b05f6",
-        "ec7e267061ed5f5e"
+        "ec7e267061ed5f5e",
+        "7cd2e0cc789087d6"
       ]
     },
     "friends-ibex/pattern-ABAC-3": {
@@ -3737,7 +2668,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "42638ab888a3db56",
         "24cc4d693407887b",
-        "033214234f93ac53"
+        "033214234f93ac53",
+        "6d97a167a451fedb"
       ]
     },
     "friends-ibex/pattern-ABAC-4": {
@@ -3745,7 +2677,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "61b0709b589c509f",
         "041e44f2293fa632",
-        "2aaea234c6c4859a"
+        "2aaea234c6c4859a",
+        "cb012c886e02e812"
       ]
     },
     "friends-ibex/pattern-ABAC-5": {
@@ -3753,7 +2686,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "0424007a69a065d0",
         "f72763cbe22f4efd",
-        "c65d7ee141fa6dd5"
+        "c65d7ee141fa6dd5",
+        "f7981d5d6ad3ee5d"
       ]
     },
     "friends-ibex/pattern-ABAC-6": {
@@ -3761,7 +2695,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "306321bbf3c9bbdf",
         "9c515f722e2f9e72",
-        "5db7c594e6eab5da"
+        "5db7c594e6eab5da",
+        "1b95409855325a52"
       ]
     },
     "friends-ibex/pattern-AABC-1": {
@@ -3769,7 +2704,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "22180560abd36bf4",
         "8e4fccd5d3a5d8d9",
-        "694266d3b4a46c31"
+        "694266d3b4a46c31",
+        "55b0d657acd9eeb9"
       ]
     },
     "friends-ibex/pattern-AABC-2": {
@@ -3777,7 +2713,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "3d72e5c4d2e5d61a",
         "064cf28992d59937",
-        "29eea87b5c84ae1f"
+        "29eea87b5c84ae1f",
+        "c55f8cd76e875897"
       ]
     },
     "friends-ibex/pattern-AABC-3": {
@@ -3785,7 +2722,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "c1120ca6bb0df6f6",
         "696a191f5d6879db",
-        "af19cf113da67833"
+        "af19cf113da67833",
+        "a9ba0c157a2954bb"
       ]
     },
     "friends-ibex/pattern-AABC-4": {
@@ -3793,7 +2731,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "1d24e8302ef1c7a0",
         "642426f584f0be0d",
-        "4c13730b14cdbc65"
+        "4c13730b14cdbc65",
+        "bf1a0c277397d0ed"
       ]
     },
     "friends-ibex/pattern-AABC-5": {
@@ -3801,7 +2740,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "8823305c376c89b0",
         "3dec6d3daf97841d",
-        "51df32fb6092dc75"
+        "51df32fb6092dc75",
+        "cf3f26878aba5cfd"
       ]
     },
     "friends-ibex/pattern-AABC-6": {
@@ -3809,7 +2749,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "f46e409ed3efb43e",
         "07b2d3bb592cae93",
-        "bf6553057ec9affb"
+        "bf6553057ec9affb",
+        "a5308069fbeb1873"
       ]
     },
     "count/6-2": {
@@ -4053,7 +2994,7 @@ window.FK.puzzleReviewCompatibility = {
       ]
     },
     "add/1-1": {
-      "current": "780bf03d8897d691",
+      "current": "eb59f0deb0581100",
       "former": [
         "dd82c74e1853cfcc",
         "945621391b7f1037",
@@ -4062,11 +3003,12 @@ window.FK.puzzleReviewCompatibility = {
         "580e3eb8f8054be4",
         "4a39494480766942",
         "eea2ac854f799d5d",
-        "c07144cd4dddeba7"
+        "c07144cd4dddeba7",
+        "780bf03d8897d691"
       ]
     },
     "add/1-2": {
-      "current": "8b59a55dc7f47837",
+      "current": "deebe6f6d5f23166",
       "former": [
         "53c257e629b3c52a",
         "d5edef619aa9b2d1",
@@ -4075,11 +3017,12 @@ window.FK.puzzleReviewCompatibility = {
         "f9f85efc7a4265c2",
         "85d4ff20ba6f0924",
         "4c620ac5deeadcfb",
-        "5c66f1ed63561041"
+        "5c66f1ed63561041",
+        "8b59a55dc7f47837"
       ]
     },
     "add/1-3": {
-      "current": "65edbe7c3c27d0f0",
+      "current": "e81f65bbd1dfcfa1",
       "former": [
         "c2de5c2b9cd99b6d",
         "bd88e0a8138f7a96",
@@ -4088,11 +3031,12 @@ window.FK.puzzleReviewCompatibility = {
         "81b453ad94bb0505",
         "6b2f7c5964960d63",
         "88d10dc43be43bbc",
-        "581d828c9c22da06"
+        "581d828c9c22da06",
+        "65edbe7c3c27d0f0"
       ]
     },
     "add/1-4": {
-      "current": "84a0adf2cf9550d4",
+      "current": "3c86f6bd9888bf45",
       "former": [
         "daeea46db5a2aa09",
         "fbdcc0e690a583f2",
@@ -4101,11 +3045,12 @@ window.FK.puzzleReviewCompatibility = {
         "8be5734700dfab21",
         "8da29fbb5216a407",
         "a99131ba47568198",
-        "213cde0243536362"
+        "213cde0243536362",
+        "84a0adf2cf9550d4"
       ]
     },
     "add/1-5": {
-      "current": "99019f03e8ccccd7",
+      "current": "84360ab045c14846",
       "former": [
         "0db2c7e07120500a",
         "8305c697f13091f1",
@@ -4114,11 +3059,12 @@ window.FK.puzzleReviewCompatibility = {
         "ba2ab06ea8ec4b22",
         "c7a82982b4d26404",
         "5fd161ab49ad609b",
-        "fa62da1379c3f161"
+        "fa62da1379c3f161",
+        "99019f03e8ccccd7"
       ]
     },
     "add/1-6": {
-      "current": "ed1a13afad8c9b75",
+      "current": "ff2a5b54a88a1aa4",
       "former": [
         "578e7084ae8e4068",
         "7457bad34ebc0693",
@@ -4127,11 +3073,12 @@ window.FK.puzzleReviewCompatibility = {
         "66895b0ece615d00",
         "c8a094a277e810e6",
         "2867b41750c51e39",
-        "7acd837f839b6603"
+        "7acd837f839b6603",
+        "ed1a13afad8c9b75"
       ]
     },
     "add/1-7": {
-      "current": "90bfa5bedb112fce",
+      "current": "2da74307c35773ff",
       "former": [
         "8ba037b766b4da33",
         "07482b9a1d82d9e8",
@@ -4140,11 +3087,12 @@ window.FK.puzzleReviewCompatibility = {
         "acb5f2c1b5b63c1b",
         "1724794d40e76dfd",
         "2e3c5e26b4572602",
-        "62654fce036bef78"
+        "62654fce036bef78",
+        "90bfa5bedb112fce"
       ]
     },
     "add/1-8": {
-      "current": "f1a2e26f018c9757",
+      "current": "4092d3808d856bc6",
       "former": [
         "5713f13084f1448a",
         "b6cd4c530b20cdf1",
@@ -4153,11 +3101,12 @@ window.FK.puzzleReviewCompatibility = {
         "a0abeca67cd5b1a2",
         "54def6eac547e984",
         "fc6273f7ef91001b",
-        "67ab9abf19a68961"
+        "67ab9abf19a68961",
+        "f1a2e26f018c9757"
       ]
     },
     "add/1-9": {
-      "current": "56d2af65b6c917cf",
+      "current": "b093a75897efdebe",
       "former": [
         "e0860ec86bd380f2",
         "e595adf18b4087e9",
@@ -4166,11 +3115,12 @@ window.FK.puzzleReviewCompatibility = {
         "1a105c52dc70845a",
         "f7eea9ce13a17bbc",
         "ec89ae8d12df8003",
-        "a8c9d8754937b179"
+        "a8c9d8754937b179",
+        "56d2af65b6c917cf"
       ]
     },
     "add/2-1": {
-      "current": "7458cd07aa1c46d7",
+      "current": "e8e8b8f802de12c6",
       "former": [
         "e7f97c68329cab8a",
         "5628703b16ebf5f1",
@@ -4179,11 +3129,12 @@ window.FK.puzzleReviewCompatibility = {
         "6cb58d9625b49222",
         "63b3242a476d3d04",
         "53b6e32fdfc0689b",
-        "aabbeb979f7f5561"
+        "aabbeb979f7f5561",
+        "7458cd07aa1c46d7"
       ]
     },
     "add/2-2": {
-      "current": "2e2e574fad996bb5",
+      "current": "64a295c4c9858664",
       "former": [
         "e3856e744428c028",
         "3624da838ecb8d53",
@@ -4192,11 +3143,12 @@ window.FK.puzzleReviewCompatibility = {
         "c85cf6f6aff25140",
         "ec63daba52fd59a6",
         "3c032f5710fd6779",
-        "b883ae5fc3aaecc3"
+        "b883ae5fc3aaecc3",
+        "2e2e574fad996bb5"
       ]
     },
     "add/2-3": {
-      "current": "bc5b436937e6fa51",
+      "current": "8be1b062207af140",
       "former": [
         "b6e5f59282a0830c",
         "0360e12576966577",
@@ -4205,11 +3157,12 @@ window.FK.puzzleReviewCompatibility = {
         "1772ae141b2cf3a4",
         "be4f5d30f7696582",
         "ffe19371bf966b1d",
-        "ef960cb992f6c2e7"
+        "ef960cb992f6c2e7",
+        "bc5b436937e6fa51"
       ]
     },
     "add/2-4": {
-      "current": "573d13b7d0746279",
+      "current": "a37a7fa0a9ff3028",
       "former": [
         "fa2e609053c5e6e4",
         "9dac5ec359908f9f",
@@ -4218,11 +3171,12 @@ window.FK.puzzleReviewCompatibility = {
         "4066fd3237671f0c",
         "09e069ee6fb537ea",
         "196ecf4f5dea3d35",
-        "e3b107c78e6fef0f"
+        "e3b107c78e6fef0f",
+        "573d13b7d0746279"
       ]
     },
     "add/2-5": {
-      "current": "50fe32f559cdf215",
+      "current": "b629ba7211287b04",
       "former": [
         "77730fe265c629c8",
         "2a76d2e99b0650b3",
@@ -4231,11 +3185,12 @@ window.FK.puzzleReviewCompatibility = {
         "2c668664aa8f0d60",
         "a4e5acc8f34e45c6",
         "fbd66e5d7182a3d9",
-        "f53ffc45b9e73223"
+        "f53ffc45b9e73223",
+        "50fe32f559cdf215"
       ]
     },
     "add/2-6": {
-      "current": "3036a7cdf27e3f77",
+      "current": "875bc2f67938a026",
       "former": [
         "c6092c26eede5fea",
         "1a281fb12f17b491",
@@ -4244,11 +3199,12 @@ window.FK.puzzleReviewCompatibility = {
         "da78bd845cf3ef02",
         "738018d8d49cbee4",
         "e3db7075d2cd4d3b",
-        "a327675db7ab1401"
+        "a327675db7ab1401",
+        "3036a7cdf27e3f77"
       ]
     },
     "add/2-7": {
-      "current": "381caa35d59bb4cf",
+      "current": "c85f5bbc205ce8fe",
       "former": [
         "b14dd92ced002632",
         "7d2e78e1ef4b8069",
@@ -4257,11 +3213,12 @@ window.FK.puzzleReviewCompatibility = {
         "3c21402664d4191a",
         "2c77ed3289f3e87c",
         "5189011d53e12703",
-        "ea4a07456b8217f9"
+        "ea4a07456b8217f9",
+        "381caa35d59bb4cf"
       ]
     },
     "add/2-8": {
-      "current": "d331723dc5ca6495",
+      "current": "b8691dce55a8afc4",
       "former": [
         "14bf37bee3477688",
         "0c6ee5f1f8cfcd33",
@@ -4270,11 +3227,12 @@ window.FK.puzzleReviewCompatibility = {
         "cc77a5b8e504d220",
         "142a94ec1509fb86",
         "ff4a530570036559",
-        "d7c167cd45fe90a3"
+        "d7c167cd45fe90a3",
+        "d331723dc5ca6495"
       ]
     },
     "add/3-1": {
-      "current": "5cd8444f34da9557",
+      "current": "1b3816249afd70c6",
       "former": [
         "eb27e61418386a8a",
         "c7ded2839632c971",
@@ -4283,11 +3241,12 @@ window.FK.puzzleReviewCompatibility = {
         "2f810bd2fcb705a2",
         "19215636fe398a84",
         "797232974da7db1b",
-        "f830745f5edf26e1"
+        "f830745f5edf26e1",
+        "5cd8444f34da9557"
       ]
     },
     "add/3-2": {
-      "current": "3c0d5ec956a541b7",
+      "current": "2dd30ca2160160e6",
       "former": [
         "2f2943521513d3aa",
         "30c7fced18928451",
@@ -4296,11 +3255,12 @@ window.FK.puzzleReviewCompatibility = {
         "00943f78a7913542",
         "0d25474c437839a4",
         "287665b10f764f7b",
-        "6f594399a125e3c1"
+        "6f594399a125e3c1",
+        "3c0d5ec956a541b7"
       ]
     },
     "add/3-3": {
-      "current": "c5a7e3d4a69b02f4",
+      "current": "5729fd6bf7279da5",
       "former": [
         "debe345b0fc32c69",
         "3af4b268a6d7c892",
@@ -4309,11 +3269,12 @@ window.FK.puzzleReviewCompatibility = {
         "9599d1dd72a8f201",
         "298ec3e14e5ebf67",
         "2008d69c69a268b8",
-        "79ed50a42f6b2802"
+        "79ed50a42f6b2802",
+        "c5a7e3d4a69b02f4"
       ]
     },
     "add/3-4": {
-      "current": "e8a3b8ef90efddb5",
+      "current": "5fdec028eb1e93e4",
       "former": [
         "500000187f5837a8",
         "1cfa91b352625553",
@@ -4322,11 +3283,12 @@ window.FK.puzzleReviewCompatibility = {
         "444f592adebf5b40",
         "f8afac6ed933d5a6",
         "a489b497148d4a79",
-        "4e3734bf8741b4c3"
+        "4e3734bf8741b4c3",
+        "e8a3b8ef90efddb5"
       ]
     },
     "add/3-5": {
-      "current": "d806848abd61c10e",
+      "current": "7f0446079e31453f",
       "former": [
         "d72940b7c704c973",
         "7a1b94f6d414a8a8",
@@ -4335,11 +3297,12 @@ window.FK.puzzleReviewCompatibility = {
         "3e99a551ebfbed5b",
         "4341e8ed449e2fbd",
         "3e54f3b2f4b15342",
-        "4e821fda504b4038"
+        "4e821fda504b4038",
+        "d806848abd61c10e"
       ]
     },
     "add/3-6": {
-      "current": "4681296b4956312f",
+      "current": "4895080e9afbf41e",
       "former": [
         "430bc9be7736b452",
         "bc13c5b774e99749",
@@ -4348,11 +3311,12 @@ window.FK.puzzleReviewCompatibility = {
         "052690e8e5acbbba",
         "f4868f542265af9c",
         "b6bb19f3cd3e8763",
-        "3901213bb10730d9"
+        "3901213bb10730d9",
+        "4681296b4956312f"
       ]
     },
     "add/3-7": {
-      "current": "7be599799de04177",
+      "current": "b04c4636eaa7bae6",
       "former": [
         "37d614e60810e8aa",
         "3cae308d4045f691",
@@ -4361,11 +3325,12 @@ window.FK.puzzleReviewCompatibility = {
         "ad20b2c4875f77c2",
         "3344f6e858e6cd24",
         "ef673d61fcb1623b",
-        "4208ee09d3f4e201"
+        "4208ee09d3f4e201",
+        "7be599799de04177"
       ]
     },
     "add/4-1": {
-      "current": "5fc8b04809ed9734",
+      "current": "4317cfe716659c65",
       "former": [
         "25200f974408a429",
         "b351a80cf94cf352",
@@ -4374,11 +3339,12 @@ window.FK.puzzleReviewCompatibility = {
         "05c6d681c5148a41",
         "58e2ea25eba50527",
         "0bee04b0090326f8",
-        "34f969182e2c52c2"
+        "34f969182e2c52c2",
+        "5fc8b04809ed9734"
       ]
     },
     "add/4-2": {
-      "current": "0f3dd1f7eb43ceb9",
+      "current": "ce9c927ce8ef4c68",
       "former": [
         "c1d4bb6c01775a24",
         "76094023827cf75f",
@@ -4387,11 +3353,12 @@ window.FK.puzzleReviewCompatibility = {
         "5182a68ed61e184c",
         "e769e7aa012d7caa",
         "69a63fefb00b6475",
-        "dfe2aa87b75c56cf"
+        "dfe2aa87b75c56cf",
+        "0f3dd1f7eb43ceb9"
       ]
     },
     "add/4-3": {
-      "current": "ea3ace410307ab55",
+      "current": "7ab885ba09dc3f44",
       "former": [
         "a96d24eaf0017708",
         "3e99d5056af61673",
@@ -4400,11 +3367,12 @@ window.FK.puzzleReviewCompatibility = {
         "545f83fcbc10e3a0",
         "fbd97060ca0dae86",
         "1f5b03894b37fc19",
-        "6c9314d1875673e3"
+        "6c9314d1875673e3",
+        "ea3ace410307ab55"
       ]
     },
     "add/4-4": {
-      "current": "419a7bd25e443598",
+      "current": "21ffb4a51ec6b989",
       "former": [
         "b59a98559ea89945",
         "28dbb58e5f7ecd3e",
@@ -4413,11 +3381,12 @@ window.FK.puzzleReviewCompatibility = {
         "b2257b3789f151ed",
         "1f6277439f1cba4b",
         "2d98f68a47993254",
-        "f9504b62945e2cae"
+        "f9504b62945e2cae",
+        "419a7bd25e443598"
       ]
     },
     "add/4-5": {
-      "current": "74671f79b0e6cc37",
+      "current": "249ce11e5b0f81e6",
       "former": [
         "ad936f4e17f86daa",
         "4c9d25fdd1f20fd1",
@@ -4426,11 +3395,12 @@ window.FK.puzzleReviewCompatibility = {
         "d34a80f44785bcc2",
         "b4275558aeaf3fa4",
         "f7d09881bf47cdfb",
-        "1a846f092090c941"
+        "1a846f092090c941",
+        "74671f79b0e6cc37"
       ]
     },
     "add/4-6": {
-      "current": "d15a6b0d974e4577",
+      "current": "2b73f60efd6032e6",
       "former": [
         "43c932be5c47f3aa",
         "193f1a01e01c1311",
@@ -4439,11 +3409,12 @@ window.FK.puzzleReviewCompatibility = {
         "9c8cd98c2e95f3c2",
         "73c0be50eee5f0a4",
         "130bdb7532bbc13b",
-        "979293ddb3e3fc81"
+        "979293ddb3e3fc81",
+        "d15a6b0d974e4577"
       ]
     },
     "add/5-1": {
-      "current": "949451c8a9af74b4",
+      "current": "665ef0fb596d4665",
       "former": [
         "bb3e0bab88201229",
         "fab1958c49b795d2",
@@ -4452,11 +3423,12 @@ window.FK.puzzleReviewCompatibility = {
         "3863b18515d08ac1",
         "395d1fd9bd3ca1a7",
         "58d86c50d4fd8378",
-        "7a29e8586617f342"
+        "7a29e8586617f342",
+        "949451c8a9af74b4"
       ]
     },
     "add/5-2": {
-      "current": "d3f1c49aeb055b98",
+      "current": "f4bd75b9da337409",
       "former": [
         "c61f2ee9963064c5",
         "4bbed4f669215c3e",
@@ -4465,11 +3437,12 @@ window.FK.puzzleReviewCompatibility = {
         "6bacb05be30d68ed",
         "513e4e47f545e84b",
         "62a824728e37e454",
-        "48151cea9e00bbae"
+        "48151cea9e00bbae",
+        "d3f1c49aeb055b98"
       ]
     },
     "add/5-3": {
-      "current": "788147ab708de817",
+      "current": "5c24f7fc7a964786",
       "former": [
         "d7fa652c597fc34a",
         "5050c1df9de084b1",
@@ -4478,11 +3451,12 @@ window.FK.puzzleReviewCompatibility = {
         "1d0fc4921a312862",
         "a1db6d263f4a75c4",
         "8990d8d34b53b9db",
-        "66dd553b3c726221"
+        "66dd553b3c726221",
+        "788147ab708de817"
       ]
     },
     "add/5-4": {
-      "current": "10acdd6b7996f3ef",
+      "current": "a49df882c3c5f6de",
       "former": [
         "3cfab7f2c38dd412",
         "d3b1ed87ec06b589",
@@ -4491,11 +3465,12 @@ window.FK.puzzleReviewCompatibility = {
         "146f7e444f0e5c7a",
         "e096dd10b17cfcdc",
         "947e45d3f99fe523",
-        "51849e7b28244f19"
+        "51849e7b28244f19",
+        "10acdd6b7996f3ef"
       ]
     },
     "add/5-5": {
-      "current": "b1e49c8d2bcb84f7",
+      "current": "d7c7ace260d18066",
       "former": [
         "8d4b1f12f61e452a",
         "cb5d68e15a5a7311",
@@ -4504,11 +3479,12 @@ window.FK.puzzleReviewCompatibility = {
         "94106a90c75dd442",
         "194449d41850b0a4",
         "b895a4b552ae3cbb",
-        "79c5805d2e225c81"
+        "79c5805d2e225c81",
+        "b1e49c8d2bcb84f7"
       ]
     },
     "add/6-1": {
-      "current": "e399ee00f15cacb8",
+      "current": "bfc59b5f30b4cce9",
       "former": [
         "521b6f0f33364fa5",
         "50be17fc526cc9de",
@@ -4517,11 +3493,12 @@ window.FK.puzzleReviewCompatibility = {
         "b3d2f8a9fb88bfcd",
         "2feebe65503f1aab",
         "9997f7586aa8eb74",
-        "fd4d5c106ecd274e"
+        "fd4d5c106ecd274e",
+        "e399ee00f15cacb8"
       ]
     },
     "add/6-2": {
-      "current": "149d7342072ede58",
+      "current": "23f418a9f764d749",
       "former": [
         "39e8e3990b8a8b05",
         "7253b04e9699ed7e",
@@ -4530,11 +3507,12 @@ window.FK.puzzleReviewCompatibility = {
         "4fadafb3096a0cad",
         "b9ae340f96b30c8b",
         "695fc0ba907a9914",
-        "3506b0d2352bcaee"
+        "3506b0d2352bcaee",
+        "149d7342072ede58"
       ]
     },
     "add/6-3": {
-      "current": "4392a8f5cab73bf7",
+      "current": "b7e18d9eac962fa6",
       "former": [
         "c5baa64ecb69ef6a",
         "23eb017980015e11",
@@ -4543,11 +3521,12 @@ window.FK.puzzleReviewCompatibility = {
         "685ec834f0557882",
         "124edf18fb64c5e4",
         "eefc0e1d2a2089bb",
-        "21717885cea01781"
+        "21717885cea01781",
+        "4392a8f5cab73bf7"
       ]
     },
     "add/6-4": {
-      "current": "ca4d84ad17604995",
+      "current": "3836a006a73e94c4",
       "former": [
         "dd7853f691b19188",
         "87bcb7a16b9c3233",
@@ -4556,11 +3535,12 @@ window.FK.puzzleReviewCompatibility = {
         "6b22712857d13720",
         "8fb1d58c669fe086",
         "e7e674b51e6d8059",
-        "110e58bdb8caf5a3"
+        "110e58bdb8caf5a3",
+        "ca4d84ad17604995"
       ]
     },
     "add/7-1": {
-      "current": "8d2aa5ca20927f8e",
+      "current": "416adbe76b1481bf",
       "former": [
         "09c4b0d7f7a108f3",
         "c01db0d6b0fce828",
@@ -4569,11 +3549,12 @@ window.FK.puzzleReviewCompatibility = {
         "44f057d135172edb",
         "c6854c8d7db46e3d",
         "4f7865523dcc94c2",
-        "85c58e9aed1a81b8"
+        "85c58e9aed1a81b8",
+        "8d2aa5ca20927f8e"
       ]
     },
     "add/7-2": {
-      "current": "fd9c98cb16396daf",
+      "current": "d7b9ece6fe2cb29e",
       "former": [
         "76639116c051f5d2",
         "892135d711b8d8c9",
@@ -4582,11 +3563,12 @@ window.FK.puzzleReviewCompatibility = {
         "7fe39cf81648fb3a",
         "4f2d2164f1c9701c",
         "57df87d3fddac6e3",
-        "bc87629b8def7059"
+        "bc87629b8def7059",
+        "fd9c98cb16396daf"
       ]
     },
     "add/7-3": {
-      "current": "f4ffeb11b163a177",
+      "current": "d5800de6fe2b1ae6",
       "former": [
         "10434016f48d88aa",
         "da40c3952cc29691",
@@ -4595,11 +3577,12 @@ window.FK.puzzleReviewCompatibility = {
         "3a8130dc73dc17c2",
         "32d621906c6a2d24",
         "84506379e92e023b",
-        "86da1821c0718201"
+        "86da1821c0718201",
+        "f4ffeb11b163a177"
       ]
     },
     "add/8-1": {
-      "current": "729567950eb39119",
+      "current": "51f679fad346fd08",
       "former": [
         "4cb7d2ea4a3b69c4",
         "bb929d91929be3bf",
@@ -4608,11 +3591,12 @@ window.FK.puzzleReviewCompatibility = {
         "3f2d6be49e7a5f6c",
         "f3c508e04ede42ca",
         "0e86172d6330c6d5",
-        "2a654ea5b17cc52f"
+        "2a654ea5b17cc52f",
+        "729567950eb39119"
       ]
     },
     "add/8-2": {
-      "current": "7bceae5d5f890a4f",
+      "current": "6b03ace4f337c53e",
       "former": [
         "2fcf13941fbd1b72",
         "b706a939368a6be9",
@@ -4621,11 +3605,12 @@ window.FK.puzzleReviewCompatibility = {
         "599c82de1010b7da",
         "59c85c8a2a32ffbc",
         "d4d3c7e5bca86c83",
-        "63c4606df4819579"
+        "63c4606df4819579",
+        "7bceae5d5f890a4f"
       ]
     },
     "add/9-1": {
-      "current": "5935dbbda4cea3f7",
+      "current": "b14ce58ad9d49f66",
       "former": [
         "2ca3fafa7d1b262a",
         "135ab16171c71211",
@@ -4634,7 +3619,8 @@ window.FK.puzzleReviewCompatibility = {
         "3e227440deca7342",
         "66e093f49153cfa4",
         "51433ae5d9ab1dbb",
-        "5e85974d458efb81"
+        "5e85974d458efb81",
+        "5935dbbda4cea3f7"
       ]
     },
     "rocket/5-1": {
@@ -5159,7 +4145,8 @@ window.FK.puzzleReviewCompatibility = {
         "912ab2cf4a19bcc7",
         "20abd619aeb10323",
         "926ff0ef7de644c3",
-        "6ec989f1a1d0464d"
+        "6ec989f1a1d0464d",
+        "8a0513cecde9aaa2"
       ]
     },
     "picnic/2-2": {
@@ -5177,7 +4164,8 @@ window.FK.puzzleReviewCompatibility = {
         "2a83aa18a8671c82",
         "6e778db202629ae6",
         "5da3953801453086",
-        "05cf586ad0288908"
+        "05cf586ad0288908",
+        "cd1998b549d6f167"
       ]
     },
     "picnic/2-3": {
@@ -5195,7 +4183,8 @@ window.FK.puzzleReviewCompatibility = {
         "ce5bb3e94f6819c1",
         "3a4b1bd74847ec25",
         "f0b2ef0955162dc5",
-        "a325946fb36cdc4b"
+        "a325946fb36cdc4b",
+        "eccdbb04903993a4"
       ]
     },
     "picnic/2-4": {
@@ -5213,7 +4202,8 @@ window.FK.puzzleReviewCompatibility = {
         "23cc043e8f133b88",
         "008c53b490a67cec",
         "d54d2cde1ed6478c",
-        "e2997c3cfa222f02"
+        "e2997c3cfa222f02",
+        "3dd01c07b1198c6d"
       ]
     },
     "picnic/2-5": {
@@ -5231,7 +4221,8 @@ window.FK.puzzleReviewCompatibility = {
         "ca831e8a1f06d270",
         "2f4eaa040a578e94",
         "6870abaa55a71bf4",
-        "a5d88b0c3859d1ba"
+        "a5d88b0c3859d1ba",
+        "2b1fb4b54c136e35"
       ]
     },
     "picnic/2-6": {
@@ -5249,7 +4240,8 @@ window.FK.puzzleReviewCompatibility = {
         "13d861a330c7d491",
         "3bd40c35fe7b9a35",
         "ac5f1b43f786e015",
-        "db6e3f9d07ead05b"
+        "db6e3f9d07ead05b",
+        "8cf8aa4008560d94"
       ]
     },
     "picnic/2-7": {
@@ -5267,7 +4259,8 @@ window.FK.puzzleReviewCompatibility = {
         "b3b7f5f4cbec2036",
         "8abc884a2b7ecf52",
         "89c35014c8445fb2",
-        "912d36928ceeaafc"
+        "912d36928ceeaafc",
+        "5b6b842bd61633f3"
       ]
     },
     "picnic/2-8": {
@@ -5285,7 +4278,8 @@ window.FK.puzzleReviewCompatibility = {
         "e64f3741bf0cc05b",
         "a80eaaaf9e8e7bff",
         "a7a8dce117c792df",
-        "04b512270ea4f891"
+        "04b512270ea4f891",
+        "e0a4f5325d27875e"
       ]
     },
     "picnic/2-9": {
@@ -5303,7 +4297,8 @@ window.FK.puzzleReviewCompatibility = {
         "6af79a9e234f88f4",
         "433a672043328410",
         "7349ebbebe909370",
-        "6e6ad82809271c3e"
+        "6e6ad82809271c3e",
+        "ab93b5d9382ea3b1"
       ]
     },
     "picnic/2-10": {
@@ -5321,7 +4316,8 @@ window.FK.puzzleReviewCompatibility = {
         "50e6af2d41d8d1e7",
         "15d74e0f0e287e43",
         "db0a5d4d62097ce3",
-        "64b5824726668fed"
+        "64b5824726668fed",
+        "9273f68487756a82"
       ]
     },
     "picnic/3-1": {
@@ -5339,7 +4335,8 @@ window.FK.puzzleReviewCompatibility = {
         "e2d87fd28bbdc826",
         "b7e0b5acc4b0d982",
         "5ad2e172f7139222",
-        "35f5542490f811ac"
+        "35f5542490f811ac",
+        "cad7f95364c42fc3"
       ]
     },
     "picnic/3-2": {
@@ -5357,7 +4354,8 @@ window.FK.puzzleReviewCompatibility = {
         "b198f754ed5f3920",
         "d13edf42e560aa84",
         "aa46df744fe58d24",
-        "f26b6bfab6c29aaa"
+        "f26b6bfab6c29aaa",
+        "36c40d9182bad945"
       ]
     },
     "picnic/3-3": {
@@ -5375,7 +4373,8 @@ window.FK.puzzleReviewCompatibility = {
         "1d6edf1656f4baae",
         "27e59ef8da87cd0a",
         "2444cab67770c2aa",
-        "4fa4c000e7fcde24"
+        "4fa4c000e7fcde24",
+        "9f67510f0b08e64b"
       ]
     },
     "picnic/3-4": {
@@ -5393,7 +4392,8 @@ window.FK.puzzleReviewCompatibility = {
         "ec71bcabd8661eb3",
         "a1992081b01d26d7",
         "8a41e24b52656a37",
-        "6d4462496e6bb5f9"
+        "6d4462496e6bb5f9",
+        "46f0d9e0022487f6"
       ]
     },
     "picnic/3-5": {
@@ -5411,7 +4411,8 @@ window.FK.puzzleReviewCompatibility = {
         "f5e815f7c9a66395",
         "bc61a6813fb66331",
         "11091f17561d6511",
-        "9aaaca4966419edf"
+        "9aaaca4966419edf",
+        "5d94f4809e1ce010"
       ]
     },
     "picnic/3-6": {
@@ -5429,7 +4430,8 @@ window.FK.puzzleReviewCompatibility = {
         "4da490ff758aabfb",
         "8ef22dcdd48c311f",
         "f5708d1ff8eab57f",
-        "2b43e1254e77cbb1"
+        "2b43e1254e77cbb1",
+        "cbc24a9887c8d73e"
       ]
     },
     "picnic/4-1": {
@@ -5447,7 +4449,8 @@ window.FK.puzzleReviewCompatibility = {
         "0c1207b18558e781",
         "1317fb57157698e5",
         "36ae9ed17fd89885",
-        "8fc547cf54a2b18b"
+        "8fc547cf54a2b18b",
+        "9d243858a5d37b64"
       ]
     },
     "picnic/4-2": {
@@ -5465,7 +4468,8 @@ window.FK.puzzleReviewCompatibility = {
         "cb352698244fface",
         "739febf2de32dd2a",
         "52084fb856965fca",
-        "1d8194da664cd0c4"
+        "1d8194da664cd0c4",
+        "c62d51c11c4a63ab"
       ]
     },
     "picnic/4-3": {
@@ -5483,7 +4487,8 @@ window.FK.puzzleReviewCompatibility = {
         "3ca27cf24f9cdf74",
         "a5c4ed8459087690",
         "e69a291208c524f0",
-        "11d909acccdae5be"
+        "11d909acccdae5be",
+        "387c48ad24d61a31"
       ]
     },
     "picnic/4-4": {
@@ -5501,7 +4506,8 @@ window.FK.puzzleReviewCompatibility = {
         "a0d9873151d3c717",
         "0bc6745708c19ab3",
         "0099785128bf3f93",
-        "68bafcbff45b4bdd"
+        "68bafcbff45b4bdd",
+        "692838d6b116ce12"
       ]
     },
     "picnic/4-5": {
@@ -5519,7 +4525,8 @@ window.FK.puzzleReviewCompatibility = {
         "86d0858980276753",
         "23beecbf6130a0f7",
         "911dd2290183a9d7",
-        "d5085267418f7199"
+        "d5085267418f7199",
+        "397c897a1504c8d6"
       ]
     },
     "picnic/started-2-3": {
@@ -5537,7 +4544,8 @@ window.FK.puzzleReviewCompatibility = {
         "9528dafd5259e78f",
         "ca197e1b940206ab",
         "074f0c9dcea0b50b",
-        "43feca532d3c48c5"
+        "43feca532d3c48c5",
+        "7bba4cc68100260a"
       ]
     },
     "picnic/started-2-4": {
@@ -5555,7 +4563,8 @@ window.FK.puzzleReviewCompatibility = {
         "fcd6430bd0d354c5",
         "cc6b63a5eb02ee61",
         "bc8d422b41190741",
-        "daee7b4db6e6480f"
+        "daee7b4db6e6480f",
+        "f941f864ba0c0bc0"
       ]
     },
     "picnic/started-3-2": {
@@ -5573,7 +4582,8 @@ window.FK.puzzleReviewCompatibility = {
         "fad1a7468a33dd12",
         "117825d49e0f24b6",
         "3f8463e6a89da996",
-        "b4ba839c832944d8"
+        "b4ba839c832944d8",
+        "6b1e3add93cd0017"
       ]
     },
     "picnic/started-4-2": {
@@ -5591,7 +4601,8 @@ window.FK.puzzleReviewCompatibility = {
         "b8b07f63ba903601",
         "fce19d55786e0ca5",
         "f03a68037743ce85",
-        "1806979db819fdcb"
+        "1806979db819fdcb",
+        "78ae6ff083a0f804"
       ]
     },
     "syllable/word-0": {
@@ -6805,7 +5816,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "8d3c7d48557b1f58",
         "a30a73ccba3a7cee",
-        "b30ac4b03e1a199c"
+        "b30ac4b03e1a199c",
+        "c1ae6046d72e069a"
       ]
     },
     "treasure/0-1": {
@@ -6813,7 +5825,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "5ed9424ecd4458f0",
         "a18aef584568baa2",
-        "786e61858ac975c3"
+        "786e61858ac975c3",
+        "ccc0cffa51b03a42"
       ]
     },
     "treasure/0-2": {
@@ -6821,7 +5834,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "2b9a04c3918640b1",
         "de01eabfe493b58b",
-        "d533be890724e64d"
+        "d533be890724e64d",
+        "0926778197cb1a01"
       ]
     },
     "treasure/0-3": {
@@ -6829,7 +5843,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "cd7c558c95bf75bc",
         "b9cf1a63bf85b557",
-        "7629a91cf137206c"
+        "7629a91cf137206c",
+        "327fba3ef5331f04"
       ]
     },
     "treasure/1-0": {
@@ -6837,7 +5852,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "7b19e7497823f2f9",
         "2ffa31ddf2916d0f",
-        "e10b7a1130d3a53d"
+        "e10b7a1130d3a53d",
+        "7e4bfcbf974d3ebb"
       ]
     },
     "treasure/1-1": {
@@ -6845,7 +5861,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "3a4900a0358545da",
         "b85072f94a87a067",
-        "bef76460723f0dd2"
+        "bef76460723f0dd2",
+        "3c9c7817d635abcb"
       ]
     },
     "treasure/1-2": {
@@ -6853,7 +5870,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "dbde2c57f8075d91",
         "2728bbf2a4fd4b24",
-        "f6380d9e4e2833d2"
+        "f6380d9e4e2833d2",
+        "44aef11b58f24677"
       ]
     },
     "treasure/1-3": {
@@ -6861,7 +5879,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "d6687c1968c0259d",
         "56b60b0a53e28176",
-        "847e5c69d16a024d"
+        "847e5c69d16a024d",
+        "dc93cc93302cf2e5"
       ]
     },
     "treasure/2-0": {
@@ -6869,7 +5888,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "b55e6af0e017db7a",
         "7619f2148ae1600c",
-        "3e3d36588cbe0dbe"
+        "3e3d36588cbe0dbe",
+        "b56156daeae8fe38"
       ]
     },
     "treasure/2-1": {
@@ -6877,7 +5897,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "dfe65303d2412439",
         "6fdbf1f2a3226f44",
-        "a6f1b8c37d84ce31"
+        "a6f1b8c37d84ce31",
+        "2e03bf9cf1a3cba8"
       ]
     },
     "treasure/2-2": {
@@ -6885,7 +5906,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "4794cff2eeea5cda",
         "aee5d20cd5004310",
-        "b71a9a8a280a4eec"
+        "b71a9a8a280a4eec",
+        "ac485278c90e6e88"
       ]
     },
     "treasure/2-3": {
@@ -6893,7 +5915,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "43e8806bbcff6d31",
         "1699f2d3d211949b",
-        "58d6e8081e7a7360"
+        "58d6e8081e7a7360",
+        "4c0341a87f4b3f0a"
       ]
     },
     "treasure/3-0": {
@@ -6901,7 +5924,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "6ef817d2f198e5c8",
         "5e4ee46dab1bde2f",
-        "f183ed978682f917"
+        "f183ed978682f917",
+        "c6500c909549947c"
       ]
     },
     "treasure/3-1": {
@@ -6909,7 +5933,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "37d8a1be3ca859d8",
         "57dd6ceb93a280a5",
-        "57b6ac7e743d8dd0"
+        "57b6ac7e743d8dd0",
+        "1764efd5daf97c09"
       ]
     },
     "treasure/3-2": {
@@ -6917,7 +5942,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "08c8c761889f2d1b",
         "27165f83c1fe3751",
-        "c49deab92d9dafad"
+        "c49deab92d9dafad",
+        "a5d3e21f8bd550c9"
       ]
     },
     "treasure/3-3": {
@@ -6925,7 +5951,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "90b9a8579ec85dbf",
         "3706bdd3dbf2f77b",
-        "5799d9469397c09e"
+        "5799d9469397c09e",
+        "fe1f08327745f25a"
       ]
     },
     "treasure/4-0": {
@@ -6933,7 +5960,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "2d9dd3cdfba14ded",
         "6b4b2f5539bc245b",
-        "987aff1f581a664d"
+        "987aff1f581a664d",
+        "299ea6ce39f2ceec"
       ]
     },
     "treasure/4-1": {
@@ -6941,7 +5969,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "067feac3fb08890d",
         "f9c193a507a222b9",
-        "87d3a18d029e6f79"
+        "87d3a18d029e6f79",
+        "922573205229f4be"
       ]
     },
     "treasure/4-2": {
@@ -6949,7 +5978,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "272597162f67153c",
         "c955c62ca72d8bf6",
-        "20b8d24e3967954a"
+        "20b8d24e3967954a",
+        "16fe21401377816e"
       ]
     },
     "treasure/4-3": {
@@ -6957,7 +5987,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "34275e2e6bcc2938",
         "e4221ce28f1fb2fc",
-        "d22c6bb79aeee859"
+        "d22c6bb79aeee859",
+        "25751f0bd5006f1d"
       ]
     },
     "treasure/5-0": {
@@ -6965,7 +5996,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "85021944d917228a",
         "efe131fad65b7e5c",
-        "281da40ba905be71"
+        "281da40ba905be71",
+        "c326603aa34f8798"
       ]
     },
     "treasure/5-1": {
@@ -6973,7 +6005,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "f9b326c4f1e9da82",
         "ddef20777605b3cf",
-        "c60c725ad90d210c"
+        "c60c725ad90d210c",
+        "0b2d80768c2ba6c8"
       ]
     },
     "treasure/5-2": {
@@ -6981,7 +6014,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "79b1f285689f4db9",
         "dad2985902bedc7d",
-        "9174b5f8cd0714d8"
+        "9174b5f8cd0714d8",
+        "edd4c55cec80c39c"
       ]
     },
     "treasure/5-3": {
@@ -6989,7 +6023,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "4580fc00f60f56cc",
         "1dc8eb48346910ba",
-        "8c670a9af140762c"
+        "8c670a9af140762c",
+        "169dd56b2f95604d"
       ]
     },
     "treasure/6-0": {
@@ -6997,7 +6032,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "8ba83d33c87ca1d7",
         "82601ee7b00f8d2d",
-        "fb6a4fcd25e7d8eb"
+        "fb6a4fcd25e7d8eb",
+        "e9d82fa524a149a7"
       ]
     },
     "treasure/6-1": {
@@ -7005,7 +6041,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "e795dfc4a9a2087a",
         "26b4b553e6b1273b",
-        "b25c76c1c158c88f"
+        "b25c76c1c158c88f",
+        "8fe8d0a05f147ab2"
       ]
     },
     "treasure/6-2": {
@@ -7013,7 +6050,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "58d102d9bdfb3c0f",
         "b2b703416e93a279",
-        "469328d772719fef"
+        "469328d772719fef",
+        "3e4c814ed4527f8e"
       ]
     },
     "treasure/6-3": {
@@ -7021,7 +6059,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "3fd2da7db613ae09",
         "114797171b0dd8df",
-        "9d26a706a38f58f2"
+        "9d26a706a38f58f2",
+        "8f9f35574810991b"
       ]
     },
     "treasure/7-0": {
@@ -7029,7 +6068,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "83fa3e05530b8e7b",
         "dcc106be381d0bd0",
-        "2354c1d554ad0a2b"
+        "2354c1d554ad0a2b",
+        "fa69739be1422443"
       ]
     },
     "treasure/7-1": {
@@ -7037,7 +6077,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "a5d9b0bb1a56b92d",
         "ca06207376ef6f5f",
-        "019a4d596561a2b7"
+        "019a4d596561a2b7",
+        "8559d69280acf400"
       ]
     },
     "treasure/7-2": {
@@ -7045,7 +6086,8 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "534d15dc6f962368",
         "ea82f7d600bae6be",
-        "2863c073c4e1e493"
+        "2863c073c4e1e493",
+        "573d3c16d294a2fa"
       ]
     },
     "treasure/7-3": {
@@ -7053,155 +6095,228 @@ window.FK.puzzleReviewCompatibility = {
       "former": [
         "883585bc38ffacd6",
         "194f9ed065d52cac",
-        "07cd9e9e2b41756a"
+        "07cd9e9e2b41756a",
+        "f20edf96a47ecc26"
       ]
     },
     "neighbours/1-both": {
       "current": "84391c0b3184eb13",
-      "former": []
+      "former": [
+        "84391c0b3184eb13"
+      ]
     },
     "neighbours/1-left": {
       "current": "d8bb119a18a8e0e0",
-      "former": []
+      "former": [
+        "d8bb119a18a8e0e0"
+      ]
     },
     "neighbours/2-both": {
       "current": "ef38426452ce10b0",
-      "former": []
+      "former": [
+        "ef38426452ce10b0"
+      ]
     },
     "neighbours/2-left": {
       "current": "0613a79ba950bf67",
-      "former": []
+      "former": [
+        "0613a79ba950bf67"
+      ]
     },
     "neighbours/3-both": {
       "current": "4698122ff0dd2397",
-      "former": []
+      "former": [
+        "4698122ff0dd2397"
+      ]
     },
     "neighbours/3-left": {
       "current": "96a5521cd2337566",
-      "former": []
+      "former": [
+        "96a5521cd2337566"
+      ]
     },
     "neighbours/4-both": {
       "current": "0096b48f02f12997",
-      "former": []
+      "former": [
+        "0096b48f02f12997"
+      ]
     },
     "neighbours/4-left": {
       "current": "e404237a78b5fb20",
-      "former": []
+      "former": [
+        "e404237a78b5fb20"
+      ]
     },
     "neighbours/5-both": {
       "current": "c278be79ef5ec2d5",
-      "former": []
+      "former": [
+        "c278be79ef5ec2d5"
+      ]
     },
     "neighbours/5-left": {
       "current": "240d2feec175a0ec",
-      "former": []
+      "former": [
+        "240d2feec175a0ec"
+      ]
     },
     "neighbours/6-both": {
       "current": "beb5e001d147ef55",
-      "former": []
+      "former": [
+        "beb5e001d147ef55"
+      ]
     },
     "neighbours/6-left": {
       "current": "420e383464ec6dae",
-      "former": []
+      "former": [
+        "420e383464ec6dae"
+      ]
     },
     "neighbours/7-both": {
       "current": "3f561cc446d29738",
-      "former": []
+      "former": [
+        "3f561cc446d29738"
+      ]
     },
     "neighbours/7-left": {
       "current": "74d0b18e442777e0",
-      "former": []
+      "former": [
+        "74d0b18e442777e0"
+      ]
     },
     "neighbours/8-both": {
       "current": "6275555b9774a4f5",
-      "former": []
+      "former": [
+        "6275555b9774a4f5"
+      ]
     },
     "neighbours/8-left": {
       "current": "59a2e305c63947f7",
-      "former": []
+      "former": [
+        "59a2e305c63947f7"
+      ]
     },
     "neighbours/9-both": {
       "current": "920150cfecdf29a3",
-      "former": []
+      "former": [
+        "920150cfecdf29a3"
+      ]
     },
     "neighbours/9-left": {
       "current": "b16afcb45f79046e",
-      "former": []
+      "former": [
+        "b16afcb45f79046e"
+      ]
     },
     "neighbours/10-both": {
       "current": "9a06a1e53d7c87cf",
-      "former": []
+      "former": [
+        "9a06a1e53d7c87cf"
+      ]
     },
     "neighbours/10-left": {
       "current": "cf6aa56d14ea1d8f",
-      "former": []
+      "former": [
+        "cf6aa56d14ea1d8f"
+      ]
     },
     "neighbours/11-both": {
       "current": "8015d785aa766555",
-      "former": []
+      "former": [
+        "8015d785aa766555"
+      ]
     },
     "neighbours/11-left": {
       "current": "17da4ea975724f51",
-      "former": []
+      "former": [
+        "17da4ea975724f51"
+      ]
     },
     "neighbours/12-both": {
       "current": "0b71a738c14e068c",
-      "former": []
+      "former": [
+        "0b71a738c14e068c"
+      ]
     },
     "neighbours/12-left": {
       "current": "7e5574b11daea473",
-      "former": []
+      "former": [
+        "7e5574b11daea473"
+      ]
     },
     "neighbours/13-both": {
       "current": "f7b8fd06e66bc890",
-      "former": []
+      "former": [
+        "f7b8fd06e66bc890"
+      ]
     },
     "neighbours/13-left": {
       "current": "9139018258a52910",
-      "former": []
+      "former": [
+        "9139018258a52910"
+      ]
     },
     "neighbours/14-both": {
       "current": "45860eb107dab215",
-      "former": []
+      "former": [
+        "45860eb107dab215"
+      ]
     },
     "neighbours/14-left": {
       "current": "ca548d2ec3c7c576",
-      "former": []
+      "former": [
+        "ca548d2ec3c7c576"
+      ]
     },
     "neighbours/15-both": {
       "current": "69f2cc8fceaef7f5",
-      "former": []
+      "former": [
+        "69f2cc8fceaef7f5"
+      ]
     },
     "neighbours/15-left": {
       "current": "730285a45e13e9d6",
-      "former": []
+      "former": [
+        "730285a45e13e9d6"
+      ]
     },
     "neighbours/16-both": {
       "current": "b68298a18a235db3",
-      "former": []
+      "former": [
+        "b68298a18a235db3"
+      ]
     },
     "neighbours/16-left": {
       "current": "5e60fce0db5cfc34",
-      "former": []
+      "former": [
+        "5e60fce0db5cfc34"
+      ]
     },
     "neighbours/17-both": {
       "current": "3e57e082905684be",
-      "former": []
+      "former": [
+        "3e57e082905684be"
+      ]
     },
     "neighbours/17-left": {
       "current": "67bac6a532193551",
-      "former": []
+      "former": [
+        "67bac6a532193551"
+      ]
     },
     "neighbours/18-both": {
       "current": "62bf0c23427761f1",
-      "former": []
+      "former": [
+        "62bf0c23427761f1"
+      ]
     },
     "neighbours/18-left": {
       "current": "42da5aca9a8393f2",
-      "former": []
+      "former": [
+        "42da5aca9a8393f2"
+      ]
     },
     "compare/1-1": {
-      "current": "0940b3e9cfb1cd85",
+      "current": "72b32ba8ec724452",
       "former": [
         "5a5fdd3cea3468a0",
         "1b3151a5036f7fe7",
@@ -7212,41 +6327,12 @@ window.FK.puzzleReviewCompatibility = {
         "997a5202585a8236",
         "f44a102e50c4e6a6",
         "62760dea42f62e98",
-        "842b41c2fb93fbc4"
-      ]
-    },
-    "compare/1-3": {
-      "current": "25822d6793262be9",
-      "former": [
-        "8e9ab566c5d6bd4c",
-        "d99514dbb6f1aa4b",
-        "9b2bf46ea79a7f94",
-        "a22a0bdc6e046b24",
-        "3297c7a64cd81e2a",
-        "3cab8e5c4a9a6efc",
-        "b17f16847484ccda",
-        "92bc8ec845ae7f4a",
-        "d510dd9c1d91b834",
-        "73863d44b351a068"
-      ]
-    },
-    "compare/2-2": {
-      "current": "54fccf1fabf59b25",
-      "former": [
-        "ee9d8cea11b74200",
-        "3e4439eb71162807",
-        "3f5f2d22e57f3958",
-        "67115d0856a72ae8",
-        "b7410b2af5b6a166",
-        "0192df888ed0aab0",
-        "d1baf2e04d0eca16",
-        "e770678c45792e86",
-        "4735d9c8c5cf83f8",
-        "6c797aa0a6750c24"
+        "842b41c2fb93fbc4",
+        "0940b3e9cfb1cd85"
       ]
     },
     "compare/2-1": {
-      "current": "348637d4b1f6a272",
+      "current": "787016036de4a7c5",
       "former": [
         "cf0f8897a43e99b7",
         "29490cd0a0e021d0",
@@ -7257,11 +6343,28 @@ window.FK.puzzleReviewCompatibility = {
         "33e4533db5ad0061",
         "3f1d635931ed44f1",
         "2c3bec354037a9cf",
-        "13427cfd62b11913"
+        "13427cfd62b11913",
+        "348637d4b1f6a272"
+      ]
+    },
+    "compare/1-3": {
+      "current": "fad6fbea4c8a18fe",
+      "former": [
+        "8e9ab566c5d6bd4c",
+        "d99514dbb6f1aa4b",
+        "9b2bf46ea79a7f94",
+        "a22a0bdc6e046b24",
+        "3297c7a64cd81e2a",
+        "3cab8e5c4a9a6efc",
+        "b17f16847484ccda",
+        "92bc8ec845ae7f4a",
+        "d510dd9c1d91b834",
+        "73863d44b351a068",
+        "25822d6793262be9"
       ]
     },
     "compare/2-4": {
-      "current": "f312297132a15749",
+      "current": "5ec1d27cdcbcf11e",
       "former": [
         "2abfbf78af5566ec",
         "06bb41d5482dac2b",
@@ -7272,26 +6375,12 @@ window.FK.puzzleReviewCompatibility = {
         "a75ddc8e098a5ffa",
         "74755542a768106a",
         "2e9747862107a8d4",
-        "a440134e4a3ade08"
-      ]
-    },
-    "compare/3-3": {
-      "current": "a5d67fe16fe12845",
-      "former": [
-        "5970fe985fa75460",
-        "d94486ed11f80a27",
-        "7572a2704b14c8b8",
-        "02542e9e4c107e48",
-        "0cf3edd846e199c6",
-        "542a8b1e5c57a010",
-        "2fc193167ebc1e76",
-        "a0aa1212762304e6",
-        "6831b45e86e95758",
-        "1c4f8fd6a7480384"
+        "a440134e4a3ade08",
+        "f312297132a15749"
       ]
     },
     "compare/3-2": {
-      "current": "425abc30f877daf2",
+      "current": "86c891b375c240c5",
       "former": [
         "36615f5772bed237",
         "b4f2832cadc35bd0",
@@ -7302,41 +6391,32 @@ window.FK.puzzleReviewCompatibility = {
         "869d4c95eaf3a461",
         "bfe09f419b8368f1",
         "6468992df9d2744f",
-        "368e86553d2bc293"
+        "368e86553d2bc293",
+        "425abc30f877daf2"
       ]
     },
-    "compare/3-5": {
-      "current": "27220b4bf58bdb29",
+    "compare/3-3": {
+      "current": "19e67a94e4a6b692",
       "former": [
-        "c824578e5e2fc78c",
-        "7bbb89ef910e940b",
-        "01d35d36a2566cd4",
-        "836a48f4cb623a64",
-        "abf77aced8c298ea",
-        "1debcb748051973c",
-        "9133f6fcb3603e9a",
-        "025ce2c08489f10a",
-        "814c66b446a00774",
-        "f86b0cbc0fd8a0a8"
+        "5970fe985fa75460",
+        "d94486ed11f80a27",
+        "7572a2704b14c8b8",
+        "02542e9e4c107e48",
+        "0cf3edd846e199c6",
+        "542a8b1e5c57a010",
+        "2fc193167ebc1e76",
+        "a0aa1212762304e6",
+        "6831b45e86e95758",
+        "1c4f8fd6a7480384",
+        "a5d67fe16fe12845"
       ]
     },
-    "compare/4-4": {
-      "current": "11c86f7314bdf3e5",
-      "former": [
-        "a0df27c263002dc0",
-        "9d8ffa0fc5948647",
-        "be6645dabc280418",
-        "cf41e1c0f858f2a8",
-        "f2dcad02b83051a6",
-        "21183e406387d970",
-        "c78c219857dd6456",
-        "d355bfa4362008c6",
-        "12f504803331cbb8",
-        "2c680d58faf453e4"
-      ]
+    "compare/3-4": {
+      "current": "d9490c9e2f7484be",
+      "former": []
     },
     "compare/4-3": {
-      "current": "f6e33e9020b05072",
+      "current": "3b3ddde71952b9c5",
       "former": [
         "18b9ad3b52dceeb7",
         "6211a90c9bb88cd0",
@@ -7347,26 +6427,20 @@ window.FK.puzzleReviewCompatibility = {
         "eed7b90121366b61",
         "05df508d9d76aff1",
         "4efa83f936bbbecf",
-        "116bc8c1d16ac713"
+        "116bc8c1d16ac713",
+        "f6e33e9020b05072"
       ]
     },
-    "compare/4-6": {
-      "current": "ebbaf81937aa5089",
-      "former": [
-        "384e37bcf817672c",
-        "903def6d4639b1eb",
-        "e4f7ec84f3156e74",
-        "4c3e989226b04004",
-        "b03f69fc3988ed0a",
-        "e6c01b12fbc69bdc",
-        "b13fa17af1a7d5ba",
-        "cd79e64ec2d1882a",
-        "28003452a1ee0d14",
-        "0584033a0f6faa48"
-      ]
+    "compare/4-7": {
+      "current": "cc6bb8c4bc94351e",
+      "former": []
+    },
+    "compare/5-3": {
+      "current": "7206569d40b92e65",
+      "former": []
     },
     "compare/5-5": {
-      "current": "89d59ce98303b905",
+      "current": "831994a805d456d2",
       "former": [
         "ac9e935c03967b20",
         "59781ee5ea0d6d67",
@@ -7377,41 +6451,24 @@ window.FK.puzzleReviewCompatibility = {
         "7d3502ca0bac6db6",
         "733e65e63762d426",
         "381aa9d25c584118",
-        "c8b77c8aaee5e744"
+        "c8b77c8aaee5e744",
+        "89d59ce98303b905"
       ]
     },
-    "compare/5-4": {
-      "current": "0087207c1a188972",
-      "former": [
-        "d5e366cbe49f02b7",
-        "a76bdce8cb322b50",
-        "87bd2ff37b94b66f",
-        "ca9c8c412650b7df",
-        "b78d8b0b8b8ea291",
-        "3622bbc1286be107",
-        "d8276769ac5f75e1",
-        "c5f9cc35f553b871",
-        "4e9261012ce262cf",
-        "f82bf42992187313"
-      ]
+    "compare/5-6": {
+      "current": "2381e20a99a05c7e",
+      "former": []
     },
-    "compare/5-7": {
-      "current": "eee36f9702c6da69",
-      "former": [
-        "55ad6ea656360ecc",
-        "06562ecb269258cb",
-        "576fa02e04adcf14",
-        "22c465fc32b33ca4",
-        "b72b4fe688294caa",
-        "bd45e87cdaf9c07c",
-        "39fb90e4e321fd5a",
-        "6e5bd34880ffadca",
-        "67bab1bcadf109b4",
-        "6c835aa422f24ee8"
-      ]
+    "compare/5-8": {
+      "current": "4a6c6a4a2814837e",
+      "former": []
+    },
+    "compare/6-3": {
+      "current": "9a9378dbc09af185",
+      "former": []
     },
     "compare/6-6": {
-      "current": "5a3325775f4786a5",
+      "current": "b8e0f64e8c4378b2",
       "former": [
         "dcabde525e655680",
         "877950b324681387",
@@ -7422,26 +6479,12 @@ window.FK.puzzleReviewCompatibility = {
         "c50810580060b596",
         "d2846e342c171c06",
         "2ce2d820127d9878",
-        "e40df4188d12f9a4"
-      ]
-    },
-    "compare/6-5": {
-      "current": "b9687d243112c272",
-      "former": [
-        "c9a62777252279b7",
-        "d00c5600544bc1d0",
-        "f34a709ffd90926f",
-        "56ccebad863a5edf",
-        "4d8ae4b775463911",
-        "dcaf5b2dac702707",
-        "650a485534c92061",
-        "464bfce1e558e4f1",
-        "bf683c6d8ccc09cf",
-        "abd00115161cb913"
+        "e40df4188d12f9a4",
+        "5a3325775f4786a5"
       ]
     },
     "compare/6-8": {
-      "current": "bf289f49041564c9",
+      "current": "e9e83884ceb2db9e",
       "former": [
         "ba206720d497536c",
         "69dfddad19a1b9ab",
@@ -7452,26 +6495,12 @@ window.FK.puzzleReviewCompatibility = {
         "59fe214e7362eb7a",
         "4c108a02448c9dea",
         "bbe603864f939b54",
-        "bfaf930e1baeeb88"
-      ]
-    },
-    "compare/7-7": {
-      "current": "6bc5ba21567f15c5",
-      "former": [
-        "7c688f70790966e0",
-        "168fa7adf895f7a7",
-        "d0a89ce86476db38",
-        "34de3efe98be92c8",
-        "baa385b02d7f8746",
-        "51fc1b7ea905b490",
-        "841f38d6655a0bf6",
-        "1aedf8122974f066",
-        "5c22c0bed3976bd8",
-        "484a11965a99ef04"
+        "bfaf930e1baeeb88",
+        "bf289f49041564c9"
       ]
     },
     "compare/7-6": {
-      "current": "0e499e90abe37af2",
+      "current": "af4e4a13f6a620c5",
       "former": [
         "60710777bf533237",
         "d2f8008c612efbd0",
@@ -7482,11 +6511,12 @@ window.FK.puzzleReviewCompatibility = {
         "68414ccd9e5f4461",
         "cde56f091a9f88f1",
         "b9d598e54666d44f",
-        "1a33b68df0976293"
+        "1a33b68df0976293",
+        "0e499e90abe37af2"
       ]
     },
     "compare/7-9": {
-      "current": "47a42463798c26a9",
+      "current": "05e8552246247b3e",
       "former": [
         "751f022e35fdf20c",
         "d3aa6bf7fae71f8b",
@@ -7497,11 +6527,24 @@ window.FK.puzzleReviewCompatibility = {
         "519539ac5084cc1a",
         "6062c4e0088a3c8a",
         "21d5c344a97b79f4",
-        "69a9e86cae00ac28"
+        "69a9e86cae00ac28",
+        "47a42463798c26a9"
       ]
     },
+    "compare/7-10": {
+      "current": "bf5c9fa22c1f4dfe",
+      "former": []
+    },
+    "compare/8-5": {
+      "current": "23a54cbf06a44005",
+      "former": []
+    },
+    "compare/8-6": {
+      "current": "31f851e599903025",
+      "former": []
+    },
     "compare/8-8": {
-      "current": "777272335e9ba965",
+      "current": "f9565826eb77f6f2",
       "former": [
         "f672ea1a46cdbc40",
         "39b717ef0f723bc7",
@@ -7512,71 +6555,20 @@ window.FK.puzzleReviewCompatibility = {
         "8ec9d700bbe2d9d6",
         "a89d46ecb349c046",
         "34f4ac28d02fd438",
-        "38a1a5c09245cb64"
+        "38a1a5c09245cb64",
+        "777272335e9ba965"
       ]
     },
-    "compare/8-7": {
-      "current": "3d65c7784ac8af72",
-      "former": [
-        "d4e992c3b2adcdb7",
-        "d07a3064c5d0ebd0",
-        "015e1e6b8c0b686f",
-        "674cb8c90611b4df",
-        "b3b78e030f96a311",
-        "50368e49144f7b07",
-        "f8e1f2914b4eca61",
-        "d9c7e34dc78f0ef1",
-        "2ee56c890ca35fcf",
-        "f9b91551fb832613"
-      ]
+    "compare/8-9": {
+      "current": "f1283010047ada9e",
+      "former": []
     },
-    "compare/8-10": {
-      "current": "ba0af3df041c8769",
-      "former": [
-        "fd099cf617f03f4c",
-        "950637633307a0cb",
-        "f4d0c53e1dfeec94",
-        "77982824b1ac7d24",
-        "b8476f36851183aa",
-        "e315f6a47b3e47fc",
-        "7c975c6c130f225a",
-        "e438729082cefaca",
-        "a2112ae46ea14234",
-        "594eac2ceb8d3168"
-      ]
-    },
-    "compare/9-9": {
-      "current": "d2aa8619002d7085",
-      "former": [
-        "26b0f82c1ab00ba0",
-        "2c7c289533eb22e7",
-        "d836b72452f11ef8",
-        "f568fb5aa3523288",
-        "0aa9c66c9284e186",
-        "aa46bddae11f3b50",
-        "4610989288d62536",
-        "e4eb8b2e6718c9a6",
-        "3a32241a127a8b98",
-        "11d130522c0f9ec4"
-      ]
-    },
-    "compare/9-8": {
-      "current": "c883fe74f6926572",
-      "former": [
-        "d837737327f01eb7",
-        "a93fe6c0a7ac0750",
-        "238a433b6acb5a6f",
-        "928c39a115875bdf",
-        "5a89b5b368087e91",
-        "186ea921376d7d07",
-        "22820ea988d951e1",
-        "f621a615061d1471",
-        "d7fa5b61506886cf",
-        "ad11ad696e924f13"
-      ]
+    "compare/9-7": {
+      "current": "a101d3dda08a0d65",
+      "former": []
     },
     "compare/9-10": {
-      "current": "0fc2a37f4822d4e9",
+      "current": "69f7e47a3aaece7e",
       "former": [
         "6fc168d65a2275cc",
         "1d7de783cfe96dcb",
@@ -7587,26 +6579,16 @@ window.FK.puzzleReviewCompatibility = {
         "abbce344035854da",
         "ee738e887214af4a",
         "a777cc5c7522b934",
-        "31c54004bbbfa668"
+        "31c54004bbbfa668",
+        "0fc2a37f4822d4e9"
       ]
     },
-    "compare/10-10": {
-      "current": "fd84937b55231925",
-      "former": [
-        "6dbfa6be71171b80",
-        "4736a4670d9e8907",
-        "3d78aaf6312881d8",
-        "6b58a60c66043668",
-        "47612dfe02c5a1e6",
-        "6289a08cb37d6430",
-        "128fe66490392496",
-        "8f36298006a17b06",
-        "8c7a3ccc0da65f78",
-        "d5a92024de4238a4"
-      ]
+    "compare/10-7": {
+      "current": "e9241f53961c4445",
+      "former": []
     },
     "compare/10-9": {
-      "current": "a3acd094abccf0f2",
+      "current": "d881ac5ba871c5c5",
       "former": [
         "12dc762fd97fe6b7",
         "61f52ed08be725d0",
@@ -7617,7 +6599,24 @@ window.FK.puzzleReviewCompatibility = {
         "eac3bdedd59a9ce1",
         "999d20d99d996771",
         "01736285c980984f",
-        "eefc04adb8318593"
+        "eefc04adb8318593",
+        "a3acd094abccf0f2"
+      ]
+    },
+    "compare/10-10": {
+      "current": "a9f02d4aff5b4fb2",
+      "former": [
+        "6dbfa6be71171b80",
+        "4736a4670d9e8907",
+        "3d78aaf6312881d8",
+        "6b58a60c66043668",
+        "47612dfe02c5a1e6",
+        "6289a08cb37d6430",
+        "128fe66490392496",
+        "8f36298006a17b06",
+        "8c7a3ccc0da65f78",
+        "d5a92024de4238a4",
+        "fd84937b55231925"
       ]
     },
     "mirror/grid-7": {
@@ -9480,67 +8479,99 @@ window.FK.puzzleReviewCompatibility = {
     },
     "read-puzzle/word-0": {
       "current": "e3c318975346d77b",
-      "former": []
+      "former": [
+        "e3c318975346d77b"
+      ]
     },
     "read-puzzle/word-1": {
       "current": "5e4a347f3a159699",
-      "former": []
+      "former": [
+        "5e4a347f3a159699"
+      ]
     },
     "read-puzzle/word-2": {
       "current": "ba72351896c4c3de",
-      "former": []
+      "former": [
+        "ba72351896c4c3de"
+      ]
     },
     "read-puzzle/word-3": {
       "current": "a7be3da44e2bd048",
-      "former": []
+      "former": [
+        "a7be3da44e2bd048"
+      ]
     },
     "read-puzzle/word-4": {
       "current": "919a4e871a82ea71",
-      "former": []
+      "former": [
+        "919a4e871a82ea71"
+      ]
     },
     "read-puzzle/word-5": {
       "current": "78ebd97b86bdeb9f",
-      "former": []
+      "former": [
+        "78ebd97b86bdeb9f"
+      ]
     },
     "read-puzzle/word-6": {
       "current": "cd037d1c19a29ed4",
-      "former": []
+      "former": [
+        "cd037d1c19a29ed4"
+      ]
     },
     "read-puzzle/word-7": {
       "current": "6c8443e7f77ea73d",
-      "former": []
+      "former": [
+        "6c8443e7f77ea73d"
+      ]
     },
     "read-puzzle/word-8": {
       "current": "b4162ccaca7e6112",
-      "former": []
+      "former": [
+        "b4162ccaca7e6112"
+      ]
     },
     "read-puzzle/word-9": {
       "current": "7b68f8b3082c2cf3",
-      "former": []
+      "former": [
+        "7b68f8b3082c2cf3"
+      ]
     },
     "read-puzzle/word-10": {
       "current": "decf417cf8973ad8",
-      "former": []
+      "former": [
+        "decf417cf8973ad8"
+      ]
     },
     "read-puzzle/word-11": {
       "current": "04630f196d8b07df",
-      "former": []
+      "former": [
+        "04630f196d8b07df"
+      ]
     },
     "read-puzzle/word-19": {
       "current": "476736e7678f037d",
-      "former": []
+      "former": [
+        "476736e7678f037d"
+      ]
     },
     "read-puzzle/word-20": {
       "current": "fb0d4883fe470ec1",
-      "former": []
+      "former": [
+        "fb0d4883fe470ec1"
+      ]
     },
     "read-puzzle/word-21": {
       "current": "8059ce2a9a208944",
-      "former": []
+      "former": [
+        "8059ce2a9a208944"
+      ]
     },
     "read-puzzle/word-22": {
       "current": "71e45810a9dff868",
-      "former": []
+      "former": [
+        "71e45810a9dff868"
+      ]
     },
     "read-puzzle/word-23": {
       "current": "d10446320f9008fa",
@@ -9558,52 +8589,75 @@ window.FK.puzzleReviewCompatibility = {
         "29a924ff0798293d",
         "8e799a9c1001958a",
         "dd4b5856fc7916be",
-        "176d4d5761e7574f"
+        "176d4d5761e7574f",
+        "d10446320f9008fa"
       ]
     },
     "read-puzzle/word-24": {
       "current": "afa89d2174b80923",
-      "former": []
+      "former": [
+        "afa89d2174b80923"
+      ]
     },
     "read-puzzle/word-25": {
       "current": "b32cc5436a1ff0dd",
-      "former": []
+      "former": [
+        "b32cc5436a1ff0dd"
+      ]
     },
     "read-puzzle/word-26": {
       "current": "a97e6442a383f89a",
-      "former": []
+      "former": [
+        "a97e6442a383f89a"
+      ]
     },
     "read-puzzle/word-27": {
       "current": "0b695500a8b724a6",
-      "former": []
+      "former": [
+        "0b695500a8b724a6"
+      ]
     },
     "read-puzzle/word-28": {
       "current": "fc34951b2f8c5673",
-      "former": []
+      "former": [
+        "fc34951b2f8c5673"
+      ]
     },
     "read-puzzle/word-29": {
       "current": "5479007b1a210f83",
-      "former": []
+      "former": [
+        "5479007b1a210f83"
+      ]
     },
     "read-puzzle/word-30": {
       "current": "364c3b22e3fae944",
-      "former": []
+      "former": [
+        "364c3b22e3fae944"
+      ]
     },
     "read-puzzle/word-31": {
       "current": "cd2cbc91a03eb4b3",
-      "former": []
+      "former": [
+        "cd2cbc91a03eb4b3"
+      ]
     },
     "read-puzzle/word-32": {
       "current": "a336513f493ca765",
-      "former": []
+      "former": [
+        "a336513f493ca765"
+      ]
     },
     "read-puzzle/word-33": {
       "current": "be58f89d5495f6b3",
-      "former": []
+      "former": [
+        "be58f89d5495f6b3"
+      ]
     },
     "read-puzzle/word-34": {
       "current": "165836e8a19df516",
-      "former": []
+      "former": [
+        "165836e8a19df516"
+      ]
     }
   }
 };

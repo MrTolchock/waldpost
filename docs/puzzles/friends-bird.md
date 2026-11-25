@@ -69,7 +69,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Fisch",
       "choices": [
         "Fisch",
-        "Hut"
+        "Hut",
+        "Tasse"
       ]
     }
   },
@@ -84,7 +85,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Stein",
       "choices": [
         "Stein",
-        "Boot"
+        "Boot",
+        "Ball"
       ]
     }
   },
@@ -99,7 +101,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Schuh",
       "choices": [
         "Schuh",
-        "Ball"
+        "Ball",
+        "Kopf"
       ]
     }
   },
@@ -114,7 +117,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Nase",
       "choices": [
         "Nase",
-        "Baum"
+        "Baum",
+        "Hose"
       ]
     }
   },
@@ -129,7 +133,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Dose",
       "choices": [
         "Dose",
-        "Hut"
+        "Hut",
+        "Nase"
       ]
     }
   },
@@ -144,7 +149,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Tuch",
       "choices": [
         "Tuch",
-        "Ball"
+        "Ball",
+        "Bus"
       ]
     }
   },
@@ -159,7 +165,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Rose",
       "choices": [
         "Rose",
-        "Hut"
+        "Hut",
+        "Hase"
       ]
     }
   },
@@ -174,7 +181,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Wurm",
       "choices": [
         "Wurm",
-        "Boot"
+        "Boot",
+        "Tuch"
       ]
     }
   },
@@ -189,7 +197,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Kopf",
       "choices": [
         "Kopf",
-        "Baum"
+        "Baum",
+        "Tonne"
       ]
     }
   },
@@ -204,7 +213,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Sand",
       "choices": [
         "Sand",
-        "Kuh"
+        "Kuh",
+        "Hund"
       ]
     }
   },
@@ -219,7 +229,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Wal",
       "choices": [
         "Wal",
-        "Hut"
+        "Hut",
+        "Schuh"
       ]
     }
   },
@@ -234,7 +245,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Pfeil",
       "choices": [
         "Pfeil",
-        "Rose"
+        "Rose",
+        "Stein"
       ]
     }
   },
@@ -249,7 +261,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Kasse",
       "choices": [
         "Kasse",
-        "Schuh"
+        "Schuh",
+        "Tanne"
       ]
     }
   },
@@ -264,7 +277,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Schrank",
       "choices": [
         "Schrank",
-        "Fisch"
+        "Fisch",
+        "Ball"
       ]
     }
   },
@@ -279,7 +293,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Kern",
       "choices": [
         "Kern",
-        "Hut"
+        "Hut",
+        "Stein"
       ]
     }
   },
@@ -294,7 +309,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Haus",
       "choices": [
         "Haus",
-        "Hut"
+        "Hut",
+        "Mund"
       ]
     }
   },
@@ -309,7 +325,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Bus",
       "choices": [
         "Bus",
-        "Baum"
+        "Baum",
+        "Nase"
       ]
     }
   },
@@ -324,7 +341,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Brot",
       "choices": [
         "Brot",
-        "Maus"
+        "Maus",
+        "Bach"
       ]
     }
   },
@@ -339,7 +357,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Schiene",
       "choices": [
         "Schiene",
-        "Rose"
+        "Rose",
+        "Bein"
       ]
     }
   },
@@ -354,7 +373,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Decke",
       "choices": [
         "Decke",
-        "Ball"
+        "Ball",
+        "Schrank"
       ]
     }
   },
@@ -369,7 +389,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Tonne",
       "choices": [
         "Tonne",
-        "Kuh"
+        "Kuh",
+        "Sand"
       ]
     }
   },
@@ -384,7 +405,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Tanne",
       "choices": [
         "Tanne",
-        "Hut"
+        "Hut",
+        "Kasse"
       ]
     }
   },
@@ -399,7 +421,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Hund",
       "choices": [
         "Hund",
-        "Stern"
+        "Stern",
+        "Maus"
       ]
     }
   },
@@ -414,7 +437,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Bach",
       "choices": [
         "Bach",
-        "Schuh"
+        "Schuh",
+        "Dose"
       ]
     }
   },
@@ -429,7 +453,8 @@ These definitions are the same finite data used by the game and review previews.
       "answer": "Fliege",
       "choices": [
         "Fliege",
-        "Nase"
+        "Nase",
+        "Biene"
       ]
     }
   }

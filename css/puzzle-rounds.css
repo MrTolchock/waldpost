@@ -494,8 +494,12 @@ body .screen-puzzle .puzzle-pattern .puzzle-pattern-cell.gap{font-size:min(var(-
 /* B-3 On 320 px phones the fish and berry Rätsel keep every group and the answers on screen: their pictures
    shrink to 38 px there (berries 34 px) (exception table in design/RAETSEL-LAYOUT.md). */
 @media(max-width:340px){body .screen-puzzle:is([data-game=add],[data-game=compare]){--pv-pic:38px}body .screen-puzzle[data-game=picnic]{--pv-pic:34px}}
-@media(max-width:340px){
- body .screen-puzzle .puzzle-addition{grid-template-columns:1fr 18px 1fr !important;gap:4px !important}
- body .screen-puzzle .puzzle-addition>section{padding:6px 4px !important}
- body .screen-puzzle .puzzle-addition .puzzle-objects{gap:2px !important}
-}
+/* C-6 The fish stand in rows of five, like acorns, ladybirds and the fly places, so 7 reads as 5 + 2 at a glance.
+   Fewer than five stand in one centred row; a second row starts at the left, as on a Zwanzigerfeld. On tablets the
+   fish are 56 px so two groups of five fit side by side; on phones the compared groups stand one above the other. */
+body .screen-puzzle:is([data-game=add],[data-game=compare]){--pv-fish:min(var(--pv-pic),calc((100cqi - 48px) / 5))}
+@media(min-width:601px){body .screen-puzzle:is([data-game=add],[data-game=compare]){--pv-fish:56px}}
+@media(max-width:340px){body .screen-puzzle[data-game=add]{--pv-pic:34px}body .screen-puzzle .puzzle-addition>section{padding:6px !important}}
+body .screen-puzzle :is(.puzzle-addition,.puzzle-compare) .puzzle-objects{display:grid !important;grid-template-columns:repeat(var(--pv-cols,5),var(--pv-fish)) !important;justify-content:center !important;gap:4px !important;width:auto !important;max-width:none !important;margin:0 auto !important}
+body .screen-puzzle :is(.puzzle-addition,.puzzle-compare) .puzzle-objects>.puzzle-picture{width:var(--pv-fish) !important;height:var(--pv-fish) !important;max-width:none !important;max-height:none !important}
+@media(max-width:600px){body .screen-puzzle .puzzle-compare{grid-template-columns:1fr !important}}

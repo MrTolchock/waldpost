@@ -27,33 +27,33 @@
 | Stabile Aufgaben-ID | Inhalt / Konfiguration | Expected answer or solution |
 | --- | --- | --- |
 | `compare/1-1` | 1 und 1 — Wo sind mehr Fische? | "equal" |
-| `compare/1-3` | 1 und 3 — Wo sind mehr Fische? | "right" |
-| `compare/2-2` | 2 und 2 — Wo sind mehr Fische? | "equal" |
 | `compare/2-1` | 2 und 1 — Wo sind mehr Fische? | "left" |
+| `compare/1-3` | 1 und 3 — Wo sind mehr Fische? | "right" |
 | `compare/2-4` | 2 und 4 — Wo sind mehr Fische? | "right" |
-| `compare/3-3` | 3 und 3 — Wo sind mehr Fische? | "equal" |
 | `compare/3-2` | 3 und 2 — Wo sind mehr Fische? | "left" |
-| `compare/3-5` | 3 und 5 — Wo sind mehr Fische? | "right" |
-| `compare/4-4` | 4 und 4 — Wo sind mehr Fische? | "equal" |
+| `compare/3-3` | 3 und 3 — Wo sind mehr Fische? | "equal" |
+| `compare/3-4` | 3 und 4 — Wo sind mehr Fische? | "right" |
 | `compare/4-3` | 4 und 3 — Wo sind mehr Fische? | "left" |
-| `compare/4-6` | 4 und 6 — Wo sind mehr Fische? | "right" |
+| `compare/4-7` | 4 und 7 — Wo sind mehr Fische? | "right" |
+| `compare/5-3` | 5 und 3 — Wo sind mehr Fische? | "left" |
 | `compare/5-5` | 5 und 5 — Wo sind mehr Fische? | "equal" |
-| `compare/5-4` | 5 und 4 — Wo sind mehr Fische? | "left" |
-| `compare/5-7` | 5 und 7 — Wo sind mehr Fische? | "right" |
+| `compare/5-6` | 5 und 6 — Wo sind mehr Fische? | "right" |
+| `compare/5-8` | 5 und 8 — Wo sind mehr Fische? | "right" |
+| `compare/6-3` | 6 und 3 — Wo sind mehr Fische? | "left" |
 | `compare/6-6` | 6 und 6 — Wo sind mehr Fische? | "equal" |
-| `compare/6-5` | 6 und 5 — Wo sind mehr Fische? | "left" |
 | `compare/6-8` | 6 und 8 — Wo sind mehr Fische? | "right" |
-| `compare/7-7` | 7 und 7 — Wo sind mehr Fische? | "equal" |
 | `compare/7-6` | 7 und 6 — Wo sind mehr Fische? | "left" |
 | `compare/7-9` | 7 und 9 — Wo sind mehr Fische? | "right" |
+| `compare/7-10` | 7 und 10 — Wo sind mehr Fische? | "right" |
+| `compare/8-5` | 8 und 5 — Wo sind mehr Fische? | "left" |
+| `compare/8-6` | 8 und 6 — Wo sind mehr Fische? | "left" |
 | `compare/8-8` | 8 und 8 — Wo sind mehr Fische? | "equal" |
-| `compare/8-7` | 8 und 7 — Wo sind mehr Fische? | "left" |
-| `compare/8-10` | 8 und 10 — Wo sind mehr Fische? | "right" |
-| `compare/9-9` | 9 und 9 — Wo sind mehr Fische? | "equal" |
-| `compare/9-8` | 9 und 8 — Wo sind mehr Fische? | "left" |
+| `compare/8-9` | 8 und 9 — Wo sind mehr Fische? | "right" |
+| `compare/9-7` | 9 und 7 — Wo sind mehr Fische? | "left" |
 | `compare/9-10` | 9 und 10 — Wo sind mehr Fische? | "right" |
-| `compare/10-10` | 10 und 10 — Wo sind mehr Fische? | "equal" |
+| `compare/10-7` | 10 und 7 — Wo sind mehr Fische? | "left" |
 | `compare/10-9` | 10 und 9 — Wo sind mehr Fische? | "left" |
+| `compare/10-10` | 10 und 10 — Wo sind mehr Fische? | "equal" |
 
 ## Exact definitions
 
@@ -70,40 +70,6 @@ These definitions are the same finite data used by the game and review previews.
       "prompt": "Wo sind mehr Fische?",
       "a": 1,
       "b": 1,
-      "answer": "equal",
-      "choices": [
-        "left",
-        "equal",
-        "right"
-      ]
-    }
-  },
-  {
-    "id": "compare/1-3",
-    "label": "1 und 3",
-    "question": {
-      "kind": "compare",
-      "item": "fish-swim",
-      "prompt": "Wo sind mehr Fische?",
-      "a": 1,
-      "b": 3,
-      "answer": "right",
-      "choices": [
-        "left",
-        "equal",
-        "right"
-      ]
-    }
-  },
-  {
-    "id": "compare/2-2",
-    "label": "2 und 2",
-    "question": {
-      "kind": "compare",
-      "item": "fish-swim",
-      "prompt": "Wo sind mehr Fische?",
-      "a": 2,
-      "b": 2,
       "answer": "equal",
       "choices": [
         "left",
@@ -130,14 +96,14 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/2-4",
-    "label": "2 und 4",
+    "id": "compare/1-3",
+    "label": "1 und 3",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
-      "a": 2,
-      "b": 4,
+      "a": 1,
+      "b": 3,
       "answer": "right",
       "choices": [
         "left",
@@ -147,15 +113,15 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/3-3",
-    "label": "3 und 3",
+    "id": "compare/2-4",
+    "label": "2 und 4",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
-      "a": 3,
-      "b": 3,
-      "answer": "equal",
+      "a": 2,
+      "b": 4,
+      "answer": "right",
       "choices": [
         "left",
         "equal",
@@ -181,15 +147,15 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/3-5",
-    "label": "3 und 5",
+    "id": "compare/3-3",
+    "label": "3 und 3",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 3,
-      "b": 5,
-      "answer": "right",
+      "b": 3,
+      "answer": "equal",
       "choices": [
         "left",
         "equal",
@@ -198,15 +164,15 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/4-4",
-    "label": "4 und 4",
+    "id": "compare/3-4",
+    "label": "3 und 4",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
-      "a": 4,
+      "a": 3,
       "b": 4,
-      "answer": "equal",
+      "answer": "right",
       "choices": [
         "left",
         "equal",
@@ -232,15 +198,32 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/4-6",
-    "label": "4 und 6",
+    "id": "compare/4-7",
+    "label": "4 und 7",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 4,
-      "b": 6,
+      "b": 7,
       "answer": "right",
+      "choices": [
+        "left",
+        "equal",
+        "right"
+      ]
+    }
+  },
+  {
+    "id": "compare/5-3",
+    "label": "5 und 3",
+    "question": {
+      "kind": "compare",
+      "item": "fish-swim",
+      "prompt": "Wo sind mehr Fische?",
+      "a": 5,
+      "b": 3,
+      "answer": "left",
       "choices": [
         "left",
         "equal",
@@ -266,15 +249,15 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/5-4",
-    "label": "5 und 4",
+    "id": "compare/5-6",
+    "label": "5 und 6",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 5,
-      "b": 4,
-      "answer": "left",
+      "b": 6,
+      "answer": "right",
       "choices": [
         "left",
         "equal",
@@ -283,15 +266,32 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/5-7",
-    "label": "5 und 7",
+    "id": "compare/5-8",
+    "label": "5 und 8",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 5,
-      "b": 7,
+      "b": 8,
       "answer": "right",
+      "choices": [
+        "left",
+        "equal",
+        "right"
+      ]
+    }
+  },
+  {
+    "id": "compare/6-3",
+    "label": "6 und 3",
+    "question": {
+      "kind": "compare",
+      "item": "fish-swim",
+      "prompt": "Wo sind mehr Fische?",
+      "a": 6,
+      "b": 3,
+      "answer": "left",
       "choices": [
         "left",
         "equal",
@@ -317,23 +317,6 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/6-5",
-    "label": "6 und 5",
-    "question": {
-      "kind": "compare",
-      "item": "fish-swim",
-      "prompt": "Wo sind mehr Fische?",
-      "a": 6,
-      "b": 5,
-      "answer": "left",
-      "choices": [
-        "left",
-        "equal",
-        "right"
-      ]
-    }
-  },
-  {
     "id": "compare/6-8",
     "label": "6 und 8",
     "question": {
@@ -343,23 +326,6 @@ These definitions are the same finite data used by the game and review previews.
       "a": 6,
       "b": 8,
       "answer": "right",
-      "choices": [
-        "left",
-        "equal",
-        "right"
-      ]
-    }
-  },
-  {
-    "id": "compare/7-7",
-    "label": "7 und 7",
-    "question": {
-      "kind": "compare",
-      "item": "fish-swim",
-      "prompt": "Wo sind mehr Fische?",
-      "a": 7,
-      "b": 7,
-      "answer": "equal",
       "choices": [
         "left",
         "equal",
@@ -402,6 +368,57 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
+    "id": "compare/7-10",
+    "label": "7 und 10",
+    "question": {
+      "kind": "compare",
+      "item": "fish-swim",
+      "prompt": "Wo sind mehr Fische?",
+      "a": 7,
+      "b": 10,
+      "answer": "right",
+      "choices": [
+        "left",
+        "equal",
+        "right"
+      ]
+    }
+  },
+  {
+    "id": "compare/8-5",
+    "label": "8 und 5",
+    "question": {
+      "kind": "compare",
+      "item": "fish-swim",
+      "prompt": "Wo sind mehr Fische?",
+      "a": 8,
+      "b": 5,
+      "answer": "left",
+      "choices": [
+        "left",
+        "equal",
+        "right"
+      ]
+    }
+  },
+  {
+    "id": "compare/8-6",
+    "label": "8 und 6",
+    "question": {
+      "kind": "compare",
+      "item": "fish-swim",
+      "prompt": "Wo sind mehr Fische?",
+      "a": 8,
+      "b": 6,
+      "answer": "left",
+      "choices": [
+        "left",
+        "equal",
+        "right"
+      ]
+    }
+  },
+  {
     "id": "compare/8-8",
     "label": "8 und 8",
     "question": {
@@ -419,31 +436,14 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/8-7",
-    "label": "8 und 7",
+    "id": "compare/8-9",
+    "label": "8 und 9",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 8,
-      "b": 7,
-      "answer": "left",
-      "choices": [
-        "left",
-        "equal",
-        "right"
-      ]
-    }
-  },
-  {
-    "id": "compare/8-10",
-    "label": "8 und 10",
-    "question": {
-      "kind": "compare",
-      "item": "fish-swim",
-      "prompt": "Wo sind mehr Fische?",
-      "a": 8,
-      "b": 10,
+      "b": 9,
       "answer": "right",
       "choices": [
         "left",
@@ -453,31 +453,14 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/9-9",
-    "label": "9 und 9",
+    "id": "compare/9-7",
+    "label": "9 und 7",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 9,
-      "b": 9,
-      "answer": "equal",
-      "choices": [
-        "left",
-        "equal",
-        "right"
-      ]
-    }
-  },
-  {
-    "id": "compare/9-8",
-    "label": "9 und 8",
-    "question": {
-      "kind": "compare",
-      "item": "fish-swim",
-      "prompt": "Wo sind mehr Fische?",
-      "a": 9,
-      "b": 8,
+      "b": 7,
       "answer": "left",
       "choices": [
         "left",
@@ -504,15 +487,15 @@ These definitions are the same finite data used by the game and review previews.
     }
   },
   {
-    "id": "compare/10-10",
-    "label": "10 und 10",
+    "id": "compare/10-7",
+    "label": "10 und 7",
     "question": {
       "kind": "compare",
       "item": "fish-swim",
       "prompt": "Wo sind mehr Fische?",
       "a": 10,
-      "b": 10,
-      "answer": "equal",
+      "b": 7,
+      "answer": "left",
       "choices": [
         "left",
         "equal",
@@ -530,6 +513,23 @@ These definitions are the same finite data used by the game and review previews.
       "a": 10,
       "b": 9,
       "answer": "left",
+      "choices": [
+        "left",
+        "equal",
+        "right"
+      ]
+    }
+  },
+  {
+    "id": "compare/10-10",
+    "label": "10 und 10",
+    "question": {
+      "kind": "compare",
+      "item": "fish-swim",
+      "prompt": "Wo sind mehr Fische?",
+      "a": 10,
+      "b": 10,
+      "answer": "equal",
       "choices": [
         "left",
         "equal",

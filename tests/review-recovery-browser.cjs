@@ -18,8 +18,8 @@ if(!snapshot){
   }
  }
  // Rätsel changed on purpose after the habitat release: 22 November (9.4.27–9.4.32), 23 November (9.4.33), the
- // reworded questions of 24 November (9.4.41), the reading merge (9.4.43) and the 25 November content changes (9.4.44).
- if(process.env.WALDPOST_REVIEW_REF){const changedLater=new Set(['friends-hedgehog','treasure','neighbours',...require('./review-changes-2026-11-23.cjs').puzzles,...require('./review-changes-2026-11-24.cjs').puzzles,'friends-badger',...require('./review-changes-2026-11-25.cjs').puzzles]);assert.deepEqual([...syntheticReady],Array.from(games,g=>g.id).filter(id=>!changedLater.has(id)),'every unchanged pre-background Rätsel remains compatible');}
+ // reworded questions of 24 November (9.4.41), the reading merge (9.4.43) and the 25 November content changes (9.4.44 and 9.4.45).
+ if(process.env.WALDPOST_REVIEW_REF){const changedLater=new Set(['friends-hedgehog','treasure','neighbours',...require('./review-changes-2026-11-23.cjs').puzzles,...require('./review-changes-2026-11-24.cjs').puzzles,'friends-badger',...require('./review-changes-2026-11-25.cjs').puzzles,...require('./review-changes-2026-11-25-second.cjs').puzzles]);assert.deepEqual([...syntheticReady],Array.from(games,g=>g.id).filter(id=>!changedLater.has(id)),'every unchanged pre-background Rätsel remains compatible');}
  const key='puzzle:friends-bird',revision=C.puzzleRevision('friends-bird');ledger.entries[key+'@'+revision]={key,revision,status:'approved',note:'Späterer Kommentar.',at:'2026-11-17T21:00:00Z',seen:true};
  ledger.deletedNotes=[{key:'puzzle:friends-beaver',note:'Ursprünglicher Kommentar.',at:'2026-11-17T21:00:00Z'}];
 }
