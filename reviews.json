@@ -31566,6 +31566,33 @@
       "at": "2026-11-25T12:23:55.759Z",
       "seen": true,
       "operation": "47917745-e779-489f-9036-507e347b5f08"
+    },
+    "read-puzzle/word-20@fb0d4883fe470ec1": {
+      "key": "read-puzzle/word-20",
+      "revision": "fb0d4883fe470ec1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:23:59.264Z",
+      "seen": true,
+      "operation": "05afb17b-d1be-42b6-a843-9d0d8932d918"
+    },
+    "read-puzzle/word-21@8059ce2a9a208944": {
+      "key": "read-puzzle/word-21",
+      "revision": "8059ce2a9a208944",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:24:03.275Z",
+      "seen": true,
+      "operation": "164e5abf-5898-4a8f-964b-5b3d22214a05"
+    },
+    "read-puzzle/word-22@71e45810a9dff868": {
+      "key": "read-puzzle/word-22",
+      "revision": "71e45810a9dff868",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:24:06.741Z",
+      "seen": true,
+      "operation": "e44c7598-4f65-4c12-8150-a071a9d37082"
     }
   },
   "history": [
