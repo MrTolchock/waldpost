@@ -31125,6 +31125,33 @@
       "at": "2026-11-25T12:15:04.666Z",
       "seen": true,
       "operation": "418cc945-1122-4480-bdee-d1f7890fa4da"
+    },
+    "compare/5-3@7206569d40b92e65": {
+      "key": "compare/5-3",
+      "revision": "7206569d40b92e65",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:06.479Z",
+      "seen": true,
+      "operation": "4819e6e9-d04d-43c4-98b3-cbdabae6d8e1"
+    },
+    "compare/5-6@2381e20a99a05c7e": {
+      "key": "compare/5-6",
+      "revision": "2381e20a99a05c7e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:08.196Z",
+      "seen": true,
+      "operation": "c45ad59d-8d5d-4056-b71e-1d82383f47df"
+    },
+    "compare/5-8@4a6c6a4a2814837e": {
+      "key": "compare/5-8",
+      "revision": "4a6c6a4a2814837e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:09.862Z",
+      "seen": true,
+      "operation": "da915f78-a0a6-4b0b-9e93-934c9bf4f43c"
     }
   },
   "history": [
