@@ -194,7 +194,7 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
     if (!characters[id]) continue;
     const rig = noCast(characters[id](f.h)), [x, z] = f.at, y = (f.y === 0 ? feetY(x, z, f.h * .15) : groundY(x, z)) + f.y;
     rig.group.position.set(x, y, z); rig.group.rotation.y = f.yaw; scene.add(rig.group);
-    friends[id] = {...f, rig, x, z, y, hx: x, hz: z, shadow: f.y === 0 ? contact(f.h * .42) : null,
+    friends[id] = {...f, rig, x, z, y, hx: x, hz: z, shadow: f.y === 0 ? contact(f.h * .42) : null, body: f.y === 0 && !f.onWater ? Math.max(.3, f.h * .36) : 0,
       roam: f.y === 0 && !f.onWater ? (id === 'deer' ? 3.4 : id === 'hedgehog' || id === 'badger' ? 1.8 : 1.3) : 0, wait: 2 + R() * 6, to: null, moving: false};
     if (friends[id].shadow) friends[id].shadow.position.set(x, y + .03, z);
   }
@@ -202,6 +202,18 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
   fox.name = 'fox'; scene.add(fox);
   const courierRig = noCast(characters.mailman(1.72)), courier = courierRig.group, mailPos = new THREE.Vector3(forestPlaces.mailman.x, 0, forestPlaces.mailman.z), courierShadow = contact(.48, software ? .85 : .5);
   courier.name = 'rabbit-mailman'; scene.add(courier); let courierGoal = null, courierWait = 2, courierPath = [], round = 0;
+  /* Personal space: figures on the ground stand next to each other, never inside each other. Each has a body
+     radius; two figures keep at least the sum of their radii apart. Fuchs is 'fox', the mailman 'mailman'. */
+  const FOX_BODY = .38, MAIL_BODY = .45;
+  function bodies() { const list = [{id: 'fox', x: pos.x, z: pos.z, r: FOX_BODY}, {id: 'mailman', x: mailPos.x, z: mailPos.z, r: MAIL_BODY}];
+    for (const [id, f] of Object.entries(friends)) if (f.body) list.push({id, x: f.x, z: f.z, r: f.body}); return list; }
+  // the first figure (other than `self`) whose space the spot (x, z) for a body of radius r would enter
+  function crowding(x, z, r, self) { for (const b of bodies()) if (b.id !== self && Math.hypot(x - b.x, z - b.z) < r + b.r - 1e-3) return b; return null; }
+  // moves (x, z) out of every other figure's space, away from that figure (or from where `from` stands)
+  function apart(x, z, r, self, from) { for (let k = 0; k < 3; k++) { const b = crowding(x, z, r, self); if (!b) break; let dx = x - b.x, dz = z - b.z, d = Math.hypot(dx, dz);
+      if (d < 1e-3) { dx = from.x - b.x; dz = from.z - b.z; d = Math.hypot(dx, dz); if (d < 1e-3) { dx = 1; dz = 0; d = 1; } } x = b.x + dx / d * (r + b.r); z = b.z + dz / d * (r + b.r); } return [x, z]; }
+  // a spot for Fuchs next to whoever stands at or near `target`, on the side he comes from
+  function besideFigures(target) { const [x, z] = apart(target.x, target.z, FOX_BODY + .12, 'fox', pos); return nearestWalkable(new THREE.Vector3(x, 0, z), (a, b) => !crowding(a, b, FOX_BODY + .05, 'fox')); }
   // the mailman's round: the den, the beaver's trail, the signpost in the glade, the kingfisher's willow, the west path
   const ROUND = [[21.5, -8.2], [30, 14], [7, 22], [2, 8], [-18, 4.6], [-9, -14], [3.2, -.8]];
 
@@ -229,7 +241,7 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
       if (!f.to) { f.wait = 2; return; } }
     const dx = f.to[0] - f.x, dz = f.to[1] - f.z, d = Math.hypot(dx, dz), sp = id === 'deer' ? .7 : id === 'squirrel' ? (f.startled > 0 ? 2.6 : 1.45) : .5;   // the squirrel dashes, then stops to look
     if (d < .08) { f.to = null; f.wait = id === 'squirrel' ? .6 + Math.random() * 3.5 : 3 + Math.random() * 9; return; }
-    turn(Math.atan2(dx, dz), id === 'squirrel' ? 12 : id === 'deer' ? 2.6 : 5); const s = Math.min(d, sp * dt); f.x += dx / d * s; f.z += dz / d * s; f.y = feetY(f.x, f.z, f.h * .15); f.moving = true;
+    turn(Math.atan2(dx, dz), id === 'squirrel' ? 12 : id === 'deer' ? 2.6 : 5); const s = Math.min(d, sp * dt); if (f.body && crowding(f.x + dx / d * s, f.z + dz / d * s, f.body, id)) { f.to = null; f.wait = 1 + Math.random() * 2; return; } f.x += dx / d * s; f.z += dz / d * s; f.y = feetY(f.x, f.z, f.h * .15); f.moving = true;
     f.rig.group.position.set(f.x, f.y, f.z); if (f.shadow) f.shadow.position.set(f.x, f.y + .03, f.z);
     const pin = pins.find(p => p.id === id); if (pin) pin.point.set(pin.x + f.x - f.hx, pin.up + groundY(pin.x + f.x - f.hx, pin.z + f.z - f.hz), pin.z + f.z - f.hz);
   }
@@ -323,7 +335,7 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
     const route = WORLD.plan(pos.x, pos.z, target.x, target.z); return route && route.map(([x, z]) => new THREE.Vector3(x, 0, z));
   }
   function nearestWalkable(p, ok = null) { const free = (x, z) => walkable(x, z) && (!ok || ok(x, z)); if (free(p.x, p.z)) return new THREE.Vector3(p.x, 0, p.z); for (let r = .3; r < (ok ? 14 : 6); r += .3) for (let i = 0; i < 16; i++) { const a = i / 16 * TAU, x = p.x + Math.cos(a) * r, z = p.z + Math.sin(a) * r; if (free(x, z)) return new THREE.Vector3(x, 0, z); } return pos.clone().setY(0); }
-  function walkTo(target, id = null) { target = nearestWalkable(target); const route = plan(target); if (!route) { onMove({event: 'route_failure', reason: 'blocked', area: 'forest', destination: id}); return; } path = route; destination = path.shift(); arrival = id; stuck = 0; replans = 0; stuckAt.set(pos.x, pos.z); ring.position.set(target.x, groundY(target.x, target.z) + .05, target.z); ring.visible = true; onMove({event: 'movement_destination', destination: id, x: target.x, z: target.z, area: 'forest'}); }
+  function walkTo(target, id = null) { target = besideFigures(nearestWalkable(target)); const route = plan(target); if (!route) { onMove({event: 'route_failure', reason: 'blocked', area: 'forest', destination: id}); return; } path = route; destination = path.shift(); arrival = id; stuck = 0; replans = 0; stuckAt.set(pos.x, pos.z); ring.position.set(target.x, groundY(target.x, target.z) + .05, target.z); ring.visible = true; onMove({event: 'movement_destination', destination: id, x: target.x, z: target.z, area: 'forest'}); }
   // On the hills the camera follows the full height of the ground and never sinks into a slope.
   const lift = 1;
   function snapCamera() { caveCamera(-1); focus.set(pos.x, groundY(pos.x, pos.z) * lift, pos.z); placeCamera(1); }
@@ -360,7 +372,10 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
     // his own round on the paths near the den, with a pause at every stop (unless a letter waits for Fuchs)
     if (!courierGoal && !courierWait) { if (!courierPath.length) { const [x, z] = ROUND[round]; round = (round + 1) % ROUND.length; courierPath = (WORLD.plan(mailPos.x, mailPos.z, x, z) || []).map(([a, b]) => new THREE.Vector3(a, 0, b)); if (!courierPath.length) courierWait = 3; }
       if (courierPath.length) courierGoal = courierPath.shift(); }
-    let moving = false; if (courierGoal) { const d = courierGoal.distanceTo(mailPos); if (d < .12) { courierGoal = null; courierWait = courierPath.length ? 0 : 3 + R() * 4; } else { const direction = courierGoal.clone().sub(mailPos).normalize(); mailPos.addScaledVector(direction, Math.min(d, dt * .85)); const yaw = Math.atan2(direction.x, direction.z), diff = Math.atan2(Math.sin(yaw - courier.rotation.y), Math.cos(yaw - courier.rotation.y)); courier.rotation.y += diff * Math.min(1, dt * 7); moving = true; } }
+    let moving = false; if (courierGoal) { const d = courierGoal.distanceTo(mailPos); if (d < .12) { courierGoal = null; courierWait = courierPath.length ? 0 : 3 + R() * 4; } else { const direction = courierGoal.clone().sub(mailPos).normalize(), step = Math.min(d, dt * .85); let nx = mailPos.x + direction.x * step, nz = mailPos.z + direction.z * step;
+      // someone in his way: a sidestep round them, or a short wait
+      if (crowding(nx, nz, MAIL_BODY, 'mailman')) { const b = crowding(nx, nz, MAIL_BODY, 'mailman'), side = Math.sign((b.x - mailPos.x) * direction.z - (b.z - mailPos.z) * direction.x) || 1; nx = mailPos.x + direction.z * side * step; nz = mailPos.z - direction.x * side * step; if (!walkable(nx, nz) || crowding(nx, nz, MAIL_BODY, 'mailman')) { nx = mailPos.x; nz = mailPos.z; } }
+      moving = nx !== mailPos.x || nz !== mailPos.z; mailPos.x = nx; mailPos.z = nz; const yaw = Math.atan2(direction.x, direction.z), diff = Math.atan2(Math.sin(yaw - courier.rotation.y), Math.cos(yaw - courier.rotation.y)); courier.rotation.y += diff * Math.min(1, dt * 7); } }
     if (greeting) { const yaw = Math.atan2(pos.x - mailPos.x, pos.z - mailPos.z), diff = Math.atan2(Math.sin(yaw - courier.rotation.y), Math.cos(yaw - courier.rotation.y)); courier.rotation.y += diff * Math.min(1, dt * 5); }
     const y = feetY(mailPos.x, mailPos.z, .22); courier.position.set(mailPos.x, y, mailPos.z); courierShadow.position.set(mailPos.x, y + .04, mailPos.z);
     if (animate) courierRig.update(dt, {moving, speed: .75, action: greeting ? 'wave' : '', reduced}); publishMailPosition();
@@ -486,13 +501,18 @@ export function createForest({renderer, software, onPosition, onAction, onMove, 
     else if (destination) { let ddx = destination.x - pos.x, ddz = destination.z - pos.z, d = Math.hypot(ddx, ddz);
       // a waypoint counts as reached within one frame's travel too (long frames must not circle it)
       while (path.length && d < Math.max(.55, vel.length() * dt)) { destination = path.shift(); ddx = destination.x - pos.x; ddz = destination.z - pos.z; d = Math.hypot(ddx, ddz); }
-      if (!path.length && d < .1) { destination = null; ring.visible = false; vel.set(0, 0); onPosition(pos.x, pos.z, WORLD.regionAt(pos.x, pos.z)?.id); const reached = arrival; arrival = null; if (reached) onAction(reached); }
+      if (!path.length && (d < .1 || (d < .9 && crowding(destination.x, destination.z, FOX_BODY, 'fox')))) { destination = null; ring.visible = false; vel.set(0, 0); onPosition(pos.x, pos.z, WORLD.regionAt(pos.x, pos.z)?.id); const reached = arrival; arrival = null; if (reached) onAction(reached); }
       else { const sp = speedMax * (path.length ? 1 : Math.min(1, .25 + d / 1.2)); want.set(ddx / d * sp, ddz / d * sp); } }
     vel.lerp(want, 1 - Math.exp(-dt * (sliding ? 3 : want.lengthSq() ? 9 : 12))); const speed = vel.length(), moving = speed > .15;   // on snow he glides on a little
     sound.moving = moving; sound.speed = speed; if (time - sound.at > .15 || time < sound.at) { sound.at = time; listen(); }
     if (speed > .02) { let nx = pos.x + vel.x * dt, nz = pos.z + vel.y * dt;
       // the last step lands on the target instead of overshooting it (long frames, fast walking)
-      if (destination && !path.length && !manual && Math.hypot(destination.x - pos.x, destination.z - pos.z) <= speed * dt) { nx = destination.x; nz = destination.z; } if (walkable(nx, nz)) { pos.x = nx; pos.z = nz; } else if (walkable(nx, pos.z)) { pos.x = nx; vel.y *= .5; } else if (walkable(pos.x, nz)) { pos.z = nz; vel.x *= .5; } else vel.multiplyScalar(.5);
+      if (destination && !path.length && !manual && Math.hypot(destination.x - pos.x, destination.z - pos.z) <= speed * dt) { nx = destination.x; nz = destination.z; } { const b = crowding(nx, nz, FOX_BODY, 'fox'); if (b) {   // someone in the way: step round them on the nearer side, not into them
+        const step = Math.hypot(nx - pos.x, nz - pos.z), ax = b.x - pos.x, az = b.z - pos.z, al = Math.hypot(ax, az) || 1, side = Math.sign(ax * vel.y - az * vel.x) || 1;
+        nx = pos.x - az / al * side * step; nz = pos.z + ax / al * side * step; } }
+      [nx, nz] = apart(nx, nz, FOX_BODY, 'fox', pos); const ox = pos.x, oz = pos.z, inside = crowding(ox, oz, FOX_BODY, 'fox');
+      if (walkable(nx, nz)) { pos.x = nx; pos.z = nz; } else if (walkable(nx, pos.z)) { pos.x = nx; vel.y *= .5; } else if (walkable(pos.x, nz)) { pos.z = nz; vel.x *= .5; } else vel.multiplyScalar(.5);
+      if (!inside && crowding(pos.x, pos.z, FOX_BODY, 'fox')) { pos.x = ox; pos.z = oz; vel.multiplyScalar(.5); }   // a wall slide must not end inside a figure either
       // Wedged on the way to a waypoint (a corner cut at speed): after half a second almost on the spot, plan
       // again from where Fuchs stands; after three tries in the same place, stop instead of pushing forever.
       if (destination && !manual && (stuck += dt) > .5) { stuck = 0; const moved = Math.hypot(pos.x - stuckAt.x, pos.z - stuckAt.y); stuckAt.set(pos.x, pos.z);
