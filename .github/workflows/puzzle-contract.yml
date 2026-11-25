@@ -46,3 +46,4 @@ jobs:
       - run: node tests/ipad-puzzle-layout-browser.cjs
       - run: node tests/habitat-backgrounds-browser.cjs
       - run: node tests/letter-sessions-browser.cjs
+      - run: node tests/release-channel-browser.cjs

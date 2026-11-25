@@ -17,11 +17,9 @@ Owner review previews never produce child puzzle observations. Developer mode ad
 
 ## Developer mode
 
-Open the adult menu **Einstellungen → Spielprotokoll und Entwicklermodus → Entwicklermodus**. On pauses every new usage observation, including startup, letters, movement, answers, timing and input events. Existing usage history is retained and remains exportable. The checkbox and a paused-log status show the selected mode; **ENTWICKLUNG** appears in forest navigation. The setting survives refresh in the same browser. Off resumes recording for subsequent play.
+**Einstellungen → Spielprotokoll und Entwicklermodus → Entwicklermodus** opens the separate development version ([children's and development version](CHANNELS.md)). It has its own save and records nothing, so the children's play log and journey stay exactly as they were. The switch is never remembered: the app always starts in the children's version, which records normally. A setting `developerMode` left by an earlier version is cleared.
 
-This menu toggle controls recording. Letter limits, unfinished gameplay and review requirements continue normally. A puzzle entered during testing is detached from its earlier usage run. If resumed after switching off, it gets a new run and its already-tested current iteration has no invented fresh first-try rate. Testing time and answers are never merged into the earlier child's visit.
-
-The older `?dev=1` route still uses its isolated save/review namespaces and now records no new events either. Switching its checkbox off removes the URL flag and reloads the normal profile. No saved journey or editorial decision is deleted by changing modes.
+The older `?dev=1` route still uses its isolated save/review namespaces and records no new events. Switching its checkbox off removes the URL flag and reloads the normal profile. No saved journey or editorial decision is deleted by changing modes.
 
 ## Export format
 

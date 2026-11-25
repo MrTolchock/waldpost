@@ -37,7 +37,9 @@
     next.deletedNotes=(next.deletedNotes||[]).filter(d=>d.key!==entry.key||d.note!==entry.note);
     next.deletedNotes.push({key:entry.key,note:entry.note,at});return persist(next);
   }
-  function ready(id){const p=progress(id);return p.total>=25&&p.approved===p.total&&data.decisions[recordKey(id)]?.status!=='improve'&&(!FK.reviewRepository||FK.reviewRepository.confirmed(id));}
+  // The children's version shows exactly the Rätsel released with it, each only at its released revision.
+  function released(id){return !!FK.RELEASED?.puzzles&&FK.RELEASED.puzzles[id]===C.puzzleRevision(id);}
+  function ready(id){if(FK.CHANNEL==='main')return released(id);const p=progress(id);return p.total>=25&&p.approved===p.total&&data.decisions[recordKey(id)]?.status!=='improve'&&(!FK.reviewRepository||FK.reviewRepository.confirmed(id));}
   function decide(id,iteration,value,note){
     const r=revision(id,iteration);if(!r||!statuses.includes(value)){error='Unbekannte Aufgabe oder Entscheidung.';return false;}
     note=String(note??(!iteration?status(id).decision?.note:'')??'').trim().slice(0,4000);
@@ -133,8 +135,8 @@
     return decide(session.id,null,'approved');
   }
   window.addEventListener?.('storage',event=>{if(event.key!==key)return;try{const next=JSON.parse(event.newValue);if(valid(next)){data=next;error='';}else {data=empty();error='Prüfung wurde geändert. Bitte erneut prüfen.';}FK.emit?.('puzzle-review-change');}catch{data=empty();FK.emit?.('puzzle-review-change');}});
-  FK.puzzleReview={key,status,seen,progress,feedback,deleteFeedback,ready,decide,comment,approveAll,exportData,importData,open,openGallery,gallerySession,play,preview,start,previewSession,visit,sessionDecision,finishSession,get authorized(){return authorized;},get error(){return error;}};
-  if(FK.ReviewRepository&&window.fetch&&window.document&&new URLSearchParams(location.search).get('dev')!=='1'){
+  FK.puzzleReview={key,status,seen,progress,feedback,deleteFeedback,ready,released,decide,comment,approveAll,exportData,importData,open,openGallery,gallerySession,play,preview,start,previewSession,visit,sessionDecision,finishSession,get authorized(){return authorized;},get error(){return error;}};
+  if(FK.CHANNEL!=='main'&&FK.ReviewRepository&&window.fetch&&window.document&&new URLSearchParams(location.search).get('dev')!=='1'){
     let tokenStorage;try{tokenStorage=window.sessionStorage;}catch{/* A temporary connection still works. */}
     FK.reviewRepository=FK.ReviewRepository.create({
       vault:{read:()=>data,write:next=>valid(next)&&persist(next,true)},

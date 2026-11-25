@@ -1,5 +1,7 @@
 # Shared review storage on GitHub
 
+Since 10.0.0 reviewing happens only in the **development version**. The children's version has no review function and shows the Rätsel listed in `js/friends/released.js` at release time ([channels](CHANNELS.md)).
+
 The authoritative review file is [reviews.json](https://github.com/MrTolchock/waldpost/blob/puzzle-review-data/reviews.json), on the repository's **puzzle-review-data** branch. This branch contains data and its README, separate from the game code. If the branch or file does not exist yet, the first sync with a connected token creates it automatically as its own history holding only an empty `reviews.json`; until then, reading without a token simply shows no shared approvals. Every saved edit is a Git commit. Refreshing the app, using a different browser or reinstalling it does not delete published reviews.
 
 The repository is public, so review statuses and optional notes are public. Only editorial data is shared: puzzle/iteration IDs, exact revisions, approved/improve/pending status, optional notes, inspection evidence and timestamps. Drawings, child progress, anonymous gameplay logs and credentials are not uploaded.

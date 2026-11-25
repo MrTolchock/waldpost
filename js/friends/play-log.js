@@ -202,13 +202,29 @@
     const safe=fn=>{try{return fn();}catch{/* Diagnostics must not change game behaviour. */}};
     const record=(event,data)=>FK.friends?.record(event,data);
     const uuid=()=>root.crypto?.randomUUID?.()||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
-    const development=()=>FK.settings.get('developerMode')===true||new URLSearchParams(location.search).get('dev')==='1';
+    // Development means the published development copy (…/dev/) or the older ?dev=1 route. It is never remembered:
+    // the children's version always starts with recording on. A setting left by an earlier version is cleared.
+    const development=()=>FK.DEV_SITE===true||new URLSearchParams(location.search).get('dev')==='1';
+    if(FK.settings.get('developerMode')!==undefined)safe(()=>FK.settings.set('developerMode',undefined));
+    // Opens the development copy next to this version (…/dev/), after checking that it is published and reachable.
+    async function enterDevelopment(){
+      const target=new URL('dev/',new URL('./',location.href));
+      try{const res=await fetch(new URL('index.html',target),{cache:'no-store'});if(!res.ok)return 'Die Entwicklerversion ist noch nicht veröffentlicht.';}
+      catch{return 'Die Entwicklerversion braucht eine Internetverbindung.';}
+      FK.friends?.flushLog();active?.stop('developer_mode');active=null;activeSession=null;
+      try{sessionStorage.setItem(FK.devSite?.MARK||'waldpost.dev-entered',String(Date.now()));}catch{return 'Die Entwicklerversion kann in diesem Browser nicht geöffnet werden.';}
+      location.assign(target.href);return '';
+    }
     function markTested(session){delete session.logRunId;session.logTested=true;FK.puzzleRounds.save(session);}
     FK.playLog={
       development,
-      setDevelopment(value){
-        FK.friends?.flushLog();FK.settings.set('developerMode',!!value);
+      // On: open the development copy. Off: back to the children's version. Resolves to a message when it cannot.
+      async setDevelopment(value){
+        FK.friends?.flushLog();
+        if(value&&!development())return enterDevelopment();
+        if(!value&&FK.DEV_SITE){FK.devSite.home();return '';}
         if(!value&&new URLSearchParams(location.search).get('dev')==='1'){const url=new URL(location.href);url.searchParams.delete('dev');location.assign(url.href);}
+        return '';
       },
       begin(session){safe(()=>{
         active?.stop();active=null;activeSession=null;if(!session||session.review||session.gallery||session.blocked)return;   // reviews and adult gallery rounds are not observed
@@ -230,7 +246,6 @@
       stop(reason){safe(()=>active?.stop(reason));active=null;activeSession=null;},
       pause:(reason,on)=>safe(()=>active?.pause(reason,on))
     };
-    FK.on('settings',event=>{if(event.key==='developerMode'&&development()){safe(()=>{if(activeSession)markTested(activeSession);});FK.playLog.stop('developer_mode');}});
     document.addEventListener('visibilitychange',()=>{FK.playLog.pause('background',document.hidden);if(document.hidden)FK.friends?.flushLog();});
     root.addEventListener('pagehide',event=>{if(event.persisted)FK.playLog.pause('page_cache',true);else FK.playLog.stop('pagehide');FK.friends?.flushLog();});
     root.addEventListener('pageshow',event=>{if(event.persisted)FK.playLog.pause('page_cache',false);});

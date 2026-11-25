@@ -183,7 +183,7 @@ FK.screen('friends',{
     fader=h('div',{class:'ff-fader','aria-hidden':'true'});
     root.append(canvas,doorScene,denEnvelope,hotspots,nav,nearButton,caption,fader,overlay,statusBar);
     let storage;try{storage=window.localStorage;}catch{storage={getItem(){throw new Error('storage blocked');},setItem(){throw new Error('storage blocked');},removeItem(){}};}
-    state=window.FriendsState.create({storage,content:C,puzzleHosts:()=>FK.friendsLibrary.catalogue().map(g=>g.host),eligible:host=>!FK.puzzleReview||FK.friendsLibrary.catalogue().some(g=>g.host===host&&FK.puzzleReview.ready(g.id)),development:new URLSearchParams(location.search).get('dev')==='1',onStatus:()=>queueMicrotask(saveStatus),appVersion:()=>FK.VERSION,logContext:()=>({screen:FK.current(),viewport:{width:innerWidth,height:innerHeight},textCase:FK.text.mode()})});
+    state=window.FriendsState.create({storage,content:C,puzzleHosts:()=>FK.friendsLibrary.catalogue().map(g=>g.host),eligible:host=>!FK.puzzleReview||FK.friendsLibrary.catalogue().some(g=>g.host===host&&FK.puzzleReview.ready(g.id)),development:FK.DEV_SITE===true||new URLSearchParams(location.search).get('dev')==='1',onStatus:()=>queueMicrotask(saveStatus),appVersion:()=>FK.VERSION,logContext:()=>({screen:FK.current(),viewport:{width:innerWidth,height:innerHeight},textCase:FK.text.mode()})});
     FK.friends=state;letterHeld=state.waiting();
     FK.on('settings',event=>{if(event.key==='developerMode')renderNav();});
     // Released Rätsel can change while playing (review data loads or is withdrawn): keep the open letter playable.

@@ -1,6 +1,10 @@
 /* Farbtupf – Service Worker: keeps the whole app on the device so it runs without internet. */
-const CACHE = 'farbtupf-v9.4.49-waldpost';
 const SCOPE=self.registration.scope;
+// The development copy lives inside the children's site (…/dev/). Each copy keeps its own cache, and the children's
+// worker leaves everything under dev/ alone: it neither answers those requests nor removes their cached files.
+const NESTED=new URL('dev/',SCOPE).href,DEV=/\/dev\/$/.test(new URL(SCOPE).pathname);
+const CACHE = 'farbtupf-v10.0.0-waldpost'+(DEV?'-dev':'');
+const own=url=>url.startsWith(SCOPE)&&(DEV||!url.startsWith(NESTED));
 const INDEX=new URL('index.html',SCOPE).href;
 const ACTIVE_MARKER=new URL('.farbtupf-active-cache',SCOPE).href;
 const ASSETS = [
@@ -26,6 +30,8 @@ const ASSETS = [
   './assets/interface/den-marker.webp',
   './assets/interface/exit-symbol.webp',
   './assets/interface/letter-paper.webp',
+  './js/core/channel.js',
+  './js/friends/released.js',
   './js/friends/review-repository.js',
   './js/ui/review-connection.js',
   './js/core/updates.js',
@@ -215,7 +221,7 @@ async function removeAppCache(name){
   if(!await caches.has(name))return;
   const cache=await caches.open(name),requests=await cache.keys();
   // Other installations can share this origin. Remove only this app's URLs.
-  await Promise.all(requests.filter(r=>r.url.startsWith(SCOPE)).map(r=>cache.delete(r)));
+  await Promise.all(requests.filter(r=>own(r.url)).map(r=>cache.delete(r)));
   if(!(await cache.keys()).length)await caches.delete(name);
 }
 async function prepareCache(){
@@ -231,7 +237,7 @@ async function prepareCache(){
 }
 async function reportFailure(error){
   for(const client of await self.clients.matchAll({type:'window',includeUncontrolled:true})){
-    if(client.url.startsWith(SCOPE))client.postMessage({type:'farbtupf-update-error',name:error.name||'Error',message:error.message||'Update failed'});
+    if(own(client.url))client.postMessage({type:'farbtupf-update-error',name:error.name||'Error',message:error.message||'Update failed'});
   }
 }
 
@@ -284,7 +290,7 @@ async function audioRange(hit, range) {
 
 self.addEventListener('fetch', (event) => {
   const req = event.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin || !own(req.url)) return;
   // This small independent recovery page must remain reachable from old shells.
   if(new URL(req.url).pathname===new URL('update.html',SCOPE).pathname){event.respondWith(fetch(req,{cache:'no-store'}));return;}
   event.respondWith(

@@ -23,6 +23,7 @@ node tests/navigation-browser.cjs   # map dismissal; same back/frame in menus, r
 node tests/puzzle-gallery-browser.cjs   # gallery: only signed-off puzzles, friend filter, five-task round without saving
 node tests/review-seen-browser.cjs   # an answered review task is approved even if its seen mark was lost; dialog buttons fit
 node tests/play-log-browser.cjs
+node tests/release-channel-browser.cjs   # children's version: released Rätsel only, no review, no GitHub traffic
 node tests/puzzle-review-browser.cjs
 node tests/review-sync-browser.cjs
 node tests/review-comments-browser.cjs   # comment X controls, historical duplicates, offline outbox, other devices and unchanged decisions
@@ -67,7 +68,7 @@ See [REVIEW-STORAGE.md](REVIEW-STORAGE.md). Code changes stay on a feature branc
 
 ## Publish and installed-app updates
 
-GitHub Pages serves `main`: <https://mrtolchock.github.io/waldpost/>. Bump `FK.VERSION` in `js/core/util.js` and the cache identifier in `sw.js` whenever cached runtime content changes. Include every active dependency in the offline list. Check CI and the Pages deployment, then compare live critical assets with the pushed commit before reporting deployment.
+GitHub Pages serves the children's version from `main` at <https://mrtolchock.github.io/waldpost/> and the development version from `dev` at `…/dev/` ([channels and release steps](CHANNELS.md)). A release to `main` regenerates `js/friends/released.js` with `node tools/release-manifest.cjs`. Bump `FK.VERSION` in `js/core/util.js` and the cache identifier in `sw.js` whenever cached runtime content changes. Include every active dependency in the offline list. Check CI and the Pages deployment, then compare live critical assets with the pushed commit before reporting deployment.
 
 The game is named **Waldpost** (`FK.APP_NAME`). Browser/install labels and download filenames use this name. Keep historical `farbtupf`/`farbklecks` storage keys, JSON format IDs, updater messages, cache prefixes and the manifest's app identity/URLs stable so existing journeys, logs, reviews and installations remain compatible. Archived names stay historical.
 

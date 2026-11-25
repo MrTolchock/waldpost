@@ -1,0 +1,54 @@
+name: Publish site
+# The children's version (main) at the site root and the development version (dev) at …/dev/.
+# Requires Settings → Pages → Source: "GitHub Actions".
+# Publishes after the checks (Puzzle contract) pass on main or dev. A workflow_run runs in the default branch's
+# context, which the github-pages environment accepts; a red check never reaches either version.
+on:
+  workflow_run:
+    workflows: [Puzzle contract]
+    types: [completed]
+    branches: [main, dev]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+      - name: Check out dev (if it exists)
+        id: dev
+        run: |
+          if git ls-remote --exit-code --heads "https://github.com/${{ github.repository }}.git" dev >/dev/null; then
+            git clone --depth 1 --branch dev "https://github.com/${{ github.repository }}.git" dev
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Assemble site
+        run: |
+          set -euo pipefail
+          copy() { mkdir -p "$2"; tar -C "$1" --exclude=.git --exclude=.github --exclude=tests --exclude=tools --exclude=docs --exclude=design --exclude=legacy -cf - . | tar -C "$2" -xf -; }
+          copy main site
+          rm -rf site/dev
+          if [ "${{ steps.dev.outputs.present }}" = "true" ]; then
+            copy dev site/dev
+            # mark the development copy: review on, own save, no play log, back to the children's version on reopening
+            sed -i '1i window.WALDPOST_DEV_SITE = true;' site/dev/js/core/channel.js
+          fi
+          touch site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
