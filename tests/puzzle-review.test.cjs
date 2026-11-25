@@ -1,7 +1,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 require('./history-hint.cjs')('073657f32f87daa47739910df090e4250289cc55','12511e417e384f8e912be4a62496fce2c234c1e8');
 // 9.4.43: six reading Rätsel are one Rätsel of Dachs; their Aufgaben keep their IDs (home before «/»).
-const R25=require('./review-changes-2026-11-24-reading.cjs'),R26=require('./review-changes-2026-11-25.cjs'),R27=require('./review-changes-2026-11-25-second.cjs');
+const R25=require('./review-changes-2026-11-24-reading.cjs'),R26=require('./review-changes-2026-11-25.cjs'),R27=require('./review-changes-2026-11-25-second.cjs'),R28=require('./review-changes-2026-11-25-third.cjs');
 const {setup,check}=require('../tools/puzzle-catalogue.cjs');
 const plain=v=>JSON.parse(JSON.stringify(v));
 function approve(FK,id){const V=FK.puzzleReview,C=FK.puzzleCatalogue;for(const it of C.iterations(id)){assert.ok(V.seen(id,it.id));assert.ok(V.decide(id,it.id,'approved'));}assert.ok(V.decide(id,null,'approved'));}
@@ -211,7 +211,7 @@ test('the expanded mouse reading pool keeps approval for all 25 original word ca
  assert.equal(items.length,25);assert.equal(R25.items(current,id).length,0,'single-word reading Aufgaben are retired (25 Nov)');
  // On 23 November «Nuss» became the drawn Baumnuss; those three cards reopened on purpose.
  const R23=require('./review-changes-2026-11-23.cjs');
- for(const item of items)assert.equal(current.acceptsRevision(R25.owner(id),item.id,former.iterationRevision(id,item)),!R23.changed(item.id)&&!(R25.changed(item.id)||R26.changed(item.id)||R27.changed(item.id)),item.id);
+ for(const item of items)assert.equal(current.acceptsRevision(R25.owner(id),item.id,former.iterationRevision(id,item)),!R23.changed(item.id)&&!(R25.changed(item.id)||R26.changed(item.id)||R27.changed(item.id)||R28.changed(item.id)),item.id);
 });
 test('verified unchanged partial rounds resume verbatim; changed questions remain archived',()=>{
  const {FK,memory}=setup(),id='add',s=FK.puzzleRounds.start(id);s.round=2;s.work={};s.catalogueRevision=FK.puzzleCatalogue.formerPuzzleRevisions(id)[0];FK.puzzleRounds.save(s);

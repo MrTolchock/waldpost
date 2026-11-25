@@ -126,3 +126,23 @@ Gegen die veröffentlichten Prüfdaten sind damit 12 von 17 Rätseln freigegeben
 | Silben zu Wörtern verbinden | 1 von 28 | 27 | Waldkauz |
 | Zahlennachbarn | 0 von 36 | 36 | Eisvogel |
 
+## Prüfung am Nachmittag (9.4.46)
+
+Der Eigentümer hat alle offenen Aufgaben geprüft. Freigegeben sind:
+
+- Lesen und verstehen: 47
+- Mengen vergleichen: 12
+- Silben zu Wörtern verbinden: 27
+- Zahlennachbarn: 36
+- Reime erkennen: 22
+
+Drei Reime hat er zurückgewiesen, weil die dritte Karte für Kinder doch reimt:
+
+| Aufgabe | Notiz | Neue dritte Karte |
+| --- | --- | --- |
+| `friends-bird/rhyme-3` Hase → Nase | «hase und hose beide reimen sich, anpassen» | Hund statt Hose |
+| `friends-bird/rhyme-6` Hose → Rose | «hose hase und rose reimen sich alle, anpassen» | Hand statt Hase |
+| `friends-bird/rhyme-9` Hand → Sand | «hand sand und hund reimen sich alle» | Haus statt Hund |
+
+Die neue Karte teilt nur noch den Anfangslaut. Vokal und Ende sind anders. Die 22 freigegebenen Reime bleiben unverändert. Damit sind 16 von 17 Rätseln freigegeben. Offen sind nur noch diese drei Aufgaben von Reime erkennen.
+

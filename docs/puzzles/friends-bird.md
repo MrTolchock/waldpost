@@ -118,7 +118,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "Nase",
         "Baum",
-        "Hose"
+        "Hund"
       ]
     }
   },
@@ -166,7 +166,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "Rose",
         "Hut",
-        "Hase"
+        "Hand"
       ]
     }
   },
@@ -214,7 +214,7 @@ These definitions are the same finite data used by the game and review previews.
       "choices": [
         "Sand",
         "Kuh",
-        "Hund"
+        "Haus"
       ]
     }
   },

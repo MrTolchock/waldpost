@@ -45,8 +45,9 @@
     ['Mund','Hund','Stern'],['Dach','Bach','Schuh'],['Ziege','Fliege','Nase']
   ]);
   // 25 Nov (owner, release review C-5): a third card sounds close but does not rhyme (same beginning or vowel),
-  // so the child has to listen to the ending; guessing is right only one time in three.
-  const nearRhyme={Tisch:'Tasse',Bein:'Ball',Kuh:'Kopf',Hase:'Hose',Rose:'Nase',Buch:'Bus',Hose:'Hase',Turm:'Tuch',Topf:'Tonne',Hand:'Hund',Schal:'Schuh',Seil:'Stein',Tasse:'Tanne',Bank:'Ball',Stern:'Stein',Maus:'Mund',Nuss:'Nase',Boot:'Bach',Biene:'Bein',Schnecke:'Schrank',Sonne:'Sand',Kanne:'Kasse',Mund:'Maus',Dach:'Dose',Ziege:'Biene'};
+  // so the child has to listen to the ending; guessing is right only one time in three. Review 25 Nov: Hase/Hose and
+  // Hand/Hund count as rhymes for children, so those cards share only the first sound (Hase: Hund, Hose: Hand, Hand: Haus).
+  const nearRhyme={Tisch:'Tasse',Bein:'Ball',Kuh:'Kopf',Hase:'Hund',Rose:'Nase',Buch:'Bus',Hose:'Hand',Turm:'Tuch',Topf:'Tonne',Hand:'Haus',Schal:'Schuh',Seil:'Stein',Tasse:'Tanne',Bank:'Ball',Stern:'Stein',Maus:'Mund',Nuss:'Nase',Boot:'Bach',Biene:'Bein',Schnecke:'Schrank',Sonne:'Sand',Kanne:'Kasse',Mund:'Maus',Dach:'Dose',Ziege:'Biene'};
   rhymes.forEach(([text,answer,wrong],i)=>add('friends-bird','rhyme-'+i,text+' – '+answer,{kind:'rhyme',prompt:'Welches Wort reimt sich?',text,picture:wordArt[text],answer,choices:[answer,wrong,nearRhyme[text]]}));
   C.pools.owl.forEach((t,i)=>{
     // Like the other short sentences, compare actions of the same animal.
