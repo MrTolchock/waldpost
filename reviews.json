@@ -32016,6 +32016,24 @@
       "at": "2026-11-25T12:26:45.961Z",
       "seen": true,
       "operation": "63854e13-7441-464f-9c6f-e906426e023c"
+    },
+    "neighbours/18-left@42da5aca9a8393f2": {
+      "key": "neighbours/18-left",
+      "revision": "42da5aca9a8393f2",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:26:48.024Z",
+      "seen": true,
+      "operation": "a88c897b-acab-4653-9890-8290ec6c7930"
+    },
+    "puzzle:neighbours@ead445bf12d1b7fd": {
+      "key": "puzzle:neighbours",
+      "revision": "ead445bf12d1b7fd",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:26:51.193Z",
+      "seen": true,
+      "operation": "6c3d2f82-4796-4144-8cd9-d460e12fbf0e"
     }
   },
   "history": [
