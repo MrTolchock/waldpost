@@ -30675,6 +30675,438 @@
       "at": "2026-11-25T07:48:18.181Z",
       "seen": true,
       "operation": "94d9c5ba-d353-4bd7-9f29-e5d55c2a7553"
+    },
+    "friends-badger/riddle-2@7ba0b387cf4b2aeb": {
+      "key": "friends-badger/riddle-2",
+      "revision": "7ba0b387cf4b2aeb",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:25.860Z",
+      "seen": true,
+      "operation": "580c4f8a-9316-4173-b810-a49d508bde7f"
+    },
+    "friends-badger/riddle-4@850d9505838e0701": {
+      "key": "friends-badger/riddle-4",
+      "revision": "850d9505838e0701",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:28.473Z",
+      "seen": true,
+      "operation": "2da47f35-22ae-4277-a9fa-c26d941ff01f"
+    },
+    "friends-badger/riddle-5@92d691dc986c149a": {
+      "key": "friends-badger/riddle-5",
+      "revision": "92d691dc986c149a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:30.955Z",
+      "seen": true,
+      "operation": "df19c0ef-ba7b-4efb-b6d2-fd9645711296"
+    },
+    "friends-badger/riddle-6@c756b8fb0d8adea9": {
+      "key": "friends-badger/riddle-6",
+      "revision": "c756b8fb0d8adea9",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:34.836Z",
+      "seen": true,
+      "operation": "de023eb0-ed13-4338-bb67-23e6edda4a3e"
+    },
+    "friends-badger/riddle-7@deb670e46981d3c0": {
+      "key": "friends-badger/riddle-7",
+      "revision": "deb670e46981d3c0",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:37.219Z",
+      "seen": true,
+      "operation": "9ad113fc-3709-4308-ac77-3fab3375ed8b"
+    },
+    "friends-badger/riddle-8@61d371f823d9345a": {
+      "key": "friends-badger/riddle-8",
+      "revision": "61d371f823d9345a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:41.522Z",
+      "seen": true,
+      "operation": "7d8633d7-f1d8-473e-82d0-a465ea920a45"
+    },
+    "friends-badger/riddle-9@ea2b1b363566bd56": {
+      "key": "friends-badger/riddle-9",
+      "revision": "ea2b1b363566bd56",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:44.221Z",
+      "seen": true,
+      "operation": "4226e1d9-32c3-4065-99f8-876f67cc9606"
+    },
+    "friends-badger/riddle-10@5c12ba733e391391": {
+      "key": "friends-badger/riddle-10",
+      "revision": "5c12ba733e391391",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:47.121Z",
+      "seen": true,
+      "operation": "1df6b713-5f25-48be-a7d6-07b08a7aa394"
+    },
+    "friends-badger/riddle-11@d6f4cb6c121a53ae": {
+      "key": "friends-badger/riddle-11",
+      "revision": "d6f4cb6c121a53ae",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:11:56.766Z",
+      "seen": true,
+      "operation": "bf27bf41-e835-4cb6-afe3-4e3b7f8aed16"
+    },
+    "friends-badger/riddle-12@115d63cea8ce00bc": {
+      "key": "friends-badger/riddle-12",
+      "revision": "115d63cea8ce00bc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:00.850Z",
+      "seen": true,
+      "operation": "4fd8091b-a373-429d-a787-f9f58ad3b2e2"
+    },
+    "friends-badger/riddle-15@605e249b64fbc511": {
+      "key": "friends-badger/riddle-15",
+      "revision": "605e249b64fbc511",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:03.761Z",
+      "seen": true,
+      "operation": "67ae5dc8-545d-4aaa-b3a6-52c3846167ca"
+    },
+    "friends-badger/riddle-16@0f660a75b068eda5": {
+      "key": "friends-badger/riddle-16",
+      "revision": "0f660a75b068eda5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:07.083Z",
+      "seen": true,
+      "operation": "f0979d15-2e6a-42b9-bc2a-7fd5ae2c96f0"
+    },
+    "friends-badger/riddle-17@1fdcdc5868b9cc3c": {
+      "key": "friends-badger/riddle-17",
+      "revision": "1fdcdc5868b9cc3c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:12.127Z",
+      "seen": true,
+      "operation": "0836d8e3-957a-48a8-ac8b-c0af8667b204"
+    },
+    "friends-badger/riddle-20@be3d23e6b8f1ad1c": {
+      "key": "friends-badger/riddle-20",
+      "revision": "be3d23e6b8f1ad1c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:16.475Z",
+      "seen": true,
+      "operation": "1e2bf9aa-2339-4ee8-9dc0-6249d0577b2f"
+    },
+    "friends-badger/riddle-21@55d70c60db4f27e8": {
+      "key": "friends-badger/riddle-21",
+      "revision": "55d70c60db4f27e8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:19.293Z",
+      "seen": true,
+      "operation": "e0240de3-1e67-43fa-9010-69b5dc1acff1"
+    },
+    "friends-badger/riddle-22@5bc17e2d60b17b49": {
+      "key": "friends-badger/riddle-22",
+      "revision": "5bc17e2d60b17b49",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:22.610Z",
+      "seen": true,
+      "operation": "1cb2e8e7-d720-4d93-b238-5cb3f0ef8f84"
+    },
+    "friends-badger/riddle-23@d5c693ccfa8f8d20": {
+      "key": "friends-badger/riddle-23",
+      "revision": "d5c693ccfa8f8d20",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:28.228Z",
+      "seen": true,
+      "operation": "ecc12311-fc62-4e22-aa30-ce6449a5a947"
+    },
+    "friends-badger/riddle-24@74a40a1b8d4b78cd": {
+      "key": "friends-badger/riddle-24",
+      "revision": "74a40a1b8d4b78cd",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:30.576Z",
+      "seen": true,
+      "operation": "2d0f1a0c-5a6e-4f5d-893f-a34174cf97aa"
+    },
+    "friends-deer/riddle-1@cc8cbda4239f4a18": {
+      "key": "friends-deer/riddle-1",
+      "revision": "cc8cbda4239f4a18",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:36.021Z",
+      "seen": true,
+      "operation": "83a9fecc-b52c-4330-8a8a-274cdb3e07e3"
+    },
+    "friends-deer/riddle-2@0e7cab1393cdff03": {
+      "key": "friends-deer/riddle-2",
+      "revision": "0e7cab1393cdff03",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:38.689Z",
+      "seen": true,
+      "operation": "22b61beb-1426-411d-82bb-18d943edf36d"
+    },
+    "friends-deer/riddle-3@1082194f17bbf819": {
+      "key": "friends-deer/riddle-3",
+      "revision": "1082194f17bbf819",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:41.421Z",
+      "seen": true,
+      "operation": "fb75366b-c23e-4de0-bdd9-5c303be35c06"
+    },
+    "friends-deer/riddle-6@97df15c52a7832bf": {
+      "key": "friends-deer/riddle-6",
+      "revision": "97df15c52a7832bf",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:44.304Z",
+      "seen": true,
+      "operation": "90c43dc5-2c61-4119-a232-0ecbf31c444e"
+    },
+    "friends-deer/riddle-10@1ce0d33fd991a541": {
+      "key": "friends-deer/riddle-10",
+      "revision": "1ce0d33fd991a541",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:47.285Z",
+      "seen": true,
+      "operation": "53ad2b50-402b-4959-8c2b-4317d720e2d5"
+    },
+    "friends-deer/riddle-12@3e664eed46691f8f": {
+      "key": "friends-deer/riddle-12",
+      "revision": "3e664eed46691f8f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:50.401Z",
+      "seen": true,
+      "operation": "ff2902c0-0f77-4e83-829b-e03460606648"
+    },
+    "friends-deer/riddle-21@1d9f0446696f1a9e": {
+      "key": "friends-deer/riddle-21",
+      "revision": "1d9f0446696f1a9e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:54.187Z",
+      "seen": true,
+      "operation": "de0e4ba7-6038-41b0-a45b-b9f1f30ea2f3"
+    },
+    "friends-deer/riddle-23@f1ec08ff4924af69": {
+      "key": "friends-deer/riddle-23",
+      "revision": "f1ec08ff4924af69",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:12:57.232Z",
+      "seen": true,
+      "operation": "54026480-a22d-4efb-abad-be4e8250a41d"
+    },
+    "friends-deer/riddle-24@57e7309517a2e1eb": {
+      "key": "friends-deer/riddle-24",
+      "revision": "57e7309517a2e1eb",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:00.384Z",
+      "seen": true,
+      "operation": "8c56f067-ed5a-4eee-82b3-7ee3706e98f5"
+    },
+    "friends-hedgehog/riddle-2@b4bf1152b0201cdc": {
+      "key": "friends-hedgehog/riddle-2",
+      "revision": "b4bf1152b0201cdc",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:03.531Z",
+      "seen": true,
+      "operation": "570f1a2a-81c6-44a0-9c9a-89f8f8dd57a3"
+    },
+    "friends-hedgehog/riddle-4@95c0c481964783bd": {
+      "key": "friends-hedgehog/riddle-4",
+      "revision": "95c0c481964783bd",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:06.497Z",
+      "seen": true,
+      "operation": "311a4181-ae2f-41ee-bd22-bf1f18d9d16a"
+    },
+    "friends-hedgehog/riddle-8@790ad89337ed06eb": {
+      "key": "friends-hedgehog/riddle-8",
+      "revision": "790ad89337ed06eb",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:09.346Z",
+      "seen": true,
+      "operation": "a892465f-cc8d-4923-a782-2d235f4f1b05"
+    },
+    "friends-hedgehog/riddle-18@75c40ff31ba51e99": {
+      "key": "friends-hedgehog/riddle-18",
+      "revision": "75c40ff31ba51e99",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:11.896Z",
+      "seen": true,
+      "operation": "6e2702b4-57be-4e94-bdd0-7d8896ea75d0"
+    },
+    "friends-hedgehog/riddle-19@f7aa1d86a15f350a": {
+      "key": "friends-hedgehog/riddle-19",
+      "revision": "f7aa1d86a15f350a",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:14.160Z",
+      "seen": true,
+      "operation": "01bec01a-53d1-4e74-94b9-360ab311c77f"
+    },
+    "friends-hedgehog/riddle-20@917703548d8e55ca": {
+      "key": "friends-hedgehog/riddle-20",
+      "revision": "917703548d8e55ca",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:16.529Z",
+      "seen": true,
+      "operation": "b85f6e39-d33e-4276-8a59-2b2a169c12e3"
+    },
+    "friends-hedgehog/riddle-21@b4fbe177e5544d31": {
+      "key": "friends-hedgehog/riddle-21",
+      "revision": "b4fbe177e5544d31",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:18.926Z",
+      "seen": true,
+      "operation": "646a9d71-b83a-470d-9225-e1a615ce0ae4"
+    },
+    "friends-hedgehog/riddle-23@4f22d9a3516b762f": {
+      "key": "friends-hedgehog/riddle-23",
+      "revision": "4f22d9a3516b762f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:22.324Z",
+      "seen": true,
+      "operation": "684802d2-1e43-4d39-a36d-5d485aa31ebe"
+    },
+    "friends-hedgehog/nature-question-3@165fa58cfd50b0b6": {
+      "key": "friends-hedgehog/nature-question-3",
+      "revision": "165fa58cfd50b0b6",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:24.923Z",
+      "seen": true,
+      "operation": "4696bdb1-3200-4dab-99b4-26932bf09496"
+    },
+    "friends-hedgehog/nature-question-6@270551b797a202f7": {
+      "key": "friends-hedgehog/nature-question-6",
+      "revision": "270551b797a202f7",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:27.042Z",
+      "seen": true,
+      "operation": "82799ca0-2d42-4061-ad9d-8cf913d678bb"
+    },
+    "friends-hedgehog/nature-question-7@64ea6d773b6c8111": {
+      "key": "friends-hedgehog/nature-question-7",
+      "revision": "64ea6d773b6c8111",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:30.212Z",
+      "seen": true,
+      "operation": "9f7042a7-e234-42ad-accb-16bb585371d2"
+    },
+    "friends-hedgehog/nature-question-9@ac9e8f8ef957db24": {
+      "key": "friends-hedgehog/nature-question-9",
+      "revision": "ac9e8f8ef957db24",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:34.408Z",
+      "seen": true,
+      "operation": "73551e99-3238-46c9-8d63-a778e7fa2de6"
+    },
+    "friends-hedgehog/nature-question-11@9a29719a3ceb0bb2": {
+      "key": "friends-hedgehog/nature-question-11",
+      "revision": "9a29719a3ceb0bb2",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:38.942Z",
+      "seen": true,
+      "operation": "8119df7a-5641-4d56-9c36-6a2a2ae0cb06"
+    },
+    "friends-hedgehog/nature-question-14@c7b13ea1e584e5c1": {
+      "key": "friends-hedgehog/nature-question-14",
+      "revision": "c7b13ea1e584e5c1",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:41.954Z",
+      "seen": true,
+      "operation": "e2fcdee4-83a3-470a-ade0-d7ed722dfe47"
+    },
+    "friends-hedgehog/nature-question-16@a3030d4868861286": {
+      "key": "friends-hedgehog/nature-question-16",
+      "revision": "a3030d4868861286",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:44.454Z",
+      "seen": true,
+      "operation": "588fb0e5-a252-47d6-bd1b-3f99d9448246"
+    },
+    "friends-hedgehog/nature-question-17@389b55a29e21d83e": {
+      "key": "friends-hedgehog/nature-question-17",
+      "revision": "389b55a29e21d83e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:46.873Z",
+      "seen": true,
+      "operation": "4cacc1e8-d3cd-4d72-92c6-bc96a1589cd8"
+    },
+    "friends-hedgehog/nature-question-18@363157ffd139ac41": {
+      "key": "friends-hedgehog/nature-question-18",
+      "revision": "363157ffd139ac41",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:50.688Z",
+      "seen": true,
+      "operation": "bdf83f59-7ac6-45db-a252-b6b1cb3ee761"
+    },
+    "friends-hedgehog/nature-question-20@3e1b83f4fda98bda": {
+      "key": "friends-hedgehog/nature-question-20",
+      "revision": "3e1b83f4fda98bda",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:54.988Z",
+      "seen": true,
+      "operation": "bce4c3d7-f8c9-498e-bbf3-bceb45c44e98"
+    },
+    "friends-hedgehog/nature-question-21@1affc0693f67b81f": {
+      "key": "friends-hedgehog/nature-question-21",
+      "revision": "1affc0693f67b81f",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:13:58.037Z",
+      "seen": true,
+      "operation": "ddbf0d7c-643f-4e48-8fd5-36f44cd54cd8"
+    },
+    "friends-hedgehog/nature-question-24@7d242f4342ab4ced": {
+      "key": "friends-hedgehog/nature-question-24",
+      "revision": "7d242f4342ab4ced",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:14:01.299Z",
+      "seen": true,
+      "operation": "042f0381-2015-461e-a1fe-a3f3078894b4"
+    },
+    "puzzle:friends-badger@8590344bf8ec6e81": {
+      "key": "puzzle:friends-badger",
+      "revision": "8590344bf8ec6e81",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:14:04.494Z",
+      "seen": true,
+      "operation": "0475a4c2-1811-4c24-8489-1cc2da976d9a"
     }
   },
   "history": [
