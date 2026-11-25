@@ -32034,6 +32034,42 @@
       "at": "2026-11-25T12:26:51.193Z",
       "seen": true,
       "operation": "6c3d2f82-4796-4144-8cd9-d460e12fbf0e"
+    },
+    "friends-bird/rhyme-3@5cd78cc42c3b65e8": {
+      "key": "friends-bird/rhyme-3",
+      "revision": "5cd78cc42c3b65e8",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:45:01.599Z",
+      "seen": true,
+      "operation": "4744445a-3595-4d53-b197-0016161eaf39"
+    },
+    "friends-bird/rhyme-6@e6fff1f00eeb276e": {
+      "key": "friends-bird/rhyme-6",
+      "revision": "e6fff1f00eeb276e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:45:04.243Z",
+      "seen": true,
+      "operation": "08a9bf4c-201e-46a7-9ba1-4d55f07a57e5"
+    },
+    "friends-bird/rhyme-9@c6a51c08dbac038c": {
+      "key": "friends-bird/rhyme-9",
+      "revision": "c6a51c08dbac038c",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:45:07.305Z",
+      "seen": true,
+      "operation": "5f2e4888-c551-4e6d-872f-4b8daf9c9504"
+    },
+    "puzzle:friends-bird@2a4f72c5055d03d5": {
+      "key": "puzzle:friends-bird",
+      "revision": "2a4f72c5055d03d5",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:45:10.464Z",
+      "seen": true,
+      "operation": "70c2a425-a974-4d26-8564-e35dec20c989"
     }
   },
   "history": [
@@ -32444,6 +32480,21 @@
       "key": "friends-bird/rhyme-16",
       "note": "Tisch and fisch iteration counts as same as fisch and tisch, just swapping is not ok. Just keep one and delete rest, fill wirh new iterations. Counts for all such cases in this puzzle",
       "at": "2026-11-17T20:26:08.658Z"
+    },
+    {
+      "key": "friends-bird/rhyme-3",
+      "note": "hase und hose beide reimen sich, anpassen",
+      "at": "2026-11-25T12:44:57.946Z"
+    },
+    {
+      "key": "friends-bird/rhyme-6",
+      "note": "hose hase und rose reimen sich alle, anpassen",
+      "at": "2026-11-25T12:44:58.630Z"
+    },
+    {
+      "key": "friends-bird/rhyme-9",
+      "note": "hand sand und hund reimen sich alle",
+      "at": "2026-11-25T12:44:57.294Z"
     },
     {
       "key": "friends-deer/riddle-0",
