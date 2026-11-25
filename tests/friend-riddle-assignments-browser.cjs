@@ -57,7 +57,8 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
    await page.evaluate(()=>FK.go('puzzle-gallery'));
    for(const [host,name]of Object.entries(hosts)){
     const expected=games.filter(game=>game.host===host).map(game=>game.id).sort();
-    assert.equal(expected.length,host==='ibex'||host==='badger'?1:2,host);
+    // since 9.4.43 the reading Rätsel are Dachs' only one; Eule, Maus, Igel, Reh, Eisvogel and Steinbock keep one each
+    assert.equal(expected.length,['squirrel','bird','beaver','fish','frog'].includes(host)?2:1,host);
     await active().getByRole('button',{name:name+' ('+expected.length+')',exact:true}).click();
     const cards=active().locator('.gallery-puzzle');
     assert.deepEqual((await cards.evaluateAll(nodes=>nodes.map(node=>node.dataset.puzzle))).sort(),expected);

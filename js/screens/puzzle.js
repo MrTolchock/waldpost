@@ -364,7 +364,8 @@
     },
     enter(params){
       alive=true;root.scrollTop=0;game=params.game;const entry=FK.friendsLibrary.catalogue().find(g=>g.id===game);
-      if(!entry||entry.screen!=='puzzle'){FK.go('forest-book');return;}
+      // A removed or unknown Rätsel (old link, saved state) returns the child to the forest, never to an adult page.
+      if(!entry||entry.screen!=='puzzle'){FK.go(['puzzle-review','puzzle-gallery'].includes(params.returnTo)?params.returnTo:'friends');return;}
       origin=['forest-book','puzzle-review','puzzle-gallery'].includes(params.returnTo)?params.returnTo:'friends';host=entry.host;root.dataset.host=host;root.setAttribute('aria-label',entry.title);
       session=null;root.querySelector('.review-reject')?.remove();delete root.dataset.reviewIteration;
       if(params.reviewIteration||params.reviewQueue||params.reviewRound)session=FK.puzzleReview.previewSession(game,params.reviewIteration);
