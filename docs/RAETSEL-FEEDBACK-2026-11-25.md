@@ -167,3 +167,9 @@ Die Sammlung umfasst jetzt **16 Rätsel mit 627 Aufgaben**.
 - Zahlennachbarn: alle 36 Aufgaben
 
 Die geänderte Rundenauswahl betrifft nur die Reihenfolge, in der Aufgaben gezogen werden. Eine Brücke vom Release `81b0bcd` (9.4.46) hält die übrigen 513 Aufgaben und 14 Rätsel freigegeben (`tests/review-changes-2026-11-25-fourth.cjs`). Gegen die veröffentlichten Prüfdaten sind 14 von 16 Rätseln freigegeben. Bis die 114 offenen Aufgaben in der Rätsel-Prüfung freigegeben sind, bekommen Dachs und Eisvogel keine Briefe. Der vierte Reim-Befund (R-2 der Prüfung) bleibt auf Wunsch des Eigentümers unverändert.
+
+## Zahlennachbarn: Ring weg, wenn das Feld wechselt (9.4.48)
+
+Wunsch des Eigentümers: Bei «? 2 ?» tippt das Kind zuerst auf 3. Die 3 bekommt den gestrichelten Ring, weil zuerst die Zahl davor gefragt ist. Dann tippt es auf 1, und die 1 kommt ins linke Feld. Jetzt ist die Zahl danach gefragt, und die 3 kann richtig sein. Deshalb verschwinden die Ringe aller früher falsch getippten Zahlen, sobald ein Feld gefüllt ist.
+
+Das ändert die Bedienung, deshalb sind die 36 Aufgaben der Zahlennachbarn wieder offen (auch die fünf, die nach 9.4.47 schon freigegeben waren). Alle anderen Aufgaben behalten ihre Freigaben. Gegen die veröffentlichten Prüfdaten sind 15 von 16 Rätseln freigegeben; «Lesen und verstehen» ist nach der Prüfung vom Nachmittag wieder freigegeben.

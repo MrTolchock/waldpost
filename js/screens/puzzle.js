@@ -257,13 +257,15 @@
     }
     // 25 Nov (owner): tap instead of drag and drop. The fields fill in order: the first tap answers the first open
     // field (davor), the next one the second (danach), so the child decides which number comes before and which after.
-    // A wrong number gets the usual retry ring and stays where it is.
+    // A wrong number gets the usual retry ring and stays where it is. Once a field is filled, the next field is a new
+    // question: the rings of earlier wrong taps disappear, because such a number can be right there (? 2 ?: 3 first is
+    // wrong, after 1 it is the number after).
     function tap(value,tile){
       if(locked)return;
       const pos=values.findIndex(v=>v===null);
       if(pos<0)return;
       if(q.answer[pos]!==value){fail(tile,undefined,value);return;}
-      tile.classList.remove('is-retry');place(value,pos);
+      answerArea.querySelectorAll('.puzzle-neighbour-tile.is-retry').forEach(t=>t.classList.remove('is-retry'));place(value,pos);
     }
     function place(value,pos){
       values[pos]=value;work().neighbours=values;persist();slots[pos].firstChild.textContent=value;slots[pos].classList.add('filled');

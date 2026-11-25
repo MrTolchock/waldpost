@@ -5,7 +5,7 @@ const {sameReviewPresentation}=require('../tools/puzzle-layout-compatibility.cjs
 const {environment}=require('../tools/puzzle-environment.cjs'),{snapshotReader}=require('../tools/puzzle-review-build.cjs');
 // Aufgaben changed or added on 23 November (9.4.33) reopen on purpose; all others keep every earlier decision.
 // Aufgaben whose question changed with the unified layout (9.4.41) reopen too.
-const R25=require('./review-changes-2026-11-24-reading.cjs'),R26=require('./review-changes-2026-11-25.cjs'),R27=require('./review-changes-2026-11-25-second.cjs'),R28=require('./review-changes-2026-11-25-third.cjs'),R29=require('./review-changes-2026-11-25-fourth.cjs');
+const R25=require('./review-changes-2026-11-24-reading.cjs'),R26=require('./review-changes-2026-11-25.cjs'),R27=require('./review-changes-2026-11-25-second.cjs'),R28=require('./review-changes-2026-11-25-third.cjs'),R29=require('./review-changes-2026-11-25-fourth.cjs'),R30=require('./review-changes-2026-11-25-fifth.cjs');
 const R24=require('./review-changes-2026-11-24.cjs'),release40=baselines.releases.find(r=>r.commit===R24.commit);
 // 9.4.42: one success look, neighbour card shape and narrow-phone grids (presentation only, every Aufgabe kept).
 const release42=baselines.releases.find(r=>r.commit===R25.commit);
@@ -17,6 +17,8 @@ const release44=baselines.releases.find(r=>r.commit===R27.commit);
 const release45=baselines.releases.find(r=>r.commit===R28.commit);
 // 9.4.47: the round selection avoids repeated reading pictures; Mengen zählen is retired, Dachs and Zahlennachbarn reopen.
 const release46=baselines.releases.find(r=>r.commit===R29.commit);
+// 9.4.48: Zahlennachbarn clear earlier retry rings once a field is filled; only its Aufgaben change.
+const release47=baselines.releases.find(r=>r.commit===R30.commit);
 const release41=baselines.releases.find(r=>r.commit==='a05b3a838ae654f1a3b8b18cce37397bb3eb8988');
 const R23=require('./review-changes-2026-11-23.cjs'),release32=baselines.releases.find(r=>r.commit==='9efa9ddd0b5ce64a0c625433ba483b3e5442248c'),release35=baselines.releases.find(r=>r.commit==='e4f4e7e566435cad7c26619466a712087a40e664'),release36=baselines.releases.find(r=>r.commit==='d369e95fb46421103b77ca71a96c3ccce378b757'),release37=baselines.releases.find(r=>r.commit==='18684545406bb5eb7932c0bce134bc99af069dbc'),release38=baselines.releases.find(r=>r.commit==='9a4009f94b7be863517fefb8e13510ad4332c078'),release39=baselines.releases.find(r=>r.commit==='01791c164c1f86ecc64599350577bc6467a57cc3');
 // Compare against the last shared-clearing release and exercise every bridge
@@ -95,7 +97,7 @@ test('background-only habitat changes preserve every existing puzzle and task re
   else if(!reviewed22.has(game.id)&&!R23.puzzles.has(game.id)){
    assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),true,game.id);
    // The 9.4.33 bridge adds exactly the 9.4.32 release to the previously compatible ones.
-   assert.deepEqual(new Set(catalogue.formerPuzzleRevisions(game.id)),new Set([...historicalCatalogue.puzzleRevisions(game.id),release32.puzzles[game.id].revision,release35.puzzles[game.id].revision,release36.puzzles[game.id].revision,release37.puzzles[game.id].revision,release38.puzzles[game.id].revision,release39.puzzles[game.id].revision,release40.puzzles[game.id].revision,release41.puzzles[game.id].revision,release42.puzzles[game.id].revision,release43.puzzles[game.id].revision,release44.puzzles[game.id].revision,release45.puzzles[game.id].revision,release46.puzzles[game.id].revision]),game.id+' retains exactly the previously compatible releases');
+   assert.deepEqual(new Set(catalogue.formerPuzzleRevisions(game.id)),new Set([...historicalCatalogue.puzzleRevisions(game.id),release32.puzzles[game.id].revision,release35.puzzles[game.id].revision,release36.puzzles[game.id].revision,release37.puzzles[game.id].revision,release38.puzzles[game.id].revision,release39.puzzles[game.id].revision,release40.puzzles[game.id].revision,release41.puzzles[game.id].revision,release42.puzzles[game.id].revision,release43.puzzles[game.id].revision,release44.puzzles[game.id].revision,release45.puzzles[game.id].revision,release46.puzzles[game.id].revision,release47.puzzles[game.id].revision]),game.id+' retains exactly the previously compatible releases');
   }else if(!reviewed22.has(game.id))assert.equal(catalogue.acceptsRevision(game.id,null,historicalCatalogue.puzzleRevision(game.id)),false,game.id+' reopens after the 23 November change');
   for(const it of catalogue.iterations(game.id).filter(it=>!R27.added.has(it.id))){
    const home=R25.home(it.id),before=historicalCatalogue.iterations(home).find(old=>old.id===it.id);
@@ -105,7 +107,7 @@ test('background-only habitat changes preserve every existing puzzle and task re
    }
    assert.deepEqual(JSON.parse(JSON.stringify(it.question)),JSON.parse(JSON.stringify(before.question)),'backgrounds preserve the task '+it.id);
    assert.equal(catalogue.acceptsRevision(game.id,it.id,historicalCatalogue.iterationRevision(home,before)),true,it.id);
-   assert.deepEqual(new Set(catalogue.formerIterationRevisions(game.id,it)),new Set([...historicalCatalogue.iterationRevisions(home,before),release32.iterations[it.id].revision,release35.iterations[it.id].revision,release36.iterations[it.id].revision,release37.iterations[it.id].revision,release38.iterations[it.id].revision,release39.iterations[it.id].revision,release40.iterations[it.id].revision,release41.iterations[it.id].revision,release42.iterations[it.id].revision,release43.iterations[it.id].revision,release44.iterations[it.id].revision,release45.iterations[it.id].revision,release46.iterations[it.id].revision]),it.id+' does not revive incompatible task decisions');
+   assert.deepEqual(new Set(catalogue.formerIterationRevisions(game.id,it)),new Set([...historicalCatalogue.iterationRevisions(home,before),release32.iterations[it.id].revision,release35.iterations[it.id].revision,release36.iterations[it.id].revision,release37.iterations[it.id].revision,release38.iterations[it.id].revision,release39.iterations[it.id].revision,release40.iterations[it.id].revision,release41.iterations[it.id].revision,release42.iterations[it.id].revision,release43.iterations[it.id].revision,release44.iterations[it.id].revision,release45.iterations[it.id].revision,release46.iterations[it.id].revision,release47.iterations[it.id].revision]),it.id+' does not revive incompatible task decisions');
   }
  }
 });
@@ -116,7 +118,7 @@ test('the 23 November habitat paintings and layout corrections keep exactly the 
  let kept=0,reopened=0;
  for(const game of setup().FK.friendsLibrary.catalogue())for(const it of catalogue.iterations(game.id).filter(it=>!R27.added.has(it.id))){
   const before=release32.iterations[it.id];
-  if(!before){assert.ok(R23.added(it.id),it.id+' is new');assert.deepEqual([...catalogue.formerIterationRevisions(game.id,it)].filter(r=>r!==release35.iterations[it.id].revision&&r!==release36.iterations[it.id].revision&&r!==release37.iterations[it.id].revision&&r!==release38.iterations[it.id].revision&&r!==release39.iterations[it.id].revision&&r!==release40.iterations[it.id].revision&&r!==release41.iterations[it.id].revision&&r!==release42.iterations[it.id].revision&&r!==release43.iterations[it.id].revision&&r!==release44.iterations[it.id].revision&&r!==release45.iterations[it.id].revision&&r!==release46.iterations[it.id].revision),[],it.id+' inherits nothing from before its addition');continue;}
+  if(!before){assert.ok(R23.added(it.id),it.id+' is new');assert.deepEqual([...catalogue.formerIterationRevisions(game.id,it)].filter(r=>r!==release35.iterations[it.id].revision&&r!==release36.iterations[it.id].revision&&r!==release37.iterations[it.id].revision&&r!==release38.iterations[it.id].revision&&r!==release39.iterations[it.id].revision&&r!==release40.iterations[it.id].revision&&r!==release41.iterations[it.id].revision&&r!==release42.iterations[it.id].revision&&r!==release43.iterations[it.id].revision&&r!==release44.iterations[it.id].revision&&r!==release45.iterations[it.id].revision&&r!==release46.iterations[it.id].revision&&r!==release47.iterations[it.id].revision),[],it.id+' inherits nothing from before its addition');continue;}
   const accepted=catalogue.acceptsRevision(game.id,it.id,before.revision);
   assert.equal(accepted,!R23.changed(it.id)&&!R24.changed(it.id)&&!(R25.changed(it.id)||R26.changed(it.id)||R27.changed(it.id)||R28.changed(it.id)||R29.changed(it.id)),it.id);accepted?kept++:reopened++;
   if(R23.changedFirst(it.id))assert.equal(Boolean(migration.iterations[it.id]),false,it.id+' has no bridge edge');
@@ -265,4 +267,13 @@ test('9.4.47: no repeated reading pictures keeps every unchanged 9.4.46 review; 
  // A round of «Lesen und verstehen» never shows a picture twice.
  for(let seed=1;seed<=3000;seed++){const items=C.select('friends-badger',seed*7919+13),pics=items.flatMap(it=>it.question.choices.map(c=>Array.isArray(c)?'flower-'+c[0]:c));
   assert.equal(items.length,5);assert.equal(new Set(items.map(it=>it.id)).size,5);assert.equal(new Set(pics).size,pics.length,'seed '+seed);}
+});
+
+test('9.4.48: cleared retry rings in Zahlennachbarn reopen only its Aufgaben; every other 9.4.47 review stays',()=>{
+ const {FK}=setup(),C=FK.puzzleCatalogue;let kept=0,reopened=0;
+ for(const game of FK.friendsLibrary.catalogue()){
+  assert.equal(C.acceptsRevision(game.id,null,release47.puzzles[game.id].revision),!R30.puzzleChanged(game.id),game.id);
+  for(const it of C.iterations(game.id)){const accepted=C.acceptsRevision(game.id,it.id,release47.iterations[it.id].revision);assert.equal(accepted,!R30.changed(it.id),it.id);accepted?kept++:reopened++;}
+ }
+ assert.equal(kept,591);assert.equal(reopened,36);
 });

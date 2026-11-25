@@ -126,7 +126,8 @@ test('unchanged riddles retain approvals while reassigned and new riddles requir
  const release38=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='9a4009f94b7be863517fefb8e13510ad4332c078'); // review celebration bridge
  const release39=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='01791c164c1f86ecc64599350577bc6467a57cc3'); // read-aloud removal bridge
  // Farbwörter is part of Dachs' reading Rätsel since 9.4.43: the merged Rätsel inherits no puzzle-level decision from
- // before the merge. 9.4.47 changes its rule (no single words), so no earlier «Lesen und verstehen» decision carries over.
- assert.equal(catalogue.puzzle('colour-words'),null);assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions('friends-badger')),[]);
+ // before the merge. 9.4.47 changes its rule (no single words); only the unchanged 9.4.47 «Lesen und verstehen» carries over to 9.4.48.
+ const release47=require('../tools/puzzle-review-baselines.json').releases.find(release=>release.commit==='7d5bb0cad4d44ae2ea32056aa4b797d993525758');
+ assert.equal(catalogue.puzzle('colour-words'),null);assert.deepEqual(Array.from(catalogue.formerPuzzleRevisions('friends-badger')),[release47.puzzles['friends-badger'].revision]);
  assert.equal(catalogue.puzzle('friends-squirrel'),null,'Mengen zählen is retired (9.4.47)');
 });
