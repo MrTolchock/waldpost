@@ -31107,6 +31107,24 @@
       "at": "2026-11-25T12:14:04.494Z",
       "seen": true,
       "operation": "0475a4c2-1811-4c24-8489-1cc2da976d9a"
+    },
+    "compare/3-4@d9490c9e2f7484be": {
+      "key": "compare/3-4",
+      "revision": "d9490c9e2f7484be",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:01.868Z",
+      "seen": true,
+      "operation": "64711826-d605-455c-b8c3-8bb3e1ce7c8c"
+    },
+    "compare/4-7@cc6bb8c4bc94351e": {
+      "key": "compare/4-7",
+      "revision": "cc6bb8c4bc94351e",
+      "status": "approved",
+      "note": "",
+      "at": "2026-11-25T12:15:04.666Z",
+      "seen": true,
+      "operation": "418cc945-1122-4480-bdee-d1f7890fa4da"
     }
   },
   "history": [
