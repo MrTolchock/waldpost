@@ -1,5 +1,7 @@
 # Final release review — Waldpost 9.4.43
 
+> Follow-up: the [review of 9.4.46](../2026-11-25-release-review-9.4.46/README.md) (same day, afternoon) checks every finding below.
+
 | | |
 | --- | --- |
 | Reviewed build | `main` @ `908f631` — Waldpost **9.4.43** (`FK.VERSION`, service-worker cache `farbtupf-v9.4.43-waldpost`) |
