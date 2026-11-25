@@ -10,7 +10,7 @@
 
 ## Verdict
 
-**Release with conditions.** 9.4.43 is a clear step forward. Most findings from the 9.4.41 review are fixed: the four reworded Rätsel are approved again, so Steinbock is back. A stranded invitation now moves to a friend who can play. No Rätsel overflows its frame on narrow phones any more. Patterns stay on one line, the success look matches the spec, and the screen reader gets names for patterns, memory objects, picnic friends and fish counts. All repository checks and all 199 unit tests pass, and SUITES_SUMMARY. CI and the Pages deployment for `908f631` are green. No Aufgabe has a wrong answer. A whole child round runs on tablet and phone without console errors.
+**Release with conditions.** 9.4.43 is a clear step forward. Most findings from the 9.4.41 review are fixed: the four reworded Rätsel are approved again, so Steinbock is back. A stranded invitation now moves to a friend who can play. No Rätsel overflows its frame on narrow phones any more. Patterns stay on one line, the success look matches the spec, and the screen reader gets names for patterns, memory objects, picnic friends and fish counts. All repository checks, all 199 unit tests and all 30 browser suites pass in their default form. As in the last review, the documented variant of the review-recovery check fails on a stale expectation ([T-3](#t-3)). CI and the Pages deployment for `908f631` are green. No Aufgabe has a wrong answer. A whole child round runs on tablet and phone without console errors.
 
 Three things need attention before you call 9.4.43 finished:
 
@@ -24,7 +24,7 @@ Three things need attention before you call 9.4.43 finished:
 | --- | --- | --- |
 | Repository checks | `style.cjs --check`, `map/layout.cjs --check`, `puzzle-catalogue.cjs --check`, `library.cjs --check`, `handoff.cjs --check`, `check-design.cjs`, visual baseline script | ✅ all pass |
 | Unit/model tests | `node --test tests/*.test.cjs` with full Git history | ✅ 199 / 199. In a shallow clone, the same 4 tests still fail with «Cannot read baseline …» ([T-1](#t-1)). |
-| Browser suites | All 30 `tests/*-browser.cjs`, plus the documented `WALDPOST_REVIEW_REF=61ef045…` variant. Chromium 1243 (SwiftShader), disposable storage, intercepted GitHub. | SUITES_TABLE |
+| Browser suites | All 30 `tests/*-browser.cjs`, plus the documented `WALDPOST_REVIEW_REF=61ef045…` variant. Chromium 1243 (SwiftShader), disposable storage, intercepted GitHub. | ✅ 30 / 30 pass, including the update path from the legacy release. `audio-browser` timed out once while other suites ran at the same time, then passed twice on its own ([T-4](#t-4)). ❌ The `WALDPOST_REVIEW_REF` variant fails ([T-3](#t-3)). |
 | Release status | The real app against the real published ledger, read only | 16 / 17 Rätsel released, 723 / 797 Aufgaben approved ([R-1](#r-1)) |
 | Layout | `survey.cjs` for **all 797 Aufgaben** at tablet (1080 × 810), phone (390 × 844), 360 × 780 and 320 × 640. `measure.cjs` for type and picture sizes at tablet and phone. | ✅ tablet, 390 and 360: no overflow, no clipping. ✅ 320: no clipping. ❌ 320: 63 Aufgaben reach below the screen ([B-3](#b-3)). ❌ Pattern picture and type sizes ([B-1](#b-1)). |
 | Content | All 797 Aufgaben dumped from the runtime catalogue, with every answer, choice and picture. Scripted checks: answers in choices, duplicate choices, robot BFS, mirror answers, treasure distractors, distributions. All 223 Dachs Aufgaben read by hand. A simulation of 100 000 Dachs rounds. | No wrong answers. Didactic findings below. |
@@ -171,7 +171,9 @@ Dachs now carries 223 of 797 Aufgaben (28 %) but gets 1 visit in 12. Seven of th
 
 <a id="t-2"></a>**T-2 · Low · The narrow-phone check only looks sideways, and only at six Rätsel** (follow-up of 9.4.41 T-2, mostly fixed). `survey.cjs` now reports `clip`. `ipad-puzzle-layout-browser.cjs` now tests 360 and 320 px. Both passed in this review. But the 320 px assertion only covers rocket, mirror, friends-squirrel, count, robot and treasure, and only horizontal clipping. That is why [B-3](#b-3) passes. Extend it to all Rätsel and to `over`.
 
-T3_PLACEHOLDER
+<a id="t-3"></a>**T-3 · Medium · The documented recovery variant still fails** (9.4.41 T-3, unchanged). `WALDPOST_REVIEW_REF=61ef045… node tests/review-recovery-browser.cjs` stops with «every unchanged pre-background Rätsel remains compatible». It expected `friends-ibex, picnic, compare, mirror, read-puzzle` but got `picnic, compare, mirror, read-puzzle`. Line 21 lists only the changes up to `review-changes-2026-11-23.cjs`. The rewording of 24 Nov (`review-changes-2026-11-24.cjs`), which changed Muster fortsetzen, is still missing. The reading merge (`review-changes-2026-11-24-reading.cjs`) is not considered either. [Development](../../DEVELOPMENT.md) lists this command as a required check, and CI doesn't run it.
+
+<a id="t-4"></a>**T-4 · Low · `audio-browser.cjs` is timing-sensitive.** In the full sequential run it failed once at «a suspended context resumes on the next tap» (`waitForFunction` 15 s timeout). Run on its own, it passed twice. This doesn't point to a game bug. A longer timeout, or waiting for the `statechange` event, would make it reliable on loaded machines.
 
 ## Follow-up of the 9.4.41 review
 
@@ -195,7 +197,7 @@ T3_PLACEHOLDER
 | K-1 Read-aloud in the rules | ❌ unchanged |
 | T-1 Shallow clone | ❌ unchanged |
 | T-2 Layout tools blind to clipping | ✅ mostly fixed ([T-2](#t-2)) |
-| T-3 Stale recovery expectation | T3_FOLLOWUP |
+| T-3 Stale recovery expectation | ❌ unchanged ([T-3](#t-3)) |
 
 ## Recommended order of work
 
@@ -203,6 +205,6 @@ T3_PLACEHOLDER
 2. Send no letter while no Rätsel is released, and tell the adult (R-2).
 3. Add a tap fallback and button roles to the Zahlennachbarn cards (B-2).
 4. Next design and content revision (needs review again): pattern size on phones (B-1, K-3), text-type rounds without repeated answers in Dachs (C-1), syllable distractors (C-4), a third rhyme card (C-5), fives for the fish (C-6).
-5. Update the entry documents to 17 Rätsel and remove read-aloud from the rules (K-1, K-2). T3_ORDER Then polish B-3 to B-6, A-1, T-1 and T-2.
+5. Update the entry documents to 17 Rätsel and remove read-aloud from the rules (K-1, K-2). Add the 24 Nov changes to the recovery variant (T-3). Then polish B-3 to B-6, A-1, T-1 and T-2.
 
 Still open for the owner and outside automation: the feel on a physical iPad/Safari, sound comfort, and whether the content suits real first graders, especially the reading Aufgaben without read-aloud.
