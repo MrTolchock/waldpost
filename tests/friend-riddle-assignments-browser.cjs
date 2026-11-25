@@ -96,9 +96,9 @@ const output=process.env.FARBTUPF_SHOTS||'/tmp/waldpost-friend-assignments';
     const wrong=question.choices.map(choice=>Array.isArray(choice)?choice[0]:choice).find(choice=>choice!==question.answer);
     await active().locator('[data-answer="'+wrong+'"]').tap();
     assert.equal(await active().locator('.is-retry').count(),1);
-    assert.equal(await page.evaluate(({id,key})=>FK.puzzleReview.status(id,id+'/'+key).status,{id,key}),'pending');
+    assert.equal(await page.evaluate(({id,key})=>FK.puzzleReview.status(id,key).status,{id,key}),'pending');
     await active().locator('[data-answer="'+question.answer+'"]').tap();
-    assert.equal(await page.evaluate(({id,key})=>FK.puzzleReview.status(id,id+'/'+key).status,{id,key}),'approved');
+    assert.equal(await page.evaluate(({id,key})=>FK.puzzleReview.status(id,key).status,{id,key}),'approved');
    }
   }
   assert.deepEqual(await snapshot(),before,'gallery rounds and previews preserve player saves');
