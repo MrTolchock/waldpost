@@ -211,9 +211,6 @@
 .ff-adult>button,.ff-adult>a{display:block;border:2px solid #d0ad75;border-radius:16px;padding:12px 16px;margin:10px 0;background:linear-gradient(180deg,#fffaf0,#f4e4c3);color:var(--ink);min-height:48px;font:inherit;text-decoration:none;box-shadow:0 3px 0 #a97b4555;text-align:left}
 .ff-adult>button:active,.ff-adult>a:active{translate:0 2px;box-shadow:0 1px 0 #a97b4555}
 .ff-dev{background:#fff2a4;padding:10px;border-radius:12px;font:700 14px var(--type-body);align-self:center}
-.ff-dev-dock{position:absolute;bottom:90px;right:10px;display:flex;gap:6px;z-index:4}
-.ff-dev-dock .ff-button{width:50px;height:50px;min-width:50px;min-height:50px;padding:4px}
-.ff-dev-dock .ff-picture{width:40px;height:40px}
 
 @media(max-width:600px){
   .ff-nav{right:8px;top:max(8px,env(safe-area-inset-top));gap:5px;padding:5px;border-radius:26px}
@@ -256,8 +253,6 @@
   .ff-map .ff-button{width:60px;height:60px}
   .ff-meet-scene{gap:12px;min-height:200px}
   .ff-meet-scene .ff-picture{width:120px;height:150px}
-  .ff-dev-dock{bottom:150px;gap:2px}
-  .ff-dev-dock .ff-button{min-width:48px;min-height:48px;width:48px;height:48px}
   .ff-dev{position:absolute;top:67px;right:0;font-size:11px}
   .ff-save-status{font-size:12px;gap:6px;padding:6px}
   .ff-paper{width:min(100%,56vh);max-height:42vh;border-width:6px}
