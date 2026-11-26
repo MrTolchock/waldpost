@@ -5,6 +5,10 @@
 
   FK.APP_NAME = 'Waldpost';
   FK.VERSION = '10.0.0';
+  // Development build number. Bumped with every change pushed to dev (node tools/dev-version.cjs), shown in the
+  // development version's ENTWICKLUNG marker and part of the offline cache name, so installed copies update.
+  // The children's version shows FK.VERSION only; a release to main gives main its own next FK.VERSION.
+  FK.DEV_VERSION = '1.0.1';
   FK.TAU = Math.PI * 2;
   FK.$ = (sel, root) => (root || document).querySelector(sel);
   FK.$$ = (sel, root) => Array.prototype.slice.call((root || document).querySelectorAll(sel));

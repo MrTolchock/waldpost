@@ -86,7 +86,7 @@ function go(next,restore=false){
   if(state.mail().phase==='finished'){showSessionEnd();return;}
   say(next==='den'?'Dein Zuhause. Schau, ob ein Brief für dich da ist.':state.mail().phase==='to-mailman'?'Der Briefträger ist ganz in deiner Nähe. Folge dem Pfeil.':'Folge dem Pfeil zum Freund auf deinem Brief. Tippe auf den Boden, um zu gehen.');
 }
-function renderNav(){nav.replaceChildren();if(state.development||FK.playLog.development())nav.append(h('strong',{class:'ff-dev',text:'ENTWICKLUNG'}));
+function renderNav(){nav.replaceChildren();if(state.development||FK.playLog.development())nav.append(h('strong',{class:'ff-dev',text:'ENTWICKLUNG '+FK.DEV_VERSION}));
   if(!['sleeping','finished'].includes(state.mail().phase)){
     const {completed,limit}=state.mail().session;
     letterStatus=h('span',{class:'ff-letter-status',role:'status','aria-live':'polite',text:completed+'/'+limit,'data-compact':String((completed+'/'+limit).length>4),'aria-label':completed+' von '+limit+' Briefen geschafft'});

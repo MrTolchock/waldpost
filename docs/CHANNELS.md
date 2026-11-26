@@ -10,7 +10,8 @@ Since **10.0.0** Waldpost exists twice on the same site:
 | Rätsel-Prüfung | none (Rätsel-Galerie only), no GitHub traffic | full review and GitHub sync ([review storage](REVIEW-STORAGE.md)) |
 | Save | `farbtupf.friends.v1` … | own save (`farbtupf.friends.development.v1`, `farbtupf.puzzles.development.v1`) |
 | Play log | records ([play log](PLAY-LOG.md)) | records nothing; never touches the children's log |
-| Marker | — | **ENTWICKLUNG** in forest navigation |
+| Version | `FK.VERSION` (e.g. 10.0.0) | the same plus its own build number `FK.DEV_VERSION`, e.g. **ENTWICKLUNG 1.0.1** |
+| Marker | — | **ENTWICKLUNG** *build number* in forest navigation; Settings → App-Version shows both |
 
 `FK.CHANNEL` (`js/core/channel.js`) is `'main'` on every real host. The site deploy marks only the published development copy (`window.WALDPOST_DEV_SITE = true`, which sets `FK.DEV_SITE` and the `'dev'` channel). A local test server defaults to `'dev'`; use `?channel=main` to see the children's version locally.
 
@@ -20,7 +21,7 @@ Since **10.0.0** Waldpost exists twice on the same site:
 
 ## Working on the development version
 
-1. Make changes on `dev` (or a feature branch merged into `dev`) and push. When the checks (**Puzzle contract**) pass, the **Publish site** workflow republishes `…/dev/`; the children's version stays as it is. Its installed app picks up the new development copy through the normal update check while in development mode.
+1. Make changes on `dev` (or a feature branch merged into `dev`), bump the development build number with `node tools/dev-version.cjs patch` (`minor`/`major` for larger steps) and push. The number is part of the offline cache name: without a bump, installed development copies keep the previous build. `tests/dev-version.test.cjs` checks that `sw.js` matches. When the checks (**Puzzle contract**) pass, the **Publish site** workflow republishes `…/dev/`; the children's version stays as it is. Its installed app picks up the new development copy through the normal update check while in development mode.
 2. Review the changed Rätsel in the development version (Rätsel-Prüfung). Approvals go to the `puzzle-review-data` branch as before.
 
 ## Releasing to the children
@@ -28,7 +29,7 @@ Since **10.0.0** Waldpost exists twice on the same site:
 Release only when every Rätsel is approved in the development version.
 
 1. `git fetch origin puzzle-review-data dev main`, check out `dev`.
-2. Bump `FK.VERSION` (`js/core/util.js`) and the cache identifier in `sw.js`.
+2. Bump `FK.VERSION` (`js/core/util.js`) to the children's next version (for example 10.0.0 → 10.1.0) and run `node tools/dev-version.cjs patch` so the cache identifier in `sw.js` changes. The development build number keeps counting on `dev`; the release notes can name the build it came from ("10.1.0 = Entwicklung 1.12.23").
 3. `node tools/release-manifest.cjs` — asks the real app which Rätsel the published approvals release and writes `js/friends/released.js`. It stops when a Rätsel is not approved (`--allow-unapproved` releases without it).
 4. Run the checks in [Development](DEVELOPMENT.md), including `tests/release-channel.test.cjs` (every released Rätsel matches its current revision) and `tests/release-channel-browser.cjs`.
 5. Commit on `dev`, then fast-forward `main` to it and push both. The workflow publishes both copies; the children's app updates at its next idle update check, keeping save and play log.
