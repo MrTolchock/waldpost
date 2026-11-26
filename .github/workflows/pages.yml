@@ -50,5 +50,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - id: deployment
+      # The deploy sometimes cannot see the artifact it was just given ("No artifacts named github-pages",
+      # 2026-11-25 and 2026-11-26). Wait and deploy the same artifact once more before giving up.
+      - id: first
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.first.outcome == 'failure'
+        run: sleep 30
+      - id: retry
+        if: steps.first.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+      - id: deployment
+        run: echo "page_url=${{ steps.first.outputs.page_url || steps.retry.outputs.page_url }}" >> "$GITHUB_OUTPUT"
