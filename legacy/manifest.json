@@ -4806,6 +4806,1266 @@
       "original": "design/artwork/generation-records/puzzle-badger-sett.json",
       "archived": "legacy/design-history/2026-11-23-watercolour-habitats/design/artwork/generation-records/puzzle-badger-sett.json",
       "sha256": "a6fb76cda487d7e5779a1e5c1cbb38c807f9a6c6a642d56721cad8ddea9e7e97"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/README.md",
+      "sha256": "8eb8ac06e7e959a46514691f84c35a01a55fd8cc0097a6979f604a00ff9e8dfa",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/beaver-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/beaver-1080.png",
+      "sha256": "97caa99560cf8cd6d975bcf77232987b4c7af38827acd9c1df4813f2c246fcce",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/beaver-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/beaver-390.png",
+      "sha256": "e289a1a1ba402ab0892419dd171643d1bfea67959995b0ad90b3516e367e01b3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/comment-delete-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/comment-delete-1080.png",
+      "sha256": "cd1f3e67344b684b2f6f1dcbfc9a7d08df58aa0b398bc4fa8747b1b48fde7482",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/comment-delete-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/comment-delete-390.png",
+      "sha256": "c5ef876c0e3406160f456e3353174e50208ecd1ea1bbf2cc2afaf42cbf682b5e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/house-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/house-1080.png",
+      "sha256": "cecd653cdf9edbfc84c1889c9ed1ec0c9f3d60e311ba8b5aa1e4877d8106b3da",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/house-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/house-390.png",
+      "sha256": "3ad443f2ea0a9aaf3f236684e789fa88a48f42a5ef8753e986c03f6eb0fab0f9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/nuts-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/nuts-1080.png",
+      "sha256": "67e37899d7a1d33ddf9417a8c4648e378a9707e6cc5201618b2f701c4b08d9b7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-puzzle-feedback/nuts-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-puzzle-feedback/nuts-390.png",
+      "sha256": "b4f6503e938211150057bba195b9bfdeab06402efcbbea061992e1a3552eb2d8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/README.md",
+      "sha256": "4ed447449eeb86af7c1a8ebbccf56453015297d36865a573a431fea1f341e423",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/growth-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/growth-1080.png",
+      "sha256": "f79f08409d1b2a1395e19b75a9ea6bf431ee39b40f8070fb5b8bdfce988d688d",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/growth-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/growth-390.png",
+      "sha256": "1af4c2e83c93464062a939f288495b12a6b4d67123cc0bc551882171c018b5e7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/original-nuts-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/original-nuts-1080.png",
+      "sha256": "becbf048d7764306a190e93e8d401482ae763bca2d96e896c5d3e99c47369210",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/original-nuts-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/original-nuts-390.png",
+      "sha256": "465f6222953522273ce971e8ed121a5a703b0fd1e608da1903fde49913d593f6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/pond-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/pond-1080.png",
+      "sha256": "238d3223aa10a6e158aedf0f8e27baf24e24f2e5ac1962c0e6b1f48a5bf0c4c4",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/pond-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/pond-390.png",
+      "sha256": "ffd60872d465725a4343a7d087fb35572ff9abeaa6032df6b495d80f7eb66c45",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/squirrel-nut-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/squirrel-nut-1080.png",
+      "sha256": "089fac234d4f4ca0d7f0ca2f7396a86d0683fb40a1d7998288a9ebeeac57580e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/squirrel-nut-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/squirrel-nut-390.png",
+      "sha256": "ad340868a3f687b0add12cb08443ec21bd23a02d6667b64bd043e3935860f5f7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/trace-zero-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/trace-zero-1080.png",
+      "sha256": "98aeae629bb9e27e87a22ba3ec752c45f5be7d67150e21dd0ff2fbb8e4108170",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/trace-zero-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/trace-zero-390.png",
+      "sha256": "a1ed13595ebb71ba1617bec08a3981041def172b7e7363e36647cd8c59d785a1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/zero-basket-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/zero-basket-1080.png",
+      "sha256": "2fa46be36d367f1bd294256f021daea03063a460d084d1bfbedeec2c5514acca",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-review-followup/zero-basket-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-review-followup/zero-basket-390.png",
+      "sha256": "ba300d4a38f2851cc79bbf6ea6259c4c4f6050abc57c1d4e14872842fee3cceb",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-settings/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-settings/README.md",
+      "sha256": "03b21b53f193c06901679f955c2c6fb1373da51d15d00ccd3cd21a3682e141ee",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-settings/settings-protocol-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-settings/settings-protocol-1080.png",
+      "sha256": "573dd27cecbe8edb0f3fe32fa0abec8fe148e3f1e82b24bbea11b95115dd500f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-settings/settings-protocol-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-settings/settings-protocol-390.png",
+      "sha256": "8dc7d920c177228ecab56697370c03772814cba65bf8bcf63694dbb4c1d044ef",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-settings/settings-top-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-settings/settings-top-390.png",
+      "sha256": "78a86e3c398d0c63b8e63b842270523522304baf4a8ced28bcff4f11a392703a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-water-edges/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-water-edges/README.md",
+      "sha256": "ec404563f142088db922a6dd0058215aaad2df3d3a7c02170d69a003776049e2",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-water-edges/beaver-pond-inlet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-water-edges/beaver-pond-inlet.png",
+      "sha256": "c5d86226974967fa22b06117ba857c08fe4651269c5154e0fafa4b136743e8d9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-water-edges/fish-pond-outlet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-water-edges/fish-pond-outlet.png",
+      "sha256": "fca8f3b243c7d5177f490e463aba9b1eb5d5cf64283546eee4057bcf2c602663",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-water-edges/swamp-south-shore-game.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-water-edges/swamp-south-shore-game.png",
+      "sha256": "856c089f63528254ae75aba786a8a8d1c8e13ee36b8fc5cb4cf8058e24ca8dd2",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-17-water-edges/swamp-south-west-above.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-17-water-edges/swamp-south-west-above.png",
+      "sha256": "0f4748bef4a4c9dc8bf26c65d289af8a179d16092d8b2ebdfda54f39dfe81232",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/README.md",
+      "sha256": "4ea6590d971d1e136d6b39f3eb09e768854c70087fdd36c1c1ab01a9f1953f13",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/gallery-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/gallery-1080.png",
+      "sha256": "49e0e806eac5586d46c5cb7076fbfc926d824aea28c04cf93036fa3c95572191",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/gallery-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/gallery-390.png",
+      "sha256": "9e6268e69e345296834f176c08017fe4635d8e1d91ba962f6828fb6af586ccf4",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/review-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/review-1080.png",
+      "sha256": "cdd15444e2f7f4d150f2706429d6340a81777a503118be7aad2a69386340a83a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/review-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/review-390.png",
+      "sha256": "ad109253a03326812fbe5c9a5c13d9dc86204346bc3a26357cafec078231b0e0",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/review-detail-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/review-detail-390.png",
+      "sha256": "4429660799118ab32d2d1beaf94f72e1ec2c8debecfe39d3c40856e1cb540e81",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/settings-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/settings-390.png",
+      "sha256": "0dabefe5569d6a2b7d4255e8fde33daa3d845b724d9a035ed90d8a3441d3b773",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/settings-protocol-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/settings-protocol-1080.png",
+      "sha256": "d2f16d561effee58f61149f64427040943217245b423767f92ea3459f60476f7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-adult-menus/settings-protocol-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-adult-menus/settings-protocol-390.png",
+      "sha256": "3ae905af10d70ada477ee28f1ba127a6fa920d8dd02daaf001a61708b01d0cee",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/README.md",
+      "sha256": "e240219f11b175cd26688e9650e8bdeabd6a9d1627679ebdba57ba43c45429dc",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/comparison-after.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/comparison-after.png",
+      "sha256": "73983441de69f864093e101dac8d499a893618f871ade4f8aea6245a8f2c1646",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/comparison-before.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/comparison-before.png",
+      "sha256": "30a1dedda6084367fea7377c88d4316819566bac943bf2b9303b01c7b68be6b6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/forest-wildlife-after-dark.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/forest-wildlife-after-dark.png",
+      "sha256": "374f905b7cebbf0546a67b2bab1395ad1a76d2211a137daef7e1da8bf815a2c0",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/forest-wildlife-before.webp",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/forest-wildlife-before.webp",
+      "sha256": "f152dfbc074a80d29d6fc91a1d7cbef62a3bec70b253d94bbaae60f50a1de1e8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/lynx-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/lynx-390.png",
+      "sha256": "f54a4e92fe27452f2632e7877adb090c980b2aa665a2786bd92180d3dbac6b37",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/rhyme-animals-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/rhyme-animals-390.png",
+      "sha256": "489800dbfccfefa355a02a3d211baff8ee135ef5ceed235a05f92a5d37d586e1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/rhyme-vocabulary-after-dark.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/rhyme-vocabulary-after-dark.png",
+      "sha256": "08c08554a57aad45bf9d958acbf18d6e756d6205129377f599ac3642b3e816e9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/rhyme-vocabulary-before.webp",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/rhyme-vocabulary-before.webp",
+      "sha256": "7017fb46ace669eb61fe475135e09f2feb1d87932d4248c7933f48653af943b3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-image-library/seated-cat-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-image-library/seated-cat-390.png",
+      "sha256": "ac7e7078dc9f4963fa4e8ad45efc2b5a630afe66d41e9b235ef8dcb6fb33652d",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/README.md",
+      "sha256": "25975789fed201c0da84847e29b59a75097f8e664ba37f3843c9bacfaab10ba3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/picnic-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/picnic-390.png",
+      "sha256": "c96b6814a178cc564e02aa5ad87a2f806a7dbb9bc3873524f898e8b08146ff33",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/pictures-cream.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/pictures-cream.png",
+      "sha256": "13e1aed86efb7c5f1cbbe9ef0bd9ec47f934c33674c6dfc35ac11fbb67978e3b",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/pictures-dark.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/pictures-dark.png",
+      "sha256": "8e1e5fa5124e89e834dcc746a15591f9feeb4f938f0ced54f9e5da2d440ec7c2",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/robot-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/robot-390.png",
+      "sha256": "65d01d468219bfb3e22572c044db158ea7aa4c19f6f39f8f0815c1964fb0d6d0",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/rocket-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/rocket-390.png",
+      "sha256": "2cabbadbdc10bfbd29333226b114272062bebf754592e9d97cad8a8f159cd4d8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/sequence-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/sequence-390.png",
+      "sha256": "dc743381ddde13636096ef5a45ee17b285e31344722f7dae5dadbc93bc44b474",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/syllable-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/syllable-390.png",
+      "sha256": "f53e231758ae4f7b624267118ab9d9769f956b995b537e7dde9e8659960e76f7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-18-review-feedback/treasure-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-18-review-feedback/treasure-390.png",
+      "sha256": "519e2e47158374f1ae3e61c2a92807195f5fae8d6a9aa3b022a64314d1897c31",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-three/export-report.json",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/export-report.json",
+      "sha256": "adb0c6aedec2b22aeede10d8aca8f0562f0bde91468896053b540f691f31d78f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-three/library-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/library-1080.png",
+      "sha256": "23b131c88ff4c70d5c7a18bfd8cc1a1d5544dd8ebe24fc01c48836ce01661685",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-three/library-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/library-390.png",
+      "sha256": "325df51399ff34e91197255af2adc80fa3e17b6bfccb85a0cc6fc8221cfc4a46",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-three/overview.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/overview.png",
+      "sha256": "b55852f3cc792289d3ce472fd09e63a25e0aa615d4917b3d0128c94d7300ea72",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-three/quantity-report.jsonl",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/quantity-report.jsonl",
+      "sha256": "0fc3713506cecd6e029e591ada3ff205f9918bd4450576f7df6166a902834b93",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-three/source-edges.jsonl",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/source-edges.jsonl",
+      "sha256": "18736cf4c6da2e51b47dee9c47b22d8e7b5360f2a4684b64b8526ad3ba2a8ea1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-two/export-report.json",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/export-report.json",
+      "sha256": "ed6b2b17c492e93343306e0509ba0f4b661dd5e7810aba8cd0a12998c79dc66c",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-two/library-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/library-1080.png",
+      "sha256": "200b98bd5f3731d611a16d5c10f821199a823fedd4f13e7026a66f8c7d154b53",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-two/library-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/library-390.png",
+      "sha256": "85d19e572d7263d5e0efedfd6e273be22331584ecac74801d14c3d20e65b36f8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-two/overview.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/overview.png",
+      "sha256": "082f756cdd798d4529a853c10d007735c4ecbfd2bba138f186ef268432942a51",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion-two/source-edges.jsonl",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/source-edges.jsonl",
+      "sha256": "6a126a18e470dcff214132212f10b7c6593cd390e6029346aa9689f62b94a1a6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion/export-report.json",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/export-report.json",
+      "sha256": "4d15a6f7ceaadfae681d4ab2f7fc2ff17083d434f94c998df973eb72cf872f5b",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion/library-1080.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/library-1080.png",
+      "sha256": "dafe3e9059e8fd385d96b12f46a207e08d9be380f64af51b07737e34e997bc0f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion/library-390.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/library-390.png",
+      "sha256": "7c8667751794d25ef94d16c2ce11952fb454dcc7822ff10bc005d78939463dc9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-image-expansion/overview.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/overview.png",
+      "sha256": "b71793b15457fdc558f04e4cac662e2c347f675185f6cc10beef659adb44b65c",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-ipad-layout/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-ipad-layout/README.md",
+      "sha256": "2f25b7311fc591722b411ed830e7b54ca81f40ea4f978d59c3f1742cd7473b57",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-ipad-layout/letter-status.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-ipad-layout/letter-status.png",
+      "sha256": "d6fdda6f1bccc81390c2f10f2f404f2fb1945b6f26eac32c37cf4449daa8781c",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-ipad-layout/map-pulse.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-ipad-layout/map-pulse.png",
+      "sha256": "e03f9ace4d19df09431fb6587a9db2984d84b927ff807ef8d41d2df36a663ec0",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-ipad-layout/puzzle-ipad.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-ipad-layout/puzzle-ipad.png",
+      "sha256": "f8de68a46b06e7745fb1994fb087b69f9adc4559c6d72af71b01864ee8f4b09d",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-raetsel-reviews/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-raetsel-reviews/README.md",
+      "sha256": "70aaaf22d35e008b91e5c91f1d75822aa694f5124161098c24a02325d234d8b2",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-raetsel-reviews/memory-icons.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-raetsel-reviews/memory-icons.png",
+      "sha256": "c20af39f8e2063ffcf4119c199eabe96840b8facfa69729c2a7eceb9d41e4cef",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-raetsel-reviews/swiss-postbox.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-raetsel-reviews/swiss-postbox.png",
+      "sha256": "cd4aab9181f651f14b5147dedd062bc7c21f98b589b9eba7658d6addee1e88af",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-raetsel-reviews/three-objects.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-raetsel-reviews/three-objects.png",
+      "sha256": "fcbb84ff0d5288c7df665d3fe8c2f62d893fd72c53b426ecf4e4a77a3d55dd11",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-19-raetsel-reviews/uppercase-syllables-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-19-raetsel-reviews/uppercase-syllables-phone.png",
+      "sha256": "c411db271f5a43b04ed2fa247f6cc7614ee4b8ebd36b5c21281b7da76ef4c6f4",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-friend-assignments/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-friend-assignments/README.md",
+      "sha256": "d8a585210d34b91fe966b17329e461dd97eef903c9ba749539482c91a98468fb",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-friend-assignments/colour-words.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-friend-assignments/colour-words.png",
+      "sha256": "a3d99fb8d0fde382f6b81ce85ca25f78d1c706e83cbc73014382050051c57569",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-friend-assignments/deer-route.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-friend-assignments/deer-route.png",
+      "sha256": "55913bc9be11ffcf8371856c5b76487c28f5be073177475234fb93c41d26f664",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-friend-assignments/fish-addition.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-friend-assignments/fish-addition.png",
+      "sha256": "c3e41bd13f56535cde0cb9ca5f93662bceb7fab1018d8457ee5b828453cf8ef6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-friend-assignments/shape-match-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-friend-assignments/shape-match-phone.png",
+      "sha256": "77a2c8e2ba038e02b9af3572b8fce63ce8d4fd4e2b9334b8ae658780f2091420",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-friend-assignments/shape-match.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-friend-assignments/shape-match.png",
+      "sha256": "1d12ec7372a1f65131ae7d3af9de207d3c8874d2e806eb39e8343b25e76788a7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-map/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-map/README.md",
+      "sha256": "1dbfd5c14773da1f76440b19e85f4b9cc86a740b7648b4151da20c9150cb89b8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-map/phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-map/phone.png",
+      "sha256": "77531d19ce9883cdc50013e0066a56d033698e0f5254876bd4cefb923def7da7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-map/tablet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-map/tablet.png",
+      "sha256": "1c98c426bc1152d3b622dd58808a4c22464d230cff061cd475e4af1c74f14bbc",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-navigation/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-navigation/README.md",
+      "sha256": "908bbbfd866f19763d5841550c02413ef2db0a292a651adca60ce3d0214cd450",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-navigation/close-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-navigation/close-phone.png",
+      "sha256": "847fd323a4334f1c2e434a1f46a1a187051b1c856df14b98f91a1b97a2acd6a6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-navigation/status-tablet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-navigation/status-tablet.png",
+      "sha256": "8a075ebd67ebd97e5d5840bdcf0a3027d4ceb2ec93e2ec1b37569546b20c4d37",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/README.md",
+      "sha256": "c6f6429ba13f3468c64ad47cea635e0620878c77ea960ac6a470acb1cd20e5e6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/after-beaver-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/after-beaver-phone.png",
+      "sha256": "deaacdbeb0e14905930bb4ae527bf1b4a1c72b048855325becda382a1939d7b9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/after-beaver.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/after-beaver.png",
+      "sha256": "53f4c02e25808015a8c1ebed7a72a4c02f504145004b1402af6bee2a2b6edbfc",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/after-story-placed.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/after-story-placed.png",
+      "sha256": "f73cad0c072e227e3a35860336a99f688ec390def7d7b452615f5ed8dc39856e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/after-story.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/after-story.png",
+      "sha256": "c3b046806004e6865c35b7f10d64c741610bf48b922e6c883aad256425ffb02a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/before-beaver.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/before-beaver.png",
+      "sha256": "cf78f52522cf512c9a61ac01417e8e0ad4ef81f8aca22a4110e5611447f22fcc",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-picture-proportions/before-story.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-picture-proportions/before-story.png",
+      "sha256": "41aea8ca19577696beeb976ebd94772c052f4031ad0c8e0c6fefac01f0deda71",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-puzzle-balance/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-puzzle-balance/README.md",
+      "sha256": "cb284f5838384d1466ddd2d4abec2dc979d91db7f924945f2056921cf9aaf2e9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-puzzle-balance/before-vowels.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-puzzle-balance/before-vowels.png",
+      "sha256": "71025ca879311df139f85c754b74ba05d575a48371968b420bafed8609be7838",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-puzzle-balance/picnic-landscape.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-puzzle-balance/picnic-landscape.png",
+      "sha256": "1d0f0dce0112c862ff5c16fe8f3e6fb20eff9cdce11ce32101d5acd1e00359be",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-puzzle-balance/vowels-landscape.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-puzzle-balance/vowels-landscape.png",
+      "sha256": "d81056e636c78fd99a25b958b63bb017137636f8dedefda493f6735210533b70",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-20-puzzle-balance/vowels-portrait.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-20-puzzle-balance/vowels-portrait.png",
+      "sha256": "b7bd46a9cef8820315fb498f55bf00ea57dff9cb336ea37eb6a631433bd32c52",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/README.md",
+      "sha256": "6fb3cce388d0c10703cb208cc1c0f24dd81adea921bdfa32b89790bfe5c07773",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/correct-group-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/correct-group-phone.png",
+      "sha256": "8dbb507274fae51ed5599203437fc69883e99f8816610eb2e474dbe77fb2c597",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/correct-group-tablet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/correct-group-tablet.png",
+      "sha256": "8c82df10a42f887a109f3210370b876031c18a3e5f534998eb7cb1281947e27c",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/gallery-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/gallery-phone.png",
+      "sha256": "7e7a6f3bbe33d17108f552cbe350f79e8ea1f4e862417806e9f39af1a7968408",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/gallery-tablet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/gallery-tablet.png",
+      "sha256": "af12aa44faafbf00388d7fcf27e187a8892937101a24a608f83e8bb8a508718d",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/review-phone.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/review-phone.png",
+      "sha256": "273a9643496cf70647241215a412be989430e338f4b47ec615119fc1f95bd031",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-21-puzzle-feedback/review-tablet.png",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-21-puzzle-feedback/review-tablet.png",
+      "sha256": "1c98d0df5ca77ed1c53203582844b9d73e074b23be6b27b9f490e85cce7fcc75",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-22-habitats/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-22-habitats/README.md",
+      "sha256": "046123840235749a8fe2bf63d66793445772f7f5df580c868590e6f4566ddf34",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-22-habitats/host-pages.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-22-habitats/host-pages.jpg",
+      "sha256": "f708ef73932a8069b0aa0753e19b2e23f0b5aff5e345f3e9340ce990005bd4ea",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-22-habitats/paintings.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-22-habitats/paintings.jpg",
+      "sha256": "03758b27f14a5f5b9344ba1c1ddb2645f49066089d5d154d05efb1d198afd1f7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-22-habitats/phone-pages.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-22-habitats/phone-pages.jpg",
+      "sha256": "9c720248fad7999cc6e410d14060e21ca9fecec40f9909e855147cfbb7be735f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/2026-11-22-habitats/report.json",
+      "archived": "legacy/before-10.0.0/design-evidence/2026-11-22-habitats/report.json",
+      "sha256": "030105b9aedda82d0cdebdf190b451d8fca882882421d75dd2c49a8c4826169c",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/README.md",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/README.md",
+      "sha256": "7e052ea838d0b762de41fcda5bb653add008f5f0128293c1b6fca33a0ea09d7e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/add.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/add.jpg",
+      "sha256": "f0386229013e78f09bb021cdb16242c2b5a8f7fecf65fc40607924e132e4a4d2",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/colour-words.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/colour-words.jpg",
+      "sha256": "58870a47a745648e281811885863a05abd0982f2f953a66cd393c145eab6f3a5",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/compare.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/compare.jpg",
+      "sha256": "33e55127d0474817180925f53beccb2d3ab2618a17951b47a13c7b6908e9ee03",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/count.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/count.jpg",
+      "sha256": "5014ffb7f6c35757a9b20d2e3877da51cb4027cca120a36669b26c80970d71f5",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/erneut.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/erneut.jpg",
+      "sha256": "15b360825a03be78ee5d40a128f32634efeab04b6719bdb03c6ee0d6ad9bc33d",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-badger.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-badger.jpg",
+      "sha256": "41eca2afe7c6d231e02c6596490a9f72223c96dbcd50b556e79133663390cfd3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-beaver.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-beaver.jpg",
+      "sha256": "10e2ce6d081790dde2a11f29f757c6cf3b38575655fa9ada84aa665aef5164b9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-bird.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-bird.jpg",
+      "sha256": "2587c5938881e7ac79d2768ba6ee31a0deee7e6bb5a5a1cacd34029d35fb92fa",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-deer.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-deer.jpg",
+      "sha256": "7367090399c16cc86e07c4a1149ca971809bfa1b0965818bbb22758787e44924",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-hedgehog.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-hedgehog.jpg",
+      "sha256": "170490e617b7226a5b51c2b32b73910768ca14e6a5f7344df0767da7ccdb3e8b",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-ibex.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-ibex.jpg",
+      "sha256": "e20391c863ed74c6cfd4fe081b3d3fe2a2607b790fe728a13e85c493dc7c47fd",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-mouse.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-mouse.jpg",
+      "sha256": "983a25af2963e7ab2f5922f00a954a5ef7e969901336f71c4f30a7448d9731cd",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-owl.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-owl.jpg",
+      "sha256": "3a8a60c03c038cfc3026cbd4fa8cb994ab1db5b079a6439a07a8cc5751d769a8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/friends-squirrel.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/friends-squirrel.jpg",
+      "sha256": "b3c235266663132d183a80c40b17b2d86bfa79bd11b5309670dbd5ff9362f5eb",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/mirror.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/mirror.jpg",
+      "sha256": "97f85f3324a4ec9822815b932a4667e0a24ded577ef08f4cbd9848f5f2ac0a7f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/neighbours.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/neighbours.jpg",
+      "sha256": "910a782fd13c3f949ec781a90fd8ffca77feb9d4afc7ecbfeef536ce016e34df",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/picnic.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/picnic.jpg",
+      "sha256": "9551bdec44f3cb781f0a91d7b26ac9f2eb531b993e4407ec787640c285cb63de",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/read-puzzle.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/read-puzzle.jpg",
+      "sha256": "c536791fd383efe2d872770e0198c4b6f94d8e5f7911d6e0f96bca8e49fdd7f1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/richtig.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/richtig.jpg",
+      "sha256": "04a7a078deaf5a12d449ab09a1097c6c11da524991c4b1bcacbc11605c67195b",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/robot.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/robot.jpg",
+      "sha256": "85f40c2d81dda5381aefc1b6db8749d6f178f4f117e4952e60e8a9ccae5c1e70",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/rocket.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/rocket.jpg",
+      "sha256": "5fe253a8d1d6327fccd78dd7b86e89eaba38da13be64750b90f8602d036fb75b",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/sequence.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/sequence.jpg",
+      "sha256": "2a3ccfb390bc2b004232c4e4e575853de022abbe4643e8e499c02a9c88bbde93",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/syllable.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/syllable.jpg",
+      "sha256": "a9d62a559cfb2ae0d1ec2eb13d1e79a9179980f989a77df2335fb464d0749897",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/treasure.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/treasure.jpg",
+      "sha256": "1d106cc6402b82375de3a7f3de86ee0069a1d0b605dc59e1f5968a9a9115d472",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/uebersicht.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/uebersicht.jpg",
+      "sha256": "dadd707008fb0cf3cc559ea3b69cc77abacbd2cec74a4631bb39135e642635ce",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/evidence/raetselvergleich/vowels.jpg",
+      "archived": "legacy/before-10.0.0/design-evidence/raetselvergleich/vowels.jpg",
+      "sha256": "5eb11e7aa971c347b954d3aa354daeb4f9827501671925443982738f22bca5b1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/README.md",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/README.md",
+      "sha256": "d01e3a84b6d0b0972951f04629b3ff16832fdfd88f57082272cd5541c3eaeedf",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/harness.cjs",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/harness.cjs",
+      "sha256": "1030b586669497d85f6da97514b4df85b4e82a5c30cdc99e1f7657e5adb676dd",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/labels-states.json",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/labels-states.json",
+      "sha256": "44e0e7dfc38313aa5615197d7f6c16736e4e6d466bc9b3d532d0e75c66ae6ddb",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/labels-variants.json",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/labels-variants.json",
+      "sha256": "11bd8791bb7f201113d5fe940fb3fd0fe5b7539d04f1da604b689169687f254e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/measure.cjs",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/measure.cjs",
+      "sha256": "151798c74c9fbcdf0edcb1e001bb4aab83acd7682834bf00627450ad28a83c25",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/montage.py",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/montage.py",
+      "sha256": "d7e9348bded9032e2c8e3c3f3fcabe1aeca3a63f8b94d3f2299786b88b8dbe4c",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/plan-states.json",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/plan-states.json",
+      "sha256": "56887e3ce2c15a3886580ba72abf5d925550ec47810b10071203ede931c4d0fa",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/plan-variants.json",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/plan-variants.json",
+      "sha256": "f440113b936f7b228456889d8ea52541a3d60f8e71c0b683d270505380d431f3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/reps.cjs",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/reps.cjs",
+      "sha256": "c50cbdaf334df35d0443f419e7800174cd934c9fad8fe076b76ef8ff7ddc6216",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/shoot2.cjs",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/shoot2.cjs",
+      "sha256": "234e1ae6e283b125b622c448ab86a6d9cb7f0e58dd3c940997d1ecaf7cdad5f6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/survey-summary.json",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/survey-summary.json",
+      "sha256": "c34748e023b0f9745bf173429b4c669ec7ead3a8b5d76b35725a6e30288532a1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/capture/survey.cjs",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/capture/survey.cjs",
+      "sha256": "6e7744bb968044cfd4e66fa58c9ddc2403a043fa2701fc23e040e72da214bb75",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-23-raetsel-einheitlich/proposal.css",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/proposal.css",
+      "sha256": "5b33f228025ec783c424db434a8d5355f740fe95711fb30aecc07f544c12f7e3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-24-erfolg-einheitlich/README.md",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-24-erfolg-einheitlich/README.md",
+      "sha256": "8a9d0db38f001dbabece834946ab38bb74598ab97e500f458bdb01fab7f28805",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "design/proposals/2026-11-24-erfolg-einheitlich/proposal.css",
+      "archived": "legacy/before-10.0.0/design-proposals/2026-11-24-erfolg-einheitlich/proposal.css",
+      "sha256": "b771346f3b081dbdb51ab455d5d3746af20aeae2186a3694ee95f9d77032b6ee",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/README.md",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/README.md",
+      "sha256": "f6d1b10888181074a81e1b547f19491bbc95e91f89d424d1b22fa98261e1b439",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/acorn-called-nuss.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/acorn-called-nuss.webp",
+      "sha256": "a40c03c87ae6dd3cc9cc50229c6a5cce79bd89d3b0d38ce8ded8a911d0354cdc",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/answer-feedback.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/answer-feedback.webp",
+      "sha256": "6bf81f1c7fbb947a03e32f5a7f09544b29100315fb2b287dece18beb415803c5",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/phone-letter-world-map.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/phone-letter-world-map.webp",
+      "sha256": "bae7627b705229a79e898930f2c1ef1c5cfb09e96226c66211bb98813a0d97ae",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/phone-puzzles.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/phone-puzzles.webp",
+      "sha256": "5757f5aaf6fb5fd5981db17a6bd6bc034d2b5d82b48f1281c6bd5c6ddc7ea916",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/reading-layout.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/reading-layout.webp",
+      "sha256": "8981b15ab31ca3f84ee8311df3cf6527b0d8c70c2e873d400827f38292c9fa8e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/tablet-puzzles.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/tablet-puzzles.webp",
+      "sha256": "72ed1b11b02bb6162e49ae851a17997c1860876c857c9a72a81714e6039133d3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-23-release-review/tablet-world.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-23-release-review/tablet-world.webp",
+      "sha256": "e8401d0739bfb58a0d8b29f3f58b1ed3662805f2a3cb433969aa370550e2089e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/README.md",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/README.md",
+      "sha256": "af544549566d19ff31cb9f985812abc3f7f1f5d48417de2bcafcc4b5691e47f9",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/answer-feedback.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/answer-feedback.webp",
+      "sha256": "455b962f6ff96d7faeb85fa6d12c67c2bc1ef0751055786be37e0463369c00ed",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/letter-focus.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/letter-focus.webp",
+      "sha256": "9529619efcde91647c40711313dcf2b2b6471f16ed84c7df074db8a422f4dc8a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/pattern-wrap.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/pattern-wrap.webp",
+      "sha256": "5f413e16266d12f06c40570765654580459ef7e37c498c556139d7f44d2726f3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/phone-clipping.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/phone-clipping.webp",
+      "sha256": "c4194df8f3289391f52c58821f956b2f79fc53960f758af4a2cc737a7b88b732",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/phone-den.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/phone-den.webp",
+      "sha256": "2b42255684e457409ea3a0fc69eee9d6fa22b9fe92ea3c2a94966bde3617f9bb",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/phone-raetsel.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/phone-raetsel.webp",
+      "sha256": "11c2e2b298f818f2fb298fd4b29039728ff261d54672143f8775e84b9627499f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/stuck-invitation.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/stuck-invitation.webp",
+      "sha256": "e7aece8f1c276504ef4733c404df8ea1b91e3838fcdc4ba38adfa0236fb6b141",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-24-release-review/tablet-raetsel.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-24-release-review/tablet-raetsel.webp",
+      "sha256": "dc485047a89a1ca9761288dbd0013d9fb99bf4dfd338b3189e45d0d4262567fc",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/README.md",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/README.md",
+      "sha256": "9352db38b1de0099abc635de7d4dc1b9b4066415b3207f03f4a11dcdeba85a45",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/neighbours-tap.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/neighbours-tap.webp",
+      "sha256": "8ce2474295d2934dffe95ef3d359309a4e1b5a13cfb73e16726cb0c338262be7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/pattern-phone.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/pattern-phone.webp",
+      "sha256": "2f380370543ff80dbc8121bd005adabd8a28b7baf2662af32111ce09802402a7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/phone-den-letter.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/phone-den-letter.webp",
+      "sha256": "5eb90dabee31df87e4cbde31394caf8304c6f39a1d9969ef6929c177980428ca",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/phone-fish-syllables.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/phone-fish-syllables.webp",
+      "sha256": "588ea1fb4d999925ea48db3141e3a812f4b02362f26029c523723c3b3e890f06",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/rhyme-and-reading.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/rhyme-and-reading.webp",
+      "sha256": "0dfb84bba190c8dccb786cfcb19236d119dcae0c31c0c0c5eab1f43955e6f6be",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.46/tablet-raetsel.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.46/tablet-raetsel.webp",
+      "sha256": "38666f5ef7b2cdb0dd86a542a6b75f4e5bd241cfbc7aaf6a43655c28e2a9b5a7",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.48/README.md",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.48/README.md",
+      "sha256": "62814c71ec7c269e0202f3886420d4980ea02667a6bc472ffe45c7ae2a61421a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.48/first-start.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.48/first-start.webp",
+      "sha256": "c0c607ebad05216e8b33523fa6f64f24344ba7a4da3f9070dba29b3233aa5d1a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review-9.4.48/neighbours-order.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review-9.4.48/neighbours-order.webp",
+      "sha256": "367689291cbfd2fc90d2b22719ba03c4eae2f937a6e4f1228152c066cc488748",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/README.md",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/README.md",
+      "sha256": "5438da6f45260df5027f5a844ba9e0d514cfb7bbb8c354623692436273360b3f",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/dachs-reading.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/dachs-reading.webp",
+      "sha256": "3bb42daed2a5c48cb9802807d557552304ac96e037867b2a4f8c06af3c247b06",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/narrow-320.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/narrow-320.webp",
+      "sha256": "596f0c6555e4e80edcd2a6576b7dbe64d846e410fb746299e3ce7e783ecc96b4",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/pattern-size.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/pattern-size.webp",
+      "sha256": "6d8fb191ac604b5fadda0519dd8406b53fb4ba9dcd658b0238cbdc5c033edf9a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/phone-den.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/phone-den.webp",
+      "sha256": "3718d9b291eecbf259dd30a55453e97aaa72143e5b6ce8f93c8e41099a79b2e1",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/phone-raetsel.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/phone-raetsel.webp",
+      "sha256": "f8578c8545a9814d6c53aef171a4a9346aaf07cb5438c535b36ed948a08ba147",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/phone-round.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/phone-round.webp",
+      "sha256": "8f9f038d38f3f2228e9c62068683403ddfc01b89f69a57bd3c76f329c1a068ef",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/reviews/2026-11-25-release-review/tablet-raetsel.webp",
+      "archived": "legacy/before-10.0.0/docs/reviews/2026-11-25-release-review/tablet-raetsel.webp",
+      "sha256": "9245773320d8b0ecde0a1720f2e60f5554395f9b147654dbb8ce8e9ed80fe6c8",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/PUZZLE-FEEDBACK-2026-11-15.md",
+      "archived": "legacy/before-10.0.0/docs/PUZZLE-FEEDBACK-2026-11-15.md",
+      "sha256": "914e35499f9e48d57d5b85541d92b3b2fd47c1c3858e2d66afa0afc13ea84387",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/PUZZLE-FEEDBACK-2026-11-17-FOLLOWUP.md",
+      "archived": "legacy/before-10.0.0/docs/PUZZLE-FEEDBACK-2026-11-17-FOLLOWUP.md",
+      "sha256": "a94cc21de544c9ee0ef48c4cbd61dd0d5b2575b0505665bd9e4c1aed96b10d4d",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/PUZZLE-FEEDBACK-2026-11-17.md",
+      "archived": "legacy/before-10.0.0/docs/PUZZLE-FEEDBACK-2026-11-17.md",
+      "sha256": "6ec7951ebd7a6bb0f13b45760a9d515d4578424a2b3d43968513b6810011dac6",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/PUZZLE-FEEDBACK-2026-11-18.md",
+      "archived": "legacy/before-10.0.0/docs/PUZZLE-FEEDBACK-2026-11-18.md",
+      "sha256": "e3010cd28ebd464a7b752b3a4d014a43cd5d1638361bb1f3b9ad230a44c8a69a",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/PUZZLE-REVIEW-ITERATIONS-2026-11-18.md",
+      "archived": "legacy/before-10.0.0/docs/PUZZLE-REVIEW-ITERATIONS-2026-11-18.md",
+      "sha256": "9cee95fdf33a3e7e433a20f4be4a7934667b198e57a1993a32fa4331e4586ab0",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/PUZZLE-REVIEW-RECOVERY-2026-11-17.md",
+      "archived": "legacy/before-10.0.0/docs/PUZZLE-REVIEW-RECOVERY-2026-11-17.md",
+      "sha256": "925c37347ee1a1e064ef1d6d69830e7ab1d1a24806fd1a3818dd06809e60a0a4",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/RAETSEL-FEEDBACK-2026-11-19.md",
+      "archived": "legacy/before-10.0.0/docs/RAETSEL-FEEDBACK-2026-11-19.md",
+      "sha256": "f18d52446bef5ae96a6bc4b162e35fc8893d1adad17c64403f08da4d84e46080",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/RAETSEL-FEEDBACK-2026-11-22.md",
+      "archived": "legacy/before-10.0.0/docs/RAETSEL-FEEDBACK-2026-11-22.md",
+      "sha256": "f1cf8466b2c5af1628dc6ff999fa455421dc2b724a9880be6ab3a3b42291570e",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/RAETSEL-FEEDBACK-2026-11-23.md",
+      "archived": "legacy/before-10.0.0/docs/RAETSEL-FEEDBACK-2026-11-23.md",
+      "sha256": "96dcb8bc69cb5fe43e27589a8c14e30dc16bdf6313248b1914799d9afd3cfe35",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "docs/RAETSEL-FEEDBACK-2026-11-25.md",
+      "archived": "legacy/before-10.0.0/docs/RAETSEL-FEEDBACK-2026-11-25.md",
+      "sha256": "67a82b5dec0f0db5d855b310ca934674c7fa32a2139adedcab9ac6e1a0ff2c94",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "tests/friends-browser.cjs",
+      "archived": "legacy/before-10.0.0/tests/friends-browser.cjs",
+      "sha256": "d118311a3695e8de6acae907f015fe4cdd94d49663f846a8796074cc15ccf650",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "tests/friends-library-browser.cjs",
+      "archived": "legacy/before-10.0.0/tests/friends-library-browser.cjs",
+      "sha256": "046a26ad65f09903ec7e52fc7f1b4c7184e34f2de7a3f012c885494ccbe95219",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "tests/interface-browser.cjs",
+      "archived": "legacy/before-10.0.0/tests/interface-browser.cjs",
+      "sha256": "473a4736401180f12a8826d4b765b4f6dbc501e178a59b08b278a3910ac399b3",
+      "moved": "2026-11-26"
+    },
+    {
+      "original": "tests/puzzle-rounds-browser.cjs",
+      "archived": "legacy/before-10.0.0/tests/puzzle-rounds-browser.cjs",
+      "sha256": "2a1af806a938191de3328de2ce8a64423ad002713a5b8ce32f937a4eb9b76733",
+      "moved": "2026-11-26"
     }
   ],
   "relocations": [

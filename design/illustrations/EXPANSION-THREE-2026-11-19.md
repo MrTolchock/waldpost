@@ -6,7 +6,7 @@
 
 The collection adds reusable visual structures for many puzzle rules. Spatial images keep relationships inside one vignette; state pairs differ visibly; making sequences share materials and products; quantities contain separate countable objects; patterned scarves keep one colour family so pattern recognition can be the task. Existing illustrations can supply the whole object, animal, finished product or matching tool.
 
-[Preview all 150 new images](../evidence/2026-11-19-image-expansion-three/overview.png) · [Verified quantity groups](../evidence/2026-11-19-image-expansion-three/quantity-report.jsonl) · [Source edge checks](../evidence/2026-11-19-image-expansion-three/source-edges.jsonl)
+[Preview all 150 new images](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/overview.png) · [Verified quantity groups](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/quantity-report.jsonl) · [Source edge checks](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/source-edges.jsonl)
 
 | Set | Pictures | Future puzzle types |
 | --- | ---: | --- |
@@ -39,4 +39,4 @@ Actual complete generator arguments, ordered reference hashes, raw PNGs and repa
 
 All 150 new images passed browser PNG-export, pixel-match, framing and phone/tablet checks; the full gallery pass verified 581 PNG exports. All 164 model tests passed, including an image-level check of each exact quantity group. The original 540 image files, labels, source rectangles and puzzle uses are byte/data-identical to the base release. Existing puzzle implementation revisions remain unchanged.
 
-[Phone library](../evidence/2026-11-19-image-expansion-three/library-390.png) · [Tablet library](../evidence/2026-11-19-image-expansion-three/library-1080.png) · [Export report](../evidence/2026-11-19-image-expansion-three/export-report.json).
+[Phone library](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/library-390.png) · [Tablet library](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/library-1080.png) · [Export report](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-three/export-report.json).

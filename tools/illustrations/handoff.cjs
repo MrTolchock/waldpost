@@ -5,7 +5,9 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const sharp=require('../node_modules/sharp'),style=require('./style.cjs'),{catalogue}=require('./library.cjs');
 const {readRepair}=require('./prepare-library-repair.cjs');
 const root=path.resolve(__dirname,'../..'),output='design/artwork/generator-inputs.json';
-const read=file=>fs.readFileSync(path.join(root,file)),json=file=>JSON.parse(read(file));
+// Historical records keep their original paths; legacy-paths resolves files later moved to legacy/.
+const {historicalPath}=require('../legacy-paths.cjs');
+const read=file=>fs.readFileSync(path.join(root,fs.existsSync(path.join(root,file))?file:historicalPath(file))),json=file=>JSON.parse(read(file));
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const relative=(from,to)=>path.posix.normalize(path.posix.join(path.posix.dirname(from),to));
 function assertCoverage(assets,offlineSource){

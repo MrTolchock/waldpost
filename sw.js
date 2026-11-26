@@ -3,7 +3,7 @@ const SCOPE=self.registration.scope;
 // The development copy lives inside the children's site (…/dev/). Each copy keeps its own cache, and the children's
 // worker leaves everything under dev/ alone: it neither answers those requests nor removes their cached files.
 const NESTED=new URL('dev/',SCOPE).href,DEV=/\/dev\/$/.test(new URL(SCOPE).pathname);
-const CACHE = 'farbtupf-v10.0.0-d1.0.2-waldpost'+(DEV?'-dev':'');
+const CACHE = 'farbtupf-v10.0.0-d1.0.3-waldpost'+(DEV?'-dev':'');
 const own=url=>url.startsWith(SCOPE)&&(DEV||!url.startsWith(NESTED));
 const INDEX=new URL('index.html',SCOPE).href;
 const ACTIVE_MARKER=new URL('.farbtupf-active-cache',SCOPE).href;

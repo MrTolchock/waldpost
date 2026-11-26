@@ -3,11 +3,8 @@
 Start with [current design](../design/README.md). The [visual style](../design/VISUAL-STYLE.md) defines every art and typography role; the [puzzle blueprint](../design/PUZZLE-BLUEPRINT.md) defines every puzzle.
 
 - [All puzzles, competences and iterations](PUZZLE-CATALOGUE.md)
+- [Children's version (main, 10.0.0) and development version (dev)](CHANNELS.md)
 - [Adult review and sign-off](PUZZLE-REVIEW.md)
-- [Release review of 9.4.43](reviews/2026-11-25-release-review/README.md) and its [follow-up in 9.4.44](RAETSEL-FEEDBACK-2026-11-25.md)
-- [Release review of 9.4.41](reviews/2026-11-24-release-review/README.md)
-- [Release review of 9.4.32](reviews/2026-11-23-release-review/README.md) and its [follow-up in 9.4.33](RAETSEL-FEEDBACK-2026-11-23.md)
-- [Follow-up to all 26 puzzle notes from 15 November](PUZZLE-FEEDBACK-2026-11-15.md)
 - [Shared GitHub review storage and connection](REVIEW-STORAGE.md)
 - [Parent-controlled letter sessions](LETTER-SESSIONS.md)
 - [Local gameplay log and AI export](PLAY-LOG.md)
@@ -17,4 +14,4 @@ Start with [current design](../design/README.md). The [visual style](../design/V
 - [Typography roles](TYPOGRAPHY.md)
 - [Development and deployment](DEVELOPMENT.md)
 
-[Historical documents and retired code](../legacy/README.md) are preserved separately and do not define the current game.
+[Historical documents and retired code](../legacy/README.md) are preserved separately and do not define the current game. The release reviews, dated feedback rounds and screenshot evidence that led to 10.0.0 are in [before 10.0.0](../legacy/before-10.0.0/README.md).

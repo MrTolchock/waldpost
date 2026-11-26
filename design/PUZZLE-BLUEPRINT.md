@@ -27,7 +27,7 @@ The paper is as tall as its task and centred on the host's habitat; the frame ce
 
 ## Vergleichsmuster für eine Rätselseite
 
-Der [Vergleichsbogen vom 20. November](evidence/raetselvergleich/README.md) (damals 23 Rätsel, vor den Hintergründen der Gastgeber) zeigt die vollständigen Spielseiten im gleichen Massstab. Für einen neuen Vergleich die zweite Katalogaufgabe als erste Aufgabe einer isolierten Galerierunde bei 1080 × 810 CSS-Pixeln aufnehmen. Kopfzeile, Fortschritt und Seitenränder im Bild lassen.
+Der [Vergleichsbogen vom 20. November](../legacy/before-10.0.0/design-evidence/raetselvergleich/README.md) (damals 23 Rätsel, vor den Hintergründen der Gastgeber) zeigt die vollständigen Spielseiten im gleichen Massstab. Für einen neuen Vergleich die zweite Katalogaufgabe als erste Aufgabe einer isolierten Galerierunde bei 1080 × 810 CSS-Pixeln aufnehmen. Kopfzeile, Fortschritt und Seitenränder im Bild lassen.
 
 | Bereich | Gestaltungsregel |
 | --- | --- |

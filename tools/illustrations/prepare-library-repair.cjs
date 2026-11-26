@@ -8,7 +8,8 @@ const { execFileSync } = require('node:child_process');
 const sharp = require('../node_modules/sharp');
 
 const root = path.resolve(__dirname, '../..');
-const read = file => fs.readFileSync(path.join(root, file));
+const { historicalPath } = require('../legacy-paths.cjs');
+const read = file => fs.readFileSync(path.join(root, fs.existsSync(path.join(root, file)) ? file : historicalPath(file)));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const json = file => JSON.parse(read(file));
 const rgba = bytes => sharp(bytes).toColourspace('srgb').ensureAlpha().raw().toBuffer({ resolveWithObject: true });

@@ -6,7 +6,7 @@
 
 Choose an `expansion-…` sheet in the browser library, or search a German label or stable ID. Use `FK.visual.art(id, className, accessibleLabel)` when authoring a later puzzle. Existing puzzle content and review revisions are unchanged; these drawings are registered for future use.
 
-[Preview all 150 drawings](../evidence/2026-11-19-image-expansion/overview.png) · [Phone library](../evidence/2026-11-19-image-expansion/library-390.png) · [Tablet library](../evidence/2026-11-19-image-expansion/library-1080.png) · [PNG export report](../evidence/2026-11-19-image-expansion/export-report.json)
+[Preview all 150 drawings](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/overview.png) · [Phone library](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/library-390.png) · [Tablet library](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/library-1080.png) · [PNG export report](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion/export-report.json)
 
 | Sheet | Pictures | Future puzzle material |
 | --- | ---: | --- |

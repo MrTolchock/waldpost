@@ -4,6 +4,7 @@ Everything here is retired or retained solely as historical provenance. The curr
 
 | Location | Contents |
 | --- | --- |
+| [Before 10.0.0](before-10.0.0/README.md) | Release reviews up to 9.4.48, dated Rätsel feedback rounds, review recovery notes, screenshot evidence, adopted layout proposals and redundant test aliases (moved 2026-11-26) |
 | [Retired runtime](retired-runtime/) | Drawing engine/templates, palettes, stamps, album wiring, unused landing/colouring/navigation art, retired paint tests and original copies of pruned shared files |
 | [Retired design](retired-design/) | Superseded map/portrait preparation attempts, completed draft requests, duplicate map source and unused forward recipes |
 | [Design history](design-history/README.md) | Original prompts, source experiments, old visual directions, before images and dated evidence |

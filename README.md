@@ -6,9 +6,11 @@
 
 All new image generation follows the [canonical watercolour/pencil style](design/illustrations/STYLE.md), its fixed reference images and shared complete prompts. Superseded styles and requests are archived.
 
+**Waldpost 10.0.0** is the complete game for children, served from `main`. Development continues on `dev`, published as a separate development version at …/dev/ with its own build number (ENTWICKLUNG 1.x.y) and the Rätsel review; it is released to `main` when every Rätsel is approved ([channels](docs/CHANNELS.md)).
+
 A woodland learning game for first-grade practice in Zürich, in Swiss Standard German. Parents choose how many letters their child can complete. Fuchs starts at the den, receives a pictured letter, walks to that friend and solves a puzzle of five different iterations. Hase delivers the next letter. After the last puzzle, Fuchs returns home to sleep and the journey ends.
 
-Only the friend on the current letter offers a puzzle. The 16 Rätsel have 627 Aufgaben, with a common page, sounds, feedback and celebration. Settings contains the adult-only gallery and review workbench: review every unconfirmed iteration in the normal game viewport. Correct completion approves and advances; × opens an optional rejection comment. The full queue ends with the usual celebration and approves the puzzle when every iteration passed. Exact-revision approvals are required before child play. New content, difficulty and shared implementation changes require review again. Deployment never approves content.
+Only the friend on the current letter offers a puzzle. The 16 Rätsel have 627 Aufgaben, with a common page, sounds, feedback and celebration. Settings contains the adult-only Rätsel gallery; the development version adds the review workbench: review every unconfirmed iteration in the normal game viewport. Correct completion approves and advances; × opens an optional rejection comment. The full queue ends with the usual celebration and approves the puzzle when every iteration passed. Exact-revision approvals are required before child play. New content, difficulty and shared implementation changes require review again. Deployment never approves content.
 
 The table and picture pile remain part of the den painting; drawing and saved-picture screens are retired. There is no timer, shop or currency loop. Drawings and gameplay saves stay on the device. Editorial decisions are shared through [GitHub review storage](docs/REVIEW-STORAGE.md), with an offline cache and automatic recovery in other browsers. The game works offline after a complete initial download.
 
@@ -27,7 +29,8 @@ The table and picture pile remain part of the den painting; drawing and saved-pi
 | [Game implementation](docs/FOREST-FRIENDS.md) | Current modules, persistence and controls |
 | [Learning and sources](docs/LEARNING.md) | Scope, prerequisites and research limits |
 | [Development](docs/DEVELOPMENT.md) | Run, validate, author and publish |
-| [Legacy](legacy/README.md) | Retired engines, drawing tools, unused art, proposals and original history |
+| [Children's and development version](docs/CHANNELS.md) | `main` (10.0.0) and `dev`, build numbers, publishing and release |
+| [Legacy](legacy/README.md) | Retired engines, drawing tools, unused art, proposals, release reviews and screenshot evidence before 10.0.0 |
 
 ## Repository layout
 
@@ -42,4 +45,4 @@ node tools/puzzle-catalogue.cjs --check
 node --test tests/*.test.cjs
 ```
 
-No build step is needed. Open `http://127.0.0.1:8000`. GitHub Pages serves `main`. [Development](docs/DEVELOPMENT.md) covers browser checks and release verification. Heart Tree is archived; its former URL opens the current den, and historical save keys are preserved.
+No build step is needed. Open `http://127.0.0.1:8000` (the local server shows the development version; add `?channel=main` for the children's version). GitHub Pages serves `main` at the root and `dev` at …/dev/. [Development](docs/DEVELOPMENT.md) covers browser checks and release verification. Heart Tree is archived; its former URL opens the current den, and historical save keys are preserved.

@@ -6,7 +6,7 @@
 
 Each new sheet has fifteen occupied cells in a 4 × 4 grid, with the last cell transparent. Exports use 320 px cells with a 256 px longest subject side. Select an `expansion-…` sheet in the library or search its German label/stable ID, then use `FK.visual.art(id, className, accessibleLabel)` when authoring a future puzzle. Existing pictures, puzzle content and editorial decisions are preserved.
 
-[Preview all 150 new drawings](../evidence/2026-11-19-image-expansion-two/overview.png) · [Phone library](../evidence/2026-11-19-image-expansion-two/library-390.png) · [Tablet library](../evidence/2026-11-19-image-expansion-two/library-1080.png)
+[Preview all 150 new drawings](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/overview.png) · [Phone library](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/library-390.png) · [Tablet library](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/library-1080.png)
 
 | Set | Pictures | Future puzzle material |
 | --- | ---: | --- |
@@ -29,4 +29,4 @@ Selected flower, kitchen and action sources use explicit source crop rectangles 
 
 ## Verification
 
-All 150 new pictures passed browser PNG-export, pixel-match, transparency, framing and phone/tablet checks (431 exports in the full collection check). All 163 model tests passed, including explicit-source-crop validation. [Export report](../evidence/2026-11-19-image-expansion-two/export-report.json) · [Source edge checks](../evidence/2026-11-19-image-expansion-two/source-edges.jsonl). Canonical style, generated handoff, offline/design inventory and existing puzzle implementation revisions are consistent.
+All 150 new pictures passed browser PNG-export, pixel-match, transparency, framing and phone/tablet checks (431 exports in the full collection check). All 163 model tests passed, including explicit-source-crop validation. [Export report](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/export-report.json) · [Source edge checks](../../legacy/before-10.0.0/design-evidence/2026-11-19-image-expansion-two/source-edges.jsonl). Canonical style, generated handoff, offline/design inventory and existing puzzle implementation revisions are consistent.

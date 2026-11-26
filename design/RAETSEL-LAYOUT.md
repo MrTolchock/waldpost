@@ -42,7 +42,7 @@ Die Zeile mit dem Waldfreund oben (Zurück, Porträt, «… spielt mit dir») ge
 
 **Falsche Eingabe.** Die gewählte Karte bekommt die warme, gestrichelte Innenkontur. Grösse und Platz bleiben gleich, und das Kind kann sofort weiter versuchen.
 
-**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln, und das aktuelle Fortschrittsblatt wächst kurz. Das Papier bekommt keinen grünen Schein, und das Porträt des Freundes bleibt in seiner Zeile. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Hat die Aufgabe eine Lücke im Rahmen (Muster, Reihe, Merkreihe), steht nach der richtigen Antwort das gewählte Bild grün in der Lücke, damit das Kind die vollständige Folge sieht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](proposals/2026-11-24-erfolg-einheitlich/README.md))
+**Erfolg.** Eine gelöste Aufgabe sieht in allen Rätseln gleich aus: Grün werden immer die einzelnen gelösten Teile, genau wie eine richtige Antwortkachel (Hintergrund `#e8efd6`, Linie `#7f9a48`, weicher Ring): die gewählte Antwort, jede gelegte Silbe oder Zahlenkarte, jeder Platz mit seinen Beeren, jedes gefüllte Spiegelfeld, der gewählte Teller, das Zielfeld mit dem Reh. Ein grünes Band hinter einer Gruppe gibt es nicht. Dazu fliegt Konfetti aus Blättern, Blumen und Eicheln, und das aktuelle Fortschrittsblatt wächst kurz. Das Papier bekommt keinen grünen Schein, und das Porträt des Freundes bleibt in seiner Zeile. Ein sichtbarer Text wie «Das passt!» erscheint nicht. Hat die Aufgabe eine Lücke im Rahmen (Muster, Reihe, Merkreihe), steht nach der richtigen Antwort das gewählte Bild grün in der Lücke, damit das Kind die vollständige Folge sieht. Der Bildschirmleser bekommt die Statusmeldung weiterhin. ([Vorschlag vom 24. November](../legacy/before-10.0.0/design-proposals/2026-11-24-erfolg-einheitlich/README.md))
 
 **Folgen und Muster.** Eine Folge, die das Kind fortsetzen oder ergänzen soll, steht immer in einer einzigen Zeile, damit kein Umbruch eine Wiederholungseinheit zerschneidet. Ist die Zeile zu schmal, werden alle Felder gemeinsam kleiner und das «?» der Lücke mit ihnen (Tablet 9 Felder zu 68 px, Handy 390 px zu 32 px, 320 px zu 24 px).
 
@@ -79,7 +79,7 @@ Jede Ausnahme braucht einen fachlichen Grund und steht hier.
 
 ## Herkunft
 
-Den Vorschlag, alle Aufnahmen und die Vermessung aller 797 Aufgaben hält [design/proposals/2026-11-23-raetsel-einheitlich](proposals/2026-11-23-raetsel-einheitlich/README.md) fest. Die Wünsche des Besitzers in der Reihenfolge der Durchsicht:
+Den Vorschlag, alle Aufnahmen und die Vermessung aller 797 Aufgaben hält [design/proposals/2026-11-23-raetsel-einheitlich](../legacy/before-10.0.0/design-proposals/2026-11-23-raetsel-einheitlich/README.md) fest. Die Wünsche des Besitzers in der Reihenfolge der Durchsicht:
 
 - **Erste Runde:**
   - eine Schrift und die Frage immer gleich gross
